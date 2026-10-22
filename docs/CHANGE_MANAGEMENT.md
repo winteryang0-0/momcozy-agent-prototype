@@ -21,6 +21,6 @@ PR 使用 `.github/PULL_REQUEST_TEMPLATE.md`。CI 只校验文件与冻结账本
 
 ## Onboarding 内测候选
 
-`prototype/onboarding-rebuild-candidate/` 是独立于当前五页面原型的四步资料录入候选。它保存独立浏览器存储键，不能自动代表现行 Onboarding 已更新。该目录先在 `codex/internal-test` 接受视觉与交互评审；若决定接入完整原型，需要另行记录从旧资料到新资料的迁移、返回／暂停、错误恢复和入口影响，再生成可审阅的集成候选。
+`prototype/onboarding-rebuild-candidate/` 是较早的四步资料录入候选，作为历史探索保留。最新的对话式集成候选是 `prototype/onboarding-chat-r30-candidate/`，使用独立浏览器存储键，包含单文件与分文件原型、需求/设计差异、参考图和验证材料；具体变化见 [R30 更新说明](updates/2026-10-22-onboarding-r30.md)。两者都不能自动代表 `prototype/current/` 已更新。
 
 变更经 Wentao 明确确认后，以新 B-ID 保存完整设计账本、来源和原型快照，并在合入 `main` 后打新基线标记。绝不修改已有基线目录或重写历史收据。

@@ -1,0 +1,158 @@
+{
+  "revision": "onboarding-chat-30",
+  "date": "2026-10-22",
+  "status": "user-authorized-implementation-candidate-not-frozen",
+  "previous_baseline_id": "B-MOMCOZY-20261022-R27",
+  "authority": [
+    "用户要求 onboarding 从上传的欢迎页草图开始，以对话流逐张卡片完成资料录入。",
+    "用户指定顺序：推荐服务、担忧点、角色、状态、年龄和生育次数、宝宝数量和孕周、宝宝生日、是否有更多宝宝，完成后 Let's chat 进入主页。",
+    "用户明确宝宝默认一位，再追问是否有多个；允许逐位录入多位宝宝。",
+    "用户在 R29 微调要求：照护身份先见妈妈和其他成员，其他成员再展开细分；阶段三项同排；所有数值卡用横向滑杆；年龄题名为妈妈的年龄；删除不必要备注；首位只称宝宝；当前卡居中。用户确认暂无第七项。",
+    "用户在 R30 中途补充：onboarding 对话卡片恢复自然流动，修正强制居中造成的抽搐；所有横向数值控件参考上传图示，改为精简的连续数字选择条。"
+  ],
+  "requirements": [
+    {
+      "id": "R28-01",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-start",
+        "ONBOARD-skip"
+      ],
+      "rule": "本机首次打开从 AI 欢迎页开始，保留 Skip 和开始入口。"
+    },
+    {
+      "id": "R28-02",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-services",
+        "ONBOARD-concerns"
+      ],
+      "rule": "先选优先服务，再逐步选择担忧点；两者可多选或暂不选择，后续功能不因优先服务选择而被隐藏。"
+    },
+    {
+      "id": "R28-03",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-role",
+        "ONBOARD-stage",
+        "ONBOARD-number",
+        "ONBOARD-date",
+        "ONBOARD-next"
+      ],
+      "rule": "按角色与阶段分支，每个单项数据占一张卡；完成当前卡后自动出现下一张。妈妈填写阶段、年龄和分娩次数，非妈妈只填写宝宝状态；孕前暂不要求宝宝资料。"
+    },
+    {
+      "id": "R28-04",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-more",
+        "ONBOARD-baby-type",
+        "ONBOARD-number",
+        "ONBOARD-date"
+      ],
+      "rule": "宝宝默认一位，录入后追问是否继续添加；每位宝宝有独立编号和 ID。允许同生日的多位已出生宝宝；孕期可以同时登记本次怀孕的宝宝和已出生宝宝。"
+    },
+    {
+      "id": "R28-05",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-edit",
+        "ONBOARD-finish",
+        "ONBOARD-skip"
+      ],
+      "rule": "已完成卡可回看与修改；减少已有宝宝数须确认；Skip 暂存，刷新后按本机状态恢复；全部完成后由 Let's chat 进入既有对话主页。"
+    },
+    {
+      "id": "R28-06",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-start",
+        "ONBOARD-services",
+        "ONBOARD-concerns",
+        "ONBOARD-number",
+        "ONBOARD-date",
+        "ONBOARD-finish"
+      ],
+      "rule": "新流程应用现有 CS-0.5 莓色留白设计 token、AI 形象、明暗环境与减少动态效果；首页、记录、我的和宝宝页面职责维持 R27 基线。"
+    },
+    {
+      "id": "R29-01",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-role"
+      ],
+      "rule": "身份初态只呈现妈妈与其他成员；后者展开爸爸、祖辈及其他亲友，选定具体身份后进入下一卡。"
+    },
+    {
+      "id": "R29-02",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-stage"
+      ],
+      "rule": "孕前、孕期、产后同一行排布，保留原分支。"
+    },
+    {
+      "id": "R29-03",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-number",
+        "ONBOARD-next"
+      ],
+      "rule": "年龄题名为妈妈的年龄；年龄18–50、分娩0–6、当前孕周0–45、出生孕周37–50均用横向滑杆；0 与暂不填写分开。"
+    },
+    {
+      "id": "R29-04",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-role",
+        "ONBOARD-stage",
+        "ONBOARD-number",
+        "ONBOARD-date"
+      ],
+      "rule": "移除不必要的卡片备注；保留必要的数据语义与错误反馈。"
+    },
+    {
+      "id": "R29-05",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-number",
+        "ONBOARD-date",
+        "ONBOARD-more"
+      ],
+      "rule": "第一位显示宝宝，新增后第二位起使用宝宝2等区分，独立 ID 不变。"
+    },
+    {
+      "id": "R29-06",
+      "page": "PAGE-onboarding",
+      "controls": [
+        "ONBOARD-next",
+        "ONBOARD-edit"
+      ],
+      "rule": "R29 原要求切卡后当前卡居中；此定位规则由 R30-01 的自然流动取代。高卡在短屏中保持标题与操作可达。"
+    },
+    {
+      "id": "R30-01",
+      "page": "PAGE-onboarding",
+      "controls": ["ONBOARD-next", "ONBOARD-edit"],
+      "rule": "对话卡片按自然顺序流动；只在新卡超出可视区域时单次滚动使其可见，用户手动滚动或视口变化时不强制重新居中。此条取代 R29-06 的居中要求。"
+    },
+    {
+      "id": "R30-02",
+      "page": "PAGE-onboarding",
+      "controls": ["ONBOARD-number", "ONBOARD-next"],
+      "rule": "所有数值卡采用参考图所示精简横向连续数字条，一屏约五项，中心值为当前值；支持点选、鼠标拖动、触屏滚动与键盘调整；仍保留暂不填写与 0 的区分、既定上下限和保存语义。此条替换 R29-03 的滑杆外观。"
+    }
+  ],
+  "inherited_constraints": [
+    "R21-01：妈妈年龄为 18–50 岁整数或暂不填写。",
+    "R21-02：已分娩次数为 0–6 次整数或暂不填写。",
+    "R21-03：宝宝出生孕周为 37–50 周整数或暂不填写；当前孕周沿用 0–45 周。",
+    "R18-01：首次使用、稍后设置与刷新恢复沿用本机原型语义。"
+  ],
+  "candidate_assumptions": [
+    "单位宝宝的生日与出生孕周允许暂不填写；若填写，生日必须为真实日期且不能晚于本机今天。",
+    "同生日宝宝以独立 ID 和编号区分；候选沿用原型最多 6 位宝宝的上限。",
+    "优先服务选择只记录个人偏好，真实 AI 推荐、设备与云同步不在本轮实现范围。",
+    "候选使用独立浏览器存储命名空间，避免改动 R27 的本机数据；正式合并时需复核旧版存储迁移。"
+  ]
+}

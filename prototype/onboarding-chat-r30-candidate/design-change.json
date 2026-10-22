@@ -1,0 +1,701 @@
+{
+  "schema_version": "1.0-delta",
+  "project": {
+    "id": "momcozy-home-1.0",
+    "mode": "simulation",
+    "stage": "draft",
+    "revision": "onboarding-chat-30-candidate",
+    "designer": "/root"
+  },
+  "extends_baseline": {
+    "id": "B-MOMCOZY-20261022-R27",
+    "design_path": "../current/baselines/B-MOMCOZY-20261022-R27/design.json",
+    "design_sha256": "c744b66e47b5d676bbbb6374e2d4afcef5904842604031170bf72501c6ed8179",
+    "receipt_sha256": "246f95e5ff80ad286189a8901a621ddb59d2629eaa2f0e18a79d530d1e3d18ef"
+  },
+  "source": {
+    "path": "sources/onboarding-chat-r30-requirements.json",
+    "sha256": "b2798dca6a78735952d50e46837c2b2b5eb7d13c19123d414a8f2b30e817759d",
+    "requirements": [
+      "R28-01",
+      "R28-02",
+      "R28-03",
+      "R28-04",
+      "R28-05",
+      "R28-06",
+      "R29-01",
+      "R29-02",
+      "R29-03",
+      "R29-04",
+      "R29-05",
+      "R29-06",
+      "R30-01",
+      "R30-02"
+    ],
+    "visual_reference": "sources/onboarding-entry-reference.png",
+    "number_picker_reference": "sources/number-picker-reference.png"
+  },
+  "framework": {
+    "revision": "onboarding-chat-30-candidate",
+    "pages": [
+      {
+        "id": "PAGE-onboarding",
+        "route": "#/onboarding",
+        "parent_id": null,
+        "regions": [
+          "welcome",
+          "conversation-history",
+          "active-card",
+          "error",
+          "skip"
+        ]
+      },
+      {
+        "id": "PAGE-home",
+        "route": "#/home",
+        "parent_id": null,
+        "regions": [
+          "R27 unchanged"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "ONBOARD-start",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "开始对话录入"
+      },
+      {
+        "id": "ONBOARD-skip",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "暂存并进入原主页"
+      },
+      {
+        "id": "ONBOARD-services",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "优先服务多选或暂不选择"
+      },
+      {
+        "id": "ONBOARD-concerns",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "担忧点多选或暂不选择"
+      },
+      {
+        "id": "ONBOARD-role",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "妈妈或展开其他成员的细分照护身份"
+      },
+      {
+        "id": "ONBOARD-stage",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "妈妈阶段或其他照护者的宝宝状态"
+      },
+      {
+        "id": "ONBOARD-number",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "妈妈年龄、分娩次数或宝宝孕周横向连续数字条与可留空值"
+      },
+      {
+        "id": "ONBOARD-date",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "逐位宝宝生日输入"
+      },
+      {
+        "id": "ONBOARD-baby-type",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "孕期家庭新增宝宝的出生状态"
+      },
+      {
+        "id": "ONBOARD-more",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "逐位追问更多宝宝与缩减确认"
+      },
+      {
+        "id": "ONBOARD-edit",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "修改已完成卡片"
+      },
+      {
+        "id": "ONBOARD-next",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "校验当前单项并进入下一卡"
+      },
+      {
+        "id": "ONBOARD-finish",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "保存并进入原主页"
+      }
+    ],
+    "states": [
+      {
+        "id": "STATE-onboarding-welcome",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-question",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-complete",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-invalid",
+        "page_id": "PAGE-onboarding",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-onboarding-save-error",
+        "page_id": "PAGE-onboarding",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-onboarding-paused",
+        "page_id": "PAGE-onboarding",
+        "kind": "other"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-R28-start",
+        "control_id": "ONBOARD-start",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-welcome",
+        "to_state": "STATE-onboarding-question"
+      },
+      {
+        "id": "ACT-R28-answer",
+        "control_id": "ONBOARD-next",
+        "event": "click-or-submit",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-onboarding-question"
+      },
+      {
+        "id": "ACT-R28-add-baby",
+        "control_id": "ONBOARD-more",
+        "event": "click-yes",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-onboarding-question"
+      },
+      {
+        "id": "ACT-R28-edit",
+        "control_id": "ONBOARD-edit",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-complete",
+        "to_state": "STATE-onboarding-question"
+      },
+      {
+        "id": "ACT-R28-reject",
+        "control_id": "ONBOARD-next",
+        "event": "invalid-submit",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-onboarding-invalid"
+      },
+      {
+        "id": "ACT-R28-skip",
+        "control_id": "ONBOARD-skip",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-home-normal"
+      },
+      {
+        "id": "ACT-R28-finish",
+        "control_id": "ONBOARD-finish",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-onboarding-complete",
+        "to_state": "STATE-home-normal"
+      },
+      {
+        "id": "ACT-R28-save-error",
+        "control_id": "ONBOARD-finish",
+        "event": "storage-error",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-complete",
+        "to_state": "STATE-onboarding-save-error"
+      },
+      {
+        "id": "ACT-R29-role-expand",
+        "control_id": "ONBOARD-role",
+        "event": "click-other-group",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-onboarding-question"
+      },
+      {
+        "id": "ACT-R29-slide",
+        "control_id": "ONBOARD-number",
+        "event": "tap-drag-touch-scroll-or-key-selection",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-question",
+        "to_state": "STATE-onboarding-question"
+      }
+    ],
+    "flows": [
+      {
+        "id": "FLOW-R28-first-use",
+        "requirement_ids": [
+          "R28-01",
+          "R28-02",
+          "R28-03",
+          "R28-05"
+        ],
+        "action_ids": [
+          "ACT-R28-start",
+          "ACT-R28-answer",
+          "ACT-R28-finish"
+        ]
+      },
+      {
+        "id": "FLOW-R28-multiple-babies",
+        "requirement_ids": [
+          "R28-04"
+        ],
+        "action_ids": [
+          "ACT-R28-add-baby",
+          "ACT-R28-answer",
+          "ACT-R28-finish"
+        ]
+      },
+      {
+        "id": "FLOW-R28-edit",
+        "requirement_ids": [
+          "R28-05"
+        ],
+        "action_ids": [
+          "ACT-R28-edit",
+          "ACT-R28-answer",
+          "ACT-R28-finish"
+        ]
+      },
+      {
+        "id": "FLOW-R28-skip",
+        "requirement_ids": [
+          "R28-01",
+          "R28-05"
+        ],
+        "action_ids": [
+          "ACT-R28-skip"
+        ]
+      },
+      {
+        "id": "FLOW-R28-save-retry",
+        "requirement_ids": [
+          "R28-05"
+        ],
+        "action_ids": [
+          "ACT-R28-save-error",
+          "ACT-R28-finish"
+        ]
+      },
+      {
+        "id": "FLOW-R29-role",
+        "requirement_ids": [
+          "R29-01"
+        ],
+        "action_ids": [
+          "ACT-R29-role-expand",
+          "ACT-R28-answer"
+        ]
+      },
+      {
+        "id": "FLOW-R29-numeric",
+        "requirement_ids": [
+          "R29-03",
+          "R30-02"
+        ],
+        "action_ids": [
+          "ACT-R29-slide",
+          "ACT-R28-answer"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "VP-mobile-390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "VP-mobile-360",
+        "width": 360,
+        "height": 640
+      },
+      {
+        "id": "VP-desktop",
+        "width": 1440,
+        "height": 900
+      }
+    ]
+  },
+  "system": {
+    "revision": "CS-0.5-berry-poise-onboarding-cards-r30",
+    "style_spec_path": "../current/sources/STYLE_SPEC.txt",
+    "style_spec_sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73",
+    "new_tokens": {},
+    "components": [
+      {
+        "id": "CMP-onboarding-card",
+        "states": [
+          "active",
+          "answered",
+          "complete",
+          "error",
+          "dark",
+          "reduced-motion"
+        ],
+        "token_refs": [
+          "--canvas",
+          "--surface",
+          "--text",
+          "--secondary",
+          "--action",
+          "--neutral",
+          "--divider",
+          "--berry-glass-edge"
+        ]
+      },
+      {
+        "id": "CMP-onboarding-number-picker",
+        "states": [
+          "empty",
+          "value",
+          "focus",
+          "error",
+          "dark",
+          "reduced-motion"
+        ],
+        "token_refs": [
+          "--surface",
+          "--text",
+          "--secondary",
+          "--action",
+          "--neutral",
+          "--divider"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "R28-01",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use",
+        "FLOW-R28-skip"
+      ],
+      "state_ids": [
+        "STATE-onboarding-welcome",
+        "STATE-onboarding-paused"
+      ]
+    },
+    {
+      "requirement_id": "R28-02",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R28-03",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-invalid"
+      ]
+    },
+    {
+      "requirement_id": "R28-04",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-multiple-babies"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-complete"
+      ]
+    },
+    {
+      "requirement_id": "R28-05",
+      "page_ids": [
+        "PAGE-onboarding",
+        "PAGE-home"
+      ],
+      "flow_ids": [
+        "FLOW-R28-edit",
+        "FLOW-R28-save-retry",
+        "FLOW-R28-skip"
+      ],
+      "state_ids": [
+        "STATE-onboarding-complete",
+        "STATE-onboarding-save-error",
+        "STATE-onboarding-paused",
+        "STATE-home-normal"
+      ]
+    },
+    {
+      "requirement_id": "R28-06",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-welcome",
+        "STATE-onboarding-question",
+        "STATE-onboarding-complete"
+      ]
+    },
+    {
+      "requirement_id": "R29-01",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R29-role"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R29-02",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R29-03",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R29-numeric"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R29-04",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R29-05",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R29-06",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R30-01",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R28-first-use",
+        "FLOW-R28-edit"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question"
+      ]
+    },
+    {
+      "requirement_id": "R30-02",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-R29-numeric"
+      ],
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-invalid"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "PD-R30-freeze",
+      "question": "用户查看 R30 具体候选后，是否批准替换当前正式原型并建立新基线？",
+      "blocks_design": true,
+      "status": "open"
+    },
+    {
+      "id": "PD-R29-migration",
+      "question": "正式合并时验证 R27 与 R28 已保存资料和草稿迁移。",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T28-first-use",
+      "flow_id": "FLOW-R28-first-use",
+      "state_ids": [
+        "STATE-onboarding-welcome",
+        "STATE-onboarding-question",
+        "STATE-onboarding-complete"
+      ],
+      "steps": [
+        "开始",
+        "服务",
+        "关注",
+        "身份与单项资料",
+        "Let’s chat"
+      ],
+      "expected": "保存后进入 R27 原主页"
+    },
+    {
+      "id": "T28-multiple",
+      "flow_id": "FLOW-R28-multiple-babies",
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-complete"
+      ],
+      "steps": [
+        "默认一位",
+        "追问添加",
+        "分别输入生日"
+      ],
+      "expected": "同生日仍保存为不同 ID"
+    },
+    {
+      "id": "T28-edit",
+      "flow_id": "FLOW-R28-edit",
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-complete"
+      ],
+      "steps": [
+        "修改上游身份或阶段",
+        "重新核对后续卡"
+      ],
+      "expected": "保留相关宝宝资料并重走受影响分支"
+    },
+    {
+      "id": "T28-skip",
+      "flow_id": "FLOW-R28-skip",
+      "state_ids": [
+        "STATE-onboarding-paused"
+      ],
+      "steps": [
+        "部分录入",
+        "Skip",
+        "重新进入"
+      ],
+      "expected": "草稿恢复且已保存资料不受影响"
+    },
+    {
+      "id": "T28-save-retry",
+      "flow_id": "FLOW-R28-save-retry",
+      "state_ids": [
+        "STATE-onboarding-save-error",
+        "STATE-onboarding-complete"
+      ],
+      "steps": [
+        "制造存储失败",
+        "检查错误",
+        "重试"
+      ],
+      "expected": "失败时留在完成卡，无假成功"
+    },
+    {
+      "id": "T29-role",
+      "flow_id": "FLOW-R29-role",
+      "state_ids": [
+        "STATE-onboarding-question"
+      ],
+      "steps": [
+        "妈妈与其他成员初态",
+        "展开其他成员",
+        "选择爸爸",
+        "编辑返回"
+      ],
+      "expected": "初态只有两项；未选细分前不推进"
+    },
+    {
+      "id": "T29-range",
+      "flow_id": "FLOW-R29-numeric",
+      "state_ids": [
+        "STATE-onboarding-question",
+        "STATE-onboarding-invalid"
+      ],
+      "steps": [
+        "检查初始留空",
+        "滑动到0次分娩",
+        "键盘方向键调整",
+        "继续"
+      ],
+      "expected": "0与暂不填写分开保存，范围内可继续"
+    }
+  ]
+}

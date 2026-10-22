@@ -6,3 +6,6 @@
 
 # Preserve the exact bytes of the frozen prototype and its SHA-256 evidence.
 prototype/current/** -text -eol
+
+# Keep the R30 candidate's published bytes identical to its review receipt.
+prototype/onboarding-chat-r30-candidate/** -text -eol

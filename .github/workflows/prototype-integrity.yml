@@ -24,3 +24,9 @@ jobs:
         run: git diff --exit-code refs/tags/baseline/B-MOMCOZY-20261022-R27 -- prototype/current docs/baseline-lock.json
       - name: Verify pending Onboarding receipt
         run: node scripts/verify-candidate-receipt.cjs
+      - name: Verify R30 Onboarding candidate and evidence
+        run: node scripts/verify-onboarding-r30.cjs
+      - name: Check R30 Onboarding states and package
+        run: |
+          node prototype/onboarding-chat-r30-candidate/tests/onboarding-flow.cjs
+          node prototype/onboarding-chat-r30-candidate/tests/package-check.cjs

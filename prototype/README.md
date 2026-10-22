@@ -1,8 +1,10 @@
 # Momcozy 交互原型工作入口
 
-当前迭代目录：`current/`。本轮将 CS-0.5「莓色留白」风格板应用于 HOME-1.0 第 14 轮高保真原型，保持原有页面、导航和业务交互架构；版本状态为**候选，未冻结**。上一版花瓣玻璃保存在 `versions/bloom-glass-01/`。
+当前已确认基线目录为 `current/`（B-MOMCOZY-20261022-R27）。它沿用 CS-0.5「莓色留白」风格，保留现有页面、导航和业务交互架构。上一版花瓣玻璃保存在 `versions/bloom-glass-01/`。
 
 新的 AI 优先 UI/交互架构候选位于 [`branches/AI-1.0-candidate/`](branches/AI-1.0-candidate/README.md)。它独立于 `current/`，默认进入单条持续的 AI 对话，Today 改为建议与概况展示页；详情及测试边界见该分支 README。
+
+最新对话式首次录入候选位于 [`onboarding-chat-r30-candidate/`](onboarding-chat-r30-candidate/CANDIDATE.md)。它将推荐服务和担忧点前置，逐卡收集照护者与宝宝资料；卡片按对话顺序自然流动，数值卡采用简洁的横向数字条。完整改动、验证和限制见 [R30 更新说明](../docs/updates/2026-10-22-onboarding-r30.md)。该候选未替换 `current/`。
 
 ## 打开与交付
 
