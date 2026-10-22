@@ -22,13 +22,13 @@
   "files": [
     {
       "path": "assets/app.js",
-      "bytes": 30396,
-      "sha256": "61fee3c733d7b92186816b4ba2c64cf1e04083dea42339ced3fa776e86bfe068"
+      "bytes": 26300,
+      "sha256": "cfb40a27e9e148b9f072cead706a626ba74a8a6b339ce5600a5a4e4690407c33"
     },
     {
       "path": "assets/icons.js",
-      "bytes": 5875,
-      "sha256": "8af1a9a2aeb5beb3d2072662cc6932923a709a4117c695a3a107fd80391d5a34"
+      "bytes": 1779,
+      "sha256": "41428a327aa2eb146ae5a9d766048cd967915bf1a77b3f5396651790a7eeca9e"
     },
     {
       "path": "assets/styles.css",
@@ -77,13 +77,13 @@
     },
     {
       "path": "CHANGE_REQUEST.md",
-      "bytes": 7646,
-      "sha256": "2c14359dde281fc0f1f1b35821928f433e92fbbbcd0573bf2e7956f0beef7fb8"
+      "bytes": 3550,
+      "sha256": "b56974218a8a92c5bc17ce39b0743821f0cdddf773b19650d54af642bfa9e6b8"
     },
     {
       "path": "check-candidate.py",
-      "bytes": 5582,
-      "sha256": "c05eb5d2e722c1894cf70b94b71030ebcab2156285942afbf52424dbab4c88bb"
+      "bytes": 1486,
+      "sha256": "fb12350bc5aad1742c1501618d474654925bf09b30e6138fa2ef15bc852c33f3"
     },
     {
       "path": "design.json",
@@ -107,8 +107,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6013,
-      "sha256": "14d612d05be2e060235e1a7f7090ba4a2486430d4e6828463f5fa163c82c0cf8"
+      "bytes": 1917,
+      "sha256": "4f79469049e93a2d58abdf95c416dcfb9d5d4aed1537132ff87877fc43ba14b9"
     },
     {
       "path": "reviews/browser-evidence.json",
@@ -222,8 +222,8 @@
     },
     {
       "path": "reviews/SELF_REVIEW.md",
-      "bytes": 8921,
-      "sha256": "6a35beb835ff62ea3c955866c10264a9c7057b1be27524e80b15e9318492c605"
+      "bytes": 4825,
+      "sha256": "6d165f18b14a545d4b4ab2ad086b62b4e9a15fca8fe08e34c5bd46b2436264ba"
     },
     {
       "path": "source/requirements.json",
@@ -232,8 +232,8 @@
     },
     {
       "path": "STYLE_SPEC.md",
-      "bytes": 6696,
-      "sha256": "400ead6c9b2ebb5449f44e41aea8d6b2e5d5583fda0705a249d41b29db247bec"
+      "bytes": 2600,
+      "sha256": "048a8955e22511db16e221eae2c4be75093b3235651985d702b19072942942ec"
     },
     {
       "path": "tokenize-css.cjs",
