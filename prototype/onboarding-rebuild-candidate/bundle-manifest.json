@@ -1,0 +1,10 @@
+{
+  "status": "candidate-not-frozen",
+  "files": {
+    "index.html": "a9cd415a88f1d951cbf58d7cbf3302f62ab128a36549488716d979fa09ad6faf",
+    "assets/styles.css": "2a2849fd4220b9c1b4ab96c7c4f6b2dcbf846360a08e1bcb70ec8868aae04239",
+    "assets/app.js": "cfb40a27e9e148b9f072cead706a626ba74a8a6b339ce5600a5a4e4690407c33",
+    "assets/icons.js": "41428a327aa2eb146ae5a9d766048cd967915bf1a77b3f5396651790a7eeca9e",
+    "README.txt": "f8ca33c4da487d12406ddfaca6064c97ab82b67d91db58a8fb134f19f300efd7"
+  }
+}

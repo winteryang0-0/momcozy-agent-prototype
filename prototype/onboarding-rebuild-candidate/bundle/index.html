@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>基础照护资料 · Momcozy</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/icons.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell" id="app">
+    <aside class="intro-panel" aria-label="录入进度">
+      <div class="brand-row">
+        <span class="brand" aria-label="Momcozy">momcozy<span class="brand-dot">.</span></span>
+      </div>
+
+      <div class="intro-message">
+        <span class="chapter-label">A GENTLE START</span>
+        <p>照护有很多种样子。<br>先从你熟悉的开始。</p>
+        <span class="intro-caption">只需填写你愿意分享的内容，之后仍可调整。</span>
+      </div>
+
+      <div class="petal petal-one" aria-hidden="true"></div>
+      <div class="petal petal-two" aria-hidden="true"></div>
+      <div class="petal petal-three" aria-hidden="true"></div>
+
+      <nav class="progress" aria-label="四步资料录入进度">
+        <ol>
+          <li data-progress="0"><span class="progress-index">01</span><span>照护身份</span></li>
+          <li data-progress="1"><span class="progress-index">02</span><span>基础资料</span></li>
+          <li data-progress="2"><span class="progress-index">03</span><span>关注点</span></li>
+          <li data-progress="3"><span class="progress-index">04</span><span>功能推荐</span></li>
+        </ol>
+      </nav>
+      <p class="intro-foot">MOMCOZY · CARE BEGINS HERE</p>
+    </aside>
+
+    <div class="work-panel">
+      <main class="stage-area" id="stage-area">
+        <section class="step-panel" id="step-identity" data-page-id="PAGE-identity" data-state-id="STATE-identity" aria-labelledby="title-identity" hidden>
+          <div class="storage-alert" data-storage-alert data-state-id="STATE-storage-error-identity" role="status" hidden>
+            <span aria-hidden="true">!</span><span data-storage-message>浏览器暂时无法保存草稿。内容仍在当前页面，关闭前请重试。</span>
+            <button type="button" data-retry-save data-control-id="CTRL-retry-save-identity" data-component-id="action-button">重试保存</button>
+          </div>
+          <div class="step-content">
+          <div class="step-heading-row"><div class="step-kicker"><span>01 / 04</span><span>照护身份</span></div><button class="later-button" type="button" data-step-later data-control-id="CTRL-later-identity" data-component-id="action-button">稍后设置 <span aria-hidden="true">↗</span></button></div>
+          <h1 id="title-identity" tabindex="-1">先认识你的<br><em>照护角色</em></h1>
+          <p class="step-lead">选择与你最接近的身份，后续内容会依此呈现。</p>
+          <div class="section-heading"><h2>你是宝宝的</h2><span class="required-tag">必选</span></div>
+          <div class="role-grid" id="role-options" role="group" aria-label="你是宝宝的">
+            <button type="button" class="role-card" data-role="妈妈" data-control-id="CTRL-role-mother" data-component-id="select-card" aria-pressed="false"><span class="role-glyph" data-icon="mom" aria-hidden="true">妈</span><strong>妈妈</strong><span class="selection-ring" aria-hidden="true"></span></button>
+            <button type="button" class="role-card" data-role="爸爸" data-control-id="CTRL-role-father" data-component-id="select-card" aria-pressed="false"><span class="role-glyph" data-icon="dad" aria-hidden="true">爸</span><strong>爸爸</strong><span class="selection-ring" aria-hidden="true"></span></button>
+            <button type="button" class="role-card" data-role="爷爷/奶奶" data-control-id="CTRL-role-grandparents" data-component-id="select-card" aria-pressed="false"><span class="role-glyph" data-icon="grandparents" aria-hidden="true">祖</span><strong>爷爷/奶奶</strong><span class="selection-ring" aria-hidden="true"></span></button>
+            <button type="button" class="role-card" data-role="外公/外婆" data-control-id="CTRL-role-maternal-grandparents" data-component-id="select-card" aria-pressed="false"><span class="role-glyph" data-icon="grandparents" aria-hidden="true">外</span><strong>外公/外婆</strong><span class="selection-ring" aria-hidden="true"></span></button>
+            <button type="button" class="role-card role-card-wide" data-role="其他成员" data-control-id="CTRL-role-other" data-component-id="select-card" aria-pressed="false"><span class="role-glyph" data-icon="family" aria-hidden="true">家</span><strong>其他成员</strong><span class="selection-ring" aria-hidden="true"></span></button>
+          </div>
+          <section class="stage-choice" id="stage-choice" aria-labelledby="stage-choice-title" hidden>
+            <div class="section-heading"><h2 id="stage-choice-title">妈妈当前阶段</h2><span class="optional-tag">选填</span></div>
+            <div class="stage-grid" role="group" aria-label="妈妈当前阶段">
+              <button type="button" data-stage="孕前" data-control-id="CTRL-stage-before" data-component-id="action-button" aria-pressed="false">孕前</button>
+              <button type="button" data-stage="孕期" data-control-id="CTRL-stage-pregnant" data-component-id="action-button" aria-pressed="false">孕期</button>
+              <button type="button" data-stage="产后" data-control-id="CTRL-stage-postpartum" data-component-id="action-button" aria-pressed="false">产后</button>
+            </div>
+            <button class="clear-stage" type="button" id="clear-stage" data-control-id="CTRL-stage-clear" data-component-id="action-button">暂不填写阶段</button>
+          </section>
+          </div>
+          <footer class="flow-footer">
+            <p class="form-error" id="error-identity" data-step-error data-state-id="STATE-identity-error" role="alert" hidden></p>
+            <div class="footer-actions">
+              <button type="button" class="primary-button" data-step-next data-control-id="CTRL-next-identity" data-component-id="action-button">继续 <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="privacy-note">资料仅保存在当前浏览器</p>
+          </footer>
+        </section>
+
+        <section class="step-panel" id="step-details" data-page-id="PAGE-details" data-state-id="STATE-details" aria-labelledby="title-details" hidden>
+          <div class="storage-alert" data-storage-alert data-state-id="STATE-storage-error-details" role="status" hidden>
+            <span aria-hidden="true">!</span><span data-storage-message>浏览器暂时无法保存草稿。内容仍在当前页面，关闭前请重试。</span>
+            <button type="button" data-retry-save data-control-id="CTRL-retry-save-details" data-component-id="action-button">重试保存</button>
+          </div>
+          <div class="step-content">
+          <div class="step-heading-row"><div class="step-kicker"><span>02 / 04</span><span>基础资料</span></div><button class="later-button" type="button" data-step-later data-control-id="CTRL-later-details" data-component-id="action-button">稍后设置 <span aria-hidden="true">↗</span></button></div>
+          <h1 id="title-details" tabindex="-1">先写下<br><em>重要的背景</em></h1>
+          <p class="step-lead">以下信息均可留空。现在不确定，以后再补充。</p>
+
+          <section class="form-section" aria-labelledby="mother-title">
+            <div class="form-section-head">
+              <span class="section-mark mother-mark" data-icon="mom" aria-hidden="true">M</span>
+              <div><h2 id="mother-title">妈妈信息</h2><p>用少量背景，让照护建议更贴近你。</p></div>
+            </div>
+            <div class="field-grid">
+              <label class="field" for="age"><span>年龄 <small>选填</small></span><select id="age" data-control-id="CTRL-age" data-component-id="form-field" aria-describedby="age-hint"></select><small id="age-hint">18–50 岁</small></label>
+              <label class="field" for="parity"><span>已分娩次数 <small>选填</small></span><select id="parity" data-control-id="CTRL-parity" data-component-id="form-field" aria-describedby="parity-hint"></select><small id="parity-hint">0–6 次；双胞胎算 1 次</small></label>
+            </div>
+          </section>
+
+          <div class="quiet-note" id="preconception-note" hidden><span aria-hidden="true">♡</span><p>孕前阶段暂不需要填写宝宝的出生资料。</p></div>
+
+          <section class="form-section" id="baby-section" aria-labelledby="baby-title">
+            <div class="form-section-head">
+              <span class="section-mark baby-mark" data-icon="baby" aria-hidden="true">B</span>
+              <div><h2 id="baby-title">宝宝信息</h2><p id="baby-description">按宝宝分别记录，稍后也能修改。</p></div>
+            </div>
+            <div class="field-grid pregnancy-fields" id="pregnancy-fields" hidden>
+              <label class="field" for="fetus-count"><span>胎儿数量 <small>选填</small></span><select id="fetus-count" data-control-id="CTRL-fetus-count" data-component-id="form-field" aria-describedby="fetus-count-hint"></select><small id="fetus-count-hint">1–6 个</small></label>
+              <label class="field" for="pregnancy-weeks"><span>当前孕周 <small>选填</small></span><select id="pregnancy-weeks" data-control-id="CTRL-pregnancy-weeks" data-component-id="form-field" aria-describedby="pregnancy-weeks-hint"></select><small id="pregnancy-weeks-hint">0–45 周</small></label>
+            </div>
+            <div class="born-fields" id="born-fields">
+              <label class="field count-field" for="baby-count"><span>宝宝数量 <small>选填</small></span><select id="baby-count" data-control-id="CTRL-baby-count" data-component-id="form-field" aria-describedby="baby-count-hint"></select><small id="baby-count-hint">1–6 个；不确定时可留空</small></label>
+              <div class="baby-tabs-wrap" id="baby-tabs-wrap" hidden>
+                <span class="tabs-label">正在填写</span>
+                <div class="baby-tabs" id="baby-tabs" role="group" aria-label="选择宝宝">
+                  <button type="button" data-baby-index="0" data-control-id="CTRL-baby-tab-1" data-component-id="action-button" aria-pressed="true">宝宝 1</button>
+                  <button type="button" data-baby-index="1" data-control-id="CTRL-baby-tab-2" data-component-id="action-button" aria-pressed="false" hidden>宝宝 2</button>
+                  <button type="button" data-baby-index="2" data-control-id="CTRL-baby-tab-3" data-component-id="action-button" aria-pressed="false" hidden>宝宝 3</button>
+                  <button type="button" data-baby-index="3" data-control-id="CTRL-baby-tab-4" data-component-id="action-button" aria-pressed="false" hidden>宝宝 4</button>
+                  <button type="button" data-baby-index="4" data-control-id="CTRL-baby-tab-5" data-component-id="action-button" aria-pressed="false" hidden>宝宝 5</button>
+                  <button type="button" data-baby-index="5" data-control-id="CTRL-baby-tab-6" data-component-id="action-button" aria-pressed="false" hidden>宝宝 6</button>
+                </div>
+              </div>
+              <div class="baby-fields">
+                <div class="baby-fields-heading"><h3 id="active-baby-title">宝宝 1</h3><span>可以稍后补充</span></div>
+                <div class="field-grid">
+                  <label class="field" for="birth-weeks"><span>出生孕周 <small>选填</small></span><select id="birth-weeks" data-control-id="CTRL-birth-weeks" data-component-id="form-field" aria-describedby="birth-weeks-hint"></select><small id="birth-weeks-hint">37–50 周</small></label>
+                  <label class="field" for="birth-date"><span>出生日期 <small>选填</small></span><input id="birth-date" type="date" data-control-id="CTRL-birth-date" data-component-id="form-field" aria-describedby="birth-date-hint"><small id="birth-date-hint">不能晚于今天</small></label>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
+          <footer class="flow-footer">
+            <p class="form-error" id="error-details" data-step-error data-state-id="STATE-validation-error" role="alert" hidden></p>
+            <div class="footer-actions">
+              <button type="button" class="back-button" data-step-back data-control-id="CTRL-back-details" data-component-id="action-button">← <span>上一步</span></button>
+              <button type="button" class="primary-button" data-step-next data-control-id="CTRL-next-details" data-component-id="action-button">继续 <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="privacy-note">资料仅保存在当前浏览器</p>
+          </footer>
+        </section>
+
+        <section class="step-panel" id="step-concerns" data-page-id="PAGE-concerns" data-state-id="STATE-concerns" aria-labelledby="title-concerns" hidden>
+          <div class="storage-alert" data-storage-alert data-state-id="STATE-storage-error-concerns" role="status" hidden>
+            <span aria-hidden="true">!</span><span data-storage-message>浏览器暂时无法保存草稿。内容仍在当前页面，关闭前请重试。</span>
+            <button type="button" data-retry-save data-control-id="CTRL-retry-save-concerns" data-component-id="select-card">重试保存</button>
+          </div>
+          <div class="step-content">
+          <div class="step-heading-row"><div class="step-kicker"><span>03 / 04</span><span>关注点</span></div><button class="later-button" type="button" data-step-later data-control-id="CTRL-later-concerns" data-component-id="select-card">稍后设置 <span aria-hidden="true">↗</span></button></div>
+          <h1 id="title-concerns" tabindex="-1">此刻最在意的，<br><em>是什么？</em></h1>
+          <p class="step-lead">可多选，也可以先不选。你的选择只用于整理推荐顺序。</p>
+          <div class="concern-count" id="concern-count" aria-live="polite">尚未选择</div>
+          <div class="concern-group">
+            <div class="section-heading"><h2>关于宝宝</h2><span class="optional-tag">按需选择</span></div>
+            <div class="concern-grid">
+              <button type="button" data-concern="奶量够不够" data-control-id="CTRL-concern-milk" data-component-id="select-card" data-task="feed" aria-pressed="false"><span class="concern-glyph" data-icon="bottle" aria-hidden="true">○</span><strong>奶量够不够</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="宝宝吃饱了吗" data-control-id="CTRL-concern-full" data-component-id="select-card" data-task="feed" aria-pressed="false"><span class="concern-glyph" data-icon="baby-satisfied" aria-hidden="true">◡</span><strong>宝宝吃饱了吗</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="宝宝为什么哭" data-control-id="CTRL-concern-cry" data-component-id="select-card" data-task="crying" aria-pressed="false"><span class="concern-glyph" data-icon="waveform" aria-hidden="true">〰</span><strong>宝宝为什么哭</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="宝宝便便情况" data-control-id="CTRL-concern-diaper" data-component-id="select-card" data-task="diaper" aria-pressed="false"><span class="concern-glyph" data-icon="diaper" aria-hidden="true">◇</span><strong>宝宝便便情况</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="宝宝睡得好吗" data-control-id="CTRL-concern-sleep" data-component-id="select-card" data-task="sleep" aria-pressed="false"><span class="concern-glyph" data-icon="moon" aria-hidden="true">☾</span><strong>宝宝睡得好吗</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="宝宝生长发育" data-control-id="CTRL-concern-growth" data-component-id="select-card" data-task="growth" aria-pressed="false"><span class="concern-glyph" data-icon="growth" aria-hidden="true">↗</span><strong>宝宝生长发育</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+            </div>
+          </div>
+          <div class="concern-group">
+            <div class="section-heading"><h2>关于妈妈</h2><span class="optional-tag">按需选择</span></div>
+            <div class="concern-grid">
+              <button type="button" data-concern="我的身体恢复" data-control-id="CTRL-concern-recovery" data-component-id="select-card" data-task="recovery" aria-pressed="false"><span class="concern-glyph" data-icon="recovery" aria-hidden="true">♡</span><strong>我的身体恢复</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="情绪起伏与压力" data-control-id="CTRL-concern-emotion" data-component-id="select-card" data-task="emotion" aria-pressed="false"><span class="concern-glyph" data-icon="emotion" aria-hidden="true">⌁</span><strong>情绪起伏与压力</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+              <button type="button" data-concern="睡不够疲惫" data-control-id="CTRL-concern-tired" data-component-id="select-card" data-task="rest" aria-pressed="false"><span class="concern-glyph" data-icon="rest" aria-hidden="true">☼</span><strong>睡不够疲惫</strong><span class="concern-check" aria-hidden="true">✓</span></button>
+            </div>
+          </div>
+          </div>
+          <footer class="flow-footer">
+            <p class="form-error" id="error-concerns" data-step-error role="alert" hidden></p>
+            <div class="footer-actions">
+              <button type="button" class="back-button" data-step-back data-control-id="CTRL-back-concerns" data-component-id="select-card">← <span>上一步</span></button>
+              <button type="button" class="primary-button" data-step-next data-control-id="CTRL-next-concerns" data-component-id="select-card">查看推荐 <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="privacy-note">资料仅保存在当前浏览器</p>
+          </footer>
+        </section>
+
+        <section class="step-panel" id="step-recommendations" data-page-id="PAGE-recommendations" data-state-id="STATE-recommendations" aria-labelledby="title-recommendations" hidden>
+          <div class="storage-alert" data-storage-alert data-state-id="STATE-storage-error-recommendations" role="status" hidden>
+            <span aria-hidden="true">!</span><span data-storage-message>浏览器暂时无法保存草稿。内容仍在当前页面，关闭前请重试。</span>
+            <button type="button" data-retry-save data-control-id="CTRL-retry-save-recommendations" data-component-id="action-button">重试保存</button>
+          </div>
+          <div class="step-content">
+          <div class="step-heading-row"><div class="step-kicker"><span>04 / 04</span><span>功能推荐</span></div><button class="later-button" type="button" data-step-later data-control-id="CTRL-later-recommendations" data-component-id="action-button">稍后设置 <span aria-hidden="true">↗</span></button></div>
+          <h1 id="title-recommendations" tabindex="-1">为你整理的<br><em>照护工具</em></h1>
+          <p class="step-lead" id="recommendation-lead">可以从这些工具开始，之后随时改变关注点。</p>
+          <div class="review-line" id="review-line"></div>
+          <div class="section-heading"><h2>推荐给你</h2><span class="optional-tag">按关注点排序</span></div>
+          <div class="recommendation-list" id="recommendation-list"></div>
+          <p class="recommendation-note" id="recommendation-note" hidden></p>
+          </div>
+          <footer class="flow-footer">
+            <p class="form-error" id="error-recommendations" data-step-error data-state-id="STATE-finish-error" role="alert" hidden></p>
+            <div class="footer-actions">
+              <button type="button" class="back-button" data-step-back data-control-id="CTRL-back-recommendations" data-component-id="action-button">← <span>上一步</span></button>
+              <button type="button" class="primary-button" data-step-next data-control-id="CTRL-next-recommendations" data-component-id="action-button">完成录入 <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="privacy-note">资料仅保存在当前浏览器</p>
+          </footer>
+        </section>
+
+        <section class="result-panel" id="view-paused" data-page-id="PAGE-paused" data-state-id="STATE-paused" aria-labelledby="title-paused" hidden>
+          <div class="result-symbol" aria-hidden="true">✳</div>
+          <p class="step-kicker">PAUSE · 稍后继续</p>
+          <h1 id="title-paused" tabindex="-1">先放在这里，<br><em>随时回来。</em></h1>
+          <p id="paused-message">已保存你刚才填写的内容，下次可以从同一步继续。</p>
+          <div class="result-actions">
+            <button type="button" class="primary-button" id="resume" data-control-id="CTRL-resume" data-component-id="action-button">继续填写 <span aria-hidden="true">→</span></button>
+            <button type="button" class="text-button" id="restart-from-first" data-control-id="CTRL-first-step" data-component-id="action-button">从第一步查看</button>
+          </div>
+        </section>
+
+        <section class="result-panel" id="view-complete" data-page-id="PAGE-complete" data-state-id="STATE-complete" aria-labelledby="title-complete" hidden>
+          <div class="result-symbol complete-symbol" aria-hidden="true">✓</div>
+          <p class="step-kicker">READY · 资料已保存</p>
+          <h1 id="title-complete" tabindex="-1">从现在开始，<br><em>更懂你的照护。</em></h1>
+          <p>基础资料已保存在这个浏览器。你可以随时返回修改。</p>
+          <dl class="complete-summary" id="complete-summary"></dl>
+          <div class="result-actions">
+            <button type="button" class="primary-button" id="edit-profile" data-control-id="CTRL-edit-profile" data-component-id="action-button">修改资料 <span aria-hidden="true">→</span></button>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>

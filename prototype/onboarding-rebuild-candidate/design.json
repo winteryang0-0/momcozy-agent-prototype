@@ -1,0 +1,1089 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "MOMCOZY-ONBOARDING-REBUILD-01",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source/requirements.json",
+    "sha256": "8c9b4f4f8e5a24f09cc84700c90e2d3b56e6a2b6c5fab7d4e2cb592bd07a23e8",
+    "requirements": [
+      "OB-01",
+      "OB-02",
+      "OB-03",
+      "OB-04",
+      "OB-05",
+      "OB-06",
+      "OB-07"
+    ]
+  },
+  "framework": {
+    "revision": "ONBOARDING-REBUILD-CANDIDATE-01",
+    "pages": [
+      {
+        "id": "PAGE-identity",
+        "route": "#/identity",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "storage-feedback",
+          "heading",
+          "content",
+          "actions"
+        ]
+      },
+      {
+        "id": "PAGE-details",
+        "route": "#/details",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "storage-feedback",
+          "heading",
+          "content",
+          "actions"
+        ]
+      },
+      {
+        "id": "PAGE-concerns",
+        "route": "#/concerns",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "storage-feedback",
+          "heading",
+          "content",
+          "actions"
+        ]
+      },
+      {
+        "id": "PAGE-recommendations",
+        "route": "#/recommendations",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "storage-feedback",
+          "heading",
+          "content",
+          "actions"
+        ]
+      },
+      {
+        "id": "PAGE-paused",
+        "route": "#/paused",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "result",
+          "actions"
+        ]
+      },
+      {
+        "id": "PAGE-complete",
+        "route": "#/complete",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "result",
+          "actions"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "CTRL-retry-save-identity",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "retry save identity"
+      },
+      {
+        "id": "CTRL-later-identity",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "later identity"
+      },
+      {
+        "id": "CTRL-role-mother",
+        "page_id": "PAGE-identity",
+        "component_id": "select-card",
+        "role": "role mother"
+      },
+      {
+        "id": "CTRL-role-father",
+        "page_id": "PAGE-identity",
+        "component_id": "select-card",
+        "role": "role father"
+      },
+      {
+        "id": "CTRL-role-grandparents",
+        "page_id": "PAGE-identity",
+        "component_id": "select-card",
+        "role": "role grandparents"
+      },
+      {
+        "id": "CTRL-role-maternal-grandparents",
+        "page_id": "PAGE-identity",
+        "component_id": "select-card",
+        "role": "role maternal grandparents"
+      },
+      {
+        "id": "CTRL-role-other",
+        "page_id": "PAGE-identity",
+        "component_id": "select-card",
+        "role": "role other"
+      },
+      {
+        "id": "CTRL-stage-before",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "stage before"
+      },
+      {
+        "id": "CTRL-stage-pregnant",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "stage pregnant"
+      },
+      {
+        "id": "CTRL-stage-postpartum",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "stage postpartum"
+      },
+      {
+        "id": "CTRL-stage-clear",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "stage clear"
+      },
+      {
+        "id": "CTRL-next-identity",
+        "page_id": "PAGE-identity",
+        "component_id": "action-button",
+        "role": "next identity"
+      },
+      {
+        "id": "CTRL-retry-save-details",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "retry save details"
+      },
+      {
+        "id": "CTRL-later-details",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "later details"
+      },
+      {
+        "id": "CTRL-age",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "age"
+      },
+      {
+        "id": "CTRL-parity",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "parity"
+      },
+      {
+        "id": "CTRL-fetus-count",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "fetus count"
+      },
+      {
+        "id": "CTRL-pregnancy-weeks",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "pregnancy weeks"
+      },
+      {
+        "id": "CTRL-baby-count",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "baby count"
+      },
+      {
+        "id": "CTRL-baby-tab-1",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 1"
+      },
+      {
+        "id": "CTRL-baby-tab-2",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 2"
+      },
+      {
+        "id": "CTRL-baby-tab-3",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 3"
+      },
+      {
+        "id": "CTRL-baby-tab-4",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 4"
+      },
+      {
+        "id": "CTRL-baby-tab-5",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 5"
+      },
+      {
+        "id": "CTRL-baby-tab-6",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "baby tab 6"
+      },
+      {
+        "id": "CTRL-birth-weeks",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "birth weeks"
+      },
+      {
+        "id": "CTRL-birth-date",
+        "page_id": "PAGE-details",
+        "component_id": "form-field",
+        "role": "birth date"
+      },
+      {
+        "id": "CTRL-back-details",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "back details"
+      },
+      {
+        "id": "CTRL-next-details",
+        "page_id": "PAGE-details",
+        "component_id": "action-button",
+        "role": "next details"
+      },
+      {
+        "id": "CTRL-retry-save-concerns",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "retry save concerns"
+      },
+      {
+        "id": "CTRL-later-concerns",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "later concerns"
+      },
+      {
+        "id": "CTRL-concern-milk",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern milk"
+      },
+      {
+        "id": "CTRL-concern-full",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern full"
+      },
+      {
+        "id": "CTRL-concern-cry",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern cry"
+      },
+      {
+        "id": "CTRL-concern-diaper",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern diaper"
+      },
+      {
+        "id": "CTRL-concern-sleep",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern sleep"
+      },
+      {
+        "id": "CTRL-concern-growth",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern growth"
+      },
+      {
+        "id": "CTRL-concern-recovery",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern recovery"
+      },
+      {
+        "id": "CTRL-concern-emotion",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern emotion"
+      },
+      {
+        "id": "CTRL-concern-tired",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "concern tired"
+      },
+      {
+        "id": "CTRL-back-concerns",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "back concerns"
+      },
+      {
+        "id": "CTRL-next-concerns",
+        "page_id": "PAGE-concerns",
+        "component_id": "select-card",
+        "role": "next concerns"
+      },
+      {
+        "id": "CTRL-retry-save-recommendations",
+        "page_id": "PAGE-recommendations",
+        "component_id": "action-button",
+        "role": "retry save recommendations"
+      },
+      {
+        "id": "CTRL-later-recommendations",
+        "page_id": "PAGE-recommendations",
+        "component_id": "action-button",
+        "role": "later recommendations"
+      },
+      {
+        "id": "CTRL-back-recommendations",
+        "page_id": "PAGE-recommendations",
+        "component_id": "action-button",
+        "role": "back recommendations"
+      },
+      {
+        "id": "CTRL-next-recommendations",
+        "page_id": "PAGE-recommendations",
+        "component_id": "action-button",
+        "role": "next recommendations"
+      },
+      {
+        "id": "CTRL-resume",
+        "page_id": "PAGE-paused",
+        "component_id": "action-button",
+        "role": "resume"
+      },
+      {
+        "id": "CTRL-first-step",
+        "page_id": "PAGE-paused",
+        "component_id": "action-button",
+        "role": "first step"
+      },
+      {
+        "id": "CTRL-edit-profile",
+        "page_id": "PAGE-complete",
+        "component_id": "action-button",
+        "role": "edit profile"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACTION-select-role",
+        "control_id": "CTRL-role-mother",
+        "event": "click",
+        "target_page_id": "PAGE-identity",
+        "from_state": "STATE-identity",
+        "to_state": "STATE-identity"
+      },
+      {
+        "id": "ACTION-identity-next",
+        "control_id": "CTRL-next-identity",
+        "event": "click",
+        "target_page_id": "PAGE-details",
+        "from_state": "STATE-identity",
+        "to_state": "STATE-details"
+      },
+      {
+        "id": "ACTION-details-next",
+        "control_id": "CTRL-next-details",
+        "event": "click",
+        "target_page_id": "PAGE-concerns",
+        "from_state": "STATE-details",
+        "to_state": "STATE-concerns"
+      },
+      {
+        "id": "ACTION-concerns-next",
+        "control_id": "CTRL-next-concerns",
+        "event": "click",
+        "target_page_id": "PAGE-recommendations",
+        "from_state": "STATE-concerns",
+        "to_state": "STATE-recommendations"
+      },
+      {
+        "id": "ACTION-finish",
+        "control_id": "CTRL-next-recommendations",
+        "event": "click",
+        "target_page_id": "PAGE-complete",
+        "from_state": "STATE-recommendations",
+        "to_state": "STATE-complete"
+      },
+      {
+        "id": "ACTION-back-details",
+        "control_id": "CTRL-back-details",
+        "event": "click",
+        "target_page_id": "PAGE-identity",
+        "from_state": "STATE-details",
+        "to_state": "STATE-identity"
+      },
+      {
+        "id": "ACTION-back-concerns",
+        "control_id": "CTRL-back-concerns",
+        "event": "click",
+        "target_page_id": "PAGE-details",
+        "from_state": "STATE-concerns",
+        "to_state": "STATE-details"
+      },
+      {
+        "id": "ACTION-back-recommendations",
+        "control_id": "CTRL-back-recommendations",
+        "event": "click",
+        "target_page_id": "PAGE-concerns",
+        "from_state": "STATE-recommendations",
+        "to_state": "STATE-concerns"
+      },
+      {
+        "id": "ACTION-pause-identity",
+        "control_id": "CTRL-later-identity",
+        "event": "click",
+        "target_page_id": "PAGE-paused",
+        "from_state": "STATE-identity",
+        "to_state": "STATE-paused"
+      },
+      {
+        "id": "ACTION-pause-details",
+        "control_id": "CTRL-later-details",
+        "event": "click",
+        "target_page_id": "PAGE-paused",
+        "from_state": "STATE-details",
+        "to_state": "STATE-paused"
+      },
+      {
+        "id": "ACTION-pause-concerns",
+        "control_id": "CTRL-later-concerns",
+        "event": "click",
+        "target_page_id": "PAGE-paused",
+        "from_state": "STATE-concerns",
+        "to_state": "STATE-paused"
+      },
+      {
+        "id": "ACTION-pause-recommendations",
+        "control_id": "CTRL-later-recommendations",
+        "event": "click",
+        "target_page_id": "PAGE-paused",
+        "from_state": "STATE-recommendations",
+        "to_state": "STATE-paused"
+      },
+      {
+        "id": "ACTION-resume",
+        "control_id": "CTRL-resume",
+        "event": "click",
+        "target_page_id": "PAGE-recommendations",
+        "from_state": "STATE-paused",
+        "to_state": "STATE-recommendations"
+      },
+      {
+        "id": "ACTION-review-first",
+        "control_id": "CTRL-first-step",
+        "event": "click",
+        "target_page_id": "PAGE-identity",
+        "from_state": "STATE-paused",
+        "to_state": "STATE-identity"
+      },
+      {
+        "id": "ACTION-edit",
+        "control_id": "CTRL-edit-profile",
+        "event": "click",
+        "target_page_id": "PAGE-identity",
+        "from_state": "STATE-complete",
+        "to_state": "STATE-identity"
+      },
+      {
+        "id": "ACTION-retry-identity",
+        "control_id": "CTRL-retry-save-identity",
+        "event": "click",
+        "target_page_id": "PAGE-identity",
+        "from_state": "STATE-storage-error-identity",
+        "to_state": "STATE-identity"
+      },
+      {
+        "id": "ACTION-retry-details",
+        "control_id": "CTRL-retry-save-details",
+        "event": "click",
+        "target_page_id": "PAGE-details",
+        "from_state": "STATE-storage-error-details",
+        "to_state": "STATE-details"
+      },
+      {
+        "id": "ACTION-retry-concerns",
+        "control_id": "CTRL-retry-save-concerns",
+        "event": "click",
+        "target_page_id": "PAGE-concerns",
+        "from_state": "STATE-storage-error-concerns",
+        "to_state": "STATE-concerns"
+      },
+      {
+        "id": "ACTION-retry-recommendations",
+        "control_id": "CTRL-retry-save-recommendations",
+        "event": "click",
+        "target_page_id": "PAGE-recommendations",
+        "from_state": "STATE-storage-error-recommendations",
+        "to_state": "STATE-recommendations"
+      }
+    ],
+    "states": [
+      {
+        "id": "STATE-identity",
+        "page_id": "PAGE-identity",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-details",
+        "page_id": "PAGE-details",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-concerns",
+        "page_id": "PAGE-concerns",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-recommendations",
+        "page_id": "PAGE-recommendations",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-paused",
+        "page_id": "PAGE-paused",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-complete",
+        "page_id": "PAGE-complete",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-identity-error",
+        "page_id": "PAGE-identity",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-validation-error",
+        "page_id": "PAGE-details",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-finish-error",
+        "page_id": "PAGE-recommendations",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-storage-error-identity",
+        "page_id": "PAGE-identity",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-storage-error-details",
+        "page_id": "PAGE-details",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-storage-error-concerns",
+        "page_id": "PAGE-concerns",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-storage-error-recommendations",
+        "page_id": "PAGE-recommendations",
+        "kind": "error"
+      }
+    ],
+    "flows": [
+      {
+        "id": "FLOW-finish",
+        "requirement_ids": [
+          "OB-01",
+          "OB-02",
+          "OB-03",
+          "OB-04",
+          "OB-05"
+        ],
+        "action_ids": [
+          "ACTION-select-role",
+          "ACTION-identity-next",
+          "ACTION-details-next",
+          "ACTION-concerns-next",
+          "ACTION-finish"
+        ]
+      },
+      {
+        "id": "FLOW-pause-resume",
+        "requirement_ids": [
+          "OB-05"
+        ],
+        "action_ids": [
+          "ACTION-pause-recommendations",
+          "ACTION-resume"
+        ]
+      },
+      {
+        "id": "FLOW-edit",
+        "requirement_ids": [
+          "OB-05"
+        ],
+        "action_ids": [
+          "ACTION-edit",
+          "ACTION-identity-next",
+          "ACTION-details-next",
+          "ACTION-concerns-next",
+          "ACTION-finish"
+        ]
+      },
+      {
+        "id": "FLOW-correct",
+        "requirement_ids": [
+          "OB-05"
+        ],
+        "action_ids": [
+          "ACTION-back-recommendations",
+          "ACTION-back-concerns",
+          "ACTION-back-details"
+        ]
+      },
+      {
+        "id": "FLOW-retry-identity",
+        "requirement_ids": [
+          "OB-07"
+        ],
+        "action_ids": [
+          "ACTION-retry-identity"
+        ]
+      },
+      {
+        "id": "FLOW-retry-details",
+        "requirement_ids": [
+          "OB-07"
+        ],
+        "action_ids": [
+          "ACTION-retry-details"
+        ]
+      },
+      {
+        "id": "FLOW-retry-concerns",
+        "requirement_ids": [
+          "OB-07"
+        ],
+        "action_ids": [
+          "ACTION-retry-concerns"
+        ]
+      },
+      {
+        "id": "FLOW-retry-recommendations",
+        "requirement_ids": [
+          "OB-07"
+        ],
+        "action_ids": [
+          "ACTION-retry-recommendations"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "small-mobile",
+        "width": 360,
+        "height": 640
+      },
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      }
+    ]
+  },
+  "system": {
+    "revision": "BERRY-POISE-ONBOARDING-CANDIDATE-01",
+    "tokens": {
+      "--canvas": "light-dark(#f8f4f2, #201c20)",
+      "--surface": "light-dark(#fffdfa, #302930)",
+      "--surface-soft": "light-dark(#fbf8f6, #29242a)",
+      "--text": "light-dark(#322a31, #f5eeea)",
+      "--secondary": "light-dark(#776970, #cbbdc3)",
+      "--action": "light-dark(#773553, #efb9ce)",
+      "--on-action": "light-dark(#ffffff, #40202a)",
+      "--line": "light-dark(#e9e1e2, #51434e)",
+      "--line-strong": "light-dark(#d9c8d0, #775d6a)",
+      "--neutral": "light-dark(#f5ecef, #40303c)",
+      "--focus": "light-dark(#773553, #efb9ce)",
+      "--error": "light-dark(#a03843, #ffb4a8)",
+      "--shadow": "light-dark(0 18px 50px rgba(83, 47, 65, .07), 0 18px 50px rgba(0, 0, 0, .12))",
+      "--task-feed-bg": "light-dark(#f8e9e8, #523641)",
+      "--task-feed-ink": "light-dark(#773b50, #f5c9d7)",
+      "--task-crying-bg": "light-dark(#e8f1ed, #30483f)",
+      "--task-crying-ink": "light-dark(#426b5d, #bbdecf)",
+      "--task-diaper-bg": "light-dark(#f1eaf2, #443849)",
+      "--task-diaper-ink": "light-dark(#6d5275, #dfc8e6)",
+      "--task-sleep-bg": "light-dark(#e9eef8, #313c51)",
+      "--task-sleep-ink": "light-dark(#495f80, #c8d8f7)",
+      "--task-growth-bg": "light-dark(#ecf0e6, #3c4536)",
+      "--task-growth-ink": "light-dark(#596b43, #d2dfc0)",
+      "--task-recovery-bg": "light-dark(#f7eaed, #523a47)",
+      "--task-recovery-ink": "light-dark(#854764, #f4c5d7)",
+      "--task-emotion-bg": "light-dark(#f3eaf1, #493a49)",
+      "--task-emotion-ink": "light-dark(#765771, #e9cee5)",
+      "--task-rest-bg": "light-dark(#f3eee8, #464038)",
+      "--task-rest-ink": "light-dark(#77614f, #ead4bc)",
+      "--font-family-ui": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "--font-size-30px": "30px",
+      "--color-b36b87": "#b36b87",
+      "--font-size-14px": "14px",
+      "--font-size-17px": "17px",
+      "--font-size-12px": "12px",
+      "--font-size-clamp-29px-3vw-46px": "clamp(29px, 3vw, 46px)",
+      "--radius-65-35-61-39-61-64-36-39": "65% 35% 61% 39% / 61% 64% 36% 39%",
+      "--shadow-inset-16px-12px-40px-rgba-255-255-255-37": "inset 16px 12px 40px rgba(255, 255, 255, .37)",
+      "--radius-50": "50%",
+      "--font-size-11px": "11px",
+      "--font-size-10px": "10px",
+      "--radius-12px": "12px",
+      "--font-size-clamp-34px-3-6vw-55px": "clamp(34px, 3.6vw, 55px)",
+      "--font-size-15px": "15px",
+      "--font-size-19px": "19px",
+      "--radius-20px": "20px",
+      "--radius-14px": "14px",
+      "--font-size-13px": "13px",
+      "--radius-23px": "23px",
+      "--radius-13px": "13px",
+      "--radius-999px": "999px",
+      "--radius-17px": "17px",
+      "--font-size-21px": "21px",
+      "--radius-16px": "16px",
+      "--font-size-18px": "18px",
+      "--radius-15px": "15px",
+      "--radius-19px": "19px",
+      "--font-size-20px": "20px",
+      "--font-size-16px": "16px",
+      "--shadow-0-8px-18px-rgba-101-45-69-15": "0 8px 18px rgba(101, 45, 69, .15)",
+      "--font-size-34px": "34px",
+      "--font-size-26px": "26px",
+      "--font-size-37px": "37px",
+      "--radius-10px": "10px"
+    },
+    "components": [
+      {
+        "id": "select-card",
+        "states": [
+          "default",
+          "selected",
+          "focus"
+        ],
+        "token_refs": [
+          "--surface",
+          "--neutral",
+          "--action",
+          "--focus"
+        ]
+      },
+      {
+        "id": "form-field",
+        "states": [
+          "empty",
+          "filled",
+          "invalid",
+          "focus"
+        ],
+        "token_refs": [
+          "--surface-soft",
+          "--line-strong",
+          "--error",
+          "--focus"
+        ]
+      },
+      {
+        "id": "action-button",
+        "states": [
+          "default",
+          "press",
+          "focus"
+        ],
+        "token_refs": [
+          "--action",
+          "--on-action",
+          "--focus"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "OB-01",
+      "page_ids": [
+        "PAGE-identity",
+        "PAGE-details",
+        "PAGE-concerns",
+        "PAGE-recommendations"
+      ],
+      "flow_ids": [
+        "FLOW-finish"
+      ],
+      "state_ids": [
+        "STATE-identity",
+        "STATE-details",
+        "STATE-concerns",
+        "STATE-recommendations"
+      ]
+    },
+    {
+      "requirement_id": "OB-02",
+      "page_ids": [
+        "PAGE-identity"
+      ],
+      "flow_ids": [
+        "FLOW-finish"
+      ],
+      "state_ids": [
+        "STATE-identity"
+      ]
+    },
+    {
+      "requirement_id": "OB-03",
+      "page_ids": [
+        "PAGE-details"
+      ],
+      "flow_ids": [
+        "FLOW-finish"
+      ],
+      "state_ids": [
+        "STATE-details",
+        "STATE-validation-error"
+      ]
+    },
+    {
+      "requirement_id": "OB-04",
+      "page_ids": [
+        "PAGE-concerns",
+        "PAGE-recommendations"
+      ],
+      "flow_ids": [
+        "FLOW-finish"
+      ],
+      "state_ids": [
+        "STATE-concerns",
+        "STATE-recommendations"
+      ]
+    },
+    {
+      "requirement_id": "OB-05",
+      "page_ids": [
+        "PAGE-identity",
+        "PAGE-details",
+        "PAGE-concerns",
+        "PAGE-recommendations",
+        "PAGE-paused",
+        "PAGE-complete"
+      ],
+      "flow_ids": [
+        "FLOW-finish",
+        "FLOW-pause-resume",
+        "FLOW-edit",
+        "FLOW-correct"
+      ],
+      "state_ids": [
+        "STATE-identity",
+        "STATE-details",
+        "STATE-concerns",
+        "STATE-recommendations",
+        "STATE-paused",
+        "STATE-complete",
+        "STATE-identity-error",
+        "STATE-validation-error",
+        "STATE-finish-error",
+        "STATE-storage-error-identity",
+        "STATE-storage-error-details",
+        "STATE-storage-error-concerns",
+        "STATE-storage-error-recommendations"
+      ]
+    },
+    {
+      "requirement_id": "OB-06",
+      "page_ids": [
+        "PAGE-identity",
+        "PAGE-details",
+        "PAGE-concerns",
+        "PAGE-recommendations",
+        "PAGE-paused",
+        "PAGE-complete"
+      ],
+      "flow_ids": [
+        "FLOW-finish"
+      ],
+      "state_ids": [
+        "STATE-identity",
+        "STATE-details",
+        "STATE-concerns",
+        "STATE-recommendations",
+        "STATE-paused",
+        "STATE-complete",
+        "STATE-identity-error",
+        "STATE-validation-error",
+        "STATE-finish-error",
+        "STATE-storage-error-identity",
+        "STATE-storage-error-details",
+        "STATE-storage-error-concerns",
+        "STATE-storage-error-recommendations"
+      ]
+    },
+    {
+      "requirement_id": "OB-07",
+      "page_ids": [
+        "PAGE-identity",
+        "PAGE-details",
+        "PAGE-concerns",
+        "PAGE-recommendations"
+      ],
+      "flow_ids": [
+        "FLOW-finish",
+        "FLOW-retry-identity",
+        "FLOW-retry-details",
+        "FLOW-retry-concerns",
+        "FLOW-retry-recommendations"
+      ],
+      "state_ids": [
+        "STATE-finish-error",
+        "STATE-storage-error-identity",
+        "STATE-storage-error-details",
+        "STATE-storage-error-concerns",
+        "STATE-storage-error-recommendations"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-01",
+      "question": "是否确认此独立 onboarding 的页面框架、字段控件和莓色留白设计规范？",
+      "blocks_design": true,
+      "status": "open"
+    },
+    {
+      "id": "D-02",
+      "question": "完成后的正式承接页是否保留独立结果页，或未来再接回主原型？",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T-01",
+      "flow_id": "FLOW-finish",
+      "state_ids": [
+        "STATE-identity",
+        "STATE-details",
+        "STATE-concerns",
+        "STATE-recommendations",
+        "STATE-complete"
+      ],
+      "steps": "选身份，填资料与关注，查看排序，完成保存",
+      "expected": "四步连贯且完成页显示持久化资料"
+    },
+    {
+      "id": "T-02",
+      "flow_id": "FLOW-pause-resume",
+      "state_ids": [
+        "STATE-paused"
+      ],
+      "steps": "暂停、刷新、继续",
+      "expected": "返回原步骤及草稿"
+    },
+    {
+      "id": "T-03",
+      "flow_id": "FLOW-edit",
+      "state_ids": [
+        "STATE-identity",
+        "STATE-details"
+      ],
+      "steps": "完成后修改资料",
+      "expected": "保留原值且可重新完成"
+    },
+    {
+      "id": "T-04",
+      "flow_id": "FLOW-finish",
+      "state_ids": [
+        "STATE-validation-error"
+      ],
+      "steps": "注入超范围数值或未来出生日期",
+      "expected": "阻止推进并指出字段"
+    },
+    {
+      "id": "T-05",
+      "flow_id": "FLOW-finish",
+      "state_ids": [
+        "STATE-finish-error",
+        "STATE-storage-error-identity",
+        "STATE-storage-error-details",
+        "STATE-storage-error-concerns",
+        "STATE-storage-error-recommendations"
+      ],
+      "steps": "模拟 localStorage 写入失败，在四步查看提示并尝试完成",
+      "expected": "显示失败，不显示完成"
+    },
+    {
+      "id": "T-06",
+      "flow_id": "FLOW-correct",
+      "state_ids": [
+        "STATE-identity-error"
+      ],
+      "steps": "从推荐页逐步返回身份页；另在全新身份页无选择时点继续",
+      "expected": "正确回到前一步并提示必选身份"
+    },
+    {
+      "id": "T-retry-identity",
+      "flow_id": "FLOW-retry-identity",
+      "state_ids": [
+        "STATE-storage-error-identity"
+      ],
+      "steps": "在identity页模拟存储失败并点击重试",
+      "expected": "存储恢复时重试成功；否则继续显示风险提示"
+    },
+    {
+      "id": "T-retry-details",
+      "flow_id": "FLOW-retry-details",
+      "state_ids": [
+        "STATE-storage-error-details"
+      ],
+      "steps": "在details页模拟存储失败并点击重试",
+      "expected": "存储恢复时重试成功；否则继续显示风险提示"
+    },
+    {
+      "id": "T-retry-concerns",
+      "flow_id": "FLOW-retry-concerns",
+      "state_ids": [
+        "STATE-storage-error-concerns"
+      ],
+      "steps": "在concerns页模拟存储失败并点击重试",
+      "expected": "存储恢复时重试成功；否则继续显示风险提示"
+    },
+    {
+      "id": "T-retry-recommendations",
+      "flow_id": "FLOW-retry-recommendations",
+      "state_ids": [
+        "STATE-storage-error-recommendations"
+      ],
+      "steps": "在recommendations页模拟存储失败并点击重试",
+      "expected": "存储恢复时重试成功；否则继续显示风险提示"
+    }
+  ]
+}

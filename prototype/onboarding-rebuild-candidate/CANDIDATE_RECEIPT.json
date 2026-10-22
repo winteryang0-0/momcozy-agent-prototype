@@ -1,0 +1,244 @@
+{
+  "candidate_id": "MOMCOZY-ONBOARDING-20261022-C01",
+  "status": "draft-awaiting-user-confirmation",
+  "recorded_at_utc": "2026-10-22T05:57:50.4345702Z",
+  "entry": "bundle/index.html",
+  "source_sha256": "8c9b4f4f8e5a24f09cc84700c90e2d3b56e6a2b6c5fab7d4e2cb592bd07a23e8",
+  "framework_sha256": "8e6abc2d5ea0e2cf5b05b1d99b788a507cc9d0f9628f209f3045144b4219b3b8",
+  "system_sha256": "4ab4ed27a9e1388f83fa104681196f1228a5ade22b0925b5618ea567a0bf1200",
+  "scope_sha256": "13ef8fe9543d002993f4466b1a8f9c396bf3a664d5ed9f7827ad3f6d6e12bb26",
+  "requirement_ids": [
+    "OB-01",
+    "OB-02",
+    "OB-03",
+    "OB-04",
+    "OB-05",
+    "OB-06",
+    "OB-07"
+  ],
+  "structural_pass": true,
+  "pending_design_decision": "D-01",
+  "browser_evidence": "reviews/browser-evidence.json",
+  "files": [
+    {
+      "path": "assets/app.js",
+      "bytes": 30396,
+      "sha256": "61fee3c733d7b92186816b4ba2c64cf1e04083dea42339ced3fa776e86bfe068"
+    },
+    {
+      "path": "assets/icons.js",
+      "bytes": 5875,
+      "sha256": "8af1a9a2aeb5beb3d2072662cc6932923a709a4117c695a3a107fd80391d5a34"
+    },
+    {
+      "path": "assets/styles.css",
+      "bytes": 22635,
+      "sha256": "2a2849fd4220b9c1b4ab96c7c4f6b2dcbf846360a08e1bcb70ec8868aae04239"
+    },
+    {
+      "path": "build-candidate-bundle.cjs",
+      "bytes": 1633,
+      "sha256": "0ccebc81e2b34751bae999a1328bbb8ff718528602fca68934d463c108d9b372"
+    },
+    {
+      "path": "build-design.cjs",
+      "bytes": 9192,
+      "sha256": "cff9dcdf513eace48c4dd5f6f2c87becc50d9a6ae62c136d22534ebd80d0f996"
+    },
+    {
+      "path": "bundle-manifest.json",
+      "bytes": 501,
+      "sha256": "19f73b164396cbe3d2831434089f95bb6ea35e5dc327c26b5f7d185e3b566eac"
+    },
+    {
+      "path": "bundle/assets/app.js",
+      "bytes": 26300,
+      "sha256": "cfb40a27e9e148b9f072cead706a626ba74a8a6b339ce5600a5a4e4690407c33"
+    },
+    {
+      "path": "bundle/assets/icons.js",
+      "bytes": 1779,
+      "sha256": "41428a327aa2eb146ae5a9d766048cd967915bf1a77b3f5396651790a7eeca9e"
+    },
+    {
+      "path": "bundle/assets/styles.css",
+      "bytes": 22635,
+      "sha256": "2a2849fd4220b9c1b4ab96c7c4f6b2dcbf846360a08e1bcb70ec8868aae04239"
+    },
+    {
+      "path": "bundle/index.html",
+      "bytes": 22853,
+      "sha256": "a9cd415a88f1d951cbf58d7cbf3302f62ab128a36549488716d979fa09ad6faf"
+    },
+    {
+      "path": "bundle/README.txt",
+      "bytes": 532,
+      "sha256": "f8ca33c4da487d12406ddfaca6064c97ab82b67d91db58a8fb134f19f300efd7"
+    },
+    {
+      "path": "CHANGE_REQUEST.md",
+      "bytes": 7646,
+      "sha256": "2c14359dde281fc0f1f1b35821928f433e92fbbbcd0573bf2e7956f0beef7fb8"
+    },
+    {
+      "path": "check-candidate.py",
+      "bytes": 5582,
+      "sha256": "c05eb5d2e722c1894cf70b94b71030ebcab2156285942afbf52424dbab4c88bb"
+    },
+    {
+      "path": "design.json",
+      "bytes": 29067,
+      "sha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22853,
+      "sha256": "a9cd415a88f1d951cbf58d7cbf3302f62ab128a36549488716d979fa09ad6faf"
+    },
+    {
+      "path": "mark-controls.cjs",
+      "bytes": 869,
+      "sha256": "2444d02f29bce62a8dc8fb5973b377f3a6ba0fa94961fe7acdcb18fe3abc778d"
+    },
+    {
+      "path": "qa-browser.cjs",
+      "bytes": 16696,
+      "sha256": "f066b9f986b70d8edf9fb67a28b7c909705e3b17a15f81655680dbc6bac417b9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6013,
+      "sha256": "14d612d05be2e060235e1a7f7090ba4a2486430d4e6828463f5fa163c82c0cf8"
+    },
+    {
+      "path": "reviews/browser-evidence.json",
+      "bytes": 18498,
+      "sha256": "1d43f0f5d6aa8e462f49f8c9af22812caf4d69e084c4a23a4efcc121a95a360e"
+    },
+    {
+      "path": "reviews/screenshots/01-identity-390.png",
+      "bytes": 44838,
+      "sha256": "af21ba771520a25949918bf5d43be0b84dcb60d6b94814a0e4567ea2fc24c945"
+    },
+    {
+      "path": "reviews/screenshots/01b-identity-required-error-390.png",
+      "bytes": 47893,
+      "sha256": "54d2dd50b6335b76b984be2c7be3bc2f31e5f6f219b13cbce65eba5a77a77a7d"
+    },
+    {
+      "path": "reviews/screenshots/02-details-empty-390.png",
+      "bytes": 57606,
+      "sha256": "05086c5409195b34e87b0cf5685db586c52f43cea9efd2c3eeee2818ba545092"
+    },
+    {
+      "path": "reviews/screenshots/03-details-twins-390.png",
+      "bytes": 62445,
+      "sha256": "0fec9252f70257851fb11a8823b356a246b73744aef383dd8f46747f3154d140"
+    },
+    {
+      "path": "reviews/screenshots/03a-birth-date-error-390.png",
+      "bytes": 41284,
+      "sha256": "2768b76e38a0762d6f3f7e98f250f79f0ecc2c1c970e44117e7e80f3ac8cacd3"
+    },
+    {
+      "path": "reviews/screenshots/03b-details-range-error-390.png",
+      "bytes": 41791,
+      "sha256": "e48b80b696bc463725abf396875831c430ac5bc9bc0986dd528cb4abe6ef04fb"
+    },
+    {
+      "path": "reviews/screenshots/04-concerns-390.png",
+      "bytes": 46010,
+      "sha256": "d949ba814c68e17a1547e1b5965b4f0ff215e1e4f50511690f728f12a9f82694"
+    },
+    {
+      "path": "reviews/screenshots/04b-concerns-bottom-390.png",
+      "bytes": 46010,
+      "sha256": "d949ba814c68e17a1547e1b5965b4f0ff215e1e4f50511690f728f12a9f82694"
+    },
+    {
+      "path": "reviews/screenshots/05-recommendations-390.png",
+      "bytes": 48984,
+      "sha256": "6f208687630695af2158a197d238a20a23a492df8c92d3fca8ba3e9e821bee20"
+    },
+    {
+      "path": "reviews/screenshots/05b-recommendations-bottom-390.png",
+      "bytes": 48232,
+      "sha256": "1ff746ad34739f25dae1d67e378b1990b91ac0a8d64b804b7efe3bc55bc7b2ea"
+    },
+    {
+      "path": "reviews/screenshots/06-paused-390.png",
+      "bytes": 30449,
+      "sha256": "2fddfade7f0636124c06a09d9d4d9b8429325d28972ecf0408f5487062f701f0"
+    },
+    {
+      "path": "reviews/screenshots/07-complete-390.png",
+      "bytes": 36593,
+      "sha256": "c694efd1525f2bcb5ea6f88e37bd8ff59f7556a490cd4c927e53891419b4a4b1"
+    },
+    {
+      "path": "reviews/screenshots/08-identity-360x640.png",
+      "bytes": 37156,
+      "sha256": "02b20df6ae69d2edf941eb6cf22db433c1abfbf7cc3942a78f501dbe859bf77b"
+    },
+    {
+      "path": "reviews/screenshots/09-pregnancy-360x640.png",
+      "bytes": 49402,
+      "sha256": "e9432a6d7ccaf97aae775bef951d3019246d3a027a09d817163e91bc8c5095f7"
+    },
+    {
+      "path": "reviews/screenshots/09b-pregnancy-bottom-360x640.png",
+      "bytes": 32446,
+      "sha256": "1a4f37f8711bd724e5ce2de65379149983139545b255ca9224aea5ccf6e28864"
+    },
+    {
+      "path": "reviews/screenshots/10-identity-desktop-1440.png",
+      "bytes": 322450,
+      "sha256": "922f56673de1f131b3a3849ca22889a2bbe44129773c3c68c854fb6247fd3d9e"
+    },
+    {
+      "path": "reviews/screenshots/11-identity-dark-390.png",
+      "bytes": 45310,
+      "sha256": "ff68e5fabcb989a307e35a75011bee9361acc9b6924da600986ceb6becd1ba2e"
+    },
+    {
+      "path": "reviews/screenshots/12-details-dark-390.png",
+      "bytes": 56802,
+      "sha256": "6bb91b47f3d6ea9217466323e7ca4dc65ef95180207c2279f00f09a44c7ce4cb"
+    },
+    {
+      "path": "reviews/screenshots/13-storage-write-error-390.png",
+      "bytes": 49582,
+      "sha256": "8ef1a837d98f79ceb0fa2c89f10900d5ffca778f720a465547085585a6ecb869"
+    },
+    {
+      "path": "reviews/screenshots/14-finish-error-390.png",
+      "bytes": 54161,
+      "sha256": "94d47466cb6730265d92ee11a3ab9879552470fdb72591c7c8320ce0b0f3647e"
+    },
+    {
+      "path": "reviews/screenshots/15-storage-read-error-390.png",
+      "bytes": 49399,
+      "sha256": "102ee6f6fe2f276869135423e3e52511a5addafb8a4904ecbbc4e08973526ae3"
+    },
+    {
+      "path": "reviews/SELF_REVIEW.md",
+      "bytes": 8921,
+      "sha256": "6a35beb835ff62ea3c955866c10264a9c7057b1be27524e80b15e9318492c605"
+    },
+    {
+      "path": "source/requirements.json",
+      "bytes": 2298,
+      "sha256": "8c9b4f4f8e5a24f09cc84700c90e2d3b56e6a2b6c5fab7d4e2cb592bd07a23e8"
+    },
+    {
+      "path": "STYLE_SPEC.md",
+      "bytes": 6696,
+      "sha256": "400ead6c9b2ebb5449f44e41aea8d6b2e5d5583fda0705a249d41b29db247bec"
+    },
+    {
+      "path": "tokenize-css.cjs",
+      "bytes": 1475,
+      "sha256": "40b0ac2073e4cf7103f3f30834c8491c0480197bffc32a1876e9f6b9db006481"
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "status": "pass",
+  "operator": "Codex / Playwright",
+  "browser": "Google Chrome",
+  "browserVersion": "155.0.8059.86",
+  "protocol": "file://",
+  "testedAt": "2026-10-22T05:50:34.833Z",
+  "source": {
+    "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b",
+    "htmlSha256": "a9cd415a88f1d951cbf58d7cbf3302f62ab128a36549488716d979fa09ad6faf",
+    "cssSha256": "2a2849fd4220b9c1b4ab96c7c4f6b2dcbf846360a08e1bcb70ec8868aae04239",
+    "jsSha256": "cfb40a27e9e148b9f072cead706a626ba74a8a6b339ce5600a5a4e4690407c33"
+  },
+  "checks": [
+    "identity required",
+    "optional defaults; inclusive ranges; multi-baby distinct drafts; refresh recovery",
+    "invalid range rejected; concern multi-select; recommendation ordering",
+    "pause; resume; refresh; completion; edit; old-project key isolated",
+    "pregnancy branch and 0–45 current weeks; short screen scrolling",
+    "preconception branch hides baby fields",
+    "system reduced-motion preference suppresses entrance animation",
+    "storage failure does not show false completion",
+    "storage read failure warns before overwrite"
+  ],
+  "captures": [
+    {
+      "name": "01-identity-390",
+      "note": "Fresh identity page",
+      "path": "reviews/screenshots/01-identity-390.png",
+      "sha256": "af21ba771520a25949918bf5d43be0b84dcb60d6b94814a0e4567ea2fc24c945",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 854
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:17.626Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "01b-identity-required-error-390",
+      "note": "Identity is required",
+      "path": "reviews/screenshots/01b-identity-required-error-390.png",
+      "sha256": "54d2dd50b6335b76b984be2c7be3bc2f31e5f6f219b13cbce65eba5a77a77a7d",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 885
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:18.101Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "02-details-empty-390",
+      "note": "Optional fields initially empty",
+      "path": "reviews/screenshots/02-details-empty-390.png",
+      "sha256": "05086c5409195b34e87b0cf5685db586c52f43cea9efd2c3eeee2818ba545092",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1250
+      },
+      "image": {
+        "width": 390,
+        "height": 1250
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:18.794Z",
+      "fullPage": true,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "03a-birth-date-error-390",
+      "note": "Future birth date blocked",
+      "path": "reviews/screenshots/03a-birth-date-error-390.png",
+      "sha256": "2768b76e38a0762d6f3f7e98f250f79f0ecc2c1c970e44117e7e80f3ac8cacd3",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1375
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:19.366Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "03-details-twins-390",
+      "note": "Second baby and numeric boundaries",
+      "path": "reviews/screenshots/03-details-twins-390.png",
+      "sha256": "0fec9252f70257851fb11a8823b356a246b73744aef383dd8f46747f3154d140",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1345
+      },
+      "image": {
+        "width": 390,
+        "height": 1345
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:20.322Z",
+      "fullPage": true,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "03b-details-range-error-390",
+      "note": "Out of range age blocked",
+      "path": "reviews/screenshots/03b-details-range-error-390.png",
+      "sha256": "e48b80b696bc463725abf396875831c430ac5bc9bc0986dd528cb4abe6ef04fb",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1375
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:20.835Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "04-concerns-390",
+      "note": "Two selected concerns",
+      "path": "reviews/screenshots/04-concerns-390.png",
+      "sha256": "d949ba814c68e17a1547e1b5965b4f0ff215e1e4f50511690f728f12a9f82694",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1114
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/concerns",
+      "capturedAt": "2026-10-22T05:50:21.832Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "04b-concerns-bottom-390",
+      "note": "Concern list bottom and footer",
+      "path": "reviews/screenshots/04b-concerns-bottom-390.png",
+      "sha256": "d949ba814c68e17a1547e1b5965b4f0ff215e1e4f50511690f728f12a9f82694",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1114
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/concerns",
+      "capturedAt": "2026-10-22T05:50:22.312Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "05-recommendations-390",
+      "note": "Concern-driven recommendation order",
+      "path": "reviews/screenshots/05-recommendations-390.png",
+      "sha256": "6f208687630695af2158a197d238a20a23a492df8c92d3fca8ba3e9e821bee20",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1029
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/recommendations",
+      "capturedAt": "2026-10-22T05:50:22.816Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "05b-recommendations-bottom-390",
+      "note": "Recommendation list bottom and footer",
+      "path": "reviews/screenshots/05b-recommendations-bottom-390.png",
+      "sha256": "1ff746ad34739f25dae1d67e378b1990b91ac0a8d64b804b7efe3bc55bc7b2ea",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1029
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/recommendations",
+      "capturedAt": "2026-10-22T05:50:23.297Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "06-paused-390",
+      "note": "Paused flow after refresh",
+      "path": "reviews/screenshots/06-paused-390.png",
+      "sha256": "2fddfade7f0636124c06a09d9d4d9b8429325d28972ecf0408f5487062f701f0",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 844
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/paused",
+      "capturedAt": "2026-10-22T05:50:23.817Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "07-complete-390",
+      "note": "Saved profile summary",
+      "path": "reviews/screenshots/07-complete-390.png",
+      "sha256": "c694efd1525f2bcb5ea6f88e37bd8ff59f7556a490cd4c927e53891419b4a4b1",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 844
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/complete",
+      "capturedAt": "2026-10-22T05:50:24.733Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "08-identity-360x640",
+      "note": "Narrow mobile identity",
+      "path": "reviews/screenshots/08-identity-360x640.png",
+      "sha256": "02b20df6ae69d2edf941eb6cf22db433c1abfbf7cc3942a78f501dbe859bf77b",
+      "pixels": {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "contentWidth": 360,
+        "contentHeight": 809
+      },
+      "image": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:25.768Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "09-pregnancy-360x640",
+      "note": "Pregnancy branch on narrow viewport",
+      "path": "reviews/screenshots/09-pregnancy-360x640.png",
+      "sha256": "e9432a6d7ccaf97aae775bef951d3019246d3a027a09d817163e91bc8c5095f7",
+      "pixels": {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "contentWidth": 360,
+        "contentHeight": 1038
+      },
+      "image": {
+        "width": 360,
+        "height": 1038
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:26.599Z",
+      "fullPage": true,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "09b-pregnancy-bottom-360x640",
+      "note": "Short screen bottom scroll and sticky footer",
+      "path": "reviews/screenshots/09b-pregnancy-bottom-360x640.png",
+      "sha256": "1a4f37f8711bd724e5ce2de65379149983139545b255ca9224aea5ccf6e28864",
+      "pixels": {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "contentWidth": 360,
+        "contentHeight": 1038
+      },
+      "image": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:27.173Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "10-identity-desktop-1440",
+      "note": "Desktop two-column composition",
+      "path": "reviews/screenshots/10-identity-desktop-1440.png",
+      "sha256": "922f56673de1f131b3a3849ca22889a2bbe44129773c3c68c854fb6247fd3d9e",
+      "pixels": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "contentWidth": 1440,
+        "contentHeight": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:28.614Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "11-identity-dark-390",
+      "note": "System dark mode",
+      "path": "reviews/screenshots/11-identity-dark-390.png",
+      "sha256": "ff68e5fabcb989a307e35a75011bee9361acc9b6924da600986ceb6becd1ba2e",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 854
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:29.224Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "12-details-dark-390",
+      "note": "Dark form states",
+      "path": "reviews/screenshots/12-details-dark-390.png",
+      "sha256": "6bb91b47f3d6ea9217466323e7ca4dc65ef95180207c2279f00f09a44c7ce4cb",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1250
+      },
+      "image": {
+        "width": 390,
+        "height": 1250
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/details",
+      "capturedAt": "2026-10-22T05:50:29.797Z",
+      "fullPage": true,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "13-storage-write-error-390",
+      "note": "Draft storage failure warning",
+      "path": "reviews/screenshots/13-storage-write-error-390.png",
+      "sha256": "8ef1a837d98f79ceb0fa2c89f10900d5ffca778f720a465547085585a6ecb869",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 926
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:31.115Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "14-finish-error-390",
+      "note": "Completion blocked by storage failure",
+      "path": "reviews/screenshots/14-finish-error-390.png",
+      "sha256": "94d47466cb6730265d92ee11a3ab9879552470fdb72591c7c8320ce0b0f3647e",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 1086
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/recommendations",
+      "capturedAt": "2026-10-22T05:50:32.858Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    },
+    {
+      "name": "15-storage-read-error-390",
+      "note": "Read failure prevents overwrite",
+      "path": "reviews/screenshots/15-storage-read-error-390.png",
+      "sha256": "102ee6f6fe2f276869135423e3e52511a5addafb8a4904ecbbc4e08973526ae3",
+      "pixels": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "contentWidth": 390,
+        "contentHeight": 926
+      },
+      "image": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/onboarding-rebuild-candidate/bundle/index.html#/identity",
+      "capturedAt": "2026-10-22T05:50:33.535Z",
+      "fullPage": false,
+      "browserVersion": "155.0.8059.86",
+      "designSha256": "7abd14c9496585212815986a036545d2ed931fb6358792210ee21161e628ad8b"
+    }
+  ],
+  "errors": []
+}

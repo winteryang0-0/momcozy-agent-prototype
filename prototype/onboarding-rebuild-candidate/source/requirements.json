@@ -1,0 +1,53 @@
+{
+  "project": "Momcozy onboarding rebuild candidate",
+  "date": "2026-10-22",
+  "sourceFilesBase": "project root",
+  "authority": [
+    "当前对话：新建独立 onboarding 项目，不覆盖旧 HTML。",
+    "用户答复：保留现有四步和字段，只重构页面与交互。"
+  ],
+  "sourceFiles": [
+    "../current/sources/first-visit-onboarding-18-requirements.json",
+    "../current/sources/onboarding-berry-ui-19-requirements.json",
+    "../current/sources/profile-field-ranges-21-requirements.json",
+    "../current/assets/app.js",
+    "../../design/2026-10-20-semantic-style/CS-0.5-testboards/design.json"
+  ],
+  "requirements": [
+    {
+      "id": "OB-01",
+      "statement": "独立项目保留照护身份、基础资料、关注点、功能推荐四步。",
+      "source": "当前对话及 R18-01"
+    },
+    {
+      "id": "OB-02",
+      "statement": "照护身份必选：妈妈、爸爸、爷爷/奶奶、外公/外婆、其他成员；妈妈阶段选填：孕前、孕期、产后。",
+      "source": "prototype/current/assets/app.js"
+    },
+    {
+      "id": "OB-03",
+      "statement": "基础资料选填：年龄 18–50 岁、已分娩次数 0–6 次、宝宝或胎儿数量 1–6 个；孕期当前孕周 0–45 周；出生孕周 37–50 周；出生日期不得晚于今天。多宝宝逐个填写。",
+      "source": "R21-01 至 R21-03；prototype/current/assets/app.js"
+    },
+    {
+      "id": "OB-04",
+      "statement": "九项关注点可多选或不选；三项功能推荐依关注点改变顺序，其余功能仍展示。",
+      "source": "prototype/current/assets/app.js"
+    },
+    {
+      "id": "OB-05",
+      "statement": "支持上一步、稍后设置、刷新恢复草稿、继续填写、完成保存及完成后返回修改。",
+      "source": "R18-01；prototype/current/assets/app.js"
+    },
+    {
+      "id": "OB-06",
+      "statement": "页面与控件应用莓色留白候选风格，提供移动端、桌面端和系统夜间模式布局。",
+      "source": "R19-01；CS-0.5 莓色留白风格板"
+    },
+    {
+      "id": "OB-07",
+      "statement": "新项目不读取或覆盖旧原型的存储数据，保存失败时不得显示已完成。",
+      "source": "当前对话的独立项目要求；本轮实现边界"
+    }
+  ]
+}
