@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-20T03:12:00.342Z",
+  "scope": "身份条件展开、数字滑块与推荐独立页面",
+  "tests": {
+    "fourSteps": true,
+    "stageShownOnlyForMother": true,
+    "stageOptionalAndClearable": true,
+    "pregnancyHidesBirthdayFields": true,
+    "dragAgePersistedAfterReload": {
+      "value": 33
+    },
+    "buttonsAndKeyboardAdjust": true,
+    "minDisablesMinus": true,
+    "babyCountUpdatesCardsImmediately": true,
+    "omittedValueAndStateSurviveReload": true,
+    "restoringOmittedValue": true,
+    "concernsAndRecommendationsSeparate": true,
+    "completeAndReloadToday": true,
+    "savedProfileReopensWithValues": {
+      "age": 33,
+      "babyCount": 3
+    },
+    "mobile360x800NoHorizontalOverflow": true,
+    "mobile360x640CompleteButtonVisible": true,
+    "syntax": true,
+    "consoleErrorsAfterFix": []
+  },
+  "resolvedDuringVerification": [
+    "修复滑块更新函数的单元素选择器导致的 forEach 异常；修复后重新验证滑动、微调、数量联动与保存。"
+  ],
+  "limits": [
+    "桌面内置浏览器模拟小屏，未实际测试真机触摸或软键盘",
+    "仅局部自审，未做全量正式发布验收",
+    "Today及记录上下文仍以宝宝1为主"
+  ],
+  "screenshots": [
+    "identity-desktop.jpg",
+    "sliders-mobile.jpg",
+    "recommendations-mobile.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 37857,
+      "sha256": "88e581e512279148cc04442c01734a0d7ea4b119443f75c04925d5b79f7abf1d"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 71960,
+      "sha256": "c0da09ba32f60a28be43e6e0329f8abf4ace910412994bc2f773dc164159464a"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

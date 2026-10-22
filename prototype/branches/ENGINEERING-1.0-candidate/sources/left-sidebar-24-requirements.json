@@ -1,0 +1,31 @@
+{
+  "revision": "left-sidebar-24",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "conversation-shortcuts-23",
+  "authority": "Current conversation: change the top-left entrance into a horizontally expanding sidebar with AI-app-like width; arrange My, Baby, then the recommended optional agent services from initial information entry; reuse existing pages or service content where present.",
+  "changes": [
+    {
+      "id": "R24-01",
+      "title": "首页左侧横向展开侧边栏",
+      "rule": "首页左上按钮打开应用容器内从左向右展开的侧边栏，宽度约为容器 84% 且最多 320px。遮罩、关闭按钮、Escape 均可关闭；打开时焦点进入侧栏、背景不可操作，关闭后焦点返回入口。明亮、夜间、短屏、桌面预览及减少动效均可用。"
+    },
+    {
+      "id": "R24-02",
+      "title": "我的与宝宝置顶",
+      "rule": "侧边栏从上到下先显示「我的」「宝宝」。「我的」沿用现有 #/mine 页面，返回到进入前页面；「宝宝」沿用现有宝宝资料面板并可保存、关闭。原记录页右上「我的」入口及其二级功能保持可用。"
+    },
+    {
+      "id": "R24-03",
+      "title": "复用首次录入推荐的智能体服务",
+      "rule": "其下展示首次录入推荐的「持续记录与管理」「哭声识别」「便便识别」，按已保存的关注点规则排序并标注关注相关项。记录服务进入现有当日记录页且保留新建入口；哭声与便便服务进入现有对话任务卡，沿用任务互斥、采集、重试与取消规则。未选择关注点时三项均可用并保持默认顺序。"
+    }
+  ],
+  "scope": "在 R23 莓色留白对话首页上替换左上入口并增加局部侧栏；复用既有四条 hash 路由、宝宝资料弹窗、记录页面、对话任务卡及首次录入推荐算法。",
+  "assumptions": [
+    "现有录入步骤给出三项推荐并按关注点排序，尚无单独选择智能体的字段；本轮三项均展示为可选服务，关注点只改变顺序与推荐标识。",
+    "类似 AI 应用的宽度按应用容器的 84%、上限 320px 作为可审阅候选值，而非用户指定的精确数值。",
+    "宝宝入口先复用当前宝宝资料面板；独立宝宝总览页面不在本轮新增范围。",
+    "本轮仍为本地可交互候选，尚无用户确认的合法 B-ID 冻结基线。"
+  ]
+}

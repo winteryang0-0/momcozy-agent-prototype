@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-20T04:18:32.433Z",
+  "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "match": true
+    },
+    {
+      "path": "assets/app.js",
+      "match": true
+    },
+    {
+      "path": "assets/style.css",
+      "match": true
+    },
+    {
+      "path": "assets/icons.js",
+      "match": true
+    },
+    {
+      "path": "assets/companion.js",
+      "match": true
+    },
+    {
+      "path": "assets/motion-model.js",
+      "match": true
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "match": true
+    }
+  ],
+  "standalone": {
+    "path": "Momcozy-final.html",
+    "size": 2182933,
+    "sha256": "a437f1d2100dfe134ca7c42ca7ff2ee89560034d81ee8d4ab38e4df7deedef24",
+    "scripts": 4,
+    "allScriptsSyntaxValid": true,
+    "appScriptExactSourceMatch": true,
+    "iconsScriptExactSourceMatch": true,
+    "motionScriptExactSourceMatch": true,
+    "spriteEmbedded": true,
+    "remoteAssets": false,
+    "fileRuntime": "not-verified-browser-protocol-policy",
+    "httpSourceRuntime": "verified-scoped"
+  },
+  "guard": {
+    "passed": false,
+    "error": "Baseline ID must be B plus letters/digits/hyphens",
+    "baseline": "HOME-0.1",
+    "formalFreezeClaim": false
+  }
+}

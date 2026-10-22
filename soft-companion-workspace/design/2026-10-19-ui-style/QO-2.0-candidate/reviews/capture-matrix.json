@@ -1,0 +1,386 @@
+[
+  {
+    "file": "matrix-ios-light-review.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "review",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:44.596Z"
+  },
+  {
+    "file": "matrix-ios-light-saving.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "saving",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:45.076Z"
+  },
+  {
+    "file": "matrix-ios-light-synced.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "synced",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:45.551Z"
+  },
+  {
+    "file": "matrix-ios-light-local.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "local",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:46.030Z"
+  },
+  {
+    "file": "matrix-ios-light-failed.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "failed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:46.529Z"
+  },
+  {
+    "file": "matrix-ios-light-unknown.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "unknown",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:46.917Z"
+  },
+  {
+    "file": "matrix-ios-light-syncFailed.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "syncFailed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:47.321Z"
+  },
+  {
+    "file": "matrix-ios-light-syncing.png",
+    "platform": "ios",
+    "theme": "light",
+    "state": "syncing",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:47.750Z"
+  },
+  {
+    "file": "matrix-ios-dark-review.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "review",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:48.561Z"
+  },
+  {
+    "file": "matrix-ios-dark-saving.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "saving",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:48.985Z"
+  },
+  {
+    "file": "matrix-ios-dark-synced.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "synced",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:49.435Z"
+  },
+  {
+    "file": "matrix-ios-dark-local.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "local",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:49.836Z"
+  },
+  {
+    "file": "matrix-ios-dark-failed.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "failed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:50.256Z"
+  },
+  {
+    "file": "matrix-ios-dark-unknown.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "unknown",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:50.673Z"
+  },
+  {
+    "file": "matrix-ios-dark-syncFailed.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "syncFailed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:51.081Z"
+  },
+  {
+    "file": "matrix-ios-dark-syncing.png",
+    "platform": "ios",
+    "theme": "dark",
+    "state": "syncing",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:51.505Z"
+  },
+  {
+    "file": "matrix-android-light-review.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "review",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:52.504Z"
+  },
+  {
+    "file": "matrix-android-light-saving.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "saving",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:52.919Z"
+  },
+  {
+    "file": "matrix-android-light-synced.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "synced",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:53.328Z"
+  },
+  {
+    "file": "matrix-android-light-local.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "local",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:53.735Z"
+  },
+  {
+    "file": "matrix-android-light-failed.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "failed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:54.154Z"
+  },
+  {
+    "file": "matrix-android-light-unknown.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "unknown",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:54.555Z"
+  },
+  {
+    "file": "matrix-android-light-syncFailed.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "syncFailed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:54.968Z"
+  },
+  {
+    "file": "matrix-android-light-syncing.png",
+    "platform": "android",
+    "theme": "light",
+    "state": "syncing",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:55.378Z"
+  },
+  {
+    "file": "matrix-android-dark-review.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "review",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:56.098Z"
+  },
+  {
+    "file": "matrix-android-dark-saving.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "saving",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:56.490Z"
+  },
+  {
+    "file": "matrix-android-dark-synced.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "synced",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:56.892Z"
+  },
+  {
+    "file": "matrix-android-dark-local.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "local",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:57.329Z"
+  },
+  {
+    "file": "matrix-android-dark-failed.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "failed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:57.735Z"
+  },
+  {
+    "file": "matrix-android-dark-unknown.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "unknown",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:58.154Z"
+  },
+  {
+    "file": "matrix-android-dark-syncFailed.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "syncFailed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:58.588Z"
+  },
+  {
+    "file": "matrix-android-dark-syncing.png",
+    "platform": "android",
+    "theme": "dark",
+    "state": "syncing",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "stage, document coordinates",
+    "at": "2026-10-19T10:49:58.979Z"
+  }
+]

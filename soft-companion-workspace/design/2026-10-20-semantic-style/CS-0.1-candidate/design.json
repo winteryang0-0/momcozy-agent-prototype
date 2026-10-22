@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0-style-candidate",
+  "project": {
+    "id": "MOMCOZY-CS-0.1",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source-input.json",
+    "requirements": [
+      "STYLE-FOCUS",
+      "STYLE-FEEDBACK",
+      "STYLE-ICON",
+      "STYLE-MODULE-SEMANTICS"
+    ],
+    "sha256": "ffd4857336ad7ba482a76a70e00228491ff21b642df22bcf59ebd9fcdbc8c9a3"
+  },
+  "framework": {
+    "revision": "CS-0.1-style-lab",
+    "scope": "风格板与缩比任务样张，不改变 HOME-1.0 产品框架",
+    "sections": [
+      "directions",
+      "preview",
+      "grammar",
+      "states",
+      "sources"
+    ],
+    "preview_screens": [
+      "home",
+      "records",
+      "assistant"
+    ],
+    "directions": [
+      "canvas",
+      "rhythm",
+      "clear"
+    ],
+    "states": [
+      "normal",
+      "saving",
+      "saved",
+      "local",
+      "failed",
+      "unknown",
+      "indeterminate"
+    ],
+    "controls": [
+      "direction selector",
+      "screen selector",
+      "state selector"
+    ],
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "system": {
+    "revision": "CS-0.1",
+    "priority": [
+      "content meaning",
+      "action clarity",
+      "warmth"
+    ],
+    "direction_roles": {
+      "canvas": {
+        "primary": "#71334C",
+        "surface": "#FFFEFA",
+        "focus_surface": "#F5DCE4",
+        "assist_surface": "#EAE2F5"
+      },
+      "rhythm": {
+        "primary": "#765040",
+        "surface": "#FFFBF7",
+        "focus_surface": "#F7E3D6",
+        "assist_surface": "#EEE0D5"
+      },
+      "clear": {
+        "primary": "#273C47",
+        "surface": "#FBFDFE",
+        "focus_surface": "#E5EEF0",
+        "assist_surface": "#E9E8E5"
+      }
+    },
+    "icon_grid": 24,
+    "icon_stroke": 1.8,
+    "icon_style": "rounded outline; always pair small critical icons with text",
+    "focus": "3px visible outer ring for keyboard; selected uses fill, border and label",
+    "motion": "direction card hover shift 3px/180ms; reduced-motion removes all transition",
+    "components": [
+      {
+        "id": "direction-card",
+        "states": [
+          "default",
+          "hover",
+          "selected",
+          "keyboard-focus"
+        ]
+      },
+      {
+        "id": "semantic-icon",
+        "states": [
+          "default",
+          "labelled"
+        ]
+      },
+      {
+        "id": "feedback-banner",
+        "states": [
+          "saving",
+          "saved",
+          "local",
+          "failed",
+          "unknown",
+          "indeterminate"
+        ]
+      },
+      {
+        "id": "content-focus",
+        "states": [
+          "object",
+          "fact",
+          "detail",
+          "action"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "STYLE-FOCUS",
+      "sections": [
+        "preview",
+        "grammar"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-FEEDBACK",
+      "sections": [
+        "preview",
+        "states"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-ICON",
+      "sections": [
+        "preview",
+        "grammar"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-MODULE-SEMANTICS",
+      "sections": [
+        "directions",
+        "preview",
+        "sources"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-DIRECTION",
+      "question": "首页主方向选 A/B/C 哪种或哪些元素组合？",
+      "status": "open",
+      "blocks_freeze": true
+    },
+    {
+      "id": "D-DENSITY",
+      "question": "记录与 AI 页面是否允许不同视觉密度？",
+      "status": "open",
+      "blocks_freeze": true
+    }
+  ],
+  "validation_boundary": "候选风格板；静态语法检查完成，本地浏览器截图因环境安全策略未执行，未冻结。"
+}

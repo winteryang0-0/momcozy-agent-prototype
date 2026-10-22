@@ -1,0 +1,632 @@
+{
+  "role": "visual",
+  "author": "/root/review14_visual",
+  "independent": true,
+  "status": "pass",
+  "verdict": "sample-pass",
+  "full_coverage": false,
+  "evidence_mode": "screenshot-review",
+  "reviewedAt": "2026-10-20T04:16:12.884Z",
+  "baseline_id": null,
+  "reference_design": "sources/STYLE_SPEC.txt QO-2.0 candidate + latest explicit user requirements; no frozen baseline assertion",
+  "material_hash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+  "material_binding": "runtime-snapshot.json: seven runtime files only; not a formal delivery/guard hash",
+  "raw_byte_verification": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a",
+      "match": true
+    },
+    {
+      "path": "assets/app.js",
+      "size": 84809,
+      "sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19",
+      "match": true
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff",
+      "match": true
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32",
+      "match": true
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d",
+      "match": true
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9",
+      "match": true
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080",
+      "match": true
+    }
+  ],
+  "evidence": [
+    {
+      "file": "screenshots/01-identity-icons.jpg",
+      "state": "妈妈角色与可选阶段；语义图标",
+      "height": 844,
+      "url": "http://localhost:4192/#/onboarding",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:11:27.224Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "a3dbbb9a7c8bddc2c0e0333db4e1a9b014fe0b588e931ab366df1270bbf80651",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "a3dbbb9a7c8bddc2c0e0333db4e1a9b014fe0b588e931ab366df1270bbf80651",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/02-profile-fields.jpg",
+      "state": "妈妈与宝宝同页分组、时间式数字滚轮",
+      "height": 844,
+      "url": "http://localhost:4192/#/onboarding",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:11:37.618Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "67b42710053bb1aff56b42199da7168dcd6f38a01a3eed0036748c69b0e5d631",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "67b42710053bb1aff56b42199da7168dcd6f38a01a3eed0036748c69b0e5d631",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/03-concern-icons.jpg",
+      "state": "每项关注语义图标，选中同时保留勾选标记",
+      "height": 844,
+      "url": "http://localhost:4192/#/onboarding",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:11:44.619Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "b05877a6130ecc126484c3cd9f9912f78f26b1e255f1c16e006c9a873e855a09",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "b05877a6130ecc126484c3cd9f9912f78f26b1e255f1c16e006c9a873e855a09",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/04-recommendations.jpg",
+      "state": "推荐独立页面",
+      "height": 844,
+      "url": "http://localhost:4192/#/onboarding",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:11:50.642Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "0e673c0b4e9a3dfbc6a517b408c0212c3a185bfc18572be37efd3a191e2291b5",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "0e673c0b4e9a3dfbc6a517b408c0212c3a185bfc18572be37efd3a191e2291b5",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/05-record-menu.jpg",
+      "state": "页面内底部弹窗，妈妈与宝宝分类菜单",
+      "height": 844,
+      "url": "http://localhost:4192/#/home",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:11:57.410Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "60cdf8591eb00f304352ee036d0f2b18c295bf7c3bbcd861b5e1b7a412af0f70",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "60cdf8591eb00f304352ee036d0f2b18c295bf7c3bbcd861b5e1b7a412af0f70",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/06-diaper-form.jpg",
+      "state": "尿布与皮肤状态直接选择，分组留白",
+      "height": 844,
+      "url": "http://localhost:4192/#/home",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:12:05.313Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "f19efc059211c635c29250af11b444e4da074d0aeb70a4bd7d4a07328596d573",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "f19efc059211c635c29250af11b444e4da074d0aeb70a4bd7d4a07328596d573",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/07-breast-form.jpg",
+      "state": "亲喂侧别直接选择与时长输入",
+      "height": 844,
+      "url": "http://localhost:4192/#/home",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:12:34.505Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "ab877705bb6d84dd65d84c20ce21f619e202abf29b10499eada85ebede65d3a9",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "ab877705bb6d84dd65d84c20ce21f619e202abf29b10499eada85ebede65d3a9",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/08-chat-record-menu.jpg",
+      "state": "会话内记一笔独立卡片选择类型",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:12:55.345Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "6fb8795f4e1399fb20b350f10adb6294f4970683c382856d055263853f076194",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "6fb8795f4e1399fb20b350f10adb6294f4970683c382856d055263853f076194",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/09-chat-record-form.jpg",
+      "state": "会话内吸奶表单，独立草稿",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:01.376Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "6298b77deae37d5e1859b09675571572dcc17daa9bb80c914328327bbb728931",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "6298b77deae37d5e1859b09675571572dcc17daa9bb80c914328327bbb728931",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/10-chat-record-cancel.jpg",
+      "state": "卡片内结束确认",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:11.142Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "c46c49b9600521f3430b85a7c90ba7ba80cd6ef764717de628f0fa8c63460045",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "c46c49b9600521f3430b85a7c90ba7ba80cd6ef764717de628f0fa8c63460045",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/11-chat-record-failed.jpg",
+      "state": "会话内保存失败保留草稿与重试",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:22.973Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "d7e33bb8718908f0a4d5868b431e8db70deba81be84273b50c1f25b2fea36a15",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "d7e33bb8718908f0a4d5868b431e8db70deba81be84273b50c1f25b2fea36a15",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/12-chat-record-saved.jpg",
+      "state": "会话保存成功原位回执与三项追加服务",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:30.242Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "4e78f20d8e9501988dd38880495bd06aaa2fcb9a2d55b9b12d78786aaf3d68da",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "4e78f20d8e9501988dd38880495bd06aaa2fcb9a2d55b9b12d78786aaf3d68da",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/13-cry-confirm.jpg",
+      "state": "记录后追加哭声卡片，素材确认",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:41.464Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "bd4526903c31cae5b5236e212a36de2a793ecb0ede733924f93df4c1ee2e2492",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "bd4526903c31cae5b5236e212a36de2a793ecb0ede733924f93df4c1ee2e2492",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/14-cry-result.jpg",
+      "state": "哭声终态卡片留在时间顺序中",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:13:51.381Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "4e1b92635cae40efb7217858581ba517f32ff4fc35a53a0d1de9ff0cbfe3b71d",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "4e1b92635cae40efb7217858581ba517f32ff4fc35a53a0d1de9ff0cbfe3b71d",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/15-task-chronology.jpg",
+      "state": "关键词启动便便卡片在上一任务及消息之后",
+      "height": 844,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 390,
+      "capturedAt": "2026-10-20T04:14:00.601Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "1304be159bd90e860962d2587d51381ffeecdaf4e8db8c1bf77538b729cbb8b7",
+      "pixelSize": {
+        "width": 390,
+        "height": 844
+      },
+      "actualSha256": "1304be159bd90e860962d2587d51381ffeecdaf4e8db8c1bf77538b729cbb8b7",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/16-task-dark-short.jpg",
+      "state": "360×640夜间会话任务与输入栏Dock",
+      "height": 640,
+      "url": "http://localhost:4192/#/assistant",
+      "width": 360,
+      "capturedAt": "2026-10-20T04:14:31.735Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "8777cebcbf94ecb5d8dd696d429d8c88059fa37e683df02d1c0d6b19426e04c8",
+      "pixelSize": {
+        "width": 360,
+        "height": 640
+      },
+      "actualSha256": "8777cebcbf94ecb5d8dd696d429d8c88059fa37e683df02d1c0d6b19426e04c8",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/17-record-bottom-short.jpg",
+      "state": "360×640夜间表单滚动到底，保存与返回操作完整可见",
+      "height": 640,
+      "url": "http://localhost:4192/#/home",
+      "width": 360,
+      "capturedAt": "2026-10-20T04:14:44.967Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "e6cf4c146768f8cf19b048d53616cf2adae3047a45200e1705361a119fc78989",
+      "pixelSize": {
+        "width": 360,
+        "height": 640
+      },
+      "actualSha256": "e6cf4c146768f8cf19b048d53616cf2adae3047a45200e1705361a119fc78989",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    },
+    {
+      "file": "screenshots/18-recommendation-bottom-short.jpg",
+      "state": "360×640夜间推荐页末尾说明与完成按钮",
+      "height": 640,
+      "url": "http://localhost:4192/#/onboarding",
+      "width": 360,
+      "capturedAt": "2026-10-20T04:15:04.033Z",
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "unknown",
+      "fullPage": false,
+      "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+      "sha256": "46b3413c7c0a4bb2d854cd80d6f5892055e88119a4319b0fb0be7dc8c30129eb",
+      "pixelSize": {
+        "width": 360,
+        "height": 640
+      },
+      "actualSha256": "46b3413c7c0a4bb2d854cd80d6f5892055e88119a4319b0fb0be7dc8c30129eb",
+      "hashMatch": true,
+      "reviewedBy": "/root/review14_visual"
+    }
+  ],
+  "coverage": {
+    "planned": [
+      "390x844 light: onboarding four steps; global record menu and secondary forms; conversation record and care task states",
+      "360x640 dark: conversation task, form bottom, recommendation bottom"
+    ],
+    "observed_count": 18,
+    "personally_operated_browser": [],
+    "matrix": [
+      {
+        "page_id": "/onboarding",
+        "state_id": "妈妈角色与可选阶段；语义图标",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/01-identity-icons.jpg"
+      },
+      {
+        "page_id": "/onboarding",
+        "state_id": "妈妈与宝宝同页分组、时间式数字滚轮",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/02-profile-fields.jpg"
+      },
+      {
+        "page_id": "/onboarding",
+        "state_id": "每项关注语义图标，选中同时保留勾选标记",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/03-concern-icons.jpg"
+      },
+      {
+        "page_id": "/onboarding",
+        "state_id": "推荐独立页面",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/04-recommendations.jpg"
+      },
+      {
+        "page_id": "/home",
+        "state_id": "页面内底部弹窗，妈妈与宝宝分类菜单",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/05-record-menu.jpg"
+      },
+      {
+        "page_id": "/home",
+        "state_id": "尿布与皮肤状态直接选择，分组留白",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/06-diaper-form.jpg"
+      },
+      {
+        "page_id": "/home",
+        "state_id": "亲喂侧别直接选择与时长输入",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/07-breast-form.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "会话内记一笔独立卡片选择类型",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/08-chat-record-menu.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "会话内吸奶表单，独立草稿",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/09-chat-record-form.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "卡片内结束确认",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/10-chat-record-cancel.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "会话内保存失败保留草稿与重试",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/11-chat-record-failed.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "会话保存成功原位回执与三项追加服务",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/12-chat-record-saved.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "记录后追加哭声卡片，素材确认",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/13-cry-confirm.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "哭声终态卡片留在时间顺序中",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/14-cry-result.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "关键词启动便便卡片在上一任务及消息之后",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/15-task-chronology.jpg"
+      },
+      {
+        "page_id": "/assistant",
+        "state_id": "360×640夜间会话任务与输入栏Dock",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/16-task-dark-short.jpg"
+      },
+      {
+        "page_id": "/home",
+        "state_id": "360×640夜间表单滚动到底，保存与返回操作完整可见",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/17-record-bottom-short.jpg"
+      },
+      {
+        "page_id": "/onboarding",
+        "state_id": "360×640夜间推荐页末尾说明与完成按钮",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/18-recommendation-bottom-short.jpg"
+      }
+    ],
+    "uncovered": [
+      "full page×state×viewport Cartesian matrix",
+      "all record-type secondary forms at both viewports and themes",
+      "Android-native appearance and actual mobile browsers",
+      "virtual keyboard and Dynamic Type/font scaling",
+      "VoiceOver/TalkBack, full keyboard focus traversal and measured composite contrast",
+      "motion continuity, reduced motion behavior, real permission dialogs",
+      "file:// single-file final artifact runtime; source HTTP prototype screenshot review only"
+    ]
+  },
+  "findings": [],
+  "observations": [
+    {
+      "id": "VIS14-O1",
+      "evidence": [
+        "screenshots/01-identity-icons.jpg",
+        "screenshots/03-concern-icons.jpg"
+      ],
+      "result": "Role and concern choices retain readable labels plus semantic icons; selected state keeps a separate check mark."
+    },
+    {
+      "id": "VIS14-O2",
+      "evidence": [
+        "screenshots/02-profile-fields.jpg"
+      ],
+      "result": "Mother and baby fields share one screen with whitespace and divider; numeric wheel focus and adjacent values are legible without extra plus/minus controls."
+    },
+    {
+      "id": "VIS14-O3",
+      "evidence": [
+        "screenshots/05-record-menu.jpg",
+        "screenshots/06-diaper-form.jpg",
+        "screenshots/07-breast-form.jpg"
+      ],
+      "result": "Global recording menu separates baby and mother roles. Secondary forms use direct selection groups, descriptive field labels and explicit input focus."
+    },
+    {
+      "id": "VIS14-O4",
+      "evidence": [
+        "screenshots/08-chat-record-menu.jpg",
+        "screenshots/09-chat-record-form.jpg",
+        "screenshots/10-chat-record-cancel.jpg",
+        "screenshots/11-chat-record-failed.jpg",
+        "screenshots/12-chat-record-saved.jpg"
+      ],
+      "result": "Recording is presented as an AI conversation card from type selection through cancellation, failure and save receipt. Local save and pending sync are distinct."
+    },
+    {
+      "id": "VIS14-O5",
+      "evidence": [
+        "screenshots/13-cry-confirm.jpg",
+        "screenshots/14-cry-result.jpg",
+        "screenshots/15-task-chronology.jpg"
+      ],
+      "result": "Task cards retain AI identity, clear primary/secondary actions and three follow-up services; screenshot 15 shows the next task following the prior card rather than a fixed top panel. Dynamic ordering is supported by root runtime checks, not independently replayed here."
+    },
+    {
+      "id": "VIS14-O6",
+      "evidence": [
+        "screenshots/16-task-dark-short.jpg",
+        "screenshots/17-record-bottom-short.jpg",
+        "screenshots/18-recommendation-bottom-short.jpg"
+      ],
+      "result": "At 360x640 dark, task/composer/Dock boundaries remain distinct; scrolled form save and back controls are fully visible; recommendation footer and completion controls are visible."
+    }
+  ],
+  "resolved_observation": [
+    {
+      "location": "06/07 record form lower viewport edge",
+      "initial": "Save control only partly visible before scrolling; screenshot alone could not establish reachability.",
+      "resolution": "17 shows scrolled form bottom with save and return entirely within 640px viewport; root reports save y491.9–543.9 and return bottom611.9.",
+      "status": "not-a-defect",
+      "verified_by": "/root/review14_visual",
+      "verified_material_hash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51"
+    }
+  ],
+  "limits": "Independent review of root-captured actual browser screenshots. No app code edits and no browser interaction performed by reviewer. No major or blocker visual issue observed in these 18 samples. This is not full product acceptance, freeze approval, native platform compliance or single-file runtime certification."
+}

@@ -1,0 +1,34 @@
+{
+  "candidate": "CS-0.3",
+  "date": "2026-10-20",
+  "status": "awaiting-user-testing-not-frozen",
+  "scope": "three comparable semantic liquid-glass UI style boards",
+  "framework_sha256": "4234a1b9c8e872659d96955f1399f620f705683af48d361377e88f859957e9c4",
+  "system_sha256": "85f4b1038f51592f7cac7aea1f4ea4d1871ffd77dfc8254fd32c00ea812fd878",
+  "source_sha256": "e990abbf0976ea2c36d8a9cfe8f737785b35339990337f059a8d50588494f98f",
+  "scope_sha256": "ad071c6a24cd31d0cdff4d25883e658337968f209bab1564913bda26f8114c4b",
+  "confirmation": null,
+  "files": {
+    "index.html": "6f954a0338fd543c0cfa52334a88b11438f6f07d2af4d91176d57e2a9de833d7",
+    "bloom.html": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb",
+    "orbit.html": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde",
+    "garden.html": "d332ecb3f9d06d48749dbabfb38a2971a406e417b8923284fe6f4924cf74925a",
+    "assets/board.css": "780ce9d35b40823233a1defb6282d5ef30cd5545dc9d285aa334436a580e3081",
+    "assets/board.js": "900a8151f7847251cb91d987baa5130c7acbfa80b4773ba8d023c2599d97c1fa",
+    "STYLE_SPEC.md": "54292a81d2b0a8ddf02233d03506df6194bbd1e9ab10d10daabb20402eb29e49",
+    "source-input.json": "e990abbf0976ea2c36d8a9cfe8f737785b35339990337f059a8d50588494f98f",
+    "design.json": "2ea0da3057390679f36ff04ce38f25374cdefd78b63d357f40bcb24220d77221",
+    "validate.cjs": "da577bcc261da2774140d315256fd6139dc0f7c9a660283735af1ec54b65eb27",
+    "finalize.cjs": "ec09036499fd419437348fef68e4400a95247e31f06161cde6df212f4a3cc52f"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "static_local_resources": "pass",
+    "mock_dom_screen_state_toggle_focus": "pass",
+    "external_runtime_dependencies": "none detected",
+    "file_protocol_browser": "not tested in this run",
+    "browser_visual": "not tested; previous local browser attempt was blocked by security policy",
+    "independent_review": "not run",
+    "native_liquid_glass": "not tested"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "revision": "relayout-15",
+  "date": "2026-10-20",
+  "status": "user-authorized-candidate-not-frozen",
+  "authority": "Current conversation: eight layout and interaction requests; the user confirmed that the records personal icon opens a secondary menu and that the compact default dialog means the bottom composer.",
+  "previous_revision": "berry-poise-01",
+  "changes": [
+    {
+      "id": "R15-01",
+      "title": "Today 移除右上角个人入口"
+    },
+    {
+      "id": "R15-02",
+      "title": "Today 在概况前增加今日行动建议并移除三项快捷模块"
+    },
+    {
+      "id": "R15-03",
+      "title": "Today 移除最近记录模块"
+    },
+    {
+      "id": "R15-04",
+      "title": "AI 顶部移除新对话和历史入口，标题置右上"
+    },
+    {
+      "id": "R15-05",
+      "title": "输入加号仅保留拍照和附件"
+    },
+    {
+      "id": "R15-06",
+      "title": "语音键长按后直接将示例转写放入输入框"
+    },
+    {
+      "id": "R15-07",
+      "title": "记录页右上角个人图标打开二级功能菜单"
+    },
+    {
+      "id": "R15-08",
+      "title": "AI 默认输入框收紧为单行高度"
+    }
+  ]
+}

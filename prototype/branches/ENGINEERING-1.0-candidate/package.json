@@ -1,0 +1,10 @@
+{
+  "name": "momcozy-engineering-1-candidate",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "node build-standalone.cjs",
+    "check": "node verify.cjs",
+    "preview": "node preview.cjs"
+  }
+}

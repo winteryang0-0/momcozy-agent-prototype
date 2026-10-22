@@ -1,0 +1,63 @@
+{
+  "fourChanges": [
+    "共享原始软石图集：Dock、页面、每条回复头像",
+    "默认 6 秒呼吸与眨眼循环，减少动态效果停用",
+    "输入栏仅加号与语音，输入内容后语音切换发送",
+    "对话署名 momcozy ai；关键词触发记一笔、听哭闹、看便便"
+  ],
+  "browser": "in-app browser",
+  "viewport": "360x800 and original desktop viewport",
+  "tested": [
+    "普通回复头像及署名",
+    "语音演示、确认转写、发送键切换",
+    "加号展开拍照、附件、三功能",
+    "单关键词：记录选择/哭闹ready/便便ready",
+    "多关键词不启动任务，显示选择；选择后启动",
+    "取消专项任务后可切换任务",
+    "默认循环持续超过 16 秒",
+    "减少动态效果停止循环并可恢复",
+    "窄屏无横向溢出"
+  ],
+  "limits": [
+    "本地规则关键词匹配，未接入真实模型或真实采集",
+    "沿用先前版本的其他业务路径，本轮未做全量认证"
+  ],
+  "sourceAuthority": "用户本轮明确要求：形象一致、默认循环、精简输入、逐条对话头像及署名、关键词触发三个功能",
+  "files": [
+    {
+      "path": "index.html",
+      "size": 9741,
+      "sha256": "b3ed0e01e348da68d21df8d56a06a7907c58b16df9c92642342f4b232f0989b8"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 23294,
+      "sha256": "4f28a9ca19b68a2e156ea1e6c331799c6c54fdaab253eb6ea35e6a6ec24aabeb"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 40809,
+      "sha256": "f34c511bda1ac562a4b7818a8e2cc75783df5729c2a7ff11fe588045dfac8549"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 4761,
+      "sha256": "daa0303afcb078abca29dac92de645e161d95b0a3e4e375f2b8a6e3e62a947ff"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 2716,
+      "sha256": "1eb44e9706ce847bada9d14c8f2571bdb5ba6d6823627ade045875c878bd6e34"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

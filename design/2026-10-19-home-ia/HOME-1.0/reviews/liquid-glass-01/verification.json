@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-19",
+  "scope": "液态玻璃 Dock、四个选中图标实心填充、AI 助手更名 Momcozy AI",
+  "checks": {
+    "fourDockSelections": [
+      {
+        "filled": 1,
+        "selected": "首页"
+      },
+      {
+        "filled": 1,
+        "selected": "记录"
+      },
+      {
+        "filled": 1,
+        "selected": "Momcozy AI"
+      },
+      {
+        "filled": 1,
+        "selected": "我的"
+      }
+    ],
+    "narrowViewport": {
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "labelFits": true
+    },
+    "lightAndDarkVisualReview": true,
+    "reducedTransparencyBackdrop": "none",
+    "businessLogicUnchanged": true
+  },
+  "screenshots": [
+    "momcozy-ai-360.jpg",
+    "momcozy-ai-night-360.jpg"
+  ],
+  "files": [
+    {
+      "file": "index.html",
+      "sha256": "8059831656214f73d57f7d3f50db6769be603eb57ebe36cd23c34fb502297530"
+    },
+    {
+      "file": "assets/style.css",
+      "sha256": "5dc136d9c0f6467751db6e82bc992f3cecb175bdced9527e07b4808dd2863322"
+    },
+    {
+      "file": "assets/icons.js",
+      "sha256": "daa0303afcb078abca29dac92de645e161d95b0a3e4e375f2b8a6e3e62a947ff"
+    },
+    {
+      "file": "assets/app.js",
+      "sha256": "a9820816f7ae3e16b0f2c261e37acd4d08efafbc6c71444cecff97d8a99844f1"
+    }
+  ],
+  "note": "本记录仅验证本次局部视觉修改；原有完整版本评审对应修改前源码。"
+}

@@ -1,0 +1,79 @@
+{
+  "revision": "final-revision-14",
+  "operator": "/root",
+  "testedOrigin": "http://localhost:4192",
+  "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+  "finalConsoleErrors": [],
+  "observations": [
+    {
+      "id": "F01",
+      "result": "pass",
+      "steps": "空妈妈阶段、两宝宝完成→妈妈资料暂不填写→不改保存→宝宝1生日仍2026-10-01，Today仍共2宝宝"
+    },
+    {
+      "id": "F02",
+      "result": "pass",
+      "steps": "旧宝宝资料生日max=2026-10-20、required=false；保存当天2026-10-20后刷新重开仍为当天"
+    },
+    {
+      "id": "F03",
+      "result": "pass",
+      "steps": "宝宝2未来2027-01-01→数量2→1→2→停宝宝1继续→自动定位宝宝2并拦截；修正2026-10-20后通过"
+    },
+    {
+      "id": "F04",
+      "result": "pass",
+      "steps": "101ml记录→编辑130ml结果未知→关闭并删除原记录→重新记一笔直接类型菜单，待核对请求已作废，Today记录为空"
+    },
+    {
+      "id": "F05",
+      "result": "pass",
+      "steps": "记录→哭声→12段长消息→关键词便便；新卡在最后回复后，top185.57 bottom578.91、聊天top96 bottom594.67；刷新后顺序保留"
+    },
+    {
+      "id": "inline-isolation",
+      "result": "pass",
+      "steps": "会话配方奶101ml+会话独立草稿；首页配方奶初始空、填写88ml+首页独立草稿；返回会话仍101，刷新仍101，无dialog打开；保存101成功"
+    },
+    {
+      "id": "inline-unknown",
+      "result": "pass",
+      "steps": "瓶喂母乳95ml→结果未知→刷新→核对本笔结果→Today仅1条95ml"
+    },
+    {
+      "id": "inline-retry-cancel",
+      "result": "pass",
+      "steps": "吸奶125ml草稿→结束确认→确认结束→继续这份草稿恢复125及备注；保存失败→重试成功，原卡回执"
+    },
+    {
+      "id": "inline-switch",
+      "result": "pass",
+      "steps": "吸奶110ml保存中立即新对话；新页欢迎正常；历史恢复旧对话显示这次还没有保存；返回草稿110ml仍在，无异步串入新对话"
+    },
+    {
+      "id": "global-forms",
+      "result": "pass-scoped",
+      "steps": "配方奶编辑提交、亲喂双侧15分钟、换尿布嘘嘘与便便+不确定均正常保存；会话瓶喂母乳和吸奶保存通过，未重复全局所有异常矩阵"
+    },
+    {
+      "id": "care-cards",
+      "result": "pass-scoped",
+      "steps": "哭声权限→收音→素材确认→分析→无法判断；便便权限→示例照片→确认→无法判断；后续服务创建新卡且旧终态保留。未全跑超时/离线/后台矩阵"
+    },
+    {
+      "id": "layout",
+      "result": "pass-sampled",
+      "steps": "18截图，390×844与360×640含亮暗。短屏表单保存按钮top491.9/bottom543.9，返回bottom611.9均在640内。推荐末尾说明可达"
+    },
+    {
+      "id": "file-protocol",
+      "result": "blocked-by-browser-url-policy",
+      "steps": "file://自动打开被浏览器安全策略拒绝；没有改用其他机制绕过，不声称文件直开验收。单文件静态脚本、资源一致性另记"
+    }
+  ],
+  "limitations": [
+    "并非所有18条验收描述的所有分支都运行完毕；已执行范围以observations为准。",
+    "新对话任务顺序完整；旧历史缺少原任务位置时只能迁移到可保留位置，不能恢复不存在的时序信息。",
+    "真实设备/模型/权限/云同步仍为模拟；未做真机键盘和全量辅助技术认证。"
+  ]
+}

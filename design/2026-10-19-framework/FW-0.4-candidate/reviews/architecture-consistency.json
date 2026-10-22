@@ -1,0 +1,648 @@
+{
+  "role": "consistency",
+  "author": "/root/fw04_architecture_review",
+  "independent": true,
+  "baseline_id": null,
+  "candidate_id": "FW-0.4",
+  "status": "pass",
+  "phase": "final independent review of the explicitly scoped FW04 incremental candidate",
+  "reviewed_at": "2026-10-19 12:09:58 UTC",
+  "evidence_mode": "Independent source/mechanical review plus review of /root runtime log and all ten saved screenshots. No browser operation by this reviewer.",
+  "authorization": {
+    "source": "sources/requirements-v04.json records the latest request summary and A selection; parent task brief supplied actual-current authorization context. No freeze receipt exists.",
+    "approved_deltas": [
+      "允许重新排入口",
+      "今日概览与记录/听哭闹/看便便三卡首屏同时呈现",
+      "AI选择A：陪伴展示及状态反馈，无人物点击语音",
+      "预留AI素材及图标导入位置并覆盖失败边界",
+      "三功能卡交互规则一致"
+    ],
+    "approval_limit": "Candidate architecture revision only. No frozen-baseline approval or final delivery pass inferred.",
+    "implemented_deltas": [
+      "五类记录表单移入同一聊天流中的记录任务卡，字段与校验保持",
+      "同类型未完成任务回原卡，完成/取消后显式再次发起",
+      "输入区单一常用功能入口移动同组三卡DOM",
+      "紧凑宝宝年龄与非交互AI占位固定在上方"
+    ]
+  },
+  "predecessor_material_hashes": {
+    "../FW-0.3-candidate/design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "../FW-0.3-candidate/bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "../FW-0.3-candidate/bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+    "../FW-0.3-candidate/bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5"
+  },
+  "scope": "Task lifecycle, preservation of five record types and drafts, concurrent work, refresh/recovery, capture interruption, voice/cry exclusion, launcher DOM ownership, non-interactive AI/resource fallback. Visual and complete device execution are outside this reviewer's operation.",
+  "observations": [
+    "FW04 remains an unconfirmed candidate. All 40 original requirement IDs remain; 3 added IDs bring the total to 43. The ledger contains 10 pages, 146 controls, 73 static states and 55 planned flows/test plans.",
+    "All original named input/select/textarea tags and attributes, and all named-select option attributes/text, are unchanged from FW03. Five forms moved to PAGE-chat record regions; original validation semantics remain.",
+    "Current runtime records valid saves for all five types, editing a saved record without increasing count, cross-type cancellation isolation, active-type restoration, and time-only draft conflict protection.",
+    "Unfinished task entry keeps one card. Collapse preserves data. Terminal launchers explicitly say to start another task before archival/new instance; the old summary remains.",
+    "Cry capture rejects other task entry and cry-card collapse. Route exit, hidden document and pagehide interrupt in source; current runtime verifies refresh and route exit. Voice is a native modal with a reverse-start guard.",
+    "Cancellation clears the pending timeout; runtime cancelled-analysis-no-late-overwrite remains cancelled after 2595 ms. Save locks destructive actions; reset clears timers and advances epoch. This is adequate for current simulated timers.",
+    "Voice sample and result follow-up append to existing chat text. Generic pending attachments remain separate from specialist-task media.",
+    "The same service-grid moves into its modal and back. Current runtime reports one grid/one C09, keyboard focus, Escape closing and focus restoration.",
+    "All ten screenshots were independently inspected: today plus three cards fit initial 360/390 layouts; inline record contents stay inside the chat region; footer remains reachable; missing avatar preserves frame and readable text.",
+    "AI is a non-interactive figure. All local asset-map paths exist; assets are original static neutral SVG placeholders. Future imported assets/motion still require integration checks.",
+    "README and framework/change documentation identify FW04, 10 pages, momcozy-framework-fw04 and preview port 4177. Capture wording now matches the actual guarded task entry and cry-card collapse."
+  ],
+  "minimum_boundary_contract": [
+    {
+      "id": "RULE-01",
+      "topic": "Identity and repeat entry",
+      "rule": "Open/resume an unfinished task by stable taskId and stable timeline seq. Do not append a second task card. Expose current state on its launcher. Only an explicit new/restart action after a terminal state creates a new taskId and archives the old timestamped summary."
+    },
+    {
+      "id": "RULE-02",
+      "topic": "Record drafts and type switching",
+      "rule": "Preserve existing per-type record values. Persist activeRecordType and explicit draft/edit identity; switching type first captures values and never silently clears another type. Resume returns to the active unfinished type; the type selector discloses other drafts. Cancel/discard clears only the current type/task. A time-only deliberate edit must not be lost solely because other fields are empty."
+    },
+    {
+      "id": "RULE-03",
+      "topic": "Saved record editing",
+      "rule": "Editing an existing record keeps recordId and updates that one record on success. If another draft of the same type exists, offer resume or explicit discard before replacing it. Save validation and a failed save retain values; repeated save cannot duplicate the record."
+    },
+    {
+      "id": "RULE-04",
+      "topic": "Collapse, cancellation and multiple tasks",
+      "rule": "Collapse hides details and preserves the task. Different task kinds may coexist; resuming one does not cancel or reset another. Cancel is explicitly labelled as discarding this task and invalidates its pending asynchronous operation. Saving/processing behavior must be explicit: either safe cancellation by token, or temporarily unavailable cancellation with clear busy feedback. Do not silently save or finish after a visible successful cancel."
+    },
+    {
+      "id": "RULE-05",
+      "topic": "Capture interruption",
+      "rule": "Capture must not continue invisibly. Current candidate rejects cry-card collapse and conflicting task entry with a stop/cancel explanation. Actual route exit, hidden document and pagehide stop the timer and show interrupted. Reload never automatically restarts capture or submits partial material."
+    },
+    {
+      "id": "RULE-06",
+      "topic": "Refresh and stale callbacks",
+      "rule": "Refresh preserves inputs/task context; interrupted processing becomes retryable with available media retained. Current candidate uses clearTimeout/clearInterval, save busy guards, reset epoch and timer cleanup to prevent stale completion. Real future asynchronous services need equivalent identity/cancellation guarantees."
+    },
+    {
+      "id": "RULE-07",
+      "topic": "Voice and cry mutual exclusion",
+      "rule": "At most one microphone-purpose workflow owns the input at a time. While cry is recording, a voice-input attempt explains that the user must stop recording; while the voice panel is active, starting cry is rejected or requires an explicit end of voice input. A simulated voice example still follows this model. Closing/cancelling releases ownership."
+    },
+    {
+      "id": "RULE-08",
+      "topic": "Conversation draft preservation",
+      "rule": "Voice sample transcription and task-result follow-up text must append safely or request explicit replacement if a non-empty chat draft exists. They must not overwrite the draft. Pending chat attachments and failed-send snapshots remain independent of analysis-task media."
+    },
+    {
+      "id": "RULE-09",
+      "topic": "Single launcher DOM and focus",
+      "rule": "The same three launcher nodes move between first-screen host and expanded composer host. Maintain unique IDs and one control instance, sync aria-expanded/controls, return focus to a visible opener, close by Escape, and restore the home host on collapse. Task details stay in the single PAGE-chat stream."
+    },
+    {
+      "id": "RULE-10",
+      "topic": "AI and assets",
+      "rule": "AI remains a non-interactive figure with no voice click target. Stable local frames and visible fallbacks preserve layout; status feedback is textual. Current assets are static. Future animation requires a static alternative and reduced-motion support."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ARCH-04-01",
+      "severity": "major",
+      "status": "resolved",
+      "classification": "inherited behavior requiring replacement",
+      "location": "../FW-0.3-candidate/bundle/assets/app.js:10,21,69-72,89",
+      "refs": [
+        "PAGE-chat",
+        "C10",
+        "ST-cry-capture",
+        "FLOW-cry"
+      ],
+      "observation": "Reload normalizes capture to ready without an interruption explanation. Navigation and pagehide capture state but do not stop the recording interval, so simulated recording continues while the chat page is hidden.",
+      "impact": "A collapsed or left task can appear to keep recording; reload behavior is not predictable.",
+      "fix": "Implement RULE-05 and RULE-06; verify collapse, sidebar navigation, generic-input switch, pagehide and refresh during recording.",
+      "runtime_test_ids": [
+        "cry-refresh-interruption",
+        "cry-route-exit-interrupts",
+        "cry-voice-mutex"
+      ],
+      "evidence": "interruptRecording stops the interval and sets interrupted on pagehide/visibility/route exit. Refresh and route-exit runtime checks pass; cry-card collapse is rejected rather than hiding stop. Hidden-document behavior is source-verified.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-02",
+      "severity": "major",
+      "status": "resolved",
+      "classification": "inherited behavior contradicting explicit lifecycle",
+      "location": "../FW-0.3-candidate/bundle/assets/app.js:68,70,75",
+      "refs": [
+        "C10",
+        "C11",
+        "ST-cry-result",
+        "ST-poop-cancelled",
+        "FLOW-cry",
+        "FLOW-poop"
+      ],
+      "observation": "Opening a terminal task implicitly archives a short text and resets it. Restart clears state without task identity or operation invalidation. Completion callbacks are not checked against taskId/operation tokens.",
+      "impact": "Revisiting a result can unexpectedly start again or allow stale work to modify a new instance.",
+      "fix": "Implement RULE-01, RULE-04 and RULE-06; keep review/resume distinct from explicit restart and retain meaningful old summaries.",
+      "runtime_test_ids": [
+        "terminal-repeat-archives-once",
+        "cancelled-analysis-no-late-overwrite",
+        "cry-collapse-resume-no-duplicate"
+      ],
+      "evidence": "Unfinished entry retains card identity/seq; terminal launcher explicitly reads 再做一次. Repeat archives once and resets material; cancel clears its timeout and remains cancelled after 2595ms. Reachable guards and timer cleanup provide current simulation semantics without requiring a particular token implementation.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-03",
+      "severity": "major",
+      "status": "resolved",
+      "classification": "record reconstruction risk",
+      "location": "../FW-0.3-candidate/bundle/assets/app.js:26,64-66,83; FW-0.4 planned record task",
+      "refs": [
+        "C09",
+        "C09.1",
+        "C09.2",
+        "C09.3",
+        "C09.4",
+        "C09.5",
+        "ST-breast-edit",
+        "ST-formula-edit",
+        "FLOW-bottle",
+        "FLOW-diaper",
+        "FLOW-pump"
+      ],
+      "observation": "Old drafts are implicit per-type inputs; draftType chooses the first non-empty type in fixed order and ignores time-only edits. Moving all five forms into one task risks replacing the active draft, losing subtype context or duplicating saved edits.",
+      "impact": "Cross-type switching and record editing can lose values or save to the wrong instance.",
+      "fix": "Implement RULE-02 and RULE-03; compare all original field attributes/options and run one save/edit/failure regression for each of five types.",
+      "runtime_test_ids": [
+        "record-resume-same-active-type",
+        "record-cancel-isolated",
+        "five-record-types-inline-save-and-cancel-timer",
+        "inline-edit-preserves-record",
+        "time-only-draft-edit-conflict"
+      ],
+      "evidence": "Field/option parity independently passes. Runtime saves all five types; edit leaves count=5; pump cancellation leaves formula=80; time-only conflict keeps 10:00 and empty amount. recordDirty persists intentional edits; save/cancel clears only that type. All per-type invalid/failure combinations were not rerun.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-04",
+      "severity": "major",
+      "status": "resolved",
+      "classification": "inherited behavior requiring exclusion and draft preservation",
+      "location": "../FW-0.3-candidate/bundle/assets/app.js:71,76,83 voice/voice-text",
+      "refs": [
+        "C14",
+        "C10",
+        "CHAT-CONTINUOUS",
+        "FLOW-voice",
+        "FLOW-cry"
+      ],
+      "observation": "Voice input has no exclusion against active cry capture. Both voice-text and result ask directly replace chat-input text.",
+      "impact": "Two microphone intents may appear active together and existing user text can be overwritten.",
+      "fix": "Implement RULE-07 and RULE-08; test both lock acquisition orders and non-empty-draft follow-up/transcription.",
+      "runtime_test_ids": [
+        "cry-voice-mutex",
+        "voice-appends-draft",
+        "result-followup-appends"
+      ],
+      "evidence": "Current capture guard prevents voice modal opening; reverse order is blocked by native modal plus explicit start guard. Runtime voice/follow-up preserve and append old text. Reverse order was source-reviewed rather than separately logged.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-05",
+      "severity": "major",
+      "status": "resolved",
+      "classification": "planned shared-shell acceptance risk",
+      "location": "FW-0.4 planned shared task shell and movable three-card launcher",
+      "refs": [
+        "PAGE-chat",
+        "C09",
+        "C10",
+        "C11",
+        "CHAT-CONTINUOUS",
+        "CHAT-TODAY"
+      ],
+      "observation": "The plan describes common actions but not exact task state transitions or DOM/focus ownership. An implementation may make launcher appearance consistent while record cancel/collapse differs from cry/poop or duplicated IDs emerge during relocation.",
+      "impact": "Three entry cards can still behave inconsistently despite similar layout.",
+      "fix": "Apply RULE-01/04/09, record the common action table and test every action for each kind. First-screen simultaneous visibility requires current screenshots at all acceptance viewports.",
+      "runtime_test_ids": [
+        "record-resume-same-active-type",
+        "cry-collapse-resume-no-duplicate",
+        "poop-collapse-resume",
+        "one-shared-service-grid",
+        "service-dialog-escape-focus",
+        "service-dialog-keyboard-focus",
+        "narrow-home-final"
+      ],
+      "evidence": "Each task resumes its one card with subtype/material retained. Service grid/C09 each count=1; Escape returns it home and focus to CHAT-services. 360/390 screenshots confirm today plus all three launchers simultaneously.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-06",
+      "severity": "minor",
+      "status": "resolved",
+      "classification": "resource and companion acceptance risk",
+      "location": "FW-0.4 planned AI/icon slots",
+      "refs": [
+        "C02",
+        "PAGE-chat",
+        "CHAT-AGE"
+      ],
+      "observation": "Replaceable resources need a defined failed-load state and motion-off behavior. A decorative figure must not retain or imply the former click-to-voice action.",
+      "impact": "Missing resources or animation preferences may break the compact persistent context or imply an unavailable interaction.",
+      "fix": "Apply RULE-10; inspect missing-asset/reduced-motion evidence and verify no AI click handler, tabindex, or button role.",
+      "runtime_test_ids": [
+        "home-card-layout",
+        "companion-asset-fallback"
+      ],
+      "evidence": "All current asset paths exist; companion is a figure without an action/tabindex. Runtime loadedImages=true and companionInteractive=false; missing-avatar fallback preserves text/frame. Current SVG is static; arbitrary future imported assets/motion remain integration work.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-07",
+      "severity": "minor",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:recordDirty/hasDraft/edit/input handler",
+      "refs": [
+        "C09",
+        "ST-formula-edit"
+      ],
+      "observation": "Earlier code excluded time-only edits from draft conflict detection.",
+      "impact": "Opening a saved record could replace that draft without confirmation.",
+      "fix": "Persist per-type recordDirty and use hasDraft in edit conflicts.",
+      "evidence": "Source is updated; runtime time-only-draft-edit-conflict retains 2026-10-19T10:00 with empty amount after continuing the existing draft.",
+      "runtime_test_ids": [
+        "time-only-draft-edit-conflict"
+      ],
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    },
+    {
+      "id": "ARCH-04-08",
+      "severity": "minor",
+      "status": "resolved",
+      "location": "bundle/README.txt; FRAMEWORK.txt; CHANGELOG.txt",
+      "refs": [
+        "IA-SERVICES",
+        "TASK-CONSISTENCY"
+      ],
+      "observation": "Copied metadata described FW03 and broader capture guards than implemented.",
+      "impact": "Usage and boundary documentation could misrepresent FW04.",
+      "fix": "Synchronize version/page/storage/port details and narrow guard wording.",
+      "evidence": "Current documentation identifies FW04/10 pages/fw04 key/4177 and guard wording matches task-entry/cry-card-collapse behavior.",
+      "verified_by": "/root/fw04_architecture_review",
+      "verified_material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+    }
+  ],
+  "mechanical_check": {
+    "status": "pass",
+    "executed_by": "/root/fw04_architecture_review",
+    "command": "Bundled Python importing hw-design-workflow/scripts/design_guard.py; read-only validate_design + inspect_bundle",
+    "errors": [],
+    "baseline_checks_run": false,
+    "delivery_checks_run": false,
+    "report": "reviews/static-check.json",
+    "additional_checks": [
+      "Original requirement/field/select-option parity",
+      "Unique DOM/control IDs",
+      "All asset-map files local and present",
+      "Source SHA256 verified",
+      "Canonical material/per-file hashes recomputed and match runtime",
+      "All ten screenshot SHA256 values match"
+    ]
+  },
+  "coverage": {
+    "test_ids": [
+      "home-card-layout",
+      "record-resume-same-active-type",
+      "record-cancel-isolated",
+      "inline-save-updates-today",
+      "cry-voice-mutex",
+      "cry-refresh-interruption",
+      "cry-collapse-resume-no-duplicate",
+      "voice-appends-draft",
+      "poop-collapse-resume",
+      "result-followup-appends",
+      "terminal-repeat-archives-once",
+      "task-processing-companion",
+      "five-record-types-inline-save-and-cancel-timer",
+      "inline-edit-preserves-record",
+      "companion-asset-fallback",
+      "time-only-draft-edit-conflict",
+      "processing-refresh-keeps-material-retry",
+      "cry-route-exit-interrupts",
+      "attachments-stay-generic-after-three-card-redesign",
+      "cancelled-analysis-no-late-overwrite",
+      "one-shared-service-grid",
+      "service-dialog-escape-focus",
+      "narrow-home-final",
+      "service-dialog-keyboard-focus",
+      "sidebar-roundtrip-retains-state",
+      "long-record-footer-reachable"
+    ],
+    "runtime_check_count": 26,
+    "all_logged_checks_pass": true,
+    "browser_run_by_reviewer": false,
+    "primary_browser_operator": "/root",
+    "screenshots_independently_inspected": [
+      "reviews/screenshots/task-error-390.jpg",
+      "reviews/screenshots/services-dialog-390.jpg",
+      "reviews/screenshots/companion-fallback-390.jpg",
+      "reviews/screenshots/home-empty-390.jpg",
+      "reviews/screenshots/home-360.jpg",
+      "reviews/screenshots/home-desktop.jpg",
+      "reviews/screenshots/services-focus-390.jpg",
+      "reviews/screenshots/record-inline-390.jpg",
+      "reviews/screenshots/home-saved-390.jpg",
+      "reviews/screenshots/record-inline-bottom-390.jpg"
+    ],
+    "full_design_test_matrix_executed": false,
+    "scope": "Actual incremental runtime IDs are listed, not a claim that all 55 ledger test plans were executed.",
+    "source_files": [
+      "design.json",
+      "sources/requirements-v04.json",
+      "bundle/index.html",
+      "bundle/assets/app.js",
+      "bundle/assets/styles.css",
+      "bundle/assets/asset-map.js",
+      "bundle/assets/companion/placeholder.svg",
+      "bundle/README.txt",
+      "FRAMEWORK.txt",
+      "ASSET-CONTRACT.txt",
+      "CHANGELOG.txt"
+    ]
+  },
+  "limits": [
+    "Pass is limited to this unconfirmed FW04 candidate increment. No frozen baseline, full delivery or production approval.",
+    "Reviewer independently reviewed source, ran mechanical/hash checks and inspected saved screenshots; /root operated the browser.",
+    "26 incremental checks do not exhaust all 55 plans, 73 states, inherited onboarding/side pages, or invalid/save-failure combinations for all five record types.",
+    "Desktop declared viewport is 1440x1000 but captured pixels are 1425x990; conclusions concern the captured extent only.",
+    "Mobile uses desktop viewport emulation; real OS virtual keyboard, screen reader, permissions and media devices are untested.",
+    "HTTP verified; file:// double-click unverified. Camera/microphone/upload/AI/analysis are mocked.",
+    "Current static local placeholders are covered; future imported formats, motion, icon corruption and delayed-load races need separate integration validation.",
+    "Current timeout cleanup/busy guards provide simulation cancellation semantics; real asynchronous services need equivalent per-operation identity and cancellation guarantees."
+  ],
+  "verdict": "Pass for the explicitly scoped FW04 architecture candidate increment. No open findings remain. Candidate remains unconfirmed/unfrozen; this is not full delivery or visual-quality approval.",
+  "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+  "material_hash_method": "SHA256 of canonical JSON {design_sha256: SHA256(canonical design excluding project.stage), bundle_sha256: sorted relative bundle file -> raw SHA256}. No frozen receipt exists.",
+  "material_hashes": {
+    "design_sha256": "7325aa2b57bc2cc9829dfa589144487e29db72f0c55473774b6c271d4c39e3ac",
+    "bundle_sha256": {
+      "bundle/README.txt": "3287d1e0237744b7d55898f55ae81141c963fd69fa9abd220c12f23f5d0b441c",
+      "bundle/assets/app.js": "e21156dde44a2445f30c462b1162393bdf7b589ef9ce2d3217787ea9fbc5a304",
+      "bundle/assets/asset-map.js": "4e5ea669587885c8cb1b50d4251d29c7a6240bc0160f459d5de24aa54ad51be9",
+      "bundle/assets/companion/placeholder.svg": "0ccc46023688e3cdc7ead16fd7204b4650489794b8d75de1f8223d2476422e0e",
+      "bundle/assets/icons/camera.svg": "6129b360920e6043182e86e0ec6cdd915402802d2659ea6a482e090de51fb4e6",
+      "bundle/assets/icons/chevron.svg": "def11ffd937d351283fc9d1c2cf14f0e8c107b8ea8722d69e4bef72679f446eb",
+      "bundle/assets/icons/close.svg": "fd653d727430a9909670d42c0e62f9ca3578976ae95685c3d64b828538b77da5",
+      "bundle/assets/icons/collapse.svg": "5a261cf095c2807be53de32405682ac132d63ad6dd0324cbfdd10d5ac3596bca",
+      "bundle/assets/icons/cry.svg": "6400939fa463046a92f985a20a7581e9e4d8b4c2196a0a818928aade0139c23c",
+      "bundle/assets/icons/expand.svg": "bd97130a5f17ca3c97212904eb1378c04c3319e1e50984bdde771d3ee5be237b",
+      "bundle/assets/icons/menu.svg": "bc8cacd6cf8569877835e175b57e9013b0e992363f05e1ec5f4b65147715394b",
+      "bundle/assets/icons/microphone.svg": "0bb3cf7fec32be6db2000406a85b5d07fc4b6481bbc3053c9a91766b3bf10067",
+      "bundle/assets/icons/poop.svg": "3173926e2a5772bf137d43233ce15676246f293bb2f08a616e08135aafabd88a",
+      "bundle/assets/icons/record.svg": "39430e24dfa7ca2c8347e4b4188cfd1dfebf6e9286527113729d30decbd92050",
+      "bundle/assets/icons/services.svg": "c89f312845b488c2cdaa2279906c6941a633ef7b48109c92c41b9a7af2102939",
+      "bundle/assets/icons/sound.svg": "998978ebc1a393381e2786b16206091c0ca571ec63ddf0503f9d589d851e1ec9",
+      "bundle/assets/icons/upload.svg": "b7f5312ea35c42623e071848f99e4297164e9e26ac3d8d8bdffa97b8a5255d73",
+      "bundle/assets/styles.css": "86d9ea42bbd8c641524a53a0ad83a90f18b94e449ea071e1f108d882d8a86c99",
+      "bundle/index.html": "0bd114a2c28bf835bea939be9733e49f05f232f76c2ee4199ea36b7b0dbe7d65"
+    }
+  },
+  "material_integrity": {
+    "independently_recomputed_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+    "runtime_per_file_map_matches": true,
+    "source_sha_matches": true,
+    "all_ten_screenshot_hashes_match": true
+  },
+  "planned_acceptance_matrix": [
+    {
+      "id": "FW04-shared-lifecycle",
+      "scenario": "For record/cry/poop: enter, collapse, resume twice, cancel, reopen terminal, explicitly restart",
+      "expected": "Same-page route; one unfinished instance; data preserved on collapse; cancel scoped; explicit new instance only on restart"
+    },
+    {
+      "id": "FW04-record-five-types",
+      "scenario": "Record valid, invalid and failed save for all five types; edit existing; time-only draft; switch types with drafts",
+      "expected": "Original fields/validation unchanged; drafts preserved; exactly one target record updated; active subtype restored"
+    },
+    {
+      "id": "FW04-multitask",
+      "scenario": "Interleave record draft, cry preview and poop preview; resume each; cancel only one",
+      "expected": "Other task data/state/seq remain unchanged; one instance per unfinished kind/type rule"
+    },
+    {
+      "id": "FW04-capture-leave",
+      "scenario": "Record cry then collapse, navigate sidebar overview, open competing input or pagehide",
+      "expected": "No invisible capture; released ownership; interruption visibly explained; no auto submit"
+    },
+    {
+      "id": "FW04-refresh",
+      "scenario": "Reload record draft/edit, cry capture, cry/poop processing, terminal result and chat draft with attachments",
+      "expected": "No automatic capture or fabricated completion; recoverable inputs retained; original record/task IDs preserved"
+    },
+    {
+      "id": "FW04-voice-exclusion",
+      "scenario": "Cry recording -> voice; voice panel -> cry start; cancel/close both; use transcription with existing draft",
+      "expected": "Exclusive ownership and clear feedback; lock released; draft retained"
+    },
+    {
+      "id": "FW04-stale-completion",
+      "scenario": "Begin save/analysis then cancel/restart/reset before callback; wait for prior duration",
+      "expected": "No ghost saved record or completion applied to cancelled/new task"
+    },
+    {
+      "id": "FW04-launcher-dom",
+      "scenario": "Initial screen, expanded composer, common-functions open/close/Escape, collapse input",
+      "expected": "Exactly one copy of each launcher ID, correct host and focus; no route change or duplicate card"
+    },
+    {
+      "id": "FW04-assets-motion",
+      "scenario": "Missing avatar and one icon, motion off/reduced-motion, long status",
+      "expected": "Stable fallback and visible text; no interactive AI affordance"
+    },
+    {
+      "id": "FW04-preserved-flows",
+      "scenario": "Chat text/attachments failed-send retry; sidebar overview return; today aggregate after record save",
+      "expected": "FW03 preservation rules remain intact and original same-page flow remains"
+    },
+    {
+      "id": "FW04-mobile-firstscreen",
+      "scenario": "Current screenshots at declared desktop/mobile viewports before and after expansion",
+      "expected": "Today and all three launchers simultaneously visible on initial chat; compact age+AI and composer visible without overlap"
+    }
+  ],
+  "planned_acceptance_matrix_status": "Initial broad plan retained for later delivery. This verdict covers only the actual 26 runtime checks plus source/mechanical/screenshot review; it does not certify every scenario in this plan.",
+  "evidence": [
+    {
+      "kind": "interaction-log",
+      "path": "reviews/runtime.json",
+      "sha256": "cd4e1b16244931da086d6a90870be78d1d563234f209e5a895e7029e5c8b4b74"
+    },
+    {
+      "kind": "mechanical-check-log",
+      "path": "reviews/static-check.json",
+      "sha256": "4b1b96b60e885187e40f4a94110796cc99166205db84828a868cee46831011e0"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/task-error-390.jpg",
+      "sha256": "45ec07786b4b47c6b7c10b3daaa5491cfef629002f942eb66975c3e583178037",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/services-dialog-390.jpg",
+      "sha256": "5098b9cb52426ef850c749aa6776f504675c1072ee23b0db39c0312182d9bd07",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/companion-fallback-390.jpg",
+      "sha256": "c46a81fe0c95b1ce5dbca651e14a24f41cd39f3a4615cb40f5badb6e63a1335b",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-empty-390.jpg",
+      "sha256": "3c32cc6c260f457317693de1c49981ffc11ad640cf22496980b51daf2a7632a2",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-360.jpg",
+      "sha256": "371f552058fcb004c58c82a392c23b37625ed060771ff0e9724d0298bda74b81",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 780,
+        "width": 360
+      },
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-desktop.jpg",
+      "sha256": "3d079411cfad12c48897b34828a1ec3d8169095076b762b4f029e8823e0c2bc3",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "actualPixels": {
+        "height": 990,
+        "width": 1425
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/services-focus-390.jpg",
+      "sha256": "aff5e4f645c68a8bc2a1f03d1484db1179d683e4998d12db2af4ca2d87a20362",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/record-inline-390.jpg",
+      "sha256": "2bfb2658e37b5b30bbec9c18089446dcdbd7723aa807b69c9a40d15680e1aac2",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-saved-390.jpg",
+      "sha256": "d8478faafd2a76f42bef421af81c9893cf27b2711a87b1c456e72b8e2386365c",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/record-inline-bottom-390.jpg",
+      "sha256": "e343474198cda16453a964951b726a06967a2cb23ca69a6faca0b9cf1077491a",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "evidence_mode": "screenshot-review",
+      "operator": "/root",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+HOME-1.1 · 莓色留白常驻照护入口候选 23
+日期：2026-10-21。设计状态：draft，未冻结。
+
+一、授权与范围
+用户要求移除对话功能卡片中反复出现的建议功能入口，将「记一笔」「听哭闹」「看便便」固定放在输入框上方，横向排列，总高约为默认输入框的一半，并沿用现有交互规范。对应 sources/conversation-shortcuts-23-requirements.json 的 R23-01～03。上一完整候选位于 ../versions/secondary-sheet-motion-22/；本轮不新增路由、底部导航、业务字段或浏览器存储键。
+
+二、表现与交互
+- index.html 在底部输入框上方新增唯一的 #care-shortcuts，三个 button 继续用原有 data-care 点击代理调用会话任务；欢迎内容不再单列三项入口。
+- assets/app.js 不再在 AI 回复、记录回执或任务卡片结束状态渲染三项建议入口；记录类型、表单、保存、回执、设备采集、重试、取消、任务互斥与对话恢复逻辑保留。
+- assets/care-shortcuts-23.css 将入口固定为一行三列，默认高度 29px；继续使用莓色留白已有颜色 token，深色使用任务语义色，可见键盘焦点。默认输入框仍为 58px。
+- 候选 22 的「我的」标题、二级弹窗入场与减少动效规则继续保留；候选 21 的妈妈年龄 18–50、分娩次数 0–6、宝宝出生孕周 37–50 范围及旧值修正规则继续保留。
+
+三、构建与验证
+- index.html 与 assets/ 是相对资源版；build-standalone.cjs 生成可双击的 Momcozy-final.html，内嵌 CSS、脚本和 AI 形象图片。build-manifest.cjs 生成静态文件摘要清单。
+- design.json 将 R23-01～03 映射到 PAGE-home、CHAT-care、原任务流程及新增欢迎入口、任务互斥动作，并记录 29px/58px 组件尺寸。design_guard.py 的 validate_design 内部引用校验为零错误。由于没有合法经用户确认的 B-ID，不声明 freeze/check 基线通过。
+- delivery-review/conversation-shortcuts-23/qa-browser.cjs 在 Chrome 155 headless、file:// 下验证欢迎、连续对话、记一笔保存、两项采集失败、活跃任务互斥、刷新、键盘焦点、深色短屏、减少动效和模块化入口。browser-evidence.json 绑定当前单文件 SHA-256，记录 12 组检查、8 张截图、零页面与控制台错误。
+- 本轮视觉与一致性结果为实现者自审，范围见同目录；不冒称独立评审或全量页面验收。若源码或单文件改变，须重跑浏览器证据并复核截图。最终文件数和散列以 file-manifest.json 及 --check 为准。
+
+四、待决与边界
+本候选需要用户查看实际页面后决定是否冻结。资料输入仍是本地原型，没有真实账户、跨设备同步或医疗数据核验。浏览器自动化不等于真机触控、软键盘或屏幕阅读器验收。

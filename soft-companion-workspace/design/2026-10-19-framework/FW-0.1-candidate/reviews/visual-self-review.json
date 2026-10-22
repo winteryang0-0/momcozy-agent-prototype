@@ -1,0 +1,64 @@
+{
+  "status": "candidate-sampled-review",
+  "independent": false,
+  "author": "/root",
+  "findings": [],
+  "coverage": "实际查看移动端首页、桌面表单、移动端任务页面截图；非全状态视觉矩阵",
+  "limits": [
+    "截图为浏览器实际捕获，文件内容为JPEG，扩展名沿用png",
+    "任务页面为文档滚动，输入区粘附底部；未做长会话可用性研究",
+    "图片capture共享模板状态不用于交互；未冻结"
+  ],
+  "evidence": [
+    {
+      "path": "reviews/home-desktop-final.png",
+      "sha256": "f81ed7b4e6be564f86c1cea28d18cd71cc201c847ef7e3b70a2546c373a0c8bf",
+      "operator": "/root",
+      "browser": "ChatGPT in-app browser; version not exposed",
+      "protocol": "http",
+      "date": "2026-10-19",
+      "fullPage": false,
+      "dimensions": "1440x1000"
+    },
+    {
+      "path": "reviews/home-mobile-final.png",
+      "sha256": "9723e22a439be1a8323ace8d73bd86f49ab4db08cdd35b52b6f316f08c56a7da",
+      "operator": "/root",
+      "browser": "ChatGPT in-app browser; version not exposed",
+      "protocol": "http",
+      "date": "2026-10-19",
+      "fullPage": false,
+      "dimensions": "390x844"
+    },
+    {
+      "path": "reviews/form-desktop.png",
+      "sha256": "11e669b1fac520842ae73c8d7ec9fcb34fd3dd626ddfe7e29ae120348bd2c598",
+      "operator": "/root",
+      "browser": "ChatGPT in-app browser; version not exposed",
+      "protocol": "http",
+      "date": "2026-10-19",
+      "fullPage": false,
+      "dimensions": "1440x1000"
+    },
+    {
+      "path": "reviews/tasks-desktop.png",
+      "sha256": "f6bce395abfd460e80713376782e4be87b68f696b49e9a320b26b5c43824122e",
+      "operator": "/root",
+      "browser": "ChatGPT in-app browser; version not exposed",
+      "protocol": "http",
+      "date": "2026-10-19",
+      "fullPage": false,
+      "dimensions": "1440x1000"
+    },
+    {
+      "path": "reviews/tasks-mobile.png",
+      "sha256": "f1eef0a04a0a610a7d5ccd62176bdda3375d563413ab8ae17eb81573ba4cc68d",
+      "operator": "/root",
+      "browser": "ChatGPT in-app browser; version not exposed",
+      "protocol": "http",
+      "date": "2026-10-19",
+      "fullPage": false,
+      "dimensions": "390x844"
+    }
+  ]
+}

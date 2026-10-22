@@ -1,0 +1,386 @@
+{
+  "results": [
+    {
+      "label": "home-normal-normal",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-normal-0",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-normal-1",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-normal-2",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "home-empty-normal",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-empty-normal-0",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-empty-normal-1",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-empty-normal-2",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "home-error-normal",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-error-normal-0",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-error-normal-1",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-error-normal-2",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "home-normal-offline",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-offline-0",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-offline-1",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "advice-normal-offline-2",
+      "chinese": [],
+      "attrs": [],
+      "title": ""
+    },
+    {
+      "label": "cry-ready",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "ready"
+    },
+    {
+      "label": "cry-starting",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "starting"
+    },
+    {
+      "label": "cry-camera",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "camera"
+    },
+    {
+      "label": "cry-cameraReady",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "cameraReady"
+    },
+    {
+      "label": "cry-listening",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "listening"
+    },
+    {
+      "label": "cry-finishing",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "finishing"
+    },
+    {
+      "label": "cry-captured",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "captured"
+    },
+    {
+      "label": "cry-captureError",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "captureError"
+    },
+    {
+      "label": "cry-processing",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "processing"
+    },
+    {
+      "label": "cry-indeterminate",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "indeterminate"
+    },
+    {
+      "label": "cry-result",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "result"
+    },
+    {
+      "label": "cry-timeout",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "timeout"
+    },
+    {
+      "label": "cry-offline",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "offline"
+    },
+    {
+      "label": "cry-cancelled",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "cancelled"
+    },
+    {
+      "label": "cry-interrupted",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "interrupted"
+    },
+    {
+      "label": "cry-speaking",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "speaking"
+    },
+    {
+      "label": "poop-ready",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "ready"
+    },
+    {
+      "label": "poop-starting",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "starting"
+    },
+    {
+      "label": "poop-camera",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "camera"
+    },
+    {
+      "label": "poop-cameraReady",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "cameraReady"
+    },
+    {
+      "label": "poop-listening",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "listening"
+    },
+    {
+      "label": "poop-finishing",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "finishing"
+    },
+    {
+      "label": "poop-captured",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "captured"
+    },
+    {
+      "label": "poop-captureError",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "captureError"
+    },
+    {
+      "label": "poop-processing",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "processing"
+    },
+    {
+      "label": "poop-indeterminate",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "indeterminate"
+    },
+    {
+      "label": "poop-result",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "result"
+    },
+    {
+      "label": "poop-timeout",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "timeout"
+    },
+    {
+      "label": "poop-offline",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "offline"
+    },
+    {
+      "label": "poop-cancelled",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "cancelled"
+    },
+    {
+      "label": "poop-interrupted",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "interrupted"
+    },
+    {
+      "label": "poop-speaking",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "speaking"
+    },
+    {
+      "label": "inline-picker",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "picker"
+    },
+    {
+      "label": "inline-editing",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "editing"
+    },
+    {
+      "label": "inline-saving",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "editing"
+    },
+    {
+      "label": "inline-unknown",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "editing"
+    },
+    {
+      "label": "inline-failed",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "editing"
+    },
+    {
+      "label": "inline-success",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "success"
+    },
+    {
+      "label": "inline-cancelled",
+      "chinese": [],
+      "attrs": [],
+      "title": "",
+      "taskState": "cancelled"
+    },
+    {
+      "label": "settings",
+      "chinese": [],
+      "attrs": [],
+      "title": "Display and preview settings"
+    },
+    {
+      "label": "reset-confirm",
+      "chinese": [],
+      "attrs": [],
+      "title": "Reset this preview?"
+    }
+  ],
+  "errors": []
+}

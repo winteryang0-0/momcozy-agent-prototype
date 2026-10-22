@@ -1,0 +1,682 @@
+{
+  "role": "visual",
+  "author": "/root/sidebar_visual",
+  "independent": true,
+  "status": "pass",
+  "pass_scope": "FW-0.2本轮侧栏补充的截图视觉范围；非整个产品交付或完整无障碍认证",
+  "evidence_mode": "screenshot-review",
+  "baseline_id": null,
+  "candidate": "FW-0.2",
+  "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+  "material_hash_method": "SHA256 of sorted compact JSON mapping design.json and all bundle file paths to byte SHA256",
+  "material_files": {
+    "design.json": "5ea73246b26c945ff0aa24b61308d0f9106e9baaf9e1e8a60e0d64fc734ad830",
+    "bundle/assets/app.js": "03df708e4e57ba55d65082960037c7614e9b7224c1a2b588f1a83ceee8834dec",
+    "bundle/assets/styles.css": "2aae88edb0ceb0be895f006fdf032405d4e574d2df05bf23b87d1f5305432f06",
+    "bundle/index.html": "2dd7908a7758417dc7a55c58baf3b492cca3c50fd3dea4e7b7910e970ed7a911",
+    "bundle/README.txt": "0981092474259a9673ff7bacba199f4b0a672f639f91960c344e104278594839"
+  },
+  "evidence": [
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/baby-age-mobile.jpg",
+      "sha256": "d6617dd23cd2321a5bf5a8c99552eb10b65890d0dfcc59c2b8155a785edac770",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:23:43.665233+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "年龄、今日记录摘要、两项下级入口完整。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/baby-desktop.jpg",
+      "sha256": "2489a10effa368dd23ca7aae6b41d41ed3691595d51643f7490147ff7bb134ac",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:24:40.382929+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "年龄、今日记录摘要、两项下级入口完整。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/baby-mobile.jpg",
+      "sha256": "3be6757f9fc1cd5c805223c03fe74bfb3110c05d868ba040d345bb9edcff977a",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:33.984322+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "年龄、今日记录摘要、两项下级入口完整。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/body-desktop.jpg",
+      "sha256": "4260469d48b7fe915c24380e56e28a227c563adedd2eb85d524393449fde4fdb",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:18.613560+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/body-mobile.jpg",
+      "sha256": "d6a189c7e6ad546daf5775543f85bd0f0c807de26c01090ecc36553118d5f12c",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:33.500916+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/device-info-desktop.jpg",
+      "sha256": "a2552b3f98b268f1ba62319ad6d56a95d868ddffd0d7ee5f436bc75a7ed20657",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:16.184608+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/device-info-mobile.jpg",
+      "sha256": "45a00781a19ffd0bb69ea65a6301217b56bb37b69a1bb0062a42ba06024a9bdc",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:35.901604+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/devices-desktop.jpg",
+      "sha256": "712c369df1c5a1af60a75a60c7f28431c75a90151bc39848f5f8607188b87348",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:02.518421+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "未连接状态、同步时间、两项下级入口完整。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/devices-mobile.jpg",
+      "sha256": "92c675e2ae485c65492a60becb4504362ffc55b7ae36a74330ecc459d9e3d6f2",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:35.545405+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "未连接状态、同步时间、两项下级入口完整。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/feeding-desktop.jpg",
+      "sha256": "313684173b529162e5d93af3c796378a84f2c792414683c1d0ca29706c4e4faa",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:01.232257+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/feeding-mobile.jpg",
+      "sha256": "fab3e7f252f72adbf655292f35145289a87cb1163f3844df01c19e7433554c77",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:34.377645+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/growth-desktop.jpg",
+      "sha256": "438dc90a372f1c6fee256973008f3354f3124b04e52a07977bdd8995731eff98",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:01.921017+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/growth-mobile.jpg",
+      "sha256": "bf511676627d7464459fbe09b54f4c185a20f29e351979f8ebd063cf3ed3120c",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/baby",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:34.994974+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/mine-desktop.jpg",
+      "sha256": "4c06954b6307b26da5e4ad6be90e73141943a6d339a7172756ab7fad7acd8387",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:17.570079+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "摘要、两项下级入口与返回侧栏完整，示例来源提示可见。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/mine-mobile.jpg",
+      "sha256": "06a3ea9ca2bb59d18c9d12961e4350c6d6dfc5ae96ee7acfcd291bfbc55f9c74",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:32.408724+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "摘要、两项下级入口与返回侧栏完整，示例来源提示可见。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/sidebar-desktop.jpg",
+      "sha256": "6d29bc812f5f2c8ca258683a33aa0f31dd2f758157f8d2238e37823d9896daba",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/chat",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:17.416148+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "我的、宝宝、设备三个入口和关闭控件完整，侧栏与背景层级清楚。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/sidebar-mobile.jpg",
+      "sha256": "e80d3216948b2a4c0582b2672a8523a9a0c81339c00907ec421f8d435922b95f",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/chat",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:32.306147+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "我的、宝宝、设备三个入口和关闭控件完整，侧栏与背景层级清楚。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/sync-desktop.jpg",
+      "sha256": "35b211ee463d79eca4907fddc488e083566ff19a0c6a0e5df54226a8f9fc5c8c",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:16.887006+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/sync-mobile.jpg",
+      "sha256": "90f0fb1cbd04717775f69f655f35782786aca0ba7f8d490e331904475c536fb5",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/devices",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:36.567053+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/trend-desktop.jpg",
+      "sha256": "88babb4de6cfcaabc8241825f706fa0945b80c3eeaa688a9aad71e6e300849ad",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:17.956044+00:00",
+      "declared_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actual_image_pixels": [
+        1425,
+        990
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/trend-mobile.jpg",
+      "sha256": "8fe62623c7f5d64f307d83109ee328359cccce52e0af0e12134025d400d898ee",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4175/#/mine",
+      "url_basis": "preview server and page mapping; exact browser capture metadata not retained",
+      "captured_at": "unknown",
+      "file_modified_utc": "2026-10-19T10:22:32.825683+00:00",
+      "declared_viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actual_image_pixels": [
+        390,
+        844
+      ],
+      "fullPage": false,
+      "material_hash": "fe8f1fbc2a633ae1acf6d52b11a76ed0f17130c173fc4792df863dfe0dd65bda",
+      "observation": "范围说明、目标标题、未提供范围及返回按钮完整可读；未见横向溢出或关键控件遮挡。"
+    }
+  ],
+  "coverage": {
+    "page_ids": [
+      "sidebar",
+      "mine",
+      "baby",
+      "devices"
+    ],
+    "viewport_ids": [
+      "desktop",
+      "mobile"
+    ],
+    "state_ids": [
+      "open",
+      "overview",
+      "overview-age-present",
+      "overview-age-missing",
+      "six-scope-dialogs"
+    ],
+    "matrix": [
+      {
+        "page_id": "baby",
+        "state_id": "overview-age-present",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/baby-age-mobile.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "overview-age-present",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/baby-desktop.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "overview-age-missing",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/baby-mobile.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "scope-dialog:body",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/body-desktop.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "scope-dialog:body",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/body-mobile.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "scope-dialog:device-info",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/device-info-desktop.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "scope-dialog:device-info",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/device-info-mobile.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "overview",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/devices-desktop.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "overview",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/devices-mobile.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "scope-dialog:feeding",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/feeding-desktop.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "scope-dialog:feeding",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/feeding-mobile.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "scope-dialog:growth",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/growth-desktop.jpg"
+      },
+      {
+        "page_id": "baby",
+        "state_id": "scope-dialog:growth",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/growth-mobile.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "overview",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/mine-desktop.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "overview",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/mine-mobile.jpg"
+      },
+      {
+        "page_id": "sidebar",
+        "state_id": "open",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/sidebar-desktop.jpg"
+      },
+      {
+        "page_id": "sidebar",
+        "state_id": "open",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/sidebar-mobile.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "scope-dialog:sync",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/sync-desktop.jpg"
+      },
+      {
+        "page_id": "devices",
+        "state_id": "scope-dialog:sync",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/sync-mobile.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "scope-dialog:trend",
+        "viewport_id": "desktop",
+        "evidence_path": "reviews/screenshots/trend-desktop.jpg"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "scope-dialog:trend",
+        "viewport_id": "mobile",
+        "evidence_path": "reviews/screenshots/trend-mobile.jpg"
+      }
+    ],
+    "actual_reviewer_browser_operations": [],
+    "source_screenshots_reviewed": [
+      "sources/sidebar-0935a1df-f726-4c45-8917-d928db2035ab.png",
+      "sources/sidebar-4c217a81-9d2b-43ee-9994-7e12a5048885.png",
+      "sources/sidebar-dc7c158a-592d-4583-a841-1e7c55140638.png",
+      "sources/sidebar-ddb61e70-4a8b-4c77-ac8f-a382f5097e90.png"
+    ]
+  },
+  "findings": [],
+  "observations": [
+    "原材料的侧栏三个入口与我的、宝宝、设备三层概览已对应；每个概览的两个下级入口均可见。",
+    "桌面和移动截图内没有可观察的横向溢出、关键文案截断或控件遮挡。",
+    "六个目标未提供的入口明确显示范围说明；本审查不将这些说明弹层视为已完成业务详情页。",
+    "宝宝资料缺失与已录入12天的展示均有实际截图；未在图中虚构姓名或年龄。",
+    "baby-desktop最初截图留有滚动导致顶栏不在画面，经主代理补拍后已独立复看，顶栏完整。",
+    "桌面声明视口1440×1000，但实际图片1425×990；已分开记录，不把声明尺寸当图片尺寸。"
+  ],
+  "interaction_evidence_reference": {
+    "path": "reviews/sidebar-runtime.json",
+    "sha256": "b47ab626d2a815af7fd5683a8a99ae94502638cadd7742d341b3b630f5b2cf69",
+    "operator": "/root",
+    "note": "引用主代理更新后的21项操作记录作为来源说明，新增Esc、遮罩、下级弹层Esc测试；评审者未自行重跑，不将记录转称个人实测或独立操作通过。",
+    "test_count": 21
+  },
+  "limitations": [
+    "冻结基线尚未确认，本报告只审本轮候选补充。",
+    "截图由主代理捕获，评审者只读图，没有控制浏览器。",
+    "截图只能判断所示布局；动画、滚动、键盘、焦点、屏幕阅读器、虚拟键盘以及系统缩放未独立实测。",
+    "桌面部分范围弹层的背景处于滚动状态；弹层本身完整；概览顶部覆盖由独立主页面截图提供。",
+    "既有引导、记录及分析任务的全状态不在本轮视觉覆盖；没有声明全产品视觉通过。",
+    "实际捕获时间与浏览器版本未保留，明确记为unknown；文件修改时间仅作证据文件时间参考。"
+  ]
+}

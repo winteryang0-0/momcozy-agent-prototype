@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "baseline_id": "B-MOMCOZY-20261022-R27",
+  "generated_at": "2026-10-22T05:36:50.932Z",
+  "purpose": "Frozen R27 file integrity; not visual, interaction, or design approval",
+  "file_count": 270,
+  "artifacts": {
+    "manifest": {
+      "path": "prototype/current/file-manifest.json",
+      "sha256": "de0dd35a2e7115480a08c524256412402fde82e97de4d1fc43f3a0d0da2ad2af"
+    },
+    "approval": {
+      "path": "prototype/current/baseline-approval.json",
+      "sha256": "4ba31b8a44b9f428c95e69fdcf8b3b3db29f1ba5433b08e507f8d964b93d5bd4"
+    },
+    "snapshot": {
+      "path": "prototype/current/baselines/B-MOMCOZY-20261022-R27/design.json",
+      "sha256": "c744b66e47b5d676bbbb6374e2d4afcef5904842604031170bf72501c6ed8179"
+    },
+    "receipt": {
+      "path": "prototype/current/baselines/B-MOMCOZY-20261022-R27/receipt.json",
+      "sha256": "246f95e5ff80ad286189a8901a621ddb59d2629eaa2f0e18a79d530d1e3d18ef"
+    },
+    "design": {
+      "path": "prototype/current/design.json",
+      "sha256": "412d48611a0749b7e0146dc39208b7b034cac86aaefbc100457a041ff8664555"
+    },
+    "prototype": {
+      "path": "prototype/current/Momcozy-final.html",
+      "sha256": "7d3bebe5676a09cd3dd2d744fb9b3ae7e31c2844ff702af5aaaccb45afda4676"
+    }
+  }
+}

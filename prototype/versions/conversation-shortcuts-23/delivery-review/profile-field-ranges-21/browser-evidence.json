@@ -1,0 +1,261 @@
+{
+  "revision": "profile-field-ranges-21",
+  "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+  "modular_sha256": "f51b5395b901d95c8fa07b21da0729142bb512f6f2282a4ca10bb410ff965f25",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "operator": "Playwright Chrome headless",
+  "captured_at": "2026-10-21T06:43:48.718Z",
+  "checks": [
+    "first entry uses exact 18–50, 0–6, and 37–50 options, with an empty option",
+    "lower bounds accepted and parity zero persists when moving back",
+    "all three fields can remain empty during onboarding",
+    "upper bounds, two baby values, completion, and refresh persistence",
+    "mother quick edit rejects 17, 18.5, and 7; saves 18 and 0",
+    "baby quick edit rejects 36 and 51; saves 50 or blank without changing baby 2",
+    "mother quick edit accepts blank and refresh keeps the cleared values",
+    "legacy onboarding retains old values, blocks each invalid field, finds baby 2, and cancel does not overwrite profile",
+    "legacy quick edit warns and rejects old values, then updates only the edited fields",
+    "quick edit synchronizes a paused full-profile draft and survives refresh",
+    "360×640 dark entry and edit keep fields and save action reachable without horizontal overflow",
+    "pregnancy current-week field retains its existing 0–45 range",
+    "modular index.html also works from file:// with the updated ranges"
+  ],
+  "screenshots": [
+    {
+      "name": "01-onboarding-empty-390",
+      "note": "Optional wheels and berry white space",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/01-onboarding-empty-390.png",
+      "sha256": "9e78f6c169cd1be5f0be1a3a8d82a59d8a18f0134988996f58475e90453b4842",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:28.801Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-onboarding-lower-bounds-390",
+      "note": "All three lower bounds selected",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/02-onboarding-lower-bounds-390.png",
+      "sha256": "652303f446f4a2fc9782cea392cb9160c09637ec3408b7d5f27b74f849e8fdc9",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:29.839Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-onboarding-upper-multi-390",
+      "note": "Upper bounds and second baby",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/03-onboarding-upper-multi-390.png",
+      "sha256": "94a45b57f7296c958728f52e55a6abf0cef426aeb1db90a0ab68a8ac8d03e9e1",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:32.352Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-mom-profile-390",
+      "note": "Mother quick edit shows both bounded fields",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/04-mom-profile-390.png",
+      "sha256": "fe58696f8302867ef75e1de991d3932ed0e1415939a82f649784b5807860d961",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:33.897Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-mom-invalid-390",
+      "note": "Out of range age gives inline and form error",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/05-mom-invalid-390.png",
+      "sha256": "fb4a875be367c53c8ad4c5ab120f9305612f7e8e179f62b1f6d0897375078879",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:34.171Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-baby-profile-390",
+      "note": "Baby quick edit includes birth gestation",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/06-baby-profile-390.png",
+      "sha256": "62869d109d6e273e6123ca11229a3ebca009ccd41b042a5ffd057f8e0bc1be7c",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:34.908Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-baby-invalid-390",
+      "note": "Out of range birth gestation blocked",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/07-baby-invalid-390.png",
+      "sha256": "3207c6da668a84509d4e4c8ecae2eaf57722aeca78aacbae5969d2fa3c637b1c",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:35.156Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-legacy-onboarding-390",
+      "note": "Existing out of range values remain visible",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/08-legacy-onboarding-390.png",
+      "sha256": "7e3227f4a9639e4cbba375b48eca9d0b76a82709da6ad726a2a503ce8c2625fc",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:38.186Z",
+      "fullPage": false
+    },
+    {
+      "name": "09-legacy-baby-2-390",
+      "note": "Second baby is identified when invalid",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/09-legacy-baby-2-390.png",
+      "sha256": "fe9e59c6d43fd58bc2631104653ff6c9d337f01503eeeb65c5fcb40cf0249bb3",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:39.360Z",
+      "fullPage": false
+    },
+    {
+      "name": "10-legacy-mom-profile-390",
+      "note": "Quick edit keeps old values and requires correction",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/10-legacy-mom-profile-390.png",
+      "sha256": "889b317594e2ba7477f8c17c1eb1e3d740ee40054eecbda648eea82fb414e6ab",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:41.333Z",
+      "fullPage": false
+    },
+    {
+      "name": "11-mom-profile-dark-360",
+      "note": "Short dark quick edit",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/11-mom-profile-dark-360.png",
+      "sha256": "33f542218367c1324ecaa075da6226f243ad4807e441a743812a345e5f00a059",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:46.170Z",
+      "fullPage": false
+    },
+    {
+      "name": "11b-mom-save-visible-dark-360",
+      "note": "Save remains reachable after sheet scroll",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/11b-mom-save-visible-dark-360.png",
+      "sha256": "1cf33926117f13375e9bd4c9eddee0ccd7edd7950fb63ced48b4dcc983756df6",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-21T06:43:46.434Z",
+      "fullPage": false
+    },
+    {
+      "name": "12-onboarding-dark-360",
+      "note": "Short dark entry with upper bounds",
+      "path": "delivery-review/profile-field-ranges-21/screenshots/12-onboarding-dark-360.png",
+      "sha256": "ecc97705eb104395d6d93a693806400cd34883bfb8ead32c0969f49d2bb452c8",
+      "material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-21T06:43:47.186Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,36 @@
+{
+  "candidate": "CS-0.5",
+  "date": "2026-10-20",
+  "status": "awaiting-user-testing-not-frozen",
+  "scope": "four comparable semantic liquid-glass UI style boards",
+  "framework_sha256": "1b7b1f526912f94c36ddbf31898c805f953e34a9b14ee52e19eafd1d36fdf538",
+  "system_sha256": "8704c29f269bcaa4ea0b748f176a81a7fb0536c0cd6e967eef3ee446f7ea656c",
+  "source_sha256": "d051119e2c69ab6b47aabd9ce6e99d389d60feef4d80d81b3f0d119fbc09ce5c",
+  "scope_sha256": "1221906c54ca444e98f3e84ef95553d034785cd37085a47a487677957e033dc3",
+  "confirmation": null,
+  "files": {
+    "index.html": "ad6d76e7fdc9190663b807ae94e8ff3a2bb54655a6c32e469d6f3f48555257ae",
+    "bloom.html": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb",
+    "orbit.html": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde",
+    "garden.html": "d332ecb3f9d06d48749dbabfb38a2971a406e417b8923284fe6f4924cf74925a",
+    "berry.html": "c7fc177614dd01f4381343485e1b3f970550a4a11b02971db867268423e6b55f",
+    "assets/board.css": "93eb29f10ae06e2f24b9bace951a89780848f0cd4cd9144167c45d1c66d79dd7",
+    "assets/board.js": "d68bad195c2dc7fb6fdcb7ff6866935b18bd790b6a2518fec3e51452129dfce0",
+    "STYLE_SPEC.md": "80dcae15baacd0ecd8a9529dd6f545641cd123dba8205d7718d50622221c0d6b",
+    "source-input.json": "d051119e2c69ab6b47aabd9ce6e99d389d60feef4d80d81b3f0d119fbc09ce5c",
+    "design.json": "24ffab20c2b484886be32adea5db13231f66dcf978e7a19f7b797584cc489a46",
+    "validate.cjs": "a8c698fbd5aa15fca6999e20414cc1e9550d3f99b2971de419dd43362de15792",
+    "finalize.cjs": "64194568f4375045729561215484a74671e50164cbb7a76ce8fccdade419f21a"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "static_local_resources": "pass",
+    "mock_dom_screen_state_toggle_focus": "pass",
+    "task_color_mapping": "pass: token values and shared task usage checked across four variants",
+    "external_runtime_dependencies": "none detected",
+    "file_protocol_browser": "not tested in this run",
+    "browser_visual": "not tested; previous local browser attempt was blocked by security policy",
+    "independent_review": "not run",
+    "native_liquid_glass": "not tested"
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "archive": "Momcozy-QO-2.0-candidate.zip",
+  "files": [
+    {
+      "file": "README.txt",
+      "bytes": 1246,
+      "sha256": "417a9b18de8c2905894fd24cdba7ef1cd3b60d14a0c36aafabd5dda7dec480f2"
+    },
+    {
+      "file": "STYLE_SPEC.txt",
+      "bytes": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "file": "assets/app.js",
+      "bytes": 8200,
+      "sha256": "db7216fd5ffaf6b4da223767e553a7b8a07cd9bac1e39c3655acaf009022cf27"
+    },
+    {
+      "file": "assets/style.css",
+      "bytes": 16745,
+      "sha256": "423cc0e8b0c84c9b1ae0f1de22b0dac5a3e6f6da5464e2194ec67170f3ce7990"
+    },
+    {
+      "file": "candidate-summary.json",
+      "bytes": 956,
+      "sha256": "f3ed92889cd0307b483e87bd2a7d11a28948f8ca973cd7cb6744e24984d17b91"
+    },
+    {
+      "file": "design.json",
+      "bytes": 10489,
+      "sha256": "508cc7c254b61f27078246be0cd608c7439bb8736a5f23b541217ef584bff73a"
+    },
+    {
+      "file": "index.html",
+      "bytes": 13126,
+      "sha256": "d6b6afe6281f4ae67f559728dc4df8d5ec0ea8dceda13ad6e1f7685f5f835d52"
+    },
+    {
+      "file": "preview.cjs",
+      "bytes": 927,
+      "sha256": "e5965ace13ddd7cd1db02f952e177d1fc789e3951d08b5f85a7f5e7108c4d9e9"
+    },
+    {
+      "file": "reviews/capture-matrix.json",
+      "bytes": 8714,
+      "sha256": "4ba36007d3f2bf210247ff3b56a0fc62a027dba02b91cdf5a48b0a7b5c898b08"
+    },
+    {
+      "file": "reviews/challenger.txt",
+      "bytes": 9050,
+      "sha256": "572be70a4cdfe0f6a66e6e158a3cd99f147e2b3e9e04b9c9f8d562070ddb2d25"
+    },
+    {
+      "file": "reviews/desktop-accessibility.png",
+      "bytes": 95731,
+      "sha256": "409fee01a73eaf65eed3d52f8c9b40e2c35cfe154c19d5180419ae3e1e8baec8"
+    },
+    {
+      "file": "reviews/desktop-ios-light.png",
+      "bytes": 84608,
+      "sha256": "b8df22a2d779c04301a274e78e870e208af8cf814f5805ff9ab60c8e926fb8c6"
+    },
+    {
+      "file": "reviews/matrix-android-dark-failed.png",
+      "bytes": 31596,
+      "sha256": "e68e348be795f90be719ce90b0e4ece400ddc0811d8ff2422ff11bab62252a01"
+    },
+    {
+      "file": "reviews/matrix-android-dark-local.png",
+      "bytes": 32029,
+      "sha256": "f351ebd1e2a32b52ebe39f2ec38399241d2a2e14a2884737cf7ef90a9ab972ab"
+    },
+    {
+      "file": "reviews/matrix-android-dark-review.png",
+      "bytes": 31329,
+      "sha256": "cdbaf28cb1631950c16899af95f607140d0e4cf891770ba2ce65c561de2fc778"
+    },
+    {
+      "file": "reviews/matrix-android-dark-saving.png",
+      "bytes": 30290,
+      "sha256": "e086962a5502d279568ae86ede0f5f9fe8d0fe612aaa30befc4a076770ed4f8c"
+    },
+    {
+      "file": "reviews/matrix-android-dark-syncFailed.png",
+      "bytes": 32400,
+      "sha256": "ced501f1cb5a3687f374981beec22599abe035f2ed4a572c9325bd6ee638cbd0"
+    },
+    {
+      "file": "reviews/matrix-android-dark-synced.png",
+      "bytes": 30203,
+      "sha256": "5f7b69328a136d250fa2f61e6d18bf8ef41b666ad0e2895433cf8679d89cf1c1"
+    },
+    {
+      "file": "reviews/matrix-android-dark-syncing.png",
+      "bytes": 30814,
+      "sha256": "353d06130b1cbff18aaae509a4de4a8e2ecbd4cf1e5d82d51924b62db20476c5"
+    },
+    {
+      "file": "reviews/matrix-android-dark-unknown.png",
+      "bytes": 32526,
+      "sha256": "01df86372563587bdf0ea44cc1d134628e67959bd7dacc5086098f3299824fc2"
+    },
+    {
+      "file": "reviews/matrix-android-light-failed.png",
+      "bytes": 28343,
+      "sha256": "2c320eedd3164c1d9d79573fb7276fbe838f1fd025e1ba35d68a1b9e4851c135"
+    },
+    {
+      "file": "reviews/matrix-android-light-local.png",
+      "bytes": 29180,
+      "sha256": "1a81bac39d9defdbc535eab0ed431e33b39eec3a3df31f607ad63a72c358cfa8"
+    },
+    {
+      "file": "reviews/matrix-android-light-review.png",
+      "bytes": 28382,
+      "sha256": "f25d9c5d9686aee2534a7f461e21f4848c61d31d1fdc8c4ff76a9e82feb1219b"
+    },
+    {
+      "file": "reviews/matrix-android-light-saving.png",
+      "bytes": 27125,
+      "sha256": "036fea20790cfc4305d83783a6859668ce6e829dd8582cba8aa707b23ab3d2c7"
+    },
+    {
+      "file": "reviews/matrix-android-light-syncFailed.png",
+      "bytes": 29180,
+      "sha256": "5e755e0b03bac5edaae004e3d083443d852252eb07c61199469fa95c89a22fb5"
+    },
+    {
+      "file": "reviews/matrix-android-light-synced.png",
+      "bytes": 26927,
+      "sha256": "cff52c938a3959accf1db0d37af69513efaadc90cf876da9febc60d023acb3b7"
+    },
+    {
+      "file": "reviews/matrix-android-light-syncing.png",
+      "bytes": 27643,
+      "sha256": "e222b63f892404ca0f8d29ece97cc65e24a48361b0ceade39e01643a841dbd35"
+    },
+    {
+      "file": "reviews/matrix-android-light-unknown.png",
+      "bytes": 29724,
+      "sha256": "45dc74e9dd39ec9aaff54da4ae562964ece66ac3266c93e6270da78287232094"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-failed.png",
+      "bytes": 30198,
+      "sha256": "72dc991d663da6273ff99938523e9543b1a06f5cc8d6ac48400d5d50a262dbe5"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-local.png",
+      "bytes": 30545,
+      "sha256": "625f7b67561731610e8fafb8537d009fc2db8d5f6a3d5e5651eca8c967641af5"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-review.png",
+      "bytes": 29935,
+      "sha256": "c1fb1a45bf14eb200090c318223f98c612bb84e15caa538f523161e089d6ac7d"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-saving.png",
+      "bytes": 28883,
+      "sha256": "0bb219727d5c8037ab129a132ac62a3b444e9ec37d766c8fdf3aed0843973b52"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-syncFailed.png",
+      "bytes": 31187,
+      "sha256": "0f0eb648fcc05e957297772be92e42911970451f6cf726d77f86b73425c42dd1"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-synced.png",
+      "bytes": 28818,
+      "sha256": "fe9be529e53ae885b5e26ca53a34a969c18542b7713d1508cd28f82afa3f3389"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-syncing.png",
+      "bytes": 29416,
+      "sha256": "0fa3f95b6f61945a09b22a7326acde968a876c6bc4768e9d38bb4a5572bf6909"
+    },
+    {
+      "file": "reviews/matrix-ios-dark-unknown.png",
+      "bytes": 31488,
+      "sha256": "a29355061041fbaac8bab3f428eddef09007db838e6ded7474037aebb96d15cc"
+    },
+    {
+      "file": "reviews/matrix-ios-light-failed.png",
+      "bytes": 27465,
+      "sha256": "1c413b5e687170b109109ef9528431cf6ff1395779faf2e8e1013e2f78482954"
+    },
+    {
+      "file": "reviews/matrix-ios-light-local.png",
+      "bytes": 28092,
+      "sha256": "e2b2f9e073c7955745a92b6541c7c84606a6a8bf3b540628975c3037022a7f25"
+    },
+    {
+      "file": "reviews/matrix-ios-light-review.png",
+      "bytes": 27406,
+      "sha256": "b397100868b99d5387d2c34e48511a2a9c227b71d2e2ddc76a8a6329e5f7470a"
+    },
+    {
+      "file": "reviews/matrix-ios-light-saving.png",
+      "bytes": 26326,
+      "sha256": "c39eb4609b50e0485d84fece968864a53d9d0b4a8b242f206437ca0a13dc0475"
+    },
+    {
+      "file": "reviews/matrix-ios-light-syncFailed.png",
+      "bytes": 28475,
+      "sha256": "7d2b5a82fe927bfc5bee5e8451c3bac8a8a7a1698f0648b9699affa9b8290855"
+    },
+    {
+      "file": "reviews/matrix-ios-light-synced.png",
+      "bytes": 26168,
+      "sha256": "ef953d82b4a11a914723c19573da727929eb016653f8c3440727dcbae4fac41d"
+    },
+    {
+      "file": "reviews/matrix-ios-light-syncing.png",
+      "bytes": 26886,
+      "sha256": "578ca03febb81c05d477e4d091ce42812b99c0dfeb48e06a6bf897c4c0dfe113"
+    },
+    {
+      "file": "reviews/matrix-ios-light-unknown.png",
+      "bytes": 29042,
+      "sha256": "7c912d7fb4e42285721cf413b9dcf88c461b246f8dd97640439e580dbc09c0c5"
+    },
+    {
+      "file": "reviews/mobile-360-android-dark.png",
+      "bytes": 27639,
+      "sha256": "42a206ff7060bd201a9d2bc6609d2367b429417fcc915fc9e32a4651d3f6b5b7"
+    },
+    {
+      "file": "reviews/mobile-390-ios-light.png",
+      "bytes": 25762,
+      "sha256": "8d4d090c66635a301f6118d9eb57dfcbc6686134e0c84aa1b1542f1247c9d0fb"
+    },
+    {
+      "file": "reviews/runtime.json",
+      "bytes": 3164,
+      "sha256": "f74df95766a6480eb1f501c417c00115bf30528216e6a1e852ddfaaa35fdf713"
+    },
+    {
+      "file": "reviews/static-check.json",
+      "bytes": 3449,
+      "sha256": "09ba7895a6fa6fffe6ee884523e71ec0c600932a931b98105b9b91e22870c2bc"
+    },
+    {
+      "file": "source-input.json",
+      "bytes": 681,
+      "sha256": "91cea7088672648a87d1af326fbb41e8cb10ab3a67ef39e8c435677411c8e247"
+    }
+  ],
+  "sha256": "d3a07204c2e82c22d17f6cda16618435d9e31bbd66652d591c9a6b2dfeaf2649"
+}

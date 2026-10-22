@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-19T10:50:01.040Z",
+  "browser": "ChatGPT in-app browser",
+  "browserVersion": "not exposed",
+  "url": "http://127.0.0.1:8712/",
+  "mode": "HTTP",
+  "checks": [
+    {
+      "id": "edit-cancel",
+      "pass": true
+    },
+    {
+      "id": "edit-apply",
+      "pass": true
+    },
+    {
+      "id": "failed-inflight",
+      "pass": true
+    },
+    {
+      "id": "failed-semantics",
+      "pass": true
+    },
+    {
+      "id": "failed-recovery",
+      "pass": true
+    },
+    {
+      "id": "unknown-inflight",
+      "pass": true
+    },
+    {
+      "id": "unknown-semantics",
+      "pass": true
+    },
+    {
+      "id": "checking-distinct-state",
+      "pass": true
+    },
+    {
+      "id": "unknown-recovery",
+      "pass": true
+    },
+    {
+      "id": "local-inflight",
+      "pass": true
+    },
+    {
+      "id": "local-semantics",
+      "pass": true
+    },
+    {
+      "id": "local-recovery",
+      "pass": true
+    },
+    {
+      "id": "sync-error-retry",
+      "pass": true
+    },
+    {
+      "id": "reset-cancels-pending",
+      "pass": true
+    },
+    {
+      "id": "curve-control-press",
+      "display": "按压 · 320ms（评审慢放）",
+      "pass": true,
+      "scope": "UI playback control and displayed timing; no native frame timing assertion"
+    },
+    {
+      "id": "curve-control-release",
+      "display": "释放 · 720ms（评审慢放）",
+      "pass": true,
+      "scope": "UI playback control and displayed timing; no native frame timing assertion"
+    },
+    {
+      "id": "curve-control-enter",
+      "display": "展开 · 1120ms（评审慢放）",
+      "pass": true,
+      "scope": "UI playback control and displayed timing; no native frame timing assertion"
+    },
+    {
+      "id": "curve-control-exit",
+      "display": "收起 · 720ms（评审慢放）",
+      "pass": true,
+      "scope": "UI playback control and displayed timing; no native frame timing assertion"
+    },
+    {
+      "id": "curve-control-state",
+      "display": "状态交接 · 640ms（评审慢放）",
+      "pass": true,
+      "scope": "UI playback control and displayed timing; no native frame timing assertion"
+    },
+    {
+      "id": "reduced-overrides-slow",
+      "details": {
+        "opacity": "1",
+        "transform": "none"
+      },
+      "pass": true
+    },
+    {
+      "id": "opaque-highcontrast",
+      "details": {
+        "background": "rgb(41, 37, 38)",
+        "blur": "none",
+        "border": "2px"
+      },
+      "pass": true
+    },
+    {
+      "id": "mobile-390-overflow",
+      "pass": true,
+      "width": 390,
+      "scrollWidth": 375
+    },
+    {
+      "id": "mobile-360-overflow",
+      "pass": true,
+      "width": 360,
+      "scrollWidth": 345
+    }
+  ],
+  "allPass": true,
+  "captures": 32,
+  "limitations": [
+    "Not native iOS/Android",
+    "No frame time or haptic measurement",
+    "No real API or persistence",
+    "Screenshots captured for matrix; independent visual inspection covers listed subset",
+    "file protocol not yet verified"
+  ],
+  "file_protocol": {
+    "tested": false,
+    "attempted": true,
+    "reason": "in-app browser URL policy rejected file protocol; no bypass attempted"
+  }
+}

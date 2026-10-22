@@ -1,0 +1,182 @@
+[
+  {
+    "state": "就绪",
+    "heading": "随时可以开始",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-01.png"
+  },
+  {
+    "state": "收音中",
+    "heading": "正在接收你的声音",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-02.png"
+  },
+  {
+    "state": "处理中",
+    "heading": "正在整理这段内容",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-03.png"
+  },
+  {
+    "state": "播报中",
+    "heading": "正在说明这次结果",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-04.png"
+  },
+  {
+    "state": "待确认",
+    "heading": "请核对这条记录",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-05.png"
+  },
+  {
+    "state": "保存中",
+    "heading": "正在保存记录",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-06.png"
+  },
+  {
+    "state": "保存成功",
+    "heading": "记录已保存",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-07.png"
+  },
+  {
+    "state": "结果就绪",
+    "heading": "这次结果已准备好",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-08.png"
+  },
+  {
+    "state": "无法判断",
+    "heading": "暂时无法从这段内容得出结论",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-09.png"
+  },
+  {
+    "state": "保存失败",
+    "heading": "这次未能保存",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-10.png"
+  },
+  {
+    "state": "离线",
+    "heading": "连接暂时中断",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-11.png"
+  },
+  {
+    "state": "权限未开启",
+    "heading": "需要麦克风权限才能收音",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-12.png"
+  },
+  {
+    "state": "处理超时",
+    "heading": "这次处理比预期更久",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-13.png"
+  },
+  {
+    "state": "已打断",
+    "heading": "已停止播报",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-14.png"
+  },
+  {
+    "state": "已取消",
+    "heading": "本次任务已取消",
+    "viewport": "1280x1000",
+    "screenshot": "desktop-state-15.png"
+  },
+  {
+    "state": "就绪",
+    "heading": "随时可以开始",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-01.png"
+  },
+  {
+    "state": "收音中",
+    "heading": "正在接收你的声音",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-02.png"
+  },
+  {
+    "state": "处理中",
+    "heading": "正在整理这段内容",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-03.png"
+  },
+  {
+    "state": "播报中",
+    "heading": "正在说明这次结果",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-04.png"
+  },
+  {
+    "state": "待确认",
+    "heading": "请核对这条记录",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-05.png"
+  },
+  {
+    "state": "保存中",
+    "heading": "正在保存记录",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-06.png"
+  },
+  {
+    "state": "保存成功",
+    "heading": "记录已保存",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-07.png"
+  },
+  {
+    "state": "结果就绪",
+    "heading": "这次结果已准备好",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-08.png"
+  },
+  {
+    "state": "无法判断",
+    "heading": "暂时无法从这段内容得出结论",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-09.png"
+  },
+  {
+    "state": "保存失败",
+    "heading": "这次未能保存",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-10.png"
+  },
+  {
+    "state": "离线",
+    "heading": "连接暂时中断",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-11.png"
+  },
+  {
+    "state": "权限未开启",
+    "heading": "需要麦克风权限才能收音",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-12.png"
+  },
+  {
+    "state": "处理超时",
+    "heading": "这次处理比预期更久",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-13.png"
+  },
+  {
+    "state": "已打断",
+    "heading": "已停止播报",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-14.png"
+  },
+  {
+    "state": "已取消",
+    "heading": "本次任务已取消",
+    "viewport": "390x844",
+    "screenshot": "mobile-state-15.png"
+  }
+]

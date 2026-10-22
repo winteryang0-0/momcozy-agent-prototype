@@ -1,0 +1,60 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "../../2026-10-19-ai-characters/soft-companion-v0.1.png",
+  "prompt": "Use case: stylized-concept.\nAsset type: precisely aligned transparent PNG character expression sprite sheet for an interactive web animation prototype.\nInput image 1 is the approved Soft Companion character reference. Use its LARGE LEFT character as identity reference only. Preserve the rounded horizontal warm ivory pebble body with curved deep berry burgundy lower-right side, softly matte fine texture, tiny burgundy eyes and mouth. No limbs, no ears, no head/body divisions. Mature quiet friendly companion, not a baby, toy robot, or pet.\nPrimary request: a 1536 by 1024 pixels sprite sheet, EXACTLY 3 equal columns by 2 equal rows, giving six 512 by 512 pixel cells. Actual fully TRANSPARENT alpha background, never a drawn checkerboard, no ground plane, no backdrop. No text, letters, labels, panel borders, grid lines, logos, decorations, or other objects.\nALIGNMENT IS CRITICAL: all six copies are the EXACT SAME body, camera angle, lighting, texture, color, scale, pose, and pixel position relative to their cells, as though one body render was duplicated and only its eyes/mouth edited. Slight near-frontal three-quarter camera as the large left reference. Body width approximately 420 px and height 255 px, centered horizontally in each 512 px cell and contained between local x=46 and 466, local y=130 and 390. Silhouettes remain identical. No body squashing, stretching, turning, leaning, lifting, rotation or side change. No cast shadow; at most an almost invisible tight contact shadow.\nEXPRESSION ORDER reading left to right:\nTop-left cell: neutral open small oval eyes and short horizontal closed mouth.\nTop-middle cell: attentive open eyes very subtly focused inward, no angry eyebrows, no brow furrow, neutral short horizontal mouth.\nTop-right cell: both eyes fully closed into small simple horizontal curved eyelid lines, neutral short horizontal mouth (blink pose).\nBottom-left cell: normal open eyes, tiny subtle shallow closed smile.\nBottom-middle cell: normal open eyes, tiny round open 'o' mouth for speaking. Not surprised, no raised brows.\nBottom-right cell: normal open eyes, slightly wider but very short open oval mouth for speaking. Not laughing and no teeth.\nSoft studio lighting identical in every cell, from upper left, light warm ivory, deep burgundy berry only on the lower right curved side and facial details. Preserve approved identity. Output only the 3x2 transparent sprite sheet.",
+  "transparent_background": true,
+  "output": "assets/soft-expressions.png",
+  "frame_mapping": [
+    "neutral",
+    "focused",
+    "blink",
+    "smile",
+    "speak_o",
+    "speak_wide"
+  ],
+  "correction_prompt": "Use case: precise-object-edit. Correct this transparent 1536x1024 sprite sheet for exact equal 3-column x 2-row animation cells. Keep the same six soft pebble expressions, identity, colors, materials and exact near-front body angle. Change ONLY layout and remove ALL non-character pixels. Genuine transparent background, no glow, no environment, no blur around body, no floor, no cast shadow, no ground contact shadow. Every pixel outside the sharp character silhouette must have zero alpha.\nCRITICAL: There are 3 columns of width 512 and 2 rows of height 512. Place the six character copies at exact centers (256,256), (768,256), (1280,256), (256,768), (768,768), (1280,768). Each copy must be 420 pixels wide and 255 pixels tall. Body bounding rectangle in EACH cell: x=46 to 466, y=128 to 383. Hence row 1 character bounds y=128..383 and row 2 y=640..895. This means body copies in row 2 are EXACTLY 512 px below row 1. All 6 bodies identical as duplicated. Do not fit to the overall canvas with uneven top/bottom margins.\nExpression order preserved: top-left neutral, top-middle focused, top-right closed eyes blink; bottom-left small closed smile, bottom-middle tiny open o mouth, bottom-right slightly wider short open mouth.\nNo panel background of any kind, no black areas, no grey gradients, no opaque canvas. Output clean alpha-matted six cutout characters aligned to equal 512x512 animation cells.",
+  "actual_size": [
+    1536,
+    1024
+  ],
+  "body_alpha_threshold": 240,
+  "local_body_bounds": [
+    [
+      20,
+      177,
+      496,
+      452
+    ],
+    [
+      19,
+      177,
+      496,
+      451
+    ],
+    [
+      18,
+      176,
+      493,
+      452
+    ],
+    [
+      20,
+      106,
+      496,
+      381
+    ],
+    [
+      19,
+      106,
+      496,
+      381
+    ],
+    [
+      17,
+      106,
+      493,
+      381
+    ]
+  ],
+  "limitations": "Top/bottom row local Y differs by approximately 71 pixels; render using per-frame crop bounds. Body texture and shape differ slightly between frames. Alpha is genuine; some translucent edge/shadow pixels remain."
+}

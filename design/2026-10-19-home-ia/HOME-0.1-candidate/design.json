@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "momcozy-home-ia",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source.json",
+    "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+    "requirements": [
+      "C01",
+      "C01.1",
+      "C01.2",
+      "CHAT-AGE",
+      "CHAT-TODAY",
+      "C09",
+      "C09.1",
+      "C09.2",
+      "C09.3",
+      "C09.4",
+      "C09.5",
+      "C01.1.1",
+      "C01.1.2",
+      "C01.2.1",
+      "C01.2.2",
+      "C01.3",
+      "C01.3.1",
+      "C01.3.2",
+      "C10",
+      "C11",
+      "CHAT-CONTINUOUS",
+      "C03",
+      "C05",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ]
+  },
+  "framework": {
+    "revision": "HOME-0.1",
+    "pages": [
+      {
+        "id": "PAGE-home",
+        "route": "#/home",
+        "parent_id": null,
+        "regions": [
+          "H01-context",
+          "H02-alert",
+          "H03-summary",
+          "H04-actions",
+          "H05-task",
+          "H06-recent",
+          "H07-ai"
+        ]
+      },
+      {
+        "id": "PAGE-records",
+        "route": "#/records",
+        "parent_id": null,
+        "regions": [
+          "header",
+          "body"
+        ]
+      },
+      {
+        "id": "PAGE-assistant",
+        "route": "#/assistant",
+        "parent_id": null,
+        "regions": [
+          "header",
+          "body"
+        ]
+      },
+      {
+        "id": "PAGE-mine",
+        "route": "#/mine",
+        "parent_id": null,
+        "regions": [
+          "header",
+          "body"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "HOME-summary",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-summary",
+        "role": "妈妈与宝宝的今日已记录概况"
+      },
+      {
+        "id": "HOME-record",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "发起五类记录"
+      },
+      {
+        "id": "HOME-task",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "进入AI专项任务"
+      }
+    ],
+    "actions": [],
+    "states": [
+      {
+        "id": "STATE-home-normal",
+        "page_id": "PAGE-home",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-records-normal",
+        "page_id": "PAGE-records",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-assistant-idle",
+        "page_id": "PAGE-assistant",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-mine-normal",
+        "page_id": "PAGE-mine",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-home-empty",
+        "page_id": "PAGE-home",
+        "kind": "empty"
+      },
+      {
+        "id": "STATE-home-offline",
+        "page_id": "PAGE-home",
+        "kind": "offline"
+      },
+      {
+        "id": "STATE-home-error",
+        "page_id": "PAGE-home",
+        "kind": "error"
+      }
+    ],
+    "flows": [
+      {
+        "id": "F01",
+        "description": "首页概况→记录分组→事件回看→返回"
+      },
+      {
+        "id": "F02",
+        "description": "记一笔→类型→填写→保存→发起页，更新同源概况"
+      },
+      {
+        "id": "F03",
+        "description": "关闭→草稿恢复"
+      },
+      {
+        "id": "F04",
+        "description": "专项任务→采集→结果→重试；跨Tab恢复"
+      },
+      {
+        "id": "F05",
+        "description": "空状态/离线/局部失败→继续操作或重试"
+      }
+    ],
+    "viewports": [
+      {
+        "id": "VP390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "VP360",
+        "width": 360,
+        "height": 800
+      }
+    ]
+  },
+  "system": {
+    "revision": "wireframe-0.1",
+    "tokens": {
+      "--bg": "#f4f4f1",
+      "--paper": "#fff",
+      "--ink": "#222723",
+      "--muted": "#656d66",
+      "--line": "#d9ded8",
+      "--soft": "#eef1ec",
+      "--accent": "#364d40",
+      "--radius": "16px",
+      "--space": "20px",
+      "--font": "15px"
+    },
+    "components": [
+      {
+        "id": "CMP-summary",
+        "states": [
+          "normal",
+          "empty",
+          "error"
+        ],
+        "token_refs": [
+          "--line",
+          "--radius"
+        ]
+      },
+      {
+        "id": "CMP-action",
+        "states": [
+          "default",
+          "focus",
+          "selected"
+        ],
+        "token_refs": [
+          "--accent",
+          "--ink"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "C01",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.1",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.2",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "CHAT-AGE",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "CHAT-TODAY",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09.1",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09.2",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09.3",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09.4",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C09.5",
+      "page_ids": [
+        "PAGE-home"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.1.1",
+      "page_ids": [
+        "PAGE-records"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.1.2",
+      "page_ids": [
+        "PAGE-records"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.2.1",
+      "page_ids": [
+        "PAGE-records"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.2.2",
+      "page_ids": [
+        "PAGE-records"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.3",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.3.1",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C01.3.2",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C10",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C11",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "CHAT-CONTINUOUS",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C03",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C05",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C12",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C13",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C14",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    },
+    {
+      "requirement_id": "C15",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [],
+      "state_ids": [],
+      "detail": "原需求归属映射；实现范围见ARCHITECTURE.txt第4及10节"
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "PD01",
+      "question": "确认四项Dock及首页职责候选",
+      "blocks_design": true,
+      "status": "open"
+    },
+    {
+      "id": "PD02",
+      "question": "孕期/备孕、真实同步、详情业务规则另行定义",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [],
+  "limitations": [
+    "当前为架构候选清单，非交付级完整控件/动作/状态账本",
+    "未冻结、未执行design_guard交付认证",
+    "动态DOM未适配全量静态标记guard；下一阶段按确认框架补全"
+  ]
+}

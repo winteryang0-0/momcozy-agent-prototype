@@ -1,0 +1,285 @@
+{
+  "states": [
+    {
+      "label": "care-menu",
+      "route": "#/home",
+      "title": "",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "journal",
+      "route": "#/records",
+      "title": "",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "profile-menu",
+      "route": "#/records",
+      "title": "My Care Space",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "baby-profile",
+      "route": "#/records",
+      "title": "Baby’s profile",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "devices",
+      "route": "#/records",
+      "title": "My devices",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "device-history",
+      "route": "#/records",
+      "title": "Device sync history",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "sync",
+      "route": "#/records",
+      "title": "Care log sync",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "history",
+      "route": "#/home",
+      "title": "Past conversations",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "new-chat",
+      "route": "#/home",
+      "title": "Past conversations",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "settings",
+      "route": "#/records",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "journal-filter",
+      "route": "#/records",
+      "title": "Filter timeline",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-form-亲喂",
+      "route": "#/records",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker-return",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-form-瓶喂母乳",
+      "route": "#/records",
+      "title": "Bottle-fed breast milk",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker-return",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-form-配方奶",
+      "route": "#/records",
+      "title": "Formula feeding",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker-return",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-form-换尿布",
+      "route": "#/records",
+      "title": "Diaper change",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker-return",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-form-吸奶",
+      "route": "#/records",
+      "title": "Pumping",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-picker-return",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "chat-more",
+      "route": "#/home",
+      "title": "Add media",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "attachment-camera",
+      "route": "#/home",
+      "title": "Add a photo",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "chat-more-again",
+      "route": "#/home",
+      "title": "Add media",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "attachment-upload",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "advice-second-tip",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "advice-third-tip",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "advice-first-tip",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "inline-record-picker",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "inline-record-form",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "inline-record-saved",
+      "route": "#/home",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "journal-with-record",
+      "route": "#/records",
+      "title": "Add an attachment",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "record-detail",
+      "route": "#/records",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "insight-links",
+      "route": "#/records",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "detail-喂养与睡眠",
+      "route": "#/records",
+      "title": "Feeding & sleep",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "detail-生长发育",
+      "route": "#/records",
+      "title": "Growth & development",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "mom-journal",
+      "route": "#/records",
+      "title": "Growth & development",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "detail-奶量趋势",
+      "route": "#/records",
+      "title": "Pumping trends",
+      "chinese": [],
+      "attrs": []
+    },
+    {
+      "label": "detail-身体与状态",
+      "route": "#/records",
+      "title": "Well-being",
+      "chinese": [],
+      "attrs": []
+    }
+  ],
+  "errors": []
+}

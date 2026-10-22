@@ -1,0 +1,172 @@
+{
+  "at": "2026-10-19T10:48:26.116Z",
+  "contrast": [
+    {
+      "theme": "light",
+      "fg": "#282725",
+      "bg": "#FAF7F2",
+      "role": "text/canvas",
+      "ratio": 13.97,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#282725",
+      "bg": "#FFFFFF",
+      "role": "text/surface",
+      "ratio": 14.92,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#625B57",
+      "bg": "#FAF7F2",
+      "role": "secondary/canvas",
+      "ratio": 6.23,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#625B57",
+      "bg": "#FFFFFF",
+      "role": "secondary/surface",
+      "ratio": 6.66,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#625B57",
+      "bg": "#EEE7DF",
+      "role": "secondary/neutral",
+      "ratio": 5.43,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#FFFFFF",
+      "bg": "#692A3A",
+      "role": "onAction/action",
+      "ratio": 10.54,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#355C45",
+      "bg": "#E8F0EA",
+      "role": "success/successBg",
+      "ratio": 6.53,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#9C3E34",
+      "bg": "#FBEDE9",
+      "role": "error/errorBg",
+      "ratio": 5.83,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "fg": "#80716B",
+      "bg": "#FFFFFF",
+      "role": "edge/surface",
+      "ratio": 4.67,
+      "target": 3,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#F5EEEA",
+      "bg": "#1C1A1B",
+      "role": "text/canvas",
+      "ratio": 15.09,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#F5EEEA",
+      "bg": "#292526",
+      "role": "text/surface",
+      "ratio": 13.2,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#C4B7B4",
+      "bg": "#1C1A1B",
+      "role": "secondary/canvas",
+      "ratio": 8.89,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#C4B7B4",
+      "bg": "#292526",
+      "role": "secondary/surface",
+      "ratio": 7.77,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#C4B7B4",
+      "bg": "#393234",
+      "role": "secondary/neutral",
+      "ratio": 6.42,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#40202A",
+      "bg": "#EFB3C2",
+      "role": "onAction/action",
+      "ratio": 8.16,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#B4D5BD",
+      "bg": "#263D30",
+      "role": "success/successBg",
+      "ratio": 7.36,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#FFB4A8",
+      "bg": "#492D29",
+      "role": "error/errorBg",
+      "ratio": 7.3,
+      "target": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "fg": "#8E7C82",
+      "bg": "#292526",
+      "role": "edge/surface",
+      "ratio": 3.86,
+      "target": 3,
+      "pass": true
+    }
+  ],
+  "all_solid_pairs_pass": true,
+  "missing_local_resources": [],
+  "cdn_runtime": false,
+  "scope": "syntax separately checked; pure colors and resources only, not whole UI accessibility or native material",
+  "pass": true
+}

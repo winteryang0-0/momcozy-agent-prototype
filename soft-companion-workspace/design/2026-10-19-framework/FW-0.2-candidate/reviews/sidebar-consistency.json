@@ -1,0 +1,199 @@
+{
+  "role": "consistency",
+  "author": "/root/sidebar_consistency",
+  "independent": true,
+  "status": "pass",
+  "baseline_id": null,
+  "candidate_id": "FW-0.2",
+  "material_hash": "54645abd6923bc1bd8b15feb7f309a38cc8e1370fbc0e4efc4076f24c2eb6ca9",
+  "reviewed_at": "2026-10-19T10:27:25.691300+00:00",
+  "authorization": "User requested adding already-decomposed sidebar and subordinate views. This review does not treat that request as a frozen-baseline approval.",
+  "evidence": [
+    {
+      "kind": "source-or-code",
+      "path": "sources/sidebar-requirements.json",
+      "sha256": "6180b9f9e6e88235f39bb8cb4ceecb08ac298f1454414df6aae8d3bb412ae526"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "sources/requirements-v02.json",
+      "sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "bundle/index.html",
+      "sha256": "2dd7908a7758417dc7a55c58baf3b492cca3c50fd3dea4e7b7910e970ed7a911"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "bundle/assets/app.js",
+      "sha256": "03df708e4e57ba55d65082960037c7614e9b7224c1a2b588f1a83ceee8834dec"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "bundle/assets/styles.css",
+      "sha256": "2aae88edb0ceb0be895f006fdf032405d4e574d2df05bf23b87d1f5305432f06"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "design.json",
+      "sha256": "5ea73246b26c945ff0aa24b61308d0f9106e9baaf9e1e8a60e0d64fc734ad830"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "FRAMEWORK.txt",
+      "sha256": "da0811036b464a4667d057a4c059a886bad3e754fa3e386ff3cdb0178af6c14c"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "sources/sidebar-0935a1df-f726-4c45-8917-d928db2035ab.png",
+      "sha256": "c1f7a939c1f0d0b4321e16c42c95a33353a075a50633a68adf35453420a10637"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "sources/sidebar-4c217a81-9d2b-43ee-9994-7e12a5048885.png",
+      "sha256": "8f8fc3565e617b63baf35880864935de1c2c78423c3a2d80940e17f5c5108ce7"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "sources/sidebar-dc7c158a-592d-4583-a841-1e7c55140638.png",
+      "sha256": "182680d69310f64a14879a9d459b03c782a617fbe4613e129c322ec1eee2d70e"
+    },
+    {
+      "kind": "source-or-code",
+      "path": "sources/sidebar-ddb61e70-4a8b-4c77-ac8f-a382f5097e90.png",
+      "sha256": "d009d78abd5122b6168ddbd3592af432d146ded868da1f168b92950c328a5ec9"
+    },
+    {
+      "kind": "interaction-log",
+      "path": "reviews/sidebar-runtime.json",
+      "sha256": "b47ab626d2a815af7fd5683a8a99ae94502638cadd7742d341b3b630f5b2cf69"
+    },
+    {
+      "kind": "static-check",
+      "path": "reviews/static-check.json",
+      "sha256": "5be5a3ab22f0a63559b60127d435589b4f78fe4fca0c718be22ae96232ef0732"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/sidebar-mobile.jpg",
+      "sha256": "e80d3216948b2a4c0582b2672a8523a9a0c81339c00907ec421f8d435922b95f"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/baby-age-mobile.jpg",
+      "sha256": "d6617dd23cd2321a5bf5a8c99552eb10b65890d0dfcc59c2b8155a785edac770"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/devices-desktop.jpg",
+      "sha256": "712c369df1c5a1af60a75a60c7f28431c75a90151bc39848f5f8607188b87348"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/feeding-mobile.jpg",
+      "sha256": "fab3e7f252f72adbf655292f35145289a87cb1163f3844df01c19e7433554c77"
+    }
+  ],
+  "coverage": {
+    "requirements": [
+      "C01",
+      "C01.1",
+      "C01.2",
+      "C01.3",
+      "C01.1.1",
+      "C01.1.2",
+      "C01.2.1",
+      "C01.2.2",
+      "C01.3.1",
+      "C01.3.2"
+    ],
+    "page_ids": [
+      "PAGE-chat",
+      "PAGE-mine",
+      "PAGE-baby",
+      "PAGE-devices"
+    ],
+    "test_ids": [
+      "TEST-FLOW-sidebar",
+      "TEST-FLOW-mine",
+      "TEST-FLOW-baby",
+      "TEST-FLOW-devices",
+      "TEST-FLOW-trend",
+      "TEST-FLOW-body",
+      "TEST-FLOW-feeding",
+      "TEST-FLOW-growth",
+      "TEST-FLOW-device-info",
+      "TEST-FLOW-sync"
+    ],
+    "source_images_reviewed": 4,
+    "methods": [
+      "Independent source/image comparison",
+      "FW-0.1 to FW-0.2 design graph comparison",
+      "Event and draft-persistence source inspection",
+      "Independent design_guard.validate_design + inspect_bundle",
+      "Node --check",
+      "Review of 21 browser interaction checks and four current screenshots"
+    ],
+    "runtime_log_tests_reviewed": [
+      "trend-desktop",
+      "body-desktop",
+      "feeding-desktop",
+      "growth-desktop",
+      "device-info-desktop",
+      "sync-desktop",
+      "full-desktop-navigation-return",
+      "trend-mobile",
+      "body-mobile",
+      "feeding-mobile",
+      "growth-mobile",
+      "device-info-mobile",
+      "sync-mobile",
+      "task-card-survives-sidebar",
+      "original-form-save-regression",
+      "baby-age-source-consistency",
+      "direct-route-reload-return",
+      "reload-selected-item",
+      "sidebar-escape",
+      "sidebar-backdrop",
+      "detail-escape"
+    ],
+    "runtime_log_passed": 21,
+    "screenshots_reviewed": 4
+  },
+  "checks": {
+    "guard_errors": [],
+    "framework_scope": "One drawer, three object overview pages, six unprovided target entries represented as explicit scope dialogs. No new device-connect/sync/chart business inferred.",
+    "source_fidelity": "Source headings, summaries and six entry labels preserved. Baby age shares known onboarding context instead of conflicting 4-month fixture; absent age explicitly marked incomplete. Fixed overview statistics explicitly not synchronized with local records.",
+    "navigation": "Reviewed evidence covers all six entries at desktop and mobile, overview return and selected item, chat draft/task retention, a form-save regression, direct-route reload, sidebar Escape/backdrop closing, detail Escape, and focus restoration. Direct loading sets sidebarSelected from route. Code and reviewed results agree.",
+    "baseline": "Candidate remains draft; lack of freeze not treated as code failure.",
+    "system": "System tokens/components unchanged from FW-0.1.",
+    "pending_decisions": "Three new records distinguish unprovided targets, candidate return rule, and fixed overview data/unknown official summary rules. No false frozen approval."
+  },
+  "findings": [
+    {
+      "id": "SIDEBAR-001",
+      "severity": "blocker",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:26 and :65",
+      "observation": "Initial reviewed version called forEach on the single-node $ selector for .record-baby and .scope-dialog selectors, breaking initialization/navigation.",
+      "impact": "New sidebar and existing chat could not initialize correctly.",
+      "fix": "Author changed all three to multi-node $$ selectors.",
+      "evidence": "Corrected multi-node selectors verified in current source; current browser log confirms page initialization and all 21 recorded checks pass.",
+      "verified_by": "/root/sidebar_consistency",
+      "verified_material_hash": "54645abd6923bc1bd8b15feb7f309a38cc8e1370fbc0e4efc4076f24c2eb6ca9"
+    }
+  ],
+  "open_high_priority_findings": 0,
+  "limitations": [
+    "This is a candidate-scope consistency conclusion, not a complete delivery approval or frozen baseline.",
+    "Runtime evidence was produced by /root and independently reviewed here, not rerun by this reviewer.",
+    "Unchanged onboarding and all existing task states were not fully re-tested.",
+    "Only four representative screenshots were inspected; no complete independent visual acceptance claimed.",
+    "file:// double-click remains untested.",
+    "Overview statistics remain labeled fixed examples and do not aggregate local records.",
+    "Runtime log does not quantify scroll-offset restoration; code preserves the stored scroll position but exact-offset behavior is not independently demonstrated."
+  ],
+  "status_scope": "Limited to the FW-0.2 sidebar addition candidate: source and architecture consistency, reviewed runtime paths, and representative screenshots. Not a full delivery or unchanged-feature regression approval.",
+  "evidence_mode": "Independent source/code review plus author-provided interaction-log and screenshot review; reviewer did not repeat browser interaction."
+}

@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-20T03:30:26.754Z",
+  "scope": "四步录入控件视觉排布与留白优化",
+  "sources": [
+    "sources/STYLE_SPEC.txt sections 03/06/08",
+    "reviews/onboarding-refine-10/field-rules.txt",
+    "reviews/onboarding-wheel-11/field-rules.txt",
+    "用户本轮要求及此前滚轮/同屏/独立推荐的明确要求"
+  ],
+  "changeType": "局部视觉迭代，四步结构与所有JS不变",
+  "layout": {
+    "standardGroupGap": 24,
+    "shortGroupGap": 16,
+    "fieldGap": 24,
+    "shortFieldGap": 20,
+    "wheelLabelGap": 8,
+    "babySelectorTarget": 48,
+    "birthdayInputHeight": 48
+  },
+  "tests": {
+    "appJsUnchanged": true,
+    "fourStepNavigation": true,
+    "motherStageOnlyForMother": true,
+    "keyboardWheelSelection": true,
+    "babySwitchAndDraftRefresh": true,
+    "shortViewport": {
+      "width": 360,
+      "height": 640,
+      "dateBottom": 544.667,
+      "bodyBottom": 551.333,
+      "footerTop": 551.333,
+      "horizontalOverflow": false
+    },
+    "consoleErrors": [],
+    "babyFocusVisibleWithoutClipping": true
+  },
+  "files": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 45796,
+      "sha256": "4b32798d6c2be5865bcfee064f2f87de8434ceaf2f75b180281746e5756907b6"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "details-390x844.jpg",
+      "sha256": "91b223a45e7c9ab5f822118069ea3e0adc09f2addd166db8600121c333dc47d7",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://localhost:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "details-multiple-360x640.jpg",
+      "sha256": "7ef612ac46f1aefbd382189b3dcd4d8693da89adb366b7af391970c08871f10c",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://localhost:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "details-desktop.jpg",
+      "sha256": "b30af227e6f4f9cca20aacbd5ce3fa61b063f62ee24984278e2990c4ac235a1a",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://127.0.0.1:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "identity-360x800.jpg",
+      "sha256": "9360970988113ec3697bba8aaa76b38b05ea0e0d5733322e243a5190e9794686",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://localhost:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "concerns-360x800.jpg",
+      "sha256": "136822067f012f564be208f4304676ea5a30cd974916964c7db5c04a65200714",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://localhost:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "recommendations-360x800.jpg",
+      "sha256": "784fa9a0941d44da53c91b6a34c021304feb48a20520f7e19a83f2d3133c2f64",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browserVersion": "not recorded",
+      "url": "http://localhost:4192/#/onboarding",
+      "captureTime": "Exact timestamp not recorded; captured during this revision before final verification."
+    },
+    {
+      "path": "baby-focus-360x640.jpg",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "viewport": [
+        360,
+        640
+      ],
+      "captureTime": "Captured during final focused-control verification",
+      "sha256": "dd6d0bf95e014b9505a78648a82e638366ac756300e4bd6ec340cc94c5cebbc4"
+    }
+  ],
+  "review": {
+    "visual": {
+      "independent": true,
+      "author": "/root/spacing_visual_review",
+      "evidenceMode": "screenshot-review",
+      "result": "6张截图范围内未发现blocker或major，可作为候选展示；不是完整交互验收或冻结",
+      "notes": [
+        "妈妈宝宝分组清晰、成对对齐，基本字段未被底部遮挡",
+        "身份、关注点、推荐的层级和选中状态清楚",
+        "未独立操作浏览器，未验证真机、虚拟键盘、大字号、深色"
+      ]
+    },
+    "consistency": {
+      "independent": true,
+      "author": "/root/spacing_consistency_review",
+      "mode": "static-only",
+      "result": "未发现重大逻辑或范围漂移；两项细节建议修正后独立复核关闭",
+      "findings": [
+        {
+          "issue": "滚动容器内宝宝标签焦点可能裁切",
+          "status": "resolved",
+          "fix": "2px内置焦点环，offset -3px",
+          "runtimeEvidence": "baby-focus-360x640.jpg"
+        },
+        {
+          "issue": "底部固定padding覆盖设备安全区",
+          "status": "resolved",
+          "fix": "恢复max(16px/8px,env(safe-area-inset-bottom))",
+          "validation": "静态复核；未模拟真机安全区"
+        }
+      ]
+    }
+  },
+  "limits": [
+    "短屏辅助说明与较长推荐内容需独立滚动",
+    "未做真机触摸、虚拟键盘、大字号和深色全量验收",
+    "动态实现未适配完整静态guard，不冒称正式冻结发布认证"
+  ]
+}

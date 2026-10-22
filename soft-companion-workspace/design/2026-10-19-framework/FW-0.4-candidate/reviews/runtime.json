@@ -1,0 +1,607 @@
+{
+  "candidate": "FW-0.4",
+  "status": "incremental-candidate-pass-not-frozen",
+  "testedAt": "2026-10-19T12:06:03.176Z",
+  "author": "/root",
+  "protocol": "http",
+  "url": "http://127.0.0.1:4177/#/chat",
+  "browser": "Codex in-app browser",
+  "browserVersion": "unknown",
+  "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+  "material_hash_method": "SHA256 of canonical JSON {design_sha256: SHA256(canonical design excluding project.stage), bundle_sha256: sorted relative bundle file -> raw SHA256}. No frozen receipt exists.",
+  "material": {
+    "design_sha256": "7325aa2b57bc2cc9829dfa589144487e29db72f0c55473774b6c271d4c39e3ac",
+    "bundle_sha256": {
+      "bundle/README.txt": "3287d1e0237744b7d55898f55ae81141c963fd69fa9abd220c12f23f5d0b441c",
+      "bundle/assets/app.js": "e21156dde44a2445f30c462b1162393bdf7b589ef9ce2d3217787ea9fbc5a304",
+      "bundle/assets/asset-map.js": "4e5ea669587885c8cb1b50d4251d29c7a6240bc0160f459d5de24aa54ad51be9",
+      "bundle/assets/companion/placeholder.svg": "0ccc46023688e3cdc7ead16fd7204b4650489794b8d75de1f8223d2476422e0e",
+      "bundle/assets/icons/camera.svg": "6129b360920e6043182e86e0ec6cdd915402802d2659ea6a482e090de51fb4e6",
+      "bundle/assets/icons/chevron.svg": "def11ffd937d351283fc9d1c2cf14f0e8c107b8ea8722d69e4bef72679f446eb",
+      "bundle/assets/icons/close.svg": "fd653d727430a9909670d42c0e62f9ca3578976ae95685c3d64b828538b77da5",
+      "bundle/assets/icons/collapse.svg": "5a261cf095c2807be53de32405682ac132d63ad6dd0324cbfdd10d5ac3596bca",
+      "bundle/assets/icons/cry.svg": "6400939fa463046a92f985a20a7581e9e4d8b4c2196a0a818928aade0139c23c",
+      "bundle/assets/icons/expand.svg": "bd97130a5f17ca3c97212904eb1378c04c3319e1e50984bdde771d3ee5be237b",
+      "bundle/assets/icons/menu.svg": "bc8cacd6cf8569877835e175b57e9013b0e992363f05e1ec5f4b65147715394b",
+      "bundle/assets/icons/microphone.svg": "0bb3cf7fec32be6db2000406a85b5d07fc4b6481bbc3053c9a91766b3bf10067",
+      "bundle/assets/icons/poop.svg": "3173926e2a5772bf137d43233ce15676246f293bb2f08a616e08135aafabd88a",
+      "bundle/assets/icons/record.svg": "39430e24dfa7ca2c8347e4b4188cfd1dfebf6e9286527113729d30decbd92050",
+      "bundle/assets/icons/services.svg": "c89f312845b488c2cdaa2279906c6941a633ef7b48109c92c41b9a7af2102939",
+      "bundle/assets/icons/sound.svg": "998978ebc1a393381e2786b16206091c0ca571ec63ddf0503f9d589d851e1ec9",
+      "bundle/assets/icons/upload.svg": "b7f5312ea35c42623e071848f99e4297164e9e26ac3d8d8bdffa97b8a5255d73",
+      "bundle/assets/styles.css": "86d9ea42bbd8c641524a53a0ad83a90f18b94e449ea071e1f108d882d8a86c99",
+      "bundle/index.html": "0bd114a2c28bf835bea939be9733e49f05f232f76c2ee4199ea36b7b0dbe7d65"
+    }
+  },
+  "passed": true,
+  "checks": [
+    {
+      "id": "home-card-layout",
+      "age": "出生 12 天",
+      "cardRect": {
+        "bottom": 649.5729598999023,
+        "height": 122.39583587646484,
+        "left": 24.666667938232425,
+        "right": 350.0000114440918,
+        "top": 527.1771240234375,
+        "width": 325.3333435058594,
+        "x": 24.666667938232425,
+        "y": 527.1771240234375
+      },
+      "cards": 3,
+      "companionInteractive": false,
+      "composer": {
+        "bottom": 807.7292175292969,
+        "height": 157.86459350585938,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 649.8646240234375,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 649.8646240234375
+      },
+      "loadedImages": true,
+      "url": "#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "pass": true
+    },
+    {
+      "id": "record-resume-same-active-type",
+      "amount": "120",
+      "collapsed": false,
+      "recordCards": 1,
+      "route": "#/chat",
+      "visibleType": "pump",
+      "pass": true
+    },
+    {
+      "id": "record-cancel-isolated",
+      "cancel": true,
+      "formula": "80",
+      "pump": "",
+      "pass": true
+    },
+    {
+      "id": "inline-save-updates-today",
+      "history": [
+        "Momcozy AI · 演示记录 · 本次任务已取消。"
+      ],
+      "recordHidden": true,
+      "records": 1,
+      "route": "#/chat",
+      "today": "今天已保存 1 条记录，最近一条是配方奶。",
+      "pass": true
+    },
+    {
+      "id": "cry-voice-mutex",
+      "capture": true,
+      "overlay": false,
+      "toast": "正在录制哭声，请先结束录音或取消任务",
+      "pass": true
+    },
+    {
+      "id": "cry-refresh-interruption",
+      "age": "出生 12 天",
+      "interrupted": true,
+      "route": "#/chat",
+      "pass": true
+    },
+    {
+      "id": "cry-collapse-resume-no-duplicate",
+      "collapsed": false,
+      "count": 1,
+      "preview": true,
+      "route": "#/chat",
+      "pass": true
+    },
+    {
+      "id": "voice-appends-draft",
+      "draft": "保留这段已有草稿。\n我想了解如何记录这次喂养。",
+      "pass": true
+    },
+    {
+      "id": "poop-collapse-resume",
+      "cards": 1,
+      "collapsed": false,
+      "preview": "已选择 1 / 3 张模拟图片",
+      "route": "#/chat",
+      "pass": true
+    },
+    {
+      "id": "result-followup-appends",
+      "pass": true,
+      "draft": "保留这段已有草稿。\n我想了解如何记录这次喂养。\n关于刚才的便便结果，我想补充："
+    },
+    {
+      "id": "terminal-repeat-archives-once",
+      "cards": 1,
+      "history": [
+        "Momcozy AI · 演示记录 · 本次任务已取消。",
+        "Momcozy AI · 演示看便便 · 上次任务已完成（结构示例）。"
+      ],
+      "preview": "已选择 0 / 3 张模拟图片",
+      "pass": true
+    },
+    {
+      "id": "task-processing-companion",
+      "companion": "busy",
+      "processing": true,
+      "pass": true
+    },
+    {
+      "id": "five-record-types-inline-save-and-cancel-timer",
+      "cancelled": true,
+      "count": 5,
+      "route": "#/chat",
+      "titles": [
+        "配方奶 · 宝宝",
+        "亲喂 · 宝宝",
+        "瓶喂母乳 · 宝宝",
+        "换尿布 · 宝宝",
+        "吸奶 · 妈妈"
+      ],
+      "pass": true
+    },
+    {
+      "id": "inline-edit-preserves-record",
+      "count": 5,
+      "first": "已保存至本浏览器配方奶 · 宝宝2026-10-19 19:23 · Asia/Shanghai\n90 ml\n备注：配方奶草稿查看 / 修改记录",
+      "pass": true
+    },
+    {
+      "id": "companion-asset-fallback",
+      "buttons": 3,
+      "fallback": true,
+      "frame": {
+        "bottom": 171.33333587646484,
+        "height": 56,
+        "left": 273.3333435058594,
+        "right": 329.3333435058594,
+        "top": 115.33333587646484,
+        "width": 56,
+        "x": 273.3333435058594,
+        "y": 115.33333587646484
+      },
+      "imageHidden": true,
+      "text": "陪伴中正在整理需处理",
+      "pass": true
+    },
+    {
+      "id": "time-only-draft-edit-conflict",
+      "amount": "",
+      "route": "#/chat",
+      "time": "2026-10-19T10:00",
+      "pass": true
+    },
+    {
+      "id": "processing-refresh-keeps-material-retry",
+      "beforeProcessing": true,
+      "error": true,
+      "preview": "已选择 1 / 3 张模拟图片",
+      "pass": true
+    },
+    {
+      "id": "cry-route-exit-interrupts",
+      "cancelled": true,
+      "interrupted": true,
+      "route": "#/chat",
+      "pass": true
+    },
+    {
+      "id": "attachments-stay-generic-after-three-card-redesign",
+      "cancelled": true,
+      "pending": true,
+      "route": "#/chat",
+      "sentAttachments": 2,
+      "pass": true
+    },
+    {
+      "id": "cancelled-analysis-no-late-overwrite",
+      "elapsedMs": 2595,
+      "cancelled": true,
+      "pass": true
+    },
+    {
+      "id": "one-shared-service-grid",
+      "c09": 1,
+      "count": 1,
+      "open": true,
+      "owner": "service-dialog-slot",
+      "pass": true
+    },
+    {
+      "id": "service-dialog-escape-focus",
+      "focus": "CHAT-services",
+      "open": false,
+      "owner": "service-home-slot",
+      "pass": true
+    },
+    {
+      "id": "narrow-home-final",
+      "age": {
+        "bottom": 201.7916717529297,
+        "height": 96.45833587646484,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 105.33333587646484,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 105.33333587646484
+      },
+      "composer": {
+        "bottom": 762.6667175292969,
+        "height": 157.86459350585938,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 604.8021240234375,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 604.8021240234375
+      },
+      "docHeight": 780,
+      "docWidth": 360,
+      "grid": {
+        "bottom": 540.3125305175781,
+        "height": 140.39584350585938,
+        "left": 24.666667938232425,
+        "right": 320.0000114440918,
+        "top": 399.9166870117187,
+        "width": 295.3333435058594,
+        "x": 24.666667938232425,
+        "y": 399.9166870117187
+      },
+      "height": 780,
+      "outerY": 0,
+      "stream": {
+        "bottom": 604.8021087646484,
+        "height": 403.0104370117187,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 201.7916717529297,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 201.7916717529297
+      },
+      "width": 360,
+      "pass": true
+    },
+    {
+      "id": "service-dialog-keyboard-focus",
+      "dialogOpen": true,
+      "focus": "C09",
+      "outline": "2.66667px",
+      "style": "solid",
+      "pass": true
+    },
+    {
+      "id": "sidebar-roundtrip-retains-state",
+      "age": "出生 12 天",
+      "draft": "下一条尚未发送的草稿。",
+      "gridCount": 1,
+      "records": 1,
+      "route": "#/chat",
+      "pass": true
+    },
+    {
+      "id": "long-record-footer-reachable",
+      "cancel": {
+        "bottom": 606.3541870117188,
+        "height": 44,
+        "left": 37.33333587646485,
+        "right": 337.33333587646484,
+        "top": 562.3541870117188,
+        "width": 300,
+        "x": 37.33333587646485,
+        "y": 562.3541870117188
+      },
+      "composer": {
+        "bottom": 826.6667175292969,
+        "height": 177.86459350585938,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 648.8021240234375,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 648.8021240234375
+      },
+      "outerY": 0,
+      "save": {
+        "bottom": 510.4895935058594,
+        "height": 48,
+        "left": 37.33333587646485,
+        "right": 333.33333587646484,
+        "top": 462.4895935058594,
+        "width": 296,
+        "x": 37.33333587646485,
+        "y": 462.4895935058594
+      },
+      "stream": {
+        "bottom": 648.8021087646484,
+        "height": 447.0104370117187,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 201.7916717529297,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 201.7916717529297
+      },
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "reviews/screenshots/task-error-390.jpg",
+      "state": "poop-processing-refresh-error",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:33:40.398Z",
+      "captureFinishedAt": "2026-10-19T11:33:40.419Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "45ec07786b4b47c6b7c10b3daaa5491cfef629002f942eb66975c3e583178037",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/services-dialog-390.jpg",
+      "state": "shared-service-dialog",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:35:08.112Z",
+      "captureFinishedAt": "2026-10-19T11:35:08.129Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "5098b9cb52426ef850c749aa6776f504675c1072ee23b0db39c0312182d9bd07",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/companion-fallback-390.jpg",
+      "state": "companion-asset-missing",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:36:11.062Z",
+      "captureFinishedAt": "2026-10-19T11:36:11.091Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "c46a81fe0c95b1ce5dbca651e14a24f41cd39f3a4615cb40f5badb6e63a1335b",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/home-empty-390.jpg",
+      "state": "home-empty",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:36:38.696Z",
+      "captureFinishedAt": "2026-10-19T11:36:38.734Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "3c32cc6c260f457317693de1c49981ffc11ad640cf22496980b51daf2a7632a2",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/home-360.jpg",
+      "state": "home-empty-narrow",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 780,
+        "width": 360
+      },
+      "captureStartedAt": "2026-10-19T11:36:59.466Z",
+      "captureFinishedAt": "2026-10-19T11:36:59.489Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "371f552058fcb004c58c82a392c23b37625ed060771ff0e9724d0298bda74b81",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/home-desktop.jpg",
+      "state": "home-empty-desktop",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "captureStartedAt": "2026-10-19T11:37:38.933Z",
+      "captureFinishedAt": "2026-10-19T11:37:38.974Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "3d079411cfad12c48897b34828a1ec3d8169095076b762b4f029e8823e0c2bc3",
+      "actualPixels": {
+        "height": 990,
+        "width": 1425
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Declared layout viewport differs from compositor image pixels; image-only review is limited to captured extent."
+    },
+    {
+      "path": "reviews/screenshots/services-focus-390.jpg",
+      "state": "service-dialog-keyboard-focus",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:38:32.346Z",
+      "captureFinishedAt": "2026-10-19T11:38:32.364Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "aff5e4f645c68a8bc2a1f03d1484db1179d683e4998d12db2af4ca2d87a20362",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/record-inline-390.jpg",
+      "state": "formula-edit-in-chat",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T11:39:13.932Z",
+      "captureFinishedAt": "2026-10-19T11:39:13.956Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "2bfb2658e37b5b30bbec9c18089446dcdbd7723aa807b69c9a40d15680e1aac2",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/home-saved-390.jpg",
+      "state": "home-one-saved-record",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T12:03:44.697Z",
+      "captureFinishedAt": "2026-10-19T12:03:44.724Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "d8478faafd2a76f42bef421af81c9893cf27b2711a87b1c456e72b8e2386365c",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    },
+    {
+      "path": "reviews/screenshots/record-inline-bottom-390.jpg",
+      "state": "formula-edit-footer",
+      "outerY": 0,
+      "url": "http://127.0.0.1:4177/#/chat",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "captureStartedAt": "2026-10-19T12:04:46.294Z",
+      "captureFinishedAt": "2026-10-19T12:04:46.321Z",
+      "fullPage": false,
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "e343474198cda16453a964951b726a06967a2cb23ca69a6faca0b9cf1077491a",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "captureMethod": "tab.screenshot({fullPage:false})",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "pixelNote": "Viewport and image pixels match."
+    }
+  ],
+  "consoleWindowStart": "2026-10-19T11:30:21.534Z",
+  "consoleErrorsSinceWindowStart": [],
+  "limits": [
+    "All camera, voice, upload and AI/analysis are mocked; no real permissions or media acquisition.",
+    "26 incremental runtime checks, not all 55 mapping test plans or a complete inherited onboarding/side-page regression.",
+    "Desktop layout viewport declared 1440x1000 but compositor JPEG 1425x990; captured desktop extent only, no full-pixel-coverage assertion.",
+    "Mobile layout tested by desktop viewport emulation; mobile OS virtual keyboard and screen reader not tested.",
+    "Local HTTP tested; file:// double-click not tested.",
+    "Asset missing scenario intentionally requests a missing local companion SVG, then restores normal.",
+    "Independent screenshot review is distinct from browser operation; reviewers did not operate this browser."
+  ]
+}

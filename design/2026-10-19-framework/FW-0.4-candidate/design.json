@@ -1,0 +1,4201 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "momcozy-framework-fw04",
+    "mode": "live",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "sources/requirements-v04.json",
+    "requirements": [
+      "ONB-01",
+      "ONB-02",
+      "ONB-03",
+      "ONB-04",
+      "ONB-05",
+      "ONB-06",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C09.1",
+      "C09.2",
+      "C09.3",
+      "C09.4",
+      "C09.5",
+      "CHAT-CONTINUOUS",
+      "CHAT-TODAY",
+      "CHAT-AGE",
+      "CHAT-CAMERA",
+      "CHAT-UPLOAD",
+      "C01.1",
+      "C01.2",
+      "C01.3",
+      "C01.1.1",
+      "C01.1.2",
+      "C01.2.1",
+      "C01.2.2",
+      "C01.3.1",
+      "C01.3.2",
+      "IA-SERVICES",
+      "TASK-CONSISTENCY",
+      "AI-ASSETS"
+    ],
+    "sha256": "362980c1c38365cf0418a3d5725100465304742f42449d5a353a3cd8b5d84874"
+  },
+  "framework": {
+    "revision": 4,
+    "pages": [
+      {
+        "id": "PAGE-identity",
+        "route": "#/identity",
+        "parent_id": null,
+        "regions": [
+          "PAGE-identity-body"
+        ]
+      },
+      {
+        "id": "PAGE-stage",
+        "route": "#/stage",
+        "parent_id": null,
+        "regions": [
+          "PAGE-stage-body"
+        ]
+      },
+      {
+        "id": "PAGE-basic",
+        "route": "#/basic",
+        "parent_id": null,
+        "regions": [
+          "PAGE-basic-body"
+        ]
+      },
+      {
+        "id": "PAGE-birth",
+        "route": "#/birth",
+        "parent_id": null,
+        "regions": [
+          "PAGE-birth-body"
+        ]
+      },
+      {
+        "id": "PAGE-focus",
+        "route": "#/focus",
+        "parent_id": null,
+        "regions": [
+          "PAGE-focus-body"
+        ]
+      },
+      {
+        "id": "PAGE-recommend",
+        "route": "#/recommend",
+        "parent_id": null,
+        "regions": [
+          "PAGE-recommend-body"
+        ]
+      },
+      {
+        "id": "PAGE-chat",
+        "route": "#/chat",
+        "parent_id": null,
+        "regions": [
+          "PAGE-chat-body"
+        ]
+      },
+      {
+        "id": "PAGE-mine",
+        "route": "#/mine",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-mine-body"
+        ]
+      },
+      {
+        "id": "PAGE-baby",
+        "route": "#/baby",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-baby-body"
+        ]
+      },
+      {
+        "id": "PAGE-devices",
+        "route": "#/devices",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-devices-body"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "ONB-role",
+        "page_id": "PAGE-identity",
+        "component_id": "CMP-control",
+        "role": "ONB-role"
+      },
+      {
+        "id": "PAGE-identity-next",
+        "page_id": "PAGE-identity",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "ONB-stage",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "ONB-stage"
+      },
+      {
+        "id": "PAGE-stage-back",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "go:identity"
+      },
+      {
+        "id": "PAGE-stage-next",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "ONB-age",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "ONB-age"
+      },
+      {
+        "id": "ONB-parity",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "ONB-parity"
+      },
+      {
+        "id": "PAGE-basic-back",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "go:stage"
+      },
+      {
+        "id": "PAGE-basic-next",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "ONB-date",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "ONB-date"
+      },
+      {
+        "id": "ONB-week",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "ONB-week"
+      },
+      {
+        "id": "ONB-count",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "ONB-count"
+      },
+      {
+        "id": "PAGE-birth-back",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "go:basic"
+      },
+      {
+        "id": "PAGE-birth-next",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "ONB-focus-0",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-0"
+      },
+      {
+        "id": "ONB-focus-1",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-1"
+      },
+      {
+        "id": "ONB-focus-2",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-2"
+      },
+      {
+        "id": "ONB-focus-3",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-3"
+      },
+      {
+        "id": "ONB-focus-4",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-4"
+      },
+      {
+        "id": "ONB-focus-5",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-5"
+      },
+      {
+        "id": "ONB-focus-6",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-6"
+      },
+      {
+        "id": "ONB-focus-7",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-7"
+      },
+      {
+        "id": "ONB-focus-8",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-8"
+      },
+      {
+        "id": "ONB-focus-9",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "ONB-focus-9"
+      },
+      {
+        "id": "PAGE-focus-back",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "go:birth"
+      },
+      {
+        "id": "PAGE-focus-next",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "PAGE-recommend-back",
+        "page_id": "PAGE-recommend",
+        "component_id": "CMP-control",
+        "role": "go:focus"
+      },
+      {
+        "id": "PAGE-recommend-next",
+        "page_id": "PAGE-recommend",
+        "component_id": "CMP-control",
+        "role": "next"
+      },
+      {
+        "id": "C01",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "menu"
+      },
+      {
+        "id": "C03",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "sound"
+      },
+      {
+        "id": "C04-profile",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "go:baby"
+      },
+      {
+        "id": "C05",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "AI陪伴形象"
+      },
+      {
+        "id": "TODAY-resume",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "today-resume"
+      },
+      {
+        "id": "TODAY-details",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "today-details"
+      },
+      {
+        "id": "C09",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:record"
+      },
+      {
+        "id": "C10",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:cry"
+      },
+      {
+        "id": "C11",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:poop"
+      },
+      {
+        "id": "record-collapse",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-collapse:record"
+      },
+      {
+        "id": "record-expand",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-expand:record"
+      },
+      {
+        "id": "REC-type-breast",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-select:breast"
+      },
+      {
+        "id": "REC-type-formula",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-select:formula"
+      },
+      {
+        "id": "REC-type-bottle",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-select:bottle"
+      },
+      {
+        "id": "REC-type-diaper",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-select:diaper"
+      },
+      {
+        "id": "REC-type-pump",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-select:pump"
+      },
+      {
+        "id": "breast-back",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-types"
+      },
+      {
+        "id": "breast-time",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "breast-time"
+      },
+      {
+        "id": "breast-side",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "breast-side"
+      },
+      {
+        "id": "breast-duration",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "breast-duration"
+      },
+      {
+        "id": "breast-note",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "breast-note"
+      },
+      {
+        "id": "breast-save",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "save:breast"
+      },
+      {
+        "id": "formula-back",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-types"
+      },
+      {
+        "id": "formula-time",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "formula-time"
+      },
+      {
+        "id": "formula-minus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:formula:-10"
+      },
+      {
+        "id": "formula-amount",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "奶量（ml）"
+      },
+      {
+        "id": "formula-plus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:formula:10"
+      },
+      {
+        "id": "formula-end",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "formula-end"
+      },
+      {
+        "id": "formula-note",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "formula-note"
+      },
+      {
+        "id": "formula-save",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "save:formula"
+      },
+      {
+        "id": "bottle-back",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-types"
+      },
+      {
+        "id": "bottle-time",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "bottle-time"
+      },
+      {
+        "id": "bottle-minus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:bottle:-10"
+      },
+      {
+        "id": "bottle-amount",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "奶量（ml）"
+      },
+      {
+        "id": "bottle-plus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:bottle:10"
+      },
+      {
+        "id": "bottle-end",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "bottle-end"
+      },
+      {
+        "id": "bottle-note",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "bottle-note"
+      },
+      {
+        "id": "bottle-save",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "save:bottle"
+      },
+      {
+        "id": "diaper-back",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-types"
+      },
+      {
+        "id": "diaper-time",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "diaper-time"
+      },
+      {
+        "id": "diaper-diaper",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "diaper-diaper"
+      },
+      {
+        "id": "diaper-rash",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "diaper-rash"
+      },
+      {
+        "id": "diaper-note",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "diaper-note"
+      },
+      {
+        "id": "diaper-save",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "save:diaper"
+      },
+      {
+        "id": "pump-back",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "record-types"
+      },
+      {
+        "id": "pump-time",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "pump-time"
+      },
+      {
+        "id": "pump-minus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:pump:-10"
+      },
+      {
+        "id": "pump-amount",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "奶量（ml）"
+      },
+      {
+        "id": "pump-plus",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "amount:pump:10"
+      },
+      {
+        "id": "pump-end",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "pump-end"
+      },
+      {
+        "id": "pump-note",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "pump-note"
+      },
+      {
+        "id": "pump-save",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "save:pump"
+      },
+      {
+        "id": "REC-again",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:record"
+      },
+      {
+        "id": "record-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-cancel:record"
+      },
+      {
+        "id": "cry-collapse",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-collapse:cry"
+      },
+      {
+        "id": "cry-expand",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-expand:cry"
+      },
+      {
+        "id": "C10-start",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:start"
+      },
+      {
+        "id": "C10-stop",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:stop"
+      },
+      {
+        "id": "C10-redo",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:start"
+      },
+      {
+        "id": "cry-submit",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:submit"
+      },
+      {
+        "id": "cry-ask",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:ask"
+      },
+      {
+        "id": "cry-retry-unknown",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:restart"
+      },
+      {
+        "id": "cry-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:submit"
+      },
+      {
+        "id": "cry-retry-permission",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:start"
+      },
+      {
+        "id": "C10-interrupted-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "cry:restart"
+      },
+      {
+        "id": "cry-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-cancel:cry"
+      },
+      {
+        "id": "cry-again",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:cry"
+      },
+      {
+        "id": "poop-collapse",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-collapse:poop"
+      },
+      {
+        "id": "poop-expand",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-expand:poop"
+      },
+      {
+        "id": "C11-camera",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:add"
+      },
+      {
+        "id": "C11-album",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:add"
+      },
+      {
+        "id": "C11-add",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:add"
+      },
+      {
+        "id": "C11-remove",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:remove"
+      },
+      {
+        "id": "poop-submit",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:submit"
+      },
+      {
+        "id": "poop-ask",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:ask"
+      },
+      {
+        "id": "poop-retry-unknown",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:restart"
+      },
+      {
+        "id": "poop-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:submit"
+      },
+      {
+        "id": "poop-retry-permission",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "poop:add"
+      },
+      {
+        "id": "poop-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "task-cancel:poop"
+      },
+      {
+        "id": "poop-again",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "service:poop"
+      },
+      {
+        "id": "C13-shutter",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-shutter"
+      },
+      {
+        "id": "C13-retake",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-retake"
+      },
+      {
+        "id": "C13-use",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-use"
+      },
+      {
+        "id": "C13-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-open"
+      },
+      {
+        "id": "C13-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-cancel"
+      },
+      {
+        "id": "CHAT-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "retry-send"
+      },
+      {
+        "id": "CHAT-discard-failed",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "discard-failed"
+      },
+      {
+        "id": "CHAT-services",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "services-open"
+      },
+      {
+        "id": "C15-close",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "upload-close"
+      },
+      {
+        "id": "C15-album",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "upload:album"
+      },
+      {
+        "id": "C15-file",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "upload:file"
+      },
+      {
+        "id": "ATTACH-clear",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "clear-attachments"
+      },
+      {
+        "id": "C12",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "聊天内容"
+      },
+      {
+        "id": "CHAT-send",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "send"
+      },
+      {
+        "id": "C13",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "camera-open"
+      },
+      {
+        "id": "C14",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "voice"
+      },
+      {
+        "id": "C15",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "upload-open"
+      },
+      {
+        "id": "CHAT-collapse",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "collapse-input"
+      },
+      {
+        "id": "SERVICES-close",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "services-close"
+      },
+      {
+        "id": "C01-close",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "sidebar-close"
+      },
+      {
+        "id": "C01.1",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "sidebar-go:mine"
+      },
+      {
+        "id": "C01.2",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "sidebar-go:baby"
+      },
+      {
+        "id": "C01.3",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "sidebar-go:devices"
+      },
+      {
+        "id": "C01.1-back",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "overview-back"
+      },
+      {
+        "id": "C01.1.1",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "overview-detail:trend"
+      },
+      {
+        "id": "C01.1.2",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "overview-detail:body"
+      },
+      {
+        "id": "C01.1.1-close",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      },
+      {
+        "id": "C01.1.2-close",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      },
+      {
+        "id": "C01.2-back",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "overview-back"
+      },
+      {
+        "id": "C01.2.1",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "overview-detail:feeding"
+      },
+      {
+        "id": "C01.2.2",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "overview-detail:growth"
+      },
+      {
+        "id": "C01.2.1-close",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      },
+      {
+        "id": "C01.2.2-close",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      },
+      {
+        "id": "C01.3-back",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "overview-back"
+      },
+      {
+        "id": "C01.3.1",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "overview-detail:device-info"
+      },
+      {
+        "id": "C01.3.2",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "overview-detail:sync"
+      },
+      {
+        "id": "C01.3.1-close",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      },
+      {
+        "id": "C01.3.2-close",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "detail-close"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-identity-next",
+        "control_id": "PAGE-identity-next",
+        "event": "click",
+        "target_page_id": "PAGE-stage",
+        "from_state": "ST-identity",
+        "to_state": "ST-stage"
+      },
+      {
+        "id": "ACT-stage-next",
+        "control_id": "PAGE-stage-next",
+        "event": "click",
+        "target_page_id": "PAGE-basic",
+        "from_state": "ST-stage",
+        "to_state": "ST-basic"
+      },
+      {
+        "id": "ACT-basic-next",
+        "control_id": "PAGE-basic-next",
+        "event": "click",
+        "target_page_id": "PAGE-birth",
+        "from_state": "ST-basic",
+        "to_state": "ST-birth"
+      },
+      {
+        "id": "ACT-birth-next",
+        "control_id": "PAGE-birth-next",
+        "event": "click",
+        "target_page_id": "PAGE-focus",
+        "from_state": "ST-birth",
+        "to_state": "ST-focus"
+      },
+      {
+        "id": "ACT-focus-next",
+        "control_id": "PAGE-focus-next",
+        "event": "click",
+        "target_page_id": "PAGE-recommend",
+        "from_state": "ST-focus",
+        "to_state": "ST-recommend"
+      },
+      {
+        "id": "ACT-recommend-next",
+        "control_id": "PAGE-recommend-next",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-recommend",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-breast-save",
+        "control_id": "breast-save",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-breast-edit",
+        "to_state": "ST-breast-saving"
+      },
+      {
+        "id": "ACT-breast-saved",
+        "control_id": "breast-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-breast-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-formula-save",
+        "control_id": "formula-save",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-formula-edit",
+        "to_state": "ST-formula-saving"
+      },
+      {
+        "id": "ACT-formula-saved",
+        "control_id": "formula-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-formula-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-bottle-save",
+        "control_id": "bottle-save",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-bottle-edit",
+        "to_state": "ST-bottle-saving"
+      },
+      {
+        "id": "ACT-bottle-saved",
+        "control_id": "bottle-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-bottle-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-diaper-save",
+        "control_id": "diaper-save",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-diaper-edit",
+        "to_state": "ST-diaper-saving"
+      },
+      {
+        "id": "ACT-diaper-saved",
+        "control_id": "diaper-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-diaper-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-pump-save",
+        "control_id": "pump-save",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-pump-edit",
+        "to_state": "ST-pump-saving"
+      },
+      {
+        "id": "ACT-pump-saved",
+        "control_id": "pump-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-pump-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-cry-open",
+        "control_id": "C10",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-cry-ready"
+      },
+      {
+        "id": "ACT-poop-open",
+        "control_id": "C11",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-poop-ready"
+      },
+      {
+        "id": "ACT-send",
+        "control_id": "CHAT-send",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat-generating"
+      },
+      {
+        "id": "ACT-reply",
+        "control_id": "CHAT-send",
+        "event": "reply-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat-generating",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-sound",
+        "control_id": "C03",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-voice",
+        "control_id": "C14",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-sidebar-open",
+        "control_id": "C01",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-sidebar-close",
+        "control_id": "C01-close",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-open-mine",
+        "control_id": "C01.1",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-return-mine",
+        "control_id": "C01.1-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-mine",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-trend",
+        "control_id": "C01.1.1",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-mine",
+        "to_state": "ST-trend-scope"
+      },
+      {
+        "id": "ACT-close-trend",
+        "control_id": "C01.1.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-trend-scope",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-open-body",
+        "control_id": "C01.1.2",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-mine",
+        "to_state": "ST-body-scope"
+      },
+      {
+        "id": "ACT-close-body",
+        "control_id": "C01.1.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-body-scope",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-open-baby",
+        "control_id": "C01.2",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-return-baby",
+        "control_id": "C01.2-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-baby",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-feeding",
+        "control_id": "C01.2.1",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-baby",
+        "to_state": "ST-feeding-scope"
+      },
+      {
+        "id": "ACT-close-feeding",
+        "control_id": "C01.2.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-feeding-scope",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-open-growth",
+        "control_id": "C01.2.2",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-baby",
+        "to_state": "ST-growth-scope"
+      },
+      {
+        "id": "ACT-close-growth",
+        "control_id": "C01.2.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-growth-scope",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-open-devices",
+        "control_id": "C01.3",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-devices"
+      },
+      {
+        "id": "ACT-return-devices",
+        "control_id": "C01.3-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-devices",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-device-info",
+        "control_id": "C01.3.1",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-devices",
+        "to_state": "ST-device-info-scope"
+      },
+      {
+        "id": "ACT-close-device-info",
+        "control_id": "C01.3.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-device-info-scope",
+        "to_state": "ST-devices"
+      },
+      {
+        "id": "ACT-open-sync",
+        "control_id": "C01.3.2",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-devices",
+        "to_state": "ST-sync-scope"
+      },
+      {
+        "id": "ACT-close-sync",
+        "control_id": "C01.3.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-sync-scope",
+        "to_state": "ST-devices"
+      },
+      {
+        "id": "ACT-focus-chat",
+        "control_id": "C12",
+        "event": "focus",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-collapse-chat",
+        "control_id": "CHAT-collapse",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-age-profile",
+        "control_id": "C04-profile",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-chat",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-today-expand",
+        "control_id": "TODAY-details",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-today",
+        "to_state": "ST-today-expanded"
+      },
+      {
+        "id": "ACT-today-collapse",
+        "control_id": "TODAY-details",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-today-expanded",
+        "to_state": "ST-today"
+      },
+      {
+        "id": "ACT-camera-open",
+        "control_id": "C13",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-camera-ready"
+      },
+      {
+        "id": "ACT-camera-shutter",
+        "control_id": "C13-shutter",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-camera-ready",
+        "to_state": "ST-camera-preview"
+      },
+      {
+        "id": "ACT-camera-use",
+        "control_id": "C13-use",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-camera-preview",
+        "to_state": "ST-attachments-ready"
+      },
+      {
+        "id": "ACT-upload-open",
+        "control_id": "C15",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-upload-options"
+      },
+      {
+        "id": "ACT-upload-album",
+        "control_id": "C15-album",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-upload-options",
+        "to_state": "ST-attachments-ready"
+      },
+      {
+        "id": "ACT-send-failed",
+        "control_id": "CHAT-send",
+        "event": "reply-failed",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat-generating",
+        "to_state": "ST-chat-error"
+      },
+      {
+        "id": "ACT-retry-failed",
+        "control_id": "CHAT-retry",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat-error",
+        "to_state": "ST-chat-generating"
+      },
+      {
+        "id": "ACT-discard-failed",
+        "control_id": "CHAT-discard-failed",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat-error",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-camera-retake",
+        "control_id": "C13-retake",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-camera-preview",
+        "to_state": "ST-camera-ready"
+      },
+      {
+        "id": "ACT-camera-cancel",
+        "control_id": "C13-cancel",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-camera-preview",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-camera-denied",
+        "control_id": "C13",
+        "event": "camera-unavailable",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-camera-error"
+      },
+      {
+        "id": "ACT-camera-retry",
+        "control_id": "C13-retry",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-camera-error",
+        "to_state": "ST-camera-ready"
+      },
+      {
+        "id": "ACT-upload-file",
+        "control_id": "C15-file",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-upload-options",
+        "to_state": "ST-attachments-ready"
+      },
+      {
+        "id": "ACT-upload-failed",
+        "control_id": "C15-file",
+        "event": "attachment-failed",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-upload-options",
+        "to_state": "ST-upload-error"
+      },
+      {
+        "id": "ACT-upload-retry",
+        "control_id": "C15-file",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-upload-error",
+        "to_state": "ST-attachments-ready"
+      },
+      {
+        "id": "ACT-upload-close",
+        "control_id": "C15-close",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-upload-options",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-attachment-clear",
+        "control_id": "ATTACH-clear",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-attachments-ready",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT04-services",
+        "control_id": "CHAT-services",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-services-open"
+      },
+      {
+        "id": "ACT04-close-services",
+        "control_id": "SERVICES-close",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-services-open",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT04-record-open",
+        "control_id": "C09",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-record-picker"
+      },
+      {
+        "id": "ACT04-select-breast",
+        "control_id": "REC-type-breast",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-breast-edit"
+      },
+      {
+        "id": "ACT04-select-formula",
+        "control_id": "REC-type-formula",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-formula-edit"
+      },
+      {
+        "id": "ACT04-select-bottle",
+        "control_id": "REC-type-bottle",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-bottle-edit"
+      },
+      {
+        "id": "ACT04-select-diaper",
+        "control_id": "REC-type-diaper",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-diaper-edit"
+      },
+      {
+        "id": "ACT04-select-pump",
+        "control_id": "REC-type-pump",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-pump-edit"
+      },
+      {
+        "id": "ACT04-collapse-record",
+        "control_id": "record-collapse",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-record-collapsed"
+      },
+      {
+        "id": "ACT04-expand-record",
+        "control_id": "record-expand",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-collapsed",
+        "to_state": "ST-record-picker"
+      },
+      {
+        "id": "ACT04-cancel-record",
+        "control_id": "record-cancel",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-record-picker",
+        "to_state": "ST-record-cancelled"
+      },
+      {
+        "id": "ACT04-collapse-cry",
+        "control_id": "cry-collapse",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-cry-ready",
+        "to_state": "ST-cry-collapsed"
+      },
+      {
+        "id": "ACT04-expand-cry",
+        "control_id": "cry-expand",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-cry-collapsed",
+        "to_state": "ST-cry-ready"
+      },
+      {
+        "id": "ACT04-cancel-cry",
+        "control_id": "cry-cancel",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-cry-ready",
+        "to_state": "ST-cry-cancelled"
+      },
+      {
+        "id": "ACT04-collapse-poop",
+        "control_id": "poop-collapse",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-poop-ready",
+        "to_state": "ST-poop-collapsed"
+      },
+      {
+        "id": "ACT04-expand-poop",
+        "control_id": "poop-expand",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-poop-collapsed",
+        "to_state": "ST-poop-ready"
+      },
+      {
+        "id": "ACT04-cancel-poop",
+        "control_id": "poop-cancel",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-poop-ready",
+        "to_state": "ST-poop-cancelled"
+      },
+      {
+        "id": "ACT04-interrupt",
+        "control_id": "C10-start",
+        "event": "visibility-hidden",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-cry-capture",
+        "to_state": "ST-cry-interrupted"
+      },
+      {
+        "id": "ACT04-rerecord",
+        "control_id": "C10-interrupted-retry",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-cry-interrupted",
+        "to_state": "ST-cry-ready"
+      },
+      {
+        "id": "ACT04-companion-busy",
+        "control_id": "C05",
+        "event": "reply-pending",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-ai-idle",
+        "to_state": "ST-ai-busy"
+      },
+      {
+        "id": "ACT04-companion-attention",
+        "control_id": "C05",
+        "event": "reply-failed",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-ai-busy",
+        "to_state": "ST-ai-attention"
+      }
+    ],
+    "states": [
+      {
+        "id": "ST-identity",
+        "page_id": "PAGE-identity",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-stage",
+        "page_id": "PAGE-stage",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-stage-unprovided",
+        "page_id": "PAGE-stage",
+        "kind": "other"
+      },
+      {
+        "id": "ST-basic",
+        "page_id": "PAGE-basic",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-birth",
+        "page_id": "PAGE-birth",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-focus",
+        "page_id": "PAGE-focus",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-recommend",
+        "page_id": "PAGE-recommend",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-chat",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-ai-fallback",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-ai-idle",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-ai-busy",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-ai-attention",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-today",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-today-expanded",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-services",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-record-collapsed",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-record-picker",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-breast-edit",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-breast-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-breast-saving",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-formula-edit",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-formula-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-formula-saving",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-bottle-edit",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-bottle-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-bottle-saving",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-diaper-edit",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-diaper-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-diaper-saving",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-pump-edit",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-pump-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-pump-saving",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-record-cancelled",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-collapsed",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-capture",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-cry-preview",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-processing",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-cry-result",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-unknown",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-cry-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-cry-permission",
+        "page_id": "PAGE-chat",
+        "kind": "permission"
+      },
+      {
+        "id": "ST-cry-cancelled",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-cry-interrupted",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-poop-collapsed",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-capture",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-poop-preview",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-processing",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-poop-result",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-unknown",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-poop-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-poop-permission",
+        "page_id": "PAGE-chat",
+        "kind": "permission"
+      },
+      {
+        "id": "ST-poop-cancelled",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-camera-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-camera-preview",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-camera-error",
+        "page_id": "PAGE-chat",
+        "kind": "permission"
+      },
+      {
+        "id": "ST-chat-generating",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-chat-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-upload-options",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-upload-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-attachments-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-services-open",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-sidebar-open",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-mine",
+        "page_id": "PAGE-mine",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-trend-scope",
+        "page_id": "PAGE-mine",
+        "kind": "other"
+      },
+      {
+        "id": "ST-body-scope",
+        "page_id": "PAGE-mine",
+        "kind": "other"
+      },
+      {
+        "id": "ST-baby",
+        "page_id": "PAGE-baby",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-feeding-scope",
+        "page_id": "PAGE-baby",
+        "kind": "other"
+      },
+      {
+        "id": "ST-growth-scope",
+        "page_id": "PAGE-baby",
+        "kind": "other"
+      },
+      {
+        "id": "ST-devices",
+        "page_id": "PAGE-devices",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-device-info-scope",
+        "page_id": "PAGE-devices",
+        "kind": "other"
+      },
+      {
+        "id": "ST-sync-scope",
+        "page_id": "PAGE-devices",
+        "kind": "other"
+      }
+    ],
+    "flows": [
+      {
+        "id": "FLOW-identity",
+        "requirement_ids": [
+          "ONB-01"
+        ],
+        "action_ids": [
+          "ACT-identity-next"
+        ]
+      },
+      {
+        "id": "FLOW-stage",
+        "requirement_ids": [
+          "ONB-02"
+        ],
+        "action_ids": [
+          "ACT-stage-next"
+        ]
+      },
+      {
+        "id": "FLOW-basic",
+        "requirement_ids": [
+          "ONB-03"
+        ],
+        "action_ids": [
+          "ACT-basic-next"
+        ]
+      },
+      {
+        "id": "FLOW-birth",
+        "requirement_ids": [
+          "ONB-04"
+        ],
+        "action_ids": [
+          "ACT-birth-next"
+        ]
+      },
+      {
+        "id": "FLOW-focus",
+        "requirement_ids": [
+          "ONB-05"
+        ],
+        "action_ids": [
+          "ACT-focus-next"
+        ]
+      },
+      {
+        "id": "FLOW-recommend",
+        "requirement_ids": [
+          "ONB-06"
+        ],
+        "action_ids": [
+          "ACT-recommend-next"
+        ]
+      },
+      {
+        "id": "FLOW-breast",
+        "requirement_ids": [
+          "C09",
+          "C09.1"
+        ],
+        "action_ids": [
+          "ACT-breast-save",
+          "ACT-breast-saved"
+        ]
+      },
+      {
+        "id": "FLOW-formula",
+        "requirement_ids": [
+          "C09",
+          "C09.2"
+        ],
+        "action_ids": [
+          "ACT-formula-save",
+          "ACT-formula-saved"
+        ]
+      },
+      {
+        "id": "FLOW-bottle",
+        "requirement_ids": [
+          "C09",
+          "C09.3"
+        ],
+        "action_ids": [
+          "ACT-bottle-save",
+          "ACT-bottle-saved"
+        ]
+      },
+      {
+        "id": "FLOW-diaper",
+        "requirement_ids": [
+          "C09",
+          "C09.4"
+        ],
+        "action_ids": [
+          "ACT-diaper-save",
+          "ACT-diaper-saved"
+        ]
+      },
+      {
+        "id": "FLOW-pump",
+        "requirement_ids": [
+          "C09",
+          "C09.5"
+        ],
+        "action_ids": [
+          "ACT-pump-save",
+          "ACT-pump-saved"
+        ]
+      },
+      {
+        "id": "FLOW-cry",
+        "requirement_ids": [
+          "C10"
+        ],
+        "action_ids": [
+          "ACT-cry-open"
+        ]
+      },
+      {
+        "id": "FLOW-poop",
+        "requirement_ids": [
+          "C11"
+        ],
+        "action_ids": [
+          "ACT-poop-open"
+        ]
+      },
+      {
+        "id": "FLOW-chat",
+        "requirement_ids": [
+          "C02",
+          "C04",
+          "C05",
+          "C06",
+          "C07",
+          "C08",
+          "C12"
+        ],
+        "action_ids": [
+          "ACT-send",
+          "ACT-reply"
+        ]
+      },
+      {
+        "id": "FLOW-sound",
+        "requirement_ids": [
+          "C03"
+        ],
+        "action_ids": [
+          "ACT-sound"
+        ]
+      },
+      {
+        "id": "FLOW-voice",
+        "requirement_ids": [
+          "C14"
+        ],
+        "action_ids": [
+          "ACT-voice"
+        ]
+      },
+      {
+        "id": "FLOW-sidebar",
+        "requirement_ids": [
+          "C01"
+        ],
+        "action_ids": [
+          "ACT-sidebar-open",
+          "ACT-sidebar-close"
+        ]
+      },
+      {
+        "id": "FLOW-mine",
+        "requirement_ids": [
+          "C01",
+          "C01.1"
+        ],
+        "action_ids": [
+          "ACT-open-mine",
+          "ACT-return-mine"
+        ]
+      },
+      {
+        "id": "FLOW-trend",
+        "requirement_ids": [
+          "C01.1.1"
+        ],
+        "action_ids": [
+          "ACT-open-trend",
+          "ACT-close-trend"
+        ]
+      },
+      {
+        "id": "FLOW-body",
+        "requirement_ids": [
+          "C01.1.2"
+        ],
+        "action_ids": [
+          "ACT-open-body",
+          "ACT-close-body"
+        ]
+      },
+      {
+        "id": "FLOW-baby",
+        "requirement_ids": [
+          "C01",
+          "C01.2"
+        ],
+        "action_ids": [
+          "ACT-open-baby",
+          "ACT-return-baby"
+        ]
+      },
+      {
+        "id": "FLOW-feeding",
+        "requirement_ids": [
+          "C01.2.1"
+        ],
+        "action_ids": [
+          "ACT-open-feeding",
+          "ACT-close-feeding"
+        ]
+      },
+      {
+        "id": "FLOW-growth",
+        "requirement_ids": [
+          "C01.2.2"
+        ],
+        "action_ids": [
+          "ACT-open-growth",
+          "ACT-close-growth"
+        ]
+      },
+      {
+        "id": "FLOW-devices",
+        "requirement_ids": [
+          "C01",
+          "C01.3"
+        ],
+        "action_ids": [
+          "ACT-open-devices",
+          "ACT-return-devices"
+        ]
+      },
+      {
+        "id": "FLOW-device-info",
+        "requirement_ids": [
+          "C01.3.1"
+        ],
+        "action_ids": [
+          "ACT-open-device-info",
+          "ACT-close-device-info"
+        ]
+      },
+      {
+        "id": "FLOW-sync",
+        "requirement_ids": [
+          "C01.3.2"
+        ],
+        "action_ids": [
+          "ACT-open-sync",
+          "ACT-close-sync"
+        ]
+      },
+      {
+        "id": "FLOW-continuous",
+        "requirement_ids": [
+          "CHAT-CONTINUOUS",
+          "C12"
+        ],
+        "action_ids": [
+          "ACT-focus-chat",
+          "ACT-collapse-chat"
+        ]
+      },
+      {
+        "id": "FLOW-age",
+        "requirement_ids": [
+          "CHAT-AGE",
+          "C04"
+        ],
+        "action_ids": [
+          "ACT-age-profile"
+        ]
+      },
+      {
+        "id": "FLOW-today",
+        "requirement_ids": [
+          "CHAT-TODAY"
+        ],
+        "action_ids": [
+          "ACT-today-expand",
+          "ACT-today-collapse"
+        ]
+      },
+      {
+        "id": "FLOW-camera",
+        "requirement_ids": [
+          "CHAT-CAMERA",
+          "C13"
+        ],
+        "action_ids": [
+          "ACT-camera-open",
+          "ACT-camera-shutter",
+          "ACT-camera-use"
+        ]
+      },
+      {
+        "id": "FLOW-upload",
+        "requirement_ids": [
+          "CHAT-UPLOAD",
+          "C15"
+        ],
+        "action_ids": [
+          "ACT-upload-open",
+          "ACT-upload-album"
+        ]
+      },
+      {
+        "id": "FLOW-send-retry",
+        "requirement_ids": [
+          "CHAT-CONTINUOUS",
+          "CHAT-UPLOAD"
+        ],
+        "action_ids": [
+          "ACT-send-failed",
+          "ACT-retry-failed",
+          "ACT-reply"
+        ]
+      },
+      {
+        "id": "FLOW-send-discard",
+        "requirement_ids": [
+          "CHAT-CONTINUOUS"
+        ],
+        "action_ids": [
+          "ACT-discard-failed"
+        ]
+      },
+      {
+        "id": "FLOW-camera-retake",
+        "requirement_ids": [
+          "CHAT-CAMERA"
+        ],
+        "action_ids": [
+          "ACT-camera-retake",
+          "ACT-camera-shutter"
+        ]
+      },
+      {
+        "id": "FLOW-camera-cancel",
+        "requirement_ids": [
+          "CHAT-CAMERA"
+        ],
+        "action_ids": [
+          "ACT-camera-cancel"
+        ]
+      },
+      {
+        "id": "FLOW-camera-retry",
+        "requirement_ids": [
+          "CHAT-CAMERA"
+        ],
+        "action_ids": [
+          "ACT-camera-denied",
+          "ACT-camera-retry"
+        ]
+      },
+      {
+        "id": "FLOW-upload-file",
+        "requirement_ids": [
+          "CHAT-UPLOAD"
+        ],
+        "action_ids": [
+          "ACT-upload-file"
+        ]
+      },
+      {
+        "id": "FLOW-upload-retry",
+        "requirement_ids": [
+          "CHAT-UPLOAD"
+        ],
+        "action_ids": [
+          "ACT-upload-failed",
+          "ACT-upload-retry"
+        ]
+      },
+      {
+        "id": "FLOW-upload-close",
+        "requirement_ids": [
+          "CHAT-UPLOAD"
+        ],
+        "action_ids": [
+          "ACT-upload-close"
+        ]
+      },
+      {
+        "id": "FLOW-attachments-clear",
+        "requirement_ids": [
+          "CHAT-UPLOAD",
+          "CHAT-CAMERA"
+        ],
+        "action_ids": [
+          "ACT-attachment-clear"
+        ]
+      },
+      {
+        "id": "FLOW04-services",
+        "requirement_ids": [
+          "IA-SERVICES",
+          "C09",
+          "C10",
+          "C11"
+        ],
+        "action_ids": [
+          "ACT04-services",
+          "ACT04-close-services"
+        ]
+      },
+      {
+        "id": "FLOW04-record-entry",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-record-open"
+        ]
+      },
+      {
+        "id": "FLOW04-record-type-breast",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-select-breast"
+        ]
+      },
+      {
+        "id": "FLOW04-record-type-formula",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-select-formula"
+        ]
+      },
+      {
+        "id": "FLOW04-record-type-bottle",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-select-bottle"
+        ]
+      },
+      {
+        "id": "FLOW04-record-type-diaper",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-select-diaper"
+        ]
+      },
+      {
+        "id": "FLOW04-record-type-pump",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-select-pump"
+        ]
+      },
+      {
+        "id": "FLOW04-collapse-record",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-collapse-record",
+          "ACT04-expand-record"
+        ]
+      },
+      {
+        "id": "FLOW04-cancel-record",
+        "requirement_ids": [
+          "C09",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-cancel-record"
+        ]
+      },
+      {
+        "id": "FLOW04-collapse-cry",
+        "requirement_ids": [
+          "C10",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-collapse-cry",
+          "ACT04-expand-cry"
+        ]
+      },
+      {
+        "id": "FLOW04-cancel-cry",
+        "requirement_ids": [
+          "C10",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-cancel-cry"
+        ]
+      },
+      {
+        "id": "FLOW04-collapse-poop",
+        "requirement_ids": [
+          "C11",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-collapse-poop",
+          "ACT04-expand-poop"
+        ]
+      },
+      {
+        "id": "FLOW04-cancel-poop",
+        "requirement_ids": [
+          "C11",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-cancel-poop"
+        ]
+      },
+      {
+        "id": "FLOW04-cry-interrupt",
+        "requirement_ids": [
+          "C10",
+          "TASK-CONSISTENCY"
+        ],
+        "action_ids": [
+          "ACT04-interrupt",
+          "ACT04-rerecord"
+        ]
+      },
+      {
+        "id": "FLOW04-companion",
+        "requirement_ids": [
+          "C05",
+          "AI-ASSETS"
+        ],
+        "action_ids": [
+          "ACT04-companion-busy",
+          "ACT04-companion-attention"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "VP-desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "id": "VP-mobile",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "VP-narrow",
+        "width": 360,
+        "height": 780
+      }
+    ]
+  },
+  "system": {
+    "revision": 2,
+    "tokens": {
+      "--bg": "#FAF7F2",
+      "--surface": "#FFFFFF",
+      "--ink": "#282725",
+      "--muted": "#625B57",
+      "--brand": "#692A3A",
+      "--soft": "#E9DED4",
+      "--sage": "#DCE5DE",
+      "--border": "#80716B",
+      "--line": "#E4DCD4",
+      "--error": "#8B2E26",
+      "--radius": "12px",
+      "--radius-lg": "16px",
+      "--font": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "--body": "16px",
+      "--small": "14px",
+      "--title": "24px",
+      "--shadow": "0 14px 45px #28272512",
+      "--tiny": "12px"
+    },
+    "components": [
+      {
+        "id": "CMP-control",
+        "states": [
+          "default",
+          "hover",
+          "focus",
+          "disabled"
+        ],
+        "token_refs": [
+          "--brand",
+          "--surface",
+          "--ink",
+          "--radius",
+          "--border"
+        ]
+      },
+      {
+        "id": "CMP-task",
+        "states": [
+          "ready",
+          "active",
+          "collapsed",
+          "cancelled",
+          "result",
+          "error"
+        ],
+        "token_refs": [
+          "--surface",
+          "--line",
+          "--radius-lg",
+          "--brand"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "ONB-01",
+      "page_ids": [
+        "PAGE-identity"
+      ],
+      "flow_ids": [
+        "FLOW-identity"
+      ],
+      "state_ids": [
+        "ST-identity"
+      ]
+    },
+    {
+      "requirement_id": "ONB-02",
+      "page_ids": [
+        "PAGE-stage"
+      ],
+      "flow_ids": [
+        "FLOW-stage"
+      ],
+      "state_ids": [
+        "ST-stage",
+        "ST-stage-unprovided"
+      ]
+    },
+    {
+      "requirement_id": "ONB-03",
+      "page_ids": [
+        "PAGE-basic"
+      ],
+      "flow_ids": [
+        "FLOW-basic"
+      ],
+      "state_ids": [
+        "ST-basic"
+      ]
+    },
+    {
+      "requirement_id": "ONB-04",
+      "page_ids": [
+        "PAGE-birth"
+      ],
+      "flow_ids": [
+        "FLOW-birth"
+      ],
+      "state_ids": [
+        "ST-birth"
+      ]
+    },
+    {
+      "requirement_id": "ONB-05",
+      "page_ids": [
+        "PAGE-focus"
+      ],
+      "flow_ids": [
+        "FLOW-focus"
+      ],
+      "state_ids": [
+        "ST-focus"
+      ]
+    },
+    {
+      "requirement_id": "ONB-06",
+      "page_ids": [
+        "PAGE-recommend"
+      ],
+      "flow_ids": [
+        "FLOW-recommend"
+      ],
+      "state_ids": [
+        "ST-recommend"
+      ]
+    },
+    {
+      "requirement_id": "C01",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-mine",
+        "PAGE-baby",
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-sidebar",
+        "FLOW-mine",
+        "FLOW-baby",
+        "FLOW-devices"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-sidebar-open",
+        "ST-mine",
+        "ST-baby",
+        "ST-devices"
+      ]
+    },
+    {
+      "requirement_id": "C02",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C03",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-sound"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C04",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-chat",
+        "FLOW-age"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error",
+        "ST-baby"
+      ]
+    },
+    {
+      "requirement_id": "C05",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat",
+        "FLOW04-companion"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error",
+        "ST-ai-idle",
+        "ST-ai-busy",
+        "ST-ai-attention",
+        "ST-ai-fallback"
+      ]
+    },
+    {
+      "requirement_id": "C06",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C07",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C08",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C09",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-breast",
+        "FLOW-formula",
+        "FLOW-bottle",
+        "FLOW-diaper",
+        "FLOW-pump",
+        "FLOW04-services",
+        "FLOW04-record-entry",
+        "FLOW04-record-type-breast",
+        "FLOW04-record-type-formula",
+        "FLOW04-record-type-bottle",
+        "FLOW04-record-type-diaper",
+        "FLOW04-record-type-pump",
+        "FLOW04-collapse-record",
+        "FLOW04-cancel-record"
+      ],
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error",
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error",
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error",
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error",
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error",
+        "ST-chat",
+        "ST-services",
+        "ST-services-open",
+        "ST-record-picker",
+        "ST-record-collapsed",
+        "ST-record-cancelled"
+      ]
+    },
+    {
+      "requirement_id": "C10",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-cry",
+        "FLOW04-services",
+        "FLOW04-collapse-cry",
+        "FLOW04-cancel-cry",
+        "FLOW04-cry-interrupt"
+      ],
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-capture",
+        "ST-cry-preview",
+        "ST-cry-processing",
+        "ST-cry-result",
+        "ST-cry-unknown",
+        "ST-cry-error",
+        "ST-cry-permission",
+        "ST-cry-cancelled",
+        "ST-chat",
+        "ST-services",
+        "ST-services-open",
+        "ST-cry-collapsed",
+        "ST-cry-interrupted"
+      ]
+    },
+    {
+      "requirement_id": "C11",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-poop",
+        "FLOW04-services",
+        "FLOW04-collapse-poop",
+        "FLOW04-cancel-poop"
+      ],
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-capture",
+        "ST-poop-preview",
+        "ST-poop-processing",
+        "ST-poop-result",
+        "ST-poop-unknown",
+        "ST-poop-error",
+        "ST-poop-permission",
+        "ST-poop-cancelled",
+        "ST-chat",
+        "ST-services",
+        "ST-services-open",
+        "ST-poop-collapsed"
+      ]
+    },
+    {
+      "requirement_id": "C12",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat",
+        "FLOW-continuous"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C13",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-camera"
+      ],
+      "state_ids": [
+        "ST-camera-ready",
+        "ST-camera-preview",
+        "ST-camera-error",
+        "ST-attachments-ready"
+      ]
+    },
+    {
+      "requirement_id": "C14",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-voice"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C15",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-upload"
+      ],
+      "state_ids": [
+        "ST-upload-options",
+        "ST-upload-error",
+        "ST-attachments-ready"
+      ]
+    },
+    {
+      "requirement_id": "C09.1",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-breast"
+      ],
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.2",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-formula"
+      ],
+      "state_ids": [
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.3",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-bottle"
+      ],
+      "state_ids": [
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.4",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-diaper"
+      ],
+      "state_ids": [
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.5",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-pump"
+      ],
+      "state_ids": [
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error"
+      ]
+    },
+    {
+      "requirement_id": "CHAT-CONTINUOUS",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-continuous",
+        "FLOW-send-retry",
+        "FLOW-send-discard"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "CHAT-TODAY",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-today"
+      ],
+      "state_ids": [
+        "ST-today",
+        "ST-today-expanded"
+      ]
+    },
+    {
+      "requirement_id": "CHAT-AGE",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-age"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-baby"
+      ]
+    },
+    {
+      "requirement_id": "CHAT-CAMERA",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-camera",
+        "FLOW-camera-retake",
+        "FLOW-camera-cancel",
+        "FLOW-camera-retry",
+        "FLOW-attachments-clear"
+      ],
+      "state_ids": [
+        "ST-camera-ready",
+        "ST-camera-preview",
+        "ST-camera-error",
+        "ST-attachments-ready",
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "CHAT-UPLOAD",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-upload",
+        "FLOW-send-retry",
+        "FLOW-upload-file",
+        "FLOW-upload-retry",
+        "FLOW-upload-close",
+        "FLOW-attachments-clear"
+      ],
+      "state_ids": [
+        "ST-upload-options",
+        "ST-upload-error",
+        "ST-attachments-ready",
+        "ST-chat-generating",
+        "ST-chat-error",
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C01.1",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-mine"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-mine"
+      ]
+    },
+    {
+      "requirement_id": "C01.2",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-baby"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-baby"
+      ]
+    },
+    {
+      "requirement_id": "C01.3",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-devices"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-devices"
+      ]
+    },
+    {
+      "requirement_id": "C01.1.1",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-trend"
+      ],
+      "state_ids": [
+        "ST-mine",
+        "ST-trend-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.1.2",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-body"
+      ],
+      "state_ids": [
+        "ST-mine",
+        "ST-body-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.2.1",
+      "page_ids": [
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-feeding"
+      ],
+      "state_ids": [
+        "ST-baby",
+        "ST-feeding-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.2.2",
+      "page_ids": [
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-growth"
+      ],
+      "state_ids": [
+        "ST-baby",
+        "ST-growth-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.3.1",
+      "page_ids": [
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-device-info"
+      ],
+      "state_ids": [
+        "ST-devices",
+        "ST-device-info-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.3.2",
+      "page_ids": [
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-sync"
+      ],
+      "state_ids": [
+        "ST-devices",
+        "ST-sync-scope"
+      ]
+    },
+    {
+      "requirement_id": "IA-SERVICES",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW04-services"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-services",
+        "ST-services-open"
+      ]
+    },
+    {
+      "requirement_id": "TASK-CONSISTENCY",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW04-record-entry",
+        "FLOW04-record-type-breast",
+        "FLOW04-record-type-formula",
+        "FLOW04-record-type-bottle",
+        "FLOW04-record-type-diaper",
+        "FLOW04-record-type-pump",
+        "FLOW04-collapse-record",
+        "FLOW04-cancel-record",
+        "FLOW04-collapse-cry",
+        "FLOW04-cancel-cry",
+        "FLOW04-collapse-poop",
+        "FLOW04-cancel-poop",
+        "FLOW04-cry-interrupt"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-record-picker",
+        "ST-breast-edit",
+        "ST-formula-edit",
+        "ST-bottle-edit",
+        "ST-diaper-edit",
+        "ST-pump-edit",
+        "ST-record-collapsed",
+        "ST-record-cancelled",
+        "ST-cry-ready",
+        "ST-cry-collapsed",
+        "ST-cry-cancelled",
+        "ST-poop-ready",
+        "ST-poop-collapsed",
+        "ST-poop-cancelled",
+        "ST-cry-capture",
+        "ST-cry-interrupted"
+      ]
+    },
+    {
+      "requirement_id": "AI-ASSETS",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW04-companion"
+      ],
+      "state_ids": [
+        "ST-ai-idle",
+        "ST-ai-busy",
+        "ST-ai-attention",
+        "ST-ai-fallback"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-upload-policy",
+      "question": "上传文件的正式类型/大小/数量与真实采集能力待定；本版仅示例附件交互，不解析文件。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-sidebar-targets",
+      "question": "六个下级功能目标界面尚未展示，本版只实现入口和可返回的范围说明。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-sidebar-return",
+      "question": "本候选采用概览返回侧抽屉、关闭恢复主对话；遮罩和Esc关闭为必要完善。",
+      "blocks_design": false,
+      "status": "resolved"
+    },
+    {
+      "id": "D-overview-data",
+      "question": "概览统计保留来源固定示例，未与本地记录联动；宝宝年龄取已录入背景。多宝宝身份及正式汇总规则待定。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-scope",
+      "question": "用户已选独立产品，仅还原已录入拆解功能并做必要完善。",
+      "blocks_design": false,
+      "status": "resolved"
+    },
+    {
+      "id": "D-business",
+      "question": "奶量含义、亲喂计时、年龄孕周范围、单位与正式默认值待定；本版仅用候选演示规则。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-fw04",
+      "question": "本轮用户授权入口布局重构和AI形象A；FW04为待查看候选，尚未冻结。",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [
+    {
+      "id": "TEST-FLOW-identity",
+      "flow_id": "FLOW-identity",
+      "state_ids": [
+        "ST-identity"
+      ],
+      "steps": [
+        "打开 identity",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 stage；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-stage",
+      "flow_id": "FLOW-stage",
+      "state_ids": [
+        "ST-stage",
+        "ST-stage-unprovided"
+      ],
+      "steps": [
+        "打开 stage",
+        "填写已提供字段；继续；返回检查值保留",
+        "选择孕期并继续，再改为产后"
+      ],
+      "expected": "进入 basic；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-basic",
+      "flow_id": "FLOW-basic",
+      "state_ids": [
+        "ST-basic"
+      ],
+      "steps": [
+        "打开 basic",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 birth；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-birth",
+      "flow_id": "FLOW-birth",
+      "state_ids": [
+        "ST-birth"
+      ],
+      "steps": [
+        "打开 birth",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 focus；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-focus",
+      "flow_id": "FLOW-focus",
+      "state_ids": [
+        "ST-focus"
+      ],
+      "steps": [
+        "打开 focus",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 recommend；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-recommend",
+      "flow_id": "FLOW-recommend",
+      "state_ids": [
+        "ST-recommend"
+      ],
+      "steps": [
+        "打开 recommend",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 chat；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-breast",
+      "flow_id": "FLOW-breast",
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error"
+      ],
+      "steps": [
+        "记录任务卡的类型选择选 亲喂",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "当前聊天内完成记录、校验、保存与修改；保持recordId；本地记录更新今日概览。"
+    },
+    {
+      "id": "TEST-FLOW-formula",
+      "flow_id": "FLOW-formula",
+      "state_ids": [
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error"
+      ],
+      "steps": [
+        "记录任务卡的类型选择选 配方奶",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "当前聊天内完成记录、校验、保存与修改；保持recordId；本地记录更新今日概览。"
+    },
+    {
+      "id": "TEST-FLOW-bottle",
+      "flow_id": "FLOW-bottle",
+      "state_ids": [
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error"
+      ],
+      "steps": [
+        "记录任务卡的类型选择选 瓶喂母乳",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "当前聊天内完成记录、校验、保存与修改；保持recordId；本地记录更新今日概览。"
+    },
+    {
+      "id": "TEST-FLOW-diaper",
+      "flow_id": "FLOW-diaper",
+      "state_ids": [
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error"
+      ],
+      "steps": [
+        "记录任务卡的类型选择选 换尿布",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "当前聊天内完成记录、校验、保存与修改；保持recordId；本地记录更新今日概览。"
+    },
+    {
+      "id": "TEST-FLOW-pump",
+      "flow_id": "FLOW-pump",
+      "state_ids": [
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error"
+      ],
+      "steps": [
+        "记录任务卡的类型选择选 吸奶",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "当前聊天内完成记录、校验、保存与修改；保持recordId；本地记录更新今日概览。"
+    },
+    {
+      "id": "TEST-FLOW-cry",
+      "flow_id": "FLOW-cry",
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-capture",
+        "ST-cry-preview",
+        "ST-cry-processing",
+        "ST-cry-result",
+        "ST-cry-unknown",
+        "ST-cry-error",
+        "ST-cry-permission",
+        "ST-cry-cancelled"
+      ],
+      "steps": [
+        "打开 cry；模拟权限不可用；重新尝试",
+        "采集模拟素材；哭声结束录音，图片添加到3张并移除",
+        "确认素材分析；分别选择完成、无法判断、失败；失败重试",
+        "处理中取消；重新进入；完成后再次点击快捷入口",
+        "刷新：进行中的分析变为可重试，录音回到待录制"
+      ],
+      "expected": "卡片保持在同一会话；素材数上限有效；取消后旧回调不覆盖；可发起第二次任务；无真实采集或分析"
+    },
+    {
+      "id": "TEST-FLOW-poop",
+      "flow_id": "FLOW-poop",
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-capture",
+        "ST-poop-preview",
+        "ST-poop-processing",
+        "ST-poop-result",
+        "ST-poop-unknown",
+        "ST-poop-error",
+        "ST-poop-permission",
+        "ST-poop-cancelled"
+      ],
+      "steps": [
+        "打开 poop；模拟权限不可用；重新尝试",
+        "采集模拟素材；哭声结束录音，图片添加到3张并移除",
+        "确认素材分析；分别选择完成、无法判断、失败；失败重试",
+        "处理中取消；重新进入；完成后再次点击快捷入口",
+        "刷新：进行中的分析变为可重试，录音回到待录制"
+      ],
+      "expected": "卡片保持在同一会话；素材数上限有效；取消后旧回调不覆盖；可发起第二次任务；无真实采集或分析"
+    },
+    {
+      "id": "TEST-FLOW-chat",
+      "flow_id": "FLOW-chat",
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ],
+      "steps": [
+        "输入文本；失败时保留；正常发送",
+        "发送后立即输入下一段；回复后检查草稿",
+        "刷新，检查会话、卡片和已保存记录"
+      ],
+      "expected": "模拟回复明确标注；输入不丢失；空输入不能发送；防重复提交"
+    },
+    {
+      "id": "TEST-FLOW-sound",
+      "flow_id": "FLOW-sound",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C03",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-voice",
+      "flow_id": "FLOW-voice",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C14",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-sidebar",
+      "flow_id": "FLOW-sidebar",
+      "state_ids": [
+        "ST-chat",
+        "ST-sidebar-open"
+      ],
+      "steps": [
+        "聊天填写草稿并打开侧栏",
+        "关闭按钮、Esc和遮罩分别退出",
+        "重新进入侧栏"
+      ],
+      "expected": "保持聊天输入、滚动位置和任务状态，焦点恢复菜单入口"
+    },
+    {
+      "id": "TEST-FLOW-mine",
+      "flow_id": "FLOW-mine",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-mine"
+      ],
+      "steps": [
+        "侧栏进入 mine",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-trend",
+      "flow_id": "FLOW-trend",
+      "state_ids": [
+        "ST-mine",
+        "ST-trend-scope"
+      ],
+      "steps": [
+        "点击下级入口 trend",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-body",
+      "flow_id": "FLOW-body",
+      "state_ids": [
+        "ST-mine",
+        "ST-body-scope"
+      ],
+      "steps": [
+        "点击下级入口 body",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-baby",
+      "flow_id": "FLOW-baby",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-baby"
+      ],
+      "steps": [
+        "侧栏进入 baby",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-feeding",
+      "flow_id": "FLOW-feeding",
+      "state_ids": [
+        "ST-baby",
+        "ST-feeding-scope"
+      ],
+      "steps": [
+        "点击下级入口 feeding",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-growth",
+      "flow_id": "FLOW-growth",
+      "state_ids": [
+        "ST-baby",
+        "ST-growth-scope"
+      ],
+      "steps": [
+        "点击下级入口 growth",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-devices",
+      "flow_id": "FLOW-devices",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-devices"
+      ],
+      "steps": [
+        "侧栏进入 devices",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-device-info",
+      "flow_id": "FLOW-device-info",
+      "state_ids": [
+        "ST-devices",
+        "ST-device-info-scope"
+      ],
+      "steps": [
+        "点击下级入口 device-info",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-sync",
+      "flow_id": "FLOW-sync",
+      "state_ids": [
+        "ST-devices",
+        "ST-sync-scope"
+      ],
+      "steps": [
+        "点击下级入口 sync",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-continuous",
+      "flow_id": "FLOW-continuous",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击输入框并连续发送多条消息",
+        "滚动阅读历史，展开任务卡再返回",
+        "收起输入并再次展开"
+      ],
+      "expected": "始终#/chat，同一消息流延长，无二级聊天页/分页，年龄和输入入口可见"
+    },
+    {
+      "id": "TEST-FLOW-age",
+      "flow_id": "FLOW-age",
+      "state_ids": [
+        "ST-chat",
+        "ST-baby"
+      ],
+      "steps": [
+        "核对年龄与出生日期",
+        "缺资料、未来日期、跨月时展示可理解状态",
+        "进入宝宝概览核对同源"
+      ],
+      "expected": "年龄独立显示；未填写不虚构，不计算校正月龄"
+    },
+    {
+      "id": "TEST-FLOW-today",
+      "flow_id": "FLOW-today",
+      "state_ids": [
+        "ST-today",
+        "ST-today-expanded"
+      ],
+      "steps": [
+        "在对话内查看今日概览",
+        "保存一条当日记录，回到会话检查汇总",
+        "展开/收起今日记录，保持#/chat"
+      ],
+      "expected": "今日概览是对话卡片，仅统计本地已保存记录；无数据明确为空"
+    },
+    {
+      "id": "TEST-FLOW-camera",
+      "flow_id": "FLOW-camera",
+      "state_ids": [
+        "ST-camera-ready",
+        "ST-camera-preview",
+        "ST-camera-error",
+        "ST-attachments-ready"
+      ],
+      "steps": [
+        "在输入区点击拍照，模拟拍摄、重拍、确认",
+        "取消不添加；相机不可用后重试",
+        "确认加入待发送区，移除或连同文字发送"
+      ],
+      "expected": "同页卡片完成确认，不发送未确认照片；仅模拟，不调用摄像头"
+    },
+    {
+      "id": "TEST-FLOW-upload",
+      "flow_id": "FLOW-upload",
+      "state_ids": [
+        "ST-upload-options",
+        "ST-upload-error",
+        "ST-attachments-ready"
+      ],
+      "steps": [
+        "点击+上传，选择相册或示例文件",
+        "添加失败保留原草稿与附件，重试/收起",
+        "逐个移除或清空；仅附件发送；发送失败后重试"
+      ],
+      "expected": "附件先确认后发送，来源可区分；不读取/上传真实素材，不宣称文件分析"
+    },
+    {
+      "id": "TEST-FLOW-send-retry",
+      "flow_id": "FLOW-send-retry",
+      "state_ids": [
+        "ST-chat-generating",
+        "ST-chat-error",
+        "ST-chat"
+      ],
+      "steps": [
+        "模拟发送失败并填写下一条草稿",
+        "重试期间点击放弃；完成后检查原消息只发送一次"
+      ],
+      "expected": "失败快照保留文字和附件；重试忙碌期阻止放弃，下一条草稿不丢失"
+    },
+    {
+      "id": "TEST-FLOW-send-discard",
+      "flow_id": "FLOW-send-discard",
+      "state_ids": [
+        "ST-chat-error",
+        "ST-chat"
+      ],
+      "steps": [
+        "发送失败后放弃重试"
+      ],
+      "expected": "结束失败消息重试，当前输入与附件仍可编辑"
+    },
+    {
+      "id": "TEST-FLOW-camera-retake",
+      "flow_id": "FLOW-camera-retake",
+      "state_ids": [
+        "ST-camera-preview",
+        "ST-camera-ready"
+      ],
+      "steps": [
+        "拍摄后重新拍摄，再拍摄"
+      ],
+      "expected": "确认前不增加附件"
+    },
+    {
+      "id": "TEST-FLOW-camera-cancel",
+      "flow_id": "FLOW-camera-cancel",
+      "state_ids": [
+        "ST-camera-preview",
+        "ST-chat"
+      ],
+      "steps": [
+        "拍摄预览后取消；待拍摄和不可用状态也可取消"
+      ],
+      "expected": "不添加照片，保留文字和已有附件，焦点回拍照"
+    },
+    {
+      "id": "TEST-FLOW-camera-retry",
+      "flow_id": "FLOW-camera-retry",
+      "state_ids": [
+        "ST-chat",
+        "ST-camera-error",
+        "ST-camera-ready"
+      ],
+      "steps": [
+        "设置素材不可用，进入拍照",
+        "恢复可用后重试"
+      ],
+      "expected": "同页恢复拍照，无未确认素材残留"
+    },
+    {
+      "id": "TEST-FLOW-upload-file",
+      "flow_id": "FLOW-upload-file",
+      "state_ids": [
+        "ST-upload-options",
+        "ST-attachments-ready"
+      ],
+      "steps": [
+        "选择示例文件"
+      ],
+      "expected": "以来源标签加入待发送区"
+    },
+    {
+      "id": "TEST-FLOW-upload-retry",
+      "flow_id": "FLOW-upload-retry",
+      "state_ids": [
+        "ST-upload-options",
+        "ST-upload-error",
+        "ST-attachments-ready"
+      ],
+      "steps": [
+        "模拟添加失败，再切换正常重试"
+      ],
+      "expected": "文字和已有附件保持不变，仅成功后新增附件"
+    },
+    {
+      "id": "TEST-FLOW-upload-close",
+      "flow_id": "FLOW-upload-close",
+      "state_ids": [
+        "ST-upload-options",
+        "ST-chat"
+      ],
+      "steps": [
+        "收起上传选项"
+      ],
+      "expected": "保持原输入和附件"
+    },
+    {
+      "id": "TEST-FLOW-attachments-clear",
+      "flow_id": "FLOW-attachments-clear",
+      "state_ids": [
+        "ST-attachments-ready",
+        "ST-chat"
+      ],
+      "steps": [
+        "添加两份附件，逐个移除，再清空"
+      ],
+      "expected": "仅修改待发送区，不修改历史已发送附件；逐个移除为动态生成控件，其运行证据见runtime.json"
+    },
+    {
+      "id": "TEST04-services",
+      "flow_id": "FLOW04-services",
+      "state_ids": [
+        "ST-chat",
+        "ST-services",
+        "ST-services-open"
+      ],
+      "steps": [
+        "首页查看今日概览与三卡；聊天后从常用功能打开同一组三卡；关闭与Esc恢复入口"
+      ],
+      "expected": "三卡只有一组DOM实例，移动到弹层后保持ID、任务状态与文本一致。"
+    },
+    {
+      "id": "TEST04-record-entry",
+      "flow_id": "FLOW04-record-entry",
+      "state_ids": [
+        "ST-chat",
+        "ST-record-picker"
+      ],
+      "steps": [
+        "点击记录，当前聊天流出现记录任务卡"
+      ],
+      "expected": "不切换路由，不新建第二个同类未完成任务。"
+    },
+    {
+      "id": "TEST04-record-type-breast",
+      "flow_id": "FLOW04-record-type-breast",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-breast-edit"
+      ],
+      "steps": [
+        "选择breast；填写后更换类型；再回原类型"
+      ],
+      "expected": "不同类型草稿分别保存，继续任务优先回上次所选。"
+    },
+    {
+      "id": "TEST04-record-type-formula",
+      "flow_id": "FLOW04-record-type-formula",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-formula-edit"
+      ],
+      "steps": [
+        "选择formula；填写后更换类型；再回原类型"
+      ],
+      "expected": "不同类型草稿分别保存，继续任务优先回上次所选。"
+    },
+    {
+      "id": "TEST04-record-type-bottle",
+      "flow_id": "FLOW04-record-type-bottle",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-bottle-edit"
+      ],
+      "steps": [
+        "选择bottle；填写后更换类型；再回原类型"
+      ],
+      "expected": "不同类型草稿分别保存，继续任务优先回上次所选。"
+    },
+    {
+      "id": "TEST04-record-type-diaper",
+      "flow_id": "FLOW04-record-type-diaper",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-diaper-edit"
+      ],
+      "steps": [
+        "选择diaper；填写后更换类型；再回原类型"
+      ],
+      "expected": "不同类型草稿分别保存，继续任务优先回上次所选。"
+    },
+    {
+      "id": "TEST04-record-type-pump",
+      "flow_id": "FLOW04-record-type-pump",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-pump-edit"
+      ],
+      "steps": [
+        "选择pump；填写后更换类型；再回原类型"
+      ],
+      "expected": "不同类型草稿分别保存，继续任务优先回上次所选。"
+    },
+    {
+      "id": "TEST04-collapse-record",
+      "flow_id": "FLOW04-collapse-record",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-record-collapsed"
+      ],
+      "steps": [
+        "进入、收起、再次从同一入口继续；重复点击不增加任务"
+      ],
+      "expected": "收起只改变显示，字段与素材保留；哭声录制中先要求结束录音。"
+    },
+    {
+      "id": "TEST04-cancel-record",
+      "flow_id": "FLOW04-cancel-record",
+      "state_ids": [
+        "ST-record-picker",
+        "ST-record-cancelled"
+      ],
+      "steps": [
+        "无内容直接取消；有内容先确认，确认后保留已取消摘要；再做一次显式新建"
+      ],
+      "expected": "取消仅清当前任务未保存内容，不清其他类型草稿和已保存记录。"
+    },
+    {
+      "id": "TEST04-collapse-cry",
+      "flow_id": "FLOW04-collapse-cry",
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-collapsed"
+      ],
+      "steps": [
+        "进入、收起、再次从同一入口继续；重复点击不增加任务"
+      ],
+      "expected": "收起只改变显示，字段与素材保留；哭声录制中先要求结束录音。"
+    },
+    {
+      "id": "TEST04-cancel-cry",
+      "flow_id": "FLOW04-cancel-cry",
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-cancelled"
+      ],
+      "steps": [
+        "无内容直接取消；有内容先确认，确认后保留已取消摘要；再做一次显式新建"
+      ],
+      "expected": "取消仅清当前任务未保存内容，不清其他类型草稿和已保存记录。"
+    },
+    {
+      "id": "TEST04-collapse-poop",
+      "flow_id": "FLOW04-collapse-poop",
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-collapsed"
+      ],
+      "steps": [
+        "进入、收起、再次从同一入口继续；重复点击不增加任务"
+      ],
+      "expected": "收起只改变显示，字段与素材保留；哭声录制中先要求结束录音。"
+    },
+    {
+      "id": "TEST04-cancel-poop",
+      "flow_id": "FLOW04-cancel-poop",
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-cancelled"
+      ],
+      "steps": [
+        "无内容直接取消；有内容先确认，确认后保留已取消摘要；再做一次显式新建"
+      ],
+      "expected": "取消仅清当前任务未保存内容，不清其他类型草稿和已保存记录。"
+    },
+    {
+      "id": "TEST04-cry-interrupt",
+      "flow_id": "FLOW04-cry-interrupt",
+      "state_ids": [
+        "ST-cry-capture",
+        "ST-cry-interrupted",
+        "ST-cry-ready"
+      ],
+      "steps": [
+        "录制中尝试离开、语音输入和其他任务；切到后台或刷新再回来"
+      ],
+      "expected": "显式离开先要求结束；页面隐藏中断录音且不自动续录；重新录制。"
+    },
+    {
+      "id": "TEST04-companion",
+      "flow_id": "FLOW04-companion",
+      "state_ids": [
+        "ST-ai-idle",
+        "ST-ai-busy",
+        "ST-ai-attention",
+        "ST-ai-fallback"
+      ],
+      "steps": [
+        "查看陪伴形象；发送时看状态；错误时看需处理；模拟资产缺失"
+      ],
+      "expected": "非交互展示；不抢焦点；固定框和文本降级；无真实人物语音。"
+    }
+  ]
+}

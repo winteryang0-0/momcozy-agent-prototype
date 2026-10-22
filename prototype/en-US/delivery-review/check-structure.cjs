@@ -1,0 +1,15 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const base = path.resolve(__dirname, '../../current');
+const en = path.resolve(__dirname, '..');
+const read = (root, file) => fs.readFileSync(path.join(root, file), 'utf8');
+const ids = text => new Set([...text.matchAll(/\b(?:id|data-page-id|data-go|data-action)="([^"]+)"/g)].map(x => x[0]));
+const zh = ids(read(base, 'index.html')), us = ids(read(en, 'index.html'));
+const removed = [...zh].filter(x => !us.has(x)), added = [...us].filter(x => !zh.has(x));
+const allowedExtra = ['<script src="assets/en-us.js"></script>'];
+const scripts = [...read(en, 'index.html').matchAll(/<script src="([^"]+)"/g)].map(x => x[1]);
+const assets = scripts.map(file => ({file, exists:fs.existsSync(path.join(en, file))}));
+const css = [...read(en, 'index.html').matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map(x => x[1]).map(file => ({file, exists:fs.existsSync(path.join(en, file))}));
+const result = {sourceIds:zh.size,englishIds:us.size,removed,added,assets,css};
+fs.writeFileSync(path.join(__dirname,'structure-evidence.json'),JSON.stringify(result,null,2));
+console.log(JSON.stringify(result,null,2));

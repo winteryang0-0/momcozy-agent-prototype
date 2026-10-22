@@ -1,0 +1,43 @@
+{
+  "candidate": "CS-0.6-en",
+  "date": "2026-10-21",
+  "locale": "en-US",
+  "status": "awaiting-user-testing-not-frozen",
+  "scope": "English copy and accessible labels for the CS-0.6 overview and four style boards",
+  "source_candidate": "../CS-0.6-testboards",
+  "source_sha256": {
+    "index.html": "71bfb12c68fb17fba7d6012d7699135889db6f8c163523a4ea0eff0400703ee5",
+    "assets/board.js": "d327e86e7230644308444ba6c03fd7ad4e18708e3006042aa5c88cba91ada82c",
+    "assets/board.css": "93eb29f10ae06e2f24b9bace951a89780848f0cd4cd9144167c45d1c66d79dd7",
+    "assets/material.css": "9f4dcc5507dc863fb8878feecd97649db5842ffd2422cb8075bb0c1f1791b668",
+    "assets/overview.css": "7d977cab9b170015332f89202978e2b98195e37e68d110ba7fba0ea869099f39",
+    "design.json": "4d0086be33da8b3a57250861909e21e562a71394f715ea7e48d71425c795922d",
+    "candidate-summary.json": "c44e6d2623c5209594075bd2f9dbf2fefc700bbfeefdd4b8dd5b10be4186016b"
+  },
+  "files": {
+    "index.html": "f6ca1cdc792a1ca370f8b997a01ff0c554905a0c729dd826820ce973a83650f7",
+    "bloom.html": "6083c9e6a72678ea6705f3b65435fdcf82f3f398bbf941cfd2d44144984c5543",
+    "orbit.html": "fb5412a09f008b8b9b6977762f50471b3fec711227db59ef21eaff274195f08f",
+    "garden.html": "bd7ede2b0428c8ba900a7b5e93e1a4414d5d1b5353df5d278ee6784bc0c398e9",
+    "berry.html": "e7fc9d58e52c7130825f7d540e3127818b9662ecc13371f986943fa5b60bca38",
+    "assets/board.css": "93eb29f10ae06e2f24b9bace951a89780848f0cd4cd9144167c45d1c66d79dd7",
+    "assets/material.css": "9f4dcc5507dc863fb8878feecd97649db5842ffd2422cb8075bb0c1f1791b668",
+    "assets/overview.css": "7d977cab9b170015332f89202978e2b98195e37e68d110ba7fba0ea869099f39",
+    "assets/english.css": "42f6630175bb7c2c5493aad680ee58b333da1087d9159e4be4db37a0aa69ffb4",
+    "assets/board.js": "9b407a87079d42fc2cd44aa29f3a6a64fd740b7281a0321af66bff2330b2f436",
+    "README.md": "36ec5eda4bc7539367d8db0f4d9422762ec88d3dfa4b23d0ad0da089fcdeaef3",
+    "build-en.cjs": "c3bd6133b851774f9084958079b6ae36be6629787fa4dfac73a02f33003339f9",
+    "validate-en.cjs": "36fa2e83ef06af7282416296acc4afc11c822bce48849bc54a1aa2455b7d1abb",
+    "finalize-en.cjs": "9afdcfba35b4fe0e145ea55d6bbad4f716d962548ea49ec2a1b491914bd80122"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "local_resources": "pass",
+    "english_visible_copy": "pass: no CJK in HTML, CSS, JS, or mock-DOM states",
+    "visual_asset_parity": "pass: base CSS and SVG icon definitions match CS-0.6",
+    "preview_state_switching": "pass: all four boards, three screens, feedback states, and display toggles in mock DOM",
+    "actual_browser_render": "not tested",
+    "native_os_glass": "not tested",
+    "independent_language_review": "not run"
+  }
+}

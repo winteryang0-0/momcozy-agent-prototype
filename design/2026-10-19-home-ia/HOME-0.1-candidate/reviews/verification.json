@@ -1,0 +1,49 @@
+{
+  "candidate": "HOME-0.1",
+  "date": "2026-10-19",
+  "operator": "/root",
+  "browser": "ChatGPT in-app browser",
+  "browserVersion": "unknown",
+  "protocol": "HTTP loopback 127.0.0.1:4191",
+  "fileProtocol": "Browser policy denies file URLs; direct file opening not verified",
+  "reviewType": "candidate-path-validation, not complete production acceptance",
+  "viewports": [
+    {
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "height": 844,
+      "overflow": false,
+      "width": 390
+    }
+  ],
+  "passed": [
+    "four root tabs and record owner grouping",
+    "pump 90ml save returns to home: mom total360→450; baby feed count remains4",
+    "close/reopen pump form restores90ml draft",
+    "active cry task survives tab switch and blocks conflicting stool task",
+    "cancel hides homepage resume; new stool task retains cancelled cry in history",
+    "empty state does not invent counts",
+    "summary error retry restores summary",
+    "offline save60ml shows1 application pending record, independent from device",
+    "simulated sync recovery",
+    "360px quick controls and dock within viewport, no horizontal overflow"
+  ],
+  "screenshots": [
+    "home-390.png",
+    "home-360.png",
+    "saved-390.png",
+    "empty-desktop.png",
+    "task-result-390.png",
+    "app-sync.png",
+    "task-history.png"
+  ],
+  "limitations": [
+    "Only simplified pump-form flow exercised; all five forms not comprehensively tested",
+    "No real camera/mic/cloud sync",
+    "No comprehensive state-by-viewport matrix",
+    "No frozen baseline or full guard certification"
+  ]
+}

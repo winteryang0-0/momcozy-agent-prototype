@@ -1,0 +1,24 @@
+{
+  "revision": "secondary-sheet-motion-22",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "profile-field-ranges-21",
+  "authority": "Current conversation: rename the personal secondary-function panel to 我的 and make the related secondary popups rise softly from the bottom without flashing or losing directional continuity.",
+  "changes": [
+    {
+      "id": "R22-01",
+      "title": "我的二级功能标题",
+      "rule": "记录页右上个人入口打开的二级功能面板标题显示「我的」，保留既有功能分类、入口和返回路径。"
+    },
+    {
+      "id": "R22-02",
+      "title": "二级弹窗入场动效",
+      "rule": "相关二级弹窗从应用可视区域底部柔和上移；面板在上移期间保持不透明，遮罩仅在首次打开时渐入。弹窗内切换到不同二级内容时重新播放上移动画，同一内容的状态刷新不重复播放；用户或系统启用减少动态效果时直接显示。"
+    }
+  ],
+  "scope": "沿用 R21 的页面架构、导航、照护及资料字段规则；统一现有共用弹窗的入场表现。",
+  "assumptions": [
+    "二级弹窗指现有共享 dialog 的内容面板，包括个人功能、记录、对话附件和设置等入口；不新增页面层级。",
+    "这是本地可交互候选的动效修订，仍需用户审阅后决定是否冻结。"
+  ]
+}

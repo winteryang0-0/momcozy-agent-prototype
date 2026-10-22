@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Momcozy Agent · 情绪板与 AI 形象方向 v0.1</title><style>:root{color-scheme:light;--ink:#282725;--brand:#692a3a;--paper:#faf7f2}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1200px;margin:auto;padding:56px 32px}h1{font-size:40px;line-height:1.3;letter-spacing:-1px;margin:12px 0}h2{font-size:25px;margin:44px 0 12px}h3{font-size:20px;margin:24px 0 8px}.eyebrow{color:var(--brand);letter-spacing:3px;font-size:13px}.lead{font-size:21px;max-width:900px}.note{color:#615b56;font-size:14px}.ribbon{padding:20px 0;border-top:1px solid #d6c9bf;border-bottom:1px solid #d6c9bf;font-size:22px;color:var(--brand)}table{border-collapse:collapse;width:100%;background:#fff}th,td{text-align:left;padding:14px 16px;border-bottom:1px solid #e4ded7;vertical-align:top}th{background:#eee5df}a{color:var(--brand);text-underline-offset:3px}figure{margin:24px 0 40px}figure img{display:block;width:100%;height:auto;border:1px solid #e0d6ce}figcaption{font-size:14px;color:#615b56;margin-top:10px}.callout{border-left:4px solid var(--brand);padding:8px 22px;background:#fff}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid article{padding-top:12px;border-top:3px solid var(--brand)}li{margin:8px 0}footer{margin-top:40px;padding-top:20px;border-top:1px solid #cfc4bd;font-size:13px}code{font-size:.9em}@media(max-width:700px){main{padding:28px 16px}h1{font-size:30px}.grid{grid-template-columns:1fr}table{font-size:13px}th,td{padding:9px}}@media print{main{padding:16px;max-width:none}figure{break-inside:avoid}h2,h3{break-after:avoid}a{color:inherit}}</style><body><main>
+<div class="eyebrow">MOMCOZY AGENT · DESIGN DIRECTION · 2026.10.19</div>
+<h1>先让照护省心，再让陪伴有温度</h1>
+<p class="lead">交互、UI 与 AI 形象候选情绪板 v0.1</p>
+<p class="ribbon">C 可靠省心的助手 → B 理解妈妈的陪伴 → A 有条理的照护引导</p>
+<p class="note">候选材料，尚未选定视觉方向或冻结信息架构。图中均为虚构示例数据。三张情绪板由内置 Imagegen 生成；不代表 Momcozy 官方设计或真实可用界面。</p>
+<h2>设计判断</h2>
+<p>建议优先推进「温暖有序」：用稳定的信息秩序体现可靠，用浅暖背景和克制语言体现关怀，用清晰的状态与下一步体现引导。AI 以小型识别形态参与任务；详细角色造型在方向选定后展开。</p>
+<div class="grid"><article><h3>C · 减少事务负担</h3><p>记录、时间、对象和状态先被看到。输入可核对，结果可找回，错误可修正。</p></article><article><h3>B · 尊重与支持</h3><p>允许稍后补充。避免责备、排名和打卡压力。日常成功反馈简短，不强行安慰。</p></article><article><h3>A · 清楚的下一步</h3><p>区分记录与推断，提供依据和可执行动作。无法判断时明确说明。</p></article></div>
+<h2>三张候选情绪板</h2>
+<p>统一以“核对并保存一条喂养记录”呈现，比较材质、色彩、排版与 AI 存在感。不同场景的完整页面与异常流程需另行设计。</p>
+<figure><h3>温暖有序 · Quiet Order / 首选候选</h3><img src="quiet-order.png" alt="温暖有序情绪板：莓红、奶白、棉织物与折叠环形AI"><figcaption>暖白底与清楚的记录结构；抽象折叠环形承接 AI 识别。风险：过多米色、留白或装饰性文案会削弱效率。材质照片不进入正文底层。</figcaption></figure>
+<figure><h3>轻柔陪伴 · Soft Presence</h3><img src="soft-presence.png" alt="轻柔陪伴情绪板：暖白、陶土和抽象软石AI"><figcaption>在事务完成过程中保留简短、体贴的回应。风险：对话气泡和角色过大，会让 B 超过 C；需要始终维持任务与保存动作优先。</figcaption></figure>
+<figure><h3>清晰从容 · Clear Rhythm</h3><img src="clear-rhythm.png" alt="清晰从容情绪板：白底、灰蓝和双弧AI"><figcaption>强调时间和数值的扫描效率；双弧形态容易缩减成小标识。风险：冷色与数据化表达可能削弱生活感，避免呈现为诊断仪器。</figcaption></figure>
+<h2>交互情绪如何落到控件</h2>
+<table><thead><tr><th>页面／状态</th><th>控件与功能</th><th>交互表达候选</th></tr></thead><tbody>
+<tr><td>记录表单 · 待保存</td><td>字段、Edit、Save entry</td><td>明确“Not saved yet”；核对与修改入口可见；不得把生成草稿当作已保存。</td></tr>
+<tr><td>记录表单 · 保存成功</td><td>成功反馈、修改入口</td><td>仅确认成功后显示“Entry saved”；无需夸奖或情绪评分。</td></tr>
+<tr><td>记录表单 · 保存失败</td><td>失败说明、重试</td><td>保留输入，明确下一步；不让用户重复填写。是否本地保存须单独说明。</td></tr>
+<tr><td>哭声任务 · 录制／分析中</td><td>录音控制、任务状态</td><td>录音需用户启动；用文字表达正在录制或分析；不模拟未经确认的进度。</td></tr>
+<tr><td>结果页 · 无法判断</td><td>限制说明、补充入口</td><td>表达“仅凭这段录音无法判断”；后续动作优先，不用可爱表情掩盖不确定性。</td></tr>
+<tr><td>夜间、权限与通知</td><td>静音、减少动态效果、任务入口</td><td>不自动发声；拒绝权限可取消任务。通知若纳入业务范围，再定义重要程度和直达任务规则。</td></tr>
+</tbody></table>
+<p class="note">以上为设计规则候选，不能直接视为本期已批准的新功能。当前记录奶量的业务含义、保存后的去向、后台分析及通知范围仍需沿用需求评审结果。</p>
+<h2>AI 形象设计边界</h2>
+<ul><li>第一眼表达“能帮忙”；角色不占据记录和结果的主要位置。</li><li>本轮先比较无性别抽象形态：折叠环、软石、双弧；这是候选方向，并不排除后续测试其他形态。</li><li>不采用白大褂、听诊器等权威符号；不以婴儿比例、委屈表情或索求陪伴制造关系负担。</li><li>静止为默认，动作服务于就绪、处理中、完成等状态；文字独立表达状态，减少动态效果时仍可理解。</li><li>后续需验证 24px / 48px / 96px 识别性、深浅背景、静音、失败和无法判断状态；当前大图不证明小尺寸表现。</li></ul>
+<h2>可读性与品牌依据</h2>
+<p>官网自动提取观察到主色 <code>#692A3A</code>、白底与 Montserrat。它们只是网页当前呈现，尚未获得官方品牌手册。其余候选色、圆角和材质均属于本项目提案。</p>
+<table><thead><tr><th>候选色对</th><th>计算对比度</th><th>边界</th></tr></thead><tbody><tr><td>白字 / 莓红 #692A3A</td><td>10.54:1</td><td rowspan="3">按 sRGB 相对亮度公式计算。只证明指定纯色色对；没有证明生成图片、细字、控件边界或最终界面全部达标。</td></tr><tr><td>#282725 / #FAF7F2</td><td>13.97:1</td></tr><tr><td>#526977 / #E9EFF2</td><td>4.96:1</td></tr></tbody></table>
+<h2>第二挑战视角</h2>
+<p>独立评审者 <code>/root/moodboard_challenger</code> 检查了设计策略，要求事务优先、保存状态明确、AI 不暗示医疗权威、关怀落实为控制权。已将三图统一任务，并修正首轮生成时出现的日记内容与未经定义的品牌字段。</p>
+<p id="visual-review-note" class="note">独立查看首选图稿后，评审确认其整体符合 C＞B＞A；后续需明确单字段与整表编辑的区别、为小尺寸 AI 状态保留文字、验证弱文字和描边的实际可读性。此为概念评审，用户测试与完整 UI 验收尚未执行。</p>
+<h2>来源与可信度</h2>
+<ol>
+<li>用户在本聊天确认 <strong>C+B+A</strong>：关系优先级的直接依据。</li>
+<li>既有聊天「创建项目用户画像」与「重构需求拆解与原型交互」：北美产后妈妈、记录及专项任务；其中人口与审美偏好仍有待验证假设。</li>
+<li><a href="https://momcozy.com">Momcozy 官网</a>：2026-10-19 品牌样式自动提取和浏览器截图；非品牌手册。</li>
+<li><a href="https://momcozy.com/pages/our-story">Momcozy 品牌故事</a>：妈妈优先、舒适与实际支持的品牌自述；不证明用户对候选视觉的偏好。</li>
+<li><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">W3C WCAG 2.2：Contrast (Minimum)</a>：普通正文 4.5:1 对比度目标。</li>
+<li>生成素材：内置 Imagegen 原创候选；具体提示词见 <a href="generation-prompts.json">generation-prompts.json</a>，结构化决策见 <a href="design-brief-v0.1.json">design-brief-v0.1.json</a>。</li>
+</ol>
+<footer>本材料只收敛视觉与交互表达方向；不是最终页面、可点击原型或医疗建议。情绪感受为设计意图，未声称能够降低产后焦虑。下一步：选择一张为主方向，再进入 AI 形象细化和关键状态样张。</footer></main></body></html>

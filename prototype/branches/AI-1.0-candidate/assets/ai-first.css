@@ -1,0 +1,48 @@
+/* AI-1.0 candidate: structure changes on top of the Bloom Glass visual tokens. */
+.app{--composer-height:132px}
+.app[data-page=assistant] .dock{bottom:calc(var(--composer-height) + var(--dock-offset) + 8px)}
+#assistant{padding-bottom:var(--dock-offset)}
+#assistant>.topbar,#assistant[data-chat=active]>.topbar{position:static;display:flex;align-items:center;justify-content:space-between;width:auto;height:52px;margin:0 0 6px;z-index:auto}
+#assistant>.topbar .wordmark{font-size:18px;line-height:24px;letter-spacing:-.3px}
+#assistant>.topbar .icon-button{width:44px;height:44px}
+#assistant>.page-heading,#assistant[data-chat=active]>.page-heading{display:block;min-height:0;margin:0 0 10px;padding:0}
+#assistant>.page-heading h2,#assistant[data-chat=active]>.page-heading h2{font-size:19px;line-height:26px;white-space:normal}
+#assistant>.page-heading p,#assistant[data-chat=active]>.page-heading p{display:block;margin-top:3px;font-size:12px;line-height:17px}
+.app[data-page=assistant] .assistant-scroll{margin-bottom:calc(var(--dock-height) + 54px)}
+.app[data-page=assistant] .composer-area{position:relative;z-index:21;padding-top:7px;background:var(--canvas)}
+.app[data-page=assistant] .composer-area .caption{margin-top:3px}
+.app[data-page=assistant] .latest-message{position:absolute;left:50%;bottom:calc(100% + var(--dock-height) + 14px);z-index:22;transform:translateX(-50%);margin:0;white-space:nowrap;box-shadow:0 6px 18px #89415c1c}
+.ai-topbar .mute-toggle{position:relative;background:var(--bloom-glass);border:1px solid var(--bloom-glass-edge)}
+.mute-toggle .mute-slash{display:none;position:absolute;width:23px;height:2px;border-radius:2px;background:currentColor;transform:rotate(-43deg);box-shadow:0 0 0 2px var(--surface)}
+body[data-muted=true] .mute-toggle .mute-slash{display:block}
+.mute-toggle[aria-pressed=true]{color:var(--secondary)}
+.plan-module{margin-top:26px}
+.plan-module .section-heading{align-items:flex-start;flex-direction:column;gap:0}
+.plan-module .section-heading .caption{font-size:11px}
+#daily-plan,#ai-daily-plan{display:grid;gap:10px}
+.advice-card{display:flex;gap:13px;align-items:flex-start;width:100%;padding:18px;border-radius:22px;border:1px solid var(--divider);text-align:left;color:var(--text);box-shadow:0 9px 20px #89415c12}
+.advice-card.apricot{background:var(--bloom-apricot)}
+.advice-card.mint{background:var(--bloom-mint)}
+.advice-index{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:12px;background:#ffffff8a;color:var(--action);font-weight:700;font-size:12px}
+.advice-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.advice-copy small{font-size:10px;color:var(--secondary)}
+.advice-copy h4,.advice-copy strong{font-size:15px;line-height:21px;margin:0;font-weight:650}
+.advice-copy p,.advice-copy>span{font-size:12px;line-height:18px;margin:0;color:var(--secondary)}
+.advice-copy em{display:flex;align-items:center;gap:4px;color:var(--action);font-size:12px;font-style:normal;font-weight:650;margin-top:3px}
+.advice-copy em .icon{width:14px;height:14px}
+#ai-daily-plan{margin:12px 0 15px}
+#ai-daily-plan .advice-date{font-size:11px;line-height:18px;color:var(--secondary);margin:0 0 1px}
+#ai-daily-plan .advice-card{cursor:pointer}
+#ai-daily-plan .advice-card:hover{border-color:var(--action)}
+#home .identity{cursor:default}
+#home .module{margin-top:26px}
+#home .summary{box-shadow:0 9px 20px #89415c12}
+#home #recent,#home #resume-slot{display:none!important}
+.app[data-page=mine] .dock,.app[data-page=onboarding] .dock{display:none!important}
+#mine>.topbar .profile-back{width:44px;height:44px;margin-left:-6px;background:var(--bloom-glass);border:1px solid var(--bloom-glass-edge)}
+#mine>.topbar .eyebrow{margin-right:auto;margin-left:12px}
+body[data-theme=dark] .advice-card.apricot{background:#513a43}
+body[data-theme=dark] .advice-card.mint{background:#2c4842}
+body[data-theme=dark] .advice-index{background:#ffffff1b}
+body[data-theme=dark] .ai-topbar .mute-toggle{background:var(--bloom-glass);border-color:var(--bloom-glass-edge)}
+@media(max-height:680px){#assistant>.topbar,#assistant[data-chat=active]>.topbar{height:44px}#assistant>.page-heading,#assistant[data-chat=active]>.page-heading{margin-bottom:5px}#assistant>.page-heading p,#assistant[data-chat=active]>.page-heading p{display:none}.app[data-page=assistant] .assistant-scroll{margin-bottom:calc(var(--dock-height) + 52px)}}

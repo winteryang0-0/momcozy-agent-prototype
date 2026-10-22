@@ -1,0 +1,8 @@
+# Keep collaboration documents readable in code review.
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cjs text eol=lf
+
+# Preserve the exact bytes of the frozen prototype and its SHA-256 evidence.
+prototype/current/** -text -eol

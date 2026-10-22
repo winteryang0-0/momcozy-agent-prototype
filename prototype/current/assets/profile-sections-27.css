@@ -1,0 +1,31 @@
+/* R27: My and Baby share a page level, while the sidebar stays concise. */
+.profile-page{padding-bottom:36px}
+.profile-page .mine-topbar{height:56px;margin-bottom:20px}
+.profile-page .mine-topbar .eyebrow{text-align:center}
+.profile-page .profile-card{padding:23px;border-radius:27px}
+.profile-page .profile-card .profile-orbit{margin-bottom:10px}
+.profile-page .module{margin-top:26px}
+.profile-page .module .list-heading{margin-bottom:11px}
+.profile-page .menu-row{width:100%}
+
+/* Equal edge columns keep the changing reminder title centered in the whole strip. */
+.conversation-home-head[data-expanded=false] .compact-advice{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);
+  align-items:center;
+  column-gap:0;
+  text-align:center;
+}
+.conversation-home-head[data-expanded=false] .compact-advice .today-chip{justify-self:start}
+.conversation-home-head[data-expanded=false] .compact-advice #compact-advice{
+  width:100%;
+  text-align:center;
+}
+.conversation-home-head[data-expanded=false] .compact-advice>.icon{justify-self:end}
+.conversation-home-head[data-expanded=true] .compact-advice{display:flex}
+
+@media(max-width:375px){
+  .conversation-home-head[data-expanded=false] .compact-advice{
+    grid-template-columns:minmax(0,62px) minmax(0,1fr) minmax(0,62px);
+  }
+}

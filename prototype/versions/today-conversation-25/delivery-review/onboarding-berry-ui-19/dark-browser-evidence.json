@@ -1,0 +1,17 @@
+{
+  "revision": "onboarding-berry-ui-19",
+  "material_sha256": "1b6f3f47621c8cf2bb8b7a6ef8d171d95d9ba880ee4dd624ba44dda528b60d64",
+  "operator": "Playwright local Chrome headless",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+  "captured_at": "2026-10-21T02:08:39.357Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fullPage": false,
+  "image": "delivery-review/onboarding-berry-ui-19/screenshots/11-first-identity-dark-390.png",
+  "image_sha256": "f9870b0d700d1a89d9a7aef9e7f727a892d76ee0e8bdef161af147ae12dfe79c",
+  "errors": []
+}

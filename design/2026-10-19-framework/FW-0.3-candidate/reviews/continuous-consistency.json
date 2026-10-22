@@ -1,0 +1,219 @@
+{
+  "role": "consistency",
+  "author": "/root/continuous_review",
+  "independent": true,
+  "baseline_id": null,
+  "candidate_id": "FW-0.3",
+  "status": "pass",
+  "evidence_mode": "independent source review plus review of primary operator runtime evidence and screenshots; no browser execution by this reviewer",
+  "scope": "Candidate delta only: visible age, same-page continuous conversation, today card, camera/upload confirmation and failures, event ordering, draft preservation, retained FW-0.2 sidebar.",
+  "authorization": "sources/continuous-chat-request.json; no baseline freeze or production approval inferred.",
+  "material_hashes": {
+    "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+    "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+    "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+  },
+  "mechanical_check": {
+    "command": "bundled Python check_candidate.py",
+    "executed_by": "/root/continuous_review",
+    "passed": true,
+    "report": "reviews/static-check.json",
+    "baseline_checks_run": false,
+    "delivery_checks_run": false
+  },
+  "coverage": {
+    "code_review": [
+      "capture/restore/persist; per-type record edit drafts",
+      "renderTimeline; sequence ordering for messages, records, task cards, and camera",
+      "send snapshot, failure retry, and preservation of newly edited chat text",
+      "camera confirmation/cancel; upload source/failure/removal",
+      "sidebar navigation and return; current chat expansion mode",
+      "ageLabel and todayRecords semantics; example data labels",
+      "design.json mappings, new actions, flows, and tests"
+    ],
+    "test_ids": [
+      "same-page-focus",
+      "three-continuous-messages",
+      "camera-confirm",
+      "two-attachments-send-next-draft",
+      "sidebar-return-expanded",
+      "camera-cancel-keeps-draft",
+      "remove-one-and-all",
+      "camera-denied-retry",
+      "upload-failed-retry",
+      "reload-confirmed-attachments-draft",
+      "failed-send-retry-and-discard-guard",
+      "record-save-guard-and-today",
+      "today-inline-expand",
+      "age-visible-with-attachments",
+      "narrow-360-layout",
+      "long-input-and-interleaved-timeline",
+      "sidebar-preserves-history-scroll",
+      "discard-failed-keeps-editable-content",
+      "reset-missing-birth",
+      "task-open-scrolls-to-card-after-route-restore",
+      "poop-task-open-scrolls-to-card"
+    ],
+    "browser_run_by_reviewer": false,
+    "runtime_check_count": 21,
+    "independent_age_function_checks": 8,
+    "full_design_test_matrix_executed": false,
+    "revision_coverage": "19 checks bind to pre-task-scroll material 6d37c8e...; 2 focused task-opening regressions bind to current a907eec...; independent snippet reversal reconstructed exact pre-change hash, proving only the task-opening branch differs."
+  },
+  "observations": [
+    "Chat focus expands in the same PAGE-chat route; no second chat page is introduced.",
+    "Today overview remains a card inside chat-stream and explicitly summarizes locally saved records only.",
+    "Age is outside the scrolling message stream, uses civil-date differences, handles missing/future dates, and does not infer corrected age.",
+    "Confirmed attachments are kept in a pending tray until explicit send. Payload snapshot and attachment IDs protect content from clearing a later draft.",
+    "Messages, saved records, and active task cards use one monotonically increasing sequence. Edited records retain their original event position.",
+    "Real camera, microphone, file upload, content analysis, device connections, and unavailable sidebar target pages are not represented as implemented services.",
+    "Stable screenshots independently inspected show the persistent age strip above the chat stream and separate pending attachment tray. Earlier exploratory transient screenshots were excluded.",
+    "Latest cry/poop task-card screenshots and targeted regression evidence match the final task-scroll revision; older unrelated screenshot hashes retain their truthful prior-version binding."
+  ],
+  "findings": [
+    {
+      "id": "CONS-03-01",
+      "severity": "major",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:showRoute; expandConversation; sidebar return",
+      "refs": [
+        "CHAT-CONTINUOUS",
+        "C01",
+        "PAGE-chat",
+        "FLOW-continuous",
+        "FLOW-sidebar"
+      ],
+      "observation": "Leaving chat removes conversation-active unconditionally and returning does not restore it. An expanded conversation returned through a sidebar overview becomes collapsed; its scroll offset may then be constrained by the changed stream height.",
+      "impact": "The integrated sidebar does not restore the same conversation layout/context expected by the new continuous-chat framework.",
+      "fix": "Persist the expanded mode for the current chat session and reapply it before restoring chat scroll. Verify expanded chat -> sidebar overview -> return -> close sidebar, including mid-history position and draft.",
+      "evidence": "Final app.js persists data.expanded and applies it before render/scroll restoration. Runtime sidebar-return-expanded confirms mode/draft/age; sidebar-preserves-history-scroll reports stable 1641.3333740234375 before and after, with equal 458px stream height.",
+      "verified_by": "/root/continuous_review",
+      "verified_material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994"
+    },
+    {
+      "id": "CONS-03-02",
+      "severity": "major",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:send and click sending guard; CHAT-discard-failed",
+      "refs": [
+        "CHAT-UPLOAD",
+        "CHAT-discard-failed",
+        "ST-chat-error",
+        "ST-chat-generating"
+      ],
+      "observation": "While retry is in progress, the failure card remains and discard-failed is not guarded. Clicking 放弃重试 clears the failure state, but the already captured submission still sends when the timer completes.",
+      "impact": "The visible abandon action contradicts the eventual send outcome.",
+      "fix": "Disable or guard discard-failed during retry, or implement a real cancellation token. Verify the original failed payload is sent once and newly typed content is retained.",
+      "evidence": "Final sending guard includes discard-failed. Runtime failed-send-retry-and-discard-guard reports the in-flight abandon attempt guarded, one delivered original payload with 2 attachments, and new draft retained.",
+      "verified_by": "/root/continuous_review",
+      "verified_material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994"
+    },
+    {
+      "id": "CONS-03-03",
+      "severity": "minor",
+      "status": "resolved",
+      "location": "design.json:framework.actions/framework.flows",
+      "refs": [
+        "FLOW-camera",
+        "FLOW-upload",
+        "FLOW-chat"
+      ],
+      "observation": "New camera/upload flows currently enumerate only happy-path actions. Retake, cancel, unavailable/retry, file choice, upload failure, and failed-send retry exist in implementation/tests but lack explicit action/flow branches.",
+      "impact": "The candidate is understandable and clickable, but the machine-readable framework is less complete than its implemented recovery behavior.",
+      "fix": "Add explicit state/action branches for the newly introduced recovery paths before treating this ledger as a detailed frozen interaction contract.",
+      "verified_by": "/root/continuous_review",
+      "verified_material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994",
+      "evidence": "Final design.json includes separate camera-retake/cancel/retry, upload-file/retry/close, attachment-clear, send-retry/discard actions and flows. Candidate mechanical guard rerun by this reviewer passes."
+    },
+    {
+      "id": "CONS-03-04",
+      "severity": "minor",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:save",
+      "refs": [
+        "FLOW-formula",
+        "ST-formula-saving"
+      ],
+      "observation": "Inherited save logic captured a snapshot then cleared fields after the asynchronous callback, allowing interim edits to be discarded.",
+      "impact": "Possible loss of edits made during the save delay.",
+      "fix": "Current record inputs are disabled during save and restored after success/failure.",
+      "evidence": "Final source sets disabled before the timer and clears it inside the callback. Runtime record-save-guard-and-today confirms busy state, retained amount 60 after failure, enabled fields after failure, and correct saved record/today summary.",
+      "verified_by": "/root/continuous_review",
+      "verified_material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994"
+    },
+    {
+      "id": "CONS-03-05",
+      "severity": "major",
+      "status": "resolved",
+      "location": "bundle/assets/app.js:taskAction(open)",
+      "refs": [
+        "C10",
+        "C11",
+        "PAGE-chat",
+        "FLOW-continuous"
+      ],
+      "observation": "Primary visual review found task scrollIntoView could be superseded by showRoute requestAnimationFrame restoring the old history position.",
+      "impact": "A task could be opened while its card remained outside the visible stream area.",
+      "fix": "Place inner-stream task alignment in the animation frame after route restoration, and prevent focus from scrolling the outer page.",
+      "evidence": "Independently reversed the documented snippet in current app.js and reconstructed exact prior hash 6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc. Reviewed both focused current-revision runtime checks and task-scroll-fixed-360 / poop-scroll-fixed-360 screenshots; cards/actions visible, age retained, outerY=0, route unchanged.",
+      "verified_by": "/root/continuous_review",
+      "verified_material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994"
+    }
+  ],
+  "limits": [
+    "Unconfirmed candidate delta only: no freeze, baseline receipt, or production approval.",
+    "Runtime evidence was executed by /root and independently checked against source and exact version hashes; this reviewer did not operate the browser.",
+    "21 incremental browser checks and 8 age-function cases do not exhaustively rerun all 40 ledger flows, inherited onboarding, all record types, or every state/viewport combination.",
+    "No file:// execution, real mobile virtual keyboard/device permission, actual upload, real AI, or clinical/content analysis validation is claimed.",
+    "General visual quality and full accessibility require separate review; screenshots inspected here corroborate framework placement and task visibility.",
+    "A copied runtime-consistency-evidence.json preserves the exact reviewed interaction evidence if the primary report later gains additional screenshots."
+  ],
+  "material_hash": "bb0a7d86bb82b084940017c118b891077d0fcb10389da7aae28c15a749aca994",
+  "material_hash_method": "SHA256 of compact JSON of the ordered per-file SHA256 map; no receipt exists because candidate is unconfirmed.",
+  "reviewed_at": "2026-10-19T11:04:27.4604497Z",
+  "verdict": "Pass for the explicitly scoped FW-0.3 incremental candidate. No open major findings; this is not frozen-baseline, exhaustive regression, or final-product approval.",
+  "evidence": [
+    {
+      "kind": "interaction-or-check-log",
+      "path": "reviews/runtime-consistency-evidence.json",
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013"
+    },
+    {
+      "kind": "interaction-or-check-log",
+      "path": "reviews/static-check.json",
+      "sha256": "3e31fd685e2523ddb586e3a9ef582196e5a443d06974f72b1498c81096bfb214"
+    },
+    {
+      "kind": "interaction-or-check-log",
+      "path": "reviews/age-function-check.json",
+      "sha256": "a83cf67f5be5e0d9dc03cd8c1d3834ff70b6f2d7a9f9b69fa6254943288b8bdf"
+    },
+    {
+      "kind": "interaction-or-check-log",
+      "path": "reviews/task-scroll-fix.json",
+      "sha256": "9041a3466069ebefb7d230047bd7c8b8b9fdb1bd6b21ae08b975121a28e93318"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/attachment-final-mobile.jpg",
+      "sha256": "809bd4be4fa0ae75806269a7d584f29501787e0972b176f86885c50ebaea5244"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/chat-focused-final-390.jpg",
+      "sha256": "ed181cbaa245f4a24f56d6b95be4fea4759b5367cca1534c472682d46ef048cc"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+      "sha256": "ead1c65b2d191e5057e3eefef139e851a8629bed86e2743eb76f2474ae57714e"
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+      "sha256": "7aab4ee24b643bd6a2d5161f2ab2fe821d8585eea68f0c3db6cebda1e2bcc8b0"
+    }
+  ]
+}

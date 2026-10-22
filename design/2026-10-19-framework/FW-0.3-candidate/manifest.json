@@ -1,0 +1,163 @@
+{
+  "candidate": "FW-0.3",
+  "status": "candidate-not-frozen",
+  "generatedAt": "2026-10-19T11:06:11.219Z",
+  "scope": "Runnable bundle, candidate mapping/source/change records, static and runtime evidence, independent incremental consistency and screenshot reviews. Not a frozen baseline.",
+  "files": [
+    {
+      "path": "bundle/index.html",
+      "bytes": 41677,
+      "sha256": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5"
+    },
+    {
+      "path": "bundle/assets/app.js",
+      "bytes": 28942,
+      "sha256": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc"
+    },
+    {
+      "path": "bundle/assets/styles.css",
+      "bytes": 12853,
+      "sha256": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5"
+    },
+    {
+      "path": "bundle/README.txt",
+      "bytes": 1410,
+      "sha256": "607945898a27e6c8124814ed7fa3d9ed03af11d796dd2d0c38e95092084b47aa"
+    },
+    {
+      "path": "design.json",
+      "bytes": 84278,
+      "sha256": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7"
+    },
+    {
+      "path": "framework-seed.json",
+      "bytes": 28076,
+      "sha256": "bb1091274a15af0b8ade300d79c716b0f130613e2ed1245e4c1063a67265bd55"
+    },
+    {
+      "path": "candidate-summary.json",
+      "bytes": 736,
+      "sha256": "061a893bfeae48b46479dfc8ec4e90306fafa7c19cbd0db6bb52aa4177ddd64f"
+    },
+    {
+      "path": "FRAMEWORK.txt",
+      "bytes": 3186,
+      "sha256": "5a7543a5e1e6a706514ad0e302bef0c7f0e1f62bdb987d7529a1b61e345712cf"
+    },
+    {
+      "path": "CHANGELOG.txt",
+      "bytes": 1722,
+      "sha256": "e7d11329d969e6215388125e06b4c63f411f580fad95ebc13f50b392c8e1e64f"
+    },
+    {
+      "path": "sources/requirements-v03.json",
+      "bytes": 51271,
+      "sha256": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+    },
+    {
+      "path": "sources/continuous-chat-request.json",
+      "bytes": 717,
+      "sha256": "55a17c0ac50948150829bb8ee4d4c2b39ea4bf7da6a74bcef0be375fbb6a38f5"
+    },
+    {
+      "path": "reviews/runtime.json",
+      "bytes": 32848,
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013"
+    },
+    {
+      "path": "reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "3e31fd685e2523ddb586e3a9ef582196e5a443d06974f72b1498c81096bfb214"
+    },
+    {
+      "path": "reviews/age-function-check.json",
+      "bytes": 1408,
+      "sha256": "a83cf67f5be5e0d9dc03cd8c1d3834ff70b6f2d7a9f9b69fa6254943288b8bdf"
+    },
+    {
+      "path": "reviews/task-scroll-fix.json",
+      "bytes": 1049,
+      "sha256": "9041a3466069ebefb7d230047bd7c8b8b9fdb1bd6b21ae08b975121a28e93318"
+    },
+    {
+      "path": "reviews/screenshots/camera-preview-final-390.jpg",
+      "bytes": 36873,
+      "sha256": "f62b636004ddd1b206d80a29dc7c6c2169f2fc7ca867378053a5a42dfe3c80c9"
+    },
+    {
+      "path": "reviews/screenshots/camera-error-final-390.jpg",
+      "bytes": 38476,
+      "sha256": "12fb9a62f6ed4c985062ebf054b4a8d2ea4736e05a97293332eb52e8401d2813"
+    },
+    {
+      "path": "reviews/screenshots/upload-error-final-390.jpg",
+      "bytes": 48771,
+      "sha256": "37db85449fe7258fc70041f43282f2d2d0bed962292463ff12840b6ea78d17ad"
+    },
+    {
+      "path": "reviews/screenshots/send-error-final-390.jpg",
+      "bytes": 42954,
+      "sha256": "b7de507dfe78d3e0d8cd462bc606c8ea6c572482eb52e086aabfa7aae95954ae"
+    },
+    {
+      "path": "reviews/screenshots/chat-focused-final-390.jpg",
+      "bytes": 37856,
+      "sha256": "ed181cbaa245f4a24f56d6b95be4fea4759b5367cca1534c472682d46ef048cc"
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-mobile.jpg",
+      "bytes": 39174,
+      "sha256": "809bd4be4fa0ae75806269a7d584f29501787e0972b176f86885c50ebaea5244"
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-360.jpg",
+      "bytes": 40007,
+      "sha256": "0bc597afc6a826307f8d3c8904ffd7033609f96eb58ede551866457bcae0b45a"
+    },
+    {
+      "path": "reviews/screenshots/task-final-360.jpg",
+      "bytes": 39413,
+      "sha256": "6cae4bcdd23ae4bd80d782db3f57a71ac3b7ccb526a8cd80e505469c1bab62e1"
+    },
+    {
+      "path": "reviews/screenshots/chat-final-desktop.jpg",
+      "bytes": 107904,
+      "sha256": "d0b1ff15c51b3f1e73f88af8d8eb14ec029ad6242a83ef234b95b361b53c8ff1"
+    },
+    {
+      "path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+      "bytes": 34972,
+      "sha256": "ead1c65b2d191e5057e3eefef139e851a8629bed86e2743eb76f2474ae57714e"
+    },
+    {
+      "path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+      "bytes": 34492,
+      "sha256": "7aab4ee24b643bd6a2d5161f2ab2fe821d8585eea68f0c3db6cebda1e2bcc8b0"
+    },
+    {
+      "path": "reviews/screenshots/chat-current-390.jpg",
+      "bytes": 39390,
+      "sha256": "372747f9240f4c5bde24f547485ec3332a998ddbe76fcce7b24f2e7d16e79a6f"
+    },
+    {
+      "path": "reviews/screenshots/chat-current-desktop.jpg",
+      "bytes": 102836,
+      "sha256": "4feae6ab7ec46ee76a7c9958e368139a6b79a0ee25e2513d91b22d16f76e3ca1"
+    },
+    {
+      "path": "reviews/continuous-consistency.json",
+      "bytes": 13409,
+      "sha256": "9852ea9d7c53199a11181423d05888430d898f0de77116e1b4db503091cd62a6"
+    },
+    {
+      "path": "reviews/runtime-consistency-evidence.json",
+      "bytes": 32848,
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013"
+    },
+    {
+      "path": "reviews/continuous-visual.json",
+      "bytes": 38961,
+      "sha256": "40b5284002584b95b1b13e5f64fd6fcda75c4329c0c1190a73632de734e6aa23"
+    }
+  ]
+}

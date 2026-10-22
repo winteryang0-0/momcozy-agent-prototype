@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0",
+  "id": "QO-1.0",
+  "title": "Momcozy Agent · 温暖有序 · 情绪板输入",
+  "scope": "视觉情绪板及交互表达原则；不冻结页面架构、业务规则或最终AI角色",
+  "status": "refined_candidate_pending_confirmation",
+  "direction_selection": {
+    "confirmed": true,
+    "source": "本聊天用户原文",
+    "quote": "按温暖有序细化一下然后我们固定这个情绪板输入",
+    "selected_reference": "selected-direction-v0.1.png",
+    "interpretation": "温暖有序为选定方向；细化版具体图稿展示后再确认冻结"
+  },
+  "refined_version_confirmation": {
+    "confirmed": false,
+    "quote": null,
+    "manifest_sha256": null
+  },
+  "priority": [
+    "C:可靠省心的照护助手",
+    "B:理解妈妈的陪伴感",
+    "A:有条理的照护引导"
+  ],
+  "audience": "北美产后妈妈；日常记录、哭闹理解、健康记录/照护参考",
+  "principles": [
+    {
+      "id": "QO-P01",
+      "rule": "任务内容与下一步优先；装饰和角色不抢占主要操作"
+    },
+    {
+      "id": "QO-P02",
+      "rule": "温暖来自浅暖背景、真实材质意象与尊重语言；文字和操作保持高对比"
+    },
+    {
+      "id": "QO-P03",
+      "rule": "记录、推断、未保存、保存成功分别明确，不用视觉相似代替语义区分"
+    },
+    {
+      "id": "QO-P04",
+      "rule": "简短、可修改、可恢复；不责备、不以打卡或得分评价照护"
+    },
+    {
+      "id": "QO-P05",
+      "rule": "未记录不等于未发生；不把无法判断呈现为用户失败"
+    },
+    {
+      "id": "QO-P06",
+      "rule": "AI形态家族保持连续性，静止默认，状态由文字表达"
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "brand": "#692A3A",
+      "canvas": "#FAF7F2",
+      "surface": "#FFFFFF",
+      "text": "#282725",
+      "secondary": "#625B57",
+      "oat": "#E9DED4",
+      "sage": "#DCE5DE",
+      "border": "#80716B",
+      "divider": "#E4DCD4",
+      "success": "#355C45",
+      "successBg": "#E8F0EA",
+      "error": "#9C3E34",
+      "errorBg": "#FBEDE9"
+    },
+    "color_roles": {
+      "brand": "主动作、品牌识别；不可直接代表健康风险",
+      "canvas": "页面基础",
+      "surface": "内容表面",
+      "text": "正文/标题",
+      "secondary": "可读辅助说明",
+      "oat": "局部轻量点缀",
+      "sage": "装饰，非默认成功或健康正常",
+      "border": "需要识别的控件边界",
+      "divider": "非必要装饰性分隔线，不单独传达状态",
+      "success": "仅操作成功，不代表健康正常",
+      "error": "仅系统/保存等执行失败，配图标和文字",
+      "neutral_state": "未保存/进行中：背景canvas #FAF7F2，正文和状态图标secondary #625B57；不使用警告色"
+    },
+    "type": {
+      "heading_family": "Montserrat（候选，官网观察）",
+      "body_family": "system-ui / 系统无衬线（候选）",
+      "heading": {
+        "size": 24,
+        "line_height": 32,
+        "weight": 600
+      },
+      "body": {
+        "size": 16,
+        "line_height": 24,
+        "weight": 400
+      },
+      "supporting": {
+        "size": 14,
+        "line_height": 20,
+        "weight": 400
+      },
+      "rule": "长文本不使用细体；系统字号变化下不截断关键信息，具体实现需验证"
+    },
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "radii": {
+      "input": 12,
+      "button": 12,
+      "content_surface": 16
+    },
+    "control": {
+      "primary_min_height": 48,
+      "secondary_hit_area_min": 44,
+      "rule": "以逻辑像素作为跨端候选；最终按选定平台单位实现，不等于已完成触控验证",
+      "secondary_style": "Edit统一为莓红文字次操作，保持最低44逻辑像素命中区域，不额外套全宽描边按钮"
+    },
+    "motion": {
+      "default": "静止",
+      "transition_ms": [
+        160,
+        240
+      ],
+      "reduced_motion": "非必要位移/旋转取消，保留文本状态",
+      "automatic_audio": false,
+      "rule": "一次性状态过渡；没有常驻呼吸/跳动；不使用虚假进度和完成承诺"
+    }
+  },
+  "composition": {
+    "method": "用分组、对齐、留白、字体层级组织；必要时加分隔，少用卡片和阴影",
+    "record_review": "纯展示字段；一个全局Edit进入编辑，Save entry是唯一主动作",
+    "illustration": "材质与生活光线仅作情绪参考；不压在数据/正文后面",
+    "hierarchy": "主任务 > 解释及状态 > 品牌与AI存在感",
+    "AI_presence": "工作状态小型标识；首次介绍可适度放大，当前不承诺最终占屏尺寸"
+  },
+  "AI_direction": {
+    "family": "象牙白+莓红内侧的成熟抽象折叠环",
+    "meaning": "安静、可靠的辅助存在，为设计意图而非用户验证结论",
+    "not_frozen": [
+      "最终轮廓和几何结构",
+      "名字",
+      "声音",
+      "拟人程度",
+      "是否增加面部特征（需另行确认）",
+      "完整动画",
+      "最终2D/3D资产"
+    ],
+    "avoid": [
+      "白大褂/听诊器等未获支持的医疗权威暗示",
+      "婴儿化比例",
+      "索求互动和依赖性文案",
+      "无任务意义的常驻动画",
+      "荧光科幻/彩虹发光球"
+    ],
+    "small_size_validation": [
+      24,
+      48,
+      96
+    ]
+  },
+  "state_groups": [
+    {
+      "group": "记录任务",
+      "states": [
+        {
+          "id": "review",
+          "label": "Not saved yet",
+          "tone": "中性",
+          "primary": "Save entry",
+          "secondary": "Edit",
+          "rule": "未确认保存前不显示已保存"
+        },
+        {
+          "id": "saving",
+          "label": "Saving entry…",
+          "tone": "中性",
+          "rule": "状态必须由实际执行状态驱动；重复提交控制沿用需求定义"
+        },
+        {
+          "id": "saved",
+          "label": "Entry saved",
+          "tone": "简短肯定",
+          "secondary": "Edit",
+          "rule": "只有真实保存成功才能使用；不庆祝、不评价妈妈"
+        },
+        {
+          "id": "save_failed",
+          "label": "Couldn’t save.",
+          "support": "Your entry is still here.",
+          "primary": "Try again",
+          "secondary": "Edit",
+          "tone": "明确可恢复",
+          "rule": "仅在输入确已保留时展示support；否则准确说明可恢复内容，不能承诺不存在的保留"
+        }
+      ]
+    },
+    {
+      "group": "理解任务",
+      "states": [
+        {
+          "id": "analyzing",
+          "label": "Reviewing your recording…",
+          "tone": "平静具体",
+          "rule": "不展示未经业务支持的完成百分比或剩余时间"
+        },
+        {
+          "id": "indeterminate",
+          "label": "We couldn’t draw a conclusion from this recording.",
+          "tone": "中性信息",
+          "rule": "中性描述本次结果，不归因为材料不足，不暗示可诊断原因；后续入口只按已确认需求添加"
+        }
+      ],
+      "limitation": "本板仅展示部分状态表达，不代表完整流程；可解释结果详情需结合后续PRD"
+    }
+  ],
+  "copy": {
+    "preferred": [
+      "Entry saved",
+      "You can update this later.",
+      "Couldn’t save. Try again."
+    ],
+    "avoid": [
+      "Good mom",
+      "Perfect parenting",
+      "I know exactly how you feel",
+      "Your baby is definitely hungry"
+    ],
+    "principle": "具体、简短、尊重，不制造确定性或育儿评价"
+  },
+  "boundaries": {
+    "night": "不自动发声；深色主题尚未定义，不能把暖白样张称为夜间体验已验证",
+    "permissions": "相机/麦克风在业务需要时说明用途并申请；拒绝可取消。具体替代路径沿用需求",
+    "notifications": "仅在范围批准后定义；减少非必要打断，不能因情绪板新增提醒功能",
+    "data": "多宝宝对象、单位、记录时间/跨时区、同步与撤销不由情绪板裁定"
+  },
+  "contrast": {
+    "method": "WCAG相对亮度公式，纯色色对",
+    "results": [
+      {
+        "fg": "#FFFFFF",
+        "bg": "#692A3A",
+        "ratio": 10.54,
+        "target": 4.5,
+        "pass": true
+      },
+      {
+        "fg": "#282725",
+        "bg": "#FAF7F2",
+        "ratio": 13.97,
+        "target": 4.5,
+        "pass": true
+      },
+      {
+        "fg": "#625B57",
+        "bg": "#FAF7F2",
+        "ratio": 6.23,
+        "target": 4.5,
+        "pass": true
+      },
+      {
+        "fg": "#625B57",
+        "bg": "#FFFFFF",
+        "ratio": 6.66,
+        "target": 4.5,
+        "pass": true
+      },
+      {
+        "fg": "#80716B",
+        "bg": "#FFFFFF",
+        "ratio": 4.67,
+        "target": 3,
+        "pass": true
+      },
+      {
+        "fg": "#9C3E34",
+        "bg": "#FBEDE9",
+        "ratio": 5.83,
+        "target": 4.5,
+        "pass": true
+      },
+      {
+        "fg": "#355C45",
+        "bg": "#E8F0EA",
+        "ratio": 6.53,
+        "target": 4.5,
+        "pass": true
+      }
+    ],
+    "limit": "不是生成图片逐像素测量，也不是完整UI合规声明"
+  },
+  "freeze_scope": {
+    "include": [
+      "C>B>A关系顺序",
+      "温暖有序视觉语汇",
+      "颜色角色与候选色值",
+      "排版与基础尺寸规则",
+      "文案语气和状态表达原则",
+      "AI形态探索边界"
+    ],
+    "exclude": [
+      "首页结构与导航",
+      "新增功能或能力承诺",
+      "医学内容/判断规则",
+      "全部设备与状态覆盖",
+      "正式品牌手册",
+      "AI最终角色定稿"
+    ],
+    "change_rule": "用户确认QO-1.0细化版后冻结快照；后续变化另记版本与差异，不覆盖已确认输入"
+  },
+  "sources": [
+    {
+      "id": "P01",
+      "type": "user",
+      "locator": "本聊天 C+B+A"
+    },
+    {
+      "id": "P02",
+      "type": "user",
+      "locator": "本聊天 按温暖有序细化一下然后我们固定这个情绪板输入"
+    },
+    {
+      "id": "P03",
+      "type": "project",
+      "locator": "source-brief-v0.1.json",
+      "supports": "既有画像/需求与证据边界"
+    },
+    {
+      "id": "B01",
+      "url": "https://momcozy.com",
+      "retrieved": "2026-10-19",
+      "supports": "前轮官网观察：莓红、白底、Montserrat；非品牌手册"
+    },
+    {
+      "id": "B02",
+      "url": "https://momcozy.com/pages/our-story",
+      "retrieved": "2026-10-19",
+      "supports": "前轮已读品牌自述：妈妈优先、舒适和实际支持"
+    },
+    {
+      "id": "A01",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "retrieved": "2026-10-19",
+      "supports": "前轮已核实普通正文4.5:1目标"
+    },
+    {
+      "id": "D01",
+      "type": "design_proposal",
+      "supports": "本版尺寸、角色、动效、构图及其他色值均为设计提案，不是外部研究事实"
+    }
+  ],
+  "review": {
+    "independent_reviewer": "/root/moodboard_challenger",
+    "pre_generation": "无重大方向冲突；分开保存/分析状态、明确失败/无法判断、限制冻结范围已采纳",
+    "post_generation": "实际查看最终两张图，上轮三项问题全部闭环；可供用户确认，非完整UI验收"
+  },
+  "files": {
+    "moodboard": "quiet-order-refined.png",
+    "state_board": "quiet-order-states.png",
+    "human_input": "DESIGN_INPUT.txt",
+    "prompt_log": "generation-prompts.json",
+    "review": "review.json",
+    "manifest": "manifest.json"
+  }
+}

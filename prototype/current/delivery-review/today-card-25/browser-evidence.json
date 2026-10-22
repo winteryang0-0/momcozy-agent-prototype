@@ -1,0 +1,483 @@
+{
+  "material_sha256": "d67ba97441749745ad321cb976b57bb19da4d6cf737578846f8fe4bb68d87636",
+  "checks": [
+    {
+      "name": "same-kind and cross-kind triggers",
+      "details": {
+        "task": {
+          "id": "task-1792584455372-jem6",
+          "kind": "cry",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584454849-s5az",
+            "kind": "record",
+            "state": "interrupted",
+            "job": null
+          },
+          {
+            "id": "task-1792584455230-fn03",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": []
+      }
+    },
+    {
+      "name": "draft ownership transfer",
+      "details": {
+        "task": {
+          "id": "task-1792584457273-jwn8",
+          "kind": "record",
+          "state": "editing"
+        },
+        "history": [
+          {
+            "id": "task-1792584454849-s5az",
+            "kind": "record",
+            "state": "interrupted",
+            "resumedBy": "task-1792584457273-jwn8",
+            "job": null
+          },
+          {
+            "id": "task-1792584455230-fn03",
+            "kind": "cry",
+            "state": "interrupted"
+          },
+          {
+            "id": "task-1792584455372-jem6",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": []
+      }
+    },
+    {
+      "name": "resumed draft saves once",
+      "details": {
+        "task": {
+          "id": "task-1792584457273-jwn8",
+          "kind": "record",
+          "state": "success",
+          "job": {
+            "id": "r-1792584457876-52qd",
+            "requestId": "req-r-1792584457876-52qd",
+            "state": "success"
+          }
+        },
+        "history": [
+          {
+            "id": "task-1792584454849-s5az",
+            "kind": "record",
+            "state": "interrupted",
+            "resumedBy": "task-1792584457273-jwn8",
+            "job": null
+          },
+          {
+            "id": "task-1792584455230-fn03",
+            "kind": "cry",
+            "state": "interrupted"
+          },
+          {
+            "id": "task-1792584455372-jem6",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": [
+          "r-1792584457876-52qd"
+        ]
+      }
+    },
+    {
+      "name": "save completes in historical card",
+      "details": {
+        "task": {
+          "id": "task-1792584459940-lpye",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584459692-syff",
+            "kind": "record",
+            "state": "success",
+            "job": {
+              "id": "r-1792584459873-1r4r",
+              "requestId": "req-r-1792584459873-1r4r",
+              "state": "success"
+            }
+          }
+        ],
+        "records": [
+          "r-1792584459873-1r4r"
+        ]
+      }
+    },
+    {
+      "name": "unknown save checked with same request and refresh",
+      "details": {
+        "task": {
+          "id": "task-1792584462556-2vef",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584462362-ma5z",
+            "kind": "record",
+            "state": "success",
+            "job": {
+              "id": "r-1792584462503-ya6d",
+              "requestId": "req-r-1792584462503-ya6d",
+              "state": "success"
+            }
+          }
+        ],
+        "records": [
+          "r-1792584462503-ya6d"
+        ]
+      }
+    },
+    {
+      "name": "refresh during save becomes recoverable",
+      "details": {
+        "task": {
+          "id": "task-1792584464671-s5xj",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584464461-915c",
+            "kind": "record",
+            "state": "success",
+            "job": {
+              "id": "r-1792584464600-cb4m",
+              "requestId": "req-r-1792584464600-cb4m",
+              "state": "success"
+            }
+          }
+        ],
+        "records": [
+          "r-1792584464600-cb4m"
+        ]
+      }
+    },
+    {
+      "name": "failed historical save edits and retries same request",
+      "details": {
+        "task": {
+          "id": "task-1792584467046-kxz6",
+          "kind": "record",
+          "state": "success",
+          "job": {
+            "id": "r-1792584465881-1zwh",
+            "requestId": "req-r-1792584465881-1zwh",
+            "state": "success"
+          }
+        },
+        "history": [
+          {
+            "id": "task-1792584465742-rwfv",
+            "kind": "record",
+            "state": "saving",
+            "resumedBy": "task-1792584467046-kxz6",
+            "job": {
+              "id": "r-1792584465881-1zwh",
+              "requestId": "req-r-1792584465881-1zwh",
+              "state": "failed"
+            }
+          },
+          {
+            "id": "task-1792584466992-yzym",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": [
+          "r-1792584465881-1zwh"
+        ]
+      }
+    },
+    {
+      "name": "pending microphone permission cannot overwrite new task",
+      "details": {
+        "task": {
+          "id": "task-1792584468922-tuh1",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584468799-54yn",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": []
+      }
+    },
+    {
+      "name": "captured media discarded on task switch and resume",
+      "details": {
+        "task": {
+          "id": "task-1792584469805-jnqd",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584469649-3a20",
+            "kind": "poop",
+            "state": "interrupted",
+            "resumedBy": "task-1792584469805-jnqd"
+          },
+          {
+            "id": "task-1792584469754-g2s6",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": []
+      }
+    },
+    {
+      "name": "late message intent does not displace newer task",
+      "details": {
+        "state": {
+          "task": {
+            "id": "task-1792584470515-7qi4",
+            "kind": "poop",
+            "state": "ready"
+          },
+          "history": [],
+          "records": []
+        },
+        "reply": "momcozy ai\n我会先保留你刚才的照护操作。需要时仍可从下方入口打开「听哭闹」。"
+      }
+    },
+    {
+      "name": "late message intent does not displace current card action",
+      "details": {
+        "state": {
+          "task": {
+            "id": "task-1792584472008-4zee",
+            "kind": "cry",
+            "state": "starting"
+          },
+          "history": [],
+          "records": []
+        },
+        "reply": "momcozy ai\n我会先保留你刚才的照护操作。需要时仍可从下方入口打开「看便便」。"
+      }
+    },
+    {
+      "name": "Today expand, switch, detail, collapse",
+      "details": {
+        "head": 166,
+        "viewport": 428,
+        "compact": "none",
+        "expandedTitle": "从一件已发生的照护开始"
+      }
+    },
+    {
+      "name": "Today dark short screen",
+      "details": {
+        "head": 161,
+        "viewport": 229,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "sidebar service also allows unfinished task switch",
+      "details": {
+        "task": {
+          "id": "task-1792584478294-g1l4",
+          "kind": "poop",
+          "state": "ready"
+        },
+        "history": [
+          {
+            "id": "task-1792584477779-863b",
+            "kind": "cry",
+            "state": "interrupted"
+          }
+        ],
+        "records": []
+      }
+    },
+    {
+      "name": "modular file entry works",
+      "details": {
+        "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/index.html#/home"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-three-task-cards-390",
+      "note": "未完成记录与同类哭闹任务连续触发",
+      "path": "delivery-review/today-card-25/screenshots/01-three-task-cards-390.png",
+      "sha256": "7d3e01dd0e9bc273adffa0da65b6cefb6f49d8d7cd7835e0062650a8c298c322",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:35.969Z",
+      "fullPage": false
+    },
+    {
+      "name": "01a-paused-record-390",
+      "note": "连续任务中的首张记录草稿卡",
+      "path": "delivery-review/today-card-25/screenshots/01a-paused-record-390.png",
+      "sha256": "ff9aac1bc07e22050dcb633f9d35a7a1cbb2cc6623ee1213867e6a7c7fa9545c",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:36.599Z",
+      "fullPage": false
+    },
+    {
+      "name": "01b-paused-cry-390",
+      "note": "连续任务中的第二张已暂停哭闹卡",
+      "path": "delivery-review/today-card-25/screenshots/01b-paused-cry-390.png",
+      "sha256": "908f2774a18e44e77d68191db415adef34b2032d6337fd1ed5b372b69f977bea",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:37.241Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-resumed-record-390",
+      "note": "旧草稿转移到新卡片且保留字段",
+      "path": "delivery-review/today-card-25/screenshots/02-resumed-record-390.png",
+      "sha256": "cd098dcc04e87058470281faf0f04f2b818b8d8bdf0f4f82354cf9a99c650dfd",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:37.846Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-background-save-390",
+      "note": "前一张记录卡保存中切换到便便任务",
+      "path": "delivery-review/today-card-25/screenshots/03-background-save-390.png",
+      "sha256": "5b5ac8ce3eec82cfa428ec849b579a25e0ddd558011a3f13c1913386bd6260dd",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:41.598Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-today-expanded-390",
+      "note": "对话后展开的 Today 单层卡片",
+      "path": "delivery-review/today-card-25/screenshots/04-today-expanded-390.png",
+      "sha256": "c50c94e223047916f475218071c35befacdc441a075bf42b9f9ca3b6f6ce9d84",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:54.213Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-today-next-390",
+      "note": "展开卡切换到第二条提醒",
+      "path": "delivery-review/today-card-25/screenshots/06-today-next-390.png",
+      "sha256": "421c6294ad621880291337046d54cecfeb1fe6e540c8db53e1b166e1ba71701c",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "captured_at": "2026-10-21T12:07:54.772Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-today-expanded-dark-360",
+      "note": "夜间短屏的 Today 展开状态",
+      "path": "delivery-review/today-card-25/screenshots/05-today-expanded-dark-360.png",
+      "sha256": "45501c2e6813bf9a68bf6a449dc0b4d865cbe7844fc96a63e83ade363331baa1",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "captured_at": "2026-10-21T12:07:56.620Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-today-collapsed-dark-360",
+      "note": "夜间短屏的 Today 折叠状态",
+      "path": "delivery-review/today-card-25/screenshots/07-today-collapsed-dark-360.png",
+      "sha256": "a898488b92fcf8d0ea6c58078cbc55c644deee0b3b5b8003dca09d2630130cc8",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "captured_at": "2026-10-21T12:07:57.143Z",
+      "fullPage": false
+    }
+  ],
+  "errors": [],
+  "browser": {
+    "name": "Google Chrome",
+    "version": "155.0.8059.86",
+    "mode": "headless",
+    "protocol": "file://",
+    "deviceScaleFactor": 2
+  }
+}

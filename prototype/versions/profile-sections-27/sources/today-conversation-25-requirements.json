@@ -1,0 +1,35 @@
+{
+  "revision": "today-conversation-25",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "left-sidebar-24",
+  "authority": "Current conversation: optimize the floating Today widget after conversation with deduplicated reminder title and reflowed information and controls; allow a new conversation task to start even when the previous task card has not ended, including repeated triggers.",
+  "changes": [
+    {
+      "id": "R25-01",
+      "title": "对话后悬浮 Today 卡片去重与重排",
+      "rule": "折叠态保留 Today 与当前提醒标题；展开态折叠条只显示 Today 与收起操作，提醒标题仅在内容区出现一次。提醒标题、简短说明、依据入口及左右切换控件位于同一轻量卡面。按钮、点选、触摸左右滑动与键盘切换可用，焦点和播报反馈保持连续；最新任务卡可见时不显示回到最新消息捷径；夜间、短屏与减少动态效果可用。"
+    },
+    {
+      "id": "R25-02",
+      "title": "未完成任务不阻止下一次触发",
+      "rule": "会话常驻入口、文字意图与侧边栏服务每次明确触发都创建新的任务卡和任务 ID，包括同类连续触发。上一张未结束卡片留在原对话顺序中并显示已暂停；可从旧卡继续，继续时生成承接卡并使来源卡只读。切换时停止旧媒体采集、整理计时器与播报，未保留的素材需重新采集。较早文字意图的延迟回复不得覆盖较新的显式任务触发，也不得打断用户随后在现有卡片中的采集、填写与继续操作。"
+    },
+    {
+      "id": "R25-03",
+      "title": "任务切换中的保存与草稿归属",
+      "rule": "记录保存请求按所属任务卡及固定请求编号回写，切换到其他任务后仍可完成。刷新或切换会话导致结果未明时，旧卡显示待核对并沿用原请求和记录编号；核对或重试不得重复新增记录。恢复历史草稿后，原卡标记承接卡并停止再次恢复或提交；失败记录修改后也沿用原请求编号。"
+    }
+  ],
+  "supersedes": [
+    "R23-03 中任务进行时阻止其他入口的互斥规则",
+    "R24-03 中侧栏服务沿用任务互斥的规则"
+  ],
+  "scope": "沿用 R24 的四条 hash 路由、左侧栏、莓色留白设计、会话时间线和记录页；本轮仅调整悬浮 Today 的信息布局及对话任务并发触发与恢复规则。",
+  "assumptions": [
+    "同一时刻只有一张前台可操作任务卡；旧任务保留在对话时间线，可从旧卡重新承接。",
+    "媒体原始素材在此本地 HTML 原型中不跨任务或刷新持久化，恢复时明确要求重新采集。",
+    "记录保存与核对为本地模拟；真实服务端的请求查询、幂等和跨端同步仍需产品及接口定义。",
+    "本轮仍是可审阅候选，尚无合法 B-ID 冻结基线。"
+  ]
+}

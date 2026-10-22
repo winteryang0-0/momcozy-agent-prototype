@@ -1,0 +1,35 @@
+{
+  "candidate": "HOME-0.1",
+  "status": "awaiting-framework-review",
+  "approved": false,
+  "framework_sha256": "5b30c8bdadf32cd752351cf5012f43a2a37f7f98f2faee569ee45bdd75bd5f86",
+  "system_sha256": "7169ed001208c56d17bd39754e7797d0a3c75068ab664b1087ef09556e1d9be3",
+  "source_sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+  "scope_sha256": "d4f0d95a4d657dfbab374f6e03f2bf8c7765530e0d7b2fb1b229733d273ae4eb",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "c913c0a5b19ddb12e17c1ae4ea0e756498b47c18749dc63e984ea297e53b0abc"
+    },
+    {
+      "path": "style.css",
+      "sha256": "ca56656f0a4a02d8745c16dfe2a967e9e3c836db8cba53289681375bb96befc0"
+    },
+    {
+      "path": "app.js",
+      "sha256": "94b326fab43ee8696425368fd03d6d6ae974f5ffd693aacb9ee978dadcf90637"
+    },
+    {
+      "path": "ARCHITECTURE.txt",
+      "sha256": "45f979a221e6284d840601cc62b202e2e3773cb2e2dacb622cc02ff81f6170d9"
+    },
+    {
+      "path": "source.json",
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "design.json",
+      "sha256": "0b92b4cc01b4ef04ff19dc6a6eb2f1e70fc29dc2ec81fc5e67dd586574943157"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "name": "role required",
+      "chinese": []
+    },
+    {
+      "name": "age min 18",
+      "chinese": []
+    },
+    {
+      "name": "births max 6",
+      "chinese": []
+    },
+    {
+      "name": "gestational age min 37 weeks",
+      "chinese": []
+    },
+    {
+      "name": "sound toggle",
+      "chinese": []
+    },
+    {
+      "name": "profile age rejects 51",
+      "chinese": []
+    },
+    {
+      "name": "profile age accepts 50",
+      "chinese": []
+    },
+    {
+      "name": "gestational age rejects 51",
+      "chinese": []
+    },
+    {
+      "name": "gestational age accepts 50",
+      "chinese": []
+    }
+  ],
+  "errors": []
+}

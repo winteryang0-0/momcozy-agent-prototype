@@ -1,0 +1,30 @@
+{
+  "revision": "conversation-home-journal-16",
+  "date": "2026-10-20",
+  "status": "user-authorized-candidate-not-frozen",
+  "authority": "Current conversation: user supplied a four-state conversational home wireframe and a care-journal layout reference, then confirmed that the conversational screen replaces Today, the three-item Dock is removed, and the upper-left menu carries record navigation.",
+  "previous_revision": "berry-poise-relayout-15",
+  "references": [
+    {"path": "sources/home-framework-16-reference.png", "role": "four-state home wireframe; structural reference"},
+    {"path": "sources/journal-layout-16-reference.png", "role": "journal composition reference; content translated to Chinese and Berry Poise visuals retained"}
+  ],
+  "changes": [
+    {"id": "R16-01", "title": "对话式首页替换 Today，移除底部三栏 Dock", "rule": "Momcozy AI 会话为默认首页；左上角菜单提供照护记录、我的、历史对话、新对话及原有二级功能；右上角保留声音说明；欢迎态呈现形象、Today 建议和三项照护功能，进入会话后显示紧凑建议与时间线。旧 #/assistant 深链重定向至 #/home。"},
+    {"id": "R16-02", "title": "记录页按参考图重排", "rule": "按日期/记录对象、今日摘要、时间线及筛选的顺序呈现；每条时间线保留详情、编辑与删除路径；原有记录二级分析入口移至折叠区。视觉继续使用当前莓色留白 token，不直接复制参考图的品牌文字或底栏。"},
+    {"id": "R16-03", "title": "保留记录新建入口", "rule": "记录页始终可见新建记录按钮，仍进入原有全局类型选择、填写、保存与恢复闭环；首页的记一笔继续使用独立会话卡片。"}
+  ],
+  "supersedes": [
+    {"id": "R14-H01", "scope": "三栏 Dock 和 Today 顶部个人入口"},
+    {"id": "R14-H03", "scope": "输入栏位于 Dock 上方；独立滚动和会话功能继续保留"},
+    {"id": "R15-01", "scope": "Today 页面本身被对话式首页替换"},
+    {"id": "R15-02", "scope": "今日行动建议保留，但不再与旧概况卡形成前后顺序"},
+    {"id": "R15-03", "scope": "旧 Today 最近记录模块随旧页面退出"},
+    {"id": "R15-04", "scope": "新参考图改为居中 Momcozy AI 标题"},
+    {"id": "R15-07", "scope": "记录页右上角个人入口迁移到首页左上菜单"}
+  ],
+  "assumptions": [
+    "图 2 指排布层级，不覆盖当前莓色留白风格和本地模拟数据语义。",
+    "记录页新建入口采用页面底部固定按钮；原有二级分析入口放在时间线后的折叠区。",
+    "原有本地记录、草稿、历史对话和资料沿用相同存储键；不自动生成用户未录入的记录。"
+  ]
+}

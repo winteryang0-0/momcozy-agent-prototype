@@ -1,0 +1,29 @@
+{
+  "revision": "profile-field-ranges-21",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "conversation-care-cards-20",
+  "authority": "Current conversation: limit the mother's age to 18–50, completed deliveries to 0–6, and baby's gestational age to 37–50 in initial information entry and later editing.",
+  "changes": [
+    {
+      "id": "R21-01",
+      "title": "妈妈年龄范围",
+      "rule": "首次录入与后续妈妈资料编辑仅接受 18–50 岁的整数，边界包含 18 和 50；该字段仍可暂不填写。"
+    },
+    {
+      "id": "R21-02",
+      "title": "已分娩次数范围",
+      "rule": "首次录入与后续妈妈资料编辑仅接受 0–6 次的整数，0 和 6 均有效；该字段仍可暂不填写。"
+    },
+    {
+      "id": "R21-03",
+      "title": "宝宝出生孕周范围",
+      "rule": "首次录入与后续宝宝资料编辑仅接受 37–50 周的整数，边界包含 37 和 50；多宝宝在完整资料页分别校验；该字段仍可暂不填写。"
+    }
+  ],
+  "assumptions": [
+    "本次“宝宝的孕周时间”对应出生孕周；孕期的“当前孕周”仍使用原有 0–45 周范围。",
+    "既有超范围数值不自动钳制；编辑时显示原值并要求改为范围内整数或明确清空后再保存。",
+    "宝宝资料快捷编辑针对宝宝 1；其他宝宝继续从基础照护资料入口编辑。"
+  ]
+}

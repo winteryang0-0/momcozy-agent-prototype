@@ -1,0 +1,864 @@
+{
+  "candidate": "FW-0.3",
+  "status": "candidate-not-frozen",
+  "testedAt": "2026-10-19T11:02:48.798Z",
+  "operator": "/root",
+  "browser": "Codex in-app browser",
+  "browserVersion": "unknown",
+  "protocol": "http",
+  "url": "http://127.0.0.1:4176/#/chat",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 780
+    },
+    {
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "materialHashes": {
+    "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+    "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+    "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "id": "same-page-focus",
+      "before": {
+        "age": "出生 12 天",
+        "today": true,
+        "url": "#/chat"
+      },
+      "after": {
+        "age": {
+          "bottom": 214.78125762939453,
+          "height": 99.05208587646484,
+          "left": 12.666666984558104,
+          "right": 377.33335399627686,
+          "top": 115.72917175292967,
+          "width": 364.6666870117187,
+          "x": 12.666666984558104,
+          "y": 115.72917175292967
+        },
+        "composer": {
+          "bottom": 829.0625,
+          "height": 210.0625,
+          "left": 12.666666984558104,
+          "right": 377.33335399627686,
+          "top": 619,
+          "width": 364.6666870117187,
+          "x": 12.666666984558104,
+          "y": 619
+        },
+        "mode": true,
+        "stream": {
+          "bottom": 619,
+          "height": 404.21875,
+          "left": 12.666666984558104,
+          "right": 377.33335399627686,
+          "top": 214.78125,
+          "width": 364.6666870117187,
+          "x": 12.666666984558104,
+          "y": 214.78125
+        },
+        "url": "#/chat"
+      },
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "three-continuous-messages",
+      "clientHeight": 404,
+      "messages": [
+        "你我想记录刚才的配方奶。",
+        "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。记录配方奶",
+        "你接下来继续补充情况。",
+        "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。",
+        "你这是第三条连续对话，保持在当前页面。",
+        "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。"
+      ],
+      "scroll": 650,
+      "scrollHeight": 1054,
+      "url": "#/chat",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "camera-confirm",
+      "cameraVisible": false,
+      "pending": "示例照片 1拍照 · 模拟素材移除",
+      "route": "#/chat",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "two-attachments-send-next-draft",
+      "beforeSend": "示例照片 1拍照 · 模拟素材移除示例文档.pdf文件选择 · 模拟素材移除",
+      "draft": "这是下一条尚未发送的草稿。",
+      "pendingHidden": true,
+      "sent": [
+        "示例照片 1 · 拍照 · 模拟附件",
+        "示例文档.pdf · 文件选择 · 模拟附件"
+      ],
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "sidebar-return-expanded",
+      "age": "出生 12 天",
+      "draft": "这是下一条尚未发送的草稿。",
+      "expanded": true,
+      "route": "#/chat",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "camera-cancel-keeps-draft",
+      "attachmentsHidden": true,
+      "cameraHidden": true,
+      "draft": "这是下一条尚未发送的草稿。",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "remove-one-and-all",
+      "count": 1,
+      "text": "示例文档.pdf\n文件选择 · 模拟素材\n移除",
+      "cleared": true,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "camera-denied-retry",
+      "attachmentsHidden": true,
+      "draft": "这是下一条尚未发送的草稿。",
+      "error": true,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "upload-failed-retry",
+      "attachmentCount": 1,
+      "draft": "这是下一条尚未发送的草稿。",
+      "error": true,
+      "retryCount": 2,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "reload-confirmed-attachments-draft",
+      "attachments": 2,
+      "draft": "这是下一条尚未发送的草稿。",
+      "expanded": true,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "failed-send-retry-and-discard-guard",
+      "failedSnapshot": {
+        "count": 2,
+        "failed": true,
+        "preview": "这是一条需要重试的消息。 示例照片 1、示例文档.pdf"
+      },
+      "guarded": {
+        "failedVisible": true,
+        "sending": true,
+        "toast": "正在发送，完成后可添加下一条素材"
+      },
+      "draft": "重试期间写下的下一条草稿。",
+      "failedHidden": true,
+      "pendingHidden": true,
+      "sent": [
+        {
+          "attachments": 2,
+          "text": "你这是一条需要重试的消息。示例照片 1 · 拍照 · 模拟附件示例文档.pdf · 文件选择 · 模拟附件"
+        }
+      ],
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "record-save-guard-and-today",
+      "busy": true,
+      "formFail": {
+        "amount": "60",
+        "enabled": true
+      },
+      "ageRect": {
+        "bottom": 214.78125762939453,
+        "height": 99.05208587646484,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 115.72917175292967,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 115.72917175292967
+      },
+      "expanded": true,
+      "lastEvent": "已保存至本浏览器配方奶 · 宝宝2026-10-19 18:54 · Asia/Shanghai\n60 ml\n备注：框架验证记录查看 / 修改记录",
+      "outerScrollY": 0,
+      "records": [
+        "已保存至本浏览器配方奶 · 宝宝2026-10-19 18:54 · Asia/Shanghai\n60 ml\n备注：框架验证记录查看 / 修改记录"
+      ],
+      "route": "#/chat",
+      "today": "MOMCOZY AI · 日常记录今日概览10 / 19今天已保存 1 条记录，最近一条是配方奶。喂养1 条换尿布0 条吸奶0 条仅汇总本地已保存记录，不代表全部照护活动。继续未完成的记录展开今日记录配方奶2026-10-19 18:54 · Asia/Shanghai\n60 ml\n备注：框架验证记录",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "today-inline-expand",
+      "route": "#/chat",
+      "today": "MOMCOZY AI · 日常记录\n今日概览\n10 / 19\n\n今天已保存 1 条记录，最近一条是配方奶。\n\n喂养\n1 条\n换尿布\n0 条\n吸奶\n0 条\n\n仅汇总本地已保存记录，不代表全部照护活动。\n\n收起今日记录\n配方奶\n2026-10-19 18:54 · Asia/Shanghai\n60 ml\n备注：框架验证记录",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "age-visible-with-attachments",
+      "age": {
+        "bottom": 214.78125762939453,
+        "height": 99.05208587646484,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 115.72917175292967,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 115.72917175292967
+      },
+      "composer": {
+        "bottom": 829.0625305175781,
+        "height": 326.85418701171875,
+        "left": 12.666666984558104,
+        "right": 377.33335399627686,
+        "top": 502.2083435058594,
+        "width": 364.6666870117187,
+        "x": 12.666666984558104,
+        "y": 502.2083435058594
+      },
+      "docHeight": 844,
+      "innerHeight": 844,
+      "outerY": 0,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "narrow-360-layout",
+      "age": {
+        "bottom": 214.78125762939453,
+        "height": 99.05208587646484,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 115.72917175292967,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 115.72917175292967
+      },
+      "composer": {
+        "bottom": 765.0625,
+        "height": 210.0625,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 555,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 555
+      },
+      "docWidth": 360,
+      "height": 780,
+      "outerY": 0,
+      "stream": {
+        "bottom": 555,
+        "height": 340.21875,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 214.78125,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 214.78125
+      },
+      "width": 360,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "long-input-and-interleaved-timeline",
+      "layout": {
+        "age": {
+          "bottom": 214.78125762939453,
+          "height": 99.05208587646484,
+          "left": 12.666666984558104,
+          "right": 347.33335399627686,
+          "top": 115.72917175292967,
+          "width": 334.66668701171875,
+          "x": 12.666666984558104,
+          "y": 115.72917175292967
+        },
+        "outerY": 0,
+        "route": "#/chat",
+        "scrollHeight": 254,
+        "textarea": {
+          "bottom": 692.6666870117188,
+          "height": 112,
+          "left": 24.666667938232425,
+          "right": 262.0000114440918,
+          "top": 580.6666870117188,
+          "width": 237.33334350585935,
+          "x": 24.666667938232425,
+          "y": 580.6666870117188
+        }
+      },
+      "timeline": [
+        {
+          "text": "你我想记录刚才的配方奶。",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。记录配方奶",
+          "type": "message timeline-dynamic "
+        },
+        {
+          "text": "你接下来继续补充情况。",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。",
+          "type": "message timeline-dynamic "
+        },
+        {
+          "text": "你这是第三条连续对话，保持在当前页面。",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。",
+          "type": "message timeline-dynamic "
+        },
+        {
+          "text": "你照片和文件一起保留在这条消息里。示例照片 1 · 拍照 · 模拟附件示例文档.pdf · 文件选择 · 模拟附件",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。附件已随这条消息保留；本演示不进行真实上传或内容分析。",
+          "type": "message timeline-dynamic "
+        },
+        {
+          "text": "你这是一条需要重试的消息。示例照片 1 · 拍照 · 模拟附件示例文档.pdf · 文件选择 · 模拟附件",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。附件已随这条消息保留；本演示不进行真实上传或内容分析。",
+          "type": "message timeline-dynamic "
+        },
+        {
+          "text": "已保存至本浏览器配方奶 · 宝宝2026-10-19 18:54 · Asia/Shanghai\n60 ml\n备注：框架验证记录查看 / 修",
+          "type": "saved timeline-dynamic"
+        },
+        {
+          "text": "C10 · 声音任务听听宝宝的哭声点击开始，无需按住。建议约 10–20 秒，尽量减少环境干扰。开始录宝宝哭声▥　正在录音 · 模拟00:0",
+          "type": "task"
+        },
+        {
+          "text": "你这是一段较长的连续输入，用来确认录入时文本可以自然换行，超过输入区高度后仍可滚动编辑。对话历史、已经保存的记录和之前的任务卡继续留在同一页",
+          "type": "message timeline-dynamic user"
+        },
+        {
+          "text": "Momcozy AI · 演示已收到。这里演示连续对话，消息会接着出现在当前页面。",
+          "type": "message timeline-dynamic "
+        }
+      ],
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "sidebar-preserves-history-scroll",
+      "before": {
+        "height": 458,
+        "scroll": 1641.3333740234375
+      },
+      "after": {
+        "expanded": true,
+        "height": 458,
+        "route": "#/chat",
+        "scroll": 1641.3333740234375
+      },
+      "measurementNote": "Wheel scroll animation must settle before sampling; final check sampled in independent tool calls.",
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "discard-failed-keeps-editable-content",
+      "count": 1,
+      "draft": "这条消息包含待确认的附件。",
+      "failedHidden": true,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "reset-missing-birth",
+      "age": "年龄待完善",
+      "messages": 0,
+      "records": 0,
+      "pass": true,
+      "revision": "pre-task-scroll-fix"
+    },
+    {
+      "id": "task-open-scrolls-to-card-after-route-restore",
+      "revision": "task-scroll-fix",
+      "age": {
+        "bottom": 214.78125762939453,
+        "height": 99.05208587646484,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 115.72917175292967,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 115.72917175292967
+      },
+      "card": {
+        "bottom": 527.0625,
+        "height": 284.78125,
+        "left": 26.666667938232425,
+        "right": 318.0000114440918,
+        "top": 242.28125,
+        "width": 291.3333435058594,
+        "x": 26.666667938232425,
+        "y": 242.28125
+      },
+      "outerY": 0,
+      "route": "#/chat",
+      "startButton": {
+        "bottom": 437.7291870117187,
+        "height": 48,
+        "left": 43.33333587646485,
+        "right": 301.33333587646484,
+        "top": 389.7291870117187,
+        "width": 258,
+        "x": 43.33333587646485,
+        "y": 389.7291870117187
+      },
+      "stream": {
+        "bottom": 555,
+        "height": 340.21875,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 214.78125,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 214.78125
+      },
+      "pass": true
+    },
+    {
+      "id": "poop-task-open-scrolls-to-card",
+      "revision": "task-scroll-fix",
+      "card": {
+        "bottom": 536.7708435058594,
+        "height": 309.7083435058594,
+        "left": 26.666667938232425,
+        "right": 318.0000114440918,
+        "top": 227.0625,
+        "width": 291.3333435058594,
+        "x": 26.666667938232425,
+        "y": 227.0625
+      },
+      "heading": {
+        "bottom": 303.71875,
+        "height": 25.59375,
+        "left": 43.33333587646485,
+        "right": 301.33333587646484,
+        "top": 278.125,
+        "width": 258,
+        "x": 43.33333587646485,
+        "y": 278.125
+      },
+      "outerY": 0,
+      "route": "#/chat",
+      "stream": {
+        "bottom": 555,
+        "height": 340.21875,
+        "left": 12.666666984558104,
+        "right": 347.33335399627686,
+        "top": 214.78125,
+        "width": 334.66668701171875,
+        "x": 12.666666984558104,
+        "y": 214.78125
+      },
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "reviews/screenshots/camera-preview-final-390.jpg",
+      "state": "camera-preview",
+      "chatScroll": 2525.333251953125,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:17.123Z",
+      "captureFinishedAt": "2026-10-19T10:59:17.159Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "f62b636004ddd1b206d80a29dc7c6c2169f2fc7ca867378053a5a42dfe3c80c9",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/camera-error-final-390.jpg",
+      "state": "camera-unavailable",
+      "chatScroll": 2434.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:25.377Z",
+      "captureFinishedAt": "2026-10-19T10:59:25.400Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "12fb9a62f6ed4c985062ebf054b4a8d2ea4736e05a97293332eb52e8401d2813",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/upload-error-final-390.jpg",
+      "state": "upload-failed",
+      "chatScroll": 2304.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:33.455Z",
+      "captureFinishedAt": "2026-10-19T10:59:33.500Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "37db85449fe7258fc70041f43282f2d2d0bed962292463ff12840b6ea78d17ad",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/send-error-final-390.jpg",
+      "state": "send-failed-with-attachment",
+      "chatScroll": 2456.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:59.652Z",
+      "captureFinishedAt": "2026-10-19T10:59:59.669Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "b7de507dfe78d3e0d8cd462bc606c8ea6c572482eb52e086aabfa7aae95954ae",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/chat-focused-final-390.jpg",
+      "state": "focused-chat-empty-today",
+      "chatScroll": 0,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:00:43.168Z",
+      "captureFinishedAt": "2026-10-19T11:00:43.197Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "ed181cbaa245f4a24f56d6b95be4fea4759b5367cca1534c472682d46ef048cc",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-mobile.jpg",
+      "state": "pending-attachment-and-draft",
+      "width": 390,
+      "height": 844,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "809bd4be4fa0ae75806269a7d584f29501787e0972b176f86885c50ebaea5244",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-360.jpg",
+      "state": "pending-file-narrow",
+      "width": 360,
+      "height": 780,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "0bc597afc6a826307f8d3c8904ffd7033609f96eb58ede551866457bcae0b45a",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/task-final-360.jpg",
+      "state": "inline-cry-task",
+      "width": 360,
+      "height": 780,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "6cae4bcdd23ae4bd80d782db3f57a71ac3b7ccb526a8cd80e505469c1bab62e1",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/chat-final-desktop.jpg",
+      "state": "desktop-history",
+      "width": 1440,
+      "height": 1000,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "d0b1ff15c51b3f1e73f88af8d8eb14ec029ad6242a83ef234b95b361b53c8ff1",
+      "actualPixels": {
+        "height": 990,
+        "width": 1425
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+      "state": "cry-task-visible-after-open",
+      "chatScroll": 900,
+      "height": 780,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 360,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:01:53.591Z",
+      "captureFinishedAt": "2026-10-19T11:01:53.627Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "ead1c65b2d191e5057e3eefef139e851a8629bed86e2743eb76f2474ae57714e",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+      "state": "poop-task-visible-after-open",
+      "chatScroll": 1214,
+      "height": 780,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 360,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:02:16.649Z",
+      "captureFinishedAt": "2026-10-19T11:02:16.666Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "7aab4ee24b643bd6a2d5161f2ab2fe821d8585eea68f0c3db6cebda1e2bcc8b0",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/chat-current-390.jpg",
+      "state": "current-main-today-card-with-saved-record",
+      "chatScroll": 0,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:02:48.770Z",
+      "captureFinishedAt": "2026-10-19T11:02:48.795Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "372747f9240f4c5bde24f547485ec3332a998ddbe76fcce7b24f2e7d16e79a6f",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    },
+    {
+      "path": "reviews/screenshots/chat-current-desktop.jpg",
+      "state": "current-desktop-main",
+      "chatScroll": 0,
+      "height": 1000,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 1440,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:03:37.386Z",
+      "captureFinishedAt": "2026-10-19T11:03:37.440Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "4feae6ab7ec46ee76a7c9958e368139a6b79a0ee25e2513d91b22d16f76e3ca1",
+      "actualPixels": {
+        "height": 1000,
+        "width": 1440
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      }
+    }
+  ],
+  "limits": [
+    "Mock camera, upload, AI and voice only; no real camera/files/network upload.",
+    "Desktop viewport emulation; mobile OS virtual keyboard was not tested.",
+    "file:// double-click not tested; local HTTP tested.",
+    "Incremental checks cover new continuous-chat paths and sidebar return; full inherited onboarding and all five record types were not exhaustively rerun.",
+    "Per-item attachment removal and timeline actions are dynamic controls; mapping flow tests and runtime cover them, static marker guard is not exhaustive.",
+    "Earlier screenshots without final in name are exploratory; not used for final visual approval."
+  ],
+  "previousMaterialHashes": {
+    "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+    "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+    "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+  },
+  "finalRevision": {
+    "changeRecord": "reviews/task-scroll-fix.json",
+    "rerun": [
+      "task-open-scrolls-to-card-after-route-restore",
+      "poop-task-open-scrolls-to-card"
+    ],
+    "note": "Only task-open scroll timing changed. Earlier screenshots retain their original material hashes; affected task states and main screen were recaptured."
+  },
+  "consoleErrors": []
+}

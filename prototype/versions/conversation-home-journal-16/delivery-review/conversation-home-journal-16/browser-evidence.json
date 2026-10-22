@@ -1,0 +1,142 @@
+{
+  "revision": "conversation-home-journal-16",
+  "material_sha256": "5bdf0c6f1d0fcdf0bb0818565450dd2a17fdad9f13a4cfa2b052584d9c773de7",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "captured_at": "2026-10-20T12:56:28.976Z",
+  "operator": "Playwright local Chrome headless",
+  "checks": [
+    "canonical home route and legacy alias",
+    "no Dock",
+    "main menu → journal",
+    "persistent new record save and selected-date recovery",
+    "journal fixture, detail, filter and owner switch",
+    "home chat reply",
+    "dark mode",
+    "360 px and 1280 px horizontal overflow",
+    "no page or console errors"
+  ],
+  "screenshots": [
+    {
+      "name": "01-home-welcome-390",
+      "note": "new conversation home, empty local records",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/01-home-welcome-390.png",
+      "sha256": "83e65da812dc297cd87124e921db912b039808effd8076e727c3963bab97edf1",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "02-journal-empty-390",
+      "note": "journal empty state and persistent new-record action",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/02-journal-empty-390.png",
+      "sha256": "87424784499a840962668360f8f45bc4527c92cc33c9d9e83ec6845c326b15a9",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "03-journal-populated-390",
+      "note": "isolated visual fixture with four baby events",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03-journal-populated-390.png",
+      "sha256": "933d269edb7853e94287a578ada538075d86263e1a7b4b0a1e79943b460f1604",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "03b-journal-scrolled-390",
+      "note": "same fixture after scrolling; new-record action remains visible",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03b-journal-scrolled-390.png",
+      "sha256": "b5be5905e975c1017b9894a7a0ddc13e563944a7d6568d5337c7c17a8ca8d22f",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "04-journal-mom-390",
+      "note": "owner switch retains journal composition",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/04-journal-mom-390.png",
+      "sha256": "1b120ef052ebe9972c2b68bc83e696c8c99d1f4b9d3b74ad86c22598894fb5bd",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "05-home-conversation-390",
+      "note": "home conversation state after a local demo reply",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/05-home-conversation-390.png",
+      "sha256": "7e0003f7a1a75bdd892c326110baa675c8e5fe05718f4d6ae55dff4393283f69",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "06-home-dark-390",
+      "note": "dark mode on canonical home route",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/06-home-dark-390.png",
+      "sha256": "6f3395b54dea2547e2556c57c9748393d64b326741c80e7e202375ccba0566a3",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "07-home-welcome-360",
+      "note": "narrow and short viewport, new conversation",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/07-home-welcome-360.png",
+      "sha256": "e64b98910e09dff284e30bd5511949cdec0d73ca2d6bae378dceeffda4b6ad8c",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      }
+    },
+    {
+      "name": "08-journal-empty-360",
+      "note": "narrow and short viewport, light journal empty state",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08-journal-empty-360.png",
+      "sha256": "606b1213309d943f84d7bd52bd75b94804069a3bec7dfe81e6c9685485396121",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      }
+    },
+    {
+      "name": "08b-journal-empty-360-scrolled",
+      "note": "short viewport after scrolling; empty-state text remains available above new-record action",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08b-journal-empty-360-scrolled.png",
+      "sha256": "684939bdaeffcb7d8e122f816d87b962cea17555c91f0c950462bf4a12409bfe",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      }
+    },
+    {
+      "name": "09-home-welcome-desktop",
+      "note": "desktop viewport, light home welcome state",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/09-home-welcome-desktop.png",
+      "sha256": "c9e69ec055a469be2a4fc7964f9ac29f9ef3e0008c6a7240e2f30e9d87f0203f",
+      "pixels": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "10-journal-empty-desktop",
+      "note": "desktop viewport, light journal empty state",
+      "path": "delivery-review/conversation-home-journal-16/screenshots/10-journal-empty-desktop.png",
+      "sha256": "188cbf891a2ed77c93ff89601332aa785ce90be28db416c07754457a21c60713",
+      "pixels": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "errors": []
+}

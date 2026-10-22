@@ -1,0 +1,525 @@
+{
+  "schema_version": "1.0",
+  "revision": "onboarding-berry-ui-19",
+  "generated_at": "2026-10-21T02:12:07.090Z",
+  "purpose": "static file integrity; not a browser or design approval",
+  "historical_manifest": "sources/revision-14-file-manifest.json",
+  "previous_manifest": "../versions/first-visit-onboarding-18/file-manifest.json",
+  "files": [
+    {
+      "path": "assets/app.js",
+      "size": 98062,
+      "sha256": "04231e04613754f1220847456670dcafa75b9a04cd7b23c42c120ac1bdb63342"
+    },
+    {
+      "path": "assets/berry.css",
+      "size": 21948,
+      "sha256": "52fd6ca43434525d63b092454d5978daa32fb0020638f09e8a596623f160b320"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6356,
+      "sha256": "8640b7e6f39c72a99704a24cc0bfafa3b367f18d82c7b74df3db090e98b24f26"
+    },
+    {
+      "path": "assets/layout-16.css",
+      "size": 14524,
+      "sha256": "f49ecbf1c298e2a85d5ab86ef5e635abd42104ab3e4701bca74eb3554e85356a"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/onboarding-berry.css",
+      "size": 10023,
+      "sha256": "4a63b02ca5b974d07ce2bcfe26acc079322c1a432373ff25af42be0aaf0b363f"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "build-manifest.cjs",
+      "size": 1901,
+      "sha256": "8168ee3f1f8f4b43898723f55a56e386674f7f98da6b73424ebde65673c39974"
+    },
+    {
+      "path": "build-standalone.cjs",
+      "size": 1649,
+      "sha256": "e2391d5d3c428a3640baab49883afb07ab3632c80be8b066145f5269294f76ae"
+    },
+    {
+      "path": "delivery-review/berry-poise-01/DELIVERY.md",
+      "size": 5902,
+      "sha256": "ce9f08a69f5ca5069830a492ce7e407c5400422f1122f499eefc9230c48b7b3f"
+    },
+    {
+      "path": "delivery-review/berry-poise-relayout-15/DELIVERY.md",
+      "size": 4201,
+      "sha256": "17ff52a86fcb4b062daba0e85b59b539a985f6e3101dc08c3551fe2fafac687b"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/DELIVERY.md",
+      "size": 6288,
+      "sha256": "3e186cc3ed18ad5e955714dfd62978d98e924ad088e855d94785b70f86cd9ea9"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/evidence.json",
+      "size": 2550,
+      "sha256": "96ef32eff2cd6f6e13e415449b8646a66628f235482065e32d38d2b252bc17cd"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/01-today-empty-pre-fix.png",
+      "size": 217474,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/02-ai-welcome-pre-fix.png",
+      "size": 213814,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/03-records-empty-pre-fix.png",
+      "size": 207797,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/04-ai-saved-card-pre-fix.png",
+      "size": 152436,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/05-ai-conversation-pre-fix.png",
+      "size": 162301,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/browser-evidence.json",
+      "size": 5239,
+      "sha256": "a7f0ab9dd23fdcfbfb0719b0132302e56d5bc331852f5c14b6d25d59a869314f"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/consistency-review.md",
+      "size": 6062,
+      "sha256": "4c0b334570a95b30988d73e019cd11290047384dba7c530bc3b0d315660d95af"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/DELIVERY.md",
+      "size": 4288,
+      "sha256": "86e30ad6316d0c2dd441d334ba93de1a6592ae82ba917256fb7e21d7afe71d36"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/qa-browser.cjs",
+      "size": 10372,
+      "sha256": "28250729f7fcc0e937ae1f71336ab19d33a79aaac402910b04d0971c1cb10aaf"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/01-home-welcome-390.png",
+      "size": 94324,
+      "sha256": "8408f70193c6af645eb3c092dfb6079ac190f35dcc10246d4ca302a83a67dde3"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/02-journal-empty-390.png",
+      "size": 109779,
+      "sha256": "f8bce4989b7a9a827bfb1a8074ed104fd1145b4be268fcf84e35b81804d3b303"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03-journal-populated-390.png",
+      "size": 110196,
+      "sha256": "2c85dcfea20131f98eea6d910fc0d01636bfa53794ec5bc1fe8819d723603e15"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03b-journal-scrolled-390.png",
+      "size": 92412,
+      "sha256": "de2fda4ed95250f45fb17ba3aa22dce16c5914ea2931a3dcaa84488bc64e3469"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/04-journal-mom-390.png",
+      "size": 106042,
+      "sha256": "85b241a267ee0668bbce4c076c8657149fa86cf6a102fd799e8843b2274a2d18"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/05-home-conversation-390.png",
+      "size": 78059,
+      "sha256": "0c68e7caa715cdb321f5b34787c1b487fc49d704691a286664caafc9960a45d1"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/06-home-dark-390.png",
+      "size": 84911,
+      "sha256": "bf54cc8265a9cf4d5fc209cf813cc276006db6d088cf495141c53caf028b0420"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/07-home-welcome-360.png",
+      "size": 78460,
+      "sha256": "6acd51af139881ef9ba8e3ff0cb6cc63907d60cc8360afffe4eda0090988cd99"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08-journal-empty-360.png",
+      "size": 84456,
+      "sha256": "8518c8a39aa595f709b8c3ab2616b9f4fff1abd50f6b4ee6fba8048f611a8420"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08b-journal-empty-360-scrolled.png",
+      "size": 58493,
+      "sha256": "684939bdaeffcb7d8e122f816d87b962cea17555c91f0c950462bf4a12409bfe"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/09-home-welcome-desktop.png",
+      "size": 305362,
+      "sha256": "e5231fefa67b42bce3454a620f6269b6a426d4481c1db2ebf11378a3549d0b5d"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/10-journal-empty-desktop.png",
+      "size": 316309,
+      "sha256": "a785af4e99924e5897b0cf92bbe47e1895227ae5b34a70314038ea3d68b1cb58"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/visual-review.md",
+      "size": 10341,
+      "sha256": "f4482db81344262e2eee88c18e914e134e18641e458ed2f9e51c90e577e197ea"
+    },
+    {
+      "path": "delivery-review/delivery-integrity.json",
+      "size": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "delivery-review/FINAL_DELIVERY.txt",
+      "size": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "delivery-review/interaction-review.md",
+      "size": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/browser-evidence.json",
+      "size": 6239,
+      "sha256": "715506923cf74517d3670a3b11784014b8e1902909c2bce542fd4198ac99e50b"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/consistency-review.md",
+      "size": 2694,
+      "sha256": "3c10eabe73e0f909b969790900f388c6598a58cfa24d57fbb25d2df89c29968b"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/dark-browser-evidence.json",
+      "size": 682,
+      "sha256": "b777d607fc75e507a9b638a83613bd054ac6ac403f7fc44de84a44ab6275e3ca"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/DELIVERY.md",
+      "size": 3260,
+      "sha256": "272cbabebf9055712ca60b0774526cb23ff5882ed7ac3c0b1905b1580e2b8f77"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/qa-browser.cjs",
+      "size": 8716,
+      "sha256": "2abba680a5011b99f8ea82d0ee05ba6e5204200d4bbcc438dc773e11382dfd35"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/qa-dark.cjs",
+      "size": 2381,
+      "sha256": "055674f5f679336f18620a4ac2e642f61c3f9c35cfcd82705e5ca11fd6a5fba3"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/01-first-identity-390.png",
+      "size": 75855,
+      "sha256": "c20ceb9672c294519845a81721b83ce551ae731f1c8c4688dae1111cded459a6"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/02-required-role-390.png",
+      "size": 77926,
+      "sha256": "362c5879ba4415fc08750d7aa012eee07becdb67a06f76a95d8069ced487affa"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/03-first-details-390.png",
+      "size": 73795,
+      "sha256": "3df7fd6f3abef6d0fbe6e4bc75895591e8cb3c116bd4d09b09b0a1e856ab01a0"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/04-first-concerns-390.png",
+      "size": 88423,
+      "sha256": "dd5cfdec7081ab2044d86d8f021fb2c04cdb4b976c5878d63c608eea22c843cf"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/05-first-recommendations-390.png",
+      "size": 87638,
+      "sha256": "537c82a843cf47f5f0b3a1602e8507b7078322572ec411c861006b8ddb23b326"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/06-first-complete-home-390.png",
+      "size": 110928,
+      "sha256": "ad72ecc1383d885d2de4a9e2f299e1791e62629c27d356c8df3c95485ff00c7d"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/07-first-identity-360.png",
+      "size": 66200,
+      "sha256": "3a810f35c4f8ad9e0b2cde682ae5d5cd304c9d9a41f735aba24d04712f741e2c"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/08-first-details-360.png",
+      "size": 58289,
+      "sha256": "aaf3dc27a0ca20fb062d3b72a0cc675b1e696f191cc54ccfe006b7cbf89870c9"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/09-first-concerns-360.png",
+      "size": 67867,
+      "sha256": "a07345aeb33a2ff3c5cb9359da18302d145346b4395074d237dafbd49e5e8460"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/10-first-recommendations-360.png",
+      "size": 69437,
+      "sha256": "e7622bf05b9768809fe8c80ec55e538db8ca7d273c2927082b88de87af80156d"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/11-first-identity-dark-390.png",
+      "size": 80614,
+      "sha256": "f9870b0d700d1a89d9a7aef9e7f727a892d76ee0e8bdef161af147ae12dfe79c"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/visual-review.md",
+      "size": 3804,
+      "sha256": "04757dd25cb711e593796b2707e687c25fb3bff7881966ae09635fc16b1f2447"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/browser-evidence.json",
+      "size": 7857,
+      "sha256": "57550ee8505c478f491389d5c54bca0d5f0996f0374e3880f237b9aabe92a36e"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/consistency-review.md",
+      "size": 5200,
+      "sha256": "dadfcb7eb2bda48da732991955150df7782272210f0631aab1fdde95d5d8b02f"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/DELIVERY.md",
+      "size": 3411,
+      "sha256": "11f36941b3d6fa2ce457138995ced36e1a7fdd34931d4f5abf3eb7f3a411587d"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/qa-browser.cjs",
+      "size": 11798,
+      "sha256": "8ae4d7a30e65c8713e7c85cf9592d2d623790d0de7c51a3188d66e551c27c2a6"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/01-home-reminder-390.png",
+      "size": 94184,
+      "sha256": "de1017a4fcf56ceed9a21201068d6482c83f3ab104336539be05837106125385"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/02-home-reminder-next-390.png",
+      "size": 94294,
+      "sha256": "f79e4b9dc1245563a2ba5b3fbabd2b7ac272e390deda988efc7c89a9eecf3f8b"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/03-home-sound-on-390.png",
+      "size": 98547,
+      "sha256": "b1aa665c71e700a4f27bc0f7a540d7a7161b84c493bdb17aa9749f9b88b794ac"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/04-records-390.png",
+      "size": 109779,
+      "sha256": "f8bce4989b7a9a827bfb1a8074ed104fd1145b4be268fcf84e35b81804d3b303"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/05-profile-menu-390.png",
+      "size": 56257,
+      "sha256": "92eeededc7575746d4a74b7abb152f7ee28a7c2dee647a34b4ae827012857a72"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/06-chat-today-compact-390.png",
+      "size": 78416,
+      "sha256": "e1864d1067cf55fa82523db28ae5e4a02e8106acb7bbf92848b01c524d8ab838"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/07-chat-today-expanded-390.png",
+      "size": 87079,
+      "sha256": "8a29b6857b73374ee87f279ce3eb20a7494e0fbc04c5485188c7854976144a82"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/08-chat-dark-390.png",
+      "size": 98488,
+      "sha256": "293f5dbb62317dd6dd7d36fa98f04f9d7c5bd68f92441686f5bd8903edf9654e"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/09-home-360.png",
+      "size": 73927,
+      "sha256": "d53729e35e88e0a27afc499a7ae353ec883b36760dc28ae95115a0c639ab2d22"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/10-records-360.png",
+      "size": 91627,
+      "sha256": "958ff0ead8961d6263819eb053a568dd870d57aabb4ff6f29ddb6833b10bec07"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/11-chat-expanded-360.png",
+      "size": 67387,
+      "sha256": "689ed3e2599c85a7a9a2ed7aceb8d0b42655b5198521caaffc4f2c3d01b5ec51"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/11-home-desktop.png",
+      "size": 305464,
+      "sha256": "ee9db4266036d68b77f3b4bed076545e014e47a880da113c2cc2059d7cbc0127"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/12-home-desktop.png",
+      "size": 305480,
+      "sha256": "e0095cbaead06445704d5065f241b0bc3ab2934bd410cc3962e32f35e47d27fb"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/12-records-desktop.png",
+      "size": 322486,
+      "sha256": "1f9f86adae1fda8700f022355e7213f235b679c5e89ec566fe35cea17b5c30fd"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/13-records-desktop.png",
+      "size": 324277,
+      "sha256": "18c1b20ca9730237364036bd84caf8a4aa9c8ca6f7409bfab2ad81e19b71a822"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/visual-review.md",
+      "size": 3788,
+      "sha256": "942f81124721651a8b984ac7c40f5b7a0a8f6b8ab601d95cfd0827be8413f610"
+    },
+    {
+      "path": "delivery-review/visual-review.md",
+      "size": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "design.json",
+      "size": 89923,
+      "sha256": "b58a1a28ec7539c05b98a2608fbaf7397e871d48bb9fe411ffaab4feb4379ec4"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 3403,
+      "sha256": "13f769d1cbb7a89556245c017694db21ec03923f9b24305015fd968c6158bd27"
+    },
+    {
+      "path": "index.html",
+      "size": 10817,
+      "sha256": "0e36f9ac136a5eafc792a3dfe6c6991e625c25207a39ae713642e36381236af3"
+    },
+    {
+      "path": "Momcozy-final.html",
+      "size": 2242101,
+      "sha256": "1b6f3f47621c8cf2bb8b7a6ef8d171d95d9ba880ee4dd624ba44dda528b60d64"
+    },
+    {
+      "path": "preview.cjs",
+      "size": 882,
+      "sha256": "a8415db707f7e5edb0ea9495ec44d255c9c3f8b7a78182a2d533fd06d7fb80ab"
+    },
+    {
+      "path": "README.txt",
+      "size": 3444,
+      "sha256": "8f4de8c79d94e91fd8ab8d560f298da491f605d3f6f6e71f7c3883eb3daba84b"
+    },
+    {
+      "path": "sources/apply-framework-16.cjs",
+      "size": 6567,
+      "sha256": "fa54c7106c115bbca4af9e0dab693f6ab10bb7b371c417c52f203aabfb7c1185"
+    },
+    {
+      "path": "sources/Avatar.jsx",
+      "size": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "sources/first-visit-onboarding-18-requirements.json",
+      "size": 1690,
+      "sha256": "dbf3ccd726507aaa2f10add55c83c6c37d28cb5d6f99219263b991a48d6b0ae2"
+    },
+    {
+      "path": "sources/framework-16-requirements.json",
+      "size": 2760,
+      "sha256": "0d05c15cf4c8b21af12823ef8ae291841dd8ead0667c4894e39392b6bd184818"
+    },
+    {
+      "path": "sources/home-framework-16-reference.png",
+      "size": 101498,
+      "sha256": "86e62c5af1c5028b7db22af4fc4dc56fc940e4f0e3d601babd4b6b4ab12e574a"
+    },
+    {
+      "path": "sources/journal-layout-16-reference.png",
+      "size": 217254,
+      "sha256": "92851b6c50269d360d05aca6c80519c814475334c7d89fb0712ee506a16fe2a4"
+    },
+    {
+      "path": "sources/motion-model.mjs",
+      "size": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "sources/onboarding-berry-ui-19-requirements.json",
+      "size": 1532,
+      "sha256": "d0697ec34d62b77802a9ca40cc91be769462f7229b96fb5aa7bc107323b6735a"
+    },
+    {
+      "path": "sources/refinement-17-requirements.json",
+      "size": 2475,
+      "sha256": "90cafe0983518f84cc01a90b5d3c0d7947285bf5ee397c1668cbe161b5a8c318"
+    },
+    {
+      "path": "sources/relayout-15-requirements.json",
+      "size": 1179,
+      "sha256": "ba8b748b708e7f844115b00e85d9e8bce032ef8c5e4f71fe0a95a8951d521e44"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "sources/revision-14-file-manifest.json",
+      "size": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "sources/revision-14-requirements.json",
+      "size": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "path": "sources/update-design-16.cjs",
+      "size": 11505,
+      "sha256": "bba61efd505d12311b3a50f4537954c226ad159594de85d898a540467716e5e1"
+    },
+    {
+      "path": "sources/update-design-17.cjs",
+      "size": 11373,
+      "sha256": "241ea55c58b1ade5182f78e63fd3b1a172c5b5b3226a129ab78d59dbca048afb"
+    },
+    {
+      "path": "sources/update-design-18.cjs",
+      "size": 4786,
+      "sha256": "77d1e86c8e8acb69dad946e778d79c880971a90be6e467aba21caf6e8f88a09b"
+    },
+    {
+      "path": "sources/update-design-19.cjs",
+      "size": 2866,
+      "sha256": "0322b8f55acbd00636f611852ee041e5a65d46b9f8ef4463586cbfb32fbb6f04"
+    }
+  ]
+}

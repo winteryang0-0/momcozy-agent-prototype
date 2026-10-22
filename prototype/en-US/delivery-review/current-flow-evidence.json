@@ -1,0 +1,180 @@
+{
+  "material": "Momcozy-final.html",
+  "sha256": "c80ab8033318bc3423dcd92d0f6aaceecdebe5949a368ddeaa0972e5a6aacd50",
+  "sourceSha256": "3981fb4699cb9187b982d4bffd7f0387e711be5cd3fbb0796cc17f4b52e74568",
+  "capturedAt": "2026-10-21T13:09:03.620Z",
+  "browser": "155.0.8059.86",
+  "checks": [
+    {
+      "name": "consecutive care cards",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "draft transfer",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "resumed draft saved once",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "background save completes",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "unknown save in historical card",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "same request checked and restored",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "refresh during save is recoverable",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "late intent leaves newer task in place",
+      "route": "#/home",
+      "geometry": {
+        "width": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "dark short screen",
+      "route": "#/home",
+      "geometry": {
+        "width": 360,
+        "overflow": 0
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "three-cards-390",
+      "path": "delivery-review/screenshots/current-three-cards-390.png",
+      "sha256": "6bb1c7619b295e3b0dae45d7e621d42ad16f827e8b6881a4388bec64c5b5c9d6",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:06.640Z",
+      "fullPage": false
+    },
+    {
+      "name": "resumed-draft-390",
+      "path": "delivery-review/screenshots/current-resumed-draft-390.png",
+      "sha256": "5e7287803c243cd4c81b5248c72458c9229ea2cb31782743f324a446c07ce6db",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:06.921Z",
+      "fullPage": false
+    },
+    {
+      "name": "saved-draft-390",
+      "path": "delivery-review/screenshots/current-saved-draft-390.png",
+      "sha256": "269d0aeef76f0cacae15d107bd78e3ce8b2ad37fd631555625a1ac8d79a0f70c",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:08.222Z",
+      "fullPage": false
+    },
+    {
+      "name": "background-save-390",
+      "path": "delivery-review/screenshots/current-background-save-390.png",
+      "sha256": "11915f2718d8d6facd99e0b2803df28319ab86f0b6a7a39e8aa0fdd3f6d2184b",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:10.596Z",
+      "fullPage": false
+    },
+    {
+      "name": "unknown-save-390",
+      "path": "delivery-review/screenshots/current-unknown-save-390.png",
+      "sha256": "b35c272772b7aa9dcf8a6bf2c8ec7baf3bf17c3bac79544a989a0551d30b0ea1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:12.816Z",
+      "fullPage": false
+    },
+    {
+      "name": "dark-360",
+      "path": "delivery-review/screenshots/current-dark-360.png",
+      "sha256": "2807b6d985a53f22aef545415e870447ffea3bf0845f3717afc46cf42f52b798",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "capturedAt": "2026-10-21T13:09:17.038Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

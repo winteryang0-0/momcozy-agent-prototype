@@ -1,0 +1,30 @@
+/* One compact, persistent care entry group above the default 58px composer. */
+#assistant .care-shortcuts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:6px;
+  height:29px;
+  margin:0 0 6px;
+}
+#assistant .care-shortcuts button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  min-width:0;
+  min-height:29px;
+  height:29px;
+  padding:0 4px;
+  border:1px solid var(--divider);
+  border-radius:15px;
+  background:var(--surface);
+  color:var(--action);
+  font-size:11px;
+  line-height:16px;
+  font-weight:650;
+  white-space:nowrap;
+}
+#assistant .care-shortcuts .icon{width:15px;height:15px}
+#assistant .care-shortcuts button[data-care=cry]{background:var(--task-crying-bg);color:var(--task-crying-ink);border-color:var(--task-crying-bg)}
+#assistant .care-shortcuts button[data-care=poop]{background:var(--task-diaper-bg);color:var(--task-diaper-ink);border-color:var(--task-diaper-bg)}
+#assistant .care-shortcuts button:focus-visible{outline:2px solid var(--action);outline-offset:2px;position:relative;z-index:1}

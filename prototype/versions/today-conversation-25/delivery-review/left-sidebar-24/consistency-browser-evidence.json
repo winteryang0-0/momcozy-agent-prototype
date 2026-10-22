@@ -1,0 +1,135 @@
+{
+  "revision": "left-sidebar-24",
+  "reviewer": "independent-consistency",
+  "capturedAt": "2026-10-21T10:52:30.518Z",
+  "captures": [
+    {
+      "name": "standalone-concerns",
+      "html": "Momcozy-final.html",
+      "sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "open": {
+        "order": [
+          "mine",
+          "baby",
+          "cry",
+          "poop",
+          "record"
+        ],
+        "badges": [
+          "cry",
+          "poop"
+        ],
+        "panelLeft": 0,
+        "panelWidth": 320,
+        "appLeft": 0,
+        "appWidth": 390,
+        "backgroundInert": true,
+        "focus": "care-sidebar"
+      },
+      "dismiss": {
+        "hidden": true,
+        "focus": "icon-button main-menu-button",
+        "backgroundInert": false
+      },
+      "mine": {
+        "route": "#/mine",
+        "focus": "<h2 tabindex=\"-1\">我的</h2>"
+      },
+      "records": {
+        "route": "#/records",
+        "ctaVisible": true,
+        "focus": "<h2 tabindex=\"-1\">每个瞬间，各归其位。</h2>"
+      },
+      "create": "记下刚刚的照护",
+      "fromRecordsMine": {
+        "route": "#/mine",
+        "back": "#/records"
+      },
+      "baby": {
+        "sheet": "宝宝资料",
+        "focus": "sheet-title",
+        "route": "#/home",
+        "escapeClosed": true,
+        "nameAfterEscape": "小满"
+      },
+      "cry": {
+        "route": "#/home",
+        "task": "听哭闹准备开始收集一段清晰的哭声，完成后再核对。开始收音取消本次任务",
+        "focus": "<section class=\"task-card care-task-card\" data-category=\"crying\" data-task-id=\"task-1792579938839-wjon\" data-state-id=\"STATE-task-ready\" aria-labelledby=\"task-title-task-1792579938"
+      },
+      "conflict": {
+        "task": "听哭闹准备开始收集一段清晰的哭声，完成后再核对。开始收音取消本次任务",
+        "toast": "先完成或取消当前任务，填写内容会保留。"
+      },
+      "errors": []
+    },
+    {
+      "name": "modular-no-concerns",
+      "html": "index.html",
+      "sha256": "a307d62aab4fc7186490b294de6aa02e7ca6859401fbf14a6af604dc609bce85",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/index.html#/home",
+      "open": {
+        "order": [
+          "mine",
+          "baby",
+          "record",
+          "cry",
+          "poop"
+        ],
+        "badges": [],
+        "panelLeft": 0,
+        "panelWidth": 320,
+        "appLeft": 0,
+        "appWidth": 390,
+        "backgroundInert": true,
+        "focus": "care-sidebar"
+      },
+      "dismiss": {
+        "hidden": true,
+        "focus": "icon-button main-menu-button",
+        "backgroundInert": false
+      },
+      "mine": {
+        "route": "#/mine",
+        "focus": "<h2 tabindex=\"-1\">我的</h2>"
+      },
+      "records": {
+        "route": "#/records",
+        "ctaVisible": true,
+        "focus": "<h2 tabindex=\"-1\">每个瞬间，各归其位。</h2>"
+      },
+      "create": "记下刚刚的照护",
+      "fromRecordsMine": {
+        "route": "#/mine",
+        "back": "#/records"
+      },
+      "baby": {
+        "sheet": "宝宝资料",
+        "focus": "sheet-title",
+        "route": "#/home",
+        "escapeClosed": true,
+        "nameAfterEscape": "小满"
+      },
+      "cry": {
+        "route": "#/home",
+        "task": "听哭闹准备开始收集一段清晰的哭声，完成后再核对。开始收音取消本次任务",
+        "focus": "<section class=\"task-card care-task-card\" data-category=\"crying\" data-task-id=\"task-1792579948556-d8sy\" data-state-id=\"STATE-task-ready\" aria-labelledby=\"task-title-task-1792579948"
+      },
+      "conflict": {
+        "task": "听哭闹准备开始收集一段清晰的哭声，完成后再核对。开始收音取消本次任务",
+        "toast": "先完成或取消当前任务，填写内容会保留。"
+      },
+      "errors": []
+    }
+  ],
+  "freshPoop": {
+    "route": "#/home",
+    "kind": "diaper",
+    "state": "STATE-task-ready",
+    "focus": "task-card care-task-card",
+    "canStart": true,
+    "canCancel": true,
+    "errors": []
+  }
+}

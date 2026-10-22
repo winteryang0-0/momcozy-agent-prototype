@@ -1,0 +1,409 @@
+{
+  "revision": "profile-sections-27",
+  "source_sha256": "329787ff4962845a4636a51353a6fc9f2cdbf33225ad7107bed4418b5a20b7fc",
+  "material_sha256": "7d3bebe5676a09cd3dd2d744fb9b3ae7e31c2844ff702af5aaaccb45afda4676",
+  "browser": {
+    "name": "Google Chrome",
+    "version": "155.0.8059.86",
+    "mode": "headless",
+    "protocol": "file://",
+    "deviceScaleFactor": 2
+  },
+  "checks": [
+    {
+      "name": "sidebar labels",
+      "observed": [
+        {
+          "id": "mine",
+          "text": "我的"
+        },
+        {
+          "id": "baby",
+          "text": "宝宝"
+        }
+      ]
+    },
+    {
+      "name": "sidebar scrim closes and restores focus",
+      "observed": {
+        "hidden": true,
+        "focus": "main-menu-button"
+      }
+    },
+    {
+      "name": "mine to mom records and return",
+      "observed": {
+        "hash": "#/home"
+      }
+    },
+    {
+      "name": "baby edit validation save and refresh",
+      "observed": {
+        "name": "小月",
+        "hash": "#/baby"
+      }
+    },
+    {
+      "name": "baby records create and return",
+      "observed": {
+        "hash": "#/home"
+      }
+    },
+    {
+      "name": "compact centered for changing title and restore",
+      "observed": {
+        "first": {
+          "bar": {
+            "left": 32,
+            "right": 358,
+            "top": 68,
+            "bottom": 110,
+            "width": 326,
+            "height": 42
+          },
+          "title": {
+            "left": 117.5,
+            "right": 272.5,
+            "top": 80.1875,
+            "bottom": 97.8125,
+            "width": 155,
+            "height": 17.625
+          },
+          "chip": {
+            "left": 40,
+            "right": 98.4375,
+            "top": 72,
+            "bottom": 106,
+            "width": 58.4375,
+            "height": 34
+          },
+          "arrow": {
+            "left": 335,
+            "right": 350,
+            "top": 81.5,
+            "bottom": 96.5,
+            "width": 15,
+            "height": 15
+          },
+          "text": "从一件已发生的照护开始",
+          "expanded": "false",
+          "overflow": 0
+        },
+        "third": {
+          "bar": {
+            "left": 32,
+            "right": 358,
+            "top": 68,
+            "bottom": 110,
+            "width": 326,
+            "height": 42
+          },
+          "title": {
+            "left": 117.5,
+            "right": 272.5,
+            "top": 80.1875,
+            "bottom": 97.8125,
+            "width": 155,
+            "height": 17.625
+          },
+          "chip": {
+            "left": 40,
+            "right": 98.4375,
+            "top": 72,
+            "bottom": 106,
+            "width": 58.4375,
+            "height": 34
+          },
+          "arrow": {
+            "left": 335,
+            "right": 350,
+            "top": 81.5,
+            "bottom": 96.5,
+            "width": 15,
+            "height": 15
+          },
+          "text": "也给妈妈留一份照护",
+          "expanded": "false",
+          "overflow": 0
+        }
+      }
+    },
+    {
+      "name": "dark short compact center",
+      "observed": {
+        "bar": {
+          "left": 26,
+          "right": 334,
+          "top": 72,
+          "bottom": 114,
+          "width": 308,
+          "height": 42
+        },
+        "title": {
+          "left": 96,
+          "right": 264,
+          "top": 84.1875,
+          "bottom": 101.8125,
+          "width": 168,
+          "height": 17.625
+        },
+        "chip": {
+          "left": 34,
+          "right": 92.4375,
+          "top": 76,
+          "bottom": 110,
+          "width": 58.4375,
+          "height": 34
+        },
+        "arrow": {
+          "left": 311,
+          "right": 326,
+          "top": 85.5,
+          "bottom": 100.5,
+          "width": 15,
+          "height": 15
+        },
+        "text": "从一件已发生的照护开始",
+        "expanded": "false",
+        "overflow": 0
+      }
+    },
+    {
+      "name": "desktop compact center",
+      "observed": {
+        "bar": {
+          "left": 742.203125,
+          "right": 1106.203125,
+          "top": 151,
+          "bottom": 193,
+          "width": 364,
+          "height": 42
+        },
+        "title": {
+          "left": 837.203125,
+          "right": 1011.203125,
+          "top": 163.1875,
+          "bottom": 180.8125,
+          "width": 174,
+          "height": 17.625
+        },
+        "chip": {
+          "left": 750.203125,
+          "right": 808.640625,
+          "top": 155,
+          "bottom": 189,
+          "width": 58.4375,
+          "height": 34
+        },
+        "arrow": {
+          "left": 1083.203125,
+          "right": 1098.203125,
+          "top": 164.5,
+          "bottom": 179.5,
+          "width": 15,
+          "height": 15
+        },
+        "text": "从一件已发生的照护开始",
+        "expanded": "false",
+        "overflow": 0
+      }
+    },
+    {
+      "name": "modular file route and sidebar",
+      "observed": {
+        "hash": "#/home"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-sidebar-light-390",
+      "note": "明亮侧栏仅有我的和宝宝",
+      "path": "delivery-review/profile-sections-27/screenshots/01-sidebar-light-390.png",
+      "sha256": "e0e5f7f4f7afe81ac92f5478d65a777a5bb7286abe7fc8336501f161e3a64967",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:42:58.997Z"
+    },
+    {
+      "name": "02-mine-light-390",
+      "note": "我的独立页面及记录入口",
+      "path": "delivery-review/profile-sections-27/screenshots/02-mine-light-390.png",
+      "sha256": "cebc9e5763f47f59a4c3e316cae64dc9fb1b6d40a3a3df31690669750a065ec6",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/mine",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:00.430Z"
+    },
+    {
+      "name": "03-mom-records-390",
+      "note": "从我的进入妈妈记录，保留新建",
+      "path": "delivery-review/profile-sections-27/screenshots/03-mom-records-390.png",
+      "sha256": "1a2b1eeef6b9eab772b8facb278d8b71deb4fe257995a695388bff65ae2b9df5",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:01.017Z"
+    },
+    {
+      "name": "04-baby-light-390",
+      "note": "宝宝与我的同层级页面",
+      "path": "delivery-review/profile-sections-27/screenshots/04-baby-light-390.png",
+      "sha256": "dfd2db890d23974ae7ce0615148a92451297698278d694ea3605d2d3f5901a59",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/baby",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:03.049Z"
+    },
+    {
+      "name": "05-baby-records-390",
+      "note": "宝宝当日记录保留新建",
+      "path": "delivery-review/profile-sections-27/screenshots/05-baby-records-390.png",
+      "sha256": "250c01761ffd5bb3945005fdb55d55b37b3e119249344b27b7fa242859e83386",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:05.636Z"
+    },
+    {
+      "name": "06-compact-light-390",
+      "note": "Today 缩略条标题在整体中间",
+      "path": "delivery-review/profile-sections-27/screenshots/06-compact-light-390.png",
+      "sha256": "e6e195804c50cf50ca13d971202a9318c69e5c57fe32eb16cc64df440ba3dd00",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:08.944Z"
+    },
+    {
+      "name": "07-sidebar-dark-360",
+      "note": "夜间短屏双入口侧栏",
+      "path": "delivery-review/profile-sections-27/screenshots/07-sidebar-dark-360.png",
+      "sha256": "ae83c37801cc9732e882675673a4858bf6a46096bba0cda506e5fb1e0d5b4fe6",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:10.480Z"
+    },
+    {
+      "name": "08-compact-dark-360",
+      "note": "夜间短屏 Today 折叠标题居中",
+      "path": "delivery-review/profile-sections-27/screenshots/08-compact-dark-360.png",
+      "sha256": "1c890a597fdbd775c6b4a1aab1a5cfb286723a03aa25ded50f6d1c6af1de0055",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:11.415Z"
+    },
+    {
+      "name": "09-baby-dark-360",
+      "note": "夜间短屏宝宝页",
+      "path": "delivery-review/profile-sections-27/screenshots/09-baby-dark-360.png",
+      "sha256": "f6ba550cc733cb5e0de205b41dd7c9cef7b66963d147e2f9be07672626e8ffc8",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/baby",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:12.846Z"
+    },
+    {
+      "name": "10-sidebar-desktop",
+      "note": "桌面视口侧栏",
+      "path": "delivery-review/profile-sections-27/screenshots/10-sidebar-desktop.png",
+      "sha256": "f2d3d998be6fbc1eeec2beb0a41c7595ea189231572c4567f3b7093a0f256524",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "image_pixels": {
+        "width": 2560,
+        "height": 1440
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:14.363Z"
+    },
+    {
+      "name": "11-compact-desktop",
+      "note": "桌面 Today 缩略条居中",
+      "path": "delivery-review/profile-sections-27/screenshots/11-compact-desktop.png",
+      "sha256": "1400be1666b324e12733b9a45aa3c0c4330d7b4c602b09bd75f8313cb4413fbf",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "image_pixels": {
+        "width": 2560,
+        "height": 1440
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T14:43:15.628Z"
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

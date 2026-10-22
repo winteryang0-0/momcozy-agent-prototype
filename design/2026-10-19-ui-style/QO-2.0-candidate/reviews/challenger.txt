@@ -1,0 +1,73 @@
+QO-2.0 独立挑战复核
+评审者：/root/style_challenger
+日期：2026-10-19
+对象：风格候选与 HTML 实验室，不是最终 App。
+
+结论
+收尾复核：C01–C06全部已在当前源码中修正。已查看的最新6张截图中，关键状态文字变大，状态与操作可读，未见关键内容或动作遮挡。可供用户确认风格候选；无需重做整体视觉方向。当前不是冻结通过，也不是原生验收或用户验证结论。两张窄屏截图已再次实际查看完整viewport版本，先前的右缘裁剪问题已关闭。
+
+收尾复核覆盖与闭环（2026-10-19）
+再次只读核对assets/app.js、assets/style.css、STYLE_SPEC.txt相关规范映射、design.json状态/流程；读取reviews/runtime.json。再次用view_image逐张查看原列出的5张最新截图，并新增实际查看mobile-360-android-dark.png，共6张；未查看其余矩阵截图。
+C01已闭环（代码）：active显式使用var(--press)，按压80ms；默认释放180ms var(--release)。
+C02已闭环（代码）：Android active取消transform，仅保留示例ripple。
+C03已闭环（代码+截图）：状态标题16px，iOS说明15px，Android说明14px；删除quiet-note展示腾出空间。六张图中说明更清晰，长未知说明正常换行，未压住操作层。
+C04已闭环（代码+截图）：unknown/local/syncFailed/syncing/checking文案明确核验/同步后编辑；已查看unknown与syncFailed截图可见对应说明。此规则仍仅为实验室暂定约束，不批准为正式业务策略。
+C05已闭环（代码+机器规范）：独立checking状态，DEMO-UNKNOWN为unknown -> checking -> synced；请求中控件禁用与aria-busy纳入checking。
+C06已闭环（代码）：state曲线台仅对motionTile内span图标调用animate，文本保持稳定；实际任务状态仍仅动画statusSymbol。
+
+执行证据分层
+runtime.json时间2026-10-19T10:50:01.040Z，23项检查pass=true且allPass=true；记录含编辑应用/取消、保存失败重试、未知核验、同步恢复、重置在途任务、五曲线控制及慢放显示、减少动态终态、不透明/高对比回退、390/360无横向溢出。该文件由主代理执行产生，本评审读取并检查记录边界，未独立运行浏览器复现。曲线控制结果不证明原生帧时间；辅助模式记录不代替本评审未查看的模式截图。32张矩阵图的生成数量不等于32张都由本评审实际视觉检查。
+
+截图证据最终复核
+再次仅用view_image实际查看重新导出的mobile-390-ios-light.png与mobile-360-android-dark.png完整viewport截图。两图的手机左右外框、右上样张说明、底部模拟说明均完整，关键状态文字与操作仍清楚，先前裁剪问题关闭；未因此扩大其它检查。没有发现需重做方向或阻止风格候选确认的重大问题。
+
+以下为首轮发现与原始审查记录；C01–C06状态以上述收尾结论为准，保留原问题用于追溯。
+
+覆盖与方法
+规范审查：STYLE_SPEC.txt、design.json、assets/app.js、assets/style.css；对照此前已读的 QO-1.0 design-input.json 与 DESIGN_INPUT.txt。
+截图审查：使用 view_image 实际逐张查看且仅查看以下5张：
+1. matrix-ios-light-review.png：iOS/亮色/未保存。
+2. matrix-ios-dark-unknown.png：iOS/暗色/保存结果未知。
+3. matrix-android-light-syncFailed.png：Android/亮色/同步失败但本地已保存。
+4. matrix-android-dark-synced.png：Android/暗色/已保存且已同步。
+5. mobile-390-ios-light.png：390 CSS px视口中的iOS/亮色/未保存样张。
+本轮未操作浏览器，未执行交互，未查看其它截图；主代理所述交互运行不计作本评审亲自执行的证据。未独立检查高对比/不透明/减少动态实际截图、360窄屏、大字号、读屏、原生材质/系统手势/触感、真实性能或真实业务API。
+
+策略修正落实
+已落实：保存/同步两个轴、同步失败保留“已在本地保存”语义、未知先核验、独立深色角色、辅助设置优先级、Android48dp候选、现代化可观察变化、动效属性/幅度/中断说明、正式实现与HTML模拟边界。
+部分落实：编辑禁用理由、候选排版与样张映射、按压曲线实际绑定、Android按压适配。详见发现。
+
+发现与最少修正
+C01 / P2 / 实现-规范不一致：实际按压曲线仍为release。
+定位：style.css 的 button 定义 transform 180ms var(--release)，button:active仅改 transition-duration:80ms，没有覆盖 transform 的 timing-function。因此实际按下使用80ms release(.2,.8,.2,1)，与文档/JSON/曲线台 press(.2,0,0,1)不一致。
+修正：active 状态显式绑定80ms var(--press)，抬起保留180ms var(--release)。验证 computed transitionTimingFunction 与一次实际按压/释放。
+
+C02 / P2 / 平台适配不一致：Android样张同时缩放与ripple。
+定位：全局 button:active scale(.98)覆盖Android手机按钮；app.js又在Android pointerdown添加ripple。STYLE_SPEC 06明确Android标准组件不叠加自定义缩放。
+修正：Android样张的phone按钮按压取消scale，仅保留本地示例ripple；曲线台可继续演示跨端自定义控件曲线。原生反馈仍需原生实现，不因HTML修正宣称原生验收。
+
+C03 / P2 / 关键说明偏小且规范映射不透明。
+定位：style.css 的feedback strong为14px、feedback p为12px，reassurance为12px；STYLE_SPEC给iOS说明15/21pt、Android14/20sp。五张图中的状态恢复说明明显比字段与动作文字细小，尤其390样张；这是关键任务信息，不宜全部视作元数据。
+修正：状态标题建议16px，状态帮助文案至少14px（iOS候选可15px），明确HTML到平台排版的展示映射；重新检查长同步失败说明是否推动布局但不与底部操作层重叠。字号属于设计判断，不是本轮可访问性不合规认定。
+
+C04 / P2 / Edit禁用原因不够明确。
+定位：app.js在unknown/local/syncFailed等状态禁用Edit；现有状态说明只要求核验或说明同步情况，没有解释编辑为何不可用、如何恢复。STYLE_SPEC承诺“按钮不可用必须同时让原因可见”。对应暗色unknown与亮色syncFailed截图中Edit只变灰，仍保留“You can update this later.”。
+修正：为这些实验状态提供一句明确说明，例如先核验/完成同步再编辑；或在实验室说明区明确这是未定义冲突规则下的临时禁用。不要将候选实验约束包装成正式业务限制。
+
+C05 / P3 / 机器规范中的未知核验与再次保存语义混用。
+定位：design.json DEMO-UNKNOWN为unknown -> saving -> synced；app.js先showState('saving')再手改为Checking save status。因此可见文案正确，但data-state/机器流程看起来像再次保存。
+建议：新增checking状态或为复用处理态明确operation=check，保持文案、状态ID、流程一致。属于机器规范可读性问题，不是已证明实际重复提交（此处无真实API）。
+
+C06 / P3 / state曲线台作用对象与规范不一致。
+定位：app.js实际状态更新仅动画statusSymbol，符合文档；但curve=state时将opacity .55→1应用于整个motionTile，连示例文字一起淡入。文案说“图标淡入，关键状态文字立即更新”。
+建议：curve=state仅对演示图标应用淡入；或明确曲线台是通用曲线示意，但不宜用关键文字淡入示范与规范相反行为。
+
+截图视觉观察
+四张状态截图的内容卡、数量/单位、时间、状态区、主次动作均完整，未见遮挡或文本裁切。390截图仍可辨识主要任务，未见水平截断。莓红主动作权重明确，Edit维持文字次操作；状态并非只靠颜色，未知使用问号/文字，完成使用勾/文字，同步失败仍写明本地已保存。暗色主要文字与面层分工清楚，未见将日间背景简单反相。
+非阻断建议：quiet-note“Small steps. A clearer day.”和装饰标记占用部分垂直空间。若增大关键状态说明导致拥挤，优先缩减这处装饰，而非缩小状态说明。iOS玻璃感在静态截图中较克制，这是可读性取舍；截图无法证明或否定真实Liquid Glass表现。
+
+确认建议与边界
+本次可向用户确认的是温暖有序的现代化方向、亮暗配色、平台分层原则、状态文字语义与候选自定义动效参数。交付前修正C01–C04并提供主代理的最新运行/截图记录；C05–C06建议同步修正以避免规范误读。
+本评审不能声明完整UI通过、原生Liquid Glass通过、Android原生反馈通过、可访问性合规、用户验证或最终产品框架已冻结。后续修复是否闭环，以复核的实际文件与证据为准。
+
+收尾确认建议：上述六项已按证据层级闭环，可供用户确认本风格候选；保留所有原生/真实业务/完整可访问性边界。用户确认与冻结动作仍由主代理按项目流程处理。

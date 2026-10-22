@@ -1,0 +1,320 @@
+{
+  "revision": "conversation-care-cards-20",
+  "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+  "modular_sha256": "af54c0092ef9ec3f22ff3e57cd8f06567fa4d73af5b23672e7067ce859f72fa4",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "operator": "Playwright Chrome headless; fake OS media devices for capture",
+  "captured_at": "2026-10-21T04:06:25.465Z",
+  "checks": [
+    "record picker, edit, save motion and persisted receipt",
+    "save failure preserves draft and retry uses same request",
+    "unknown save result can be checked without duplicate record",
+    "narrow and dark card layout with reachable actions; reduced-motion static character",
+    "saved conversation receipts survive refresh; history characters are static",
+    "home to journal and secondary profile menu remain reachable",
+    "preview settings match real card capture and plus menu keeps two choices",
+    "direct microphone capture, playback and honest no-result state",
+    "direct camera capture, photo review and no fabricated analysis",
+    "camera recapture can be cancelled and releases the media stream",
+    "microphone denial and unsupported browser have distinct retry guidance without an in-app permission confirmation",
+    "leaving an active recording releases microphone and returns to a restartable card",
+    "refresh during recording preserves the conversation and requires a fresh capture",
+    "short screen can scroll camera shutter above fixed composer",
+    "leaving an active camera releases video and returns to a restartable card",
+    "refresh during camera preview preserves the conversation and requires a fresh photo",
+    "camera denial and unsupported browser have distinct retry guidance without an in-app permission confirmation",
+    "modular index.html also opens directly with file:// and browser microphone capture"
+  ],
+  "screenshots": [
+    {
+      "name": "01-record-picker-390",
+      "note": "record type picker, berry spacing",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/01-record-picker-390.png",
+      "sha256": "43ba014d6ac874198c06bed232aadd5468509cb9d55144a0615501f0c9162dec",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:05.492Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-record-editing-390",
+      "note": "inline record form",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/02-record-editing-390.png",
+      "sha256": "ea6d84be851409ed024602606cf2109e60e1fe98959206375c093e39f7e07665",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:05.789Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-record-saving-390",
+      "note": "saving with character motion",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/03-record-saving-390.png",
+      "sha256": "16c8fc41b8a52172a1d2d5e16b25f2f3e642732a2c4250e67ec93a08b5e44a38",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:06.060Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-record-saved-390",
+      "note": "saved receipt with character",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/04-record-saved-390.png",
+      "sha256": "eb61884c1f70cbf98e742d43f4c09781f1d1ed9089649bceb3155279dddab5cf",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:06.995Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-record-failed-390",
+      "note": "save failure and retry",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/05-record-failed-390.png",
+      "sha256": "e66f067186a4550f7058ea487e847f7103b8e278f292c82facaa210fd6cb675b",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:08.304Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-record-unknown-390",
+      "note": "unknown save outcome with check action",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/06-record-unknown-390.png",
+      "sha256": "fa0ea4e665cc83d96dff350d198218dc0286e0c2170530b17bf4a3336a32b240",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:10.511Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-record-saved-360",
+      "note": "short narrow viewport",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/07-record-saved-360.png",
+      "sha256": "c0e61748f1f5de5c38859fcbb4c3ecfe9e1ddef734eef17491a8255542584a78",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:10.783Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-record-saved-dark-360",
+      "note": "dark berry care card",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/08-record-saved-dark-360.png",
+      "sha256": "6befe05afff69c322bc6b89a40acfaee9c6b091b409d3d0f9066516cb67c6a59",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:10.999Z",
+      "fullPage": false
+    },
+    {
+      "name": "08b-record-saved-dark-action-360",
+      "note": "dark short-screen follow-up actions remain reachable",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/08b-record-saved-dark-action-360.png",
+      "sha256": "d55b27d959c539e8622500d51b3e80f55d5b46c03661537f115f3b00089a044c",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:11.263Z",
+      "fullPage": false
+    },
+    {
+      "name": "09-cry-listening-390",
+      "note": "browser microphone active, no app permission step",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/09-cry-listening-390.png",
+      "sha256": "82b44ecf95cb2d8c4ed8acb5c44d7547a8189ea2dc3493c3bc0017c405188baa",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:13.322Z",
+      "fullPage": false
+    },
+    {
+      "name": "10-cry-captured-390",
+      "note": "captured audio preview",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/10-cry-captured-390.png",
+      "sha256": "5e0549bb1a0f0a5966bf58962e2d7cf11e65a5fd93a7ed7053ff88e7e3896cea",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:14.561Z",
+      "fullPage": false
+    },
+    {
+      "name": "11-photo-camera-390",
+      "note": "browser camera preview",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/11-photo-camera-390.png",
+      "sha256": "f9671e6911151dff6307c716fe9d10940300ef3edb80d93916acf35d02fbe5b2",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:16.922Z",
+      "fullPage": false
+    },
+    {
+      "name": "12-photo-captured-390",
+      "note": "photo preview after shutter",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/12-photo-captured-390.png",
+      "sha256": "7d89f64584d0b9ad26bec6c99f61b6896758b8ffa76feb4aa25c00ca1fab98fa",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:17.226Z",
+      "fullPage": false
+    },
+    {
+      "name": "13-device-denied-390",
+      "note": "browser device denial recovery",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/13-device-denied-390.png",
+      "sha256": "366d97893d9a6f0fe8658295a942a9188c8812becb3ae6e1df64e8f63c4c8913",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:20.103Z",
+      "fullPage": false
+    },
+    {
+      "name": "14-short-camera-action-360",
+      "note": "camera shutter remains reachable above composer on a short screen",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/14-short-camera-action-360.png",
+      "sha256": "b96954c5cf94d0d95df7d1d0b9b421de4ed0d4bc64ef98d13ce071c303fca294",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:22.804Z",
+      "fullPage": false
+    },
+    {
+      "name": "15-camera-denied-390",
+      "note": "camera denial keeps an actionable retry in the same card",
+      "path": "delivery-review/conversation-care-cards-20/screenshots/15-camera-denied-390.png",
+      "sha256": "b00bf72141e9f6902b9dcb358a1827cd5a019b7c3c18bc98fb047639ba6ae4fb",
+      "material_sha256": "6d2cb001077c321ba8289e098cd87541797d59eef6974a4a4b796c586bf1e7d8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-21T04:06:24.777Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

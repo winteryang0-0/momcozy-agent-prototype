@@ -1,0 +1,478 @@
+{
+  "revision": "today-card-26",
+  "source_sha256": "6f9569ecc10766298173904734bb52198acc0fe5953379a4c722973dd4d9df90",
+  "material_sha256": "9b58981c227ccfca64341e3fc5e4c586b628e8f0c09ae808380a7f873d4660c0",
+  "checks": [
+    {
+      "name": "welcome card pager and removed controls",
+      "observed": {
+        "host": {
+          "left": 26,
+          "right": 364,
+          "top": 284.625,
+          "bottom": 421.625,
+          "width": 338,
+          "height": 137
+        },
+        "card": {
+          "left": 26,
+          "right": 364,
+          "top": 284.625,
+          "bottom": 421.625,
+          "width": 338,
+          "height": 137
+        },
+        "controls": {
+          "left": 44,
+          "right": 346,
+          "top": 375.625,
+          "bottom": 403.625,
+          "width": 302,
+          "height": 28
+        },
+        "dots": {
+          "left": 144,
+          "right": 246,
+          "top": 375.625,
+          "bottom": 403.625,
+          "width": 102,
+          "height": 28
+        },
+        "cardChildren": [
+          {
+            "className": "advice-card-main",
+            "left": 44,
+            "right": 346,
+            "top": 302.625,
+            "bottom": 367.625,
+            "width": 302,
+            "height": 65
+          },
+          {
+            "className": "advice-controls",
+            "left": 44,
+            "right": 346,
+            "top": 375.625,
+            "bottom": 403.625,
+            "width": 302,
+            "height": 28
+          }
+        ],
+        "visibleDots": 3,
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "welcome native touch wraps both directions and ignores vertical gesture",
+      "observed": {
+        "selected": 2
+      }
+    },
+    {
+      "name": "keyboard wraps and focus follows selected indicator",
+      "observed": {
+        "selected": 0
+      }
+    },
+    {
+      "name": "simple sidebar and record creation",
+      "observed": {
+        "labels": [
+          "我的",
+          "宝宝",
+          "当日记录"
+        ],
+        "newRecordOpen": true
+      }
+    },
+    {
+      "name": "mine and baby sidebar entries",
+      "observed": {
+        "route": "#/home",
+        "babySheetClosed": true
+      }
+    },
+    {
+      "name": "baby profile save reopens with current value and sidebar stays simple",
+      "observed": {
+        "baby": "小月",
+        "sidebarLabels": [
+          "我的",
+          "宝宝",
+          "当日记录"
+        ]
+      }
+    },
+    {
+      "name": "expanded card layout, cycle, collapse and restore",
+      "observed": {
+        "geometry": {
+          "host": {
+            "left": 37,
+            "right": 353,
+            "top": 110,
+            "bottom": 210,
+            "width": 316,
+            "height": 100
+          },
+          "card": {
+            "left": 37,
+            "right": 353,
+            "top": 120,
+            "bottom": 210,
+            "width": 316,
+            "height": 90
+          },
+          "controls": {
+            "left": 37,
+            "right": 353,
+            "top": 182,
+            "bottom": 210,
+            "width": 316,
+            "height": 28
+          },
+          "dots": {
+            "left": 144,
+            "right": 246,
+            "top": 182,
+            "bottom": 210,
+            "width": 102,
+            "height": 28
+          },
+          "cardChildren": [
+            {
+              "className": "advice-card-heading",
+              "left": 37,
+              "right": 353,
+              "top": 120,
+              "bottom": 152,
+              "width": 316,
+              "height": 32
+            },
+            {
+              "className": "advice-reason",
+              "left": 37,
+              "right": 353,
+              "top": 159,
+              "bottom": 177,
+              "width": 316,
+              "height": 18
+            },
+            {
+              "className": "advice-controls",
+              "left": 37,
+              "right": 353,
+              "top": 182,
+              "bottom": 210,
+              "width": 316,
+              "height": 28
+            }
+          ],
+          "visibleDots": 3,
+          "horizontalOverflow": 0
+        },
+        "restored": 2
+      }
+    },
+    {
+      "name": "dark short screen and vertical gesture",
+      "observed": {
+        "layout": {
+          "headHeight": 155,
+          "chatHeight": 235,
+          "composerVisible": true
+        },
+        "geometry": {
+          "host": {
+            "left": 31,
+            "right": 329,
+            "top": 153,
+            "bottom": 250,
+            "width": 298,
+            "height": 97
+          },
+          "card": {
+            "left": 31,
+            "right": 329,
+            "top": 163,
+            "bottom": 250,
+            "width": 298,
+            "height": 87
+          },
+          "controls": {
+            "left": 31,
+            "right": 329,
+            "top": 222,
+            "bottom": 250,
+            "width": 298,
+            "height": 28
+          },
+          "dots": {
+            "left": 129,
+            "right": 231,
+            "top": 222,
+            "bottom": 250,
+            "width": 102,
+            "height": 28
+          },
+          "cardChildren": [
+            {
+              "className": "advice-card-heading",
+              "left": 31,
+              "right": 329,
+              "top": 163,
+              "bottom": 195,
+              "width": 298,
+              "height": 32
+            },
+            {
+              "className": "advice-reason",
+              "left": 31,
+              "right": 329,
+              "top": 202,
+              "bottom": 219,
+              "width": 298,
+              "height": 17
+            },
+            {
+              "className": "advice-controls",
+              "left": 31,
+              "right": 329,
+              "top": 222,
+              "bottom": 250,
+              "width": 298,
+              "height": 28
+            }
+          ],
+          "visibleDots": 3,
+          "horizontalOverflow": 0
+        }
+      }
+    },
+    {
+      "name": "desktop sidebar and Escape focus return",
+      "observed": {
+        "width": 320,
+        "left": 1,
+        "visibleLabels": "我的\n宝宝\n当日记录",
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "desktop and record task regression",
+      "observed": {
+        "taskCards": 1
+      }
+    },
+    {
+      "name": "sidebar focus trap, close button and scrim focus return",
+      "observed": {
+        "closed": true,
+        "focus": "main-menu-button"
+      }
+    },
+    {
+      "name": "modular file entry",
+      "observed": {
+        "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/index.html#/home"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-welcome-390",
+      "note": "欢迎态卡片，三枚页码点在底部居中",
+      "path": "delivery-review/today-card-26/screenshots/01-welcome-390.png",
+      "sha256": "789781b2b8b3b8efd73c3ff461843ec0b0ab17610ab029097a1bd31dcd75dd57",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:43.053Z"
+    },
+    {
+      "name": "02-welcome-third-390",
+      "note": "点选第三条提醒",
+      "path": "delivery-review/today-card-26/screenshots/02-welcome-third-390.png",
+      "sha256": "08810ffde82bc5199ff311684e2159100d6cd7f2b6c39ee5d97692c93453463e",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:43.554Z"
+    },
+    {
+      "name": "09-sidebar-390",
+      "note": "侧栏仅保留我的、宝宝和当日记录",
+      "path": "delivery-review/today-card-26/screenshots/09-sidebar-390.png",
+      "sha256": "7b6f5e1da1b38d2799e4ce7d30edaa897b2db42527a420545e81aaf64ca4e2d1",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:45.558Z"
+    },
+    {
+      "name": "03-expanded-390",
+      "note": "对话后展开的 Today 单层卡片",
+      "path": "delivery-review/today-card-26/screenshots/03-expanded-390.png",
+      "sha256": "bc80bd83d90a701f8b0976b500bfa6d63af1a7d43ccdd2166ea2b545679bde44",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:54.250Z"
+    },
+    {
+      "name": "04-expanded-third-390",
+      "note": "悬浮卡双向循环后的第三条提醒",
+      "path": "delivery-review/today-card-26/screenshots/04-expanded-third-390.png",
+      "sha256": "9c469e3c4e32a898b4f3f784d759f1696b918eafe4065f063199094780a3e0a1",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 780,
+        "height": 1688
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:55.213Z"
+    },
+    {
+      "name": "05-welcome-dark-360",
+      "note": "夜间短屏欢迎态 Today 卡片",
+      "path": "delivery-review/today-card-26/screenshots/05-welcome-dark-360.png",
+      "sha256": "ff629f706db9492cd1d218a4e80ef0db24c5909f6bc9d74a155e5e7d356d928c",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:56.350Z"
+    },
+    {
+      "name": "10-sidebar-dark-360",
+      "note": "夜间短屏精简侧栏",
+      "path": "delivery-review/today-card-26/screenshots/10-sidebar-dark-360.png",
+      "sha256": "222ad2ef7901e0218ff0fb734f83643f92a7185a5c620695992b0675603bb8d2",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:57.231Z"
+    },
+    {
+      "name": "06-expanded-dark-360",
+      "note": "夜间短屏悬浮 Today 展开卡片",
+      "path": "delivery-review/today-card-26/screenshots/06-expanded-dark-360.png",
+      "sha256": "cd48916e8279d8e207d9dc4d56d0985537d85f4cb526f8a795fff4085c7bf668",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 720,
+        "height": 1280
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:46:58.205Z"
+    },
+    {
+      "name": "07-welcome-desktop",
+      "note": "桌面布局中的 Today 欢迎态卡片",
+      "path": "delivery-review/today-card-26/screenshots/07-welcome-desktop.png",
+      "sha256": "7d3d25c652617558fdab7097f3407bb66485052dadcb0cccd85a26036f570d59",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "image_pixels": {
+        "width": 2560,
+        "height": 1440
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:47:00.358Z"
+    },
+    {
+      "name": "11-sidebar-desktop",
+      "note": "桌面视口精简侧栏",
+      "path": "delivery-review/today-card-26/screenshots/11-sidebar-desktop.png",
+      "sha256": "85935844bb48b4085849696988da1aaa763d2b2a1581b8ec7491ad64720116ff",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "image_pixels": {
+        "width": 2560,
+        "height": 1440
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:47:01.645Z"
+    },
+    {
+      "name": "08-expanded-desktop",
+      "note": "桌面布局中的悬浮 Today 卡片及记录任务",
+      "path": "delivery-review/today-card-26/screenshots/08-expanded-desktop.png",
+      "sha256": "e2b4dfee701a550a382974cd69dea3fbd0894e4332ceea547243017ba14b157e",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "image_pixels": {
+        "width": 2560,
+        "height": 1440
+      },
+      "fullPage": false,
+      "captured_at": "2026-10-21T13:47:03.113Z"
+    }
+  ],
+  "errors": [],
+  "browser": {
+    "name": "Google Chrome",
+    "version": "155.0.8059.86",
+    "mode": "headless",
+    "protocol": "file://",
+    "deviceScaleFactor": 2
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "revision": "final-revision-14",
+  "date": "2026-10-20",
+  "state": "revision-complete-scoped-runtime-verified",
+  "authorization_source": "sources/revision-14-requirements.json",
+  "baseline": {
+    "path": "baselines/HOME-0.1",
+    "role": "unchanged-historical-snapshot",
+    "formal_baseline_id": null,
+    "freeze_performed": false
+  },
+  "scope_requirement_ids": [
+    "R14-U01",
+    "R14-U02",
+    "R14-U03",
+    "R14-U04",
+    "R14-U05",
+    "R14-F01",
+    "R14-F02",
+    "R14-F03",
+    "R14-F04",
+    "R14-F05",
+    "R14-H01",
+    "R14-H02",
+    "R14-H03",
+    "R14-H04",
+    "R14-H05",
+    "R14-H06",
+    "R14-H07"
+  ],
+  "change_groups": [
+    {
+      "id": "CH14-icons",
+      "requirements": [
+        "R14-U01"
+      ],
+      "files": [
+        "assets/icons.js",
+        "assets/app.js",
+        "assets/style.css"
+      ],
+      "description": "语义图标与录入排布，保留既有四步和滚轮规则"
+    },
+    {
+      "id": "CH14-timeline",
+      "requirements": [
+        "R14-U02",
+        "R14-F05"
+      ],
+      "files": [
+        "assets/app.js",
+        "assets/style.css"
+      ],
+      "description": "消息与专项任务按对话顺序渲染，任务状态原卡片更新"
+    },
+    {
+      "id": "CH14-inline-record",
+      "requirements": [
+        "R14-U03",
+        "R14-U04"
+      ],
+      "files": [
+        "assets/app.js",
+        "assets/style.css"
+      ],
+      "description": "会话内独立记一笔草稿与请求；共享成功日志，不共享未提交全局草稿"
+    },
+    {
+      "id": "CH14-audit-fixes",
+      "requirements": [
+        "R14-F01",
+        "R14-F02",
+        "R14-F03",
+        "R14-F04"
+      ],
+      "files": [
+        "assets/app.js"
+      ],
+      "description": "资料一致性、隐藏宝宝校验、删除请求竞争处理"
+    },
+    {
+      "id": "CH14-ledger",
+      "requirements": [
+        "R14-U05"
+      ],
+      "files": [
+        "design.json",
+        "IMPLEMENTATION.txt",
+        "README.txt",
+        "sources/revision-14-requirements.json"
+      ],
+      "description": "修复过时说明，建立本轮真实授权与验收映射，不改历史来源或批准记录"
+    },
+    {
+      "id": "CH14-export",
+      "requirements": [
+        "R14-U05"
+      ],
+      "files": [
+        "Momcozy-final.html"
+      ],
+      "description": "由当前资源生成自包含 HTML；结果以实际导出和验证记录为准"
+    }
+  ],
+  "audit_findings": [
+    {
+      "id": "F01",
+      "original": "reviews/final-audit-13/findings.json#F01",
+      "status": "resolved-scoped-runtime-and-independent-code-review",
+      "closure_authority": "本轮独立复核与实际运行证据",
+      "evidence": [
+        "runtime-checks.json#F01",
+        "interaction-review.json"
+      ]
+    },
+    {
+      "id": "F02",
+      "original": "reviews/final-audit-13/findings.json#F02",
+      "status": "resolved-scoped-runtime-and-independent-code-review",
+      "closure_authority": "本轮独立复核与实际运行证据",
+      "evidence": [
+        "runtime-checks.json#F02",
+        "interaction-review.json"
+      ]
+    },
+    {
+      "id": "F03",
+      "original": "reviews/final-audit-13/findings.json#F03",
+      "status": "resolved-scoped-runtime-and-independent-code-review",
+      "closure_authority": "本轮独立复核与实际运行证据",
+      "evidence": [
+        "runtime-checks.json#F03",
+        "interaction-review.json"
+      ]
+    },
+    {
+      "id": "F04",
+      "original": "reviews/final-audit-13/findings.json#F04",
+      "status": "resolved-scoped-runtime-and-independent-code-review",
+      "closure_authority": "本轮独立复核与实际运行证据",
+      "evidence": [
+        "runtime-checks.json#F04",
+        "interaction-review.json"
+      ]
+    },
+    {
+      "id": "F05",
+      "original": "reviews/final-audit-13/findings.json#F05",
+      "status": "resolved-scoped-runtime-and-independent-code-review",
+      "closure_authority": "本轮独立复核与实际运行证据",
+      "evidence": [
+        "runtime-checks.json#F05",
+        "interaction-review.json"
+      ]
+    }
+  ],
+  "validation": {
+    "manifest": "design.json",
+    "test_descriptions": [
+      "T14-icons",
+      "T14-onboarding",
+      "T14-stage-preservation",
+      "T14-birthday-consistency",
+      "T14-hidden-baby",
+      "T14-deleted-unknown",
+      "T14-task-timeline",
+      "T14-inline-isolation",
+      "T14-record-menu",
+      "T14-inline-failure",
+      "T14-global-retry",
+      "T14-task-recovery",
+      "T14-photo",
+      "T14-history",
+      "T14-chat-layout",
+      "T14-navigation",
+      "T14-sheets-reading",
+      "T14-single-html"
+    ],
+    "evidence_directory": "reviews/final-revision-14",
+    "known_evidence": [
+      {
+        "path": "profile-verification.json",
+        "method": "隔离 JavaScript 回归；不等于浏览器验收"
+      },
+      {
+        "path": "runtime-checks.json",
+        "method": "主代理实际浏览器操作记录"
+      },
+      {
+        "path": "visual-review.json",
+        "method": "18张截图独立审阅"
+      },
+      {
+        "path": "interaction-review.json",
+        "method": "独立代码和11项逻辑测试，采用主审运行记录"
+      },
+      {
+        "path": "delivery-integrity.json",
+        "method": "材料与单文件脚本/资源静态一致性"
+      }
+    ],
+    "runtime_status": "scoped HTTP runtime pass; see runtime-checks.json; not all matrix branches executed",
+    "static_guard": "not-certified; historical baseline is not a legal B-ID and dynamic DOM markers are not fully exported",
+    "full_coverage_claim": false
+  },
+  "history_preservation": {
+    "sources_requirements_sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+    "changed": false,
+    "baseline_changed": false
+  },
+  "delivery": {
+    "relative_entry": "index.html",
+    "standalone_target": "Momcozy-final.html",
+    "classification": "interactive-simulation-prototype-candidate",
+    "storage_note": "file:// 与 HTTP，以及 localhost 与 127.0.0.1 的存储不应视为共用；file 存储取决于浏览器。",
+    "generated": true,
+    "sha256": "a437f1d2100dfe134ca7c42ca7ff2ee89560034d81ee8d4ab38e4df7deedef24",
+    "file_runtime": "not-verified-browser-protocol-policy"
+  },
+  "limitations": [
+    "账本描述当前本轮范围，不代表历史完整需求池已实现或验收。",
+    "部分控件与状态由 JavaScript 动态渲染；这里的语义状态映射不是静态 guard 合格证明。",
+    "测试条目是可执行验收描述；实际结果、覆盖和当前哈希以 reviews/final-revision-14 中证据为准。",
+    "旧 HOME-0.1 作为历史快照保持不变，不伪造成当前合法冻结 B-ID。",
+    "原型未接入真实模型、采集、上传、声音播放、设备或云同步；多宝宝资料不等于多宝宝日志归属。",
+    "手机尺寸浏览器验证不等于真机键盘、系统权限或完整辅助技术认证。"
+  ]
+}

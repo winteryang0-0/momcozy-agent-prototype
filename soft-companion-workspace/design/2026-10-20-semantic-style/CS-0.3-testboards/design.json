@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0-style-candidate",
+  "project": {
+    "id": "MOMCOZY-CS-0.3",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source-input.json",
+    "sha256": "e990abbf0976ea2c36d8a9cfe8f737785b35339990337f059a8d50588494f98f",
+    "requirements": [
+      "STYLE-THREE-BOARDS",
+      "STYLE-GLASS-DEPTH",
+      "STYLE-VITAL-COLOR",
+      "STYLE-SEMANTIC-FEEDBACK"
+    ]
+  },
+  "framework": {
+    "revision": "CS-0.3-third-board-replacement",
+    "scope": "三方向独立测试入口，复用同一内容和状态；不改变 HOME-1.0 的产品框架",
+    "pages": [
+      "index",
+      "bloom",
+      "orbit",
+      "garden"
+    ],
+    "preview_screens": [
+      "home",
+      "records",
+      "assistant"
+    ],
+    "states": [
+      "normal",
+      "saving",
+      "saved",
+      "local",
+      "failed",
+      "unknown",
+      "analyzing",
+      "indeterminate"
+    ],
+    "controls": [
+      "board link",
+      "screen switch",
+      "preview tab bar",
+      "state selector",
+      "reduce transparency",
+      "reduce motion"
+    ],
+    "viewports_to_test": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "system": {
+    "revision": "CS-0.3",
+    "direction_review": {
+      "bloom": "user-provisionally-okay-for-testing",
+      "orbit": "user-provisionally-okay-for-testing",
+      "garden": "new-candidate-awaiting-testing",
+      "lumen": "removed-from-current-comparison"
+    },
+    "directions": {
+      "bloom": {
+        "accent": "#a43d69",
+        "surface": "#fffaf9",
+        "ambient": [
+          "#ffd0d4",
+          "#c4e5da",
+          "#e4d2fb"
+        ]
+      },
+      "orbit": {
+        "accent": "#9b5b34",
+        "surface": "#fffcf7",
+        "ambient": [
+          "#ffd898",
+          "#d1e8b7",
+          "#bae5e5"
+        ]
+      },
+      "garden": {
+        "accent": "#247668",
+        "surface": "#f9fef8",
+        "ambient": [
+          "#a0dfc9",
+          "#a7deec",
+          "#e8efa8"
+        ]
+      }
+    },
+    "glass_rule": "半透明、模糊、边缘高光和环境色用于浮层；记录和 AI 正文保持稳定表面",
+    "icon_grid": 24,
+    "icon_stroke": 1.8,
+    "focus": "评审控件 3px 可见外环；选中同时有填充和文字",
+    "fallback": "减少透明度时使用实体面；减少动效时取消过渡；不支持 backdrop-filter 时使用实体面",
+    "components": [
+      {
+        "id": "glass-navigation",
+        "states": [
+          "default",
+          "selected",
+          "reduced-transparency"
+        ]
+      },
+      {
+        "id": "semantic-icon",
+        "states": [
+          "object-with-label",
+          "category-with-label"
+        ]
+      },
+      {
+        "id": "feedback-banner",
+        "states": [
+          "saving",
+          "saved",
+          "local",
+          "failed",
+          "unknown",
+          "analyzing",
+          "indeterminate"
+        ]
+      },
+      {
+        "id": "content-focus",
+        "states": [
+          "recent-fact",
+          "timeline",
+          "ai-evidence"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "STYLE-THREE-BOARDS",
+      "files": [
+        "index.html",
+        "bloom.html",
+        "orbit.html",
+        "garden.html"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-GLASS-DEPTH",
+      "files": [
+        "assets/board.css",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-VITAL-COLOR",
+      "files": [
+        "assets/board.css",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-SEMANTIC-FEEDBACK",
+      "files": [
+        "assets/board.js",
+        "STYLE_SPEC.md"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": "T01",
+      "steps": "每板切换 Today、Journal、Momcozy AI",
+      "expected": "同一内容与相同导航状态"
+    },
+    {
+      "id": "T02",
+      "steps": "Today 与 Journal 分别切换保存、仅本地、失败、未知状态",
+      "expected": "每个状态有不同标题、解释和建议下一步"
+    },
+    {
+      "id": "T03",
+      "steps": "AI 切换分析中与无法判断",
+      "expected": "保留不确定性及证据边界"
+    },
+    {
+      "id": "T04",
+      "steps": "切换减少透明度和动效",
+      "expected": "评审控件保留选中与可见焦点，玻璃有实体面替代"
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-BOARD",
+      "question": "雨后花园是否提供有效的第三种生命力情绪？与花瓣、日光如何组合？",
+      "status": "open",
+      "blocks_freeze": true
+    },
+    {
+      "id": "D-PLATFORM",
+      "question": "目标原生平台、语言和实际测试设备是什么？",
+      "status": "open",
+      "blocks_freeze": true
+    }
+  ],
+  "validation_boundary": "候选风格板；本轮无真实浏览器截图、无真机视觉测试、无独立评审，未冻结。"
+}

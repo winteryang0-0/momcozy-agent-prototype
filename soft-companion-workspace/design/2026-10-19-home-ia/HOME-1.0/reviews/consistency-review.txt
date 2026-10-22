@@ -1,0 +1,74 @@
+HOME-1.0 独立一致性审查
+role=consistency
+author=/root/consistency_review_v1
+independent=true
+status=static-only
+evidence_mode=static-code-plus-operator-interaction-log-review
+baseline_id=HOME-0.1（框架候选参照，非已冻结基线）
+review_date=2026-10-19
+
+授权与结论
+用户本轮授权在 HOME-0.1 框架内整合软石与 QO-2.0，不等于预先批准 HOME-1.0 成品。本审查未生成确认、receipt 或冻结快照。
+四项 Dock、首页 H01–H07 顺序、妈妈/宝宝事件归属、记录/AI/我的职责保持。五类记录保留业务类型，三个奶量表单恢复了可选结束时间；吸出量与宝宝喂养未合并统计。连续聊天、语音、照片、附件和专项任务均仍位于 AI 助手。
+识别的三个 major 已在当前源码看到最小修复，并与 /root 实际操作的交互日志交叉复核，在本预览所定义路径内关闭。没有亲自操作浏览器，也不冒称关闭全部运行风险。不提供完整 pass 或正式 delivery 认证。
+
+范围与证据方式
+静态阅读 IMPLEMENTATION.txt、baselines/HOME-0.1/ARCHITECTURE.txt 与 design.json、sources/requirements.json、sources/STYLE_SPEC.txt、index.html、assets/app.js/style.css/companion.js/icons.js；并回看 requirements.json 指向的工作区 FW-0.4-candidate/sources/requirements-v03.json 中 C09 原字段拆解。
+未自行操作浏览器，未将已有 PNG 当作已阅交互证据。最终已读 reviews/interaction-log.json；操作者为 /root，浏览器 Codex in-app browser，HTTP 4192，视口 390×844 与 360×800。独立复核日志中 unknown reentry + same request resolution、offline task retry、timeout replacement guard、task cancel history + cross-tab resume、draft and local persistence、diaper validation correction、home empty/error/retry 与对应源码。日志使用 test 名称而无正式 test ID，design.json tests=[]，因此不伪造 coverage.test_ids 或完整测试覆盖。
+原需求来源摘录核对：C09.1 侧别/分钟/开始时间/备注，C09.2/C09.3/C09.5 时间/奶量/可选结束/备注，C09.4 尿布情况/红屁屁/时间/备注均有对应字段。新增“干爽”“不确定”和输入上下限为当前原型设计选择，不是已确认业务规则。
+
+机械检查
+实际执行 design_guard.py check HOME-1.0 --baseline HOME-0.1；返回 passed=false，input_error：HOME-1.0/design.json 不存在。
+后来补充部分 design.json 后再次实际执行相同命令：passed=false，input_error="Baseline ID must be B plus letters/digits/hyphens"。HOME-0.1 是框架快照名称，不是本 guard 认可的正式冻结 ID；目录也未有正式 receipt。最终账本明确 actions/tests 等映射不完整，不将其包装成需求全覆盖。
+基线资料本身仍注明候选、未冻结，且动态 DOM 未完成本 guard 所需静态标记适配。本结果是预览/认证边界，不能降级检查、补造批准或对外称 guard 已通过。
+首次 PATH 中 python 指向不可执行的 WindowsApps 别名，后改用工具返回的 bundled Python 实际执行，取得上述结果。
+
+发现与修订复核
+CONS-01 | major | resolved（限定本预览交互路径）
+位置：assets/app.js startTask、archiveTask；C10/C11、F04、STATE-task-timeout。
+初始问题：timeout 被排除于异类任务拦截，点击另一专项会替换尚可恢复的原任务；历史只保留名称和状态，失去素材/重试入口。这与“素材保留，可以重试或取消”及 HOME-0.1 ARCHITECTURE 第 68 行不覆盖未完成任务矛盾。
+最小修复：timeout 不作为可替换的完成态。当前源码已移除 timeout 例外，同类入口定位原任务，异类入口提示先完成或取消。
+运行复核：进入哭声 timeout → 点击看便便 → 仍保留哭声 timeout 和重试/取消；取消后才允许新建便便任务。
+关闭证据：interaction-log.json 中 timeout replacement guard，2026-10-19T12:43:17.949Z；以及 task cancel history + cross-tab resume，12:43:52.711Z。最终 startTask 仍仅允许 cancelled/result/indeterminate 被替换，timeout 仍受保护。verified_by=/root/consistency_review_v1，见下方最终 app 摘要。
+
+CONS-02 | major | resolved（限定本预览交互路径）
+位置：assets/app.js stepTask retry、analyze；C10/C11、F04/F05、STATE-task-offline。
+初始问题：retry 调用 analyze(true)，绕过 scenario=offline，即使仍离线也能在定时器后产出分析结果；状态文案与操作行为矛盾。
+最小修复：重试沿用离线检查。当前源码已改为 analyze()。
+运行复核：设置离线 → 分析得到 offline → 重试仍保持 offline → 设置正常再重试进入 processing 和指定结果。
+关闭证据：interaction-log.json 中 offline task retry，2026-10-19T12:42:54.962Z，重试仍无法提交，无虚假结果。最终 retry 仍调用 analyze() 且默认 force=false，保持离线分支。verified_by=/root/consistency_review_v1，见下方最终 app 摘要。
+
+CONS-03 | major | resolved（限定本预览交互路径）
+位置：assets/app.js closeSheet、recordPicker、editRecord、submitRecord；C09、F02/F03、保存 unknown。
+初始问题：关闭 unknown 后重新打开同类草稿并保存，会创建新 ID 并覆盖原 saveJob，失去原未知请求的核对入口。模拟原 unknown 尚未写入，因此不声称已经实际产生两条重复记录；问题是未知恢复与幂等交互语义错误。
+最小修复：未核对前保留原 job，重新记录/编辑/提交进入原核对面板。当前 recordPicker、editRecord、submitRecord 均已有 unknown 拦截。
+运行复核：触发 unknown → 关闭 → 记一笔/编辑任一记录 → 回原核对 → 核对后只有一条新增，原内容完整。
+关闭证据：interaction-log.json 中 unknown reentry + same request resolution，2026-10-19T12:42:43.194Z，关闭重开恢复 unknown，核对仅新增一条 55ml 配方奶。最终三入口 unknown 防护仍在，commitSave 继续按原 j.id 查找并更新/创建。verified_by=/root/consistency_review_v1，见下方最终 app 摘要。
+
+后续范围/次要观察（不作本预览阻断）
+1. 数据/业务范围仍有公开待定项：身体状态、睡眠、成长录入来源；真实权限、上传、同步、账户、真机键盘、跨时区。空状态不代表完成生产业务。
+2. 初始交互中未知核对只模拟成功；真实核对的未保存/仍未知分支未实现，STYLE_SPEC 已明确实验室边界。
+3. 无法据 CSS 静态结果判定视觉合格。此前 text-button、segments、composer 的 44px 目标已由最后的覆盖规则改到 48px；代码复核确认。
+4. HOME 最近记录已改从全部 records 按发生时间排序取前三条；只有显式预览 empty 模式显示空。仍有 minor：row 仅显示 HH:mm，跨日记录缺日期区分，建议非今日事件附 MM-DD，避免昨日事件看起来像今天。
+
+材料摘要（本次代码修复复核时；之后修改需重审）
+index.html SHA256=fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c
+assets/app.js SHA256=956319eff9bf5031bd121f4ec2adcf6b9780b35345b509658a09bc75895cf0db
+assets/style.css SHA256=6242626e87a2126ee62558b016e0d674ed3ba49ae25ba1b039544734ee9c881f
+assets/companion.js SHA256=b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9
+assets/icons.js SHA256=646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0
+assets/motion-model.js SHA256=f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9
+assets/soft-expressions.png SHA256=7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080
+sources/STYLE_SPEC.txt SHA256=c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73
+sources/requirements.json SHA256=d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe
+baselines/HOME-0.1/design.json SHA256=0b92b4cc01b4ef04ff19dc6a6eb2f1e70fc29dc2ec81fc5e67dd586574943157
+design.json SHA256=93c5a5770899474b0a8bce6a6f93f5fa8343ea882468e4510af271ce1e732c77
+reviews/interaction-log.json SHA256=57a9d31454c3dfe261f9d92fde3f3c3c543f2b26f2d80e0f398ec8927bfb44e1
+
+完成条件
+核心三项修订及保存/草稿/跨 Tab 恢复已获得操作者日志，本审查已与最终代码独立交叉核对。日志诚实说明三项 major 的运行在此前版本完成，后续变更仅跨日来源、点击区域、夜间前景和字段错误清除；最终源码保留原修复。本审查接受这三项在当前预览中的关闭，不把局部运行证据升级为全状态/全视口认证。正式交付仍需完整映射、合法真实确认、guard 与完整关键运行覆盖。
+
+追加复核
+已重新核对 c2004564 版 app.js：保留上述三项保护，增加专项 listening 时拦截普通语音输入；奶量趋势按 7 个发生日期汇总仅吸奶事件。可选结束时间严格属于吸奶、配方奶、瓶喂母乳，亲喂仍是时间/侧别/时长。上述实现未改变四项 Dock。
+最终日志已保存并读取，取代此前仅有消息报告的证据缺口。新增尿布纠错交互日志：未选红屁屁阻止提交、选择无后错误为空；最终 change 监听会清除旧错误，submitRecord 仍重新校验，因此未通过取消验证来隐藏错误。
+已读取 reviews/evidence.json 的元数据，看到 review=4 的 unknown/permission/offline/timeout 截图绑定 c2004564；更早 review=2 截图绑定较旧代码。未打开这些图像，不据元数据作视觉通过结论；最终应重新采集所需当前材料图像并保留真实绑定。

@@ -1,0 +1,30 @@
+[
+  {
+    "flow": "record",
+    "result": "记录已保存"
+  },
+  {
+    "flow": "recovery",
+    "result": "记录已保存"
+  },
+  {
+    "flow": "uncertain",
+    "result": "这次结果已准备好"
+  },
+  {
+    "flow": "offline",
+    "result": "记录已保存"
+  },
+  {
+    "flow": "permission",
+    "result": "这次结果已准备好"
+  },
+  {
+    "flow": "timeout",
+    "result": "这次结果已准备好"
+  },
+  {
+    "flow": "analysis",
+    "result": "这次结果已准备好"
+  }
+]

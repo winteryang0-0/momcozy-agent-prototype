@@ -1,0 +1,1240 @@
+{
+  "schema_version": "1.0",
+  "revision": "today-card-26",
+  "generated_at": "2026-10-21T13:48:59.545Z",
+  "purpose": "static file integrity; not a browser or design approval",
+  "historical_manifest": "sources/revision-14-file-manifest.json",
+  "previous_manifest": "../versions/today-conversation-25/file-manifest.json",
+  "files": [
+    {
+      "path": "assets/app.js",
+      "size": 126362,
+      "sha256": "3981fb4699cb9187b982d4bffd7f0387e711be5cd3fbb0796cc17f4b52e74568"
+    },
+    {
+      "path": "assets/berry.css",
+      "size": 21092,
+      "sha256": "50f420609ec53466adfcd4b0e2a96fee804d800b86f43fabb355154ab654dd48"
+    },
+    {
+      "path": "assets/care-shortcuts-23.css",
+      "size": 1065,
+      "sha256": "6d1778583fcee0df0ea7b262a6f1e095aeb327068c84e3fd0858a77b07bffbed"
+    },
+    {
+      "path": "assets/chat-care-20.css",
+      "size": 6074,
+      "sha256": "2b11d35e82caf06165ba3697abbb40c487783679d28a0e501eaacf4853d072a6"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3704,
+      "sha256": "dd44d1ee73155903f8e42e24215bee5e5922ea9f8867cafa47eeae2aa0a64613"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6356,
+      "sha256": "8640b7e6f39c72a99704a24cc0bfafa3b367f18d82c7b74df3db090e98b24f26"
+    },
+    {
+      "path": "assets/layout-16.css",
+      "size": 13170,
+      "sha256": "198009b9fcc0cad3cc525aee25000bc14a7213e2861a306a690705e4cb1e5aa0"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/onboarding-berry.css",
+      "size": 10023,
+      "sha256": "4a63b02ca5b974d07ce2bcfe26acc079322c1a432373ff25af42be0aaf0b363f"
+    },
+    {
+      "path": "assets/profile-ranges-21.css",
+      "size": 853,
+      "sha256": "94b2dad5504d691bf1f711d3908261beef1dd45d4effbe4e4cf20d48cb4799ed"
+    },
+    {
+      "path": "assets/sidebar-24.css",
+      "size": 3670,
+      "sha256": "e2f8846c9a79af00c81c0846ce9977b1f654dc1838f35488711840495b2cf4ac"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50113,
+      "sha256": "e0fe80419422a9300ffdf56624296f761c22fa193c7f0078d18444e106b03927"
+    },
+    {
+      "path": "assets/today-card-26.css",
+      "size": 3557,
+      "sha256": "7d1e992b1e771a444b43506f43824dd56529c615831097562644dbcd4c94e943"
+    },
+    {
+      "path": "build-manifest.cjs",
+      "size": 1888,
+      "sha256": "238bb565fca9fdf8c5d55561cdd962da15fdbbf8736c25eb50baf34a929689c8"
+    },
+    {
+      "path": "build-standalone.cjs",
+      "size": 2142,
+      "sha256": "7ea2aad5da36037a3c68479c8b054b1972452fdb4150f081f4c82f47478af824"
+    },
+    {
+      "path": "delivery-review/berry-poise-01/DELIVERY.md",
+      "size": 5902,
+      "sha256": "ce9f08a69f5ca5069830a492ce7e407c5400422f1122f499eefc9230c48b7b3f"
+    },
+    {
+      "path": "delivery-review/berry-poise-relayout-15/DELIVERY.md",
+      "size": 4201,
+      "sha256": "17ff52a86fcb4b062daba0e85b59b539a985f6e3101dc08c3551fe2fafac687b"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/DELIVERY.md",
+      "size": 6288,
+      "sha256": "3e186cc3ed18ad5e955714dfd62978d98e924ad088e855d94785b70f86cd9ea9"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/evidence.json",
+      "size": 2550,
+      "sha256": "96ef32eff2cd6f6e13e415449b8646a66628f235482065e32d38d2b252bc17cd"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/01-today-empty-pre-fix.png",
+      "size": 217474,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/02-ai-welcome-pre-fix.png",
+      "size": 213814,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/03-records-empty-pre-fix.png",
+      "size": 207797,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/04-ai-saved-card-pre-fix.png",
+      "size": 152436,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/05-ai-conversation-pre-fix.png",
+      "size": 162301,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/browser-evidence.json",
+      "size": 13402,
+      "sha256": "1662ce6c8b12654252415b101039c740148b9e448fb5af300fbe065cc33375ba"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/consistency-review.md",
+      "size": 4062,
+      "sha256": "77ee94f2e235bdea7a7c5dd9ebd2889b2769bd59ac9ac0e4df88ac4243b8116b"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/DELIVERY.md",
+      "size": 3395,
+      "sha256": "b86b8eb622287a2c0fa63d3b6fd25613e42d184f49fa131c0e47d354fd7805e6"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/interaction-review.md",
+      "size": 3378,
+      "sha256": "0804fab239ecb2302155f9c4246c2292995b2a07bc52bfc7e1dd83719f601f3d"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/qa-browser.cjs",
+      "size": 20373,
+      "sha256": "6463e9c077804de3c8c4627c5b3834491aedd2aac4d1fe2cec780310085c8cb8"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/01-record-picker-390.png",
+      "size": 78984,
+      "sha256": "43ba014d6ac874198c06bed232aadd5468509cb9d55144a0615501f0c9162dec"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/02-record-editing-390.png",
+      "size": 75003,
+      "sha256": "ea6d84be851409ed024602606cf2109e60e1fe98959206375c093e39f7e07665"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/03-record-saving-390.png",
+      "size": 78515,
+      "sha256": "16c8fc41b8a52172a1d2d5e16b25f2f3e642732a2c4250e67ec93a08b5e44a38"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/04-record-saved-390.png",
+      "size": 80947,
+      "sha256": "eb61884c1f70cbf98e742d43f4c09781f1d1ed9089649bceb3155279dddab5cf"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/05-record-failed-390.png",
+      "size": 83363,
+      "sha256": "e66f067186a4550f7058ea487e847f7103b8e278f292c82facaa210fd6cb675b"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/06-record-unknown-390.png",
+      "size": 82433,
+      "sha256": "fa0ea4e665cc83d96dff350d198218dc0286e0c2170530b17bf4a3336a32b240"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/07-record-saved-360.png",
+      "size": 63829,
+      "sha256": "c0e61748f1f5de5c38859fcbb4c3ecfe9e1ddef734eef17491a8255542584a78"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/08-record-saved-dark-360.png",
+      "size": 65406,
+      "sha256": "6befe05afff69c322bc6b89a40acfaee9c6b091b409d3d0f9066516cb67c6a59"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/08b-record-saved-dark-action-360.png",
+      "size": 63695,
+      "sha256": "d55b27d959c539e8622500d51b3e80f55d5b46c03661537f115f3b00089a044c"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/09-cry-listening-390.png",
+      "size": 77778,
+      "sha256": "82b44ecf95cb2d8c4ed8acb5c44d7547a8189ea2dc3493c3bc0017c405188baa"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/10-cry-captured-390.png",
+      "size": 86054,
+      "sha256": "5e0549bb1a0f0a5966bf58962e2d7cf11e65a5fd93a7ed7053ff88e7e3896cea"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/11-photo-camera-390.png",
+      "size": 74733,
+      "sha256": "f9671e6911151dff6307c716fe9d10940300ef3edb80d93916acf35d02fbe5b2"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/12-photo-captured-390.png",
+      "size": 81426,
+      "sha256": "7d89f64584d0b9ad26bec6c99f61b6896758b8ffa76feb4aa25c00ca1fab98fa"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/13-device-denied-390.png",
+      "size": 80473,
+      "sha256": "366d97893d9a6f0fe8658295a942a9188c8812becb3ae6e1df64e8f63c4c8913"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/14-short-camera-action-360.png",
+      "size": 50187,
+      "sha256": "b96954c5cf94d0d95df7d1d0b9b421de4ed0d4bc64ef98d13ce071c303fca294"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/screenshots/15-camera-denied-390.png",
+      "size": 82050,
+      "sha256": "b00bf72141e9f6902b9dcb358a1827cd5a019b7c3c18bc98fb047639ba6ae4fb"
+    },
+    {
+      "path": "delivery-review/conversation-care-cards-20/visual-review.md",
+      "size": 5149,
+      "sha256": "3ad4016f7ef11e3a9a0140dfaf5f93983dbd98a9812c363e471af102883d3565"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/browser-evidence.json",
+      "size": 5239,
+      "sha256": "a7f0ab9dd23fdcfbfb0719b0132302e56d5bc331852f5c14b6d25d59a869314f"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/consistency-review.md",
+      "size": 6062,
+      "sha256": "4c0b334570a95b30988d73e019cd11290047384dba7c530bc3b0d315660d95af"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/DELIVERY.md",
+      "size": 4288,
+      "sha256": "86e30ad6316d0c2dd441d334ba93de1a6592ae82ba917256fb7e21d7afe71d36"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/qa-browser.cjs",
+      "size": 10372,
+      "sha256": "28250729f7fcc0e937ae1f71336ab19d33a79aaac402910b04d0971c1cb10aaf"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/01-home-welcome-390.png",
+      "size": 94324,
+      "sha256": "8408f70193c6af645eb3c092dfb6079ac190f35dcc10246d4ca302a83a67dde3"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/02-journal-empty-390.png",
+      "size": 109779,
+      "sha256": "f8bce4989b7a9a827bfb1a8074ed104fd1145b4be268fcf84e35b81804d3b303"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03-journal-populated-390.png",
+      "size": 110196,
+      "sha256": "2c85dcfea20131f98eea6d910fc0d01636bfa53794ec5bc1fe8819d723603e15"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/03b-journal-scrolled-390.png",
+      "size": 92412,
+      "sha256": "de2fda4ed95250f45fb17ba3aa22dce16c5914ea2931a3dcaa84488bc64e3469"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/04-journal-mom-390.png",
+      "size": 106042,
+      "sha256": "85b241a267ee0668bbce4c076c8657149fa86cf6a102fd799e8843b2274a2d18"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/05-home-conversation-390.png",
+      "size": 78059,
+      "sha256": "0c68e7caa715cdb321f5b34787c1b487fc49d704691a286664caafc9960a45d1"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/06-home-dark-390.png",
+      "size": 84911,
+      "sha256": "bf54cc8265a9cf4d5fc209cf813cc276006db6d088cf495141c53caf028b0420"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/07-home-welcome-360.png",
+      "size": 78460,
+      "sha256": "6acd51af139881ef9ba8e3ff0cb6cc63907d60cc8360afffe4eda0090988cd99"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08-journal-empty-360.png",
+      "size": 84456,
+      "sha256": "8518c8a39aa595f709b8c3ab2616b9f4fff1abd50f6b4ee6fba8048f611a8420"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/08b-journal-empty-360-scrolled.png",
+      "size": 58493,
+      "sha256": "684939bdaeffcb7d8e122f816d87b962cea17555c91f0c950462bf4a12409bfe"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/09-home-welcome-desktop.png",
+      "size": 305362,
+      "sha256": "e5231fefa67b42bce3454a620f6269b6a426d4481c1db2ebf11378a3549d0b5d"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/screenshots/10-journal-empty-desktop.png",
+      "size": 316309,
+      "sha256": "a785af4e99924e5897b0cf92bbe47e1895227ae5b34a70314038ea3d68b1cb58"
+    },
+    {
+      "path": "delivery-review/conversation-home-journal-16/visual-review.md",
+      "size": 10341,
+      "sha256": "f4482db81344262e2eee88c18e914e134e18641e458ed2f9e51c90e577e197ea"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/browser-evidence.json",
+      "size": 8079,
+      "sha256": "ed29a914c18936c9ce0c2b8bebac7e32f8811d33bcfe3521cf0e39dbb737ebc6"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/consistency-review.md",
+      "size": 3638,
+      "sha256": "fc6cc8adc2f0c705714b94ac7828954ed14b843dba9e10c1c99ceb2a399b6499"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/DELIVERY.md",
+      "size": 2121,
+      "sha256": "c9a40cae9933628e17d77dd9061933ddc87da629234ec56161a24034ceee2444"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/qa-browser.cjs",
+      "size": 13288,
+      "sha256": "632eea9548add39e8f7504e40471c1a5a85a7ca41fb3db489b605c984f3d96b0"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/01-welcome-light-390.png",
+      "size": 95779,
+      "sha256": "750c03f980e92cac3f393696582ba6ca9e655e7ea6c3edf36ab1f513a14452d6"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/02-conversation-light-390.png",
+      "size": 86451,
+      "sha256": "135c819302df743258f075e27eac0391f80ed1fb666e1f4592dba3432a1d636a"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/03-record-picker-light-390.png",
+      "size": 86560,
+      "sha256": "cb222a5772fef3af9f1229a6453d00207792e475be95b315641100176f3d060d"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/04-record-saved-light-390.png",
+      "size": 90929,
+      "sha256": "8539c217cde6db0163d7fec6cb0a608bc6a9a5c92a9986353e96226c01f6c933"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/05-cry-permission-error-light-390.png",
+      "size": 87587,
+      "sha256": "a08a628af04569974993eb2c90dd65b7fb20f2ea2b1f9f632cb3dc91dd1115df"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/06-poop-permission-error-light-390.png",
+      "size": 89407,
+      "sha256": "94563fe33a54bbe54d0c333b7b4413975d37b584f5bcbb80f2c76759df9321b3"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/07-dark-short-360.png",
+      "size": 66877,
+      "sha256": "825f8d50532968ede5816441a5e8b9dd89ca9943fe1f6e8aa191a6efbcee44d3"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/08-modular-record-390.png",
+      "size": 86449,
+      "sha256": "e7f51c9ecfd5c1cca0320b02ba757981c7a663e4081284e2cf6abca56dd06858"
+    },
+    {
+      "path": "delivery-review/conversation-shortcuts-23/visual-review.md",
+      "size": 3420,
+      "sha256": "8e502e3d4981e010b82dd85fb94e747185b300dc19920286c6b5db9cf4543992"
+    },
+    {
+      "path": "delivery-review/delivery-integrity.json",
+      "size": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "delivery-review/FINAL_DELIVERY.txt",
+      "size": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "delivery-review/interaction-review.md",
+      "size": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/browser-evidence.json",
+      "size": 7374,
+      "sha256": "30acc9c354aa9bf765b292ae9cf4e0615bbcbb6ee6318ba98916791033cbe4f3"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/consistency-browser-evidence.json",
+      "size": 4284,
+      "sha256": "25b20e1ed712e9ddfccd0c2956fcefdd90d2e6b5fb5485d117cd9e413b241bca"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/consistency-browser.cjs",
+      "size": 7474,
+      "sha256": "7a44834e5ef1d6cf6a8aa07fa2421fd376b0d3036d9a3c68b723ae8944c21303"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/consistency-package-evidence.json",
+      "size": 1148,
+      "sha256": "ccf91a6d5831ec7271049d51820772017315ab0d5d6068960b758136015ef9cb"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/consistency-package.cjs",
+      "size": 2054,
+      "sha256": "f0e366070a10e9a1e985cde289c665043f2f7eebab5d7ee9ce066f4ca9bd8ced"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/consistency-review.md",
+      "size": 5893,
+      "sha256": "8120051c35a198b356115b8b9316229c2f068812aa61496f211f82b33fc97249"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/DELIVERY.md",
+      "size": 2908,
+      "sha256": "4ce625dd695969772cb430b5d7adf219404ec737f70c2d2bbe69f3c1d782153d"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/qa-browser.cjs",
+      "size": 10683,
+      "sha256": "540c20f821dfb047a8e6c617084d80c4717081de04b4d967e7c0a24d9f4adee5"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/01-home-light-390.png",
+      "size": 96371,
+      "sha256": "fcc998861e1319169d06568b04e1daa9e4f343accb3eddd856a78f1f5c74659b"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/02-menu-light-390.png",
+      "size": 51628,
+      "sha256": "c355d704597cca3b279512772894bd6c5e34ac676cbd70043e6fc257d6b04e29"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/03-baby-profile-390.png",
+      "size": 48836,
+      "sha256": "076f3a6bf2eac2a2457da642f88b2bc8644442f51b8b05c9fc7a7135452c098b"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/04-records-390.png",
+      "size": 111984,
+      "sha256": "a73c5cb352aa2bee3d7dbc7e59804334dec019aca9c97edfb38231b83319d8fb"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/05-cry-task-390.png",
+      "size": 87505,
+      "sha256": "bf85c672aabd33e954d9e1acec26ca64af6e9485b9463edbf2a9b471ce53392f"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/06-menu-dark-short-360.png",
+      "size": 44949,
+      "sha256": "c0c574744e27d06bc5074e3948eb74e87f59250972c5d1225d4341afe8bafdd5"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/07-menu-desktop-1280.png",
+      "size": 271711,
+      "sha256": "574f087245f7159f97bba057cb0f6526a8522f70613de18a328e88af8694d69c"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/screenshots/08-menu-modular-390.png",
+      "size": 49106,
+      "sha256": "6fc14e1e6a4b31f13e84f938ea25adc90a451c69e8f4623d26cb7db69a83b279"
+    },
+    {
+      "path": "delivery-review/left-sidebar-24/visual-review.md",
+      "size": 8948,
+      "sha256": "11c64a9580b87eb1ae98f31755635cace676597b70a5636ee33e41171cfb6daa"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/browser-evidence.json",
+      "size": 6239,
+      "sha256": "715506923cf74517d3670a3b11784014b8e1902909c2bce542fd4198ac99e50b"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/consistency-review.md",
+      "size": 2694,
+      "sha256": "3c10eabe73e0f909b969790900f388c6598a58cfa24d57fbb25d2df89c29968b"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/dark-browser-evidence.json",
+      "size": 682,
+      "sha256": "b777d607fc75e507a9b638a83613bd054ac6ac403f7fc44de84a44ab6275e3ca"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/DELIVERY.md",
+      "size": 3260,
+      "sha256": "272cbabebf9055712ca60b0774526cb23ff5882ed7ac3c0b1905b1580e2b8f77"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/qa-browser.cjs",
+      "size": 8716,
+      "sha256": "2abba680a5011b99f8ea82d0ee05ba6e5204200d4bbcc438dc773e11382dfd35"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/qa-dark.cjs",
+      "size": 2381,
+      "sha256": "055674f5f679336f18620a4ac2e642f61c3f9c35cfcd82705e5ca11fd6a5fba3"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/01-first-identity-390.png",
+      "size": 75855,
+      "sha256": "c20ceb9672c294519845a81721b83ce551ae731f1c8c4688dae1111cded459a6"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/02-required-role-390.png",
+      "size": 77926,
+      "sha256": "362c5879ba4415fc08750d7aa012eee07becdb67a06f76a95d8069ced487affa"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/03-first-details-390.png",
+      "size": 73795,
+      "sha256": "3df7fd6f3abef6d0fbe6e4bc75895591e8cb3c116bd4d09b09b0a1e856ab01a0"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/04-first-concerns-390.png",
+      "size": 88423,
+      "sha256": "dd5cfdec7081ab2044d86d8f021fb2c04cdb4b976c5878d63c608eea22c843cf"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/05-first-recommendations-390.png",
+      "size": 87638,
+      "sha256": "537c82a843cf47f5f0b3a1602e8507b7078322572ec411c861006b8ddb23b326"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/06-first-complete-home-390.png",
+      "size": 110928,
+      "sha256": "ad72ecc1383d885d2de4a9e2f299e1791e62629c27d356c8df3c95485ff00c7d"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/07-first-identity-360.png",
+      "size": 66200,
+      "sha256": "3a810f35c4f8ad9e0b2cde682ae5d5cd304c9d9a41f735aba24d04712f741e2c"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/08-first-details-360.png",
+      "size": 58289,
+      "sha256": "aaf3dc27a0ca20fb062d3b72a0cc675b1e696f191cc54ccfe006b7cbf89870c9"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/09-first-concerns-360.png",
+      "size": 67867,
+      "sha256": "a07345aeb33a2ff3c5cb9359da18302d145346b4395074d237dafbd49e5e8460"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/10-first-recommendations-360.png",
+      "size": 69437,
+      "sha256": "e7622bf05b9768809fe8c80ec55e538db8ca7d273c2927082b88de87af80156d"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/11-first-identity-dark-390.png",
+      "size": 80614,
+      "sha256": "f9870b0d700d1a89d9a7aef9e7f727a892d76ee0e8bdef161af147ae12dfe79c"
+    },
+    {
+      "path": "delivery-review/onboarding-berry-ui-19/visual-review.md",
+      "size": 3804,
+      "sha256": "04757dd25cb711e593796b2707e687c25fb3bff7881966ae09635fc16b1f2447"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/browser-evidence.json",
+      "size": 10923,
+      "sha256": "c2b0eb1fa932e4557798924dcd9aef8c80f03f1c681f0a3d18066f0fb008de60"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/consistency-review.md",
+      "size": 4406,
+      "sha256": "95e73631afb2fdc9b0fdad0a6655bf6b718a40c8944a053c421c59f44046701e"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/DELIVERY.md",
+      "size": 2690,
+      "sha256": "5a05e3b2e26eb5a7d7ee9306d3894f150ac8e70d90ec3ccc38009b7c5f9cc3c6"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/qa-browser.cjs",
+      "size": 20660,
+      "sha256": "08637d5a012084d919bda12e2d75028861898491d5cadc68229e56e68ce1051f"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/01-onboarding-empty-390.png",
+      "size": 70594,
+      "sha256": "9e78f6c169cd1be5f0be1a3a8d82a59d8a18f0134988996f58475e90453b4842"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/02-onboarding-lower-bounds-390.png",
+      "size": 74271,
+      "sha256": "652303f446f4a2fc9782cea392cb9160c09637ec3408b7d5f27b74f849e8fdc9"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/03-onboarding-upper-multi-390.png",
+      "size": 73854,
+      "sha256": "94a45b57f7296c958728f52e55a6abf0cef426aeb1db90a0ab68a8ac8d03e9e1"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/04-mom-profile-390.png",
+      "size": 58429,
+      "sha256": "fe58696f8302867ef75e1de991d3932ed0e1415939a82f649784b5807860d961"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/05-mom-invalid-390.png",
+      "size": 53145,
+      "sha256": "fb4a875be367c53c8ad4c5ab120f9305612f7e8e179f62b1f6d0897375078879"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/06-baby-profile-390.png",
+      "size": 54942,
+      "sha256": "62869d109d6e273e6123ca11229a3ebca009ccd41b042a5ffd057f8e0bc1be7c"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/07-baby-invalid-390.png",
+      "size": 53627,
+      "sha256": "3207c6da668a84509d4e4c8ecae2eaf57722aeca78aacbae5969d2fa3c637b1c"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/08-legacy-onboarding-390.png",
+      "size": 74386,
+      "sha256": "7e3227f4a9639e4cbba375b48eca9d0b76a82709da6ad726a2a503ce8c2625fc"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/09-legacy-baby-2-390.png",
+      "size": 74629,
+      "sha256": "fe9e59c6d43fd58bc2631104653ff6c9d337f01503eeeb65c5fcb40cf0249bb3"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/10-legacy-mom-profile-390.png",
+      "size": 53328,
+      "sha256": "889b317594e2ba7477f8c17c1eb1e3d740ee40054eecbda648eea82fb414e6ab"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/11-mom-profile-dark-360.png",
+      "size": 29847,
+      "sha256": "33f542218367c1324ecaa075da6226f243ad4807e441a743812a345e5f00a059"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/11b-mom-save-visible-dark-360.png",
+      "size": 30490,
+      "sha256": "1cf33926117f13375e9bd4c9eddee0ccd7edd7950fb63ced48b4dcc983756df6"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/screenshots/12-onboarding-dark-360.png",
+      "size": 59756,
+      "sha256": "ecc97705eb104395d6d93a693806400cd34883bfb8ead32c0969f49d2bb452c8"
+    },
+    {
+      "path": "delivery-review/profile-field-ranges-21/visual-review.md",
+      "size": 6747,
+      "sha256": "730129f59f321ef8f29d0296ccefda2e74926aa2993cb5b6b46e9addfb1e8f1b"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/browser-evidence.json",
+      "size": 34233,
+      "sha256": "b119da04ece7c956bd74b43ba986bee5ecacb3dce511641165b747dd629f8c8c"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/consistency-review.md",
+      "size": 7478,
+      "sha256": "1ecf7c9899eafb46601686844a791f68c434d51f836e95e98b8409c32a145c21"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/DELIVERY.md",
+      "size": 2259,
+      "sha256": "b8053d4b8e06a3f90f2dbc58f8acd1d745b4ab432208dfc3a2e51204b9329747"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/qa-browser.cjs",
+      "size": 12561,
+      "sha256": "6c7bc82156b048b1be6457bd83510b3fadcb4f64b37f339faa53156423302d9f"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/01-my-menu-390.png",
+      "size": 38087,
+      "sha256": "d3d42b66c30f7e3303e47b61cea06a8e4ca35059a5c73e1d698d0098449a56aa"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/02-mom-profile-390.png",
+      "size": 58399,
+      "sha256": "aaf25cd15f2a258cc0ec06a23d68b7c6ac7eb57c610bacee94f996e2d608bb4e"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/03-record-picker-390.png",
+      "size": 45307,
+      "sha256": "c48cef0ba3b5de4f4107ef2d1c7f70de451a9b9995b658fbf5488bee79a6f40a"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/04-record-form-390.png",
+      "size": 33206,
+      "sha256": "576d77c30bfe25611f594aa5ff8d9abe40cc1fbc9facd6fc6d04849410bd897e"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/05-chat-more-390.png",
+      "size": 66059,
+      "sha256": "289bea5ec48588b3e9d59f12aee74eea5a31abaa3b0343afa89b2a20d7f39bef"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/06-photo-attachment-390.png",
+      "size": 66261,
+      "sha256": "f9edd69d966f693451a0ba1c5e7f8aa574a38d05a897b6a46215ac8d69000a69"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/07-dark-enter-360.png",
+      "size": 60731,
+      "sha256": "1e2087bfa3844d773aae6b6abe02938e9252dae34d9b53733e76d38e36bea978"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/08-dark-settled-360.png",
+      "size": 31035,
+      "sha256": "1429fb1a10dd191f90d96081a8df616a9ad0be4191d2c5187d4457e84b06c5f8"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/09-reduced-motion-390.png",
+      "size": 38472,
+      "sha256": "6b0e665ea72256a00dd8d034a5dd4b4b1b34c2b16cf4698d6eebc4ddba674c31"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/10-my-menu-desktop-1280.png",
+      "size": 290368,
+      "sha256": "90a25a12feb2bb6221c164311f0ed22bb069525eae7686cc5df226f42f405418"
+    },
+    {
+      "path": "delivery-review/secondary-sheet-motion-22/visual-review.md",
+      "size": 5887,
+      "sha256": "a74281d98b848e922ed9ccef5ad592a3d8772c9d139949e7787cf8436c07b3ea"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/browser-evidence.json",
+      "size": 7857,
+      "sha256": "57550ee8505c478f491389d5c54bca0d5f0996f0374e3880f237b9aabe92a36e"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/consistency-review.md",
+      "size": 5200,
+      "sha256": "dadfcb7eb2bda48da732991955150df7782272210f0631aab1fdde95d5d8b02f"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/DELIVERY.md",
+      "size": 3411,
+      "sha256": "11f36941b3d6fa2ce457138995ced36e1a7fdd34931d4f5abf3eb7f3a411587d"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/qa-browser.cjs",
+      "size": 11798,
+      "sha256": "8ae4d7a30e65c8713e7c85cf9592d2d623790d0de7c51a3188d66e551c27c2a6"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/01-home-reminder-390.png",
+      "size": 94184,
+      "sha256": "de1017a4fcf56ceed9a21201068d6482c83f3ab104336539be05837106125385"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/02-home-reminder-next-390.png",
+      "size": 94294,
+      "sha256": "f79e4b9dc1245563a2ba5b3fbabd2b7ac272e390deda988efc7c89a9eecf3f8b"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/03-home-sound-on-390.png",
+      "size": 98547,
+      "sha256": "b1aa665c71e700a4f27bc0f7a540d7a7161b84c493bdb17aa9749f9b88b794ac"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/04-records-390.png",
+      "size": 109779,
+      "sha256": "f8bce4989b7a9a827bfb1a8074ed104fd1145b4be268fcf84e35b81804d3b303"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/05-profile-menu-390.png",
+      "size": 56257,
+      "sha256": "92eeededc7575746d4a74b7abb152f7ee28a7c2dee647a34b4ae827012857a72"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/06-chat-today-compact-390.png",
+      "size": 78416,
+      "sha256": "e1864d1067cf55fa82523db28ae5e4a02e8106acb7bbf92848b01c524d8ab838"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/07-chat-today-expanded-390.png",
+      "size": 87079,
+      "sha256": "8a29b6857b73374ee87f279ce3eb20a7494e0fbc04c5485188c7854976144a82"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/08-chat-dark-390.png",
+      "size": 98488,
+      "sha256": "293f5dbb62317dd6dd7d36fa98f04f9d7c5bd68f92441686f5bd8903edf9654e"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/09-home-360.png",
+      "size": 73927,
+      "sha256": "d53729e35e88e0a27afc499a7ae353ec883b36760dc28ae95115a0c639ab2d22"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/10-records-360.png",
+      "size": 91627,
+      "sha256": "958ff0ead8961d6263819eb053a568dd870d57aabb4ff6f29ddb6833b10bec07"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/11-chat-expanded-360.png",
+      "size": 67387,
+      "sha256": "689ed3e2599c85a7a9a2ed7aceb8d0b42655b5198521caaffc4f2c3d01b5ec51"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/11-home-desktop.png",
+      "size": 305464,
+      "sha256": "ee9db4266036d68b77f3b4bed076545e014e47a880da113c2cc2059d7cbc0127"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/12-home-desktop.png",
+      "size": 305480,
+      "sha256": "e0095cbaead06445704d5065f241b0bc3ab2934bd410cc3962e32f35e47d27fb"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/12-records-desktop.png",
+      "size": 322486,
+      "sha256": "1f9f86adae1fda8700f022355e7213f235b679c5e89ec566fe35cea17b5c30fd"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/13-records-desktop.png",
+      "size": 324277,
+      "sha256": "18c1b20ca9730237364036bd84caf8a4aa9c8ca6f7409bfab2ad81e19b71a822"
+    },
+    {
+      "path": "delivery-review/smart-reminders-entry-sound-17/visual-review.md",
+      "size": 3788,
+      "sha256": "942f81124721651a8b984ac7c40f5b7a0a8f6b8ab601d95cfd0827be8413f610"
+    },
+    {
+      "path": "delivery-review/today-card-25/browser-evidence.json",
+      "size": 13870,
+      "sha256": "ce21d78fc3900b9caea3a2df989ecc862bc52b4008e5f3c4bc6cd124151b1d15"
+    },
+    {
+      "path": "delivery-review/today-card-25/capture-baseline.cjs",
+      "size": 2917,
+      "sha256": "aaef76cfef0a11624f7e334edc1af24c7d5ca9db029b68f41d7dba2800905134"
+    },
+    {
+      "path": "delivery-review/today-card-25/consistency-review.md",
+      "size": 6358,
+      "sha256": "da767d65b7a20020af059880f9f3c9f390985cf999f77579e6b5f168ee226ecb"
+    },
+    {
+      "path": "delivery-review/today-card-25/DELIVERY.md",
+      "size": 3262,
+      "sha256": "c80ee42d61ffbe0194c27c44d65597dc9e1464c2ee50e33fa60fbb20085e60bd"
+    },
+    {
+      "path": "delivery-review/today-card-25/interaction-review.md",
+      "size": 7858,
+      "sha256": "f9b99e135332533321b04957bca74aead73a25a64007439dc5ac139c12237304"
+    },
+    {
+      "path": "delivery-review/today-card-25/qa-browser.cjs",
+      "size": 15809,
+      "sha256": "d06dd3f1ea936d47e39ef207c7cefe41affdf4de8ef67e6e1dce6507166db916"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/01-three-task-cards-390.png",
+      "size": 271845,
+      "sha256": "7d3e01dd0e9bc273adffa0da65b6cefb6f49d8d7cd7835e0062650a8c298c322"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/01a-paused-record-390.png",
+      "size": 287725,
+      "sha256": "ff9aac1bc07e22050dcb633f9d35a7a1cbb2cc6623ee1213867e6a7c7fa9545c"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/01b-paused-cry-390.png",
+      "size": 307242,
+      "sha256": "908f2774a18e44e77d68191db415adef34b2032d6337fd1ed5b372b69f977bea"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/02-resumed-record-390.png",
+      "size": 241376,
+      "sha256": "cd098dcc04e87058470281faf0f04f2b818b8d8bdf0f4f82354cf9a99c650dfd"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/03-background-save-390.png",
+      "size": 248375,
+      "sha256": "5b5ac8ce3eec82cfa428ec849b579a25e0ddd558011a3f13c1913386bd6260dd"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/04-today-expanded-390.png",
+      "size": 256911,
+      "sha256": "c50c94e223047916f475218071c35befacdc441a075bf42b9f9ca3b6f6ce9d84"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/05-today-expanded-dark-360.png",
+      "size": 204468,
+      "sha256": "45501c2e6813bf9a68bf6a449dc0b4d865cbe7844fc96a63e83ade363331baa1"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/06-today-next-390.png",
+      "size": 255971,
+      "sha256": "421c6294ad621880291337046d54cecfeb1fe6e540c8db53e1b166e1ba71701c"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/07-today-collapsed-dark-360.png",
+      "size": 202336,
+      "sha256": "a898488b92fcf8d0ea6c58078cbc55c644deee0b3b5b8003dca09d2630130cc8"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/before-360-640-dark-collapsed.png",
+      "size": 64359,
+      "sha256": "fb4d416c2103e0550fc0c407cb2956689307d480779886bbf20ad7da32e59a3a"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/before-360-640-dark-expanded.png",
+      "size": 65947,
+      "sha256": "0fe56c66dd6b38b1cf87eda14b74d54a379c9732243a74bcd75bd8c29ffdf074"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/before-390-844-light-collapsed.png",
+      "size": 81877,
+      "sha256": "ac83479780bb1c13bfdf283a9523259c9052181753b6cb837a9d6d91c625cf05"
+    },
+    {
+      "path": "delivery-review/today-card-25/screenshots/before-390-844-light-expanded.png",
+      "size": 84992,
+      "sha256": "3b13547d661d7136a5adeef7a9ba233e6380e35bbf856eed357f3748c51eddab"
+    },
+    {
+      "path": "delivery-review/today-card-25/update-design.py",
+      "size": 14491,
+      "sha256": "6d65519080a87c6d9a326507e3915b1c2be37c3e164e63b6486eafe646e15af7"
+    },
+    {
+      "path": "delivery-review/today-card-25/visual-review.md",
+      "size": 8792,
+      "sha256": "5d49244fc980f4470807db679b20adfa488dbb584e00fb4eb722aa6d54fd78c5"
+    },
+    {
+      "path": "delivery-review/today-card-26/browser-evidence.json",
+      "size": 13649,
+      "sha256": "fe51a051f867ac95706bb4ac672bb63c6c2ee6aa68b3315b7319607b852ba7fa"
+    },
+    {
+      "path": "delivery-review/today-card-26/consistency-review.md",
+      "size": 4215,
+      "sha256": "d4fe0a588a58fb7d85d1aae5156be9b6de01e8102c0c1936b4355270b72e2e43"
+    },
+    {
+      "path": "delivery-review/today-card-26/DELIVERY.md",
+      "size": 2688,
+      "sha256": "2c64d0179db850129b072e3e5bd971efb629d06e418adf1a6e350dfc148065fc"
+    },
+    {
+      "path": "delivery-review/today-card-26/interaction-review.md",
+      "size": 2894,
+      "sha256": "3796c6afc2785d6add064ee3159903de19ae72f286bdeafa2f917addfad75f4b"
+    },
+    {
+      "path": "delivery-review/today-card-26/qa-browser.cjs",
+      "size": 18561,
+      "sha256": "22f19efc5a50e71080f04c0076b45bce27537363e34943a1cb2b5b6e61e20ad9"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/01-welcome-390.png",
+      "size": 271628,
+      "sha256": "789781b2b8b3b8efd73c3ff461843ec0b0ab17610ab029097a1bd31dcd75dd57"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/02-welcome-third-390.png",
+      "size": 270790,
+      "sha256": "08810ffde82bc5199ff311684e2159100d6cd7f2b6c39ee5d97692c93453463e"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/03-expanded-390.png",
+      "size": 253170,
+      "sha256": "bc80bd83d90a701f8b0976b500bfa6d63af1a7d43ccdd2166ea2b545679bde44"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/04-expanded-third-390.png",
+      "size": 256105,
+      "sha256": "9c469e3c4e32a898b4f3f784d759f1696b918eafe4065f063199094780a3e0a1"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/05-welcome-dark-360.png",
+      "size": 204820,
+      "sha256": "ff629f706db9492cd1d218a4e80ef0db24c5909f6bc9d74a155e5e7d356d928c"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/06-expanded-dark-360.png",
+      "size": 212551,
+      "sha256": "cd48916e8279d8e207d9dc4d56d0985537d85f4cb526f8a795fff4085c7bf668"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/07-welcome-desktop.png",
+      "size": 993808,
+      "sha256": "7d3d25c652617558fdab7097f3407bb66485052dadcb0cccd85a26036f570d59"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/08-expanded-desktop.png",
+      "size": 945546,
+      "sha256": "e2b4dfee701a550a382974cd69dea3fbd0894e4332ceea547243017ba14b157e"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/09-sidebar-390.png",
+      "size": 91047,
+      "sha256": "7b6f5e1da1b38d2799e4ce7d30edaa897b2db42527a420545e81aaf64ca4e2d1"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/10-sidebar-dark-360.png",
+      "size": 65482,
+      "sha256": "222ad2ef7901e0218ff0fb734f83643f92a7185a5c620695992b0675603bb8d2"
+    },
+    {
+      "path": "delivery-review/today-card-26/screenshots/11-sidebar-desktop.png",
+      "size": 822373,
+      "sha256": "85935844bb48b4085849696988da1aaa763d2b2a1581b8ec7491ad64720116ff"
+    },
+    {
+      "path": "delivery-review/today-card-26/update-design.py",
+      "size": 8426,
+      "sha256": "0015e014befaafeab749259338004a3f8b37f0b40abe25de0627db64dd79ec77"
+    },
+    {
+      "path": "delivery-review/today-card-26/update-sidebar-design.py",
+      "size": 6484,
+      "sha256": "d12dac1b56d8f82e52d791cbc0254bda0d1a2f3fcf879768e6a4e204077db5b3"
+    },
+    {
+      "path": "delivery-review/today-card-26/visual-review.md",
+      "size": 4160,
+      "sha256": "74b1655c1b934650d478507fb02d9af69ba76bd5ebeec4c090ea311b1b01baf7"
+    },
+    {
+      "path": "delivery-review/visual-review.md",
+      "size": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "design.json",
+      "size": 167528,
+      "sha256": "ab38ef377ce382d7e984462c6d4452ecf5a833ced0f011944ef8b8a7a5238e4f"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 3609,
+      "sha256": "d12c2a3f36ec9154ad60a146231b9a02274255b38cf286f9b71cf1ac1cc12bd8"
+    },
+    {
+      "path": "index.html",
+      "size": 13202,
+      "sha256": "c32c6e2a8bbff89034007ffc0fb51f4d563f309e5163218e34b7dfa4aee9266b"
+    },
+    {
+      "path": "Momcozy-final.html",
+      "size": 2285469,
+      "sha256": "9b58981c227ccfca64341e3fc5e4c586b628e8f0c09ae808380a7f873d4660c0"
+    },
+    {
+      "path": "preview.cjs",
+      "size": 882,
+      "sha256": "a8415db707f7e5edb0ea9495ec44d255c9c3f8b7a78182a2d533fd06d7fb80ab"
+    },
+    {
+      "path": "README.txt",
+      "size": 3001,
+      "sha256": "b967331fb21f7d42eb3165cef39b2442fb4f79a4fdce1f48232d5c3d183721ec"
+    },
+    {
+      "path": "sources/apply-framework-16.cjs",
+      "size": 6567,
+      "sha256": "fa54c7106c115bbca4af9e0dab693f6ab10bb7b371c417c52f203aabfb7c1185"
+    },
+    {
+      "path": "sources/Avatar.jsx",
+      "size": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "sources/conversation-care-cards-20-requirements.json",
+      "size": 2019,
+      "sha256": "96adc5dacb3bea99af342a3fd64697f68a606ba4d0b348cbd84828c77b1d3ec9"
+    },
+    {
+      "path": "sources/conversation-shortcuts-23-requirements.json",
+      "size": 2198,
+      "sha256": "9f6bca63e38be7b54a7f65ada2b514546ba7a7932ac20b20933cf6ac47dd9724"
+    },
+    {
+      "path": "sources/finalize-design-20.cjs",
+      "size": 5155,
+      "sha256": "5301236c9267d90d497d0d336d3fc4afec76670b3554d2e3846e027d2eee793b"
+    },
+    {
+      "path": "sources/first-visit-onboarding-18-requirements.json",
+      "size": 1690,
+      "sha256": "dbf3ccd726507aaa2f10add55c83c6c37d28cb5d6f99219263b991a48d6b0ae2"
+    },
+    {
+      "path": "sources/framework-16-requirements.json",
+      "size": 2760,
+      "sha256": "0d05c15cf4c8b21af12823ef8ae291841dd8ead0667c4894e39392b6bd184818"
+    },
+    {
+      "path": "sources/home-framework-16-reference.png",
+      "size": 101498,
+      "sha256": "86e62c5af1c5028b7db22af4fc4dc56fc940e4f0e3d601babd4b6b4ab12e574a"
+    },
+    {
+      "path": "sources/journal-layout-16-reference.png",
+      "size": 217254,
+      "sha256": "92851b6c50269d360d05aca6c80519c814475334c7d89fb0712ee506a16fe2a4"
+    },
+    {
+      "path": "sources/left-sidebar-24-requirements.json",
+      "size": 2479,
+      "sha256": "5a8526c78722f742835756ef63ec023e82604eec55fd0be301b67432bb51bd39"
+    },
+    {
+      "path": "sources/motion-model.mjs",
+      "size": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "sources/onboarding-berry-ui-19-requirements.json",
+      "size": 1532,
+      "sha256": "d0697ec34d62b77802a9ca40cc91be769462f7229b96fb5aa7bc107323b6735a"
+    },
+    {
+      "path": "sources/profile-field-ranges-21-requirements.json",
+      "size": 1454,
+      "sha256": "6b3ddb2cf8c84b0c19e3e29e33b230dc92231c549dfffbd0ad5b48bb8408ca8b"
+    },
+    {
+      "path": "sources/refinement-17-requirements.json",
+      "size": 2475,
+      "sha256": "90cafe0983518f84cc01a90b5d3c0d7947285bf5ee397c1668cbe161b5a8c318"
+    },
+    {
+      "path": "sources/relayout-15-requirements.json",
+      "size": 1179,
+      "sha256": "ba8b748b708e7f844115b00e85d9e8bce032ef8c5e4f71fe0a95a8951d521e44"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "sources/revision-14-file-manifest.json",
+      "size": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "sources/revision-14-requirements.json",
+      "size": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    },
+    {
+      "path": "sources/secondary-sheet-motion-22-requirements.json",
+      "size": 1419,
+      "sha256": "ab8e2d6b756aea0654a0b23be393903aa39b250d0f4775854821d5010e92c28b"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "path": "sources/today-card-26-requirements.json",
+      "size": 3312,
+      "sha256": "6f9569ecc10766298173904734bb52198acc0fe5953379a4c722973dd4d9df90"
+    },
+    {
+      "path": "sources/today-conversation-25-requirements.json",
+      "size": 2941,
+      "sha256": "83c8a6ed725edf2af7531312b54cde6b753f2142e45b26457e154da1f4783195"
+    },
+    {
+      "path": "sources/update-design-16.cjs",
+      "size": 11505,
+      "sha256": "bba61efd505d12311b3a50f4537954c226ad159594de85d898a540467716e5e1"
+    },
+    {
+      "path": "sources/update-design-17.cjs",
+      "size": 11373,
+      "sha256": "241ea55c58b1ade5182f78e63fd3b1a172c5b5b3226a129ab78d59dbca048afb"
+    },
+    {
+      "path": "sources/update-design-18.cjs",
+      "size": 4786,
+      "sha256": "77d1e86c8e8acb69dad946e778d79c880971a90be6e467aba21caf6e8f88a09b"
+    },
+    {
+      "path": "sources/update-design-19.cjs",
+      "size": 2866,
+      "sha256": "0322b8f55acbd00636f611852ee041e5a65d46b9f8ef4463586cbfb32fbb6f04"
+    },
+    {
+      "path": "sources/update-design-20.cjs",
+      "size": 8197,
+      "sha256": "111aa7f921298552333bad0db611bbcb2fdb58e12a217d34cbb311ad974ce7b6"
+    },
+    {
+      "path": "sources/update-design-21.cjs",
+      "size": 6315,
+      "sha256": "1fdcd14bf9154a6204bb44709bcd7a9695954092c04d60db959cf7fd6de2ac8d"
+    },
+    {
+      "path": "sources/update-design-22.cjs",
+      "size": 6345,
+      "sha256": "c9dade56438e0c8b40585cf8b2f89d671ece94e844faa51e214fa4800529ed6c"
+    },
+    {
+      "path": "sources/update-design-23.cjs",
+      "size": 9584,
+      "sha256": "7e301aeac8d9fe78a3e4bbeabe31604976b434fb491dd5d4758612aa58f23c6a"
+    },
+    {
+      "path": "sources/update-design-24.cjs",
+      "size": 12472,
+      "sha256": "81af91086e5f1d8f85d8e8bc84f9311605977afc3090eb881574135326dc2954"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "file": "Momcozy-final.html",
+  "sha256": "c80ab8033318bc3423dcd92d0f6aaceecdebe5949a368ddeaa0972e5a6aacd50",
+  "capturedAt": "2026-10-21T13:08:22.570Z",
+  "snapshots": [
+    {
+      "label": "onboarding-role",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/onboarding",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/01-onboarding-role.png",
+      "screenshotSha256": "dc42e4b01fbac8932ff6dacb116133f232ee3e808ea697a7a92e3033ea0f3ab0",
+      "capturedAt": "2026-10-21T13:08:24.986Z",
+      "route": "#/onboarding",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "onboarding-details",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/onboarding",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/02-onboarding-details.png",
+      "screenshotSha256": "6be0f9fcf2a94c41f9b7da1d380d1ee7bd2b164945b6de6af98fcd00d6999715",
+      "capturedAt": "2026-10-21T13:08:25.411Z",
+      "route": "#/onboarding",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "onboarding-concerns",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/onboarding",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/03-onboarding-concerns.png",
+      "screenshotSha256": "03a2cf8a9c3051f28c3af4e3aff427aebfbf393301c76d5813156d2571dfbbeb",
+      "capturedAt": "2026-10-21T13:08:25.687Z",
+      "route": "#/onboarding",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "onboarding-tools",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/onboarding",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/04-onboarding-tools.png",
+      "screenshotSha256": "6842c2d0a4520a37f541032f762c4213636df7b313f7f664c85a479c5f12cb84",
+      "capturedAt": "2026-10-21T13:08:25.917Z",
+      "route": "#/onboarding",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "home-first-visit",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/05-home-first-visit.png",
+      "screenshotSha256": "0db735325c1c53f59acd9e9ed78f816aad3e915db4625fdd2b5114d7c5517739",
+      "capturedAt": "2026-10-21T13:08:30.004Z",
+      "route": "#/home",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "journal-empty",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/06-journal-empty.png",
+      "screenshotSha256": "49f61565f68cc8890157667d74b85e3f98609b1ab90ac8ac0a4e136bd3d29dd0",
+      "capturedAt": "2026-10-21T13:08:30.785Z",
+      "route": "#/records",
+      "title": "",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "my-menu",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/07-my-menu.png",
+      "screenshotSha256": "94d265031178faf47512ce198ea2b5c354c5e1fd02ee9d5426cabb4dbdc244e3",
+      "capturedAt": "2026-10-21T13:08:31.096Z",
+      "route": "#/records",
+      "title": "My Care Space",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "mom-profile",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/08-mom-profile.png",
+      "screenshotSha256": "770d509c25cd5ff73c1496725037503f8bb25777b0c22bb48c5e58a7c4206abd",
+      "capturedAt": "2026-10-21T13:08:31.623Z",
+      "route": "#/records",
+      "title": "Mom’s profile",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "record-picker",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/09-record-picker.png",
+      "screenshotSha256": "9895076dab0e0bd1d1a37bdc5574481fc19e5600ca1985f1f2d0d03a6ddd61f5",
+      "capturedAt": "2026-10-21T13:08:32.135Z",
+      "route": "#/records",
+      "title": "Log a care moment",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "breastfeeding-form",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/10-breastfeeding-form.png",
+      "screenshotSha256": "0ba647935df6a29aca842a67418fca7601272c784b69f44c0dc90f7208c6ead1",
+      "capturedAt": "2026-10-21T13:08:32.668Z",
+      "route": "#/records",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "cry-care-card",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/11-cry-care-card.png",
+      "screenshotSha256": "801fcfd9dbf7464e039001a98f6deba20561728f8770a028fb47512d1dbe2377",
+      "capturedAt": "2026-10-21T13:08:33.644Z",
+      "route": "#/home",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "conversation",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/12-conversation.png",
+      "screenshotSha256": "0e1193aa5cbe1431db9ba0f26c011a370dc5c1d2079c76427a1497ae98639b01",
+      "capturedAt": "2026-10-21T13:08:34.763Z",
+      "route": "#/home",
+      "title": "Breastfeeding",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "settings",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/13-settings.png",
+      "screenshotSha256": "26a143d973101da5b39e8d2c8efec05ac74ed26fdd9c89f60c4af7198979bdad",
+      "capturedAt": "2026-10-21T13:08:35.035Z",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "my-care-space",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/mine",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/14-my-care-space.png",
+      "screenshotSha256": "13b6a703365a2082ebab1e78e09b1df0ad0a0453ad102bb2127da654a57c4a42",
+      "capturedAt": "2026-10-21T13:08:37.324Z",
+      "route": "#/mine",
+      "title": "My Care Space",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    },
+    {
+      "label": "home-dark",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/en-US/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "delivery-review/screenshots/15-home-dark.png",
+      "screenshotSha256": "12b640a937c4996a47fe138001936977ac6867147f4a40fbdd9dca3a27a2aac4",
+      "capturedAt": "2026-10-21T13:08:38.811Z",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "attrs": [],
+      "appWidth": 390,
+      "overflows": []
+    }
+  ],
+  "errors": [],
+  "sourceSha256": "3981fb4699cb9187b982d4bffd7f0387e711be5cd3fbb0796cc17f4b52e74568",
+  "browser": "155.0.8059.86"
+}

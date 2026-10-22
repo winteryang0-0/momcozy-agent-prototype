@@ -1,0 +1,1866 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "momcozy-home-1.0",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root",
+    "revision": "bloom-glass-01",
+    "release_label": "花瓣玻璃高保真交互原型候选；未冻结"
+  },
+  "source": {
+    "path": "sources/revision-14-requirements.json",
+    "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae",
+    "requirements": [
+      "R14-U01",
+      "R14-U02",
+      "R14-U03",
+      "R14-U04",
+      "R14-U05",
+      "R14-F01",
+      "R14-F02",
+      "R14-F03",
+      "R14-F04",
+      "R14-F05",
+      "R14-H01",
+      "R14-H02",
+      "R14-H03",
+      "R14-H04",
+      "R14-H05",
+      "R14-H06",
+      "R14-H07"
+    ],
+    "historical_source": {
+      "path": "sources/requirements.json",
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+      "requirements": [
+        "C01",
+        "C01.1",
+        "C01.2",
+        "CHAT-AGE",
+        "CHAT-TODAY",
+        "C09",
+        "C09.1",
+        "C09.2",
+        "C09.3",
+        "C09.4",
+        "C09.5",
+        "C01.1.1",
+        "C01.1.2",
+        "C01.2.1",
+        "C01.2.2",
+        "C01.3",
+        "C01.3.1",
+        "C01.3.2",
+        "C10",
+        "C11",
+        "CHAT-CONTINUOUS",
+        "C03",
+        "C05",
+        "C12",
+        "C13",
+        "C14",
+        "C15"
+      ]
+    }
+  },
+  "framework": {
+    "revision": "HOME-1.0-revision-14",
+    "pages": [
+      {
+        "id": "PAGE-home",
+        "route": "#/home",
+        "parent_id": null,
+        "regions": [
+          "context",
+          "conditional-alert",
+          "summary",
+          "care-actions",
+          "resume-task",
+          "recent-records",
+          "ai-entry"
+        ]
+      },
+      {
+        "id": "PAGE-assistant",
+        "route": "#/assistant",
+        "parent_id": null,
+        "regions": [
+          "compact-header-or-welcome",
+          "conversation-timeline",
+          "fixed-composer",
+          "dock"
+        ]
+      },
+      {
+        "id": "PAGE-records",
+        "route": "#/records",
+        "parent_id": null,
+        "regions": [
+          "header",
+          "owner-filter",
+          "events-and-details",
+          "dock"
+        ]
+      },
+      {
+        "id": "PAGE-mine",
+        "route": "#/mine",
+        "parent_id": "PAGE-home",
+        "regions": [
+          "header",
+          "profile",
+          "device",
+          "application-sync"
+        ]
+      },
+      {
+        "id": "PAGE-onboarding",
+        "route": "#/onboarding",
+        "parent_id": null,
+        "regions": [
+          "progress",
+          "step-content",
+          "error",
+          "step-actions"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "ONBOARD-identity",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "照护身份与妈妈选填阶段"
+      },
+      {
+        "id": "ONBOARD-details",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-wheel",
+        "role": "同页妈妈与宝宝资料及多宝宝标签"
+      },
+      {
+        "id": "ONBOARD-next",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-action",
+        "role": "校验、下一步与完成"
+      },
+      {
+        "id": "ONBOARD-concerns",
+        "page_id": "PAGE-onboarding",
+        "component_id": "CMP-choice",
+        "role": "关注点多选与独立推荐页"
+      },
+      {
+        "id": "HOME-profile",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "进入我的与资料管理"
+      },
+      {
+        "id": "HOME-record",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "打开全局记录类型菜单"
+      },
+      {
+        "id": "HOME-ai",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "进入 Momcozy AI"
+      },
+      {
+        "id": "HOME-record-form",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-record",
+        "role": "类型选择、字段填写和保存"
+      },
+      {
+        "id": "RECORDS-events",
+        "page_id": "PAGE-records",
+        "component_id": "CMP-record",
+        "role": "记录回看、编辑、确认删除"
+      },
+      {
+        "id": "CHAT-input",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-action",
+        "role": "发送文本并识别本地功能关键词"
+      },
+      {
+        "id": "CHAT-care",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-action",
+        "role": "欢迎页、加号菜单和追加服务的三项任务入口"
+      },
+      {
+        "id": "CHAT-task",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-task",
+        "role": "按时间顺序展示和推进专项卡片"
+      },
+      {
+        "id": "CHAT-record",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-record",
+        "role": "会话记一笔类型、独立草稿、保存及回执"
+      },
+      {
+        "id": "CHAT-history",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-action",
+        "role": "查看、搜索、重命名、恢复和确认删除历史"
+      },
+      {
+        "id": "CHAT-new",
+        "page_id": "PAGE-assistant",
+        "component_id": "CMP-action",
+        "role": "保存现有对话并回到欢迎页"
+      },
+      {
+        "id": "MINE-profile",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-record",
+        "role": "编辑妈妈/宝宝资料或重新进入完整基础资料"
+      },
+      {
+        "id": "HOME-settings",
+        "page_id": "PAGE-home",
+        "component_id": "CMP-action",
+        "role": "阅读和模拟设置"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-identity-next",
+        "control_id": "ONBOARD-next",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-identity",
+        "to_state": "STATE-onboarding-details",
+        "requirement_ids": [
+          "R14-H02"
+        ]
+      },
+      {
+        "id": "ACT-details-next",
+        "control_id": "ONBOARD-next",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-details",
+        "to_state": "STATE-onboarding-concerns",
+        "requirement_ids": [
+          "R14-H02",
+          "R14-F03"
+        ]
+      },
+      {
+        "id": "ACT-concerns-next",
+        "control_id": "ONBOARD-next",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-concerns",
+        "to_state": "STATE-onboarding-recommendations",
+        "requirement_ids": [
+          "R14-H02"
+        ]
+      },
+      {
+        "id": "ACT-onboarding-finish",
+        "control_id": "ONBOARD-next",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-onboarding-recommendations",
+        "to_state": "STATE-home-normal",
+        "requirement_ids": [
+          "R14-H02",
+          "R14-F03"
+        ]
+      },
+      {
+        "id": "ACT-onboarding-reject",
+        "control_id": "ONBOARD-next",
+        "event": "click",
+        "target_page_id": "PAGE-onboarding",
+        "from_state": "STATE-onboarding-details",
+        "to_state": "STATE-onboarding-invalid",
+        "requirement_ids": [
+          "R14-F02",
+          "R14-F03"
+        ]
+      },
+      {
+        "id": "ACT-record-open",
+        "control_id": "HOME-record",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-home-normal",
+        "to_state": "STATE-global-picker",
+        "requirement_ids": [
+          "R14-U04",
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-record-type",
+        "control_id": "HOME-record-form",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-picker",
+        "to_state": "STATE-global-form",
+        "requirement_ids": [
+          "R14-U04"
+        ]
+      },
+      {
+        "id": "ACT-record-submit",
+        "control_id": "HOME-record-form",
+        "event": "submit",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-form",
+        "to_state": "STATE-global-saving",
+        "requirement_ids": [
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-record-success",
+        "control_id": "HOME-record-form",
+        "event": "save-complete",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-saving",
+        "to_state": "STATE-global-saved",
+        "requirement_ids": [
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-record-fail",
+        "control_id": "HOME-record-form",
+        "event": "save-response",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-saving",
+        "to_state": "STATE-global-failed",
+        "requirement_ids": [
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-record-unknown",
+        "control_id": "HOME-record-form",
+        "event": "save-response",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-saving",
+        "to_state": "STATE-global-unknown",
+        "requirement_ids": [
+          "R14-F04"
+        ]
+      },
+      {
+        "id": "ACT-record-retry",
+        "control_id": "HOME-record-form",
+        "event": "click",
+        "target_page_id": "PAGE-home",
+        "from_state": "STATE-global-failed",
+        "to_state": "STATE-global-saving",
+        "requirement_ids": [
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-record-detail",
+        "control_id": "RECORDS-events",
+        "event": "click",
+        "target_page_id": "PAGE-records",
+        "from_state": "STATE-records-normal",
+        "to_state": "STATE-record-detail",
+        "requirement_ids": [
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-delete-prompt",
+        "control_id": "RECORDS-events",
+        "event": "click",
+        "target_page_id": "PAGE-records",
+        "from_state": "STATE-record-detail",
+        "to_state": "STATE-record-delete-confirm",
+        "requirement_ids": [
+          "R14-F04",
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-delete-confirm",
+        "control_id": "RECORDS-events",
+        "event": "click",
+        "target_page_id": "PAGE-records",
+        "from_state": "STATE-record-delete-confirm",
+        "to_state": "STATE-records-normal",
+        "requirement_ids": [
+          "R14-F04",
+          "R14-H05"
+        ]
+      },
+      {
+        "id": "ACT-chat-send",
+        "control_id": "CHAT-input",
+        "event": "submit",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-assistant-welcome",
+        "to_state": "STATE-assistant-chat",
+        "requirement_ids": [
+          "R14-H03"
+        ]
+      },
+      {
+        "id": "ACT-task-start",
+        "control_id": "CHAT-care",
+        "event": "click-or-keyword",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-assistant-chat",
+        "to_state": "STATE-task-ready",
+        "requirement_ids": [
+          "R14-U02",
+          "R14-F05"
+        ]
+      },
+      {
+        "id": "ACT-task-capture",
+        "control_id": "CHAT-task",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-ready",
+        "to_state": "STATE-task-permission",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-task-analyze",
+        "control_id": "CHAT-task",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-captured",
+        "to_state": "STATE-task-processing",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-task-result",
+        "control_id": "CHAT-task",
+        "event": "analysis-response",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-processing",
+        "to_state": "STATE-task-result",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-task-error",
+        "control_id": "CHAT-task",
+        "event": "analysis-response",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-processing",
+        "to_state": "STATE-task-recoverable",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-inline-open",
+        "control_id": "CHAT-care",
+        "event": "click-or-keyword",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-assistant-chat",
+        "to_state": "STATE-chat-record-picker",
+        "requirement_ids": [
+          "R14-U03",
+          "R14-F05"
+        ]
+      },
+      {
+        "id": "ACT-inline-type",
+        "control_id": "CHAT-record",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-chat-record-picker",
+        "to_state": "STATE-chat-record-editing",
+        "requirement_ids": [
+          "R14-U03",
+          "R14-U04"
+        ]
+      },
+      {
+        "id": "ACT-inline-submit",
+        "control_id": "CHAT-record",
+        "event": "submit",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-chat-record-editing",
+        "to_state": "STATE-chat-record-saving",
+        "requirement_ids": [
+          "R14-U03"
+        ]
+      },
+      {
+        "id": "ACT-inline-success",
+        "control_id": "CHAT-record",
+        "event": "save-complete",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-chat-record-saving",
+        "to_state": "STATE-chat-record-success",
+        "requirement_ids": [
+          "R14-U03"
+        ]
+      },
+      {
+        "id": "ACT-inline-fail",
+        "control_id": "CHAT-record",
+        "event": "save-response",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-chat-record-saving",
+        "to_state": "STATE-chat-record-recoverable",
+        "requirement_ids": [
+          "R14-U03"
+        ]
+      },
+      {
+        "id": "ACT-history-open",
+        "control_id": "CHAT-history",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-assistant-chat",
+        "to_state": "STATE-chat-history",
+        "requirement_ids": [
+          "R14-H04"
+        ]
+      },
+      {
+        "id": "ACT-history-resume",
+        "control_id": "CHAT-history",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-chat-history",
+        "to_state": "STATE-assistant-chat",
+        "requirement_ids": [
+          "R14-H04"
+        ]
+      },
+      {
+        "id": "ACT-new-chat",
+        "control_id": "CHAT-new",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-assistant-chat",
+        "to_state": "STATE-assistant-welcome",
+        "requirement_ids": [
+          "R14-H04"
+        ]
+      },
+      {
+        "id": "ACT-profile-open",
+        "control_id": "MINE-profile",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "STATE-mine-normal",
+        "to_state": "STATE-profile-edit",
+        "requirement_ids": [
+          "R14-F01",
+          "R14-F02"
+        ]
+      },
+      {
+        "id": "ACT-profile-save",
+        "control_id": "MINE-profile",
+        "event": "submit",
+        "target_page_id": "PAGE-mine",
+        "from_state": "STATE-profile-edit",
+        "to_state": "STATE-mine-normal",
+        "requirement_ids": [
+          "R14-F01",
+          "R14-F02"
+        ]
+      },
+      {
+        "id": "ACT-profile-reject",
+        "control_id": "MINE-profile",
+        "event": "submit",
+        "target_page_id": "PAGE-mine",
+        "from_state": "STATE-profile-edit",
+        "to_state": "STATE-profile-error",
+        "requirement_ids": [
+          "R14-F02"
+        ]
+      },
+      {
+        "id": "ACT-task-allow-cry",
+        "control_id": "CHAT-task",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-permission",
+        "to_state": "STATE-task-listening",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-task-finish-cry",
+        "control_id": "CHAT-task",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-listening",
+        "to_state": "STATE-task-captured",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      },
+      {
+        "id": "ACT-task-select-photo",
+        "control_id": "CHAT-task",
+        "event": "click",
+        "target_page_id": "PAGE-assistant",
+        "from_state": "STATE-task-permission",
+        "to_state": "STATE-task-captured",
+        "requirement_ids": [
+          "R14-H06"
+        ]
+      }
+    ],
+    "states": [
+      {
+        "id": "STATE-home-normal",
+        "page_id": "PAGE-home",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-home-empty",
+        "page_id": "PAGE-home",
+        "kind": "empty"
+      },
+      {
+        "id": "STATE-global-picker",
+        "page_id": "PAGE-home",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-global-form",
+        "page_id": "PAGE-home",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-global-saving",
+        "page_id": "PAGE-home",
+        "kind": "loading"
+      },
+      {
+        "id": "STATE-global-saved",
+        "page_id": "PAGE-home",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-global-failed",
+        "page_id": "PAGE-home",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-global-unknown",
+        "page_id": "PAGE-home",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-records-normal",
+        "page_id": "PAGE-records",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-record-detail",
+        "page_id": "PAGE-records",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-record-delete-confirm",
+        "page_id": "PAGE-records",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-assistant-welcome",
+        "page_id": "PAGE-assistant",
+        "kind": "empty"
+      },
+      {
+        "id": "STATE-assistant-chat",
+        "page_id": "PAGE-assistant",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-task-ready",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-task-permission",
+        "page_id": "PAGE-assistant",
+        "kind": "permission"
+      },
+      {
+        "id": "STATE-task-captured",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-task-processing",
+        "page_id": "PAGE-assistant",
+        "kind": "loading"
+      },
+      {
+        "id": "STATE-task-result",
+        "page_id": "PAGE-assistant",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-task-recoverable",
+        "page_id": "PAGE-assistant",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-chat-record-picker",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-chat-record-editing",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-chat-record-saving",
+        "page_id": "PAGE-assistant",
+        "kind": "loading"
+      },
+      {
+        "id": "STATE-chat-record-success",
+        "page_id": "PAGE-assistant",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-chat-record-recoverable",
+        "page_id": "PAGE-assistant",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-chat-history",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-mine-normal",
+        "page_id": "PAGE-mine",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-profile-edit",
+        "page_id": "PAGE-mine",
+        "kind": "other"
+      },
+      {
+        "id": "STATE-profile-error",
+        "page_id": "PAGE-mine",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-onboarding-identity",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-details",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-concerns",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-recommendations",
+        "page_id": "PAGE-onboarding",
+        "kind": "normal"
+      },
+      {
+        "id": "STATE-onboarding-invalid",
+        "page_id": "PAGE-onboarding",
+        "kind": "error"
+      },
+      {
+        "id": "STATE-task-listening",
+        "page_id": "PAGE-assistant",
+        "kind": "other"
+      }
+    ],
+    "flows": [
+      {
+        "id": "FLOW-onboarding",
+        "description": "四步录入并保存",
+        "requirement_ids": [
+          "R14-H02",
+          "R14-F03"
+        ],
+        "action_ids": [
+          "ACT-identity-next",
+          "ACT-details-next",
+          "ACT-concerns-next",
+          "ACT-onboarding-finish"
+        ]
+      },
+      {
+        "id": "FLOW-onboarding-invalid",
+        "description": "错误日期阻止继续并定位",
+        "requirement_ids": [
+          "R14-F02",
+          "R14-F03"
+        ],
+        "action_ids": [
+          "ACT-identity-next",
+          "ACT-onboarding-reject"
+        ]
+      },
+      {
+        "id": "FLOW-global-record",
+        "description": "全局入口类型→填写→本机回执",
+        "requirement_ids": [
+          "R14-U04",
+          "R14-H05"
+        ],
+        "action_ids": [
+          "ACT-record-open",
+          "ACT-record-type",
+          "ACT-record-submit",
+          "ACT-record-success"
+        ]
+      },
+      {
+        "id": "FLOW-global-retry",
+        "description": "失败保留草稿后重试",
+        "requirement_ids": [
+          "R14-H05"
+        ],
+        "action_ids": [
+          "ACT-record-open",
+          "ACT-record-type",
+          "ACT-record-submit",
+          "ACT-record-fail",
+          "ACT-record-retry",
+          "ACT-record-success"
+        ]
+      },
+      {
+        "id": "FLOW-global-unknown",
+        "description": "结果未知保留原请求并等待核对",
+        "requirement_ids": [
+          "R14-F04"
+        ],
+        "action_ids": [
+          "ACT-record-open",
+          "ACT-record-type",
+          "ACT-record-submit",
+          "ACT-record-unknown"
+        ]
+      },
+      {
+        "id": "FLOW-delete-record",
+        "description": "确认删除并撤销关联旧保存",
+        "requirement_ids": [
+          "R14-F04",
+          "R14-H05"
+        ],
+        "action_ids": [
+          "ACT-record-detail",
+          "ACT-delete-prompt",
+          "ACT-delete-confirm"
+        ]
+      },
+      {
+        "id": "FLOW-task",
+        "description": "消息→专项卡片→模拟素材确认→结果",
+        "requirement_ids": [
+          "R14-U02",
+          "R14-F05",
+          "R14-H06"
+        ],
+        "action_ids": [
+          "ACT-chat-send",
+          "ACT-task-start",
+          "ACT-task-capture",
+          "ACT-task-allow-cry",
+          "ACT-task-finish-cry",
+          "ACT-task-analyze",
+          "ACT-task-result"
+        ]
+      },
+      {
+        "id": "FLOW-task-recover",
+        "description": "分析异常保持可恢复状态",
+        "requirement_ids": [
+          "R14-H06"
+        ],
+        "action_ids": [
+          "ACT-chat-send",
+          "ACT-task-start",
+          "ACT-task-capture",
+          "ACT-task-allow-cry",
+          "ACT-task-finish-cry",
+          "ACT-task-analyze",
+          "ACT-task-error"
+        ]
+      },
+      {
+        "id": "FLOW-inline-record",
+        "description": "消息→记一笔卡片→填写→独立请求→回执",
+        "requirement_ids": [
+          "R14-U03",
+          "R14-U04",
+          "R14-F05"
+        ],
+        "action_ids": [
+          "ACT-chat-send",
+          "ACT-inline-open",
+          "ACT-inline-type",
+          "ACT-inline-submit",
+          "ACT-inline-success"
+        ]
+      },
+      {
+        "id": "FLOW-inline-recover",
+        "description": "会话保存失败或未知时保留当前任务草稿",
+        "requirement_ids": [
+          "R14-U03"
+        ],
+        "action_ids": [
+          "ACT-chat-send",
+          "ACT-inline-open",
+          "ACT-inline-type",
+          "ACT-inline-submit",
+          "ACT-inline-fail"
+        ]
+      },
+      {
+        "id": "FLOW-history",
+        "description": "历史恢复后新建对话",
+        "requirement_ids": [
+          "R14-H04"
+        ],
+        "action_ids": [
+          "ACT-history-open",
+          "ACT-history-resume",
+          "ACT-new-chat"
+        ]
+      },
+      {
+        "id": "FLOW-profile",
+        "description": "编辑资料并保持其他资料",
+        "requirement_ids": [
+          "R14-F01",
+          "R14-F02"
+        ],
+        "action_ids": [
+          "ACT-profile-open",
+          "ACT-profile-save"
+        ]
+      },
+      {
+        "id": "FLOW-profile-invalid",
+        "description": "未来/无效生日被拦截",
+        "requirement_ids": [
+          "R14-F02"
+        ],
+        "action_ids": [
+          "ACT-profile-open",
+          "ACT-profile-reject"
+        ]
+      },
+      {
+        "id": "FLOW-photo-task",
+        "description": "照片任务权限→选择示例照片→确认分析→结果",
+        "requirement_ids": [
+          "R14-U02",
+          "R14-F05",
+          "R14-H06"
+        ],
+        "action_ids": [
+          "ACT-task-capture",
+          "ACT-task-select-photo",
+          "ACT-task-analyze",
+          "ACT-task-result"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "VP390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "VP360-short",
+        "width": 360,
+        "height": 640
+      },
+      {
+        "id": "VPdesktop",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "system": {
+    "revision": "CS-0.3-Bloom-Glass-over-HOME-1.0",
+    "style_source": {
+      "path": "../../design/2026-10-20-semantic-style/CS-0.3-testboards/bloom.html",
+      "sha256": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb",
+      "spec_path": "../../design/2026-10-20-semantic-style/CS-0.3-testboards/STYLE_SPEC.md",
+      "spec_sha256": "54292a81d2b0a8ddf02233d03506df6194bbd1e9ab10d10daabb20402eb29e49",
+      "status": "unfrozen-candidate"
+    },
+    "tokens": {
+      "--canvas": "#fff9f8",
+      "--surface": "#fffdfb",
+      "--text": "#342831",
+      "--secondary": "#766a72",
+      "--action": "#a43d69",
+      "--on-action": "#fff",
+      "--neutral": "#ffe9e8",
+      "--divider": "#eddfdf",
+      "--edge": "#80636f",
+      "--success": "#285943",
+      "--success-bg": "#e1f3e7",
+      "--error": "#973f50",
+      "--error-bg": "#fce6e8",
+      "--oat": "#ffe3da",
+      "--sage": "#e2f4ec",
+      "--radius": "23px",
+      "--control-radius": "15px",
+      "--gutter": "24px",
+      "--dock": "#ffffffd8",
+      "--bloom-rose": "#ffd0d4",
+      "--bloom-apricot": "#ffe3da",
+      "--bloom-mint": "#e2f4ec",
+      "--bloom-lilac": "#ece6ff",
+      "--bloom-glass": "linear-gradient(140deg,#fff9f1d9,#ffe1ed8e 48%,#d5f5e89c)",
+      "--bloom-glass-edge": "#ffffffd9",
+      "--bloom-glass-shadow": "#89415c36"
+    },
+    "components": [
+      {
+        "id": "CMP-summary",
+        "states": [
+          "normal",
+          "empty",
+          "error"
+        ],
+        "token_refs": [
+          "--surface",
+          "--text",
+          "--radius"
+        ]
+      },
+      {
+        "id": "CMP-companion",
+        "states": [
+          "ready",
+          "listening",
+          "processing",
+          "saving",
+          "success",
+          "result",
+          "speaking",
+          "indeterminate",
+          "error",
+          "offline",
+          "permission",
+          "timeout",
+          "interrupted",
+          "cancelled"
+        ],
+        "token_refs": [
+          "--text",
+          "--secondary"
+        ]
+      },
+      {
+        "id": "CMP-action",
+        "states": [
+          "default",
+          "focus",
+          "selected",
+          "disabled",
+          "error"
+        ],
+        "token_refs": [
+          "--text",
+          "--surface",
+          "--action",
+          "--divider"
+        ]
+      },
+      {
+        "id": "CMP-choice",
+        "states": [
+          "default",
+          "focus",
+          "selected",
+          "disabled",
+          "error"
+        ],
+        "token_refs": [
+          "--text",
+          "--surface",
+          "--action",
+          "--divider"
+        ]
+      },
+      {
+        "id": "CMP-wheel",
+        "states": [
+          "default",
+          "focus",
+          "selected",
+          "omitted"
+        ],
+        "token_refs": [
+          "--text",
+          "--surface",
+          "--action",
+          "--divider"
+        ]
+      },
+      {
+        "id": "CMP-record",
+        "states": [
+          "default",
+          "focus",
+          "selected",
+          "disabled",
+          "error"
+        ],
+        "token_refs": [
+          "--text",
+          "--surface",
+          "--action",
+          "--divider"
+        ]
+      },
+      {
+        "id": "CMP-task",
+        "states": [
+          "default",
+          "focus",
+          "selected",
+          "disabled",
+          "error"
+        ],
+        "token_refs": [
+          "--text",
+          "--surface",
+          "--action",
+          "--divider"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "R14-U01",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-onboarding"
+      ],
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-onboarding-details",
+        "STATE-onboarding-concerns",
+        "STATE-onboarding-recommendations"
+      ],
+      "test_ids": [
+        "T14-icons"
+      ]
+    },
+    {
+      "requirement_id": "R14-U02",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-task",
+        "FLOW-photo-task"
+      ],
+      "state_ids": [
+        "STATE-task-ready",
+        "STATE-task-result"
+      ],
+      "test_ids": [
+        "T14-task-timeline"
+      ]
+    },
+    {
+      "requirement_id": "R14-U03",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-inline-record",
+        "FLOW-inline-recover"
+      ],
+      "state_ids": [
+        "STATE-chat-record-picker",
+        "STATE-chat-record-editing",
+        "STATE-chat-record-saving",
+        "STATE-chat-record-success",
+        "STATE-chat-record-recoverable"
+      ],
+      "test_ids": [
+        "T14-inline-isolation",
+        "T14-inline-failure"
+      ]
+    },
+    {
+      "requirement_id": "R14-U04",
+      "page_ids": [
+        "PAGE-home",
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-global-record",
+        "FLOW-inline-record"
+      ],
+      "state_ids": [
+        "STATE-global-picker",
+        "STATE-global-form",
+        "STATE-chat-record-picker",
+        "STATE-chat-record-editing"
+      ],
+      "test_ids": [
+        "T14-record-menu"
+      ]
+    },
+    {
+      "requirement_id": "R14-U05",
+      "page_ids": [
+        "PAGE-onboarding",
+        "PAGE-home",
+        "PAGE-assistant",
+        "PAGE-records",
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-onboarding",
+        "FLOW-inline-record"
+      ],
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-assistant-welcome"
+      ],
+      "test_ids": [
+        "T14-single-html"
+      ]
+    },
+    {
+      "requirement_id": "R14-F01",
+      "page_ids": [
+        "PAGE-mine",
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-profile"
+      ],
+      "state_ids": [
+        "STATE-profile-edit",
+        "STATE-mine-normal"
+      ],
+      "test_ids": [
+        "T14-stage-preservation"
+      ]
+    },
+    {
+      "requirement_id": "R14-F02",
+      "page_ids": [
+        "PAGE-mine",
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-profile-invalid",
+        "FLOW-onboarding-invalid"
+      ],
+      "state_ids": [
+        "STATE-profile-error",
+        "STATE-onboarding-invalid"
+      ],
+      "test_ids": [
+        "T14-birthday-consistency"
+      ]
+    },
+    {
+      "requirement_id": "R14-F03",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-onboarding-invalid"
+      ],
+      "state_ids": [
+        "STATE-onboarding-invalid"
+      ],
+      "test_ids": [
+        "T14-hidden-baby"
+      ]
+    },
+    {
+      "requirement_id": "R14-F04",
+      "page_ids": [
+        "PAGE-home",
+        "PAGE-records",
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-global-unknown",
+        "FLOW-delete-record"
+      ],
+      "state_ids": [
+        "STATE-global-unknown",
+        "STATE-record-delete-confirm"
+      ],
+      "test_ids": [
+        "T14-deleted-unknown"
+      ]
+    },
+    {
+      "requirement_id": "R14-F05",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-task",
+        "FLOW-inline-record"
+      ],
+      "state_ids": [
+        "STATE-task-ready",
+        "STATE-chat-record-picker"
+      ],
+      "test_ids": [
+        "T14-task-timeline"
+      ]
+    },
+    {
+      "requirement_id": "R14-H01",
+      "page_ids": [
+        "PAGE-home",
+        "PAGE-assistant",
+        "PAGE-records",
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-global-record"
+      ],
+      "state_ids": [
+        "STATE-home-normal",
+        "STATE-records-normal"
+      ],
+      "test_ids": [
+        "T14-navigation"
+      ]
+    },
+    {
+      "requirement_id": "R14-H02",
+      "page_ids": [
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-onboarding"
+      ],
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-onboarding-details",
+        "STATE-onboarding-concerns",
+        "STATE-onboarding-recommendations"
+      ],
+      "test_ids": [
+        "T14-onboarding"
+      ]
+    },
+    {
+      "requirement_id": "R14-H03",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-task"
+      ],
+      "state_ids": [
+        "STATE-assistant-welcome",
+        "STATE-assistant-chat"
+      ],
+      "test_ids": [
+        "T14-chat-layout"
+      ]
+    },
+    {
+      "requirement_id": "R14-H04",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-history"
+      ],
+      "state_ids": [
+        "STATE-chat-history",
+        "STATE-assistant-welcome"
+      ],
+      "test_ids": [
+        "T14-history"
+      ]
+    },
+    {
+      "requirement_id": "R14-H05",
+      "page_ids": [
+        "PAGE-home",
+        "PAGE-records"
+      ],
+      "flow_ids": [
+        "FLOW-global-record",
+        "FLOW-global-retry",
+        "FLOW-delete-record"
+      ],
+      "state_ids": [
+        "STATE-global-saved",
+        "STATE-global-failed",
+        "STATE-records-normal"
+      ],
+      "test_ids": [
+        "T14-record-menu",
+        "T14-global-retry"
+      ]
+    },
+    {
+      "requirement_id": "R14-H06",
+      "page_ids": [
+        "PAGE-assistant"
+      ],
+      "flow_ids": [
+        "FLOW-task",
+        "FLOW-photo-task",
+        "FLOW-task-recover"
+      ],
+      "state_ids": [
+        "STATE-task-permission",
+        "STATE-task-listening",
+        "STATE-task-captured",
+        "STATE-task-processing",
+        "STATE-task-result",
+        "STATE-task-recoverable"
+      ],
+      "test_ids": [
+        "T14-task-recovery",
+        "T14-photo"
+      ]
+    },
+    {
+      "requirement_id": "R14-H07",
+      "page_ids": [
+        "PAGE-home",
+        "PAGE-assistant",
+        "PAGE-records",
+        "PAGE-mine",
+        "PAGE-onboarding"
+      ],
+      "flow_ids": [
+        "FLOW-global-record"
+      ],
+      "state_ids": [
+        "STATE-global-picker",
+        "STATE-global-form"
+      ],
+      "test_ids": [
+        "T14-sheets-reading"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "PD-production-scope",
+      "question": "真实AI、设备、云同步、未定义的健康字段及生产级规则另行定义；不阻塞本轮原型",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "PD-formal-baseline",
+      "question": "尚未建立可追溯合法 B-ID 冻结基线与完整静态 DOM guard 导出；不得宣称正式冻结通过",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T14-icons",
+      "flow_id": "FLOW-onboarding",
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-onboarding-details",
+        "STATE-onboarding-concerns",
+        "STATE-onboarding-recommendations"
+      ],
+      "steps": [
+        "依次查看身份、基础资料、关注和推荐页；核对图标与文本语义；检查窄屏留白与选中状态。"
+      ],
+      "expected": "角色、妈妈/宝宝、九个关注点和三项推荐使用对应图标，文字保持可读，焦点和选中状态不只依赖颜色。",
+      "requirement_ids": [
+        "R14-U01"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-onboarding",
+      "flow_id": "FLOW-onboarding",
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-onboarding-details",
+        "STATE-onboarding-concerns",
+        "STATE-onboarding-recommendations"
+      ],
+      "steps": [
+        "选择妈妈但不选阶段；资料页操作数字滚轮并填写生日；选择关注；查看独立推荐页并完成；刷新重进。"
+      ],
+      "expected": "身份必选，阶段选填；妈妈和宝宝同页；有效资料保存并可恢复。",
+      "requirement_ids": [
+        "R14-H02"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-stage-preservation",
+      "flow_id": "FLOW-profile",
+      "state_ids": [
+        "STATE-profile-edit",
+        "STATE-mine-normal"
+      ],
+      "steps": [
+        "以空妈妈阶段、两名宝宝有效生日完成资料；进入妈妈资料不改直接保存；再切换孕前/孕期；刷新回看宝宝。"
+      ],
+      "expected": "空阶段不默认孕前；阶段变更不删除已有宝宝资料。",
+      "requirement_ids": [
+        "R14-F01"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-birthday-consistency",
+      "flow_id": "FLOW-profile-invalid",
+      "state_ids": [
+        "STATE-profile-edit",
+        "STATE-profile-error"
+      ],
+      "steps": [
+        "分别在引导和宝宝资料输入当天、过去、留空和未来生日。"
+      ],
+      "expected": "当天、过去、留空均可保存；未来或无效日期都拒绝，使用本机当天而非固定记录演示日期。",
+      "requirement_ids": [
+        "R14-F02"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-hidden-baby",
+      "flow_id": "FLOW-onboarding-invalid",
+      "state_ids": [
+        "STATE-onboarding-details",
+        "STATE-onboarding-invalid"
+      ],
+      "steps": [
+        "宝宝1有效，宝宝2未来日期；数量2→1→2，停留宝宝1尝试继续和完成；再测试阶段变化与刷新恢复。"
+      ],
+      "expected": "校验所有将保存的宝宝，定位错误宝宝与日期；不能通过隐藏字段保存非法日期。",
+      "requirement_ids": [
+        "R14-F03"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-deleted-unknown",
+      "flow_id": "FLOW-delete-record",
+      "state_ids": [
+        "STATE-global-unknown",
+        "STATE-record-delete-confirm",
+        "STATE-records-normal"
+      ],
+      "steps": [
+        "编辑已保存记录并模拟结果未知；关闭后删除原记录并确认；重新打开记一笔并核对旧请求；刷新回看。"
+      ],
+      "expected": "已删除记录不恢复，不产生重复记录；相关待处理请求和草稿不再提交删除对象。",
+      "requirement_ids": [
+        "R14-F04"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-task-timeline",
+      "flow_id": "FLOW-task",
+      "state_ids": [
+        "STATE-assistant-chat",
+        "STATE-task-ready",
+        "STATE-task-result"
+      ],
+      "steps": [
+        "长对话底部用关键词启动听哭闹；操作至结果；追加新消息和下一项任务；上滑回看并恢复历史。"
+      ],
+      "expected": "任务按发起次序留在对话中、状态原位推进；新任务可见，旧任务不会固定移到顶部。",
+      "requirement_ids": [
+        "R14-U02",
+        "R14-F05"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-inline-isolation",
+      "flow_id": "FLOW-inline-record",
+      "state_ids": [
+        "STATE-chat-record-picker",
+        "STATE-chat-record-editing",
+        "STATE-chat-record-success"
+      ],
+      "steps": [
+        "Today记一笔填写未保存草稿；在 AI 启动记一笔并填写不同类型和值；切换对话、刷新后恢复；保存并查看日志和全局草稿。"
+      ],
+      "expected": "会话表单在卡片内；会话与全局草稿/请求相互独立；成功记录仅新增一次到共享日志。",
+      "requirement_ids": [
+        "R14-U03"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-record-menu",
+      "flow_id": "FLOW-global-record",
+      "state_ids": [
+        "STATE-global-picker",
+        "STATE-global-form",
+        "STATE-global-saved"
+      ],
+      "steps": [
+        "检查全局类型菜单及五类表单；返回类型、更换、关闭重开；检查二级选择、发生时间、选填备注与保存。"
+      ],
+      "expected": "妈妈/宝宝分组和字段层级明确，页面内弹窗可滚动且底部操作可达；保持草稿。",
+      "requirement_ids": [
+        "R14-U04",
+        "R14-H05"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-inline-failure",
+      "flow_id": "FLOW-inline-recover",
+      "state_ids": [
+        "STATE-chat-record-saving",
+        "STATE-chat-record-recoverable"
+      ],
+      "steps": [
+        "会话内保存分别模拟失败、结果未知、取消保存；返回草稿或核对/重试；保存中切换会话再恢复。"
+      ],
+      "expected": "保留当前卡片独立草稿，提供可执行恢复；异步结果不串入其他会话，不重复新增。",
+      "requirement_ids": [
+        "R14-U03"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-global-retry",
+      "flow_id": "FLOW-global-retry",
+      "state_ids": [
+        "STATE-global-saving",
+        "STATE-global-failed",
+        "STATE-global-saved"
+      ],
+      "steps": [
+        "全局记录模拟失败后重试；检查回执和日志数量。"
+      ],
+      "expected": "失败有明确反馈，重试只完成原笔记录；本机保存与云同步表述分开。",
+      "requirement_ids": [
+        "R14-H05"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-task-recovery",
+      "flow_id": "FLOW-task-recover",
+      "state_ids": [
+        "STATE-task-processing",
+        "STATE-task-recoverable"
+      ],
+      "steps": [
+        "分析模拟超时/离线/无法判断；重试、取消或继续聊天；进行后台中断后手动恢复。"
+      ],
+      "expected": "异常有恢复或结束入口，旧任务不会覆盖新对话。",
+      "requirement_ids": [
+        "R14-H06"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-photo",
+      "flow_id": "FLOW-photo-task",
+      "state_ids": [
+        "STATE-task-permission",
+        "STATE-task-captured",
+        "STATE-task-processing",
+        "STATE-task-result"
+      ],
+      "steps": [
+        "启动看便便，模拟权限，选择示例照片，确认分析并查看结果和追加服务。"
+      ],
+      "expected": "素材在用户确认后才分析，结果明确模拟，追加入口继续当前会话。",
+      "requirement_ids": [
+        "R14-H06"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-history",
+      "flow_id": "FLOW-history",
+      "state_ids": [
+        "STATE-chat-history",
+        "STATE-assistant-chat",
+        "STATE-assistant-welcome"
+      ],
+      "steps": [
+        "创建两段对话；搜索、重命名、恢复；取消删除；确认删除其他对话再删除当前对话。"
+      ],
+      "expected": "历史名称和草稿保存；删除需确认，其他会话不变，当前删除回到欢迎页。",
+      "requirement_ids": [
+        "R14-H04"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-chat-layout",
+      "flow_id": "FLOW-task",
+      "state_ids": [
+        "STATE-assistant-welcome",
+        "STATE-assistant-chat"
+      ],
+      "steps": [
+        "检查欢迎动画与三个入口；发长消息、上滑历史、回到最新；查看输入栏和 Dock 边界。"
+      ],
+      "expected": "聊天独立滚动，输入框固定且无遮挡；欢迎入口和紧凑会话布局正确；每条 AI 回复有头像署名。",
+      "requirement_ids": [
+        "R14-H03"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-navigation",
+      "flow_id": "FLOW-global-record",
+      "state_ids": [
+        "STATE-home-normal",
+        "STATE-home-empty",
+        "STATE-records-normal"
+      ],
+      "steps": [
+        "在Today、momcozy AI、记录之间切换；从Today进入我的并返回。"
+      ],
+      "expected": "Dock只有三项；Today太阳图标；个人资料仍有可达入口。",
+      "requirement_ids": [
+        "R14-H01"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-sheets-reading",
+      "flow_id": "FLOW-global-record",
+      "state_ids": [
+        "STATE-global-picker",
+        "STATE-global-form"
+      ],
+      "steps": [
+        "在390×844、360×640和桌面容器查看菜单、表单和设置；切换夜间、减少动态/透明度和增强对比。"
+      ],
+      "expected": "弹窗/遮罩限制在交互页面内；长内容可滚动，标题与操作可达；阅读设置不破坏基本任务。",
+      "requirement_ids": [
+        "R14-H07"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    },
+    {
+      "id": "T14-single-html",
+      "flow_id": "FLOW-onboarding",
+      "state_ids": [
+        "STATE-onboarding-identity",
+        "STATE-home-normal",
+        "STATE-assistant-welcome"
+      ],
+      "steps": [
+        "使用 file:// 打开 Momcozy-final.html；检查图标和形象资产、引导、导航和一次卡片保存；刷新。"
+      ],
+      "expected": "单文件无需外部资产；功能与相对资源版本一致；存储不可用时显示降级提示；file与HTTP数据边界明确。",
+      "requirement_ids": [
+        "R14-U05"
+      ],
+      "status": "acceptance-description-see-runtime-evidence"
+    }
+  ],
+  "limitations": [
+    "账本描述当前本轮范围，不代表历史完整需求池已实现或验收。",
+    "部分控件与状态由 JavaScript 动态渲染；这里的语义状态映射不是静态 guard 合格证明。",
+    "测试条目是可执行验收描述；实际结果、覆盖和当前哈希以 reviews/final-revision-14 中证据为准。",
+    "旧 HOME-0.1 作为历史快照保持不变，不伪造成当前合法冻结 B-ID。",
+    "原型未接入真实模型、采集、上传、声音播放、设备或云同步；多宝宝资料不等于多宝宝日志归属。",
+    "手机尺寸浏览器验证不等于真机键盘、系统权限或完整辅助技术认证。"
+  ],
+  "implementation": {
+    "authorization": "IMPLEMENTATION.txt",
+    "change_scope": "reviews/final-revision-14/change-scope.json",
+    "baseline_snapshot": "baselines/HOME-0.1",
+    "main_files": [
+      "index.html",
+      "assets/style.css",
+      "assets/app.js",
+      "assets/icons.js",
+      "assets/companion.js",
+      "assets/motion-model.js",
+      "assets/soft-expressions.png"
+    ],
+    "standalone_target": "Momcozy-final.html",
+    "routes": [
+      "#/home",
+      "#/assistant",
+      "#/records",
+      "#/mine",
+      "#/onboarding"
+    ],
+    "dock": [
+      "Today",
+      "momcozy AI",
+      "记录"
+    ],
+    "scope": "本轮语义图标、时间线任务卡、会话内独立记一笔、二级记录表单与五项审查修复",
+    "source_urls": [
+      "http://127.0.0.1:5196/standalone.html",
+      "http://127.0.0.1:8712/#definition"
+    ],
+    "dynamic_panels": [
+      "record-picker",
+      "record-form",
+      "save",
+      "profile",
+      "chat-history",
+      "rename-conversation",
+      "delete-conversation",
+      "sync",
+      "devices",
+      "settings",
+      "voice",
+      "attachment"
+    ],
+    "evidence_directory": "reviews/final-revision-14"
+  }
+}

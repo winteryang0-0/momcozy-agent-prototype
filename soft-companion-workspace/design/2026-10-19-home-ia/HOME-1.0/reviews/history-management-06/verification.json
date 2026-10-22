@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-20T02:30:10.230Z",
+  "scope": "历史对话重命名、关键词搜索、确认删除及长对话回看修复",
+  "tests": {
+    "renameRejectsWhitespace": true,
+    "renamePreservedAfterContinueAndReload": true,
+    "searchTitleAndBody": true,
+    "searchCaseInsensitive": true,
+    "searchMultipleTermsAcrossTitleAndBody": true,
+    "searchNoResultAndClear": true,
+    "cancelDeletePreservesConversation": true,
+    "deleteNoncurrentPreservesCurrentMessagesAndDraft": true,
+    "deletePersistsAfterReload": true,
+    "deleteCurrentResetsWelcome": {
+      "messages": 0,
+      "draft": "",
+      "task": null,
+      "shortcutsVisible": true,
+      "motionLoop": true
+    },
+    "originalConversations": [
+      {
+        "id": "chat-1792416774420-9n8qtm",
+        "unchanged": true
+      },
+      {
+        "id": "chat-1792416831791-uavwee",
+        "unchanged": true
+      }
+    ],
+    "temporaryConversationsRemoved": [
+      "chat-1792463084965-a02q3t",
+      "chat-1792463113788-bwk44j"
+    ],
+    "finalHistoryCount": 2,
+    "longChatScrollUp": true,
+    "replyAtBottomAutofollows": true,
+    "replyWhileReadingDoesNotJump": true,
+    "readingPositionStableAcrossChecks": true,
+    "returnToLatest": true,
+    "readingMetrics": {
+      "composerBottom": 676.0000228881836,
+      "composerTop": 562.6666870117188,
+      "dockTop": 712,
+      "latest": true,
+      "max": 2259,
+      "pending": "",
+      "scrollBottom": 506.6666870117187,
+      "top": 1234
+    },
+    "smallHistory": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "重命名"
+        },
+        {
+          "height": 44,
+          "text": "删除"
+        },
+        {
+          "height": 44,
+          "text": "重命名"
+        },
+        {
+          "height": 44,
+          "text": "删除"
+        }
+      ],
+      "height": 640,
+      "horizontalOverflow": false,
+      "sheetClientHeight": 575,
+      "sheetHorizontalOverflow": false,
+      "sheetScrollHeight": 646,
+      "width": 360
+    },
+    "syntax": true,
+    "browserConsoleErrors": []
+  },
+  "limits": [
+    "原始卡死未在桌面稳定复现；已修复自动跟随打断回看及布局变化误判，增加原生触摸滚动支持。",
+    "未在真实手机验证触摸、惯性滚动和软键盘。",
+    "浏览器存储失败提示保留，未实际模拟存储失败。",
+    "本地模拟对话，未连接真实AI或云同步；本轮为受影响路径回归。"
+  ],
+  "screenshots": [
+    "history-management-360.jpg",
+    "history-management-360x640.jpg",
+    "delete-confirmation-360.jpg",
+    "long-chat-reading-360.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 10130,
+      "sha256": "1d1a8906af971ebb9a3ea367389d6c4a46a0c417f03b6bc991fd7ba38d15d428"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 28663,
+      "sha256": "30f029c83b59798005416b7542e9b214a65645c2ddff262e5ea8b33465c29b50"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 55152,
+      "sha256": "9f699bf51b7053db359941fac438ca89113d2719e77b91914ccb28e0c90b7dbe"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

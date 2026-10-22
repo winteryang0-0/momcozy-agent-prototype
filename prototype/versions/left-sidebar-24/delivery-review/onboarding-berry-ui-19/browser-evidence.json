@@ -1,0 +1,149 @@
+{
+  "revision": "onboarding-berry-ui-19",
+  "material_sha256": "1b6f3f47621c8cf2bb8b7a6ef8d171d95d9ba880ee4dd624ba44dda528b60d64",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "operator": "Playwright local Chrome headless",
+  "captured_at": "2026-10-20T15:04:30.192Z",
+  "checks": [
+    "first visit route, required identity, stage and draft refresh",
+    "skip, refresh, menu resume retains selected step and concern",
+    "back, complete, profile saved without invented records, refresh stays home",
+    "existing home reminders, sound, records and new record still work after onboarding",
+    "360 px four-step layout and deep-link first visit",
+    "existing local profile bypasses first-run onboarding"
+  ],
+  "screenshots": [
+    {
+      "name": "01-first-identity-390",
+      "note": "clean first visit opens identity step",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/01-first-identity-390.png",
+      "sha256": "c20ceb9672c294519845a81721b83ce551ae731f1c8c4688dae1111cded459a6",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:23.735Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-required-role-390",
+      "note": "identity validation",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/02-required-role-390.png",
+      "sha256": "362c5879ba4415fc08750d7aa012eee07becdb67a06f76a95d8069ced487affa",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:24.279Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-first-details-390",
+      "note": "optional detail wheels start empty",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/03-first-details-390.png",
+      "sha256": "3df7fd6f3abef6d0fbe6e4bc75895591e8cb3c116bd4d09b09b0a1e856ab01a0",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:25.322Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-first-concerns-390",
+      "note": "selected concern",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/04-first-concerns-390.png",
+      "sha256": "dd5cfdec7081ab2044d86d8f021fb2c04cdb4b976c5878d63c608eea22c843cf",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:25.836Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-first-recommendations-390",
+      "note": "recommendations from concern",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/05-first-recommendations-390.png",
+      "sha256": "537c82a843cf47f5f0b3a1602e8507b7078322572ec411c861006b8ddb23b326",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:27.139Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-first-complete-home-390",
+      "note": "completed first visit returns home",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/06-first-complete-home-390.png",
+      "sha256": "ad72ecc1383d885d2de4a9e2f299e1791e62629c27d356c8df3c95485ff00c7d",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T15:04:27.452Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-first-identity-360",
+      "note": "short viewport and direct records link still opens onboarding",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/07-first-identity-360.png",
+      "sha256": "3a810f35c4f8ad9e0b2cde682ae5d5cd304c9d9a41f735aba24d04712f741e2c",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:28.401Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-first-details-360",
+      "note": "short viewport details",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/08-first-details-360.png",
+      "sha256": "aaf3dc27a0ca20fb062d3b72a0cc675b1e696f191cc54ccfe006b7cbf89870c9",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:28.705Z",
+      "fullPage": false
+    },
+    {
+      "name": "09-first-concerns-360",
+      "note": "short viewport concern choices",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/09-first-concerns-360.png",
+      "sha256": "a07345aeb33a2ff3c5cb9359da18302d145346b4395074d237dafbd49e5e8460",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:29.400Z",
+      "fullPage": false
+    },
+    {
+      "name": "10-first-recommendations-360",
+      "note": "short viewport recommendations",
+      "path": "delivery-review/onboarding-berry-ui-19/screenshots/10-first-recommendations-360.png",
+      "sha256": "e7622bf05b9768809fe8c80ec55e538db8ca7d273c2927082b88de87af80156d",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/onboarding",
+      "captured_at": "2026-10-20T15:04:29.964Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "candidate": "FW-0.2",
+  "status": "draft-not-frozen",
+  "files": [
+    {
+      "path": "bundle/index.html",
+      "bytes": 37395,
+      "sha256": "2dd7908a7758417dc7a55c58baf3b492cca3c50fd3dea4e7b7910e970ed7a911"
+    },
+    {
+      "path": "bundle/assets/styles.css",
+      "bytes": 9380,
+      "sha256": "2aae88edb0ceb0be895f006fdf032405d4e574d2df05bf23b87d1f5305432f06"
+    },
+    {
+      "path": "bundle/assets/app.js",
+      "bytes": 20134,
+      "sha256": "03df708e4e57ba55d65082960037c7614e9b7224c1a2b588f1a83ceee8834dec"
+    },
+    {
+      "path": "bundle/README.txt",
+      "bytes": 1020,
+      "sha256": "0981092474259a9673ff7bacba199f4b0a672f639f91960c344e104278594839"
+    }
+  ]
+}

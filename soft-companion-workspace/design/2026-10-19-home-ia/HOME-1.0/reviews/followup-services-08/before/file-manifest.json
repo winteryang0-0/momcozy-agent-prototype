@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-20T02:38:36.186Z",
+  "files": [
+    {
+      "path": "index.html",
+      "size": 10169,
+      "sha256": "ccb3688c18e01670429df38e8a97bc39ea3d0954154fdede88db6fb883d3d980"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 30130,
+      "sha256": "b5fafb430d6a722b9f505c766dcc352895b08923e1beabb86f9b324f2b50158d"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 56213,
+      "sha256": "7863c4b8d1c54ecd39c29a1e349d5ac2fabcde009c22010f0f33fdb500fb3cd4"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ],
+  "spriteMatchesOriginal": true,
+  "staticDependencies": "all relative and present",
+  "runtimeRemoteRequests": false,
+  "latest_patch": "reviews/contained-sheets-07/verification.json"
+}

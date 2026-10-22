@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "revision": "bloom-glass-01",
+  "evidence_mode": "user-supplied-screenshot-review",
+  "material_binding": "pre-fix screenshots; final CSS and standalone HTML were modified later",
+  "capture_time": null,
+  "browser": null,
+  "url": null,
+  "declared_viewport": null,
+  "full_page": null,
+  "notes": "The user supplied these screenshots in this conversation. Each stored copy was checked byte-for-byte against its original clipboard attachment. Pixel dimensions are not viewport declarations. No screenshot of the final corrected CSS is available.",
+  "screenshots": [
+    {
+      "source_attachment": "codex-clipboard-3e09047d-b348-49aa-a40d-ea8d307e19a9.png",
+      "path": "screenshots/01-today-empty-pre-fix.png",
+      "page": "PAGE-home",
+      "state": "empty",
+      "pixel_width": 481,
+      "pixel_height": 872,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300",
+      "matches_attachment": true
+    },
+    {
+      "source_attachment": "codex-clipboard-c5048810-b8df-46e6-9495-805b51c0447b.png",
+      "path": "screenshots/02-ai-welcome-pre-fix.png",
+      "page": "PAGE-assistant",
+      "state": "welcome",
+      "pixel_width": 450,
+      "pixel_height": 876,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc",
+      "matches_attachment": true
+    },
+    {
+      "source_attachment": "codex-clipboard-0ac5e440-e73c-453a-b243-e0f544d21ef6.png",
+      "path": "screenshots/03-records-empty-pre-fix.png",
+      "page": "PAGE-records",
+      "state": "empty",
+      "pixel_width": 450,
+      "pixel_height": 878,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5",
+      "matches_attachment": true
+    },
+    {
+      "source_attachment": "codex-clipboard-498dc40a-a7ca-4747-bc81-846d35846685.png",
+      "path": "screenshots/04-ai-saved-card-pre-fix.png",
+      "page": "PAGE-assistant",
+      "state": "local-save-receipt",
+      "pixel_width": 431,
+      "pixel_height": 863,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf",
+      "matches_attachment": true
+    },
+    {
+      "source_attachment": "codex-clipboard-b5854a9d-8f2a-41e5-a923-9e007d68dfde.png",
+      "path": "screenshots/05-ai-conversation-pre-fix.png",
+      "page": "PAGE-assistant",
+      "state": "conversation-input-focused",
+      "pixel_width": 462,
+      "pixel_height": 866,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93",
+      "matches_attachment": true
+    }
+  ]
+}

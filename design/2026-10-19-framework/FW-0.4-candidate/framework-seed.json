@@ -1,0 +1,1377 @@
+{
+  "pages": [
+    {
+      "id": "PAGE-identity",
+      "route": "#/identity",
+      "parent_id": null,
+      "regions": [
+        "PAGE-identity-body"
+      ]
+    },
+    {
+      "id": "PAGE-stage",
+      "route": "#/stage",
+      "parent_id": null,
+      "regions": [
+        "PAGE-stage-body"
+      ]
+    },
+    {
+      "id": "PAGE-basic",
+      "route": "#/basic",
+      "parent_id": null,
+      "regions": [
+        "PAGE-basic-body"
+      ]
+    },
+    {
+      "id": "PAGE-birth",
+      "route": "#/birth",
+      "parent_id": null,
+      "regions": [
+        "PAGE-birth-body"
+      ]
+    },
+    {
+      "id": "PAGE-focus",
+      "route": "#/focus",
+      "parent_id": null,
+      "regions": [
+        "PAGE-focus-body"
+      ]
+    },
+    {
+      "id": "PAGE-recommend",
+      "route": "#/recommend",
+      "parent_id": null,
+      "regions": [
+        "PAGE-recommend-body"
+      ]
+    },
+    {
+      "id": "PAGE-chat",
+      "route": "#/chat",
+      "parent_id": null,
+      "regions": [
+        "PAGE-chat-body"
+      ]
+    },
+    {
+      "id": "PAGE-mine",
+      "route": "#/mine",
+      "parent_id": "PAGE-chat",
+      "regions": [
+        "PAGE-mine-body"
+      ]
+    },
+    {
+      "id": "PAGE-baby",
+      "route": "#/baby",
+      "parent_id": "PAGE-chat",
+      "regions": [
+        "PAGE-baby-body"
+      ]
+    },
+    {
+      "id": "PAGE-devices",
+      "route": "#/devices",
+      "parent_id": "PAGE-chat",
+      "regions": [
+        "PAGE-devices-body"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "ONB-role",
+      "page_id": "PAGE-identity",
+      "component_id": "CMP-control",
+      "role": "ONB-role"
+    },
+    {
+      "id": "PAGE-identity-next",
+      "page_id": "PAGE-identity",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "ONB-stage",
+      "page_id": "PAGE-stage",
+      "component_id": "CMP-control",
+      "role": "ONB-stage"
+    },
+    {
+      "id": "PAGE-stage-back",
+      "page_id": "PAGE-stage",
+      "component_id": "CMP-control",
+      "role": "go:identity"
+    },
+    {
+      "id": "PAGE-stage-next",
+      "page_id": "PAGE-stage",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "ONB-age",
+      "page_id": "PAGE-basic",
+      "component_id": "CMP-control",
+      "role": "ONB-age"
+    },
+    {
+      "id": "ONB-parity",
+      "page_id": "PAGE-basic",
+      "component_id": "CMP-control",
+      "role": "ONB-parity"
+    },
+    {
+      "id": "PAGE-basic-back",
+      "page_id": "PAGE-basic",
+      "component_id": "CMP-control",
+      "role": "go:stage"
+    },
+    {
+      "id": "PAGE-basic-next",
+      "page_id": "PAGE-basic",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "ONB-date",
+      "page_id": "PAGE-birth",
+      "component_id": "CMP-control",
+      "role": "ONB-date"
+    },
+    {
+      "id": "ONB-week",
+      "page_id": "PAGE-birth",
+      "component_id": "CMP-control",
+      "role": "ONB-week"
+    },
+    {
+      "id": "ONB-count",
+      "page_id": "PAGE-birth",
+      "component_id": "CMP-control",
+      "role": "ONB-count"
+    },
+    {
+      "id": "PAGE-birth-back",
+      "page_id": "PAGE-birth",
+      "component_id": "CMP-control",
+      "role": "go:basic"
+    },
+    {
+      "id": "PAGE-birth-next",
+      "page_id": "PAGE-birth",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "ONB-focus-0",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-0"
+    },
+    {
+      "id": "ONB-focus-1",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-1"
+    },
+    {
+      "id": "ONB-focus-2",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-2"
+    },
+    {
+      "id": "ONB-focus-3",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-3"
+    },
+    {
+      "id": "ONB-focus-4",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-4"
+    },
+    {
+      "id": "ONB-focus-5",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-5"
+    },
+    {
+      "id": "ONB-focus-6",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-6"
+    },
+    {
+      "id": "ONB-focus-7",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-7"
+    },
+    {
+      "id": "ONB-focus-8",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-8"
+    },
+    {
+      "id": "ONB-focus-9",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "ONB-focus-9"
+    },
+    {
+      "id": "PAGE-focus-back",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "go:birth"
+    },
+    {
+      "id": "PAGE-focus-next",
+      "page_id": "PAGE-focus",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "PAGE-recommend-back",
+      "page_id": "PAGE-recommend",
+      "component_id": "CMP-control",
+      "role": "go:focus"
+    },
+    {
+      "id": "PAGE-recommend-next",
+      "page_id": "PAGE-recommend",
+      "component_id": "CMP-control",
+      "role": "next"
+    },
+    {
+      "id": "C01",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "menu"
+    },
+    {
+      "id": "C03",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "sound"
+    },
+    {
+      "id": "C04-profile",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "go:baby"
+    },
+    {
+      "id": "C05",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "AI陪伴形象"
+    },
+    {
+      "id": "TODAY-resume",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "today-resume"
+    },
+    {
+      "id": "TODAY-details",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "today-details"
+    },
+    {
+      "id": "C09",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:record"
+    },
+    {
+      "id": "C10",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:cry"
+    },
+    {
+      "id": "C11",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:poop"
+    },
+    {
+      "id": "record-collapse",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-collapse:record"
+    },
+    {
+      "id": "record-expand",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-expand:record"
+    },
+    {
+      "id": "REC-type-breast",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-select:breast"
+    },
+    {
+      "id": "REC-type-formula",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-select:formula"
+    },
+    {
+      "id": "REC-type-bottle",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-select:bottle"
+    },
+    {
+      "id": "REC-type-diaper",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-select:diaper"
+    },
+    {
+      "id": "REC-type-pump",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-select:pump"
+    },
+    {
+      "id": "breast-back",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-types"
+    },
+    {
+      "id": "breast-time",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "breast-time"
+    },
+    {
+      "id": "breast-side",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "breast-side"
+    },
+    {
+      "id": "breast-duration",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "breast-duration"
+    },
+    {
+      "id": "breast-note",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "breast-note"
+    },
+    {
+      "id": "breast-save",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "save:breast"
+    },
+    {
+      "id": "formula-back",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-types"
+    },
+    {
+      "id": "formula-time",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "formula-time"
+    },
+    {
+      "id": "formula-minus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:formula:-10"
+    },
+    {
+      "id": "formula-amount",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "奶量（ml）"
+    },
+    {
+      "id": "formula-plus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:formula:10"
+    },
+    {
+      "id": "formula-end",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "formula-end"
+    },
+    {
+      "id": "formula-note",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "formula-note"
+    },
+    {
+      "id": "formula-save",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "save:formula"
+    },
+    {
+      "id": "bottle-back",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-types"
+    },
+    {
+      "id": "bottle-time",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "bottle-time"
+    },
+    {
+      "id": "bottle-minus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:bottle:-10"
+    },
+    {
+      "id": "bottle-amount",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "奶量（ml）"
+    },
+    {
+      "id": "bottle-plus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:bottle:10"
+    },
+    {
+      "id": "bottle-end",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "bottle-end"
+    },
+    {
+      "id": "bottle-note",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "bottle-note"
+    },
+    {
+      "id": "bottle-save",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "save:bottle"
+    },
+    {
+      "id": "diaper-back",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-types"
+    },
+    {
+      "id": "diaper-time",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "diaper-time"
+    },
+    {
+      "id": "diaper-diaper",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "diaper-diaper"
+    },
+    {
+      "id": "diaper-rash",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "diaper-rash"
+    },
+    {
+      "id": "diaper-note",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "diaper-note"
+    },
+    {
+      "id": "diaper-save",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "save:diaper"
+    },
+    {
+      "id": "pump-back",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "record-types"
+    },
+    {
+      "id": "pump-time",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "pump-time"
+    },
+    {
+      "id": "pump-minus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:pump:-10"
+    },
+    {
+      "id": "pump-amount",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "奶量（ml）"
+    },
+    {
+      "id": "pump-plus",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "amount:pump:10"
+    },
+    {
+      "id": "pump-end",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "pump-end"
+    },
+    {
+      "id": "pump-note",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "pump-note"
+    },
+    {
+      "id": "pump-save",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "save:pump"
+    },
+    {
+      "id": "REC-again",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:record"
+    },
+    {
+      "id": "record-cancel",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-cancel:record"
+    },
+    {
+      "id": "cry-collapse",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-collapse:cry"
+    },
+    {
+      "id": "cry-expand",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-expand:cry"
+    },
+    {
+      "id": "C10-start",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:start"
+    },
+    {
+      "id": "C10-stop",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:stop"
+    },
+    {
+      "id": "C10-redo",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:start"
+    },
+    {
+      "id": "cry-submit",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:submit"
+    },
+    {
+      "id": "cry-ask",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:ask"
+    },
+    {
+      "id": "cry-retry-unknown",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:restart"
+    },
+    {
+      "id": "cry-retry",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:submit"
+    },
+    {
+      "id": "cry-retry-permission",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:start"
+    },
+    {
+      "id": "C10-interrupted-retry",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "cry:restart"
+    },
+    {
+      "id": "cry-cancel",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-cancel:cry"
+    },
+    {
+      "id": "cry-again",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:cry"
+    },
+    {
+      "id": "poop-collapse",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-collapse:poop"
+    },
+    {
+      "id": "poop-expand",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-expand:poop"
+    },
+    {
+      "id": "C11-camera",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:add"
+    },
+    {
+      "id": "C11-album",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:add"
+    },
+    {
+      "id": "C11-add",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:add"
+    },
+    {
+      "id": "C11-remove",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:remove"
+    },
+    {
+      "id": "poop-submit",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:submit"
+    },
+    {
+      "id": "poop-ask",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:ask"
+    },
+    {
+      "id": "poop-retry-unknown",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:restart"
+    },
+    {
+      "id": "poop-retry",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:submit"
+    },
+    {
+      "id": "poop-retry-permission",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "poop:add"
+    },
+    {
+      "id": "poop-cancel",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "task-cancel:poop"
+    },
+    {
+      "id": "poop-again",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "service:poop"
+    },
+    {
+      "id": "C13-shutter",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-shutter"
+    },
+    {
+      "id": "C13-retake",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-retake"
+    },
+    {
+      "id": "C13-use",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-use"
+    },
+    {
+      "id": "C13-retry",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-open"
+    },
+    {
+      "id": "C13-cancel",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-cancel"
+    },
+    {
+      "id": "CHAT-retry",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "retry-send"
+    },
+    {
+      "id": "CHAT-discard-failed",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "discard-failed"
+    },
+    {
+      "id": "CHAT-services",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "services-open"
+    },
+    {
+      "id": "C15-close",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "upload-close"
+    },
+    {
+      "id": "C15-album",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "upload:album"
+    },
+    {
+      "id": "C15-file",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "upload:file"
+    },
+    {
+      "id": "ATTACH-clear",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "clear-attachments"
+    },
+    {
+      "id": "C12",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "聊天内容"
+    },
+    {
+      "id": "CHAT-send",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "send"
+    },
+    {
+      "id": "C13",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "camera-open"
+    },
+    {
+      "id": "C14",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "voice"
+    },
+    {
+      "id": "C15",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "upload-open"
+    },
+    {
+      "id": "CHAT-collapse",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "collapse-input"
+    },
+    {
+      "id": "SERVICES-close",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "services-close"
+    },
+    {
+      "id": "C01-close",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "sidebar-close"
+    },
+    {
+      "id": "C01.1",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "sidebar-go:mine"
+    },
+    {
+      "id": "C01.2",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "sidebar-go:baby"
+    },
+    {
+      "id": "C01.3",
+      "page_id": "PAGE-chat",
+      "component_id": "CMP-control",
+      "role": "sidebar-go:devices"
+    },
+    {
+      "id": "C01.1-back",
+      "page_id": "PAGE-mine",
+      "component_id": "CMP-control",
+      "role": "overview-back"
+    },
+    {
+      "id": "C01.1.1",
+      "page_id": "PAGE-mine",
+      "component_id": "CMP-control",
+      "role": "overview-detail:trend"
+    },
+    {
+      "id": "C01.1.2",
+      "page_id": "PAGE-mine",
+      "component_id": "CMP-control",
+      "role": "overview-detail:body"
+    },
+    {
+      "id": "C01.1.1-close",
+      "page_id": "PAGE-mine",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    },
+    {
+      "id": "C01.1.2-close",
+      "page_id": "PAGE-mine",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    },
+    {
+      "id": "C01.2-back",
+      "page_id": "PAGE-baby",
+      "component_id": "CMP-control",
+      "role": "overview-back"
+    },
+    {
+      "id": "C01.2.1",
+      "page_id": "PAGE-baby",
+      "component_id": "CMP-control",
+      "role": "overview-detail:feeding"
+    },
+    {
+      "id": "C01.2.2",
+      "page_id": "PAGE-baby",
+      "component_id": "CMP-control",
+      "role": "overview-detail:growth"
+    },
+    {
+      "id": "C01.2.1-close",
+      "page_id": "PAGE-baby",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    },
+    {
+      "id": "C01.2.2-close",
+      "page_id": "PAGE-baby",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    },
+    {
+      "id": "C01.3-back",
+      "page_id": "PAGE-devices",
+      "component_id": "CMP-control",
+      "role": "overview-back"
+    },
+    {
+      "id": "C01.3.1",
+      "page_id": "PAGE-devices",
+      "component_id": "CMP-control",
+      "role": "overview-detail:device-info"
+    },
+    {
+      "id": "C01.3.2",
+      "page_id": "PAGE-devices",
+      "component_id": "CMP-control",
+      "role": "overview-detail:sync"
+    },
+    {
+      "id": "C01.3.1-close",
+      "page_id": "PAGE-devices",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    },
+    {
+      "id": "C01.3.2-close",
+      "page_id": "PAGE-devices",
+      "component_id": "CMP-control",
+      "role": "detail-close"
+    }
+  ],
+  "states": [
+    {
+      "id": "ST-identity",
+      "page_id": "PAGE-identity",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-stage",
+      "page_id": "PAGE-stage",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-stage-unprovided",
+      "page_id": "PAGE-stage",
+      "kind": "other"
+    },
+    {
+      "id": "ST-basic",
+      "page_id": "PAGE-basic",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-birth",
+      "page_id": "PAGE-birth",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-focus",
+      "page_id": "PAGE-focus",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-recommend",
+      "page_id": "PAGE-recommend",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-chat",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-ai-fallback",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-ai-idle",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-ai-busy",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-ai-attention",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-today",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-today-expanded",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-services",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-record-collapsed",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-record-picker",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-breast-edit",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-breast-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-breast-saving",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-formula-edit",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-formula-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-formula-saving",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-bottle-edit",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-bottle-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-bottle-saving",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-diaper-edit",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-diaper-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-diaper-saving",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-pump-edit",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-pump-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-pump-saving",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-record-cancelled",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-cry-collapsed",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-cry-ready",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-cry-capture",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-cry-preview",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-cry-processing",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-cry-result",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-cry-unknown",
+      "page_id": "PAGE-chat",
+      "kind": "other"
+    },
+    {
+      "id": "ST-cry-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-cry-permission",
+      "page_id": "PAGE-chat",
+      "kind": "permission"
+    },
+    {
+      "id": "ST-cry-cancelled",
+      "page_id": "PAGE-chat",
+      "kind": "other"
+    },
+    {
+      "id": "ST-cry-interrupted",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-poop-collapsed",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-poop-ready",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-poop-capture",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-poop-preview",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-poop-processing",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-poop-result",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-poop-unknown",
+      "page_id": "PAGE-chat",
+      "kind": "other"
+    },
+    {
+      "id": "ST-poop-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-poop-permission",
+      "page_id": "PAGE-chat",
+      "kind": "permission"
+    },
+    {
+      "id": "ST-poop-cancelled",
+      "page_id": "PAGE-chat",
+      "kind": "other"
+    },
+    {
+      "id": "ST-camera-ready",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-camera-preview",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-camera-error",
+      "page_id": "PAGE-chat",
+      "kind": "permission"
+    },
+    {
+      "id": "ST-chat-generating",
+      "page_id": "PAGE-chat",
+      "kind": "loading"
+    },
+    {
+      "id": "ST-chat-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-upload-options",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-upload-error",
+      "page_id": "PAGE-chat",
+      "kind": "error"
+    },
+    {
+      "id": "ST-attachments-ready",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-services-open",
+      "page_id": "PAGE-chat",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-sidebar-open",
+      "page_id": "PAGE-chat",
+      "kind": "other"
+    },
+    {
+      "id": "ST-mine",
+      "page_id": "PAGE-mine",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-trend-scope",
+      "page_id": "PAGE-mine",
+      "kind": "other"
+    },
+    {
+      "id": "ST-body-scope",
+      "page_id": "PAGE-mine",
+      "kind": "other"
+    },
+    {
+      "id": "ST-baby",
+      "page_id": "PAGE-baby",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-feeding-scope",
+      "page_id": "PAGE-baby",
+      "kind": "other"
+    },
+    {
+      "id": "ST-growth-scope",
+      "page_id": "PAGE-baby",
+      "kind": "other"
+    },
+    {
+      "id": "ST-devices",
+      "page_id": "PAGE-devices",
+      "kind": "normal"
+    },
+    {
+      "id": "ST-device-info-scope",
+      "page_id": "PAGE-devices",
+      "kind": "other"
+    },
+    {
+      "id": "ST-sync-scope",
+      "page_id": "PAGE-devices",
+      "kind": "other"
+    }
+  ],
+  "tokens": {
+    "--bg": "#FAF7F2",
+    "--surface": "#FFFFFF",
+    "--ink": "#282725",
+    "--muted": "#625B57",
+    "--brand": "#692A3A",
+    "--soft": "#E9DED4",
+    "--sage": "#DCE5DE",
+    "--border": "#80716B",
+    "--line": "#E4DCD4",
+    "--error": "#8B2E26",
+    "--radius": "12px",
+    "--radius-lg": "16px",
+    "--font": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "--body": "16px",
+    "--small": "14px",
+    "--title": "24px",
+    "--shadow": "0 14px 45px #28272512",
+    "--tiny": "12px"
+  },
+  "types": [
+    [
+      "breast",
+      "亲喂",
+      "C09.1"
+    ],
+    [
+      "formula",
+      "配方奶",
+      "C09.2"
+    ],
+    [
+      "bottle",
+      "瓶喂母乳",
+      "C09.3"
+    ],
+    [
+      "diaper",
+      "换尿布",
+      "C09.4"
+    ],
+    [
+      "pump",
+      "吸奶",
+      "C09.5"
+    ]
+  ],
+  "derived_from": "design.json"
+}

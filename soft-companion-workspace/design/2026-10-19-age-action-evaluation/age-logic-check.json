@@ -1,0 +1,44 @@
+[
+  {
+    "birth": "2026-10-07",
+    "today": "2026-10-19",
+    "expected": "出生 12 天",
+    "actual": "出生 12 天",
+    "pass": true
+  },
+  {
+    "birth": "2026-08-07",
+    "today": "2026-10-19",
+    "expected": "2 个月 12 天",
+    "actual": "2 个月 12 天",
+    "pass": true
+  },
+  {
+    "birth": "",
+    "today": "2026-10-19",
+    "expected": "年龄待完善",
+    "actual": "年龄待完善",
+    "pass": true
+  },
+  {
+    "birth": "2026-10-19",
+    "today": "2026-10-19",
+    "expected": "今天出生",
+    "actual": "今天出生",
+    "pass": true
+  },
+  {
+    "birth": "2026-10-20",
+    "today": "2026-10-19",
+    "expected": "出生日期待核实",
+    "actual": "出生日期待核实",
+    "pass": true
+  },
+  {
+    "birth": "2026-01-31",
+    "today": "2026-02-28",
+    "expected": "1 个月",
+    "actual": "1 个月",
+    "pass": true
+  }
+]

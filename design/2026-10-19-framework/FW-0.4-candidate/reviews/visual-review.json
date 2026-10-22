@@ -1,0 +1,863 @@
+{
+  "schema_version": "1.0",
+  "role": "visual",
+  "author": "/root/fw04_visual_review",
+  "independent": true,
+  "reviewed_at": "2026-10-19T12:06:22Z",
+  "baseline_id": null,
+  "candidate_id": "FW-0.4",
+  "candidate_frozen": false,
+  "status": "pass",
+  "status_qualifier": "sampled-incremental-screenshot-scope-only",
+  "overall_delivery_verdict": "not-assessed",
+  "verdict": "在列明的10张当前截图及其捕获范围内，今日概览与三卡共显、紧凑年龄/陪伴区、记录长卡、失败提示、常用功能弹层及角色缺失降级未发现需修复的视觉问题。该结论不代表整站、全部状态与视口组合、最终美术或正式交付通过。",
+  "evidence_mode": "screenshot-review",
+  "actual_execution": {
+    "image_reviewer": "/root/fw04_visual_review",
+    "browser_operator": "/root",
+    "browser_run_by_reviewer": false,
+    "reviewer_operations": [
+      "读取范围/资产约定及设计交接协议",
+      "实际打开并逐图审阅10张JPEG",
+      "独立重算当前材料摘要以及10张截图散列与JPEG尺寸",
+      "阅读主操作者runtime中与焦点、流内滚动、共显相关的操作记录"
+    ],
+    "primary_browser": "Codex in-app browser",
+    "primary_browser_version": "unknown",
+    "protocol": "http",
+    "url": "http://127.0.0.1:4177/#/chat"
+  },
+  "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+  "material_hash_method": "SHA256 of canonical JSON {design_sha256: SHA256(canonical design excluding project.stage), bundle_sha256: sorted relative bundle file -> raw SHA256}. No frozen receipt exists.",
+  "material": {
+    "design_sha256": "7325aa2b57bc2cc9829dfa589144487e29db72f0c55473774b6c271d4c39e3ac",
+    "bundle_sha256": {
+      "bundle/README.txt": "3287d1e0237744b7d55898f55ae81141c963fd69fa9abd220c12f23f5d0b441c",
+      "bundle/assets/app.js": "e21156dde44a2445f30c462b1162393bdf7b589ef9ce2d3217787ea9fbc5a304",
+      "bundle/assets/asset-map.js": "4e5ea669587885c8cb1b50d4251d29c7a6240bc0160f459d5de24aa54ad51be9",
+      "bundle/assets/companion/placeholder.svg": "0ccc46023688e3cdc7ead16fd7204b4650489794b8d75de1f8223d2476422e0e",
+      "bundle/assets/icons/camera.svg": "6129b360920e6043182e86e0ec6cdd915402802d2659ea6a482e090de51fb4e6",
+      "bundle/assets/icons/chevron.svg": "def11ffd937d351283fc9d1c2cf14f0e8c107b8ea8722d69e4bef72679f446eb",
+      "bundle/assets/icons/close.svg": "fd653d727430a9909670d42c0e62f9ca3578976ae95685c3d64b828538b77da5",
+      "bundle/assets/icons/collapse.svg": "5a261cf095c2807be53de32405682ac132d63ad6dd0324cbfdd10d5ac3596bca",
+      "bundle/assets/icons/cry.svg": "6400939fa463046a92f985a20a7581e9e4d8b4c2196a0a818928aade0139c23c",
+      "bundle/assets/icons/expand.svg": "bd97130a5f17ca3c97212904eb1378c04c3319e1e50984bdde771d3ee5be237b",
+      "bundle/assets/icons/menu.svg": "bc8cacd6cf8569877835e175b57e9013b0e992363f05e1ec5f4b65147715394b",
+      "bundle/assets/icons/microphone.svg": "0bb3cf7fec32be6db2000406a85b5d07fc4b6481bbc3053c9a91766b3bf10067",
+      "bundle/assets/icons/poop.svg": "3173926e2a5772bf137d43233ce15676246f293bb2f08a616e08135aafabd88a",
+      "bundle/assets/icons/record.svg": "39430e24dfa7ca2c8347e4b4188cfd1dfebf6e9286527113729d30decbd92050",
+      "bundle/assets/icons/services.svg": "c89f312845b488c2cdaa2279906c6941a633ef7b48109c92c41b9a7af2102939",
+      "bundle/assets/icons/sound.svg": "998978ebc1a393381e2786b16206091c0ca571ec63ddf0503f9d589d851e1ec9",
+      "bundle/assets/icons/upload.svg": "b7f5312ea35c42623e071848f99e4297164e9e26ac3d8d8bdffa97b8a5255d73",
+      "bundle/assets/styles.css": "86d9ea42bbd8c641524a53a0ad83a90f18b94e449ea071e1f108d882d8a86c99",
+      "bundle/index.html": "0bd114a2c28bf835bea939be9733e49f05f232f76c2ee4199ea36b7b0dbe7d65"
+    }
+  },
+  "input_materials": [
+    "FRAMEWORK.txt",
+    "ASSET-CONTRACT.txt",
+    "design.json",
+    "candidate-summary.json",
+    "reviews/runtime.json",
+    "hw-visual-review/SKILL.md",
+    "hw-design-workflow/references/design-contract.md"
+  ],
+  "evidence_integrity": {
+    "current_material_recomputed": true,
+    "current_material_matches_runtime": true,
+    "screenshot_sha256_recomputed": true,
+    "screenshot_jpeg_dimensions_recomputed": true,
+    "screenshot_count": 10,
+    "discrepancies": [],
+    "note": "Capture times, browser identity and operator identity are source-attributed runtime records; this reviewer independently verifies bytes and visible image content, not historical capture events."
+  },
+  "scope": {
+    "rationale": "FW04授权重排入口、今日卡与三卡共同展示、AI选择A陪伴展示及状态反馈、三卡行为一致；本轮为未冻结候选的增量视觉检查。",
+    "visual_questions": [
+      "首屏今日卡与三卡是否共显",
+      "年龄与陪伴区是否挤占主要任务",
+      "动态记录卡与固定输入区是否遮挡",
+      "失败状态和重试/取消是否可读",
+      "常用功能弹层、焦点轮廓与状态标签是否清楚",
+      "人物资源缺失是否保持稳定布局及文字反馈"
+    ],
+    "formal_character_art_reviewed": false,
+    "behavior_consistency_limit": "Similar appearance and screenshot labels cannot alone prove lifecycle equivalence; runtime behavior and source consistency belong to the separate consistency review."
+  },
+  "operation_sequences_reviewed": [
+    {
+      "operator": "/root",
+      "source": "reviews/runtime.json",
+      "check_ids": [
+        "home-card-layout",
+        "narrow-home-final"
+      ],
+      "sequence": "查看首页及窄屏布局并读取卡片、年龄、输入区矩形。",
+      "independent_visual_confirmation": "home-empty-390、home-360、home-desktop与home-saved-390图中可见内容共显。"
+    },
+    {
+      "operator": "/root",
+      "source": "reviews/runtime.json",
+      "check_ids": [
+        "one-shared-service-grid",
+        "service-dialog-keyboard-focus",
+        "service-dialog-escape-focus"
+      ],
+      "sequence": "打开常用功能；键盘焦点落C09，报告solid 2.66667px轮廓；Escape关闭并回CHAT-services。",
+      "independent_visual_confirmation": "services-focus-390可见焦点轮廓；关闭回归与唯一DOM未由本人重跑，仅明确归属于操作者记录。"
+    },
+    {
+      "operator": "/root",
+      "source": "reviews/runtime.json",
+      "check_ids": [
+        "long-record-footer-reachable"
+      ],
+      "sequence": "在记录长卡内滚动到底部并核对保存/取消与输入区矩形。",
+      "independent_visual_confirmation": "record-inline-bottom-390中保存和取消全部位于输入区上方。"
+    },
+    {
+      "operator": "/root",
+      "source": "reviews/runtime.json",
+      "check_ids": [
+        "processing-refresh-keeps-material-retry",
+        "companion-asset-fallback",
+        "inline-save-updates-today"
+      ],
+      "sequence": "处理中刷新转可重试；模拟角色资源缺失；保存记录后检查今日统计。",
+      "independent_visual_confirmation": "task-error-390、companion-fallback-390和home-saved-390可见相应结果表现。"
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/task-error-390.jpg",
+      "sha256": "45ec07786b4b47c6b7c10b3daaa5491cfef629002f942eb66975c3e583178037",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:33:40.398Z",
+      "captured_at": "2026-10-19T11:33:40.419Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "任务内红色提示明确说明本次处理未完成及模拟素材已保留；重试分析与取消本次任务可读且互相分开。",
+        "较长输入草稿在输入区内部滚动，发送与拍照/语音/上传入口可见；此图不覆盖移动OS软键盘。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/services-dialog-390.jpg",
+      "sha256": "5098b9cb52426ef850c749aa6776f504675c1072ee23b0db39c0312182d9bd07",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:35:08.112Z",
+      "captured_at": "2026-10-19T11:35:08.129Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "弹层内同级三卡完整可见，记录/哭声/便便的当前动作标签可读；未完成任务回原卡的说明与关闭入口清楚。",
+        "背景遮罩与弹层分层清楚；本图本身不证明焦点约束或唯一DOM，相关范围另外引用操作者记录。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/companion-fallback-390.jpg",
+      "sha256": "c46a81fe0c95b1ce5dbca651e14a24f41cd39f3a4615cb40f5badb6e63a1335b",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:36:11.062Z",
+      "captured_at": "2026-10-19T11:36:11.091Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "缺少角色图片时显示M占位，无破图标记；相邻需处理文本、年龄、导航和聊天功能保持可见。",
+        "降级没有扩大人物区域或挤占任务/输入区；此图只覆盖角色缺失，不能推广到所有图标和所有失败资源。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-empty-390.jpg",
+      "sha256": "3c32cc6c260f457317693de1c49981ffc11ad640cf22496980b51daf2a7632a2",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:36:38.696Z",
+      "captured_at": "2026-10-19T11:36:38.734Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "首屏今日概览与记录/听哭闹/看便便三卡、输入区同时完整可见，空统计文案明确。",
+        "三卡等宽同级，图形旁保留文字职责与动作标签；年龄及陪伴形象作为紧凑背景区，没有抢占入口。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-360.jpg",
+      "sha256": "371f552058fcb004c58c82a392c23b37625ed060771ff0e9724d0298bda74b81",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:36:59.466Z",
+      "captured_at": "2026-10-19T11:36:59.489Z",
+      "declared_viewport": {
+        "height": 780,
+        "width": 360
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 780,
+        "width": 360
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "360×780内今日概览、三卡与输入区共显；说明文字换成两行后仍完整可读。",
+        "未观察到水平截断、重叠或输入区遮挡三卡；其余状态不能由这张窄屏首页推广。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-desktop.jpg",
+      "sha256": "3d079411cfad12c48897b34828a1ec3d8169095076b762b4f029e8823e0c2bc3",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:37:38.933Z",
+      "captured_at": "2026-10-19T11:37:38.974Z",
+      "declared_viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 990,
+        "width": 1425
+      },
+      "pixel_note": "Declared layout viewport differs from compositor image pixels; image-only review is limited to captured extent.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "所捕获桌面范围内，中央预览的今日概览、三卡、紧凑年龄/角色与输入区共显；两侧框架说明不覆盖中央任务。",
+        "声明视口1440×1000，实际JPEG为1425×990；本判断仅适用于图像捕获范围，不声称完整1440×1000像素覆盖。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/services-focus-390.jpg",
+      "sha256": "aff5e4f645c68a8bc2a1f03d1484db1179d683e4998d12db2af4ca2d87a20362",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:38:32.346Z",
+      "captured_at": "2026-10-19T11:38:32.364Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "记录卡外围有清楚、连续的深色键盘焦点轮廓，未被弹层边界裁切；文字与图标保持可读。",
+        "焦点C09及Escape后回CHAT-services来自操作者runtime记录，本评审者未亲自重跑键盘。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/record-inline-390.jpg",
+      "sha256": "2bfb2658e37b5b30bbec9c18089446dcdbd7723aa807b69c9a40d15680e1aac2",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T11:39:13.932Z",
+      "captured_at": "2026-10-19T11:39:13.956Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "记录任务位于聊天流中，配方奶类型、开始时间、奶量标签与步进控件层级清楚、对齐正常。",
+        "这是长表单上半段截面；不能单凭本图判断底部保存/取消，已联合record-inline-bottom-390复核。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/home-saved-390.jpg",
+      "sha256": "d8478faafd2a76f42bef421af81c9893cf27b2711a87b1c456e72b8e2386365c",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T12:03:44.697Z",
+      "captured_at": "2026-10-19T12:03:44.724Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "保存1条后的今日汇总、计数和最近记录类型可读；今日卡增高后，三卡及输入区仍完整共显。",
+        "记录卡动作明确为再记一笔，另两卡保持开始任务，动作文字与各自任务状态相符。"
+      ]
+    },
+    {
+      "kind": "screenshot",
+      "path": "reviews/screenshots/record-inline-bottom-390.jpg",
+      "sha256": "e343474198cda16453a964951b726a06967a2cb23ca69a6faca0b9cf1077491a",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browser_version": "unknown",
+      "url": "http://127.0.0.1:4177/#/chat",
+      "capture_started_at": "2026-10-19T12:04:46.294Z",
+      "captured_at": "2026-10-19T12:04:46.321Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "fullPage": false,
+      "capture_method": "tab.screenshot({fullPage:false})",
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "pixel_note": "Viewport and image pixels match.",
+      "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+      "independently_image_reviewed": true,
+      "observations": [
+        "结束时间、备注及表单尾部可通过流内滚动到达；保存记录与取消本次任务全部显示于固定输入区上方。",
+        "保存按钮、取消动作和保存位置说明分组清楚，无观察到覆盖或截断。"
+      ]
+    }
+  ],
+  "coverage": {
+    "page_ids": [
+      "PAGE-chat"
+    ],
+    "viewport_ids": [
+      "VP-mobile",
+      "VP-narrow",
+      "VP-desktop"
+    ],
+    "state_ids": [
+      "ST-ai-attention",
+      "ST-ai-fallback",
+      "ST-ai-idle",
+      "ST-chat",
+      "ST-formula-edit",
+      "ST-poop-error",
+      "ST-services",
+      "ST-services-open",
+      "ST-today"
+    ],
+    "matrix": [
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-poop-error",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/task-error-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-attention",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/task-error-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services-open",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/services-dialog-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-fallback",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/companion-fallback-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-empty-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-idle",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-empty-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-empty-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-empty-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-narrow",
+        "declared_viewport": {
+          "height": 780,
+          "width": 360
+        },
+        "captured_pixel_extent": {
+          "height": 780,
+          "width": 360
+        },
+        "evidence_path": "reviews/screenshots/home-360.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-idle",
+        "viewport_id": "VP-narrow",
+        "declared_viewport": {
+          "height": 780,
+          "width": 360
+        },
+        "captured_pixel_extent": {
+          "height": 780,
+          "width": 360
+        },
+        "evidence_path": "reviews/screenshots/home-360.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-narrow",
+        "declared_viewport": {
+          "height": 780,
+          "width": 360
+        },
+        "captured_pixel_extent": {
+          "height": 780,
+          "width": 360
+        },
+        "evidence_path": "reviews/screenshots/home-360.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services",
+        "viewport_id": "VP-narrow",
+        "declared_viewport": {
+          "height": 780,
+          "width": 360
+        },
+        "captured_pixel_extent": {
+          "height": 780,
+          "width": 360
+        },
+        "evidence_path": "reviews/screenshots/home-360.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-desktop",
+        "declared_viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "captured_pixel_extent": {
+          "height": 990,
+          "width": 1425
+        },
+        "evidence_path": "reviews/screenshots/home-desktop.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Captured 1425x990 extent only; declared 1440x1000 is not exact pixel coverage."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-idle",
+        "viewport_id": "VP-desktop",
+        "declared_viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "captured_pixel_extent": {
+          "height": 990,
+          "width": 1425
+        },
+        "evidence_path": "reviews/screenshots/home-desktop.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Captured 1425x990 extent only; declared 1440x1000 is not exact pixel coverage."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-desktop",
+        "declared_viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "captured_pixel_extent": {
+          "height": 990,
+          "width": 1425
+        },
+        "evidence_path": "reviews/screenshots/home-desktop.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Captured 1425x990 extent only; declared 1440x1000 is not exact pixel coverage."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services",
+        "viewport_id": "VP-desktop",
+        "declared_viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "captured_pixel_extent": {
+          "height": 990,
+          "width": 1425
+        },
+        "evidence_path": "reviews/screenshots/home-desktop.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Captured 1425x990 extent only; declared 1440x1000 is not exact pixel coverage."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services-open",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/services-focus-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-formula-edit",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/record-inline-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-saved-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-ai-idle",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-saved-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-saved-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-services",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/home-saved-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-formula-edit",
+        "viewport_id": "VP-mobile",
+        "declared_viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "captured_pixel_extent": {
+          "height": 844,
+          "width": 390
+        },
+        "evidence_path": "reviews/screenshots/record-inline-bottom-390.jpg",
+        "evidence_mode": "screenshot-review",
+        "qualification": "Exact declared viewport image extent."
+      }
+    ],
+    "personally_executed_browser_matrix": [],
+    "planned_incremental_screenshot_subjects": [
+      "390首页空记录",
+      "360首页空记录",
+      "桌面首页捕获范围",
+      "390首页已保存1条",
+      "390配方奶长卡上半段及尾部",
+      "390处理刷新失败",
+      "390常用功能弹层及键盘焦点",
+      "390角色资源缺失"
+    ],
+    "planned_subjects_with_image_evidence": "All listed incremental subjects have current image evidence; exact 1440x1000 desktop pixel coverage remains unclaimed.",
+    "full_design_state_viewport_cross_product_covered": false,
+    "not_image_covered": [
+      "所有其余9个页面",
+      "亲喂、瓶喂母乳、换尿布、吸奶表单的逐状态图像",
+      "各表单校验错误与保存中状态",
+      "哭声采集/预览/结果、便便预览/结果及聊天加载等未列出的状态",
+      "360窄屏及桌面的动态长卡、错误、弹层、缺失资源状态",
+      "完整1440×1000桌面像素范围"
+    ]
+  },
+  "observations": [
+    {
+      "topic": "任务层级",
+      "result": "今日卡与三卡在两种手机视口及桌面所捕获范围内清楚共显；三卡同级，说明文本与动作区区分清楚。"
+    },
+    {
+      "topic": "陪伴与年龄",
+      "result": "年龄和中性陪伴图形处于紧凑固定背景区。人物没有按钮形状或点击提示；是否不可交互另由runtime报告支持。idle/attention与缺失状态均有文字线索，不靠角色图形单独表达。"
+    },
+    {
+      "topic": "动态卡与输入",
+      "result": "配方奶表单使用流内滚动，尾部保存及取消可达且不被固定输入区覆盖。失败任务提示与重试/取消可读，长草稿仍有清楚的发送入口。"
+    },
+    {
+      "topic": "弹层与焦点",
+      "result": "弹层保留同级三卡，背景分层明确；记录卡键盘焦点在截图中清楚。图片不能单独证明焦点循环或Escape回归，相关证据明确归属操作者。"
+    },
+    {
+      "topic": "资源降级",
+      "result": "角色缺失时M占位及状态文字保留，无破图或明显布局跳变。仅检验当前占位资源职责及降级表现，不评价正式角色美术。"
+    }
+  ],
+  "findings": [],
+  "finding_counts": {
+    "blocker": 0,
+    "major": 0,
+    "minor": 0
+  },
+  "limitations": [
+    "本评审者没有操作浏览器；截图由/root通过Codex in-app browser生成，浏览器版本unknown。",
+    "10张截图是本轮增量样本；没有宣称73种状态与3种声明视口的全部组合或10个页面视觉通过。",
+    "桌面声明1440×1000与实际JPEG 1425×990有差异，原因未由本评审者独立确认；只审实际捕获范围。",
+    "手机为桌面视口模拟；没有移动OS软键盘、真实触摸、设备安全区或系统权限弹窗实测。",
+    "仅有常用功能记录卡焦点可见截图，以及归属主操作者的Escape回归记录；没有完整键盘顺序、焦点约束、屏幕阅读器或WCAG合规检验。",
+    "真实相机、麦克风、上传、AI/分析与后台均未接入，模拟结果不证明正式业务可用。",
+    "角色缺失图不证明所有图标、manifest缺失、图片解码失败或减少动效偏好的全部视觉边界；当前资源为静态占位。",
+    "本候选未冻结，当前没有用户具体基线批准；本报告不构成最终交付门槛通过。"
+  ],
+  "revalidation": "bundle或design发生变更后，应重新绑定材料摘要并由实际操作者重跑/补图受影响路径，再做独立复核；不能沿用本报告给新稿自动通过。"
+}

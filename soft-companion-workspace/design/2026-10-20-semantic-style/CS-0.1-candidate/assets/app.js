@@ -1,0 +1,49 @@
+const glyphs={
+  home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
+  journal:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+  assistant:'<path d="M4 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-6l-4 3v-3a3 3 0 0 1-3-3z"/><path d="M9 10h6m-6 4h3"/>',
+  profile:'<circle cx="12" cy="8" r="3"/><path d="M5 21a7 7 0 0 1 14 0"/>',
+  bottle:'<path d="M10 3V2h4v1l1 2v2H9V5zM8 7h8l1 3v10a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V10z"/><path d="M9 12h3m-3 4h3"/>',
+  diaper:'<path d="M4 5h16l1 4c-1 1-3 2-3 4-1 4-3 7-6 8-3-1-5-4-6-8 0-2-2-3-3-4zM4 9h16M6 13l6 4 6-4"/>',
+  sleep:'<path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/><path d="M3 19h5"/>',
+  pump:'<path d="M4 6h6v5H4zM5 11v9h7v-6l-2-3M10 8h5l3 3v7M16 18h5v3h-5"/>',
+  cry:'<path d="M3 10v4m4-8v12m5-16v20m5-16v12m4-8v4"/>',
+  camera:'<path d="M3 6h4l2-3h6l2 3h4v15H3z"/><circle cx="12" cy="13" r="4"/>',
+  calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M7 14h2m3 0h2"/>',
+  device:'<rect x="5" y="3" width="14" height="18" rx="5"/><path d="M9 7h6"/><circle cx="12" cy="15" r="3"/>',
+  check:'<path d="m5 12 4 4L19 6"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  alert:'<path d="m12 3 10 18H2zM12 9v5m0 3h.01"/>',
+  help:'<circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 5m0 3h.01"/>',
+  cloud:'<path d="M6 18a5 5 0 1 1 0-10 7 7 0 0 1 13-1 5.5 5.5 0 0 1 0 11M12 20V11m-3 3 3-3 3 3"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>'
+};
+const icon=(name)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${glyphs[name]||glyphs.help}</svg>`;
+const style={direction:'canvas',screen:'home',state:'normal'};
+const statesByScreen={home:['normal','saving','saved','local','failed','unknown'],records:['normal','saving','saved','local','failed','unknown'],assistant:['normal','indeterminate']};
+const directions={canvas:{letter:'A',name:'Care Canvas'},rhythm:{letter:'B',name:'Daily Rhythm'},clear:{letter:'C',name:'Clear Field'}};
+const intents={
+  home:{title:'首页 / 主任务突出',body:'先展示今天与谁有关、已经发生什么，再提供一手能完成的记录入口。',items:[['对象可见','宝宝与妈妈的条目分开标识。'],['内容焦点','突出最后一次喂养与时间；不把未记录解释成未照护。'],['入口区分','记录、理解、观察用不同形态的符号与短标签。']]},
+  records:{title:'记录 / 事件可追溯',body:'把时间、对象、记录类型和数量放进同一行的阅读路径。',items:[['事件语义','喂养、睡眠、尿布分别使用能识别的物件轮廓。'],['时间线','仅连接已记录事件，不做完整照护进度暗示。'],['编辑路径','已保存后仍可更正；状态反馈不盖住条目。']]},
+  assistant:{title:'AI 助手 / 判断要有边界',body:'先给出能理解的短摘要，再区分用户记录、AI 推断和下一步。',items:[['来源分层','用户提供的信息与 AI 的解释分开写。'],['克制反馈','无法判断使用中性信息样式，避免误当系统错误。'],['动作具体','建议用户补充上下文，不暗示医学诊断。']]}
+};
+const states={
+  normal:{title:'待确认',body:'记录尚未提交。',detail:'检查对象与时间，再保存。',action:'Save entry',kind:'normal',icon:'clock'},
+  saving:{title:'保存中',body:'正在提交这条记录…',detail:'不展示虚构进度。',action:'请稍候',kind:'normal',icon:'clock'},
+  saved:{title:'已保存',body:'这条记录已保存。',detail:'保存结果仅针对记录。',action:'View entry',kind:'saved',icon:'check'},
+  local:{title:'仅本地保存',body:'内容保留在这台设备。',detail:'尚未确认同步到其他设备。',action:'Check sync',kind:'local',icon:'cloud'},
+  failed:{title:'保存失败',body:'未能保存这条记录。',detail:'已输入内容仍在当前演示页。',action:'Try again',kind:'failed',icon:'alert'},
+  unknown:{title:'结果待核验',body:'还无法确认是否已保存。',detail:'先检查现有记录，避免重复提交。',action:'Check entry',kind:'unknown',icon:'help'},
+  indeterminate:{title:'无法判断',body:'这段录音不足以判断原因。',detail:'可补充情境；不等于系统故障。',action:'Add context',kind:'unknown',icon:'help'}
+};
+const banner=()=>{if(style.state==='normal')return '';const s=states[style.state];return `<div class="state-banner" data-kind="${s.kind}">${icon(s.icon)}<div><b>${s.title}</b><span>${s.body}</span><span class="state-cta">${s.action} →</span></div></div>`};
+const dock=(active)=>`<div class="phone-dock"><div class="dock-item ${active==='home'?'active':''}">${icon('home')}首页</div><div class="dock-item ${active==='records'?'active':''}">${icon('journal')}记录</div><div class="dock-item ${active==='assistant'?'active':''}">${icon('assistant')}AI 助手</div><div class="dock-item">${icon('profile')}我的</div></div>`;
+function home(){return `<div class="phone-screen"><div class="phone-head"><div><div class="small-label">TUESDAY, OCT 20</div><h3>今天，慢慢来。</h3></div><div class="avatar">${icon('profile')}</div></div><div class="small-kicker">小满 · 出生 12 天</div><div class="section-title"><b>照护概览</b><span>查看记录 →</span></div><div class="hero-card"><div class="hero-caption">最近一次 · 宝宝喂养</div><strong class="hero-value">4 <small>fl oz</small></strong><div class="hero-detail">下午 2:40 · 奶瓶喂养<br>今天已记录 3 次</div><div class="hero-action">${icon('plus')} 记一笔</div></div>${banner()}<div class="section-title"><b>随手做一件事</b><span>全部 →</span></div><div class="module-row"><div class="module-tile"><div class="p-icon">${icon('bottle')}</div>记喂养<small>时间与奶量</small></div><div class="module-tile"><div class="p-icon">${icon('cry')}</div>听哭闹<small>补充情境</small></div><div class="module-tile"><div class="p-icon">${icon('diaper')}</div>看便便<small>拍照或描述</small></div></div><div class="section-title"><b>最近记录</b><span>今天 →</span></div><div class="mini-row"><div class="mini-icon">${icon('bottle')}</div><div><b>奶瓶喂养 · 4 fl oz</b><span>小满 · 已记录</span></div><div class="row-time">14:40</div></div><div class="mini-row"><div class="mini-icon">${icon('diaper')}</div><div><b>换尿布</b><span>小满 · 已记录</span></div><div class="row-time">13:50</div></div></div>${dock('home')}`}
+function records(){return `<div class="phone-screen"><div class="phone-head"><div><div class="small-label">CARE JOURNAL</div><h3>每一笔，都记得</h3></div><div class="avatar">${icon('plus')}</div></div><div class="record-topline"><span class="owner-chip">宝宝 · 小满</span><span class="owner-chip alt">妈妈</span></div><div class="hero-card"><div class="hero-caption">10 月 20 日 · 今日记录</div><strong class="hero-value">3 <small>次喂养</small></strong><div class="hero-detail">最近一次 下午 2:40 · 4 fl oz<br>只统计已记录内容</div></div>${banner()}<div class="section-title"><b>按时间回看</b><span>筛选 →</span></div><div class="timeline"><div class="timeline-entry"><div class="time">下午 2:40</div><b>奶瓶喂养</b><p>小满 · 4 fl oz</p><div class="entry-card">已记录 · 可编辑</div></div><div class="timeline-entry"><div class="time">下午 1:50</div><b>换尿布</b><p>小满 · 尿布更换</p></div><div class="timeline-entry"><div class="time">上午 11:40</div><b>配方奶</b><p>小满 · 3 fl oz</p></div><div class="timeline-entry"><div class="time">上午 9:30</div><b>亲喂</b><p>小满 · 15 分钟</p></div></div></div>${dock('records')}`}
+function assistant(){return `<div class="phone-screen"><div class="phone-head"><div><div class="small-label">HERE WITH YOU</div><h3>Momcozy AI</h3></div><div class="avatar">${icon('assistant')}</div></div><div class="small-kicker">了解问题 · 看见依据 · 保留选择</div><div class="section-title"><b>这次对话</b><span>历史 →</span></div><div class="mini-row"><div class="mini-icon">${icon('cry')}</div><div><b>关于刚才的哭闹</b><span>你提供：录音与「刚喂过奶」</span></div></div><div class="assistant-summary"><div class="identity">${icon('assistant')} AI 帮你整理</div><h4>${style.state==='indeterminate'?'目前无法判断原因':'可以先看看宝宝是否需要换尿布'}</h4><p>${style.state==='indeterminate'?'这段录音本身不足以支持明确判断。可以补充发生时间、喂养和尿布情况。':'这是基于你提供的情境整理的一种可能方向，不是对哭声的诊断。'}</p><div class="source-line">依据 · 你刚才描述的喂养情况</div></div>${banner()}<div class="assistant-step"><b>接下来可以做什么</b><p>先观察尿布和环境；如果仍有疑虑，可继续补充情况。</p></div><div class="section-title"><b>常用入口</b></div><div class="module-row"><div class="module-tile"><div class="p-icon">${icon('journal')}</div>记一笔<small>转为记录</small></div><div class="module-tile"><div class="p-icon">${icon('cry')}</div>听哭闹<small>录音分析</small></div><div class="module-tile"><div class="p-icon">${icon('camera')}</div>看便便<small>观察描述</small></div></div></div>${dock('assistant')}`}
+function render(){document.querySelectorAll('[data-direction]').forEach(el=>{if(el.classList.contains('direction-card'))el.setAttribute('aria-pressed',String(el.dataset.direction===style.direction))});document.querySelectorAll('[data-screen]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.screen===style.screen)));if(!statesByScreen[style.screen].includes(style.state))style.state='normal';const select=document.getElementById('stateSelect');select.innerHTML=statesByScreen[style.screen].map(k=>`<option value="${k}">${k==='normal'?'默认':states[k].title}</option>`).join('');select.value=style.state;const d=directions[style.direction],i=intents[style.screen];document.getElementById('phone').dataset.direction=style.direction;document.getElementById('phoneContent').innerHTML=({home,records,assistant})[style.screen]();document.getElementById('stageDirection').textContent=d.letter;document.getElementById('stageName').textContent=d.name;document.getElementById('intentTitle').textContent=i.title;document.getElementById('intentBody').textContent=i.body;document.getElementById('intentList').innerHTML=i.items.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}
+document.querySelectorAll('.direction-card').forEach(el=>el.addEventListener('click',()=>{style.direction=el.dataset.direction;render()}));document.querySelectorAll('[data-screen]').forEach(el=>el.addEventListener('click',()=>{style.screen=el.dataset.screen;render()}));document.getElementById('stateSelect').addEventListener('change',e=>{style.state=e.target.value;render()});
+document.getElementById('iconGrid').innerHTML=[['bottle','喂养'],['diaper','尿布'],['sleep','睡眠'],['pump','吸奶'],['cry','哭闹'],['camera','观察'],['calendar','日程'],['device','设备']].map(([g,n])=>`<div class="icon-sample"><span>${icon(g)}</span>${n}</div>`).join('');
+document.getElementById('stateGrid').innerHTML=Object.entries(states).filter(([k])=>k!=='normal').map(([k,s])=>`<article class="state-card" data-kind="${s.kind}"><div class="state-title">${icon(s.icon)}${s.title}</div><p>${s.body}</p><small>${s.detail}</small><div class="state-action">${s.action} →</div></article>`).join('');
+render();

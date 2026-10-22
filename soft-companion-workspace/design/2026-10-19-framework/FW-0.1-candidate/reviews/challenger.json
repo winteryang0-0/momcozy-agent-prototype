@@ -1,0 +1,142 @@
+{
+  "id": "REV-FW01-challenger",
+  "role": "challenger",
+  "author": "/root/framework_challenger",
+  "independent": true,
+  "reviewed_revision": "FW-0.1-candidate",
+  "verdict": "pass",
+  "method": "独立阅读原始需求聊天快照、构建源码和生成 HTML/JS；以下为可复现代码路径反例，未执行浏览器操作，未进行截图视觉审核。",
+  "artifact_hashes": {
+    "sources/requirements-thread.json": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378",
+    "build.cjs": "6fa79603e2422bdfd0e13342925f4c920cc69da9655115111249fb7155ef2579",
+    "bundle/assets/app.js": "00ce7f729921f13a8879e06bb2f31019a47bdce59a8b02777ef65fc8979df77d",
+    "bundle/index.html": "9ac91f21bd321c923c4e58c0c709570ef30db2e45f884d0d741f1ca75a49ac80"
+  },
+  "scope_assessment": {
+    "conclusion": "总体保持了已录入范围：身份加五步产后引导、主对话 C01-C15、五类独立记录表单及两个会话内任务。未发现扩展账号、设备、商城或多宝宝业务。",
+    "necessary_improvements": "本地保存与回看修改、草稿、校验、素材确认和失败恢复属于可支撑演示闭环的适度补充；scopeHTML 已以候选规则说明，模拟服务和未冻结状态有明确标识。",
+    "limitations": "未复看来源中的 17 张原始截图，依据完整需求拆解文字核对范围；不评价正式视觉质量，不宣称完整研发交付或冻结通过。"
+  },
+  "findings": [
+    {
+      "id": "F-FW01-C01",
+      "severity": "major",
+      "target_ids": [
+        "C10",
+        "C11",
+        "ST-cry-result",
+        "ST-poop-result"
+      ],
+      "location": "bundle/assets/app.js:29,37；build.cjs 的 task() result 状态",
+      "observation": "任务进入 result 后只有继续聊天入口，footer 的取消操作被隐藏；重新点击快捷入口仅在 cancelled 状态重置，result 不会进入 ready。",
+      "impact": "同类分析成功一次后无法再次体验采集与提交，用户必须重置整个演示及记录才能继续，阻断核心功能的正常重复使用。",
+      "fix": "在结果卡内增加明确的再做一次入口，执行 restart 并滚动/聚焦当前卡片；或明确快捷入口对终态创建新任务的候选规则。无需增加新的业务页面。",
+      "status": "resolved",
+      "reproduction": {
+        "evidence_type": "spec_counterexample",
+        "steps": [
+          "将分析结果设为完成",
+          "听哭闹：开始、结束、确认素材并分析，等待结果；或看便便：添加图片并分析",
+          "再次点击对应快捷入口",
+          "仍停留在结果状态，找不到录制或添加图片入口"
+        ]
+      },
+      "recheck_scenarios": [
+        "哭声和便便各连续完成两次",
+        "第二次开始后仍可取消或失败重试"
+      ],
+      "resolution": {
+        "evidence": "taskAction(open) 对 result/unknown/cancelled 记录历史摘要并重置 ready，哭声和图片均覆盖。源码反例已消除。",
+        "verified_by": "/root/framework_challenger",
+        "verified_revision": "FW-0.1-candidate / recheck 1"
+      }
+    },
+    {
+      "id": "F-FW01-C02",
+      "severity": "major",
+      "target_ids": [
+        "C09.1",
+        "C09.2",
+        "C09.3",
+        "C09.4",
+        "C09.5"
+      ],
+      "location": "bundle/assets/app.js:35,51（edit/new/keep-draft 分支）",
+      "observation": "编辑已有记录使用全局 data.editing 标识；保留草稿返回后，按弹层提示从同一记录类型继续，new 分支无条件清除 data.editing，却仍恢复编辑过的字段，保存遂被当作新增。",
+      "impact": "用户以为继续修改原记录，实际新增重复记录，原记录仍保持旧值。已有记录编辑与新增草稿共用字段，也会在再次打开同类型其他记录时静默覆盖草稿。",
+      "fix": "按记录类型持久化草稿的编辑目标 ID，恢复草稿时保留其创建/修改身份；进入另一条同类型记录前保留或显式处理已有草稿。最小版本可仅支持每类型一份草稿，但不能静默改变保存目标。",
+      "status": "resolved",
+      "reproduction": {
+        "evidence_type": "spec_counterexample",
+        "steps": [
+          "保存一条配方奶记录",
+          "点击查看/修改，改变奶量",
+          "返回对话并选择保留草稿",
+          "点击记录入口，再选配方奶",
+          "保存后出现两条记录，未修改原记录"
+        ]
+      },
+      "recheck_scenarios": [
+        "修改草稿经返回及刷新恢复后保存，原记录 ID 和总条数不变",
+        "同类型新增草稿与已有记录编辑切换不会静默覆盖"
+      ],
+      "recheck": {
+        "fixed": "editing 改为按类型映射且 new 保留 ID，原记录经草稿恢复保存不会新增重复记录。",
+        "remaining": "edit(id) 仍无条件覆盖同类型表单字段；新建或另一已有记录的未保存草稿仍可能静默丢失。",
+        "minimal_fix": "打开同类型其他记录前识别草稿并提供继续或明确放弃，不能直接覆盖。"
+      },
+      "resolution": {
+        "evidence": "独立读取 app.js:36,52：同一 editing ID 恢复原字段；不同记录遇到已有未保存输入时弹出明确选择；仅 replace-edit 经用户选择调用 edit(id,true) 覆盖。按类型 editing ID 继续保留，消除原重复新增和普通同类型草稿静默覆盖反例。",
+        "verified_by": "/root/framework_challenger",
+        "verified_revision": "FW-0.1-candidate / recheck 2"
+      }
+    },
+    {
+      "id": "F-FW01-C03",
+      "severity": "major",
+      "target_ids": [
+        "C12",
+        "C13",
+        "ST-chat-generating"
+      ],
+      "location": "bundle/assets/app.js:48（send）",
+      "observation": "发送等待期间只禁用发送按钮，输入框及图片操作保持可用；600 ms 回调无条件清空输入和附件，而且附件标志在回调时才读取。",
+      "impact": "点击发送后继续输入的下一条草稿会被清除；等待时添加或移除附件会改变已提交消息的附件含义，破坏发送确认与草稿保留闭环。",
+      "fix": "提交时冻结文本和附件快照。最小实现是在等待期间禁用输入及附件编辑，并在失败时完整恢复；若允许继续输入，则立即分离已提交消息与新的编辑草稿，成功不得清空后续草稿。",
+      "status": "resolved",
+      "reproduction": {
+        "evidence_type": "spec_counterexample",
+        "steps": [
+          "输入第一条内容并发送",
+          "回复生成期间继续在输入框键入内容，或更改图片附件",
+          "等待约 600 ms",
+          "新增输入被清空；消息附件按回调时的状态生成"
+        ]
+      },
+      "recheck_scenarios": [
+        "发送期间输入不会丢失",
+        "已提交消息的附件固定",
+        "发送失败后仍可重试原始文本与附件"
+      ],
+      "recheck": {
+        "fixed": "文本变化后保留新输入；提交附件采用快照；重置用 epoch 拦截旧发送回调。",
+        "remaining": "发送中可继续添加图片，但成功回调仍无条件 data.attachment=false；新添加给下一条的素材被清除。",
+        "minimal_fix": "等待期间禁用图片添加和移除，或使用附件版本避免清除新素材。"
+      },
+      "resolution": {
+        "evidence": "独立读取 app.js:49,51：提交时冻结附件；成功后只清除与提交文本相同的输入；发送期间 attachment/remove-attachment/voice/voice-text 被拦截并给出稍候提示，消除下一条附件被回调清空的可达路径。",
+        "verified_by": "/root/framework_challenger",
+        "verified_revision": "FW-0.1-candidate / recheck 2"
+      }
+    }
+  ],
+  "recheck_round": 2,
+  "recheck_method": "独立读取当前修改源码及动作处理分支并核对原反例；作者浏览器实测仅为补充信息，未冒称本人运行。未进行截图视觉审核。",
+  "previous_artifact_hashes": {
+    "sources/requirements-thread.json": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378",
+    "build.cjs": "9a7a45272b3fbd776735746d97411f71f73bf11651c116698fba2e3e06e53786",
+    "bundle/assets/app.js": "688c0633692ff6f188bec377fa5eb081489f54d496485536d857fa15a889f665",
+    "bundle/index.html": "6432c9547a2e51dd439f1d35c235e69dfd8f02500b16458056bd70784209214e"
+  },
+  "final_assessment": "本轮 3 条重要源码反例已关闭，候选框架范围内通过此次独立挑战复核。仅复核指定修复和原问题，不代表完整 UI、真实服务、全部浏览器行为或研发交付通过。"
+}

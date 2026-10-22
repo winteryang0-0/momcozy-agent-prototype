@@ -1,0 +1,35 @@
+{
+  "candidate": "CS-0.4",
+  "date": "2026-10-20",
+  "status": "awaiting-user-testing-not-frozen",
+  "scope": "four comparable semantic liquid-glass UI style boards",
+  "framework_sha256": "6a4ea1307263579b7d39b50f82de28272c0e9c13489a5c9e3c08b3c1efa0f951",
+  "system_sha256": "aef3528130aa539e2d929fd7cb9b08392784202e6d7be6b9e4216cffa0145b99",
+  "source_sha256": "989ae4d8a02e31fd2443a13d53020da63672b2e56891e990d86b32a8fa19eb22",
+  "scope_sha256": "1bd4e1930a03cb2e8da9ef8aeb29be78603e852908713250043d0bd19d7cb6de",
+  "confirmation": null,
+  "files": {
+    "index.html": "990e1a4f249aca5cc8222d5c0e0d9d5eb804a33bbb4a4b4792ea23211cec77db",
+    "bloom.html": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb",
+    "orbit.html": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde",
+    "garden.html": "d332ecb3f9d06d48749dbabfb38a2971a406e417b8923284fe6f4924cf74925a",
+    "berry.html": "c7fc177614dd01f4381343485e1b3f970550a4a11b02971db867268423e6b55f",
+    "assets/board.css": "3092336c160cf0ec3987764bc224db7f9204791968e86074df13c37953c61b7c",
+    "assets/board.js": "cc24382b21d20e801ffcd0e465e9ba93a4dcb50ff65ec747107393e2412e4597",
+    "STYLE_SPEC.md": "43a7f73e44622bfc19f9f95c4720d6f2cdf0a185581d990bbd3bbe5a13d00dfd",
+    "source-input.json": "989ae4d8a02e31fd2443a13d53020da63672b2e56891e990d86b32a8fa19eb22",
+    "design.json": "8c0b76789a0c4f2a4d29f6d4f0eb6cb83416d69a23bb70f5b6072e244b505557",
+    "validate.cjs": "8f938dc04acc415f3ef8738216ebd40d9ddd2bdc2b8ca1957047e8569e1cf07f",
+    "finalize.cjs": "4af6b78a56ec23fadbffb244e9fd5502f770bc87926ccc6536355dc1ad645cbe"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "static_local_resources": "pass",
+    "mock_dom_screen_state_toggle_focus": "pass",
+    "external_runtime_dependencies": "none detected",
+    "file_protocol_browser": "not tested in this run",
+    "browser_visual": "not tested; previous local browser attempt was blocked by security policy",
+    "independent_review": "not run",
+    "native_liquid_glass": "not tested"
+  }
+}

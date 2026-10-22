@@ -1,0 +1,27 @@
+{
+  "candidate": "CS-0.1",
+  "status": "awaiting-user-review-not-frozen",
+  "scope": "semantic UI style board only",
+  "date": "2026-10-20",
+  "framework_sha256": "4f856ade7ca15fece74e4af2f91e1dbf009f665d8c3d75f0624d573ffcbd1bd0",
+  "system_sha256": "213a737d2aa83dfc4283223335cd93850f377d2bcb9a6422f46fcc059699b82a",
+  "source_sha256": "ffd4857336ad7ba482a76a70e00228491ff21b642df22bcf59ebd9fcdbc8c9a3",
+  "scope_sha256": "12e7400a833ac25801feff7dc095bcd5e2971ab6af99fe2fb613abf5a96eaddd",
+  "confirmation": null,
+  "files": {
+    "index.html": "1737d8426445f5469bb2d1b12a7d188193372dc876959a26ca48b6a028ad786a",
+    "assets/style.css": "c16b60a0fbac12dad5292647134523f31ec93446f04d9e5c9715e6accd8fcfb6",
+    "assets/app.js": "8ab86317ada6701263529d1883812ce5009eff1187e60ff0fac9145503500442",
+    "STYLE_SPEC.md": "bb2dd1f55c1c55fc4c8cb5938707e78faad5daa29f2334370470df9a6e871adb",
+    "source-input.json": "ffd4857336ad7ba482a76a70e00228491ff21b642df22bcf59ebd9fcdbc8c9a3",
+    "design.json": "0ea1f37341b21c794af54a67ab02aaba9f36de768791d58d984c50fe387279f7"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "html_ids": "pass",
+    "js_targets": "pass",
+    "external_css": "none",
+    "browser_visual": "blocked-by-browser-security-policy",
+    "independent_review": "not-run"
+  }
+}

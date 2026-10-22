@@ -1,0 +1,17 @@
+{
+  "candidate": "FW-0.1",
+  "stage": "draft",
+  "confirmation": null,
+  "files": {
+    "bundle/index.html": "9ac91f21bd321c923c4e58c0c709570ef30db2e45f884d0d741f1ca75a49ac80",
+    "bundle/assets/styles.css": "912c8b8c93889ccc4f345c74869c73cc6d484cb7551b2c56a3cb192bc1c59929",
+    "bundle/assets/app.js": "00ce7f729921f13a8879e06bb2f31019a47bdce59a8b02777ef65fc8979df77d",
+    "bundle/README.txt": "f8f364cf5826df47dec431c16d3bfbd71ea8b5be6b56be285da6ac153ed8e6f4",
+    "design.json": "3ecf5d025f61e4c3a25a188736403fda0ee70b2d33b0dd7d2d38cb006e72bfdc",
+    "candidate-summary.json": "633309352557d10108f3c1133c889566ece5540433d3d966b2e4a21f8d687e3a",
+    "FRAMEWORK.txt": "bcc78d404e4940acb6c939af21940a1b7a4aa00d704caa2e6731e74cdf9c5059",
+    "reviews/static-check.json": "b7f0afedb93d1add2c397728b3b6b5d9899d8c7440fa44cf2a6674161f906a5c",
+    "reviews/runtime.json": "0954aadcb019ab162485e4e02429f94f832fd83d17e978167ce637ce2cb820be",
+    "reviews/challenger.json": "83cb88bdaaa5861a50065d51eff6f8dc4d54c6d4f613d6d5d26a1b45c8a4334b"
+  }
+}

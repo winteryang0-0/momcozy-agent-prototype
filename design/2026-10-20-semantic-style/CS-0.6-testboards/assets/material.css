@@ -1,0 +1,307 @@
+/* CS-0.6 icon grammar and glass spectrum. The task palette stays in board.css. */
+.icon-svg { overflow: visible; }
+.axis-pair { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+.axis-pair span {
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: var(--back);
+  border: 1px solid var(--line);
+  color: var(--deep);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+/* 01 · Bloom: small relief objects on warm, diffuse frosted glass. */
+body[data-variant=bloom] .icon-svg {
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 1px 0 #fff9) drop-shadow(0 1px 1px #76485844);
+}
+body[data-variant=bloom] .quick {
+  border-color: #fff9;
+  box-shadow: inset 2px 2px 3px #fffd, inset -3px -4px 8px #a1606f1a, 0 6px 13px #6c4e5a12;
+}
+body[data-variant=bloom] .quick-icon,
+body[data-variant=bloom] .event-icon,
+body[data-variant=bloom] .icon-sample span {
+  border: 1px solid #ffffffb8;
+  box-shadow: inset 2px 2px 3px #fff, inset -2px -3px 5px #89697526, 0 3px 7px #5c43501f;
+}
+body[data-variant=bloom] .glass-tabbar,
+body[data-variant=bloom] .glass-icon,
+body[data-variant=bloom] .glass-pill,
+body[data-variant=bloom] .glass-mini,
+body[data-variant=bloom] .floating-label {
+  background: linear-gradient(145deg, #fffef9eb, #fff8f7d6 48%, #f9eaf0c7);
+  border-color: #fff8;
+  backdrop-filter: blur(30px) saturate(1.08);
+  -webkit-backdrop-filter: blur(30px) saturate(1.08);
+  box-shadow: inset 1px 2px 3px #fff, inset -2px -3px 8px #a16c8224, 0 15px 28px #754c6040;
+}
+body[data-variant=bloom] .glass-tabbar button[aria-current=page] {
+  background: #ffffffc9;
+  box-shadow: inset 0 1px 2px #fff, 0 2px 8px #78526726;
+}
+body[data-variant=bloom] .glass-demo {
+  background: radial-gradient(circle at 22% 66%, #f6d7e2, transparent 43%),
+              radial-gradient(circle at 83% 14%, #fce4c5, transparent 46%), #f9f0ef;
+}
+body[data-variant=bloom] .glass-orb {
+  background: radial-gradient(circle at 31% 29%, #ffffffdd, #f7d5ddbd 49%, #efd9e390);
+  box-shadow: inset 8px 8px 17px #fff9, inset -13px -14px 24px #9c627b30, 0 16px 28px #79546e36;
+}
+
+/* 02 · Orbit: solid pictograms and a nearly matte satin frost. */
+body[data-variant=orbit] .icon-svg {
+  stroke-width: 1.8;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  filter: none;
+}
+body[data-variant=orbit] .quick,
+body[data-variant=orbit] .quick-icon,
+body[data-variant=orbit] .event-icon,
+body[data-variant=orbit] .icon-sample span {
+  box-shadow: none;
+}
+body[data-variant=orbit] .quick { border: 1px solid #ffffff9c; }
+body[data-variant=orbit] .quick-icon {
+  background: transparent;
+  border-radius: 5px;
+}
+body[data-variant=orbit] .event-icon,
+body[data-variant=orbit] .icon-sample span { border-radius: 8px; }
+body[data-variant=orbit] .glass-tabbar,
+body[data-variant=orbit] .glass-icon,
+body[data-variant=orbit] .glass-pill,
+body[data-variant=orbit] .glass-mini,
+body[data-variant=orbit] .floating-label {
+  background: #fffaf0e6;
+  border-color: #f6e9d8;
+  backdrop-filter: blur(34px) saturate(.88);
+  -webkit-backdrop-filter: blur(34px) saturate(.88);
+  box-shadow: 0 6px 18px #81674d23, inset 0 1px 0 #fff;
+}
+body[data-variant=orbit] .glass-tabbar button[aria-current=page] {
+  background: #fffefd;
+  box-shadow: 0 1px 4px #76634e1c;
+}
+body[data-variant=orbit] .glass-demo {
+  background: linear-gradient(145deg, #f8e9cf, #f4f0db 51%, #e9efdc);
+}
+body[data-variant=orbit] .glass-orb {
+  background: #f5d38a;
+  border: 0;
+  box-shadow: none;
+}
+
+/* 03 · Garden: layered, brighter optical glass and waterlike object icons. */
+body[data-variant=garden] .icon-svg {
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 2px 2px #235e5948);
+}
+body[data-variant=garden] .quick {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: #fff9;
+  box-shadow: inset 1px 2px 2px #fff, inset -3px -4px 8px #478b7a20, 0 8px 16px #4b988636;
+}
+body[data-variant=garden] .quick::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  right: 25%;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff9;
+  pointer-events: none;
+}
+body[data-variant=garden] .quick-icon,
+body[data-variant=garden] .event-icon,
+body[data-variant=garden] .icon-sample span {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #fff9;
+  background: var(--task-bg, #e8f5ec);
+  box-shadow: inset 2px 2px 4px #fff, inset -3px -4px 7px #29746330, 0 5px 10px #3679682d;
+}
+body[data-variant=garden] .quick-icon::before,
+body[data-variant=garden] .event-icon::before,
+body[data-variant=garden] .icon-sample span::before {
+  content: "";
+  position: absolute;
+  width: 52%;
+  height: 20%;
+  top: 4px;
+  left: 14%;
+  border-radius: 50%;
+  transform: rotate(-27deg);
+  background: #fff9;
+  filter: blur(1px);
+  pointer-events: none;
+}
+body[data-variant=garden] .quick-icon svg,
+body[data-variant=garden] .event-icon svg,
+body[data-variant=garden] .icon-sample span svg { position: relative; z-index: 1; }
+body[data-variant=garden] .icon-sample:not([data-task]) span {
+  background: var(--back);
+  color: var(--deep);
+}
+body[data-variant=garden] .glass-tabbar,
+body[data-variant=garden] .glass-icon,
+body[data-variant=garden] .glass-pill,
+body[data-variant=garden] .glass-mini,
+body[data-variant=garden] .floating-label {
+  isolation: isolate;
+  background: linear-gradient(135deg, #ffffffd9 0%, #def9e694 30%, #ffffff48 56%, #b5efdf99 100%);
+  border-color: #ffffffe6;
+  backdrop-filter: blur(11px) saturate(1.85) brightness(1.04);
+  -webkit-backdrop-filter: blur(11px) saturate(1.85) brightness(1.04);
+  box-shadow: inset 2px 2px 3px #fff, inset -3px -3px 8px #58b49b4d,
+              0 0 0 1px #86dcca80, 0 15px 27px #2a897251;
+}
+body[data-variant=garden] .glass-icon { position: relative; }
+body[data-variant=garden] .glass-tabbar::before,
+body[data-variant=garden] .glass-icon::before,
+body[data-variant=garden] .glass-pill::before,
+body[data-variant=garden] .glass-mini::before,
+body[data-variant=garden] .floating-label::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at 22% 0%, #fff9, transparent 37%),
+              linear-gradient(105deg, #fff7, transparent 30%, #8ce6d02b 72%, #fff8);
+  box-shadow: inset 0 1px 0 #fff, inset 1px 0 0 #fff8;
+  pointer-events: none;
+  z-index: 0;
+}
+body[data-variant=garden] .glass-tabbar > *,
+body[data-variant=garden] .glass-icon > *,
+body[data-variant=garden] .glass-pill > *,
+body[data-variant=garden] .glass-mini > *,
+body[data-variant=garden] .floating-label > * { position: relative; z-index: 1; }
+body[data-variant=garden] .glass-tabbar button[aria-current=page] {
+  background: linear-gradient(140deg, #ffffffed, #d7f8e8ad);
+  box-shadow: inset 1px 1px 2px #fff, inset -2px -2px 4px #73bfa248, 0 3px 8px #398f7530;
+}
+body[data-variant=garden] .glass-demo {
+  background: radial-gradient(circle at 18% 76%, #82d9cd, transparent 38%),
+              radial-gradient(circle at 86% 16%, #d9eea7, transparent 44%), #ddf6e9;
+}
+body[data-variant=garden] .glass-orb {
+  border: 1px solid #fff9;
+  background: radial-gradient(circle at 28% 22%, #fff, #b7f4e5b8 34%, #7bcbba55 69%, #fff8);
+  box-shadow: inset 10px 10px 16px #fff, inset -17px -18px 25px #3f9e8e66, 0 17px 30px #2386754f;
+}
+
+/* 04 · Berry: hairline icons with shallow, optically clear glass. */
+body[data-variant=berry] .icon-svg {
+  stroke-width: 1.45;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  filter: none;
+}
+body[data-variant=berry] .quick {
+  border-color: #ffffffca;
+  box-shadow: inset 0 1px 0 #fff, 0 4px 11px #6b475719;
+}
+body[data-variant=berry] .quick-icon {
+  background: transparent;
+  border: 1px solid #ffffffbc;
+  border-radius: 10px;
+  box-shadow: none;
+}
+body[data-variant=berry] .event-icon,
+body[data-variant=berry] .icon-sample span {
+  border: 1px solid #ffffffc4;
+  border-radius: 10px;
+  box-shadow: none;
+}
+body[data-variant=berry] .glass-tabbar,
+body[data-variant=berry] .glass-icon,
+body[data-variant=berry] .glass-pill,
+body[data-variant=berry] .glass-mini,
+body[data-variant=berry] .floating-label {
+  isolation: isolate;
+  background: linear-gradient(155deg, #ffffffbd, #fff9fb71 54%, #ffffffa3);
+  border-color: #ffffffdb;
+  backdrop-filter: blur(9px) saturate(1.08);
+  -webkit-backdrop-filter: blur(9px) saturate(1.08);
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #ffffff7a, 0 9px 19px #69465730;
+}
+body[data-variant=berry] .glass-icon { position: relative; }
+body[data-variant=berry] .glass-tabbar::before,
+body[data-variant=berry] .glass-icon::before,
+body[data-variant=berry] .glass-pill::before,
+body[data-variant=berry] .glass-mini::before,
+body[data-variant=berry] .floating-label::before {
+  content: "";
+  position: absolute;
+  left: 11%;
+  right: 17%;
+  top: 2px;
+  height: 1px;
+  border-radius: 100%;
+  background: #fff;
+  pointer-events: none;
+}
+body[data-variant=berry] .glass-tabbar button[aria-current=page] {
+  background: #fff9fb99;
+  box-shadow: inset 0 1px 0 #fff, 0 2px 7px #6b47531c;
+}
+body[data-variant=berry] .glass-demo {
+  background: radial-gradient(circle at 20% 77%, #eadce0, transparent 43%),
+              radial-gradient(circle at 86% 18%, #edf0e8, transparent 49%), #f7f2f2;
+}
+body[data-variant=berry] .glass-orb {
+  border: 1px solid #fff;
+  background: radial-gradient(circle at 27% 21%, #ffffffbd, #f9e9ee6b 40%, #e4ced95e 75%);
+  box-shadow: inset 5px 6px 12px #fff9, inset -9px -10px 19px #7d5b6936, 0 11px 23px #6946582d;
+}
+
+/* Solid fallback keeps the selected state and labels visible. */
+body.opaque[data-variant] .glass-tabbar,
+body.opaque[data-variant] .glass-icon,
+body.opaque[data-variant] .glass-pill,
+body.opaque[data-variant] .glass-mini,
+body.opaque[data-variant] .floating-label {
+  background: var(--paper) !important;
+  border-color: var(--line) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+body.opaque[data-variant] .glass-tabbar::before,
+body.opaque[data-variant] .glass-icon::before,
+body.opaque[data-variant] .glass-pill::before,
+body.opaque[data-variant] .glass-mini::before,
+body.opaque[data-variant] .floating-label::before { display: none; }
+@media (prefers-reduced-transparency: reduce) {
+  body[data-variant] .glass-tabbar,
+  body[data-variant] .glass-icon,
+  body[data-variant] .glass-pill,
+  body[data-variant] .glass-mini,
+  body[data-variant] .floating-label {
+    background: var(--paper) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  body[data-variant] .glass-tabbar::before,
+  body[data-variant] .glass-icon::before,
+  body[data-variant] .glass-pill::before,
+  body[data-variant] .glass-mini::before,
+  body[data-variant] .floating-label::before { display: none; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  body[data-variant] .glass-tabbar::before,
+  body[data-variant] .glass-icon::before,
+  body[data-variant] .glass-pill::before,
+  body[data-variant] .glass-mini::before,
+  body[data-variant] .floating-label::before { display: none; }
+}

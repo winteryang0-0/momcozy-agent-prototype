@@ -1,0 +1,905 @@
+{
+  "schema_version": "1.0",
+  "role": "visual",
+  "author": "/root/continuous_visual",
+  "independent": true,
+  "evidence_mode": "screenshot-review",
+  "baseline_id": null,
+  "candidate_id": "FW-0.3",
+  "status": "pass",
+  "reviewed_at": "2026-10-19T11:05:47.670Z",
+  "scope": "仅对本轮连续聊天候选改动的已列图像样本与主操作者运行记录进行独立复核；不是冻结确认、最终 UI 或全站验收。",
+  "status_scope": "已列样本未见未关闭 blocker/major 视觉问题；任务滚动问题已在当前版本新图中复核关闭。完整设计协议的全状态×全视口交付门槛未运行。",
+  "full_delivery_approval": false,
+  "material_hash": "5acf877ef31590dab0978c937de5b0ed05b505a75b1f3e0a1f3949e4961e4a2c",
+  "material_hash_method": "design_guard.material_hash semantics with receipt=null for unfrozen candidate; project.stage excluded",
+  "material_hashes": {
+    "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+    "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+    "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+  },
+  "previous_material_hashes": {
+    "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+    "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+    "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+    "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+    "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+  },
+  "materials_verified": {
+    "current_hashes_match": true,
+    "old_app_reconstruction_matches": true,
+    "all_screenshot_hashes_match": true,
+    "screenshot_count": 13
+  },
+  "browser": {
+    "operator": "/root",
+    "name": "Codex in-app browser",
+    "version": "unknown",
+    "protocol": "http",
+    "url": "http://127.0.0.1:4176/#/chat",
+    "reviewer_browser_operations": 0
+  },
+  "revision_handling": {
+    "change_record": "reviews/task-scroll-fix.json",
+    "before_app_sha256": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+    "after_app_sha256": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+    "independent_reconstruction_verified": true,
+    "impact": "仅 taskAction 的 cry/poop 打开分支改为在路由恢复后调整 chat-stream 滚动。HTML/CSS、媒体、年龄、今日卡和发送函数未改变。",
+    "policy": "旧图继续绑定旧材料，只代表旧版本相应样本的视觉观察；当前版本受影响任务路径与主屏使用新截图复核，不将旧截图改绑为当前稿。"
+  },
+  "evidence": [
+    {
+      "path": "reviews/screenshots/camera-preview-final-390.jpg",
+      "state": "camera-preview",
+      "chatScroll": 2525.333251953125,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:17.123Z",
+      "captureFinishedAt": "2026-10-19T10:59:17.159Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "f62b636004ddd1b206d80a29dc7c6c2169f2fc7ca867378053a5a42dfe3c80c9",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "拍照模拟预览：示例照片占位、重新拍摄、使用这张照片与取消拍照可辨认。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/camera-error-final-390.jpg",
+      "state": "camera-unavailable",
+      "chatScroll": 2434.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:25.377Z",
+      "captureFinishedAt": "2026-10-19T10:59:25.400Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "12fb9a62f6ed4c985062ebf054b4a8d2ea4736e05a97293332eb52e8401d2813",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "相机不可用：错误文案明确本次未添加照片，重试与取消入口可见。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/upload-error-final-390.jpg",
+      "state": "upload-failed",
+      "chatScroll": 2304.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:33.455Z",
+      "captureFinishedAt": "2026-10-19T10:59:33.500Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "37db85449fe7258fc70041f43282f2d2d0bed962292463ff12840b6ea78d17ad",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "上传选项与失败：相册/文件入口、失败说明、输入框和底部工具可见；上传内容区存在独立滚动。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/send-error-final-390.jpg",
+      "state": "send-failed-with-attachment",
+      "chatScroll": 2456.666748046875,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T10:59:59.652Z",
+      "captureFinishedAt": "2026-10-19T10:59:59.669Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "b7de507dfe78d3e0d8cd462bc606c8ea6c572482eb52e086aabfa7aae95954ae",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "发送失败：待重试消息与附件名称、重试/放弃入口、原附件和草稿可见。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/chat-focused-final-390.jpg",
+      "state": "focused-chat-empty-today",
+      "chatScroll": 0,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:00:43.168Z",
+      "captureFinishedAt": "2026-10-19T11:00:43.197Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "ed181cbaa245f4a24f56d6b95be4fea4759b5367cca1534c472682d46ef048cc",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "修复前主屏空今日卡：焦点轮廓清楚，年龄与输入栏可见，今日暂无记录有明确文案。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-mobile.jpg",
+      "state": "pending-attachment-and-draft",
+      "width": 390,
+      "height": 844,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "809bd4be4fa0ae75806269a7d584f29501787e0972b176f86885c50ebaea5244",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "390 待发送照片及草稿：附件来源、移除按钮、保存记录摘要与输入栏可见。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/attachment-final-360.jpg",
+      "state": "pending-file-narrow",
+      "width": 360,
+      "height": 780,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "0bc597afc6a826307f8d3c8904ffd7033609f96eb58ede551866457bcae0b45a",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "360 待发送文件：附件名称/来源、移除全部及单项移除、年龄与输入栏可见，无可见横向溢出。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/task-final-360.jpg",
+      "state": "inline-cry-task",
+      "width": 360,
+      "height": 780,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "6cae4bcdd23ae4bd80d782db3f57a71ac3b7ccb526a8cd80e505469c1bab62e1",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "修复前证据只显示记录摘要，未显示新打开的哭声任务；不按文件名记为任务视觉覆盖。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/chat-final-desktop.jpg",
+      "state": "desktop-history",
+      "width": 1440,
+      "height": 1000,
+      "fullPage": false,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "captureStartedAt": "unknown",
+      "captureFinishedAt": "unknown",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "d0b1ff15c51b3f1e73f88af8d8eb14ec029ad6242a83ef234b95b361b53c8ff1",
+      "actualPixels": {
+        "height": 990,
+        "width": 1425
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "修复前桌面历史：记录摘要、局部任务卡和输入栏可见；声明视口与实际图片像素不同，分别保留。",
+      "revision": "pre-task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+      "state": "cry-task-visible-after-open",
+      "chatScroll": 900,
+      "height": 780,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 360,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:01:53.591Z",
+      "captureFinishedAt": "2026-10-19T11:01:53.627Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "ead1c65b2d191e5057e3eefef139e851a8629bed86e2743eb76f2474ae57714e",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "修复后哭声任务：标题、录制主按钮、放弃入口全部可见，年龄与输入栏未移位。",
+      "revision": "task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+      "state": "poop-task-visible-after-open",
+      "chatScroll": 1214,
+      "height": 780,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 360,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:02:16.649Z",
+      "captureFinishedAt": "2026-10-19T11:02:16.666Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "7aab4ee24b643bd6a2d5161f2ab2fe821d8585eea68f0c3db6cebda1e2bcc8b0",
+      "actualPixels": {
+        "height": 780,
+        "width": 360
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "修复后便便任务：标题、照片说明、拍照/相册与放弃入口全部可见。",
+      "revision": "task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/chat-current-390.jpg",
+      "state": "current-main-today-card-with-saved-record",
+      "chatScroll": 0,
+      "height": 844,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 390,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:02:48.770Z",
+      "captureFinishedAt": "2026-10-19T11:02:48.795Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "372747f9240f4c5bde24f547485ec3332a998ddbe76fcce7b24f2e7d16e79a6f",
+      "actualPixels": {
+        "height": 844,
+        "width": 390
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "当前390主屏：宝宝年龄独立展示，今日概览以聊天卡出现，记录计数和本地统计边界可读。",
+      "revision": "task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "path": "reviews/screenshots/chat-current-desktop.jpg",
+      "state": "current-desktop-main",
+      "chatScroll": 0,
+      "height": 1000,
+      "outerY": 0,
+      "url": "http://127.0.0.1:4176/#/chat",
+      "width": 1440,
+      "fullPage": false,
+      "captureStartedAt": "2026-10-19T11:03:37.386Z",
+      "captureFinishedAt": "2026-10-19T11:03:37.440Z",
+      "operator": "/root",
+      "browser": "Codex in-app browser",
+      "browserVersion": "unknown",
+      "sha256": "4feae6ab7ec46ee76a7c9958e368139a6b79a0ee25e2513d91b22d16f76e3ca1",
+      "actualPixels": {
+        "height": 1000,
+        "width": 1440
+      },
+      "materialHashes": {
+        "bundle/index.html": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5",
+        "bundle/assets/styles.css": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5",
+        "bundle/assets/app.js": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+        "design.json": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7",
+        "sources/requirements-v03.json": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+      },
+      "kind": "screenshot",
+      "reviewed_by": "/root/continuous_visual",
+      "observed_summary": "当前桌面主屏：年龄、今日卡、消息及输入区形成清晰顺序，三栏框架说明未挤压手机预览。",
+      "revision": "task-scroll-fix",
+      "hash_verified": true
+    },
+    {
+      "kind": "interaction-log",
+      "path": "reviews/runtime.json",
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013",
+      "operator": "/root",
+      "reviewed_by": "/root/continuous_visual"
+    },
+    {
+      "kind": "change-record",
+      "path": "reviews/task-scroll-fix.json",
+      "sha256": "9041a3466069ebefb7d230047bd7c8b8b9fdb1bd6b21ae08b975121a28e93318",
+      "independent_reconstruction_verified": true
+    }
+  ],
+  "coverage": {
+    "planned_scope": [
+      "390 主屏年龄/同页输入/今日卡",
+      "390 拍照预览和相机失败",
+      "390 上传失败与发送失败",
+      "390 与360附件及草稿",
+      "360 专项任务打开后可见",
+      "1440 当前主屏布局"
+    ],
+    "page_ids": [
+      "PAGE-chat"
+    ],
+    "viewport_ids": [
+      "VP-mobile",
+      "VP-narrow-360",
+      "VP-desktop"
+    ],
+    "viewports": [
+      {
+        "id": "VP-mobile",
+        "width": 390,
+        "height": 844,
+        "kind": "declared-baseline-candidate-viewport"
+      },
+      {
+        "id": "VP-narrow-360",
+        "width": 360,
+        "height": 780,
+        "kind": "extra-narrow-sample"
+      },
+      {
+        "id": "VP-desktop",
+        "width": 1440,
+        "height": 1000,
+        "kind": "declared-baseline-candidate-viewport"
+      }
+    ],
+    "state_ids": [
+      "ST-camera-preview",
+      "ST-chat",
+      "ST-camera-error",
+      "ST-upload-options",
+      "ST-upload-error",
+      "ST-chat-error",
+      "ST-attachments-ready",
+      "ST-today",
+      "ST-cry-ready",
+      "ST-poop-ready"
+    ],
+    "matrix": [
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-camera-preview",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/camera-preview-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/camera-preview-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-camera-error",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/camera-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/camera-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-upload-options",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/upload-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-upload-error",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/upload-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/upload-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat-error",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/send-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-attachments-ready",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/send-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/send-error-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/chat-focused-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/chat-focused-final-390.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-attachments-ready",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/attachment-final-mobile.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/attachment-final-mobile.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-attachments-ready",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/attachment-final-360.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/attachment-final-360.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/task-final-360.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-desktop",
+        "evidence_path": "reviews/screenshots/chat-final-desktop.jpg",
+        "revision": "pre-task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-cry-ready",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/task-scroll-fixed-360.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-poop-ready",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-narrow-360",
+        "evidence_path": "reviews/screenshots/poop-scroll-fixed-360.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/chat-current-390.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-mobile",
+        "evidence_path": "reviews/screenshots/chat-current-390.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-today",
+        "viewport_id": "VP-desktop",
+        "evidence_path": "reviews/screenshots/chat-current-desktop.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      },
+      {
+        "page_id": "PAGE-chat",
+        "state_id": "ST-chat",
+        "viewport_id": "VP-desktop",
+        "evidence_path": "reviews/screenshots/chat-current-desktop.jpg",
+        "revision": "task-scroll-fix",
+        "coverage_type": "visible-screenshot-sample"
+      }
+    ],
+    "reviewer_actual_operations": [],
+    "operator_runtime_check_ids": [
+      "same-page-focus",
+      "three-continuous-messages",
+      "camera-confirm",
+      "two-attachments-send-next-draft",
+      "sidebar-return-expanded",
+      "camera-cancel-keeps-draft",
+      "remove-one-and-all",
+      "camera-denied-retry",
+      "upload-failed-retry",
+      "reload-confirmed-attachments-draft",
+      "failed-send-retry-and-discard-guard",
+      "record-save-guard-and-today",
+      "today-inline-expand",
+      "age-visible-with-attachments",
+      "narrow-360-layout",
+      "long-input-and-interleaved-timeline",
+      "sidebar-preserves-history-scroll",
+      "discard-failed-keeps-editable-content",
+      "reset-missing-birth",
+      "task-open-scrolls-to-card-after-route-restore",
+      "poop-task-open-scrolls-to-card"
+    ],
+    "full_state_viewport_cross_product_verified": false,
+    "not_visually_covered": [
+      "侧栏和我的/宝宝/设备概览当前稿截图",
+      "五类独立记录表单完整页面及各错误/加载状态",
+      "全部引导页",
+      "任务录制/采集/处理中/结果/无法判断等完整状态",
+      "今日详情展开后的完整截图",
+      "全部媒体状态在360与桌面的重复组合",
+      "真实移动系统虚拟键盘、屏幕阅读器、离线/权限系统对话框"
+    ]
+  },
+  "operation_sequences": [
+    {
+      "sequence": 1,
+      "by": "/root",
+      "checks": [
+        "same-page-focus",
+        "three-continuous-messages"
+      ],
+      "reviewer_assessment": "运行记录中路由保持 #/chat，消息流 scrollHeight 大于 clientHeight；截图显示独立对话滚动区与常显年龄/输入。"
+    },
+    {
+      "sequence": 2,
+      "by": "/root",
+      "checks": [
+        "camera-confirm",
+        "camera-cancel-keeps-draft",
+        "camera-denied-retry",
+        "upload-failed-retry",
+        "remove-one-and-all",
+        "two-attachments-send-next-draft"
+      ],
+      "reviewer_assessment": "读图核实素材确认/失败入口，运行记录支持原草稿和附件保留；评审者未自行执行。"
+    },
+    {
+      "sequence": 3,
+      "by": "/root",
+      "checks": [
+        "failed-send-retry-and-discard-guard",
+        "discard-failed-keeps-editable-content",
+        "reload-confirmed-attachments-draft"
+      ],
+      "reviewer_assessment": "失败卡与待发送区均展示原内容；重试时序、草稿保留仅据主操作者运行记录核对。"
+    },
+    {
+      "sequence": 4,
+      "by": "/root",
+      "checks": [
+        "record-save-guard-and-today",
+        "today-inline-expand",
+        "sidebar-return-expanded",
+        "sidebar-preserves-history-scroll"
+      ],
+      "reviewer_assessment": "今日卡与保存摘要已读图；侧栏恢复及今日展开为运行记录覆盖，不冒充独立视觉重跑。"
+    },
+    {
+      "sequence": 5,
+      "by": "/root",
+      "checks": [
+        "narrow-360-layout",
+        "long-input-and-interleaved-timeline",
+        "task-open-scrolls-to-card-after-route-restore",
+        "poop-task-open-scrolls-to-card"
+      ],
+      "reviewer_assessment": "360 修复后新图可见任务标题与主操作，年龄及输入常显；长输入编辑动态行为仅据日志。"
+    }
+  ],
+  "observations": [
+    {
+      "topic": "年龄与输入常显",
+      "assessment": "当前390和360样图中年龄位于消息滚动区外，主输入框与拍照/+上传持续可见；宝宝资料入口可识别。",
+      "evidence": [
+        "reviews/screenshots/chat-current-390.jpg",
+        "reviews/screenshots/task-scroll-fixed-360.jpg",
+        "reviews/screenshots/poop-scroll-fixed-360.jpg"
+      ]
+    },
+    {
+      "topic": "今日概览",
+      "assessment": "当前主屏以独立聊天卡呈现今日记录计数、空/有数据状态及仅汇总本地记录的边界；不形成二级聊天页。",
+      "evidence": [
+        "reviews/screenshots/chat-current-390.jpg",
+        "reviews/screenshots/chat-current-desktop.jpg",
+        "reviews/screenshots/chat-focused-final-390.jpg"
+      ]
+    },
+    {
+      "topic": "素材确认与恢复",
+      "assessment": "修复前稳定图中的预览确认、不可用、添加失败、发送失败均有可见操作和反馈，附件来源与草稿可读。该组图保留原材料版本；最终仅任务滚动变更的影响范围已独立核对。",
+      "evidence": [
+        "reviews/screenshots/camera-preview-final-390.jpg",
+        "reviews/screenshots/camera-error-final-390.jpg",
+        "reviews/screenshots/upload-error-final-390.jpg",
+        "reviews/screenshots/send-error-final-390.jpg"
+      ]
+    },
+    {
+      "topic": "窄屏",
+      "assessment": "360样本中主要按钮与文字未出现横向截断；附件条允许名称与按钮分行。对话区边缘处内容被滚动容器裁切是可见滚动边界，未作为固定遮挡问题。",
+      "evidence": [
+        "reviews/screenshots/attachment-final-360.jpg",
+        "reviews/screenshots/task-scroll-fixed-360.jpg",
+        "reviews/screenshots/poop-scroll-fixed-360.jpg"
+      ]
+    },
+    {
+      "topic": "焦点",
+      "assessment": "截图可见输入框/快捷入口焦点轮廓；未据此宣称完整键盘顺序、触屏体验或WCAG合规。",
+      "evidence": [
+        "reviews/screenshots/chat-focused-final-390.jpg",
+        "reviews/screenshots/task-scroll-fixed-360.jpg"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "VIS-CONT-01",
+      "severity": "major",
+      "status": "resolved",
+      "location": "PAGE-chat / C10、C11 / 打开专项任务后的滚动定位",
+      "observation": "修复前 task-final-360 图实际仍处于记录摘要，新任务标题和主操作不在可视区域；主操作者进一步确认路由滚动恢复回调覆盖了立即滚入任务的定位。",
+      "impact": "用户点击听哭闹或看便便后可能看不到新任务，难以继续操作。",
+      "fix": "把专项任务的 chat-stream 定位安排在路由恢复回调之后，并保持年龄和输入区位置。",
+      "resolution": "当前360哭声和便便新图均完整显示任务标题与主操作；运行记录表明路由仍为 #/chat、外层滚动为0。",
+      "evidence": [
+        "reviews/screenshots/task-final-360.jpg",
+        "reviews/task-scroll-fix.json",
+        "reviews/screenshots/task-scroll-fixed-360.jpg",
+        "reviews/screenshots/poop-scroll-fixed-360.jpg",
+        "reviews/runtime.json"
+      ],
+      "verified_by": "/root/continuous_visual",
+      "verified_material_hash": "5acf877ef31590dab0978c937de5b0ed05b505a75b1f3e0a1f3949e4961e4a2c",
+      "recheck_conditions": "今后若改变路由/滚动恢复或对话高度，重新验证从历史中段打开两个任务，标题与主操作应进入可视区。"
+    }
+  ],
+  "limitations": [
+    "评审者只读取真实截图及主操作者日志，未操作浏览器；动态结论按来源明确归于 /root 的运行记录。",
+    "候选未冻结，baseline_id=null；未给最终产品、全站或完整交付协议通过结论。",
+    "旧媒体/附件/空今日卡图属于修复前版本，保留其原始材料摘要；最终受影响任务路径与主屏已有当前稿新图。未对旧图覆盖的每种状态重拍当前稿。",
+    "桌面浏览器视口模拟不等于移动设备实测；移动OS虚拟键盘、系统权限、触屏手势未测。",
+    "相机、语音、上传及AI反馈为模拟，未检验真实采集、网络上传或内容分析。",
+    "只对实际可见部分作视觉判断；没有把13张截图推广为全部页面、状态和视口的覆盖。",
+    "未测完整键盘顺序、屏幕阅读器、全部颜色对比或WCAG合规。文件直开 file:// 未验证。",
+    "旧桌面图声明1440×1000而实际1425×990，报告分别保留；当前桌面新图声明与实际均1440×1000。",
+    "未知的浏览器版本及4张旧图捕获时间保留unknown，未用文件写入时间冒充捕获时间。"
+  ]
+}

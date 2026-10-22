@@ -1,0 +1,29 @@
+{
+  "candidate_id": "AI-1.0",
+  "date": "2026-10-20",
+  "status": "awaiting-user-review-not-frozen",
+  "source": {
+    "user_request": "AI 对话主页面、个性化当天行动建议、Dock 在输入框上方、Today 只展示建议和概况、AI 顶部个人与快速静音",
+    "user_clarification": "跨日持续使用同一条对话",
+    "advice_source_assumption": "本地资料和本机记录的模拟个性化；未取得第二个澄清问题的答复",
+    "visual_source": "CS-0.3 Bloom Glass candidate"
+  },
+  "framework": {
+    "primary_route": "#/assistant",
+    "secondary_routes": ["#/home", "#/records"],
+    "profile_route": "#/mine",
+    "onboarding_route": "#/onboarding",
+    "dock_order": ["Today", "momcozy AI", "记录"],
+    "dock_relationship": "On assistant, fixed floating Dock appears above fixed composer; on Today and Records it remains at the bottom; it is hidden on Mine and onboarding.",
+    "conversation_model": "one persistent active conversation; no new or history affordances",
+    "today_model": "read-only daily advice and recorded-data overview",
+    "advice_model": "two explainable local simulation cards using current local calendar date, recorded feeds and volunteered concerns",
+    "mute_model": "saved local preference; gates manually triggered mouth-animation demo; no audio output"
+  },
+  "pending_decisions": [
+    {"id": "D01", "question": "Approve this navigation and content hierarchy after reviewing the actual candidate?", "status": "open", "blocks_freeze": true},
+    {"id": "D02", "question": "Should advice ultimately use local rules, fixed prototype examples, or a real AI service?", "status": "open", "blocks_freeze": true},
+    {"id": "D03", "question": "Should previous multiple conversations be migrated beyond the active one when moving from the earlier prototype?", "status": "open", "blocks_freeze": true}
+  ],
+  "limitations": ["Browser preview tested over local HTTP only", "No real AI/audio/device or medical recommendation", "File protocol, mobile keyboard, dark theme and full workflow matrix not verified"]
+}

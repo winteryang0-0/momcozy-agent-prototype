@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-20T03:22:17.578Z",
+  "scope": "数字控件改为时分式纵向滚轮；妈妈与宝宝基础资料同屏",
+  "authorization": "用户本轮要求默认数值、中央焦点、相邻值直接滑动，移除额外加减，妈妈宝宝信息同页直观可见。",
+  "mapping": [
+    {
+      "requirement": "直接滑动选值",
+      "page": "onboarding step 2",
+      "controls": "age/parity/babyCount/pregnancyWeeks/baby-N-weeks",
+      "states": "默认、滚动、焦点、边界、暂不填",
+      "implementation": "78px滚轮，26px行高，scroll-snap，中央高亮，触摸原生滚动，鼠标拖动与键盘支持"
+    },
+    {
+      "requirement": "妈妈宝宝同屏",
+      "page": "onboarding step 2",
+      "implementation": "两个紧凑分区，字段两列；多宝宝标签切换，生日下置，短屏压缩标题"
+    }
+  ],
+  "tests": {
+    "syntax": true,
+    "defaultValuesOnMainPreview": [
+      "30岁",
+      "1次",
+      "1个",
+      "40周"
+    ],
+    "mouseDragAge33To34": true,
+    "keyboardAge34To35": true,
+    "wheelScrollingDoesNotScrollPage": true,
+    "bounds": {
+      "maximum": "120岁",
+      "minimum": "暂不填"
+    },
+    "count3To2UpdatesTabs": true,
+    "babyIndependentValues": {
+      "baby1": 37,
+      "baby2": 38
+    },
+    "refreshRestoresValuesAndActiveBaby": true,
+    "omittedValuesSurviveReloadAndCompletion": true,
+    "invalidBirthdayBlocksBabySwitch": true,
+    "pregnancyBranch": {
+      "weeks": 20,
+      "birthdayFields": 0
+    },
+    "completedProfileReopens": true,
+    "mobile360x640": {
+      "allFieldsVisible": true,
+      "bodyTop": 112,
+      "bodyBottom": 551.333,
+      "babySectionBottom": 529.333,
+      "horizontalOverflow": false
+    },
+    "mobile390x844": true,
+    "desktop1280x720": {
+      "allFieldsVisible": true,
+      "bodyTop": 146.667,
+      "bodyBottom": 600.667,
+      "babySectionBottom": 537,
+      "bodyHasOverflow": false
+    },
+    "consoleErrors": []
+  },
+  "review": {
+    "author": "implementing agent",
+    "independent": false,
+    "kind": "局部视觉与交互自审",
+    "findings": [
+      "移除旧横向滑块和加减事件",
+      "修复短屏标题与生日行继承样式造成的超高",
+      "增加宝宝切换前日期校验",
+      "桌面手机框按实际可用空间收紧顶部，生日与两块资料同时可见"
+    ]
+  },
+  "limits": [
+    "真机触摸未实际验收；触摸沿用原生滚动实现",
+    "未做全量设计guard认证或独立发布评审",
+    "Today与记录仍以宝宝1为主要上下文"
+  ],
+  "screenshots": [
+    "wheels-390x844.jpg",
+    "multiple-babies-360x640.jpg",
+    "wheels-desktop.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 40070,
+      "sha256": "f1d8ae31ff9e74e78f912997d7701c37e688f52b3efdc4966df09164d32735ae"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

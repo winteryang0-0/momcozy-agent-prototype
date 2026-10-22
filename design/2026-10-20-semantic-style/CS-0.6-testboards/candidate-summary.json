@@ -1,0 +1,40 @@
+{
+  "candidate": "CS-0.6",
+  "date": "2026-10-21",
+  "status": "awaiting-user-testing-not-frozen",
+  "scope": "four comparable task-color style boards spanning relief to flat icons and frosted to liquid glass",
+  "framework_sha256": "7cfe73aad5c8bf8c439ee08be6344e34024a821c1c6337755a3fd3265ad5bfba",
+  "system_sha256": "94e976be0171e093b2e6e864e9db9288948b59a6a0cb511b0b20dcca95819471",
+  "source_sha256": "6aaadc18317dc10222a8c0be3367742b85012a20e44b8df9a317367772ede2aa",
+  "scope_sha256": "5967f7b3cd8184657ffe6ff9522ca5245a0ca6cee84573ba5f6213bbb2e79da5",
+  "confirmation": null,
+  "files": {
+    "index.html": "71bfb12c68fb17fba7d6012d7699135889db6f8c163523a4ea0eff0400703ee5",
+    "bloom.html": "964df1266926d3dd205eb3ff395dd916f3f84f794ded9caff26c5fcd102197bd",
+    "orbit.html": "a0cafc539e4ef4295d8f19c6d7741b7efa4ebd80ee91ab4a74041f93df437a85",
+    "garden.html": "715d729f620c012c9f310029c4282b172396cdfbfe624d524ba1837b54ffa78a",
+    "berry.html": "d87c2d7215a085d92eb44067238a0dcc1c46ca0fedc97f0d202abea7d6c2e230",
+    "assets/board.css": "93eb29f10ae06e2f24b9bace951a89780848f0cd4cd9144167c45d1c66d79dd7",
+    "assets/material.css": "9f4dcc5507dc863fb8878feecd97649db5842ffd2422cb8075bb0c1f1791b668",
+    "assets/overview.css": "7d977cab9b170015332f89202978e2b98195e37e68d110ba7fba0ea869099f39",
+    "assets/board.js": "d327e86e7230644308444ba6c03fd7ad4e18708e3006042aa5c88cba91ada82c",
+    "STYLE_SPEC.md": "1b3d10904baa75123a47845e3bc1df9946e4bd88356912f3dbeca6c29f917a68",
+    "source-input.json": "6aaadc18317dc10222a8c0be3367742b85012a20e44b8df9a317367772ede2aa",
+    "design.json": "4d0086be33da8b3a57250861909e21e562a71394f715ea7e48d71425c795922d",
+    "build-overview.cjs": "add1b6c666a5bd9143c74fb8065d9352cd00d91bc5a9bbd6f166ab9080b590b2",
+    "validate.cjs": "b70c471dea24abe3d4de17c7b6b548854d68af81149e389a0278e77b1c16efdb",
+    "finalize.cjs": "51c5ffe5dd019d97b6174f1f4ed5e2b880222cadbbc39f7f1bd3d6d630bd874d"
+  },
+  "checks": {
+    "node_syntax": "pass",
+    "static_local_resources": "pass",
+    "mock_dom_screen_state_toggle_focus": "pass",
+    "task_color_mapping": "pass: token values and shared task usage checked across four variants",
+    "icon_material_range": "pass: ten key icons differ across four variants; material rules and solid fallback checked statically",
+    "external_runtime_dependencies": "none detected",
+    "file_protocol_browser": "not tested in this run",
+    "browser_visual": "not tested; previous local browser attempt was blocked by security policy",
+    "independent_review": "not run",
+    "native_liquid_glass": "not tested"
+  }
+}

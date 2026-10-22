@@ -1,0 +1,138 @@
+{
+  "candidate": "FW-0.2",
+  "date": "2026-10-19T10:23:44.244Z",
+  "browser": "Codex in-app browser",
+  "protocol": "HTTP localhost",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "tests": [
+    {
+      "test": "trend-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "奶量趋势按天查看泵奶记录›",
+      "pass": true
+    },
+    {
+      "test": "body-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "身体与状态回看最近的状态记录›",
+      "pass": true
+    },
+    {
+      "test": "feeding-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "喂养与睡眠今天 4 次喂养 · 2 次小睡›",
+      "pass": true
+    },
+    {
+      "test": "growth-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "生长发育查看最近的身长与体重变化›",
+      "pass": true
+    },
+    {
+      "test": "device-info-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "设备信息型号、连接状态与最近同步›",
+      "pass": true
+    },
+    {
+      "test": "sync-desktop",
+      "scopeVisible": true,
+      "returnedFocus": "同步记录查看已保存的泵奶记录›",
+      "pass": true
+    },
+    {
+      "test": "full-desktop-navigation-return",
+      "draft": "侧栏往返后保留这条草稿",
+      "focused": "C01",
+      "open": false,
+      "pass": true
+    },
+    {
+      "test": "trend-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "body-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "feeding-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "growth-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "device-info-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "sync-mobile",
+      "scopeVisible": true,
+      "pass": true
+    },
+    {
+      "test": "task-card-survives-sidebar",
+      "pass": true
+    },
+    {
+      "test": "original-form-save-regression",
+      "pass": true
+    },
+    {
+      "test": "baby-age-source-consistency",
+      "home": "宝宝出生 12 天",
+      "baby": "宝宝出生 12 天",
+      "pass": true
+    },
+    {
+      "test": "direct-route-reload-return",
+      "pass": true
+    },
+    {
+      "test": "reload-selected-item",
+      "selected": "宝宝",
+      "pass": true
+    },
+    {
+      "test": "sidebar-escape",
+      "focused": "C01",
+      "open": false,
+      "pass": true
+    },
+    {
+      "test": "sidebar-backdrop",
+      "focused": "C01",
+      "open": false,
+      "pass": true
+    },
+    {
+      "test": "detail-escape",
+      "focused": "C01.1.1",
+      "open": false,
+      "pass": true
+    }
+  ],
+  "limits": [
+    "No full regression of unchanged onboarding and all task states",
+    "file protocol not tested; previous environment policy restriction",
+    "Fixed overview example statistics are not connected to locally added records"
+  ],
+  "updatedAt": "2026-10-19T10:26:52.642Z"
+}

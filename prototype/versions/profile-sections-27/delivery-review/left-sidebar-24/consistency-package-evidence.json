@@ -1,0 +1,31 @@
+{
+  "revision": "left-sidebar-24",
+  "reviewed_at": "2026-10-21T10:54:09.766Z",
+  "design_sha256": "f18d2ce53911375144ea2fd1afb5c2edb9c17d023e5f1bb71a1ebd70e000d046",
+  "source_sha256": "5a8526c78722f742835756ef63ec023e82604eec55fd0be301b67432bb51bd39",
+  "source_hash_matches": true,
+  "standalone_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+  "modular_sha256": "a307d62aab4fc7186490b294de6aa02e7ca6859401fbf14a6af604dc609bce85",
+  "author_browser_evidence_hash_matches": true,
+  "author_browser_errors": [],
+  "screenshot_count": 8,
+  "screenshot_hashes_match": true,
+  "modular_assets": [
+    "assets/style.css",
+    "assets/berry.css",
+    "assets/layout-16.css",
+    "assets/onboarding-berry.css",
+    "assets/chat-care-20.css",
+    "assets/profile-ranges-21.css",
+    "assets/care-shortcuts-23.css",
+    "assets/sidebar-24.css",
+    "assets/icons.js",
+    "assets/motion-model.js",
+    "assets/companion.js",
+    "assets/app.js"
+  ],
+  "missing_modular_assets": [],
+  "standalone_external_runtime_references": false,
+  "standalone_contains_sidebar_markup": true,
+  "standalone_contains_sidebar_logic": true
+}

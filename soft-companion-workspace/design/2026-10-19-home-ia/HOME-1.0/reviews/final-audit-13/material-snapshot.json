@@ -1,0 +1,67 @@
+{
+  "captured_at": "2026-10-20T03:35:39.813Z",
+  "files": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 45796,
+      "sha256": "4b32798d6c2be5865bcfee064f2f87de8434ceaf2f75b180281746e5756907b6"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "design.json",
+      "size": 13261,
+      "sha256": "93c5a5770899474b0a8bce6a6f93f5fa8343ea882468e4510af271ce1e732c77"
+    },
+    {
+      "path": "README.txt",
+      "size": 8103,
+      "sha256": "1c0225431cdc5dcfb56350a3a6ffb20c4c8a116874d3a2a0c2e1cc03563c9e7b"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 2987,
+      "sha256": "477d0b609caef822f2a31411628cb92d6a9a964693103684c9ee6f1709aaae3d"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    }
+  ],
+  "scope": "当前可交互本地原型最终轮审查，不修改应用代码",
+  "authority": "当前会话最新需求优先；README和局部reviews用于变化追溯；旧HOME-0.1仅为历史架构参考"
+}

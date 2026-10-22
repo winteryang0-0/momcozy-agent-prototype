@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Momcozy Agent · 语义风格板 CS-0.1</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail" aria-label="风格板目录">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">m</span><span>momcozy <small>AGENT · DESIGN LAB</small></span></div>
+      <div class="rail-block"><span class="eyebrow">CS / 0.1 · 2026.10.20</span><h1>照护，有迹可循。</h1><p>一套让内容更有焦点、功能更易识别、反馈更可信的风格探索。</p></div>
+      <nav class="rail-nav">
+        <a href="#directions">01 · 方向对照</a>
+        <a href="#preview">02 · 场景样张</a>
+        <a href="#grammar">03 · 组件语法</a>
+        <a href="#states">04 · 反馈矩阵</a>
+        <a href="#sources">05 · 证据与挑战</a>
+      </nav>
+      <div class="rail-foot"><b>候选 · 未冻结</b><span>模拟数据、模拟反馈；供评审具体样式与语义。</span></div>
+    </aside>
+
+    <main>
+      <header class="topline"><span>PRODUCT UI / STYLE EXPLORATION</span><span>手机缩比样张 · 本地 HTML</span></header>
+      <section class="intro" aria-labelledby="introTitle">
+        <div><span class="eyebrow">从页面语义出发</span><h2 id="introTitle">让每个模块<br><em>说清自己的事。</em></h2></div>
+        <div class="intro-copy"><p>同一个「圆角白卡 + 细线图标」不足以区分记录、理解、设备和提醒。本轮用内容层级、类别符号、状态文案和反馈动作建立可感知差异。</p><div class="three-rules"><span><b>01</b> 对象 / 时间先可见</span><span><b>02</b> 结论 / 来源分层</span><span><b>03</b> 结果 / 下一步成对</span></div></div>
+      </section>
+
+      <section id="directions" class="section" aria-labelledby="directionTitle">
+        <div class="section-head"><div><span class="eyebrow">01 / THREE ROUTES</span><h2 id="directionTitle">三种表达，使用同一组任务</h2></div><p>切换方向查看相同内容。色彩是模块识别的辅助，不承担唯一状态信息。</p></div>
+        <div class="direction-grid" role="group" aria-label="视觉方向">
+          <button type="button" class="direction-card" data-direction="canvas" aria-pressed="true"><span class="direction-num">A / CARE CANVAS</span><span class="swatches"><i></i><i></i><i></i><i></i></span><strong>温柔而清晰</strong><span class="direction-desc">借鉴 App 柔和色块与白色承载面，让每项照护动作有专属入口。焦点由层级和类目底色共同给出。</span><span class="direction-trait">最适合 · 首页与高频记录</span></button>
+          <button type="button" class="direction-card" data-direction="rhythm" aria-pressed="false"><span class="direction-num">B / DAILY RHYTHM</span><span class="swatches"><i></i><i></i><i></i><i></i></span><strong>时间成为线索</strong><span class="direction-desc">时间轴与进程带连接事件和下一步。重点是今日节奏，适合事件密集、跨时段回看。</span><span class="direction-trait">最适合 · 日程与记录流水</span></button>
+          <button type="button" class="direction-card" data-direction="clear" aria-pressed="false"><span class="direction-num">C / CLEAR FIELD</span><span class="swatches"><i></i><i></i><i></i><i></i></span><strong>内容走在前面</strong><span class="direction-desc">收窄装饰面积，用大字号、强分隔和简短行为文案推动一眼扫读。</span><span class="direction-trait">最适合 · 夜间与复杂反馈</span></button>
+        </div>
+      </section>
+
+      <section id="preview" class="section preview-section" aria-labelledby="previewTitle">
+        <div class="section-head"><div><span class="eyebrow">02 / LIVE STYLE STUDY</span><h2 id="previewTitle">放进任务场景里看</h2></div><p>下方是表现样张，不是完整功能原型。交互只演示视图和状态。</p></div>
+        <div class="studio">
+          <div class="studio-main">
+            <div class="controls"><div class="segmented" role="group" aria-label="选择页面"><button type="button" data-screen="home" aria-pressed="true">首页</button><button type="button" data-screen="records" aria-pressed="false">记录</button><button type="button" data-screen="assistant" aria-pressed="false">AI 助手</button></div><div class="state-select"><label for="stateSelect">演示状态</label><select id="stateSelect"><option value="normal">默认</option><option value="saving">保存中</option><option value="saved">已保存</option><option value="local">仅本地保存</option><option value="failed">保存失败</option><option value="unknown">结果待核验</option><option value="indeterminate">无法判断</option></select></div></div>
+            <div class="stage"><div class="stage-backdrop"><span class="stage-index">CS / <span id="stageDirection">A</span></span><span id="stageName">Care Canvas</span></div><div class="phone" id="phone" data-direction="canvas" aria-label="手机页面风格样张"><div class="phone-status"><span>9:41</span><span aria-hidden="true">●●● ▰</span></div><div id="phoneContent"></div></div></div>
+          </div>
+          <aside class="studio-note" aria-live="polite"><span class="eyebrow">当前设计意图</span><h3 id="intentTitle">首页 / 主任务突出</h3><p id="intentBody">先展示今天与谁有关、已经发生什么，再提供一手能完成的记录入口。</p><div class="intent-list" id="intentList"></div><div class="note-boundary">说明：界面数据与状态切换均为演示；不代表真实设备连接、AI 判断或服务器持久化。</div></aside>
+        </div>
+      </section>
+
+      <section id="grammar" class="section" aria-labelledby="grammarTitle"><div class="section-head"><div><span class="eyebrow">03 / COMPONENT GRAMMAR</span><h2 id="grammarTitle">图标、焦点与内容层级</h2></div><p>用同一几何语言画图标，靠轮廓和伴随文案区分功能。</p></div>
+        <div class="grammar-grid">
+          <article class="grammar-panel icon-panel"><div class="panel-head"><span>01 · 类目图标</span><small>圆角线条 + 识别性轮廓</small></div><div class="icon-grid" id="iconGrid"></div><p class="rule-note">图标板为本项目原创 SVG。含义必须由名称与上下文确认；不使用 AI 闪光符号代表诊断或保证。</p></article>
+          <article class="grammar-panel hierarchy-panel"><div class="panel-head"><span>02 · 焦点阶梯</span><small>一次只强调一个下一步</small></div><div class="focus-sample"><div class="focus-eyebrow">TODAY · BABY</div><strong>3 feeds recorded</strong><span>Latest at 2:40 PM · 4 fl oz</span><button type="button" class="sample-action">Add a feed <span aria-hidden="true">→</span></button></div><ol><li><b>对象与时间</b><span>固定在内容入口，避免混淆妈妈与宝宝、今日与历史。</span></li><li><b>一个事实焦点</b><span>数值、任务或结论占主视觉；元信息降低权重。</span></li><li><b>一个主动作</b><span>按钮具体描述结果；次操作退到文本层。</span></li></ol></article>
+          <article class="grammar-panel control-panel"><div class="panel-head"><span>03 · 控件状态</span><small>触控与键盘均可辨认</small></div><div class="control-examples"><button type="button" class="chip-example">默认 · Add a feed</button><button type="button" class="chip-example selected" aria-pressed="true">已选 · Baby</button><button type="button" class="chip-example focus-example">键盘焦点示意</button><span class="disabled-wrap"><button type="button" class="chip-example" disabled>不可用 · Save</button><small>先补全记录内容</small></span></div><p class="rule-note">触控选中靠形状、填充和文字；键盘焦点用外环。不可用控件须解释原因，不用整体透明处理正文。</p></article>
+        </div>
+      </section>
+
+      <section id="states" class="section" aria-labelledby="statesTitle"><div class="section-head"><div><span class="eyebrow">04 / FEEDBACK LANGUAGE</span><h2 id="statesTitle">状态必须回答三个问题</h2></div><p>发生了什么？内容在哪里？接下来能做什么？</p></div><div class="state-grid" id="stateGrid"></div><div class="semantic-rule"><b>成功不等于健康判断。</b><span>“Saved”只表示记录保存结果；“无法判断”是信息不足，不用故障红；“仅本地保存”不可写成已同步。</span></div></section>
+
+      <section id="sources" class="section source-section" aria-labelledby="sourceTitle"><div class="section-head"><div><span class="eyebrow">05 / TRACE & CHALLENGE</span><h2 id="sourceTitle">依据与反向检验</h2></div><p>区分已观察事实、设计推断和待验证假设。</p></div><div class="source-grid"><article><h3>可核实的参考</h3><ul><li><b>S01 · Momcozy App 官方页</b>：设备控制、Journey Tracking、Care Schedule 等任务分组；展示图中浅底、柔色模块卡、图像和底部标签导航。<a href="https://momcozy.com/pages/app" target="_blank" rel="noreferrer">查看来源 ↗</a></li><li><b>P01 · 项目页面</b>：HOME-1.0 的首页、记录、AI 对话截图及设计账本；属于现有候选，不是正式发布版。</li><li><b>D01 · 本轮设计判断</b>：三方向、原创语义图标和反馈矩阵是探索提案，尚未通过目标用户理解测试。</li></ul></article><article><h3>挑战视角 · 反向问题</h3><ol><li>柔和彩块是否造成「不同颜色等于不同重要性」的误读？对策：所有关键状态都有文字和轮廓。</li><li>时间轴是否让用户误以为未记录就未发生？对策：只标「已记录」，避免完成率或照护评分。</li><li>AI 模块是否因视觉权重而像诊断结果？对策：明确「可能」「来源」「无法判断」，不用医疗结论样式。</li><li>类别图标缩至 20px 后是否仍可辨？需用真实设备与目标用户验证；这份样张不能证明。</li></ol></article></div><div class="decision-banner"><div><span class="eyebrow">NEXT REVIEW</span><strong>先选方向，再修细节。</strong><p>请重点判断：你希望哪种方向代表首页？记录和 AI 是否应沿用同一视觉密度？</p></div><span>候选未冻结 · CS-0.1</span></div></section>
+      <footer>Momcozy Agent · Semantic style exploration · 2026-10-20 · Candidate only</footer>
+    </main>
+  </div>
+</body>
+</html>

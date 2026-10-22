@@ -1,0 +1,190 @@
+{
+  "revision": "smart-reminders-entry-sound-17",
+  "material_sha256": "40de3e14b70312ed2a72b048bd1fd1eb085699e2c5e1b97e38b26c05d39fa791",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "operator": "Playwright local Chrome headless",
+  "captured_at": "2026-10-20T14:01:27.728Z",
+  "checks": [
+    "smart reminder arrows, dots, touch swipe, keyboard and basis",
+    "sound toggle, aria state and refresh persistence",
+    "direct journal entry, grouped profile, My return, date and new record",
+    "history conversation remains reachable",
+    "Today compact, restore, switch, collapse and new-chat default",
+    "dark theme",
+    "360 px layout, tap restore and composer clearance",
+    "1280 px layout and overflow"
+  ],
+  "screenshots": [
+    {
+      "name": "01-home-reminder-390",
+      "note": "welcome, first smart reminder",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/01-home-reminder-390.png",
+      "sha256": "de1017a4fcf56ceed9a21201068d6482c83f3ab104336539be05837106125385",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:12.183Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-home-reminder-next-390",
+      "note": "second reminder via next arrow",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/02-home-reminder-next-390.png",
+      "sha256": "f79e4b9dc1245563a2ba5b3fbabd2b7ac272e390deda988efc7c89a9eecf3f8b",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:12.466Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-home-sound-on-390",
+      "note": "sound enabled state",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/03-home-sound-on-390.png",
+      "sha256": "b1aa665c71e700a4f27bc0f7a540d7a7161b84c493bdb17aa9749f9b88b794ac",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:13.264Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-records-390",
+      "note": "records entered directly, profile action at upper right",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/04-records-390.png",
+      "sha256": "f8bce4989b7a9a827bfb1a8074ed104fd1145b4be268fcf84e35b81804d3b303",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-20T14:01:17.799Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-profile-menu-390",
+      "note": "secondary functions grouped from records",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/05-profile-menu-390.png",
+      "sha256": "92eeededc7575746d4a74b7abb152f7ee28a7c2dee647a34b4ae827012857a72",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-20T14:01:18.098Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-chat-today-compact-390",
+      "note": "chat state with compact Today reminder",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/06-chat-today-compact-390.png",
+      "sha256": "e1864d1067cf55fa82523db28ae5e4a02e8106acb7bbf92848b01c524d8ab838",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:21.666Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-chat-today-expanded-390",
+      "note": "restored full Today widget",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/07-chat-today-expanded-390.png",
+      "sha256": "8a29b6857b73374ee87f279ce3eb20a7494e0fbc04c5485188c7854976144a82",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:21.959Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-chat-dark-390",
+      "note": "dark theme with interactive reminder",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/08-chat-dark-390.png",
+      "sha256": "293f5dbb62317dd6dd7d36fa98f04f9d7c5bd68f92441686f5bd8903edf9654e",
+      "pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:24.418Z",
+      "fullPage": false
+    },
+    {
+      "name": "09-home-360",
+      "note": "short viewport welcome",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/09-home-360.png",
+      "sha256": "d53729e35e88e0a27afc499a7ae353ec883b36760dc28ae95115a0c639ab2d22",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:24.883Z",
+      "fullPage": false
+    },
+    {
+      "name": "10-records-360",
+      "note": "short viewport records and new action",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/10-records-360.png",
+      "sha256": "958ff0ead8961d6263819eb053a568dd870d57aabb4ff6f29ddb6833b10bec07",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-20T14:01:25.175Z",
+      "fullPage": false
+    },
+    {
+      "name": "11-chat-expanded-360",
+      "note": "short viewport expanded Today does not cover composer",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/11-chat-expanded-360.png",
+      "sha256": "689ed3e2599c85a7a9a2ed7aceb8d0b42655b5198521caaffc4f2c3d01b5ec51",
+      "pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:26.756Z",
+      "fullPage": false
+    },
+    {
+      "name": "12-home-desktop",
+      "note": "desktop home preview",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/12-home-desktop.png",
+      "sha256": "e0095cbaead06445704d5065f241b0bc3ab2934bd410cc3962e32f35e47d27fb",
+      "pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "captured_at": "2026-10-20T14:01:27.350Z",
+      "fullPage": false
+    },
+    {
+      "name": "13-records-desktop",
+      "note": "desktop records preview",
+      "path": "delivery-review/smart-reminders-entry-sound-17/screenshots/13-records-desktop.png",
+      "sha256": "18c1b20ca9730237364036bd84caf8a4aa9c8ca6f7409bfab2ad81e19b71a822",
+      "pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "captured_at": "2026-10-20T14:01:27.721Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

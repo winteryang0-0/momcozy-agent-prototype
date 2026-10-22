@@ -1,0 +1,27 @@
+/* English copy needs more room than the source labels at the same type sizes. */
+.editorial .intro h1 { font-size: 36px; }
+.editorial .intro h1 em { font-size: 19px; line-height: 1.3; }
+.editorial .premise { line-height: 1.45; }
+.quick { height: 126px; }
+.quick b { overflow-wrap: anywhere; }
+.status-block b { text-decoration: none; }
+.state-picker { flex-wrap: wrap; justify-content: flex-end; }
+.feedback { min-height: 82px; }
+.feedback b, .feedback span { overflow-wrap: anywhere; }
+.status-study .feedback-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1370px) {
+  .editorial .intro h1 { font-size: 29px; }
+  .editorial .intro h1 em { font-size: 17px; }
+  .editorial .premise { font-size: 12px; }
+  .status-study .feedback-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .status-study .feedback-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .state-picker { justify-content: space-between; }
+}
+@media (max-width: 420px) {
+  .quick { height: 132px; }
+  .quick b { font-size: 10px; }
+  .quick small { font-size: 9px; }
+  .state-picker { white-space: normal; }
+}

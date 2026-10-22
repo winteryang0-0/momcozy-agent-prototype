@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-20",
+  "user_request": "保留花瓣玻璃与日光轨道两板，替换暮色光谱为另一个有生命力的情绪版；绿色可以探索但不预设为唯一方向。",
+  "reference_policy": "只借鉴公开可见的任务语义与一般视觉特征；不复制官方图片、图标或整屏设计。",
+  "sources": [
+    {"id":"U01","type":"user","locator":"本会话 2026-10-20 最新用户消息","scope":"前两板暂可、舍弃暮色光谱、替换第三板为生命力情绪方向"},
+    {"id":"P00","type":"project-candidate","locator":"../CS-0.2-testboards/index.html","scope":"前一候选，保留供比较；原第三板已被否决"},
+    {"id":"P01","type":"project-candidate","locator":"../CS-0.1-candidate/STYLE_SPEC.md","scope":"既有语义风格候选与其来源记录，未冻结"},
+    {"id":"P02","type":"project-candidate","locator":"../../2026-10-19-home-ia/HOME-1.0/design.json","scope":"首页、记录和 AI 助手的职责参考，未冻结"},
+    {"id":"S01","type":"official-public-page","locator":"https://momcozy.com/pages/app","scope":"Momcozy App 公开展示；非正式设计规范，未取得品牌 token"}
+  ]
+}

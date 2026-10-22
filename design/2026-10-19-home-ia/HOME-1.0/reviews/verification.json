@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-19T12:52:05.297Z",
+  "javascriptSyntax": "all four scripts passed node --check",
+  "sourceSprite": "byte-identical to supplied original",
+  "evidenceCount": 17,
+  "evidenceHashesMatch": true,
+  "viewportSamples": [
+    [
+      390,
+      844
+    ],
+    [
+      360,
+      800
+    ],
+    [
+      1280,
+      720
+    ]
+  ],
+  "runtimeEvidence": "interaction-log.json",
+  "staticGuard": "not passed; original HOME-0.1 is a candidate with no guard-compatible frozen receipt; see guard-result.json",
+  "deliveryStatus": "interactive visual prototype; not formal release certification",
+  "limits": [
+    "state-by-viewport matrix is sampled, not exhaustive",
+    "file:// and real mobile keyboard not verified",
+    "AI/capture/device/cloud responses simulated"
+  ],
+  "evidenceMaterialMatchesCurrent": true,
+  "materialHashMethod": "Node fs Buffer + crypto sha256"
+}

@@ -1,0 +1,30 @@
+{
+  "candidate_id": "AI-1.0",
+  "checked_at_local": "2026-10-20 17:24 UTC+08:00",
+  "status": "scoped-candidate-check-not-frozen",
+  "browser": "ChatGPT in-app browser; version unknown",
+  "protocol": "http://127.0.0.1:4193",
+  "actual_browser_checks": [
+    "AI route opened with explainable local advice cards and persistent composer",
+    "Floating Dock appeared above composer in the captured normal window",
+    "Dock navigation AI to Today to Records to AI updated routes and contents",
+    "Today accessibility tree contained advice and overview without quick-function buttons",
+    "Advice card opened an inline record task inside the active conversation",
+    "Reload restored the same conversation task",
+    "Mute switch updated its accessible label and pressed state",
+    "Profile entry navigated to Mine; added return button navigated back to AI"
+  ],
+  "static_checks": [
+    "node --check assets/app.js passed",
+    "Final standalone HTML matched index.html, three CSS files, four JS files, and embedded PNG byte-for-byte"
+  ],
+  "not_checked": [
+    "full record save and retry paths",
+    "date rollover while the tab stays open",
+    "short mobile viewport and software keyboard",
+    "dark and reduced-transparency visual states",
+    "file:// direct open",
+    "real audio or AI services"
+  ],
+  "freeze_approval": false
+}

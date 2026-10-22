@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "user_request": "几个风格板需要更细节一点，比如记录的颜色需要跟功能入口的颜色一致。",
+  "working_assumption": "四板使用相同的任务类别键；各板可以有不同色相，但同板内同一任务的入口、记录和图标样张应共用类别背景与图标色。保存反馈仍使用独立状态色。主题色仍是未确认的项目候选色值。",
+  "reference_policy": "只借鉴公开可见的任务语义与一般视觉特征；不复制官方图片、图标或整屏设计。",
+  "sources": [
+    {"id":"U01","type":"user","locator":"本会话 2026-10-20 前次用户消息","scope":"新增第四板；近似丰富的颜色，但以主题色做更克制的表达"},
+    {"id":"U02","type":"user","locator":"本会话 2026-10-20 最新用户消息","scope":"细化几个风格板；记录的颜色跟功能入口的颜色一致"},
+    {"id":"P00","type":"project-candidate","locator":"../CS-0.3-testboards/index.html","scope":"前三板候选及其测试内容，保留供比较"},
+    {"id":"P01","type":"project-candidate","locator":"../CS-0.1-candidate/STYLE_SPEC.md","scope":"既有语义风格候选与其来源记录，未冻结"},
+    {"id":"P02","type":"project-candidate","locator":"../../2026-10-19-home-ia/HOME-1.0/design.json","scope":"首页、记录和 AI 助手的职责参考，未冻结"},
+    {"id":"P03","type":"project-candidate","locator":"../CS-0.4-testboards/index.html","scope":"四板候选基底与共享内容，保留供本轮对比"},
+    {"id":"S01","type":"official-public-page","locator":"https://momcozy.com/pages/app","scope":"Momcozy App 公开展示；非正式设计规范，未取得品牌 token"}
+  ]
+}

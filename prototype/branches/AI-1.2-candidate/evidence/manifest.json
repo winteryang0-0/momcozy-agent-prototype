@@ -1,0 +1,441 @@
+{
+  "candidate_id": "AI-1.2",
+  "evidence_mode": "actual-browser-screenshots",
+  "browser": "ChatGPT in-app browser",
+  "protocol": "local HTTP",
+  "source_material_sha256": "d0ecfadc3a09dbf000bc76c4655335de55814612b676ac0cac66583425cfce00",
+  "source_files_sha256": {
+    "index.html": "db19a01c6d5879cd19d20b6011e873df272cc76e43d3698565cc21f25eaf2323",
+    "assets/style.css": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff",
+    "assets/berry.css": "4a6c029d081fd57ae605ec6969e4fcd7b8a24a53fc6481a06c43dad750dc25fb",
+    "assets/ai-first.css": "f96a2980598d61db4444b2149cab583cfdb497349065b6fb0c199fda44c3fd52",
+    "assets/icons.js": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32",
+    "assets/motion-model.js": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9",
+    "assets/companion.js": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d",
+    "assets/app.js": "3291c64d1cdcc5933e5e2da35a56a9f65d300da40ba3e7300d4b4d109e54ee39",
+    "assets/soft-expressions.png": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080",
+    "Momcozy-final.html": "0c6eb8c970a02d9bf19906ee2d9d3e4ff81013fb502172d626832b896311dd56",
+    "build-standalone.cjs": "868f83a3cfc922e1bd02035163acebe947343d9ef76700522529d4bb0a4eae63",
+    "preview.cjs": "b13903e5ed37e315b7daad4dd1e531a0f2dcf345b356d3fb363f1839c41705eb",
+    "verify-day-rollover.cjs": "653e7ab8c3a196ca7071305fcef8b4bf758738b178983d5fad1ed1ef49c97803"
+  },
+  "screenshots": [
+    {
+      "path": "evidence/onboarding-zero-320x568.jpg",
+      "route": "#/onboarding",
+      "url": "http://127.0.0.1:4198/#/onboarding",
+      "state": "zero data; step 1; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:35:39.912Z",
+      "sha256": "e79a8caee7e8e7877e7ce7e5429550cdbdd3ab96f4442d97525bc1a934161d90"
+    },
+    {
+      "path": "evidence/onboarding-details-320x568.jpg",
+      "route": "#/onboarding",
+      "url": "http://127.0.0.1:4198/#/onboarding",
+      "state": "draft resumed; step 2; optional values blank; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:36:04.902Z",
+      "sha256": "a47d4456706e0fba09122b745fb83976fe62ed424a9fd8ba22cf617bca20a5ed"
+    },
+    {
+      "path": "evidence/onboarding-concerns-320x568.jpg",
+      "route": "#/onboarding",
+      "url": "http://127.0.0.1:4198/#/onboarding",
+      "state": "step 3; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:36:26.683Z",
+      "sha256": "5487a237edeb3a770251f91efe0526aeb5ad2be548308e3a9a404ad55d30a79f"
+    },
+    {
+      "path": "evidence/onboarding-review-320x568.jpg",
+      "route": "#/onboarding",
+      "url": "http://127.0.0.1:4198/#/onboarding",
+      "state": "step 4; one selected concern; optional count blank; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:36:27.311Z",
+      "sha256": "22fc59314a0e1c283dacc91bdf3fa7a5c1c73185ed2a1d7e9e758e0ac0d01eec"
+    },
+    {
+      "path": "evidence/assistant-zero-light-320x568.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4199/#/assistant",
+      "state": "zero profile; first local-day visit; greeting and advice; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:46:11.661Z",
+      "sha256": "26aa0d8877cdf7e77c383768c81991b55dc7be81f9a4ed564524c974ffbb23a2"
+    },
+    {
+      "path": "evidence/assistant-filled-light-320x568.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "profile completed; ongoing conversation; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:42:00.108Z",
+      "sha256": "183dc04841c53b12310c1b04f5468687d06632f97d52a3294f6956d11e76302b"
+    },
+    {
+      "path": "evidence/assistant-filled-dark-320x568.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "profile completed; ongoing conversation; dark",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:42:26.036Z",
+      "sha256": "643238636e0154f2e64943dcb84bb9bfa2f62c98c306eb3c3d6e36eba93074c6"
+    },
+    {
+      "path": "evidence/assistant-filled-light-390x667.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "profile completed; ongoing conversation; light",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:35.144Z",
+      "sha256": "e2815b75f2a9f0e70a16ae400afa6b924575ef0caa2940b82e3f76bdbb98e57b"
+    },
+    {
+      "path": "evidence/assistant-filled-dark-390x667.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "profile completed; ongoing conversation; dark",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:40:46.129Z",
+      "sha256": "bce53a3cc9e61f8a0d41dbe762199e0744b5b81b73de587cdc8d962ce57e1512"
+    },
+    {
+      "path": "evidence/today-light-320x568.jpg",
+      "route": "#/home",
+      "url": "http://127.0.0.1:4198/#/home",
+      "state": "no Dock; back to AI; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:59.743Z",
+      "sha256": "136d133aa21da7d2f4eab11a285f32d0e8d95b200afcbc2be41c04d0afa43bdb"
+    },
+    {
+      "path": "evidence/today-dark-320x568.jpg",
+      "route": "#/home",
+      "url": "http://127.0.0.1:4198/#/home",
+      "state": "no Dock; back to AI; dark",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:42:26.326Z",
+      "sha256": "eb110af38b0f965a07d0981ef1f8828a73ec1ec316c70e9c29a88abc44935ba5"
+    },
+    {
+      "path": "evidence/today-light-390x667.jpg",
+      "route": "#/home",
+      "url": "http://127.0.0.1:4198/#/home",
+      "state": "no Dock; back to AI; light",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:35.534Z",
+      "sha256": "6d4db042a142398c584f73e42db8115b16d6375b186b319a82a730bbee23a5a6"
+    },
+    {
+      "path": "evidence/today-dark-390x667.jpg",
+      "route": "#/home",
+      "url": "http://127.0.0.1:4198/#/home",
+      "state": "no Dock; back to AI; dark",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:05.487Z",
+      "sha256": "bd8693dfbbe3f9b7543c1b276904363e847df7eb021e7bca5c1fc031712efa01"
+    },
+    {
+      "path": "evidence/records-light-320x568.jpg",
+      "route": "#/records",
+      "url": "http://127.0.0.1:4198/#/records",
+      "state": "empty list; no Dock; top add; light",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:42:00.449Z",
+      "sha256": "add0e64f152510e53d8d913c72ea53d057a5651e968fb3fa4ae02eadbddf45f5"
+    },
+    {
+      "path": "evidence/records-dark-320x568.jpg",
+      "route": "#/records",
+      "url": "http://127.0.0.1:4198/#/records",
+      "state": "empty list; no Dock; top add; dark",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 320,
+        "height": 568
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:42:25.661Z",
+      "sha256": "b2ee317390586a0a25a102eee859f5f6b3fb604a42fa281bcf51afe73a4cb790"
+    },
+    {
+      "path": "evidence/records-light-390x667.jpg",
+      "route": "#/records",
+      "url": "http://127.0.0.1:4198/#/records",
+      "state": "empty list; no Dock; top add and scrollable bottom add; light",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:34.775Z",
+      "sha256": "a826447c78ef0cea474d5e3419ccbaab2899837e13a9b62215f527b17e98f6d1"
+    },
+    {
+      "path": "evidence/records-dark-390x667.jpg",
+      "route": "#/records",
+      "url": "http://127.0.0.1:4198/#/records",
+      "state": "empty list; no Dock; top add and scrollable bottom add; dark",
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "actual_pixels": {
+        "width": 390,
+        "height": 667
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": null,
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:41:06.007Z",
+      "sha256": "216ff6398e0d581c1cf508f61c50562aad43c62186fcfff080cccb8cf9187aee"
+    },
+    {
+      "path": "evidence/motion-frame-a.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "first-visit animated companion frame A; clip",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 69,
+        "height": 50
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": {
+        "x": 28,
+        "y": 150,
+        "width": 69,
+        "height": 50
+      },
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:37:05.948Z",
+      "sha256": "8ce5b755e5286466c085e9971e47a3be857610879eb8aad67f6b5b1a72c6c732"
+    },
+    {
+      "path": "evidence/motion-frame-b.jpg",
+      "route": "#/assistant",
+      "url": "http://127.0.0.1:4198/#/assistant",
+      "state": "first-visit animated companion frame B; clip",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "actual_pixels": {
+        "width": 69,
+        "height": 50
+      },
+      "format": "image/jpeg",
+      "full_page": false,
+      "clip": {
+        "x": 28,
+        "y": 150,
+        "width": 69,
+        "height": 50
+      },
+      "operator": "primary agent using ChatGPT in-app browser via cua_repl",
+      "browser_version": "unknown",
+      "captured_and_saved_at_utc": "2026-10-20T12:37:27.808Z",
+      "sha256": "96b5af12e83cd5196f49bd7257fa03ac7d27a9d156fd77d77024e5bf89ce2ee1"
+    }
+  ],
+  "motion_comparison": {
+    "frames": [
+      "evidence/motion-frame-a.jpg",
+      "evidence/motion-frame-b.jpg"
+    ],
+    "observed_result": "different pixel captures"
+  },
+  "note": "Desktop browser with mobile viewport overrides; physical phones, software keyboard and file:// opening were not tested."
+}

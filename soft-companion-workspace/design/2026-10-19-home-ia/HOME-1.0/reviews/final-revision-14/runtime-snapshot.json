@@ -1,0 +1,40 @@
+{
+  "runtimeHash": "3ab42146c162aa69303af3e9a9d5e26097dd9d106d2bf9703ffd06d6ceb3be51",
+  "files": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 84809,
+      "sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

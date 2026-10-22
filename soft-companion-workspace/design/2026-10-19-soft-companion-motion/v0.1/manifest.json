@@ -1,0 +1,489 @@
+{
+  "version": "0.1",
+  "stage": "candidate-interactive-demo",
+  "files": [
+    {
+      "path": "app/.npmrc",
+      "bytes": 23,
+      "sha256": "f7dbda001b627b3a792fb6929303b517f047f03916f2c55227e81216d38a2008"
+    },
+    {
+      "path": "app/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "app/AGENTS.md",
+      "bytes": 1044,
+      "sha256": "4e20d00d0612fe53f04c26b11175879780ae6ba4a4d2245af9599f50e448e505"
+    },
+    {
+      "path": "app/assets/reference.png",
+      "bytes": 1516074,
+      "sha256": "ceb0185b13376654ef9a43f0aa49bb0929f96518305fc75ab3d4e2c3efb8cc98"
+    },
+    {
+      "path": "app/assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "app/design-qa.md",
+      "bytes": 5189,
+      "sha256": "3e5010c1f366ca05e70d00ebf33907b462059f80b3d8a584fdb4227432c3da4d"
+    },
+    {
+      "path": "app/index.html",
+      "bytes": 318,
+      "sha256": "c9a68e2a843af03eddfbdb743386982abf27ad60aad1b22365d97b33db3aa296"
+    },
+    {
+      "path": "app/package-lock.json",
+      "bytes": 57071,
+      "sha256": "5be2b05527f458e378c6897694583af60d611d23a5c7d8822c888cc3fbd4140c"
+    },
+    {
+      "path": "app/package.json",
+      "bytes": 435,
+      "sha256": "c97c666b9843509e5a5a257aa3c346ccac720600d2525c404bfbb3751db4bb18"
+    },
+    {
+      "path": "app/pnpm-lock.yaml",
+      "bytes": 35886,
+      "sha256": "9f9ef58f46b7c2432771e44346f59ab172a7711db98877e386feabacc9af1c3b"
+    },
+    {
+      "path": "app/scripts/export-standalone.mjs",
+      "bytes": 1327,
+      "sha256": "f4c59a0d93b445e3b378ef10d25411480cdae954c474baa5319eadb0ece2cd04"
+    },
+    {
+      "path": "app/scripts/prepare-sites-build.mjs",
+      "bytes": 910,
+      "sha256": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6"
+    },
+    {
+      "path": "app/src/App.jsx",
+      "bytes": 10284,
+      "sha256": "66d7c07d9d2a332b425a2683e8a9fb920f4d8f3b15705300248c1e6ced226292"
+    },
+    {
+      "path": "app/src/Avatar.jsx",
+      "bytes": 2252,
+      "sha256": "9fb584d9c988a4410cbed8cb1f8753c433102a1de0484bd8cc6414a696ca1dc0"
+    },
+    {
+      "path": "app/src/main.jsx",
+      "bytes": 265,
+      "sha256": "372bf7e685894cafd21c5253fc3a24a5ba43aa0a7742272ff81fb5899ef04cc4"
+    },
+    {
+      "path": "app/src/motion-model.mjs",
+      "bytes": 9222,
+      "sha256": "1f30c5a7b9b698ca53808e82c5cdccccf368b18eb8a02142c48b797214d6c819"
+    },
+    {
+      "path": "app/src/motion.css",
+      "bytes": 8627,
+      "sha256": "5042051954337cdd8954b7e2edddd5635d6061509d3b45f6ef464548cdf8ceae"
+    },
+    {
+      "path": "app/src/styles.css",
+      "bytes": 292,
+      "sha256": "a40fc885072f72841eb425fd476e9b90d459d515f6ff9f3dde2d7c375baf9dfc"
+    },
+    {
+      "path": "app/tests/motion.test.mjs",
+      "bytes": 5159,
+      "sha256": "57b700e9e26d658069cf67e1e17cb8cddb599ce2d02ca065574d38c898e5f90a"
+    },
+    {
+      "path": "app/tests/sites-worker.test.mjs",
+      "bytes": 2219,
+      "sha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26"
+    },
+    {
+      "path": "app/vite.config.mjs",
+      "bytes": 382,
+      "sha256": "5f20ad6ef5aa89956c8791d8caefa224bc80718ca38df213b5e0c9c883d4bfee"
+    },
+    {
+      "path": "app/worker/index.js",
+      "bytes": 483,
+      "sha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "bundle/index.html",
+      "bytes": 4263523,
+      "sha256": "3a0a498836df04a98785d0e5ddc1fed57b33b5c5ca24da56702b1a2a7a364eb7"
+    },
+    {
+      "path": "generation-prompts.json",
+      "bytes": 4851,
+      "sha256": "99868155bbdde29d32f7c38e12bd78fd5fe81ab4c7b5b2a886631a7d8b13a57c"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 2403,
+      "sha256": "fbf65e6d31a9a55367c3c0c98ad38556e1520cdbcd72c39a58db4b969952b9ca"
+    },
+    {
+      "path": "reviews/auto-loop-preview.jpg",
+      "bytes": 54583,
+      "sha256": "331ea64f38391212b4d2983909eea8c6027da824cacc92c0e60d598e695eeb47"
+    },
+    {
+      "path": "reviews/auto-loop-preview.md",
+      "bytes": 610,
+      "sha256": "19c49058859ff42ba33f42c214ea973ec3d009a3298bb88c4adbe2e4c96773cf"
+    },
+    {
+      "path": "reviews/desktop-preview.png",
+      "bytes": 73202,
+      "sha256": "3c7d40c17a0de7d7d7a95d70424ef8406d352e40cea80b92b6d0ba453bf5f72f"
+    },
+    {
+      "path": "reviews/flow-checks.json",
+      "bytes": 492,
+      "sha256": "d5e32cd4c9a7fd9b5032ef260ae7f0653c8331e4eac20f8fc5f4fc2965861df7"
+    },
+    {
+      "path": "reviews/independent-logic-review.md",
+      "bytes": 3127,
+      "sha256": "1d9cc76d7661b869426a3835b48a22addbbe38b93871a2dcfdf6f06fd8e25885"
+    },
+    {
+      "path": "reviews/independent-visual-review.md",
+      "bytes": 6891,
+      "sha256": "38dfe31c8da3627d49c8344be6e2f881d2d9bf68182672c057849755794b8e59"
+    },
+    {
+      "path": "reviews/mobile-ready.png",
+      "bytes": 95620,
+      "sha256": "2723b506766d441d829c88598b96e2e238ae4eda26fdc61ed02e8828ff840577"
+    },
+    {
+      "path": "reviews/runtime.json",
+      "bytes": 6837,
+      "sha256": "f446ea964e9d70b53f52dedbfb2b52149b88b53362899741d892db27ab45bb60"
+    },
+    {
+      "path": "reviews/source-and-implementation.png",
+      "bytes": 139325,
+      "sha256": "5aa48196b92a0ca09b7d909fcf402329d12dd4438249a74fd1ac163b5955681e"
+    },
+    {
+      "path": "reviews/speaking-fixed.jpg",
+      "bytes": 55381,
+      "sha256": "7d42be680ecc43f8790052a7c3e4275feae6ddf1e348de31eb960a51b1e4d3c2"
+    },
+    {
+      "path": "reviews/speaking-restarted-fixed.jpg",
+      "bytes": 54975,
+      "sha256": "dca2cf5dc0dfeacdfafae6c26cbe570dc765390fa43e258caa8a319236364086"
+    },
+    {
+      "path": "reviews/speaking-visibility-fix.md",
+      "bytes": 1442,
+      "sha256": "5d7304fd3aed8eafe69908e37ac327796eb226a27b62ac261ab96991ee587bf2"
+    },
+    {
+      "path": "reviews/state-captures.json",
+      "bytes": 4385,
+      "sha256": "56053fc78395cf8a299e80010efefff79b119d5b552ba4a649c1613b7c218b5c"
+    },
+    {
+      "path": "state-spec.json",
+      "bytes": 9699,
+      "sha256": "d75aa492b7bcb4b086537ef756a5d4534b5799f0aa4c910507abd404fe3fd539"
+    }
+  ],
+  "screenshot_metadata": [
+    {
+      "path": "reviews/avatar-24px.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "af71e591fbcb85c18939335e93c290d8a4e0256bebb0bb224bbee8ae9eb05d8f"
+    },
+    {
+      "path": "reviews/avatar-48px.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "8fb26328924b1d15349ebc81a8fb4346c889fd7542c779f1a0e665b193ece7fb"
+    },
+    {
+      "path": "reviews/avatar-96px.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "d0c8c50d718ded968f021d7b750d315ad4f78e8f70aa5b97d93a07e8cc077db6"
+    },
+    {
+      "path": "reviews/desktop-preview.png",
+      "width": 1265,
+      "height": 988,
+      "actual_format": "JPEG",
+      "sha256": "3c7d40c17a0de7d7d7a95d70424ef8406d352e40cea80b92b6d0ba453bf5f72f"
+    },
+    {
+      "path": "reviews/desktop-reduced.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "af51e88afa1ebb0e6155e556d1f92998135db8b925a08959e634933383ba11d5"
+    },
+    {
+      "path": "reviews/desktop-state-01.png",
+      "width": 1264,
+      "height": 1500,
+      "actual_format": "JPEG",
+      "sha256": "2a978fea8e22962763f2b7c7ed6425a8114dbc8ff0ca4db272bbf89e91f29f6d"
+    },
+    {
+      "path": "reviews/desktop-state-02.png",
+      "width": 1264,
+      "height": 1500,
+      "actual_format": "JPEG",
+      "sha256": "0195a4a8dcd89b178829f5ca89be1edd574cb175a8a5a6ce4c1f7967d0f690f7"
+    },
+    {
+      "path": "reviews/desktop-state-03.png",
+      "width": 1264,
+      "height": 1500,
+      "actual_format": "JPEG",
+      "sha256": "c906088074e4aaef42e78f55e6bcebe2ee83f5c47b1bfff080bfb26d3fdb5da1"
+    },
+    {
+      "path": "reviews/desktop-state-04.png",
+      "width": 1264,
+      "height": 1516,
+      "actual_format": "JPEG",
+      "sha256": "09a906fae9afca38ae4c8185a9bea7fb089cbca2ddb04309ed908280a1d4cd12"
+    },
+    {
+      "path": "reviews/desktop-state-05.png",
+      "width": 1264,
+      "height": 1548,
+      "actual_format": "JPEG",
+      "sha256": "bc07d2e0ac027accafde0f2e04ff1d62a6ea9301c887510b1bda6c6e01d09b9f"
+    },
+    {
+      "path": "reviews/desktop-state-06.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "60f1bc706ac77dc6f8667cf98f9ba1ff0b5fec1f776487f0b8b9880ea21bb457"
+    },
+    {
+      "path": "reviews/desktop-state-07.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "361fd928bc58ab46b47e988bf0588ace3057d1907a09c9286436f4e12fc41f43"
+    },
+    {
+      "path": "reviews/desktop-state-08.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "c1fa61f11de828cb57f5ee806868d2fbeb025ae824cfac0466062d85448616e7"
+    },
+    {
+      "path": "reviews/desktop-state-09.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "c7d659fcefc585d8cb4e87f10e3afc3c9ee72d098563921ced81d920972fa91a"
+    },
+    {
+      "path": "reviews/desktop-state-10.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "ed032bf09819a3f8a8d68c39f0997ce5cd896bf1c0fbb16b481efcd9da65cfaa"
+    },
+    {
+      "path": "reviews/desktop-state-11.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "b0bede5df2d48ed645e96425d5c1acfe0e93eaca0a21cd4af90761383270bd21"
+    },
+    {
+      "path": "reviews/desktop-state-12.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "d26c585e7d17cc6b42ced1c67a6fb8172de19dfcbe8d97a190784c364d361b61"
+    },
+    {
+      "path": "reviews/desktop-state-13.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "9936f315421106e56450efada5659c7b660cafeab80bcd836505cf8b28d3d2a0"
+    },
+    {
+      "path": "reviews/desktop-state-14.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "949ab10c2a8e090b4c510cbff7d08e9f7da32455c279825f417234c6b2ae186b"
+    },
+    {
+      "path": "reviews/desktop-state-15.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "7d45ebf4998ca531b948d260c4e7cc52a2205bcef76c0f3a4ac2efa811c3d883"
+    },
+    {
+      "path": "reviews/mobile-ready.png",
+      "width": 374,
+      "height": 2545,
+      "actual_format": "JPEG",
+      "sha256": "2723b506766d441d829c88598b96e2e238ae4eda26fdc61ed02e8828ff840577"
+    },
+    {
+      "path": "reviews/mobile-state-01.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "e3af1aec2ccda689fe065464d50c552ad1e6cc645bee847ca4b8d9bfe2f3dc18"
+    },
+    {
+      "path": "reviews/mobile-state-02.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "e50e6283b2911b023ac1c4527dcdc5e5d1e37aafe666761c65a2a198996975b4"
+    },
+    {
+      "path": "reviews/mobile-state-03.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "b91fd8f807e39387b160ed380c55313a16867d012a8e5d1111585b0942415b75"
+    },
+    {
+      "path": "reviews/mobile-state-04.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "e966e1526f82bfe8d6ea5247312ed6df30c48ba1307ba9993acd271ebb1722fa"
+    },
+    {
+      "path": "reviews/mobile-state-05.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "955244c3ac415a358b6bde5e72f58b0b450bc978c44a511bf60104bd6ec88ade"
+    },
+    {
+      "path": "reviews/mobile-state-06.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "8e7729ede53e79d3af3559c513806b3f732bb6a1d941bc1fcc9a2f4a6b5101b5"
+    },
+    {
+      "path": "reviews/mobile-state-07.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "203f5efa93fbf089922f9bc269263d0aeced527eff20c25a5ab14c12d7bc8082"
+    },
+    {
+      "path": "reviews/mobile-state-08.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "02b1a391ae00a84cb0bcd89b897357c92dfea5d94d6f9dc1306c9d04f8e91aee"
+    },
+    {
+      "path": "reviews/mobile-state-09.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "1e58af09d318759d24eee96d91624d5e4a96c913dd16836d90ecf44314bb170a"
+    },
+    {
+      "path": "reviews/mobile-state-10.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "12b9e89070ea003e02d795c3ed961edef16c395b9652f23bcb65062fc6dc8375"
+    },
+    {
+      "path": "reviews/mobile-state-11.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "f056b175a89240c9c48df7e72262e72501e43166491d8d1ca79f43de6f52be4f"
+    },
+    {
+      "path": "reviews/mobile-state-12.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "f0e94ea6af71a769d75f6e25b42df6d8a525e5eddd44d84720604523915e861e"
+    },
+    {
+      "path": "reviews/mobile-state-13.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "68d2251183526e818eb563c89dddc6d0790476df4cbcad240651699c5fa4882b"
+    },
+    {
+      "path": "reviews/mobile-state-14.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "599e1eae7e564a0a68864ffd1b29d61370b0641c307371d2470d5af5272dc78f"
+    },
+    {
+      "path": "reviews/mobile-state-15.png",
+      "width": 374,
+      "height": 2530,
+      "actual_format": "JPEG",
+      "sha256": "ee6b6418d65f13d44ce38e167da4051f8f408c7650d7d809b7d0e08a7d377fcf"
+    },
+    {
+      "path": "reviews/mobile-timeline-scrolled.png",
+      "width": 374,
+      "height": 2545,
+      "actual_format": "JPEG",
+      "sha256": "f0d8c477e05df3079cf678163c291c999e27d7dfdfd50b7353f8d52d7aebaa0f"
+    },
+    {
+      "path": "reviews/source-and-implementation.png",
+      "width": 1264,
+      "height": 2061,
+      "actual_format": "JPEG",
+      "sha256": "5aa48196b92a0ca09b7d909fcf402329d12dd4438249a74fd1ac163b5955681e"
+    },
+    {
+      "path": "reviews/speaking-active.png",
+      "width": 1264,
+      "height": 1561,
+      "actual_format": "JPEG",
+      "sha256": "825b6317257c0994c4caebe465d8b929fd6a64d9068c19b50a86295dfff46976"
+    }
+  ],
+  "validation": {
+    "node_tests": 13,
+    "browser_state_captures": 30,
+    "complete_browser_flows": 7,
+    "independent_logic": "5 findings closed",
+    "independent_visual": "sampled screenshot review; no P1/P2",
+    "file_protocol": "not tested; standalone file tested over local HTTP"
+  }
+}

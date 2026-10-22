@@ -1,0 +1,634 @@
+{
+  "date": "2026-10-20T02:38:36.189Z",
+  "scope": "将共享底部弹窗和遮罩限制在交互页面边界内，沿用全部任务及多级流程",
+  "changeType": "existing component presentation fix",
+  "coverage": {
+    "entry": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "form": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 110
+    },
+    "formScrolled": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 109.33333587646484,
+      "bodyMax": 110
+    },
+    "more": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "photo": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "history": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 18
+    },
+    "rename": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "deleteConfirm": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "mobileConfirm": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 0
+    },
+    "mobileForm": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 0,
+      "bodyMax": 148
+    },
+    "mobileFormScrolled": {
+      "contained": true,
+      "bottomAligned": true,
+      "bodyScroll": 148,
+      "bodyMax": 148
+    }
+  },
+  "geometry": {
+    "entry": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693,
+        "height": 411,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 282,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 282
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693.0000305175781,
+        "height": 521.6666870117188,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 171.33334350585938,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 171.33334350585938
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "form": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000152587891,
+        "height": 491.3333435058594,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 201.6666717529297,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 201.6666717529297
+      },
+      "bodyMax": 110,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693,
+        "height": 602,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 91,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 91
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "formScrolled": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000152587891,
+        "height": 491.3333435058594,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 201.6666717529297,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 201.6666717529297
+      },
+      "bodyMax": 110,
+      "bodyScroll": 109.33333587646484,
+      "panel": {
+        "bottom": 693,
+        "height": 602,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 91,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 91
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "more": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693,
+        "height": 255,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 438,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 438
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693.0000305175781,
+        "height": 365.6666870117187,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 327.3333435058594,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 327.3333435058594
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "photo": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000305175781,
+        "height": 296.57293701171875,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 396.4270935058594,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 396.4270935058594
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693.0000305175781,
+        "height": 407.2395935058594,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 285.76043701171875,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 285.76043701171875
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "history": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000152587891,
+        "height": 491.3333435058594,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 201.6666717529297,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 201.6666717529297
+      },
+      "bodyMax": 18,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693,
+        "height": 602,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 91,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 91
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "rename": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000305175781,
+        "height": 258.8958435058594,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 434.1041870117187,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 434.1041870117187
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693,
+        "height": 369.5625,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 323.4375,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 323.4375
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "deleteConfirm": {
+      "app": {
+        "bottom": 694,
+        "height": 628,
+        "left": 709.2083740234375,
+        "right": 1139.2083740234375,
+        "top": 66,
+        "width": 430,
+        "x": 709.2083740234375,
+        "y": 66
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 693.0000305175781,
+        "height": 190.98959350585935,
+        "left": 710.875,
+        "right": 1137.5416870117188,
+        "top": 502.0104370117187,
+        "width": 426.6666870117187,
+        "x": 710.875,
+        "y": 502.0104370117187
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 693,
+        "height": 301.65625,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 391.34375,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 391.34375
+      },
+      "sheet": {
+        "bottom": 693,
+        "height": 626,
+        "left": 710.2083740234375,
+        "right": 1138.2083740234375,
+        "top": 67,
+        "width": 428,
+        "x": 710.2083740234375,
+        "y": 67
+      }
+    },
+    "mobileConfirm": {
+      "app": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 640.0000305175781,
+        "height": 190.98959350585935,
+        "left": 0.6666666865348816,
+        "right": 359.33335369825363,
+        "top": 449.0104370117187,
+        "width": 358.66668701171875,
+        "x": 0.6666666865348816,
+        "y": 449.0104370117187
+      },
+      "bodyMax": 0,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 640,
+        "height": 301.65625,
+        "left": 0,
+        "right": 360,
+        "top": 338.34375,
+        "width": 360,
+        "x": 0,
+        "y": 338.34375
+      },
+      "sheet": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      }
+    },
+    "mobileForm": {
+      "app": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 640.0000152587891,
+        "height": 473.3333435058594,
+        "left": 0.6666666865348816,
+        "right": 359.33335369825363,
+        "top": 166.6666717529297,
+        "width": 358.66668701171875,
+        "x": 0.6666666865348816,
+        "y": 166.6666717529297
+      },
+      "bodyMax": 148,
+      "bodyScroll": 0,
+      "panel": {
+        "bottom": 640,
+        "height": 584,
+        "left": 0,
+        "right": 360,
+        "top": 56,
+        "width": 360,
+        "x": 0,
+        "y": 56
+      },
+      "sheet": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      }
+    },
+    "mobileFormScrolled": {
+      "app": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      },
+      "backdrop": "rgba(0, 0, 0, 0)",
+      "body": {
+        "bottom": 640.0000152587891,
+        "height": 473.3333435058594,
+        "left": 0.6666666865348816,
+        "right": 359.33335369825363,
+        "top": 166.6666717529297,
+        "width": 358.66668701171875,
+        "x": 0.6666666865348816,
+        "y": 166.6666717529297
+      },
+      "bodyMax": 148,
+      "bodyScroll": 148,
+      "panel": {
+        "bottom": 640,
+        "height": 584,
+        "left": 0,
+        "right": 360,
+        "top": 56,
+        "width": 360,
+        "x": 0,
+        "y": 56
+      },
+      "sheet": {
+        "bottom": 640,
+        "height": 608,
+        "left": 0,
+        "right": 360,
+        "top": 32,
+        "width": 360,
+        "x": 0,
+        "y": 32
+      }
+    }
+  },
+  "tests": {
+    "desktop": "1280x720",
+    "mobile": "360x640",
+    "longFormBodyScroll": true,
+    "headerFixedDuringScroll": true,
+    "returnResetsScroll": true,
+    "closeRestoresTriggerFocus": true,
+    "escapeClosesAndRestoresFocus": true,
+    "resizeWhileOpen": true,
+    "historyDeleteOnlyCancelled": true,
+    "consoleErrors": [],
+    "syntax": true
+  },
+  "review": {
+    "mode": "self-review",
+    "scope": "页面边界、各级共享弹窗、滚动、焦点、原交互不变"
+  },
+  "limits": [
+    "真实手机软键盘和触摸未验收",
+    "本次仅验证受影响路径，非全量发布认证"
+  ],
+  "screenshots": [
+    "desktop-entry.jpg",
+    "desktop-form.jpg",
+    "mobile-confirm.jpg",
+    "mobile-form.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 10169,
+      "sha256": "ccb3688c18e01670429df38e8a97bc39ea3d0954154fdede88db6fb883d3d980"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 30130,
+      "sha256": "b5fafb430d6a722b9f505c766dcc352895b08923e1beabb86f9b324f2b50158d"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 56213,
+      "sha256": "7863c4b8d1c54ecd39c29a1e349d5ac2fabcde009c22010f0f33fdb500fb3cd4"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

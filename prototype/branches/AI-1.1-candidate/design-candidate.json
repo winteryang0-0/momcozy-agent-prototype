@@ -1,0 +1,50 @@
+{
+  "candidate_id": "AI-1.1",
+  "date": "2026-10-20",
+  "status": "awaiting-user-review-not-frozen",
+  "source": {
+    "user_request": "AI 对话为主页面；当天个性化行动建议；Dock 在输入框上方；Today 只展示建议与概况；顶部个人入口与快速静音",
+    "user_clarifications": [
+      "跨日持续使用同一条对话",
+      "AI 页 Dock 不设 Momcozy AI 自身入口；Today／记录采用较低的图标文字横排入口；次级页保留 AI 返回入口",
+      "默认对话输入框只保持单行高度，不展开高矩形",
+      "视觉方向切换为 CS-0.5 莓色留白"
+    ],
+    "visual_source": "design/2026-10-20-semantic-style/CS-0.5-testboards/STYLE_SPEC.md",
+    "previous_candidate": "prototype/branches/AI-1.0-candidate",
+    "advice_source_assumption": "本机资料、日历日期和照护记录驱动的示例规则；不声称真实 AI 或医学建议"
+  },
+  "framework": {
+    "primary_route": "#/assistant",
+    "secondary_routes": ["#/home", "#/records"],
+    "profile_route": "#/mine",
+    "onboarding_route": "#/onboarding",
+    "assistant_dock_order": ["Today", "记录"],
+    "secondary_dock_rule": "Today 与记录各显示返回 Momcozy AI 和另一个次级页的入口",
+    "dock_relationship": "AI 页 56 px Dock 位于输入框上方；次级页 Dock 位于页面底部；我的与引导页不展示 Dock",
+    "composer_rule": "默认 60 px 单行外框；文字区默认 48 px，按内容增长至 112 px；Dock 根据输入区实测高度上移",
+    "conversation_model": "仅一条持续对话；不显示新建或历史对话入口",
+    "today_model": "只读行动建议与当日记录概况；无快捷功能入口",
+    "advice_model": "两张说明来源的本地模拟建议卡；记录保存后更新",
+    "mute_model": "本地保存的快速静音偏好；控制动画演示，不代表真实音频输出"
+  },
+  "visual_system": {
+    "board": "CS-0.5 Berry Poise candidate, not frozen",
+    "style_files": ["assets/style.css", "assets/berry.css", "assets/ai-first.css"],
+    "meaning": "深莓色聚焦主卡，柔和类别色辅助识别；颜色不单独传达记录或同步状态",
+    "responsive_samples": ["320x568", "390x667"],
+    "states": ["light", "dark", "reduced-transparency", "multiline-composer"],
+    "short_journal_rule": "不高于 600 px 且不宽于 375 px 时，记录页保留顶部加号并隐藏重复的底部记一笔按钮"
+  },
+  "pending_decisions": [
+    {"id": "D01", "question": "审阅实际候选后，是否确认本版导航与内容层级？", "status": "open", "blocks_freeze": true},
+    {"id": "D02", "question": "正式行动建议的数据与规则来源采用何种方案？", "status": "open", "blocks_freeze": true},
+    {"id": "D03", "question": "迁入旧版多条对话时，除当前对话外的数据如何处理？", "status": "open", "blocks_freeze": true},
+    {"id": "D04", "question": "正式 Momcozy 品牌 token 与目标设备视口是什么？", "status": "open", "blocks_freeze": true}
+  ],
+  "limitations": [
+    "仅通过本地 HTTP 在 ChatGPT 应用内浏览器做桌面移动视口模拟",
+    "file:// 直开被该浏览器安全策略拒绝，未验证实体手机软键盘",
+    "没有真实 AI、音频、设备、医疗建议或云同步"
+  ]
+}

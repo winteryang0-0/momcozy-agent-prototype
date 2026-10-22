@@ -1,0 +1,127 @@
+/* HOME-1.1 candidate: conversation is the home surface; Berry Poise tokens stay in berry.css. */
+
+.app{--home-inset:max(12px,env(safe-area-inset-bottom))}
+#scroll[data-page=assistant]{overflow:hidden}
+#assistant{height:100%;min-height:0;display:flex;flex-direction:column;padding:8px var(--gutter) var(--home-inset)}
+#assistant>.home-topbar,#assistant[data-chat=active]>.home-topbar{position:static;display:grid;grid-template-columns:48px 1fr 48px;align-items:center;gap:8px;flex:none;width:100%;height:56px;margin:0 0 12px;z-index:auto}
+.home-topbar .assistant-title{margin:0;text-align:center;color:var(--action);font-size:19px;line-height:26px;font-weight:700;letter-spacing:-.4px;white-space:nowrap}
+.home-topbar .icon-button{width:48px;height:48px;border:1px solid var(--divider);background:var(--berry-glass-control);box-shadow:inset 0 1px 0 var(--layout-highlight),0 5px 13px var(--layout-control-shadow)}
+.home-topbar .icon-button .icon{width:22px;height:22px}
+.assistant-scroll{padding:0 2px 18px;scroll-padding:16px}
+.assistant-intro{text-align:left;margin:0}
+.assistant-hero{display:flex;align-items:center;flex-direction:column;padding:8px 0 6px;text-align:center}
+.assistant-hero canvas,.assistant-scroll .assistant-intro canvas{display:block;width:132px;max-width:42%;height:auto;margin:0 auto 2px}
+.assistant-hero p{margin:0;color:var(--secondary);font-size:13px;line-height:19px}
+.today-intro{display:flex;align-items:center;justify-content:space-between;margin:8px 0 11px}
+.today-chip{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:4px 13px;border:1px solid var(--action);border-radius:999px;background:var(--neutral);color:var(--action);font-size:13px;font-weight:700;line-height:18px}
+.today-intro .caption{font-size:11px}
+.daily-advice .advice-card{display:flex;width:100%;min-height:138px;align-items:flex-start;gap:12px;text-align:left;padding:17px;border:1px solid var(--divider);border-radius:22px;background:var(--surface);box-shadow:0 8px 20px var(--layout-card-shadow)}
+.daily-advice .advice-icon{width:38px;height:38px;border-radius:13px}
+.daily-advice .advice-copy{display:block;flex:1;min-width:0}
+.daily-advice .advice-copy small{display:block;color:var(--action);font-size:10px;font-weight:750;letter-spacing:.5px;line-height:16px}
+.daily-advice .advice-copy strong{display:block;margin:3px 0 4px;color:var(--text);font-size:17px;line-height:24px;font-weight:700}
+.daily-advice .advice-copy>span{display:block;color:var(--secondary);font-size:12px;line-height:18px}
+.daily-advice .advice-copy em{display:flex;align-items:center;gap:3px;margin-top:8px;color:var(--action);font-size:11px;font-style:normal;font-weight:700}
+.daily-advice .advice-copy em .icon{width:14px;height:14px}
+.daily-advice .advice-widget{outline:none}
+.daily-advice .advice-widget:focus-visible{outline:3px solid var(--action);outline-offset:3px;border-radius:22px}
+.daily-advice .advice-card{min-height:124px}
+.daily-advice .advice-basis{display:inline-flex;align-items:center;gap:3px;margin-top:7px;padding:0;border:0;background:transparent;color:var(--action);font-size:11px;font-weight:700;text-align:left}
+.daily-advice .advice-basis .icon{width:14px;height:14px}
+.daily-advice .advice-controls{display:flex;align-items:center;justify-content:space-between;margin-top:7px}
+.daily-advice .advice-arrow{display:grid;place-items:center;width:32px;height:28px;border:0;border-radius:12px;background:transparent;color:var(--action)}
+.daily-advice .advice-arrow:disabled{opacity:.35}
+.daily-advice .advice-arrow .icon{width:16px;height:16px}
+.daily-advice .advice-dots{display:flex;align-items:center;justify-content:center;gap:6px}
+.daily-advice .advice-dot{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:var(--divider)}
+.daily-advice .advice-dot[aria-current=true]{width:19px;border-radius:999px;background:var(--action)}
+.assistant-intro .assistant-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 4px}
+.assistant-intro .assistant-tools button{display:flex;flex-direction:column;gap:5px;min-width:0;min-height:58px;padding:7px 4px;border:1px solid var(--divider);border-radius:15px;background:var(--surface);color:var(--text);font-size:12px;font-weight:650;box-shadow:0 3px 8px var(--layout-mini-shadow)}
+.assistant-intro .assistant-tools button:nth-child(1){background:var(--task-feed-bg);color:var(--task-feed-ink)}
+.assistant-intro .assistant-tools button:nth-child(2){background:var(--task-crying-bg);color:var(--task-crying-ink)}
+.assistant-intro .assistant-tools button:nth-child(3){background:var(--task-diaper-bg);color:var(--task-diaper-ink)}
+.assistant-intro .assistant-tools .icon{width:19px;height:19px}
+.conversation-home-head{display:block;flex:none;margin:0 0 8px;padding:7px;border:1px solid var(--divider);border-radius:17px;background:var(--surface)}
+.conversation-home-head .today-chip{flex:none;min-height:34px;padding:4px 10px}
+.compact-advice{display:flex;align-items:center;gap:9px;width:100%;min-width:0;min-height:42px;padding:4px 8px;border:0;border-radius:11px;background:var(--canvas);color:var(--text);font-size:12px;font-weight:650;text-align:left;cursor:pointer}
+.compact-advice #compact-advice{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.compact-advice .icon{width:15px;height:15px}
+.conversation-home-head[data-expanded=true] .compact-advice .icon{transform:rotate(90deg)}
+.conversation-home-head #expanded-advice{margin-top:11px}
+#assistant .composer-area{padding:8px 0 0;background:linear-gradient(to bottom,transparent,var(--canvas) 18%,var(--canvas))}
+#assistant .composer-area .composer{margin:0}
+#assistant .composer textarea::placeholder{color:var(--secondary);opacity:1}
+#assistant .composer-area .caption{margin-top:5px}
+#assistant[data-chat=active] .assistant-scroll{padding-top:3px}
+
+/* Journal layout follows the supplied owner → summary → timeline composition. */
+#records{padding:10px var(--gutter) 126px}
+.journal-topbar{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;gap:8px;height:56px;margin:0 0 18px}
+.journal-topbar .eyebrow{text-align:center;color:var(--secondary);font-size:11px;font-weight:800;letter-spacing:1.8px}
+.back-home{border:1px solid var(--divider);background:var(--surface)}
+.back-home .icon{width:20px;height:20px}
+.journal-topbar .profile-menu-button{width:48px;height:48px;border:1px solid var(--berry-glass-edge);border-radius:17px;background:var(--berry-glass-control);color:var(--action);box-shadow:inset 0 1px 0 var(--layout-highlight),0 7px 14px var(--layout-control-shadow)}
+.journal-date-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
+.journal-date-row .eyebrow{margin:0;min-width:0}
+.journal-calendar{position:relative;display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--berry-glass-edge);border-radius:17px;background:var(--berry-glass-control);box-shadow:inset 0 1px 0 var(--layout-highlight),0 7px 14px var(--layout-control-shadow);color:var(--action);overflow:hidden}
+.journal-date-row .journal-calendar{width:40px;height:40px;flex:none;border-radius:13px;box-shadow:none}
+.journal-date-row .journal-calendar .icon{width:19px;height:19px}
+.journal-calendar .icon{width:22px;height:22px;pointer-events:none}
+.journal-calendar input{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0;padding:0;border:0;opacity:0;cursor:pointer}
+.journal-calendar:focus-within{outline:3px solid var(--action);outline-offset:3px}
+.journal-heading{margin:0 0 22px}
+.journal-heading .eyebrow{margin:0 0 13px;font-size:12px;line-height:18px;font-weight:800;letter-spacing:1.4px}
+.journal-heading h2{max-width:10em;font-size:31px;line-height:1.17;letter-spacing:-1px;font-weight:750}
+.journal-heading>p:last-child{margin-top:10px;color:var(--secondary);font-size:14px;line-height:21px}
+.journal-owner-tabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:0 0 18px;padding:5px;border:1px solid var(--divider);border-radius:19px;background:var(--neutral)}
+.journal-owner-tabs button{display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;border:0;border-radius:15px;background:transparent;color:var(--secondary);font-size:14px;font-weight:700}
+.journal-owner-tabs button[aria-pressed=true]{background:var(--surface);color:var(--action);box-shadow:0 4px 10px var(--layout-selected-shadow)}
+.journal-owner-tabs .icon{width:17px;height:17px}
+.journal-summary{display:block;min-height:174px;padding:23px 24px;border:1px solid var(--journal-summary-border);border-radius:27px;background:var(--journal-summary-background);box-shadow:0 11px 25px var(--journal-summary-shadow)}
+.journal-summary>small{display:block;color:var(--action);font-size:11px;line-height:17px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
+.journal-summary-value{display:flex;align-items:baseline;gap:10px;margin:10px 0 8px}
+.journal-summary-value b{font-size:54px;line-height:1;font-weight:760;letter-spacing:-3px}
+.journal-summary-value span{font-size:17px;font-weight:700}
+.journal-summary>p{color:var(--secondary);font-size:13px;line-height:20px}
+.journal-timeline-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:32px 0 13px}
+.journal-timeline-heading h3{font-size:20px;line-height:27px;letter-spacing:-.5px}
+.journal-timeline-heading .text-button{display:flex;align-items:center;gap:2px;min-height:44px;margin:0;color:var(--secondary);font-size:13px;white-space:nowrap}
+.journal-timeline-heading .icon{width:16px;height:16px}
+.journal-timeline{margin:0 0 20px}
+.journal-row{position:relative;display:grid;grid-template-columns:61px 40px minmax(0,1fr) 14px;align-items:center;gap:11px;width:100%;min-height:82px;padding:10px 0;border-bottom:1px solid var(--divider);text-align:left}
+.journal-row:not(:last-of-type)::after{content:"";position:absolute;z-index:0;top:51px;bottom:-31px;left:91px;width:2px;background:var(--divider);pointer-events:none}
+.journal-row time{color:var(--secondary);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.journal-row .icon-tile{position:relative;z-index:1;width:40px;height:40px;border-radius:12px;background:var(--category-bg,var(--neutral));color:var(--category-ink,var(--action))}
+.journal-row .icon-tile .icon{width:21px;height:21px}
+.journal-row-copy{min-width:0}
+.journal-row-copy b{display:block;color:var(--text);font-size:14px;line-height:20px}
+.journal-row-copy small{display:block;margin-top:3px;color:var(--secondary);font-size:11px;line-height:17px;white-space:normal}
+.journal-row-chevron .icon{width:15px;height:15px;color:var(--secondary)}
+.journal-row:focus-visible{border-radius:10px}
+.journal-timeline>.empty{padding:34px 16px;border:1px dashed var(--divider);border-radius:20px;background:var(--surface)}
+.record-more{margin:24px 0 0;padding-top:9px;border-top:1px solid var(--divider)}
+.record-more summary{display:flex;align-items:center;justify-content:space-between;min-height:48px;list-style:none;color:var(--secondary);font-size:13px;font-weight:700;cursor:pointer}
+.record-more summary::-webkit-details-marker{display:none}
+.record-more summary .icon{width:17px;height:17px;transition:transform 180ms}
+.record-more[open] summary .icon{transform:rotate(90deg)}
+.record-more .insight-links{margin:8px 0 0}
+.profile-menu-group{margin:20px 0}
+.profile-menu-group h3{margin:0 0 8px;color:var(--secondary);font-size:12px;font-weight:750;letter-spacing:.5px}
+.record-cta{position:absolute;z-index:6;right:0;bottom:0;left:0;padding:14px var(--gutter) max(16px,env(safe-area-inset-bottom));background:linear-gradient(to bottom,transparent,var(--canvas) 26%,var(--canvas));pointer-events:none}
+.record-cta .primary{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;border-radius:17px;box-shadow:0 8px 20px var(--journal-cta-shadow);pointer-events:auto}
+.record-cta .icon{width:20px;height:20px}
+.filter-list{display:flex;flex-direction:column;gap:7px}
+.filter-list button{display:flex;align-items:center;gap:11px;min-height:50px;padding:9px 12px;border:1px solid var(--divider);border-radius:14px;background:var(--surface);text-align:left}
+.filter-list button[aria-pressed=true]{border-color:var(--action);color:var(--action);font-weight:700}
+.filter-list .icon{width:18px;height:18px}
+.mine-topbar{display:grid;grid-template-columns:48px 1fr 48px;gap:8px;align-items:center}
+.mine-topbar .eyebrow{text-align:center;font-size:10px}
+
+body[data-theme=dark] .journal-summary{border-color:var(--journal-summary-border);background:var(--journal-summary-background)}
+body[data-theme=dark] .home-topbar .icon-button,body[data-theme=dark] .journal-calendar,body[data-theme=dark] .journal-topbar .profile-menu-button{box-shadow:inset 0 1px 0 var(--layout-highlight),0 6px 15px var(--layout-control-shadow)}
+body[data-theme=dark] .record-cta .primary{box-shadow:0 8px 20px var(--journal-cta-shadow)}
+body[data-transparency=reduced] .home-topbar .icon-button,body[data-transparency=reduced] .journal-calendar{background:var(--surface);backdrop-filter:none;box-shadow:none;border-color:var(--divider)}
+body[data-contrast=true] .journal-row-copy small,body[data-contrast=true] .journal-summary>p{color:var(--text)}
+@media(max-width:375px){#assistant{padding-right:18px;padding-left:18px}#records{padding-right:18px;padding-left:18px}.record-cta{padding-right:18px;padding-left:18px}.journal-heading h2{font-size:28px}.journal-summary{padding:20px}.journal-row{grid-template-columns:54px 38px minmax(0,1fr) 12px;gap:8px}.journal-row:not(:last-of-type)::after{left:80px}.journal-row .icon-tile{width:38px;height:38px}.assistant-hero canvas,.assistant-scroll .assistant-intro canvas{width:112px}.daily-advice .advice-card{min-height:128px;padding:15px}.assistant-intro .assistant-tools button{font-size:11px}}
+@media(max-height:680px){#assistant>.home-topbar{margin-bottom:4px}.assistant-hero{padding:0}.assistant-hero canvas,.assistant-scroll .assistant-intro canvas{width:94px}.assistant-hero p{font-size:11px}.today-intro{margin:4px 0 7px}.daily-advice .advice-card{min-height:112px;padding:11px}.daily-advice .advice-copy>span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.assistant-intro .assistant-tools button{min-height:48px}.journal-heading{margin-bottom:14px}.journal-timeline-heading{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){.record-more summary .icon{transition:none}}

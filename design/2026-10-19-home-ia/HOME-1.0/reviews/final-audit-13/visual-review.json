@@ -1,0 +1,1276 @@
+{
+  "role": "visual",
+  "author": "/root/final_visual",
+  "independent": true,
+  "evidence_mode": "screenshot-review",
+  "status": "revise",
+  "sample_status": "pass",
+  "conclusion": "已审36张截图样本未见重大视觉问题；不授予全量视觉交付认证。",
+  "status_reason": "协议级完整状态×验收视口覆盖尚不满足；revise仅代表认证覆盖限制，不代表本轮已发现视觉缺陷。",
+  "baseline_id": "HOME-1.0 current candidate / QO-2.0-integration",
+  "baseline_approval": "design.json project.stage=draft；未据本轮图片认定正式冻结",
+  "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+  "material_snapshot": "material-snapshot.json",
+  "material_file_checks": [
+    {
+      "path": "index.html",
+      "size": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 45796,
+      "sha256": "4b32798d6c2be5865bcfee064f2f87de8434ceaf2f75b180281746e5756907b6",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "design.json",
+      "size": 13261,
+      "sha256": "93c5a5770899474b0a8bce6a6f93f5fa8343ea882468e4510af271ce1e732c77",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "README.txt",
+      "size": 8103,
+      "sha256": "1c0225431cdc5dcfb56350a3a6ffb20c4c8a116874d3a2a0c2e1cc03563c9e7b",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 2987,
+      "sha256": "477d0b609caef822f2a31411628cb92d6a9a964693103684c9ee6f1709aaae3d",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73",
+      "matches": true,
+      "method": "Node fs.readFileSync raw Buffer + crypto sha256"
+    }
+  ],
+  "reviewed_at_utc": "2026-10-20T03:54:23.1948713Z",
+  "actual_browser_operator": "/root",
+  "reviewer_browser_operations": [],
+  "protocol": "hw-visual-review/SKILL.md and hw-design-workflow/references/design-contract.md",
+  "authority": [
+    "本次用户要求优先于旧STYLE_SPEC",
+    "三Dock：Today太阳、momcozy AI、记录",
+    "AI快速轮播覆盖旧默认静止条款；单帧不判断速度",
+    "四步录入、滚轮、妈妈宝宝同页、留白、独立推荐、同页底部弹窗"
+  ],
+  "evidence": [
+    {
+      "kind": "screenshot",
+      "path": "screenshots/01-onboarding-identity.jpg",
+      "sha256": "d9709ec4f24145b4f2bb205e62f9fa172a80d4c4528080029c675235ee18d8b5",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:37:11.439Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "妈妈身份展开可选阶段",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/02-onboarding-details.jpg",
+      "sha256": "93fab54fe7b73791788d735b5b12389e5f5eaf1e54bb2629cdf2e8e16c8c0726",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:37:40.301Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "默认滚轮和当前日期生日",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/03-onboarding-concerns.jpg",
+      "sha256": "91887900896751912d0dfce63ba618396ffeb0489522db0da759db190f82f160",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:37:55.703Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "关注点多选",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/04-onboarding-recommendations.jpg",
+      "sha256": "0e5e16baacf1b6d8869425b4e5fb5fe95c1d9230f49b9ec79258125ba75d7364",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:37:56.053Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "推荐独立页",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/05-today-empty.jpg",
+      "sha256": "2a593da659d2201b7fdfa47cb70a9320c9465c56153cb5f946d5ce757a5822bf",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:51:07.426Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "重置后稳定空首页",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/06-issue-old-profile-date.jpg",
+      "sha256": "acc458f52aaa3d801cfa3a32805a3da2fea0a1eba5c4a727c3839887023f09c8",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/mine",
+      "captured_at": "2026-10-20T03:38:20.632Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "新录入今天生日，旧宝宝资料保存仍停留弹窗，上限为昨天",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/07-issue-empty-stage-default.jpg",
+      "sha256": "2acaba9353024e8ef9c1fa7b05b7e82329935de6a507e2a3a262ca2dc5d856d5",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/mine",
+      "captured_at": "2026-10-20T03:38:37.392Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "阶段留空后旧妈妈资料默认孕前",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/08-issue-baby-cleared.jpg",
+      "sha256": "382e671893ca0a7335c9f3b5e5379f426788d542d7f15332e6382b2b1e0dff32",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/mine",
+      "captured_at": "2026-10-20T03:38:38.047Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "直接保存妈妈资料后宝宝生日被清空",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/09-record-picker.jpg",
+      "sha256": "4b09da0f498ec645cafcdd9cf7a6f470dc3f1db5cb33fa696b4bef1c90ca50e1",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:39:04.997Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "页面内记录类型底部弹窗",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/10-record-form-draft.jpg",
+      "sha256": "507bbfef50f9288ef34c64b21d581bc12ea31e6b66b9c3408e6d27516612eb1a",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:39:47.724Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "关闭后恢复记录草稿",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/11-record-saved.jpg",
+      "sha256": "bc70292721881b5c0b8d72f4cb46b1cff993fef969695ede0e7be15bce30fa6d",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:39:54.952Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "记录保存成功回执",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/12-record-unknown.jpg",
+      "sha256": "bf0de0c44ae2ea0372efb5fc305fc57bc666f71e7f0cc3c1087bcc07037177c7",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:40:37.929Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "编辑保存结果未知，可核对原请求",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/13-record-deleted.jpg",
+      "sha256": "3a74c496a8d949d8ae22b369aa9f8441da53cfb97a55134ceb19f62e3cdee661",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:40:46.663Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "未知编辑未完成时删除记录后列表为空",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/14-issue-deleted-record-restored.jpg",
+      "sha256": "10c51f812c7d03ef9f77fc5dcc7a3ded4b26c1e45ca8b7cb28c51ebf30b1f06b",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:40:55.373Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "核对未知编辑结果后刚删除的记录恢复为130ml",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/15-records-baby.jpg",
+      "sha256": "12e7b96ed5a8cd119d4563944c174fea2abbf5d7ecf4b8c2ca316766b61b5762",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/records",
+      "captured_at": "2026-10-20T03:41:13.602Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "宝宝记录归档",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/16-records-mom.jpg",
+      "sha256": "d026b22e5d961cdd3a174bb9a5a13864feb3c70a3fe0aeb0dccb8742247dad29",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/records",
+      "captured_at": "2026-10-20T03:42:24.122Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "吸奶归档妈妈，不计入宝宝摄入",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/17-milk-trend.jpg",
+      "sha256": "14f90f37958b4cd7d913f79e2cd68e1d09fa52f52569e47eeffba6c1eb529159",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/records",
+      "captured_at": "2026-10-20T03:42:34.264Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "奶量趋势同源和无数据语义",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/18-today-recorded.jpg",
+      "sha256": "948c367563caa28e2db54eda4f451b8753decd26518451698f38ab9be4d862e5",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/home",
+      "captured_at": "2026-10-20T03:44:48.199Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "稳定帧：已记录概况与进行中任务入口",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/19-assistant-welcome.jpg",
+      "sha256": "1eb90a572933b4087e87d03c7f8a80849d33e339c3791221096b9596a891d06f",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:46:46.987Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "稳定帧：新对话恢复默认形象和三个入口",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/20-assistant-welcome-frame2.jpg",
+      "sha256": "2fb46857185e4298a89e83135cbff3dc7e52aefa7dce0911ea762856ad91b154",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:42:51.462Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "默认AI形象另一时间点",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/21-assistant-long-reply.jpg",
+      "sha256": "dd8b7503d093612563e8d42d228636b7196863da05c10e6b702155e73aacca82",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:42:58.441Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "长对话回复和追加服务，输入栏与Dock不重叠",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/22-assistant-scroll-history.jpg",
+      "sha256": "ffeb1886c5216fd540c5bc5f5b73c4464f306eb61a309015ea4ebf524a7f3b81",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:43:27.608Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "长对话上滑回看并出现回到最新",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/23-issue-keyword-task-offscreen.jpg",
+      "sha256": "0084809952f83b6ae9e93b30d1153c5520808989ba38bb4e7a3902577ffaee9b",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:43:43.823Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "长对话关键词创建任务后滚动到最新消息，任务卡在视口上方",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/24-cry-permission.jpg",
+      "sha256": "09bca15a51debb3c6ccf78a7b5b1ed72dfd9ba999e4cfb81d0d1e8af81906339",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:43:50.883Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "哭声任务权限选择",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/25-cry-indeterminate.jpg",
+      "sha256": "b5d74541e50d55f1cf209ada773bcf207f07d37664b6d2edcf0f989f9a521a91",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:45:09.482Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "无法判断结果与重试/退出",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/26-assistant-plus-sheet.jpg",
+      "sha256": "056d834d7dbf0e99b3d4bd03a390c16664a9b506efb0a92cd2ef50c48e98dec1",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:45:29.461Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "加号菜单保留三项服务和素材入口",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/27-poop-result.jpg",
+      "sha256": "fe342e2dc8ef643c3bf2d498d979157642b18f1189ef92a5d5503f9bef83b741",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:46:34.624Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "照片任务结果及重试/继续操作",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/28-history-search.jpg",
+      "sha256": "854bd7001505271fcb5a77e43b0b4dcb30abf09695f161ec48121f30e54a76e3",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:47:13.745Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "历史重命名与关键词搜索",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/29-history-delete-confirm.jpg",
+      "sha256": "d9245a66b490f23156805c6fa7423fd1e441ceea983ae74d3c96913654fbb1cc",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:47:45.199Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "删除当前会话前确认并说明返回欢迎页",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/30-issue-hidden-baby-date.jpg",
+      "sha256": "5f1925272324fa4f86482b23d965bce68e2369cf664e656d92a9a2adb0a651dd",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:52:32.856Z",
+      "declared_viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 844,
+        "width": 390
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "宝宝数量2→1→2绕过未来日期校验，完成并刷新后宝宝2仍为2027-01-01",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/31-onboarding-short.jpg",
+      "sha256": "bd2e18a03858bb0240ad2cebaffc2bc41777a1f6877f866958657daf7e6b6bb2",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/onboarding",
+      "captured_at": "2026-10-20T03:52:45.187Z",
+      "declared_viewport": {
+        "height": 640,
+        "width": 360
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 640,
+        "width": 360
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "360×640 多宝宝基础资料页",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/32-assistant-short.jpg",
+      "sha256": "732d012c2ab58677a8aaa0120b94dcbe861b935214241c1129a6b477597df9ac",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:52:50.945Z",
+      "declared_viewport": {
+        "height": 640,
+        "width": 360
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 640,
+        "width": 360
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "360×640 AI欢迎页",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/33-chat-short.jpg",
+      "sha256": "e1bc224d1db429692b817ec6edc5890c4af880105cab185c1938a9acf2fb017b",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:52:58.326Z",
+      "declared_viewport": {
+        "height": 640,
+        "width": 360
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 640,
+        "width": 360
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "360×640 AI回复与固定输入栏",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/34-chat-dark-short.jpg",
+      "sha256": "4210b4b73faf1d3b62e2d8a27a49c5f757278d74c6309c34468ff90db3ffbef8",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:53:04.474Z",
+      "declared_viewport": {
+        "height": 640,
+        "width": 360
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 640,
+        "width": 360
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "360×640 夜间对话，减少动态效果开启",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/35-history-dark-short.jpg",
+      "sha256": "91ab08fecc7b5237e2fcd7a7b350e43b16a6859a6151cd6154493fdd548a43f3",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:53:10.967Z",
+      "declared_viewport": {
+        "height": 640,
+        "width": 360
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 640,
+        "width": 360
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "360×640 夜间历史底部弹窗",
+      "reviewed": true
+    },
+    {
+      "kind": "screenshot",
+      "path": "screenshots/36-history-desktop.jpg",
+      "sha256": "0cd7bc50d94775cb37c9d8d5b591cebc13c66b1d7bb6c3df03ceb61fa3d2ca20",
+      "index_hash_matches": true,
+      "operator": "/root",
+      "browser": "in-app browser",
+      "browser_version": "unknown",
+      "url": "http://localhost:4192/#/assistant",
+      "captured_at": "2026-10-20T03:53:18.973Z",
+      "declared_viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "full_page": false,
+      "actual_pixels": {
+        "height": 720,
+        "width": 1280
+      },
+      "material_hash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+      "state": "桌面视口中夜间历史底部弹窗限定在应用框架内",
+      "reviewed": true
+    }
+  ],
+  "coverage": {
+    "reviewed_count": 36,
+    "matrix": [
+      {
+        "page_id": "onboarding",
+        "state_id": "妈妈身份展开可选阶段",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/01-onboarding-identity.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "onboarding",
+        "state_id": "默认滚轮和当前日期生日",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/02-onboarding-details.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "onboarding",
+        "state_id": "关注点多选",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/03-onboarding-concerns.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "onboarding",
+        "state_id": "推荐独立页",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/04-onboarding-recommendations.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "重置后稳定空首页",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/05-today-empty.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "新录入今天生日，旧宝宝资料保存仍停留弹窗，上限为昨天",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/06-issue-old-profile-date.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "阶段留空后旧妈妈资料默认孕前",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/07-issue-empty-stage-default.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "mine",
+        "state_id": "直接保存妈妈资料后宝宝生日被清空",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/08-issue-baby-cleared.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "页面内记录类型底部弹窗",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/09-record-picker.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "关闭后恢复记录草稿",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/10-record-form-draft.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "记录保存成功回执",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/11-record-saved.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "编辑保存结果未知，可核对原请求",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/12-record-unknown.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "未知编辑未完成时删除记录后列表为空",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/13-record-deleted.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "核对未知编辑结果后刚删除的记录恢复为130ml",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/14-issue-deleted-record-restored.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "records",
+        "state_id": "宝宝记录归档",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/15-records-baby.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "records",
+        "state_id": "吸奶归档妈妈，不计入宝宝摄入",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/16-records-mom.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "records",
+        "state_id": "奶量趋势同源和无数据语义",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/17-milk-trend.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "home",
+        "state_id": "稳定帧：已记录概况与进行中任务入口",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/18-today-recorded.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "稳定帧：新对话恢复默认形象和三个入口",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/19-assistant-welcome.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "默认AI形象另一时间点",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/20-assistant-welcome-frame2.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "长对话回复和追加服务，输入栏与Dock不重叠",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/21-assistant-long-reply.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "长对话上滑回看并出现回到最新",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/22-assistant-scroll-history.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "长对话关键词创建任务后滚动到最新消息，任务卡在视口上方",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/23-issue-keyword-task-offscreen.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "哭声任务权限选择",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/24-cry-permission.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "无法判断结果与重试/退出",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/25-cry-indeterminate.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "加号菜单保留三项服务和素材入口",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/26-assistant-plus-sheet.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "照片任务结果及重试/继续操作",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/27-poop-result.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "历史重命名与关键词搜索",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/28-history-search.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "删除当前会话前确认并说明返回欢迎页",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/29-history-delete-confirm.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "onboarding",
+        "state_id": "宝宝数量2→1→2绕过未来日期校验，完成并刷新后宝宝2仍为2027-01-01",
+        "viewport_id": "390x844",
+        "evidence_path": "screenshots/30-issue-hidden-baby-date.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "onboarding",
+        "state_id": "360×640 多宝宝基础资料页",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/31-onboarding-short.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "360×640 AI欢迎页",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/32-assistant-short.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "360×640 AI回复与固定输入栏",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/33-chat-short.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "360×640 夜间对话，减少动态效果开启",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/34-chat-dark-short.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "360×640 夜间历史底部弹窗",
+        "viewport_id": "360x640",
+        "evidence_path": "screenshots/35-history-dark-short.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      },
+      {
+        "page_id": "assistant",
+        "state_id": "桌面视口中夜间历史底部弹窗限定在应用框架内",
+        "viewport_id": "1280x720",
+        "evidence_path": "screenshots/36-history-desktop.jpg",
+        "visual_review": "reviewed",
+        "operator": "/root"
+      }
+    ],
+    "planned": "本轮代表状态与补充短屏/夜间/桌面截图；非全部状态×视口组合",
+    "actual_reviewer_runtime_coverage": "none",
+    "missing": [
+      "design.json VP360 360×800 未提供本轮图片；360×640为额外样本，不能替代",
+      "iOS/Android外观×亮暗×所有状态组合未覆盖",
+      "虚拟键盘、动态字号、读屏、完整键盘焦点顺序未测",
+      "减少动态与快速轮播时序不能由静态图片独立验证"
+    ]
+  },
+  "findings": [],
+  "observations": [
+    "01–04录入：四步条、选中标识、妈妈/宝宝分组及独立推荐层级清晰。31短屏维持内容滚动与底部主操作。",
+    "05/18稳定Today：概况、快捷操作、任务入口文字清晰；05首屏快捷卡局部处于Dock下，13/18可见滚动后的完整卡片，不据此认定不可达。",
+    "09–12记录底部弹窗：类型、字段、保存成功与结果未知均有可读标题及明确主操作。",
+    "15–17日志：宝宝/妈妈选中态、数量单位、日期与无记录破折号说明可辨。",
+    "19–22及32–34 AI：欢迎入口、长消息、回到最新、回复服务区可读；输入栏与Dock分离。",
+    "24–27任务与加号菜单：权限、无法判断、观察结果、服务入口层级明确。",
+    "28/29/35/36历史：搜索、当前会话、重命名、删除及确认区可读；夜间短屏与桌面弹窗保持应用内范围。"
+  ],
+  "excluded_logic_findings": {
+    "evidence_numbers": [
+      "06",
+      "07",
+      "08",
+      "14",
+      "23",
+      "30"
+    ],
+    "reason": "日期校验、资料覆盖、删除后恢复、任务定位等由主运行/交互审查报告，本报告不重复为视觉缺陷。"
+  },
+  "limitations": [
+    "仅审阅/root实际采集的截图，未运行浏览器；不把单帧称为交互复现。",
+    "截图可确认当前视区排布与可读性；未展示区域、触控命中、动画速度、刷新恢复不由此确认。",
+    "图片未做仪器色度/复合玻璃对比测量，不宣称WCAG合规。",
+    "材料文件散列复核只验证快照一致，未重算协议含receipt的正式material_hash。",
+    "本报告无应用代码修改，不包含正式设计冻结或整体产品可交付结论。"
+  ],
+  "material_integrity": {
+    "status": "verified",
+    "files_matched": 12,
+    "files_total": 12,
+    "method": "Node fs raw Buffer",
+    "note": "PowerShell受管文件读取的icons.js异常已用Node原始字节排除，不构成材料漂移。"
+  }
+}

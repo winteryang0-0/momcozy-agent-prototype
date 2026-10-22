@@ -1,0 +1,73 @@
+{
+  "id": "REV-FINAL-13-INTERACTION",
+  "role": "interaction",
+  "author": "/root/final_interaction",
+  "independent": true,
+  "reviewed_revision": "HOME-1.0 / onboarding-spacing-12 / final-audit-13 material-snapshot",
+  "verdict": "revise",
+  "method": "独立静态代码与需求审查；本审查人未操作浏览器。补充采用主代理/root提供的运行验证，逐项注明 observed_runtime 的提供者。",
+  "artifact_hashes": {
+    "assets/app.js": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b",
+    "sources/requirements.json": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+    "README.txt": "1c0225431cdc5dcfb56350a3a6ffb20c4c8a116874d3a2a0c2e1cc03563c9e7b",
+    "baselines/HOME-0.1/ARCHITECTURE.txt": "45f979a221e6284d840601cc62b202e2e3773cb2e2dacb622cc02ff81f6170d9"
+  },
+  "ledger_hash": null,
+  "limitations": ["sources/requirements.json 主要为原编号索引，缺少完整现行验收场景账本；本报告不宣称整链 ready。", "最新用户授权覆盖旧版首次资料引导及导航排除项。", "真实模型、设备、相机、麦克风与云同步不在本轮缺陷判定范围。", "未验证实际布局、触控、键盘、辅助技术和持久化运行结果。"],
+  "coverage": ["四步资料录入、妈妈可选阶段、数字滚轮、多宝宝独立草稿及完成持久化", "五类记录新增、编辑、按类型/ID草稿、取消、失败重试、结果未知核对、删除", "专项任务权限模拟、采集确认、分析、超时、离线、取消、后台暂停、同任务恢复", "新对话、历史搜索、重命名、删除、异步代次隔离、刷新恢复", "已完成回复与结束态/历史任务的追加服务", "共用弹窗的打开、关闭、草稿记忆与页面边界计算"],
+  "findings": [
+    {
+      "id": "INT13-01",
+      "severity": "minor",
+      "target_ids": ["CHAT-CONTINUOUS"],
+      "location": "assets/app.js:359,396,26-36；README.txt 对话历史更新及全量重置说明",
+      "observation": "静态上重置先删除 CHAT_KEY，而 pagehide 会 checkpointConversation。但主代理已实测仅有重置审查C会话时重置后历史为0段，未复现回写。此项为未证实静态风险，不列为确认产品缺陷。",
+      "impact": "未确认实际用户影响。需区分当前payload未变化时checkpoint提前返回，与正在处理回复/任务导致payload变化时的行为。",
+      "fix": "重置时先停用 pagehide 持久化或清空所有会话内存与当前ID，再删除存储并重载。",
+      "status": "accepted",
+      "acceptance_reason": "主代理运行未复现，不据静态风险阻塞；保留待研究项而非确认缺陷。",
+      "reproduction": {"evidence_type": "spec_counterexample", "steps": ["创建一段非空对话并等待回复完成。", "阅读与演示设置→重置本版演示数据→确认重置。", "重载后稍后设置或完成资料，再打开历史对话。", "核验旧对话是否仍在；同时检查 CHAT_KEY 是否被重建。"]},
+      "recheck_scenarios": ["存在当前会话、仅历史会话、仅输入草稿、进行中任务四种情形分别全量重置；重载后全部为空。"],
+      "runtime_verification": {"provided_by": "/root", "result": "not_reproduced", "steps": ["仅有重置审查C会话", "设置→确认重置→稍后设置→AI历史"], "observed": "共0段对话"},
+      "classification": "unconfirmed_static_risk_not_confirmed_defect"
+    },
+    {
+      "id": "INT13-02",
+      "severity": "major",
+      "target_ids": ["ONB-01", "ONB-02", "ONB-03", "ONB-04", "ONB-05", "ONB-06"],
+      "location": "assets/app.js:125-126,150,161-170；reviews/onboarding-wheel-11/field-rules.txt",
+      "observation": "宝宝标签点击有有效性保护，但宝宝数量滚轮的 settle 会直接重绘并钳制 activeBaby；最终校验只看当前DOM，提交却遍历所选数量的全部宝宝草稿。隐藏宝宝的非法生日存在绕过路径。",
+      "impact": "可把未来生日提交为已完成资料；Today 天数用 Math.max(0,...) 掩盖异常，独立宝宝资料完整性受损。",
+      "fix": "在完成基础资料以及最终完成时校验所有选中宝宝的草稿，定位具体宝宝；数量导致当前卡片隐藏时也处理现有字段有效性。",
+      "status": "open",
+      "reproduction": {"evidence_type": "observed_runtime", "provided_by": "/root", "steps": ["妈妈/产后→基础资料→宝宝数量2；宝宝1填写2026-10-01。", "切到宝宝2，填写未来日期2027-01-01。", "用数量滚轮2→1→2，每次等待完成，当前保持宝宝1。", "继续→推荐→完成，成功进入Today。", "刷新→重新体验资料→宝宝2：未来日期仍为2027-01-01，max为2026-10-20，浏览器validationMessage为指定值不得晚于2026/10/20。"], "evidence": ["screenshots/30-issue-hidden-baby-date.jpg"]},
+      "recheck_scenarios": ["未来日期及不完整日期分别执行2→1→2，必须阻止提交并定位宝宝2；有效隐藏资料必须保留。"],
+      "note": "ONB编号来自历史ARCHITECTURE第4节真实引用；未假定这六个编号分别对应哪个现行字段。直接点击宝宝标签绕过已被代码阻止，不作为发现。"
+    },
+    {
+      "id": "INT13-03",
+      "severity": "major",
+      "target_ids": ["C09", "C09.1", "C09.2", "C09.3", "C09.4", "C09.5"],
+      "location": "assets/app.js:224,227,238,324-325,350",
+      "observation": "保存结果未知只阻止新增/编辑，不阻止删除同一记录。删除没有撤销关联 saveJob；随后核对原请求调用 commitSave，在记录ID已不存在时重新push，导致确认删除的记录复活。",
+      "impact": "同一笔记录的编辑不确定状态与删除发生冲突，用户明确删除后仍出现旧记录，首页汇总也会回增。",
+      "fix": "未知保存请求未核清前拦截关联记录删除，或删除时明确终止该待核对请求并确保后续提交不能恢复已删除ID。",
+      "status": "open",
+      "reproduction": {"evidence_type": "observed_runtime", "provided_by": "/root", "steps": ["先保存配方奶120ml记录，设置保存响应为结果未知。", "编辑为130ml并保存，等待结果未知后关闭弹窗。", "打开同一记录详情并确认删除，Today变为空。", "点击记一笔，进入上一笔结果核对，再点击核对。", "已删除记录以130ml重新出现。"], "evidence": ["screenshots/12-record-unknown.jpg", "screenshots/13-record-deleted.jpg", "screenshots/14-issue-deleted-record-restored.jpg"]},
+      "recheck_scenarios": ["五类记录都沿用同一保存逻辑；至少运行一类复现并验证修复后删除不被迟到核对逆转。"]
+    },
+    {
+      "id": "INT13-04",
+      "severity": "major",
+      "target_ids": ["C10", "C11", "CHAT-CONTINUOUS", "C12"],
+      "location": "index.html:9；assets/app.js:254,378-379",
+      "observation": "关键词发起任务走launchCare(id,false)，明确跳过scrollChatTask；随后scrollChatLatest(false)继续定位最新消息。task-slot位于整段conversation之前，长对话中任务卡因此停在历史顶部，回复提示已打开但当前屏幕没有任务操作。此根因不同于两个滚动操作简单竞争：关键词路径根本没有请求滚到任务。",
+      "impact": "用户已明确请求听哭闹/看便便，却看不到采集入口，需要自行向上找任务或再次点击追加服务才能继续，关键任务启动的可发现性受损。",
+      "fix": "关键词成功启动任务后定位任务卡，并避免后续最新消息滚动覆盖；或让任务卡随触发消息插入会话当前位置。",
+      "status": "open",
+      "reproduction": {"evidence_type": "observed_runtime", "provided_by": "/root", "steps": ["建立足够长的连续对话并停留底部。", "发送我想听哭闹。", "等待回复完成，提示已打开对应功能。", "主代理测得scrollTop为1826，任务卡top=-1710/bottom=-1306，而聊天视口为96..594，任务卡完全不可见。"], "evidence": ["screenshots/23-issue-keyword-task-offscreen.jpg"]},
+      "recheck_scenarios": ["长对话底部通过文字分别启动听哭闹和看便便，完成回复后任务标题和首个操作在视口内。", "已有未结束任务时重复同类关键词也应定位原任务，不能只回到最新消息。"]
+    }
+  ],
+  "non_findings": ["宝宝标签切换已有 validateOnboarding 保护。", "记录草稿按类型或已有记录ID区分；未知保存核对沿用同一ID，普通重复核对不重复新增。", "切换对话会停止计时器并递增conversationEpoch；消息与任务使用独立会话payload。", "已完成回复和 cancelled/result/indeterminate 任务卡以及历史任务都追加三项服务。", "旧资料入口的日期上限及妈妈阶段清空宝宝数组由一致性审查另报，本报告避免重复归因。"]
+}

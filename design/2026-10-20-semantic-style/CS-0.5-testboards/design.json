@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0-style-candidate",
+  "project": {
+    "id": "MOMCOZY-CS-0.5",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source-input.json",
+    "sha256": "d051119e2c69ab6b47aabd9ce6e99d389d60feef4d80d81b3f0d119fbc09ce5c",
+    "requirements": [
+      "STYLE-THREE-BOARDS",
+      "STYLE-GLASS-DEPTH",
+      "STYLE-VITAL-COLOR",
+      "STYLE-SEMANTIC-FEEDBACK",
+      "STYLE-THEME-RESTRAINT",
+      "STYLE-TASK-COLOR-CONTINUITY"
+    ]
+  },
+  "framework": {
+    "revision": "CS-0.5-four-board-study",
+    "scope": "四方向独立测试入口，复用同一内容和状态，统一同板内任务入口与记录的颜色语义；不改变 HOME-1.0 的产品框架",
+    "pages": [
+      "index",
+      "bloom",
+      "orbit",
+      "garden",
+      "berry"
+    ],
+    "preview_screens": [
+      "home",
+      "records",
+      "assistant"
+    ],
+    "states": [
+      "normal",
+      "saving",
+      "saved",
+      "local",
+      "failed",
+      "unknown",
+      "analyzing",
+      "indeterminate"
+    ],
+    "controls": [
+      "board link",
+      "screen switch",
+      "preview tab bar",
+      "state selector",
+      "reduce transparency",
+      "reduce motion"
+    ],
+    "viewports_to_test": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "system": {
+    "revision": "CS-0.5",
+    "direction_review": {
+      "bloom": "user-provisionally-okay-for-testing",
+      "orbit": "user-provisionally-okay-for-testing",
+      "garden": "carried-forward-candidate",
+      "berry": "carried-forward-candidate",
+      "lumen": "removed-from-current-comparison"
+    },
+    "directions": {
+      "bloom": {
+        "accent": "#a43d69",
+        "surface": "#fffaf9",
+        "ambient": [
+          "#ffd0d4",
+          "#c4e5da",
+          "#e4d2fb"
+        ]
+      },
+      "orbit": {
+        "accent": "#9b5b34",
+        "surface": "#fffcf7",
+        "ambient": [
+          "#ffd898",
+          "#d1e8b7",
+          "#bae5e5"
+        ]
+      },
+      "garden": {
+        "accent": "#247668",
+        "surface": "#f9fef8",
+        "ambient": [
+          "#a0dfc9",
+          "#a7deec",
+          "#e8efa8"
+        ]
+      },
+      "berry": {
+        "accent": "#773553",
+        "surface": "#fffdfa",
+        "hero_end": "#986577",
+        "ambient": [
+          "#edd7df",
+          "#e6eee7",
+          "#f4e4d5"
+        ]
+      }
+    },
+    "glass_rule": "半透明、模糊、边缘高光和环境色用于浮层；记录和 AI 正文保持稳定表面",
+    "task_color_rule": "同一风格板内以 data-task 表达喂养、哭闹、尿布、睡眠类别；入口、最近记录、时间线、汇总和图标样张使用同一类别背景与图标色；保存及 AI 结果使用独立状态色",
+    "task_color_tokens": {
+      "bloom": {
+        "feed": [
+          "#ffe3da",
+          "#873e48"
+        ],
+        "crying": [
+          "#e2f4ec",
+          "#2b6955"
+        ],
+        "diaper": [
+          "#ece6ff",
+          "#5e5087"
+        ],
+        "sleep": [
+          "#e6eefb",
+          "#3c5f80"
+        ]
+      },
+      "orbit": {
+        "feed": [
+          "#ffead0",
+          "#875027"
+        ],
+        "crying": [
+          "#e5f1d4",
+          "#536b2b"
+        ],
+        "diaper": [
+          "#dff0ed",
+          "#2b6c67"
+        ],
+        "sleep": [
+          "#e5ecf9",
+          "#435d80"
+        ]
+      },
+      "garden": {
+        "feed": [
+          "#e1f4df",
+          "#346b39"
+        ],
+        "crying": [
+          "#d8f0ee",
+          "#286b79"
+        ],
+        "diaper": [
+          "#f8edcd",
+          "#805e2d"
+        ],
+        "sleep": [
+          "#e4e9f9",
+          "#4a5d83"
+        ]
+      },
+      "berry": {
+        "feed": [
+          "#f8e9e8",
+          "#773b50"
+        ],
+        "crying": [
+          "#e8f1ed",
+          "#426b5d"
+        ],
+        "diaper": [
+          "#f1eaf2",
+          "#6d5275"
+        ],
+        "sleep": [
+          "#e9eef8",
+          "#495f80"
+        ]
+      }
+    },
+    "icon_grid": 24,
+    "icon_stroke": 1.8,
+    "focus": "评审控件 3px 可见外环；选中同时有填充和文字",
+    "fallback": "减少透明度时使用实体面；减少动效时取消过渡；不支持 backdrop-filter 时使用实体面",
+    "components": [
+      {
+        "id": "glass-navigation",
+        "states": [
+          "default",
+          "selected",
+          "reduced-transparency"
+        ]
+      },
+      {
+        "id": "semantic-icon",
+        "states": [
+          "object-with-label",
+          "category-with-label",
+          "same-task-color-across-surfaces"
+        ]
+      },
+      {
+        "id": "task-color-path",
+        "states": [
+          "entry",
+          "recent-record",
+          "timeline",
+          "feed-summary",
+          "icon-specimen"
+        ]
+      },
+      {
+        "id": "feedback-banner",
+        "states": [
+          "saving",
+          "saved",
+          "local",
+          "failed",
+          "unknown",
+          "analyzing",
+          "indeterminate"
+        ]
+      },
+      {
+        "id": "content-focus",
+        "states": [
+          "recent-fact",
+          "timeline",
+          "ai-evidence"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "STYLE-THREE-BOARDS",
+      "files": [
+        "index.html",
+        "bloom.html",
+        "orbit.html",
+        "garden.html",
+        "berry.html"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-GLASS-DEPTH",
+      "files": [
+        "assets/board.css",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-VITAL-COLOR",
+      "files": [
+        "assets/board.css",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-SEMANTIC-FEEDBACK",
+      "files": [
+        "assets/board.js",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-THEME-RESTRAINT",
+      "files": [
+        "berry.html",
+        "assets/board.css",
+        "STYLE_SPEC.md"
+      ]
+    },
+    {
+      "requirement_id": "STYLE-TASK-COLOR-CONTINUITY",
+      "files": [
+        "assets/board.js",
+        "assets/board.css",
+        "STYLE_SPEC.md",
+        "validate.cjs"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": "T01",
+      "steps": "每板切换 Today、Journal、Momcozy AI",
+      "expected": "同一内容与相同导航状态"
+    },
+    {
+      "id": "T02",
+      "steps": "Today 与 Journal 分别切换保存、仅本地、失败、未知状态",
+      "expected": "每个状态有不同标题、解释和建议下一步"
+    },
+    {
+      "id": "T03",
+      "steps": "AI 切换分析中与无法判断",
+      "expected": "保留不确定性及证据边界"
+    },
+    {
+      "id": "T04",
+      "steps": "切换减少透明度和动效",
+      "expected": "评审控件保留选中与可见焦点，玻璃有实体面替代"
+    },
+    {
+      "id": "T05",
+      "steps": "逐板对照喂养和尿布的功能入口、最近记录及时间线，并核对睡眠时间线与图标样张、哭闹入口与图标样张",
+      "expected": "同板内同任务共用类别背景与图标色；喂养汇总只用喂养色，保存与 AI 结果不复用类别色"
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-BOARD",
+      "question": "第四板的主题色表达是否比前三板更克制且仍有足够色彩生命力？",
+      "status": "open",
+      "blocks_freeze": true
+    },
+    {
+      "id": "D-PLATFORM",
+      "question": "目标原生平台、语言和实际测试设备是什么？",
+      "status": "open",
+      "blocks_freeze": true
+    },
+    {
+      "id": "D-THEME-TOKEN",
+      "question": "正式品牌主题色的色值和使用规范是什么？",
+      "status": "open",
+      "blocks_freeze": true
+    }
+  ],
+  "validation_boundary": "候选风格板；本轮无真实浏览器截图、无真机视觉测试、无独立评审，未冻结。"
+}

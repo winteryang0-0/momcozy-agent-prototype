@@ -1,0 +1,10 @@
+{
+  "candidate": "FW-0.4",
+  "status": "awaiting-user-review-not-frozen",
+  "framework_sha256": "6074cb0f38e918f2bdf444f0ad749e69358990ed8f920b4c3653d7d081242588",
+  "system_sha256": "33ba4382fa1601c958459662e29d34fff7f25bf4021a776303c91a038c3b17f4",
+  "source_sha256": "362980c1c38365cf0418a3d5725100465304742f42449d5a353a3cd8b5d84874",
+  "scope_sha256": "0660a0c9de380e565e543b89c9d21d67e502a41596a9eea495129a814c737ed3",
+  "confirmation": null,
+  "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f"
+}

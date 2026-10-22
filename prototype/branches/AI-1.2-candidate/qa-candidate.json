@@ -1,0 +1,98 @@
+{
+  "candidate_id": "AI-1.2",
+  "baseline_id": null,
+  "status": "reviewable-candidate-not-frozen",
+  "reviewed_at_utc": "2026-10-20T12:52:35Z",
+  "material_hash": "d0ecfadc3a09dbf000bc76c4655335de55814612b676ac0cac66583425cfce00",
+  "evidence_manifest": "evidence/manifest.json",
+  "primary_browser_run": {
+    "operator": "主代理",
+    "browser": "ChatGPT in-app browser",
+    "browser_version": "unknown",
+    "protocol": "local HTTP",
+    "viewports": ["320x568", "390x667"],
+    "routes": ["#/onboarding", "#/assistant", "#/home", "#/records"],
+    "observed": [
+      "独立端口 4198 的最终源码截图覆盖首录四步、AI 已填资料、Today 与记录；AI、Today、记录在两个视口各有明暗截图。",
+      "独立端口 4199 的空资料初次进入路由为四步录入；点击稍后设置后，AI 同屏显示动态形象、零资料行动建议、双项 Dock 和单行输入框；toast 消失后重截首屏。",
+      "4199 同日刷新后开场不重复显示，行动建议仍在。",
+      "4198 的 Momcozy-final.html 中，AI 输入未发送草稿后进入 Today，再用左上按钮返回 AI；进入记录后再次返回 AI。两个次级页面均无 Dock，草稿两次返回后仍在。",
+      "4198 单文件和 4199 多文件页面的控制台 error 日志均为空。"
+    ],
+    "screenshots": "详见 evidence/manifest.json 的 19 张 JPEG、捕获时间、视口、状态及 SHA-256"
+  },
+  "automated_checks": [
+    {
+      "name": "JavaScript syntax",
+      "scope": "8 个候选 JavaScript 源码和工具文件",
+      "result": "pass"
+    },
+    {
+      "name": "day rollover state test",
+      "command": "node verify-day-rollover.cjs",
+      "scope": "后台跨日、恢复可见、同日不重复、前台日切",
+      "result": "pass",
+      "limit": "模拟日切，不是真实跨午夜实测"
+    },
+    {
+      "name": "standalone consistency",
+      "scope": "内存重建与 Momcozy-final.html 字节一致；无外部运行时资源",
+      "result": "pass"
+    },
+    {
+      "name": "screenshot binding",
+      "scope": "13 个源码文件、19 张 JPEG 的散列和尺寸；截图时间晚于最新源码修改",
+      "result": "pass"
+    }
+  ],
+  "reviews": [
+    {
+      "role": "visual",
+      "author": "独立视觉评审子代理",
+      "independent": true,
+      "evidence_mode": "screenshot-review",
+      "status": "pass-for-captured-states",
+      "material_hash": "d0ecfadc3a09dbf000bc76c4655335de55814612b676ac0cac66583425cfce00",
+      "coverage": "19 张现版截图：首录四步 320 明亮态；AI、Today、记录 320 和 390 明暗态；动态形象两帧。未独立操作浏览器。",
+      "findings": [
+        {
+          "id": "V-M01",
+          "severity": "minor",
+          "status": "open",
+          "location": "记录页 390x667",
+          "observation": "底部记一笔按钮在首屏下沿只部分露出，需滚动后完整可见。"
+        },
+        {
+          "id": "V-M02",
+          "severity": "minor",
+          "status": "open",
+          "location": "基础资料数字滚轮 320x568",
+          "observation": "暂不填与邻近数值的选中状态可更明确。"
+        }
+      ]
+    },
+    {
+      "role": "consistency",
+      "author": "独立一致性评审子代理",
+      "independent": true,
+      "status": "static-only",
+      "material_hash": "d0ecfadc3a09dbf000bc76c4655335de55814612b676ac0cac66583425cfce00",
+      "coverage": "独立存储和零态、页面职责与导航、源码散列、单文件一致性、脚本语法与跨日状态测试；未独立操作浏览器。",
+      "findings": []
+    },
+    {
+      "role": "interaction",
+      "author": "独立交互评审子代理",
+      "independent": true,
+      "status": "static-only",
+      "material_hash": "d0ecfadc3a09dbf000bc76c4655335de55814612b676ac0cac66583425cfce00",
+      "coverage": "从零录入、每日首次和跨日开场、常驻建议及次级返回；跨日状态测试通过，未独立操作浏览器。",
+      "findings": []
+    }
+  ],
+  "not_verified": [
+    "file:// 直接打开：本浏览器安全策略禁止 agent 导航 file://，未尝试绕过。",
+    "实体手机及系统软键盘、辅助技术、真实跨午夜、形象连续帧率与真实 AI 或设备服务。",
+    "无用户确认的冻结基线；design_guard 最终交付门槛不适用于本候选结论。"
+  ]
+}

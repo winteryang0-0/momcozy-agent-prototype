@@ -1,0 +1,95 @@
+{
+  "role": "consistency",
+  "author": "/root/final_consistency",
+  "independent": true,
+  "status": "static-only",
+  "baseline_id": "HOME-0.1 (historical candidate, not a frozen approved baseline)",
+  "scope": "Current local interactive prototype; latest user authorization overrides historical four-Dock and onboarding exclusions",
+  "material_hash": "a537b160813c3d2e4c5917ecc6ad4c1420d1e0ee44836c8a54f25f72caa86d3c",
+  "material_hash_method": "SHA-256 of material-snapshot.json; all 12 listed files independently verified via Node fs raw bytes. This is snapshot binding, not the design-contract canonical delivery hash.",
+  "material_snapshot": "reviews/final-audit-13/material-snapshot.json",
+  "browser_execution": false,
+  "evidence_mode": "static-only with independently inspected screenshots and observed_runtime steps provided by /root; reviewer did not operate browser",
+  "evidence": [
+    {"kind": "screenshot", "path": "reviews/final-audit-13/screenshots/06-issue-old-profile-date.jpg", "sha256": "acc458f52aaa3d801cfa3a32805a3da2fea0a1eba5c4a727c3839887023f09c8", "operator": "/root", "reviewed_by": "/root/final_consistency"},
+    {"kind": "screenshot", "path": "reviews/final-audit-13/screenshots/07-issue-empty-stage-default.jpg", "sha256": "2acaba9353024e8ef9c1fa7b05b7e82329935de6a507e2a3a262ca2dc5d856d5", "operator": "/root", "reviewed_by": "/root/final_consistency"},
+    {"kind": "screenshot", "path": "reviews/final-audit-13/screenshots/08-issue-baby-cleared.jpg", "sha256": "382e671893ca0a7335c9f3b5e5379f426788d542d7f15332e6382b2b1e0dff32", "operator": "/root", "reviewed_by": "/root/final_consistency"}
+  ],
+  "coverage": {
+    "test_ids": [],
+    "static_files": ["index.html", "assets/app.js", "assets/style.css", "assets/icons.js", "assets/companion.js", "design.json", "sources/requirements.json", "sources/STYLE_SPEC.txt", "baselines/HOME-0.1/ARCHITECTURE.txt", "IMPLEMENTATION.txt", "README.txt", "file-manifest.json"],
+    "authorized_changes_checked": ["three Dock items and Today profile entry", "shared avatar and four 1.8-second animation segments", "independent chat scroll and fixed composer", "conversation create/rename/search/delete confirmation", "app-contained shared modal", "three follow-up actions on completed replies and terminal/history tasks", "four onboarding steps", "mother-only optional stage", "vertical numeric wheels and omit option", "mother/baby on same step and multiple baby tabs"]
+  },
+  "mechanical_checks": {
+    "snapshot_files": "12/12 size and SHA-256 match using Node raw bytes",
+    "manifest_runtime_assets": "7/7 represented in snapshot and present",
+    "html_local_dependencies": "5/5 present; companion sprite present",
+    "remote_runtime_references": "No HTTP URL, fetch, or XMLHttpRequest found in current index/JS/CSS static scan; runtime network not observed by this reviewer",
+    "source_provenance": "2/2 source paths exist and match recorded SHA-256",
+    "guard_command": "python C:/Users/user/.codex/skills/hw-design-workflow/scripts/design_guard.py check . --baseline HOME-0.1",
+    "guard_result": {"passed": false, "errors": [{"code": "input_error", "at": "$", "message": "Baseline ID must be B plus letters/digits/hyphens"}]},
+    "guard_note": "Actual script is in hw-design-workflow/scripts, not hw-design-consistency/scripts. Guard stops before full design/DOM checks. No baseline was changed."
+  },
+  "findings": [
+    {
+      "id": "CONS-13-01",
+      "severity": "major",
+      "category": "product-defect",
+      "status": "open",
+      "location": "assets/app.js:226,301,362; PAGE-mine > mom-profile > profile-form",
+      "observation": "Onboarding permits an empty mother stage and saves baby information. The legacy mother-profile select has only pregnancy-preparation/pregnancy/postpartum values; empty state has no selected option, so HTML defaults to the first option. Submitting this form sets the stage to pregnancy-preparation and unconditionally clears birth, birthWeeks and the entire babies array for any non-postpartum stage.",
+      "reproduction": "Complete onboarding as mother with stage omitted and baby data; open My > Mother profile, change only current concern (or save directly); save. The form defaults to pregnancy-preparation and clears previously saved baby data.",
+      "impact": "Optional-stage semantics are lost and an unrelated profile edit can erase multiple babies' information.",
+      "fix": "Add an explicit empty/choose-later option and preserve the existing stage when not changed; do not erase stored baby records as a side effect of stage editing. Prefer one shared profile editor/model.",
+      "confidence": "Code-confirmed and observed_runtime by /root: omitted-stage onboarding > old mother profile defaults to pregnancy-preparation > save unchanged > birthday becomes empty. Reviewer inspected screenshots 07 and 08; screenshot 08 confirms changed visible profile context, while actual data clearing is supported by operator observation and source code.",
+      "observed_runtime": ["reviews/final-audit-13/screenshots/07-issue-empty-stage-default.jpg", "reviews/final-audit-13/screenshots/08-issue-baby-cleared.jpg"]
+    },
+    {
+      "id": "CONS-13-02",
+      "severity": "major",
+      "category": "product-defect",
+      "status": "open",
+      "location": "assets/app.js:12,102,153,301; PAGE-onboarding > birth versus PAGE-mine > baby-profile",
+      "observation": "Onboarding birthday accepts dates through the actual current day via profileToday(), while the legacy baby profile sets max to fixed demo DAY=2026-10-19 and makes birthday required.",
+      "reproduction": "Enter 2026-10-20 birth date during onboarding; open My > Baby profile and try to save an unrelated baby-name edit. The same previously accepted birth date violates the legacy max and native form validation blocks submit.",
+      "impact": "Valid onboarding data cannot be saved in the second editor. An omitted birthday also becomes required when editing only the baby name.",
+      "fix": "Use the same current-date upper bound and optionality in both editors; share birthday validation. Keep fixed demonstration time only for the record simulation.",
+      "confidence": "Code-confirmed and observed_runtime by /root; reviewer independently inspected screenshot 06 showing 2026/10/20 input and native validation requiring no later than 2026/10/19.",
+      "observed_runtime": ["reviews/final-audit-13/screenshots/06-issue-old-profile-date.jpg"]
+    },
+    {
+      "id": "CONS-13-03",
+      "severity": "major",
+      "category": "documentation-delivery-gate",
+      "status": "open",
+      "location": "design.json framework/actions/tests/mapping; sources/requirements.json:49; baselines/HOME-0.1/ARCHITECTURE.txt; design_guard output",
+      "observation": "The ledger has no onboarding page, only 3 controls, empty actions and tests, and empty flow/state mappings for the requirements. sources/requirements still excludes first-use onboarding. HOME-0.1 is explicitly a historical candidate and is invalid for this guard's baseline naming contract; no receipt is present. Guard therefore does not establish current completeness or certification.",
+      "impact": "Current behavior cannot be audited as a complete approved frozen package or handed off as full requirement/flow/state coverage. This does not invalidate the user's explicit authorization of the latest changes or the usefulness of the candidate preview.",
+      "fix": "Create a current candidate requirements delta and ledger with current pages, controls, actions, states and executable tests. Preserve historical sources; obtain approval of the actual candidate before creating a new legal baseline. Do not rename or fabricate an old approval simply to pass guard.",
+      "confidence": "Verified static documents and actual guard execution"
+    },
+    {
+      "id": "CONS-13-04",
+      "severity": "minor",
+      "category": "documentation-drift",
+      "status": "open",
+      "location": "IMPLEMENTATION.txt:7,22,24; design.json mapping.detail and implementation.tests_file; README.txt update history; sources/STYLE_SPEC.txt section 07",
+      "observation": "README correctly records the later three-Dock, persisted conversation and onboarding revisions, but IMPLEMENTATION still describes four Dock items, no multi-baby onboarding and conversation/task drafts clearing on refresh. design mapping refers to a root ARCHITECTURE.txt that does not exist; actual file is in baselines/HOME-0.1. The historical style spec says idle animation is static whereas the explicitly authorized current implementation loops.",
+      "impact": "A reader may implement or test superseded rules. Current user-authorized changes are not unauthorized drift.",
+      "fix": "Add a concise current implementation summary and supersession references; point mapping to the real historical path; label historical style rules and link the authorized motion override. Make current versus historical evidence explicit.",
+      "confidence": "Verified static documents"
+    }
+  ],
+  "declared_limitations_not_reclassified_as_defects": [
+    "AI, microphone, camera, upload, sound, device connection and cloud synchronization are explicitly simulated",
+    "Today uses baby 1 context and records have no multi-baby ownership; broader multi-baby record management is not inferred from onboarding tabs",
+    "Sleep/body/growth entry sources and detailed business rules remain outside implemented scope",
+    "file://, native material, real mobile keyboard/touch and complete assistive technology coverage are unverified",
+    "No full visual or runtime pass is asserted by this static-only reviewer"
+  ],
+  "notes": [
+    "PowerShell briefly reported a different icons.js length/hash and garbled content. Independent Node fs raw-byte read exactly matched the snapshot; treated as tool/environment reading anomaly, not a material-change finding.",
+    "Historical evidence files were read for context, not treated as execution proof for the current complete snapshot.",
+    "No application code, baseline or source materials were modified."
+  ]
+}

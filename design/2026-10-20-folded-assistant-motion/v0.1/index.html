@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>已废弃 · 02 折叠助手动效 V0.1</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="decommissioned">
+  <header class="site-header">
+    <div class="brand">momcozy <span>AGENT</span></div>
+    <div class="header-meta">CHARACTER MOTION STUDY / 02</div>
+  </header>
+
+  <main>
+    <div class="rejected-notice" role="note"><strong>此版已废弃，交互预览已停用。</strong>旧版角色是依据概念图重绘的二维 SVG，模型比例、折面与材质光影均不等同于原图，不符合「原形象模型和材质一致」的要求。请以<a href="assets/folded-assistant-v0.1.png">原始 02 形象</a>为准。</div>
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">QUIET ORDER / 动效探索</p>
+        <h1>旧版动效已停用</h1>
+        <p class="lead">源代码仅作为已否决的探索记录保留，不代表原始 02 形象。</p>
+      </div>
+      <span class="candidate-badge">V0.1 已废弃</span>
+    </div>
+
+    <div class="workspace">
+      <section class="preview" aria-labelledby="preview-heading">
+        <div class="panel-heading">
+          <div>
+            <p class="panel-kicker">MOTION PREVIEW</p>
+            <h2 id="preview-heading">动作预览</h2>
+          </div>
+          <span class="scene-note" id="scene-note">角色完整成形</span>
+        </div>
+
+        <div class="stage" id="stage" role="img" aria-label="02 折叠助手动作预览：象牙白折叠外层、莓红内侧、双眼、无嘴；可通过下方控件播放">
+          <svg class="character-svg" id="character-svg" viewBox="0 0 520 460" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="ivory" x1="0" y1="0" x2=".88" y2=".82" objectBoundingBox="true">
+                <stop offset="0" stop-color="#fffaf2"/>
+                <stop offset=".48" stop-color="#f5ece0"/>
+                <stop offset="1" stop-color="#e9d8c9"/>
+              </linearGradient>
+              <linearGradient id="face" x1=".18" y1=".08" x2=".86" y2=".95" objectBoundingBox="true">
+                <stop offset="0" stop-color="#fffaf4"/>
+                <stop offset=".65" stop-color="#f7eee3"/>
+                <stop offset="1" stop-color="#ecdace"/>
+              </linearGradient>
+              <linearGradient id="wine" x1=".14" y1=".06" x2=".86" y2=".92" objectBoundingBox="true">
+                <stop offset="0" stop-color="#8a4652"/>
+                <stop offset=".46" stop-color="#692a3a"/>
+                <stop offset="1" stop-color="#461e2b"/>
+              </linearGradient>
+              <radialGradient id="stage-glow">
+                <stop offset="0" stop-color="#fffdf9"/>
+                <stop offset="1" stop-color="#f9f5ef"/>
+              </radialGradient>
+              <filter id="blur-shadow" x="-50%" y="-150%" width="200%" height="400%">
+                <feGaussianBlur stdDeviation="8"/>
+              </filter>
+            </defs>
+            <rect width="520" height="460" fill="url(#stage-glow)"/>
+            <ellipse id="ground-shadow" cx="269" cy="414" rx="96" ry="13" fill="#704a42" opacity=".18" filter="url(#blur-shadow)"/>
+
+            <g id="morph-layer">
+              <path id="morph-outer" fill="url(#ivory)" stroke="#ddc9bc" stroke-width="1"/>
+              <path id="morph-inner" fill="url(#wine)"/>
+            </g>
+
+            <g id="actor-motion">
+              <g id="actor">
+                <path id="body" d="M 226 245 C 194 252 174 289 173 335 C 169 386 195 409 241 414 C 277 418 322 416 347 405 C 372 394 383 374 373 329 C 366 286 337 254 305 241 C 278 230 248 233 226 245 Z" fill="url(#ivory)" stroke="#d8c3b6" stroke-width="1.1"/>
+                <path id="fold-interior" d="M 182 137 C 190 106 213 92 231 95 C 259 101 269 151 287 179 C 312 220 332 240 365 278 C 394 310 430 327 455 310 C 470 299 475 323 459 343 C 442 366 412 371 382 356 C 341 336 319 307 285 276 C 250 243 212 222 188 199 C 176 187 173 159 182 137 Z" fill="url(#wine)"/>
+                <g id="left-arm">
+                  <path id="left-inner" d="M 213 243 C 188 245 154 261 133 286 C 110 314 107 343 119 362 C 131 382 150 375 164 352 C 184 322 208 308 221 281 C 228 267 222 251 213 243 Z" fill="url(#wine)"/>
+                  <path id="left-outer" d="M 215 211 C 190 227 161 232 139 253 C 110 278 97 311 102 340 C 106 359 116 374 130 377 C 114 352 123 322 147 302 C 172 283 193 282 211 265 C 228 250 226 225 215 211 Z" fill="url(#ivory)" stroke="#dfcabe" stroke-width="1"/>
+                </g>
+                <g id="right-arm">
+                  <path id="right-inner" d="M 284 236 C 318 245 344 286 383 314 C 411 334 439 330 456 311 C 465 305 472 315 466 329 C 451 358 422 368 389 358 C 352 347 328 312 295 286 C 281 274 275 251 284 236 Z" fill="url(#wine)"/>
+                  <path id="right-lip" d="M 281 226 C 315 236 344 275 385 303 C 412 322 440 323 458 308 C 451 323 429 336 403 329 C 375 321 351 300 327 277 C 309 261 296 251 281 248 Z" fill="url(#ivory)" stroke="#e2cec0" stroke-width=".9"/>
+                </g>
+                <path id="head" d="M 184 135 C 198 95 233 75 274 77 C 322 79 361 106 376 151 C 387 184 382 221 363 246 C 345 269 317 272 291 263 C 254 252 230 222 209 189 C 190 160 174 149 184 135 Z" fill="url(#face)" stroke="#e3d3c5" stroke-width=".9"/>
+                <path id="head-sheen" d="M 198 121 C 222 91 254 83 282 84 C 247 87 217 108 203 142" fill="none" stroke="#fffdf8" stroke-width="3.5" opacity=".62" stroke-linecap="round"/>
+                <g id="eyes" fill="#572630">
+                  <ellipse cx="295" cy="183" rx="5.6" ry="11.3" transform="rotate(-9 295 183)"/>
+                  <ellipse cx="354" cy="192" rx="5" ry="10.9" transform="rotate(-6 354 192)"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="stage-corner" aria-hidden="true">02 / FOLDED ASSISTANT</div>
+        </div>
+
+        <div class="transport" aria-label="播放控制">
+          <button class="primary-button" id="play-button" type="button">从头播放</button>
+          <button class="secondary-button" id="pause-button" type="button" disabled>暂停</button>
+          <div class="scrub-wrap">
+            <label for="scrubber">逐帧查看</label>
+            <input id="scrubber" type="range" min="0" max="1000" value="580" step="1" aria-describedby="time-label">
+            <span id="time-label">2.09 / 3.60 秒</span>
+          </div>
+        </div>
+        <div class="transport-options">
+          <label class="check"><input id="loop-toggle" type="checkbox"> 循环播放</label>
+          <label class="check"><input id="reduce-toggle" type="checkbox"> 减少动态</label>
+          <span class="transport-hint">切换动作、窗口失焦时自动暂停</span>
+        </div>
+        <p class="live-status" id="live-status" role="status" aria-live="polite">当前：丝带成形；停在完整角色帧。</p>
+      </section>
+
+      <aside class="side-panel" aria-label="动作与造型参照">
+        <section class="motion-menu" aria-labelledby="motion-heading">
+          <p class="panel-kicker">MOTION SET / V0.1</p>
+          <h2 id="motion-heading">选择动作</h2>
+          <div class="motion-list" role="group" aria-label="动作列表">
+            <button type="button" class="motion-choice" data-motion="form" aria-pressed="true"><span class="motion-index">01</span><span><strong>丝带成形</strong><small>滑入 · 卷折 · 稳定 · 回收</small></span><span class="duration">3.6 s</span></button>
+            <button type="button" class="motion-choice" data-motion="jump" aria-pressed="false"><span class="motion-index">02</span><span><strong>轻跳</strong><small>小幅预压与离地一次</small></span><span class="duration">1.3 s</span></button>
+            <button type="button" class="motion-choice" data-motion="clap" aria-pressed="false"><span class="motion-index">03</span><span><strong>轻拍手</strong><small>短折翼向内合拢两次</small></span><span class="duration">1.6 s</span></button>
+            <button type="button" class="motion-choice" data-motion="sway" aria-pressed="false"><span class="motion-index">04</span><span><strong>轻摇</strong><small>重心小幅左右转移</small></span><span class="duration">1.8 s</span></button>
+          </div>
+        </section>
+
+        <section class="reference" aria-labelledby="reference-heading">
+          <div class="reference-heading"><div><p class="panel-kicker">SHAPE REFERENCE</p><h2 id="reference-heading">现有 02 形象</h2></div><span>静态概念</span></div>
+          <img src="assets/folded-assistant-v0.1.png" width="1536" height="1024" alt="折叠助手原始概念板：左侧大图与右侧正面、侧面视图">
+          <p>动画使用原图的轮廓逻辑与配色绘制二维路径。材质光影为示意，尚未建立可量产的三维角色模型。</p>
+        </section>
+      </aside>
+    </div>
+
+    <section class="notes" aria-labelledby="notes-heading">
+      <div><p class="panel-kicker">DESIGN INTENT</p><h2 id="notes-heading">动作如何服务于任务</h2></div>
+      <div class="note-grid">
+        <article><span>01</span><h3>先可理解，再表达</h3><p>文字和任务控件承担状态告知；角色动作只作轻量反馈，不单独表示成功、风险或健康结论。</p></article>
+        <article><span>02</span><h3>首尾可接</h3><p>成形片段的第 0 帧和最后一帧使用同一条平面丝带姿态；三个拟人动作均从中性姿态出发并回到中性姿态。</p></article>
+        <article><span>03</span><h3>动一次就停</h3><p>默认仅播放一遍。用户可以主动开启循环；系统要求减少动态时以静态关键帧与文字说明代替播放。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Momcozy Agent / Quiet Order / 折叠助手动效探索</span><span>2026.10.20 · V0.1 候选</span></footer>
+</body>
+</html>

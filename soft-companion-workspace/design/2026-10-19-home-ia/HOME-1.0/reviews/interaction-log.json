@@ -1,0 +1,69 @@
+{
+  "operator": "/root",
+  "browser": "Codex in-app browser",
+  "protocol": "http://127.0.0.1:4192",
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      360,
+      800
+    ]
+  ],
+  "tests": [
+    {
+      "test": "five-type forms and source fields",
+      "result": "实际打开亲喂/配方奶/瓶喂母乳/换尿布/吸奶；奶量三类结束时间与母婴数据归属已静态复核"
+    },
+    {
+      "test": "draft and local persistence",
+      "result": "吸奶67ml与结束时间关闭重开仍在，提交后妈妈汇总360→427；早前瓶喂90ml保存后通过带新query完整重载仍在"
+    },
+    {
+      "test": "phone width/theme/reduced motion",
+      "result": "390与360均未发现横向页面溢出；360 Android夜间减少动态时 animation none、backdrop none；夜间主文字rgb(245,238,234)"
+    },
+    {
+      "test": "diaper validation correction",
+      "result": "未选是否红屁屁时显示错误；选无后错误内容为空；保持提交校验"
+    },
+    {
+      "test": "unknown reentry + same request resolution",
+      "result": "unknown restored when closing and reopening record; resolving produced exactly one formula 55 ml row",
+      "time": "2026-10-19T12:42:43.194Z"
+    },
+    {
+      "test": "offline task retry",
+      "result": "retry remains 暂时无法提交; no false result",
+      "time": "2026-10-19T12:42:54.962Z"
+    },
+    {
+      "test": "timeout replacement guard",
+      "result": "看便便入口保持听哭闹超时卡，要求先完成或取消；旧任务未替换",
+      "time": "2026-10-19T12:43:17.949Z"
+    },
+    {
+      "test": "task cancel history + cross-tab resume",
+      "result": "已取消哭声保留为历史；便便确认素材跨Tab保持",
+      "time": "2026-10-19T12:43:52.711Z"
+    },
+    {
+      "test": "diaper validation and failure retry",
+      "result": "未选红屁屁时阻止保存；明确失败后重试成功，本机保存和待同步分别显示",
+      "time": "2026-10-19T12:45:45.789Z"
+    },
+    {
+      "test": "home empty/error/retry",
+      "result": "预览空状态不删除本机记录；重新加载恢复已有概况",
+      "time": "2026-10-19T12:47:08.806Z"
+    }
+  ],
+  "limits": [
+    "不是所有状态×视口的穷举矩阵",
+    "真机键盘/系统权限/屏幕阅读器未测",
+    "后台visibility恢复已实现，未以真实系统后台切换验证",
+    "旧回归与最终代码的后续差异仅近期跨日来源、点击区域、夜间前景和字段错误清除；核心保存和任务修复未变"
+  ]
+}

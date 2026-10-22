@@ -1,0 +1,13 @@
+{
+  "reason": "New task card was scrolled into view before route restoration callback, which could restore an older history position afterward.",
+  "before_sha256": "6d37c8e31b361806368fe76408f390b9bfd7a36b9058e71eeb3e593e49d3f5dc",
+  "after_sha256": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc",
+  "before_reconstruction_matches": true,
+  "oldSnippet": "go('chat');render();$('#'+kind+'-card').scrollIntoView({block:'center'});$('#'+kind+'-card h2').focus({preventScroll:true});return;",
+  "newSnippet": "go('chat');render();requestAnimationFrame(()=>{const stream=$('#chat-stream'),card=$('#'+kind+'-card');stream.scrollTop+=card.getBoundingClientRect().top-stream.getBoundingClientRect().top-12;card.querySelector('h2').focus({preventScroll:true});});return;",
+  "impact": "Only cry/poop taskAction open branch: schedule inner-stream position after route restore; no CSS, media, age, today or send changes.",
+  "verification": [
+    "task-open-scrolls-to-card-after-route-restore",
+    "poop-task-open-scrolls-to-card"
+  ]
+}

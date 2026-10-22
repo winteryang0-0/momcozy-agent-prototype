@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0-style-candidate",
+  "project": {
+    "id": "MOMCOZY-QO-2.0",
+    "mode": "simulation",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "source-input.json",
+    "sha256": "91cea7088672648a87d1af326fbb41e8cb10ab3a67ef39e8c435677411c8e247",
+    "requirements": [
+      "REQ-EMOTION-CONTINUITY",
+      "REQ-MODERN-STYLE",
+      "REQ-PLATFORM-B",
+      "REQ-STATE-SEMANTICS",
+      "REQ-MOTION-CURVES",
+      "REQ-ACCESSIBLE-FALLBACKS"
+    ]
+  },
+  "framework": {
+    "revision": "STYLE-LAB-1.0",
+    "scope": "独立风格实验室，非产品架构",
+    "pages": [
+      {
+        "id": "PAGE-STYLE-LAB",
+        "route": "#/style",
+        "parent_id": null,
+        "regions": [
+          "overview",
+          "definition",
+          "states",
+          "motion",
+          "sources"
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "id": "saveButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "saveButton"
+      },
+      {
+        "id": "editButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "editButton"
+      },
+      {
+        "id": "iosButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "iosButton"
+      },
+      {
+        "id": "androidButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "androidButton"
+      },
+      {
+        "id": "lightButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "lightButton"
+      },
+      {
+        "id": "darkButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "darkButton"
+      },
+      {
+        "id": "reduceMotion",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-INPUT",
+        "role": "reduceMotion"
+      },
+      {
+        "id": "opaque",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-INPUT",
+        "role": "opaque"
+      },
+      {
+        "id": "highContrast",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-INPUT",
+        "role": "highContrast"
+      },
+      {
+        "id": "result",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-SELECT",
+        "role": "result"
+      },
+      {
+        "id": "resetButton",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "resetButton"
+      },
+      {
+        "id": "curve",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-SELECT",
+        "role": "curve"
+      },
+      {
+        "id": "playCurve",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "playCurve"
+      },
+      {
+        "id": "slow",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-INPUT",
+        "role": "slow"
+      },
+      {
+        "id": "amountInput",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-INPUT",
+        "role": "amountInput"
+      },
+      {
+        "id": "cancelEdit",
+        "page_id": "PAGE-STYLE-LAB",
+        "component_id": "COMP-BUTTON",
+        "role": "cancelEdit"
+      }
+    ],
+    "states": [
+      {
+        "id": "review",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "other"
+      },
+      {
+        "id": "saving",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "loading"
+      },
+      {
+        "id": "synced",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "other"
+      },
+      {
+        "id": "local",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "other"
+      },
+      {
+        "id": "syncing",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "loading"
+      },
+      {
+        "id": "syncFailed",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "error"
+      },
+      {
+        "id": "failed",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "error"
+      },
+      {
+        "id": "unknown",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "other"
+      },
+      {
+        "id": "checking",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "loading"
+      },
+      {
+        "id": "analyzing",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "loading"
+      },
+      {
+        "id": "indeterminate",
+        "page_id": "PAGE-STYLE-LAB",
+        "kind": "other"
+      }
+    ],
+    "flows": [
+      {
+        "id": "DEMO-SAVE",
+        "states": [
+          "review",
+          "saving",
+          "synced"
+        ]
+      },
+      {
+        "id": "DEMO-RETRY",
+        "states": [
+          "review",
+          "saving",
+          "failed",
+          "saving",
+          "synced"
+        ]
+      },
+      {
+        "id": "DEMO-SYNC",
+        "states": [
+          "local",
+          "syncing",
+          "synced"
+        ]
+      },
+      {
+        "id": "DEMO-SYNC-RETRY",
+        "states": [
+          "syncFailed",
+          "syncing",
+          "synced"
+        ]
+      },
+      {
+        "id": "DEMO-UNKNOWN",
+        "states": [
+          "unknown",
+          "checking",
+          "synced"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "id": "mobile-390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "mobile-360",
+        "width": 360,
+        "height": 800
+      }
+    ],
+    "limitation": "实验室组合不能替代正式PRD的全部状态路径"
+  },
+  "system": {
+    "revision": "QO-2.0",
+    "priority": [
+      "reliability",
+      "understanding",
+      "guidance"
+    ],
+    "tokens": {
+      "--brand": "#692a3a",
+      "--canvas": "#faf7f2",
+      "--surface": "#fff",
+      "--ink": "#282725",
+      "--muted": "#625b57",
+      "--line": "#e4dcd4",
+      "--border": "#80716b",
+      "--soft": "#eee7df",
+      "--success": "#355c45",
+      "--error": "#9c3e34",
+      "--enter": "cubic-bezier(.16,1,.3,1)",
+      "--press": "cubic-bezier(.2,0,0,1)",
+      "--release": "cubic-bezier(.2,.8,.2,1)"
+    },
+    "theme_tokens": {
+      "light": {
+        "canvas": "#FAF7F2",
+        "surface": "#FFFFFF",
+        "text": "#282725",
+        "secondary": "#625B57",
+        "action": "#692A3A",
+        "onAction": "#FFFFFF",
+        "neutral": "#EEE7DF",
+        "edge": "#80716B",
+        "success": "#355C45",
+        "successBg": "#E8F0EA",
+        "error": "#9C3E34",
+        "errorBg": "#FBEDE9"
+      },
+      "dark": {
+        "canvas": "#1C1A1B",
+        "surface": "#292526",
+        "text": "#F5EEEA",
+        "secondary": "#C4B7B4",
+        "action": "#EFB3C2",
+        "onAction": "#40202A",
+        "neutral": "#393234",
+        "edge": "#8E7C82",
+        "success": "#B4D5BD",
+        "successBg": "#263D30",
+        "error": "#FFB4A8",
+        "errorBg": "#492D29"
+      }
+    },
+    "motion": [
+      {
+        "id": "press",
+        "duration_ms": 80,
+        "bezier": [
+          0.2,
+          0,
+          0,
+          1
+        ],
+        "properties": {
+          "scale": [
+            1,
+            0.98
+          ]
+        }
+      },
+      {
+        "id": "release",
+        "duration_ms": 180,
+        "bezier": [
+          0.2,
+          0.8,
+          0.2,
+          1
+        ],
+        "properties": {
+          "scale": [
+            0.98,
+            1
+          ]
+        }
+      },
+      {
+        "id": "enter",
+        "duration_ms": 280,
+        "bezier": [
+          0.16,
+          1,
+          0.3,
+          1
+        ],
+        "properties": {
+          "y": [
+            12,
+            0
+          ],
+          "opacity": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "id": "exit",
+        "duration_ms": 180,
+        "bezier": [
+          0.4,
+          0,
+          1,
+          1
+        ],
+        "properties": {
+          "y": [
+            0,
+            8
+          ],
+          "opacity": [
+            1,
+            0
+          ]
+        }
+      },
+      {
+        "id": "state",
+        "duration_ms": 160,
+        "bezier": [
+          0.2,
+          0,
+          0,
+          1
+        ],
+        "properties": {
+          "icon_opacity": [
+            0.55,
+            1
+          ]
+        },
+        "text": "更新即时，关键文本不淡入"
+      }
+    ],
+    "platforms": {
+      "ios": {
+        "font": "system",
+        "body": "17pt/25pt",
+        "target": "48pt",
+        "material": "native regular Liquid Glass when available; otherwise native standard or opaque surface"
+      },
+      "android": {
+        "font": "system / Roboto",
+        "body": "16sp/24sp",
+        "target": "48dp",
+        "material": "Material 3 tonal surface",
+        "press": "native feedback"
+      }
+    },
+    "accessibility_priority": [
+      "true state",
+      "legibility and accessibility settings",
+      "platform",
+      "decoration"
+    ],
+    "components": [
+      {
+        "id": "COMP-BUTTON",
+        "states": [
+          "default",
+          "pressed",
+          "focused",
+          "selected",
+          "disabled",
+          "loading"
+        ]
+      },
+      {
+        "id": "COMP-INPUT",
+        "states": [
+          "default",
+          "focused",
+          "invalid"
+        ]
+      },
+      {
+        "id": "COMP-SELECT",
+        "states": [
+          "default",
+          "focused",
+          "selected"
+        ]
+      },
+      {
+        "id": "COMP-FEEDBACK",
+        "states": [
+          "review",
+          "saving",
+          "synced",
+          "local",
+          "syncing",
+          "syncFailed",
+          "failed",
+          "unknown",
+          "checking",
+          "analyzing",
+          "indeterminate"
+        ]
+      }
+    ],
+    "all_numeric_design_values": "project proposals, not official platform specifications"
+  },
+  "pending_decisions": [
+    {
+      "id": "D-OS",
+      "question": "最低支持系统版本与实现技术栈",
+      "blocks_style_candidate": false,
+      "blocks_native_delivery": true
+    },
+    {
+      "id": "D-DATA",
+      "question": "离线持久化/幂等/核验/同步冲突能力",
+      "blocks_style_candidate": false,
+      "blocks_product_delivery": true
+    },
+    {
+      "id": "D-CONFIRM",
+      "question": "确认本风格候选",
+      "status": "open",
+      "blocks_freeze": true
+    }
+  ],
+  "validation_boundary": "本schema是风格候选；没有冒称完整产品设计guard或冻结已通过"
+}

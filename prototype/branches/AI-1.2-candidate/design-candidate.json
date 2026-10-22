@@ -1,0 +1,63 @@
+{
+  "candidate_id": "AI-1.2",
+  "date": "2026-10-20",
+  "status": "awaiting-user-review-not-frozen",
+  "source": {
+    "user_request": [
+      "增加从零开始的数据录入步骤",
+      "每日首次进入 AI 主页时展示动态形象及当前行动建议",
+      "Today 与记录页不保留悬浮 Dock，改为左上角独立按钮直接返回 AI 对话主页"
+    ],
+    "inherited_decisions": [
+      "AI 对话为唯一主页面，跨日持续同一条对话",
+      "AI 页 Dock 仅含 Today 与记录，位于紧凑输入框上方",
+      "Today 展示行动建议与当日概况，不设置快捷功能入口",
+      "顶部左侧个人入口、右侧快速静音",
+      "CS-0.5 莓色留白为候选视觉方向"
+    ],
+    "previous_candidate": "prototype/branches/AI-1.1-candidate",
+    "visual_source_declared_by_previous_candidate": "design/2026-10-20-semantic-style/CS-0.5-testboards/STYLE_SPEC.md",
+    "advice_source_assumption": "本机资料、本机记录与本地日期驱动的示例规则；非真实 AI 或医疗建议"
+  },
+  "framework": {
+    "primary_route": "#/assistant",
+    "secondary_routes": ["#/home", "#/records"],
+    "profile_route": "#/mine",
+    "onboarding_route": "#/onboarding",
+    "first_use_flow": ["身份", "基础资料", "关注点", "核对"],
+    "first_use_rules": "首次空存储进入录入；照护角色必选，其余字段可留空；可稍后设置并恢复草稿；完成后进入 AI",
+    "storage_isolation": "AI-1.2 使用独立本机存储键，不自动导入 AI-1.1 或 current 的旧资料",
+    "assistant_dock_order": ["Today", "记录"],
+    "secondary_navigation": "Today 与记录不显示 Dock；各有左上角独立返回按钮，目标均为 #/assistant",
+    "composer_rule": "默认 60 px 单行外框；文字区默认 48 px，按内容增长至 112 px；Dock 随输入区实测高度上移",
+    "conversation_model": "仅一条持续对话；不显示新建或历史入口；返回次级页后保留输入草稿",
+    "daily_opening_rule": "本地日历日首次进入 AI 展示循环动态形象与开场；后台跨日时等页面重新可见再标记开场并滚至顶部；前台跨日同样滚至顶部；当天返回或刷新不重复；行动建议常驻并随资料和记录更新",
+    "today_model": "只读行动建议与本机当日记录概况；无功能快捷入口",
+    "advice_model": "两张标明依据的本地模拟建议卡；资料缺失时明确提示依据不足",
+    "mute_model": "本地保存的快速静音偏好，仅控制动画演示，不代表真实声音输出"
+  },
+  "visual_system": {
+    "board": "CS-0.5 Berry Poise candidate, not frozen",
+    "style_files": ["assets/style.css", "assets/berry.css", "assets/ai-first.css"],
+    "key_changes": ["每日 AI 开场为紧凑横排形象卡", "Today 与记录使用玻璃质感独立返回按钮", "次级页无悬浮 Dock"],
+    "responsive_samples": ["320x568", "390x667"],
+    "states_reviewed": ["light", "dark", "zero-profile", "filled-profile", "empty-records"],
+    "short_journal_rule": "320x568 保留顶部新增按钮，隐藏重复的底部记一笔按钮；390x667 底部按钮可滚动到达"
+  },
+  "change_from_ai_1_1": [
+    {"id": "C01", "type": "flow", "detail": "新增无旧数据导入的四步首次资料录入与暂缓恢复"},
+    {"id": "C02", "type": "content-and-state", "detail": "AI 页新增每天首次进入的动态开场和持续更新的两张建议卡"},
+    {"id": "C03", "type": "navigation", "detail": "Today 与记录移除 Dock，统一左上角返回 AI"}
+  ],
+  "pending_decisions": [
+    {"id": "D01", "question": "用户审阅本候选后，是否确认首录、每日开场及次级返回架构？", "status": "open", "blocks_freeze": true},
+    {"id": "D02", "question": "正式行动建议使用哪些经验证的数据与规则？", "status": "open", "blocks_freeze": true},
+    {"id": "D03", "question": "正式产品如何迁移旧版资料与多条对话？", "status": "open", "blocks_freeze": true},
+    {"id": "D04", "question": "正式品牌 token、目标设备与动态形象资产是否确认？", "status": "open", "blocks_freeze": true}
+  ],
+  "limitations": [
+    "仅在本地 HTTP 与桌面浏览器移动视口模拟中操作验证",
+    "file:// 直开及实体手机软键盘尚未验证",
+    "没有真实 AI、音频、设备、医疗建议或云同步"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "candidate": "FW-0.4",
+  "status": "candidate-not-frozen",
+  "generatedAt": "2026-10-19T12:10:52.610Z",
+  "material_hash": "6a5101918157b8ff5dc47047aeef20cf0fe595a65c4e127cd97da30656a9f33f",
+  "files": [
+    {
+      "path": "ASSET-CONTRACT.txt",
+      "bytes": 6654,
+      "sha256": "1d6def467b6562ba96d89645b84cd6e8e3427528a27c4e82f433d8e4ccb3c8b1"
+    },
+    {
+      "path": "CHANGELOG.txt",
+      "bytes": 729,
+      "sha256": "5c33e0ac7c6000f8d58ca9d80a173e803e3d10d03a446f34c86130e8f41578ef"
+    },
+    {
+      "path": "FRAMEWORK.txt",
+      "bytes": 3533,
+      "sha256": "052c3163bf8897cd1e98647b232c2c1645ce12aaa67a10f772544a1f29975661"
+    },
+    {
+      "path": "bundle/README.txt",
+      "bytes": 1053,
+      "sha256": "3287d1e0237744b7d55898f55ae81141c963fd69fa9abd220c12f23f5d0b441c"
+    },
+    {
+      "path": "bundle/assets/app.js",
+      "bytes": 37621,
+      "sha256": "e21156dde44a2445f30c462b1162393bdf7b589ef9ce2d3217787ea9fbc5a304"
+    },
+    {
+      "path": "bundle/assets/asset-map.js",
+      "bytes": 1041,
+      "sha256": "4e5ea669587885c8cb1b50d4251d29c7a6240bc0160f459d5de24aa54ad51be9"
+    },
+    {
+      "path": "bundle/assets/companion/placeholder.svg",
+      "bytes": 877,
+      "sha256": "0ccc46023688e3cdc7ead16fd7204b4650489794b8d75de1f8223d2476422e0e"
+    },
+    {
+      "path": "bundle/assets/icons/camera.svg",
+      "bytes": 407,
+      "sha256": "6129b360920e6043182e86e0ec6cdd915402802d2659ea6a482e090de51fb4e6"
+    },
+    {
+      "path": "bundle/assets/icons/chevron.svg",
+      "bytes": 315,
+      "sha256": "def11ffd937d351283fc9d1c2cf14f0e8c107b8ea8722d69e4bef72679f446eb"
+    },
+    {
+      "path": "bundle/assets/icons/close.svg",
+      "bytes": 307,
+      "sha256": "fd653d727430a9909670d42c0e62f9ca3578976ae95685c3d64b828538b77da5"
+    },
+    {
+      "path": "bundle/assets/icons/collapse.svg",
+      "bytes": 313,
+      "sha256": "5a261cf095c2807be53de32405682ac132d63ad6dd0324cbfdd10d5ac3596bca"
+    },
+    {
+      "path": "bundle/assets/icons/cry.svg",
+      "bytes": 339,
+      "sha256": "6400939fa463046a92f985a20a7581e9e4d8b4c2196a0a818928aade0139c23c"
+    },
+    {
+      "path": "bundle/assets/icons/expand.svg",
+      "bytes": 310,
+      "sha256": "bd97130a5f17ca3c97212904eb1378c04c3319e1e50984bdde771d3ee5be237b"
+    },
+    {
+      "path": "bundle/assets/icons/menu.svg",
+      "bytes": 320,
+      "sha256": "bc8cacd6cf8569877835e175b57e9013b0e992363f05e1ec5f4b65147715394b"
+    },
+    {
+      "path": "bundle/assets/icons/microphone.svg",
+      "bytes": 393,
+      "sha256": "0bb3cf7fec32be6db2000406a85b5d07fc4b6481bbc3053c9a91766b3bf10067"
+    },
+    {
+      "path": "bundle/assets/icons/poop.svg",
+      "bytes": 459,
+      "sha256": "3173926e2a5772bf137d43233ce15676246f293bb2f08a616e08135aafabd88a"
+    },
+    {
+      "path": "bundle/assets/icons/record.svg",
+      "bytes": 446,
+      "sha256": "39430e24dfa7ca2c8347e4b4188cfd1dfebf6e9286527113729d30decbd92050"
+    },
+    {
+      "path": "bundle/assets/icons/services.svg",
+      "bytes": 489,
+      "sha256": "c89f312845b488c2cdaa2279906c6941a633ef7b48109c92c41b9a7af2102939"
+    },
+    {
+      "path": "bundle/assets/icons/sound.svg",
+      "bytes": 385,
+      "sha256": "998978ebc1a393381e2786b16206091c0ca571ec63ddf0503f9d589d851e1ec9"
+    },
+    {
+      "path": "bundle/assets/icons/upload.svg",
+      "bytes": 365,
+      "sha256": "b7f5312ea35c42623e071848f99e4297164e9e26ac3d8d8bdffa97b8a5255d73"
+    },
+    {
+      "path": "bundle/assets/styles.css",
+      "bytes": 18703,
+      "sha256": "86d9ea42bbd8c641524a53a0ad83a90f18b94e449ea071e1f108d882d8a86c99"
+    },
+    {
+      "path": "bundle/index.html",
+      "bytes": 48732,
+      "sha256": "0bd114a2c28bf835bea939be9733e49f05f232f76c2ee4199ea36b7b0dbe7d65"
+    },
+    {
+      "path": "candidate-summary.json",
+      "bytes": 535,
+      "sha256": "3d9669c91210818e0e09f0a14dd5a8e3593964399a85750c4a540ba9380e04f2"
+    },
+    {
+      "path": "design.json",
+      "bytes": 106876,
+      "sha256": "5b802a4ed38e4610ab0ac6909622442425f121086026e2c4804cc6b19724c4c3"
+    },
+    {
+      "path": "framework-seed.json",
+      "bytes": 29328,
+      "sha256": "f377eae2ea2a54005b47b012f3390ed1fd81ae4a4c87f111144c1907d34904d5"
+    },
+    {
+      "path": "qa.json",
+      "bytes": 75464,
+      "sha256": "43ec2590ea22cf982b2de243d28a84af21072ebb92623a94e0d0ec8a7ec86f38"
+    },
+    {
+      "path": "reviews/architecture-consistency.json",
+      "bytes": 34964,
+      "sha256": "14428163bd9b64d149f2987c4163b4206eb39ad55d26853ad04d24b60e6d9af6"
+    },
+    {
+      "path": "reviews/runtime.json",
+      "bytes": 20580,
+      "sha256": "cd4e1b16244931da086d6a90870be78d1d563234f209e5a895e7029e5c8b4b74"
+    },
+    {
+      "path": "reviews/screenshots/companion-fallback-390.jpg",
+      "bytes": 38952,
+      "sha256": "c46a81fe0c95b1ce5dbca651e14a24f41cd39f3a4615cb40f5badb6e63a1335b"
+    },
+    {
+      "path": "reviews/screenshots/home-360.jpg",
+      "bytes": 36847,
+      "sha256": "371f552058fcb004c58c82a392c23b37625ed060771ff0e9724d0298bda74b81"
+    },
+    {
+      "path": "reviews/screenshots/home-desktop.jpg",
+      "bytes": 96822,
+      "sha256": "3d079411cfad12c48897b34828a1ec3d8169095076b762b4f029e8823e0c2bc3"
+    },
+    {
+      "path": "reviews/screenshots/home-empty-390.jpg",
+      "bytes": 37589,
+      "sha256": "3c32cc6c260f457317693de1c49981ffc11ad640cf22496980b51daf2a7632a2"
+    },
+    {
+      "path": "reviews/screenshots/home-saved-390.jpg",
+      "bytes": 41436,
+      "sha256": "d8478faafd2a76f42bef421af81c9893cf27b2711a87b1c456e72b8e2386365c"
+    },
+    {
+      "path": "reviews/screenshots/record-inline-390.jpg",
+      "bytes": 34286,
+      "sha256": "2bfb2658e37b5b30bbec9c18089446dcdbd7723aa807b69c9a40d15680e1aac2"
+    },
+    {
+      "path": "reviews/screenshots/record-inline-bottom-390.jpg",
+      "bytes": 34239,
+      "sha256": "e343474198cda16453a964951b726a06967a2cb23ca69a6faca0b9cf1077491a"
+    },
+    {
+      "path": "reviews/screenshots/services-dialog-390.jpg",
+      "bytes": 35925,
+      "sha256": "5098b9cb52426ef850c749aa6776f504675c1072ee23b0db39c0312182d9bd07"
+    },
+    {
+      "path": "reviews/screenshots/services-focus-390.jpg",
+      "bytes": 32694,
+      "sha256": "aff5e4f645c68a8bc2a1f03d1484db1179d683e4998d12db2af4ca2d87a20362"
+    },
+    {
+      "path": "reviews/screenshots/task-error-390.jpg",
+      "bytes": 39689,
+      "sha256": "45ec07786b4b47c6b7c10b3daaa5491cfef629002f942eb66975c3e583178037"
+    },
+    {
+      "path": "reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "4b1b96b60e885187e40f4a94110796cc99166205db84828a868cee46831011e0"
+    },
+    {
+      "path": "reviews/visual-review.json",
+      "bytes": 34235,
+      "sha256": "4f9529c58e1797916219efd193ffb7473f37c2c4589d7257992cbb56c501a7fa"
+    },
+    {
+      "path": "sources/requirements-v03.json",
+      "bytes": 51271,
+      "sha256": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+    },
+    {
+      "path": "sources/requirements-v04.json",
+      "bytes": 447,
+      "sha256": "362980c1c38365cf0418a3d5725100465304742f42449d5a353a3cd8b5d84874"
+    }
+  ],
+  "scope": "Candidate bundle, architecture/asset contracts, ledger and selected provenance/runtime evidence; not a frozen baseline or full-product certification."
+}

@@ -1,0 +1,201 @@
+{
+  "checkedAt": "2026-10-20T03:53:37.835Z",
+  "materialHash": "b8a4f924a24a19bcdc8185a8bf0c33c0c39ebdaa96c7c9a6fee3e28eb9efc411",
+  "files": [
+    {
+      "path": "index.html",
+      "match": true
+    },
+    {
+      "path": "assets/app.js",
+      "match": true
+    },
+    {
+      "path": "assets/style.css",
+      "match": true
+    },
+    {
+      "path": "assets/icons.js",
+      "match": true
+    },
+    {
+      "path": "assets/companion.js",
+      "match": true
+    },
+    {
+      "path": "assets/motion-model.js",
+      "match": true
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "match": true
+    },
+    {
+      "path": "design.json",
+      "match": true
+    },
+    {
+      "path": "README.txt",
+      "match": true
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "match": true
+    },
+    {
+      "path": "sources/requirements.json",
+      "match": true
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "match": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/01-onboarding-identity.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/02-onboarding-details.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/03-onboarding-concerns.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/04-onboarding-recommendations.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/05-today-empty.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/06-issue-old-profile-date.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/07-issue-empty-stage-default.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/08-issue-baby-cleared.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/09-record-picker.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/10-record-form-draft.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/11-record-saved.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/12-record-unknown.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/13-record-deleted.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/14-issue-deleted-record-restored.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/15-records-baby.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/16-records-mom.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/17-milk-trend.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/18-today-recorded.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/19-assistant-welcome.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/20-assistant-welcome-frame2.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/21-assistant-long-reply.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/22-assistant-scroll-history.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/23-issue-keyword-task-offscreen.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/24-cry-permission.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/25-cry-indeterminate.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/26-assistant-plus-sheet.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/27-poop-result.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/28-history-search.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/29-history-delete-confirm.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/30-issue-hidden-baby-date.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/31-onboarding-short.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/32-assistant-short.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/33-chat-short.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/34-chat-dark-short.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/35-history-dark-short.jpg",
+      "match": true
+    },
+    {
+      "file": "screenshots/36-history-desktop.jpg",
+      "match": true
+    }
+  ],
+  "browserConsoleErrors": []
+}

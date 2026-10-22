@@ -1,0 +1,16 @@
+{
+  "materialSha256": "c80ab8033318bc3423dcd92d0f6aaceecdebe5949a368ddeaa0972e5a6aacd50",
+  "capturedAt": "2026-10-21T13:09:12.879Z",
+  "locale": "en-US",
+  "timezone": "America/Los_Angeles",
+  "checks": [
+    "HTML language is en-US",
+    "English settings do not alter Chinese storage",
+    "Care Journal displays the local 12-hour time",
+    "Entry details display a local English date and time",
+    "Pumping trend uses browser-local calendar dates",
+    "Calendar day count stays correct across daylight saving time",
+    "Reset clears English entries and preserves all Chinese storage keys"
+  ],
+  "errors": []
+}

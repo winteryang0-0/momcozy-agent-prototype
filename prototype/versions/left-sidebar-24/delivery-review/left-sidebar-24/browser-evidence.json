@@ -1,0 +1,239 @@
+{
+  "revision": "left-sidebar-24",
+  "captured_by": "root/Playwright",
+  "browser": "Google Chrome",
+  "browser_version": "155.0.8059.86",
+  "protocol": "file://",
+  "source_sha256": {
+    "standalone": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+    "modular": "a307d62aab4fc7186490b294de6aa02e7ca6859401fbf14a6af604dc609bce85"
+  },
+  "screenshots": [
+    {
+      "name": "01-home-light-390",
+      "note": "首页关闭状态",
+      "path": "delivery-review/left-sidebar-24/screenshots/01-home-light-390.png",
+      "sha256": "fcc998861e1319169d06568b04e1daa9e4f343accb3eddd856a78f1f5c74659b",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:08.315Z"
+    },
+    {
+      "name": "02-menu-light-390",
+      "note": "关注哭声与便便时的侧边栏排序",
+      "path": "delivery-review/left-sidebar-24/screenshots/02-menu-light-390.png",
+      "sha256": "c355d704597cca3b279512772894bd6c5e34ac676cbd70043e6fc257d6b04e29",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:08.925Z"
+    },
+    {
+      "name": "03-baby-profile-390",
+      "note": "宝宝入口复用资料面板",
+      "path": "delivery-review/left-sidebar-24/screenshots/03-baby-profile-390.png",
+      "sha256": "076f3a6bf2eac2a2457da642f88b2bc8644442f51b8b05c9fc7a7135452c098b",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:12.585Z"
+    },
+    {
+      "name": "04-records-390",
+      "note": "记录入口与新建入口",
+      "path": "delivery-review/left-sidebar-24/screenshots/04-records-390.png",
+      "sha256": "a73c5cb352aa2bee3d7dbc7e59804334dec019aca9c97edfb38231b83319d8fb",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:14.356Z"
+    },
+    {
+      "name": "05-cry-task-390",
+      "note": "哭声服务复用对话任务卡",
+      "path": "delivery-review/left-sidebar-24/screenshots/05-cry-task-390.png",
+      "sha256": "bf85c672aabd33e954d9e1acec26ca64af6e9485b9463edbf2a9b471ce53392f",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:17.147Z"
+    },
+    {
+      "name": "06-menu-dark-short-360",
+      "note": "夜间、短屏、减少动效与无关注点排序",
+      "path": "delivery-review/left-sidebar-24/screenshots/06-menu-dark-short-360.png",
+      "sha256": "c0c574744e27d06bc5074e3948eb74e87f59250972c5d1225d4341afe8bafdd5",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "captured_at": "2026-10-21T10:44:18.708Z"
+    },
+    {
+      "name": "07-menu-desktop-1280",
+      "note": "桌面预览中抽屉限定在应用内",
+      "path": "delivery-review/left-sidebar-24/screenshots/07-menu-desktop-1280.png",
+      "sha256": "574f087245f7159f97bba057cb0f6526a8522f70613de18a328e88af8694d69c",
+      "material_sha256": "aa766c13f738ec34a24b38df0c0c94a3aee18dd28b0e673bf1f6403aaff9d462",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "captured_at": "2026-10-21T10:44:20.058Z"
+    },
+    {
+      "name": "08-menu-modular-390",
+      "note": "模块版 file:// 侧边栏",
+      "path": "delivery-review/left-sidebar-24/screenshots/08-menu-modular-390.png",
+      "sha256": "6fc14e1e6a4b31f13e84f938ea25adc90a451c69e8f4623d26cb7db69a83b279",
+      "material_sha256": "a307d62aab4fc7186490b294de6aa02e7ca6859401fbf14a6af604dc609bce85",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/index.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:44:21.277Z"
+    }
+  ],
+  "checks": [
+    {
+      "id": "open-order-width",
+      "status": "pass",
+      "order": [
+        "mine",
+        "baby",
+        "cry",
+        "poop",
+        "record"
+      ],
+      "geometry": {
+        "app": {
+          "left": 0,
+          "right": 390,
+          "width": 390
+        },
+        "panel": {
+          "left": 0,
+          "right": 320,
+          "width": 320
+        },
+        "overflow": 0
+      }
+    },
+    {
+      "id": "focus-wrap",
+      "status": "pass"
+    },
+    {
+      "id": "escape-scrim-focus-return",
+      "status": "pass"
+    },
+    {
+      "id": "mine-and-return",
+      "status": "pass"
+    },
+    {
+      "id": "baby-profile-save",
+      "status": "pass"
+    },
+    {
+      "id": "records-new-and-mine-return",
+      "status": "pass"
+    },
+    {
+      "id": "task-conflict",
+      "status": "pass"
+    },
+    {
+      "id": "dark-short-reduced",
+      "status": "pass",
+      "order": [
+        "mine",
+        "baby",
+        "record",
+        "cry",
+        "poop"
+      ],
+      "bounds": {
+        "x": 0,
+        "y": 32,
+        "width": 302.390625,
+        "height": 608
+      }
+    },
+    {
+      "id": "desktop-bounds",
+      "status": "pass",
+      "bounds": {
+        "x": 710.203125,
+        "y": 67,
+        "width": 320,
+        "height": 626
+      }
+    },
+    {
+      "id": "modular-file",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

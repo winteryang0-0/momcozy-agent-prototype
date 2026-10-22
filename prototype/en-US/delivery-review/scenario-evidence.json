@@ -1,0 +1,75 @@
+{
+  "states": [
+    {
+      "label": "save-failed",
+      "route": "#/records",
+      "title": "Save entry",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "save-recovered",
+      "route": "#/records",
+      "title": "Save entry",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "saved-pumping-detail",
+      "route": "#/records",
+      "title": "Pumping",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "save-unknown",
+      "route": "#/records",
+      "title": "Save entry",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "save-checked",
+      "route": "#/records",
+      "title": "Save entry",
+      "chinese": [],
+      "toast": "Save result checked. No duplicate was created."
+    },
+    {
+      "label": "home-offline",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "toast": "Save result checked. No duplicate was created."
+    },
+    {
+      "label": "poop-ready",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "poop-capture-error",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "reduced-motion-setting",
+      "route": "#/home",
+      "title": "Display and preview settings",
+      "chinese": [],
+      "toast": ""
+    },
+    {
+      "label": "reduced-motion-profile-menu",
+      "route": "#/records",
+      "title": "My Care Space",
+      "chinese": [],
+      "toast": ""
+    }
+  ],
+  "errors": []
+}

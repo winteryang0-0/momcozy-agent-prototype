@@ -1,0 +1,76 @@
+/* R19: Berry Poise presentation for the existing four-step care profile flow. */
+#onboarding .onboarding-header{position:relative;overflow:hidden;padding-top:15px;padding-bottom:18px;border-bottom:1px solid var(--divider);background:radial-gradient(circle at 94% 0%,var(--berry-rose),transparent 31%),var(--canvas)}
+#onboarding .onboarding-header::after{content:"";position:absolute;top:36px;right:-31px;width:112px;height:112px;border-radius:50%;border:1px solid var(--berry-glass-edge);box-shadow:0 0 0 16px #ffffff13,0 0 0 37px #ffffff0a;pointer-events:none}
+#onboarding .onboarding-top{position:relative;z-index:1;margin-bottom:17px}
+#onboarding .onboarding-top .wordmark{font-size:23px;letter-spacing:-1.2px}
+#onboarding .onboarding-top .text-button{color:var(--action);font-size:12px;font-weight:650}
+#onboarding-step{position:relative;z-index:1;display:inline-flex;align-items:center;width:max-content;margin:0 0 7px;padding:4px 10px;border:1px solid var(--divider);border-radius:999px;background:var(--surface);color:var(--action);font-size:11px;font-weight:700;line-height:17px;letter-spacing:.2px}
+#onboarding.compact-details #onboarding-step{display:inline-flex}
+#onboarding.compact-details .onboarding-top{position:relative;right:auto;top:auto;margin-bottom:17px}
+#onboarding.compact-details .onboarding-top .wordmark{display:inline;color:var(--action)}
+#onboarding .onboarding-header h2{position:relative;z-index:1;margin:0;color:var(--text);font-size:25px;line-height:32px;letter-spacing:-.75px}
+#onboarding-progress{position:relative;z-index:1;gap:6px;margin-top:16px}
+#onboarding-progress>span{justify-content:center;gap:5px;min-width:0;padding:7px 2px;border:1px solid var(--divider);border-radius:11px;background:var(--surface);color:var(--secondary);font-size:10px;font-weight:600;line-height:17px}
+#onboarding-progress>span.done{border-color:var(--divider);color:var(--action)}
+#onboarding-progress>span[aria-current=step]{border-color:var(--action);background:var(--neutral);color:var(--action);font-weight:750}
+#onboarding-progress b{display:grid;place-items:center;flex:none;width:18px;height:18px;border-radius:50%;background:var(--neutral);font-size:10px;line-height:18px}
+#onboarding-progress>span[aria-current=step] b{background:var(--action);color:var(--on-action)}
+#onboarding-body{padding-top:15px;padding-bottom:22px;scroll-padding:18px}
+#onboarding-form{gap:19px}
+#onboarding-form .onboarding-intro{margin:0;padding:12px 14px;border:1px solid var(--divider);border-radius:15px;background:linear-gradient(120deg,var(--neutral),var(--surface) 72%);color:var(--secondary);font-size:13px;line-height:20px}
+#onboarding-form legend{margin-bottom:12px;color:var(--text);font-size:16px;line-height:23px;font-weight:700}
+#onboarding-form legend small{display:inline-flex;align-items:center;margin-left:7px;padding:2px 7px;border-radius:999px;background:var(--neutral);color:var(--action);font-size:10px;line-height:16px}
+#onboarding-form .onboarding-choices{gap:10px}
+#onboarding-form .onboarding-choices button{min-height:66px;justify-content:flex-start;gap:9px;padding:11px 13px;border:1px solid var(--divider);border-radius:17px;background:var(--surface);color:var(--text);font-size:13px;font-weight:650;text-align:left;box-shadow:0 5px 13px var(--layout-mini-shadow)}
+#onboarding-form .onboarding-choices button>.icon:first-child{flex:none;width:34px;height:34px;padding:7px;border-radius:11px;background:var(--neutral);color:var(--action)}
+#onboarding-form .onboarding-choices button>.icon:last-child:not(:first-child){width:16px;height:16px;margin-left:auto;color:var(--action)}
+#onboarding-form .onboarding-choices button[aria-pressed=true]{border-color:var(--action);background:linear-gradient(135deg,var(--neutral),var(--surface));color:var(--action);box-shadow:0 5px 13px var(--layout-selected-shadow)}
+#onboarding-form .onboarding-choices.stages{gap:8px}
+#onboarding-form .onboarding-choices.stages button{min-height:50px;justify-content:center;padding:8px 5px;font-size:12px;text-align:center}
+#onboarding-form .mother-stage{padding-top:16px;border-top:1px solid var(--divider)}
+#onboarding-form .mother-stage>.text-button{min-height:36px;margin:5px 0 0;color:var(--action)}
+#onboarding-form .profile-compact{padding:16px;border:1px solid var(--divider);border-radius:21px;background:var(--surface);box-shadow:0 7px 18px var(--layout-card-shadow)}
+#onboarding-form .profile-compact+.profile-compact{padding-top:16px;border-top:1px solid var(--divider)}
+#onboarding-form .profile-compact h3{margin:0 0 10px;color:var(--text);font-size:15px}
+#onboarding-form .profile-compact h3 .icon{width:30px;height:30px;padding:6px;border-radius:10px;background:var(--task-feed-bg);color:var(--task-feed-ink)}
+#onboarding-form .profile-compact:nth-of-type(2) h3 .icon{background:var(--task-crying-bg);color:var(--task-crying-ink)}
+#onboarding-form .wheel-grid{gap:10px}
+#onboarding-form .wheel-shell{border:1px solid var(--divider);border-radius:13px;background:var(--canvas)}
+#onboarding-form .wheel-focus{left:5px;right:5px;background:var(--neutral)}
+#onboarding-form .wheel-label{margin-bottom:5px;font-size:12px}
+#onboarding-form .wheel-option.selected{color:var(--action);font-weight:750}
+#onboarding-form .compact-note{margin-top:9px;line-height:16px}
+#onboarding-form .compact-birthday{gap:8px;margin-top:12px;padding-top:11px;border-top:1px solid var(--divider)}
+#onboarding-form .compact-birthday input{background:var(--canvas);border:1px solid var(--divider)}
+#onboarding-form .baby-tabs button{border:1px solid var(--divider);background:var(--neutral)}
+#onboarding-form .baby-tabs button[aria-pressed=true]{border-color:var(--action);background:var(--surface);color:var(--action)}
+#onboarding-form .concern-choices{gap:9px}
+#onboarding-form .concern-choices button{min-height:66px;gap:8px;padding:10px;border:1px solid var(--divider);border-radius:17px;background:var(--surface);color:var(--text);font-size:12px;font-weight:650;line-height:17px;box-shadow:0 5px 13px var(--layout-mini-shadow)}
+#onboarding-form .concern-choices button>.icon:first-child{flex:none;width:33px;height:33px;padding:7px;border-radius:10px;background:var(--category-bg,var(--neutral));color:var(--category-ink,var(--action))}
+#onboarding-form .concern-choices button[aria-pressed=true]{border-color:var(--action);background:linear-gradient(135deg,var(--neutral),var(--surface));color:var(--action);box-shadow:0 5px 13px var(--layout-selected-shadow)}
+#onboarding-form [data-task=feed]{--category-bg:var(--task-feed-bg);--category-ink:var(--task-feed-ink)}
+#onboarding-form [data-task=crying]{--category-bg:var(--task-crying-bg);--category-ink:var(--task-crying-ink)}
+#onboarding-form [data-task=diaper]{--category-bg:var(--task-diaper-bg);--category-ink:var(--task-diaper-ink)}
+#onboarding-form [data-task=sleep]{--category-bg:var(--task-sleep-bg);--category-ink:var(--task-sleep-ink)}
+#onboarding-form .recommendation-page h3{gap:9px;color:var(--text)}
+#onboarding-form .recommendation-page h3 .icon{width:32px;height:32px;padding:7px;border-radius:11px;background:var(--neutral);color:var(--action)}
+#onboarding-form .onboarding-recommendations{gap:10px;margin-top:14px}
+#onboarding-form .onboarding-recommendations article{grid-template-columns:38px minmax(0,1fr);gap:10px;min-height:92px;padding:14px;border:1px solid var(--divider);border-radius:19px;background:var(--surface);box-shadow:0 6px 16px var(--layout-card-shadow)}
+#onboarding-form .onboarding-recommendations article>.icon{width:38px;height:38px;padding:9px;border-radius:12px;background:var(--category-bg,var(--neutral));color:var(--category-ink,var(--action))}
+#onboarding-form .onboarding-recommendations article>small{grid-column:2;margin:0;color:var(--action)!important;font-size:10px}
+#onboarding-form .onboarding-recommendations b{font-size:15px;line-height:21px}
+#onboarding-form .onboarding-recommendations p{margin-top:4px;font-size:12px;line-height:18px}
+#onboarding .onboarding-footer{padding-top:12px;padding-bottom:max(14px,env(safe-area-inset-bottom));border-top:1px solid var(--divider);background:var(--surface);box-shadow:0 -8px 23px var(--layout-card-shadow)}
+#onboarding .onboarding-footer #onboarding-back{color:var(--action);font-weight:650}
+#onboarding .onboarding-footer #onboarding-next{border-radius:999px}
+#onboarding .onboarding-footer .caption{color:var(--secondary)}
+#onboarding button:focus-visible,#onboarding input:focus-visible{outline:3px solid var(--action);outline-offset:2px}
+body[data-theme=dark] #onboarding .onboarding-header{background:radial-gradient(circle at 94% 0%,#603c51,transparent 32%),var(--canvas)}
+body[data-theme=dark] #onboarding-form .onboarding-intro,body[data-theme=dark] #onboarding-form .onboarding-choices button[aria-pressed=true],body[data-theme=dark] #onboarding-form .concern-choices button[aria-pressed=true]{background:var(--neutral)}
+@media(max-height:680px),(min-width:521px) and (max-height:850px){#onboarding .onboarding-header,#onboarding.compact-details .onboarding-header{padding-top:8px;padding-bottom:9px}#onboarding .onboarding-top,#onboarding.compact-details .onboarding-top{margin-bottom:8px}#onboarding-step{padding:2px 8px;margin-bottom:4px}#onboarding .onboarding-header h2,#onboarding.compact-details .onboarding-header h2{font-size:21px;line-height:28px}#onboarding-progress{margin-top:9px}#onboarding-body{padding-top:9px;padding-bottom:12px}#onboarding-form{gap:12px}#onboarding.compact-details #onboarding-form{gap:12px}#onboarding-form .profile-compact{padding:12px}#onboarding-form .profile-compact+.profile-compact{padding-top:12px}#onboarding .onboarding-footer{padding-top:7px;padding-bottom:max(8px,env(safe-area-inset-bottom))}}
+@media(max-width:375px){#onboarding-progress{gap:4px}#onboarding-progress>span{gap:3px}#onboarding-form .onboarding-choices button{padding-inline:10px}#onboarding-form .concern-choices button{padding:8px;gap:6px;font-size:11px}#onboarding-form .concern-choices button>.icon:first-child{width:30px;height:30px;padding:6px}}
+/* English labels need room to wrap inside the original four-step layout. */
+#onboarding-progress>span{white-space:normal;text-align:center;line-height:12px;min-height:40px}
+#onboarding-progress b{flex:none}
+#onboarding-form .wheel-option{font-size:13px}
+#onboarding-form .wheel-option.selected{font-size:16px}

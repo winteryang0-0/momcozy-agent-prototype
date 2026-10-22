@@ -1,0 +1,13 @@
+{
+  "baseline_id": "B-MOMCOZY-20261022-R27",
+  "mode": "simulation",
+  "framework_sha256": "f68f9ecd9ae812dea892a9a4fcbfe13f3a95e3da0c3cc78f726c7007607c97f1",
+  "system_sha256": "cbc3599d326a24e9c0815b92c83fa281f8e2f2cfdc853bff4ac0220a24010248",
+  "source_sha256": "329787ff4962845a4636a51353a6fc9f2cdbf33225ad7107bed4418b5a20b7fc",
+  "scope_sha256": "4f7a71df4b979355260f7354c9eab03821b6c16fe33fe6aeb8a0ce280ce13054",
+  "confirmed_by": "Wentao",
+  "confirmation_locator": "本次对话：2026-10-22 用户关于 Git 协作基线的回复",
+  "confirmation_excerpt": "当前的高保真原型作为基线，作为可冻结内容；并另行设定一版内测优化版用于设计变更管理比如当前的onboarding优化；新建仓库；",
+  "supersedes": null,
+  "snapshot_sha256": "c744b66e47b5d676bbbb6374e2d4afcef5904842604031170bf72501c6ed8179"
+}

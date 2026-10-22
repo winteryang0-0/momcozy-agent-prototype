@@ -1,0 +1,268 @@
+[
+  {
+    "file": "reviews/home-light-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:30.694Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/home",
+    "width": 390,
+    "sha256": "8bc04d4a934ab07f736b1b18e521f86c25b4395cb2e66c2585ed7c0662245392",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/records-baby-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:30.965Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/records",
+    "width": 390,
+    "sha256": "ff5ccefa99e89cb83bf318f33eaf7b1d6eb6bd67e0796bf4746ea738f50a60c1",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/records-mom-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:48.077Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/records",
+    "width": 390,
+    "sha256": "3269228725ffca248b63684c1121d84c24965f3bb975bf692d4de9ee96a01c29",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/trend-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:48.398Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/records",
+    "width": 390,
+    "sha256": "25b147beb1a83a555819e215902daba37d02ae5ca651927625d7f32068eadfb7",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/mine-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:48.804Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/mine",
+    "width": 390,
+    "sha256": "adc290546d1b9f7f88c3aa09debae600d913850a827c8840ee0695e08cf7f7f7",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/assistant-ready-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:48.924Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/assistant",
+    "width": 390,
+    "sha256": "3f3f7a5cc85a82896d61e3fec85fb359761e896a2fa4472f1d4f22d7a661776c",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/record-types-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:49.424Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/assistant",
+    "width": 390,
+    "sha256": "5c8dfbb9182df5a5f5e2a5013c4c41c7cbd66dfddf191bc3b8ed3c4f8e2b8a5d",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/record-form-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:40:50.750Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/assistant",
+    "width": 390,
+    "sha256": "81c6d7f276318e0c9d615a5d89c2346ce458f9cc1f1c7ae60be660e82ca128c5",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "63fa065e1b37f4642b3a27777e52599011f3c3b255cc28cf839235264121e0c1",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/save-success-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:41:09.247Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=2#/assistant",
+    "width": 390,
+    "sha256": "26caebec7580a14c817996d47549d91bcbf76d3226074af5c2780d1a84d7c361",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "7bc9eaff898aab93c8d3dbbf1598c1c388e00109783f57a5d5f20ff0a016771b",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/save-unknown-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:42:42.528Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=4#/home",
+    "width": 390,
+    "sha256": "5db554e240c245962184d3282cf96d587b955db38d8a53612be84ab5ba7653d7",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "c20045649b0e986fa338d70cb1563b16f50e61da883f42383f7a32b7e009ee8f",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/task-permission-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:42:44.683Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=4#/assistant",
+    "width": 390,
+    "sha256": "8c287bfebcc647a43c72e40e70d83703373ef02a19809bb79c85fed80905bdc1",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "c20045649b0e986fa338d70cb1563b16f50e61da883f42383f7a32b7e009ee8f",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/task-offline-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:42:55.001Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=4#/assistant",
+    "width": 390,
+    "sha256": "3905e13a8dcd7440c7c4f0c4fb4914d836f22260d8c2fa7cf8bcc97a98158f19",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "c20045649b0e986fa338d70cb1563b16f50e61da883f42383f7a32b7e009ee8f",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/task-timeout-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:43:17.948Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=4#/assistant",
+    "width": 390,
+    "sha256": "23f85752547dd7d7540d9f78db1c1398c1287df66d60663acd58b7e2be01eb2d",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "34b5b597165956eb5718ef7b7f682005cc477b7a5166e1559dcac2fb2755bf1f",
+      "assets/app.js": "c20045649b0e986fa338d70cb1563b16f50e61da883f42383f7a32b7e009ee8f",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  },
+  {
+    "file": "reviews/task-indeterminate-390.png",
+    "operator": "/root",
+    "browser": "Codex in-app browser",
+    "version": "unknown",
+    "captured_at": "2026-10-19T12:44:11.716Z",
+    "fullPage": false,
+    "height": 844,
+    "url": "http://127.0.0.1:4192/?review=4#/assistant",
+    "width": 390,
+    "sha256": "af179e6bfc93a10c9370b4f37d34c30eef27110b112e7eed45ae2b5fc0be3854",
+    "material": {
+      "index.html": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c",
+      "assets/style.css": "5ecbf55de6048419722cccbc5318852d7ccdf1e0bee66ebf454fa66fba5a3b40",
+      "assets/app.js": "6fc2c2f1e216d97e6c99c45ffb8e4d6cc7df2559cb983da1873eea0091503202",
+      "assets/companion.js": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9",
+      "assets/icons.js": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    }
+  }
+]

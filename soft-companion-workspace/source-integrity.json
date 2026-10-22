@@ -1,0 +1,3936 @@
+{
+  "date": "2026-10-20",
+  "source_root": "C:\\Users\\user\\Documents\\ChatGPT\\Momcozy Agent",
+  "destination_root": "C:\\Users\\user\\Documents\\ChatGPT\\Momcozy Agent\\soft-companion-workspace",
+  "scope": "work copy of soft stone motion, framework, HOME, style candidates, visual references and current prototype",
+  "excluded_from_motion": [
+    "app/node_modules/",
+    "app/dist/"
+  ],
+  "file_count": 784,
+  "total_bytes": 79560031,
+  "sha256_match_all": true,
+  "unexpected_files": [],
+  "files": [
+    {
+      "path": "design/2026-10-19-age-action-evaluation/ASSESSMENT.txt",
+      "bytes": 6837,
+      "sha256": "06eba19579674622b86d60ab1e1b16c918f3e3161afb863f987e0f3c50ece8c6"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/age-logic-check.json",
+      "bytes": 868,
+      "sha256": "d1a3376e3f1d981b179ab137f2e340e7ed8cca27ed213088dfbfe1e0c7e40557"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/index.html",
+      "bytes": 14389,
+      "sha256": "ebd2a0e0213e6e00b96420623ed6bb8c0fb73de032534ce02729c167aca093dc"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/preview.cjs",
+      "bytes": 446,
+      "sha256": "3246e74c1c0e3c1847288c589a8bb746051536c592cf8be1a83550fbb6ae9327"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/runtime-evidence.json",
+      "bytes": 11033,
+      "sha256": "c5ad0e6bc3026826be8ee27b777433619606746744f08833abdea185315031fb"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/01-current-home.jpg",
+      "bytes": 34765,
+      "sha256": "ae60b9cf5c56ece9cd1c5f3347dcda32c025dc2cef804a84d7bd92ebb4fa11d3"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/02-current-home-controls-collapsed.jpg",
+      "bytes": 35081,
+      "sha256": "9723e22a439be1a8323ace8d73bd86f49ab4db08cdd35b52b6f316f08c56a7da"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/03-original-form.jpg",
+      "bytes": 29695,
+      "sha256": "dd8cceaedfd59de88f4b35e653b31d5270f80c391b9fb3a469285cf09f0626c9"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/04-home-B-390.jpg",
+      "bytes": 36547,
+      "sha256": "aa5c71ecc439f2c8b1d88949f251ff3a9f4a9465061feebb51ec6b53d44cb6b1"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/05-home-A-390.jpg",
+      "bytes": 33154,
+      "sha256": "a28d0d888dac620f168ffbc6c7e35de6c2eb614c23e75119ccf301043b0adfab"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/06-home-B-long-360.jpg",
+      "bytes": 36666,
+      "sha256": "4f32739f97ccdb175a9a1ad423a1c34a7e17528452d3f9af2a151c8461b8bc05"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/07-empty-missing-360.jpg",
+      "bytes": 30269,
+      "sha256": "371ea7f5d4efa5aea24cab0d9d7db99895d3ea3815a369906323df77803dbf42"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/08-chat-direct-360.jpg",
+      "bytes": 28462,
+      "sha256": "eb3a05f1a173375049b2983178a2e798fed6d53cde3860b45df931b997d2d8c7"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/09-saved-return-chat-360.jpg",
+      "bytes": 23445,
+      "sha256": "f385d8d11cecb28342bb5fd0951cef74dc1ee72a593a8a39b4d5ea3de0d1979a"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/10-chat-plain-360.jpg",
+      "bytes": 26020,
+      "sha256": "9d708ef9ff649ba5c0a68a8d88f551f30f5e831729a81ef3cf0a802068c95eb7"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/11-home-B-360.jpg",
+      "bytes": 35133,
+      "sha256": "4d3239c4305e95508461cace3633b49ca520b52c6cd8e7e26ce7299c2477ec38"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/12-home-desktop.jpg",
+      "bytes": 82815,
+      "sha256": "e9e612ca65fc1ad1dd77970f47859e06cc376cfc17e27ea94b2815a03c743464"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/13-product-short-360.jpg",
+      "bytes": 31661,
+      "sha256": "b6961367174912afc11d604d7cf41fcddef9fd8b7d108ea7a7b3e84476e01596"
+    },
+    {
+      "path": "design/2026-10-19-age-action-evaluation/screenshots/14-product-long-360.jpg",
+      "bytes": 39383,
+      "sha256": "294fcacadf8becf508b8236c47396ad8fcf989a1f2aea6760a03083b5f54ba0e"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/character-comparison.html",
+      "bytes": 5528240,
+      "sha256": "8f2f8a2cd3a577c31a2866f6783391c5106b3412c2b706c8a261c73c26d3e8dd"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/comparison-desktop.png",
+      "bytes": 150800,
+      "sha256": "40ff4fe8ea5fd5459cc6e1e2a99d773bc0ef314e70bf73983e3d654950ad3140"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/comparison-mobile.png",
+      "bytes": 114511,
+      "sha256": "ffa202ee28de30c4144feb0cdd0f25c09d56171e6a6e1de48e464b643d71abd1"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/female-companion-v0.1.png",
+      "bytes": 930050,
+      "sha256": "1d16d913c4a52fa568642abd0bc04b5cb2c384308890014aebba03e2a70520d5"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/folded-assistant-v0.1.png",
+      "bytes": 1688120,
+      "sha256": "2f90f525e310e7f8dea656bf2c0a826f0e29a93969ff6a157d3db4c3c3b7b53b"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/generation-prompts-v0.1.json",
+      "bytes": 6241,
+      "sha256": "eea593ff732713bda4107b990d328942e314f580091a94fe5c205b59afc37e2b"
+    },
+    {
+      "path": "design/2026-10-19-ai-characters/soft-companion-v0.1.png",
+      "bytes": 1516074,
+      "sha256": "ceb0185b13376654ef9a43f0aa49bb0929f96518305fc75ab3d4e2c3efb8cc98"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/FRAMEWORK.txt",
+      "bytes": 2561,
+      "sha256": "bcc78d404e4940acb6c939af21940a1b7a4aa00d704caa2e6731e74cdf9c5059"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/build.cjs",
+      "bytes": 23177,
+      "sha256": "6fa79603e2422bdfd0e13342925f4c920cc69da9655115111249fb7155ef2579"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/bundle/README.txt",
+      "bytes": 941,
+      "sha256": "f8f364cf5826df47dec431c16d3bfbd71ea8b5be6b56be285da6ac153ed8e6f4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/bundle/assets/app.js",
+      "bytes": 17432,
+      "sha256": "00ce7f729921f13a8879e06bb2f31019a47bdce59a8b02777ef65fc8979df77d"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/bundle/assets/styles.css",
+      "bytes": 7999,
+      "sha256": "912c8b8c93889ccc4f345c74869c73cc6d484cb7551b2c56a3cb192bc1c59929"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/bundle/index.html",
+      "bytes": 28900,
+      "sha256": "9ac91f21bd321c923c4e58c0c709570ef30db2e45f884d0d741f1ca75a49ac80"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/candidate-summary.json",
+      "bytes": 736,
+      "sha256": "633309352557d10108f3c1133c889566ece5540433d3d966b2e4a21f8d687e3a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/check_candidate.py",
+      "bytes": 876,
+      "sha256": "9650c715ff462e9faa474d189c9f6339ab25df81c7735698d77fd62e0e5f316b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/design.json",
+      "bytes": 48711,
+      "sha256": "3ecf5d025f61e4c3a25a188736403fda0ee70b2d33b0dd7d2d38cb006e72bfdc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/document.cjs",
+      "bytes": 9352,
+      "sha256": "deb34e4c1a7b503bf98bdce0fed4f6edd1f51ca8a04ee96ddae4ee5c51d2601c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/framework-seed.json",
+      "bytes": 20291,
+      "sha256": "cdfa50af60914f8d4d7212e240d30db036de699c21baf8605ac9a1c491f8d8fb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/manifest.json",
+      "bytes": 1040,
+      "sha256": "286d483a97b49ca866f5b37a73e79348d753e7b91e6167b41f9f0b3945be1b48"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/preview.cjs",
+      "bytes": 745,
+      "sha256": "00749c6c1e69e8dba84f2fc88b7c8c9aae52d75dc429429ca7cc00fde25e16d1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/challenger.json",
+      "bytes": 8754,
+      "sha256": "83cb88bdaaa5861a50065d51eff6f8dc4d54c6d4f613d6d5d26a1b45c8a4334b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/form-desktop.png",
+      "bytes": 95961,
+      "sha256": "11e669b1fac520842ae73c8d7ec9fcb34fd3dd626ddfe7e29ae120348bd2c598"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/home-desktop-final.png",
+      "bytes": 97037,
+      "sha256": "f81ed7b4e6be564f86c1cea28d18cd71cc201c847ef7e3b70a2546c373a0c8bf"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/home-desktop.png",
+      "bytes": 79970,
+      "sha256": "c97866b49b2ce3668bf08d92f1d7e45fa1db9ef95b8291b961fac2f4634b4df7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/home-mobile-final.png",
+      "bytes": 35081,
+      "sha256": "9723e22a439be1a8323ace8d73bd86f49ab4db08cdd35b52b6f316f08c56a7da"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/home-mobile.png",
+      "bytes": 35081,
+      "sha256": "9723e22a439be1a8323ace8d73bd86f49ab4db08cdd35b52b6f316f08c56a7da"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/runtime.json",
+      "bytes": 3047,
+      "sha256": "0954aadcb019ab162485e4e02429f94f832fd83d17e978167ce637ce2cb820be"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "b7f0afedb93d1add2c397728b3b6b5d9899d8c7440fa44cf2a6674161f906a5c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/tasks-desktop.png",
+      "bytes": 99433,
+      "sha256": "f6bce395abfd460e80713376782e4be87b68f696b49e9a320b26b5c43824122e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/tasks-mobile.png",
+      "bytes": 36242,
+      "sha256": "f1eef0a04a0a610a7d5ccd62176bdda3375d563413ab8ae17eb81573ba4cc68d"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/reviews/visual-self-review.json",
+      "bytes": 2212,
+      "sha256": "25bf56481290cb3f6f494bf6addfe7aec77bf217e6f57c1253fe473ee85bcbe0"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-0015884a-eb1d-4a81-a40e-843f1287d9d4.png",
+      "bytes": 56286,
+      "sha256": "3e1fa2a5bd5a085d1e485295784a264215b8e7666d9ff04d19c67286e7e86e09"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-14cb81c3-12c4-4616-9b85-a7145c0048db.png",
+      "bytes": 135590,
+      "sha256": "56af8cfc55e1e9302a6d25b191c29ba90755c9ff04e71f0db9c94f97cbbf09c4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-37c5165e-4e49-4969-871f-a777bacb6034.png",
+      "bytes": 66939,
+      "sha256": "2e14d7c3c16c5990a209aa37d01b461f652eb74bbca044fcc6374af676bdf789"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-47ef0bf1-3b9d-465b-806d-11fc4bdc4be5.png",
+      "bytes": 37679,
+      "sha256": "13733a7b3f1e05038a77a65e182f9637b617f2978180a51585ad65ce6bb27121"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-57f08afc-7ff2-4da2-a82d-bd8efe29b981.png",
+      "bytes": 43380,
+      "sha256": "0cd79394e4bea685cdc99a36526c1df44a6c01500aaaf2df89b702d8612de9bb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-621998f8-fb7f-40f8-8f17-1d174f1bcb33.png",
+      "bytes": 133603,
+      "sha256": "a1e942796b462b6bd5aae4d41d86d19c185c45d9719bfb3e665cb22d80178e70"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-6b1533f4-c439-4528-9eb5-82d0c9da0a35.png",
+      "bytes": 41115,
+      "sha256": "f7c165058647cd665ba008571e493ea1bbb2cbf8755312e6e3e6a33e3d09dffc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-6f0ea783-90fd-4e78-a198-0d4be5310a18.png",
+      "bytes": 130574,
+      "sha256": "a0e0ee2a33605068145bfb8940661244e87f07d56457ca9bdaa186a8b1be9209"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-831a0da8-626d-47cd-9021-f998aaff6ab6.png",
+      "bytes": 65381,
+      "sha256": "05a54e584a52ba60c150cce5210ce7f88298373809cdc1822c88f3c032d3c703"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-875ee3fb-a988-41ea-bb44-fb3581464632.png",
+      "bytes": 69224,
+      "sha256": "2a4dcdde4713b56c5e65a796621733ba3e6cac88ee84ecfcf48b8943dbf9c01a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-935b3d94-6950-4759-abd2-69662cb88d84.png",
+      "bytes": 40915,
+      "sha256": "58fabd1ce6b893badc7cf01c6ccd18577724ccb71b85c06ec1225fdb12bb2c29"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-a4426bb1-fbb9-46a2-989e-e3882bf14d15.png",
+      "bytes": 122531,
+      "sha256": "1678f2d38d7436245fa6b310536ec894057e27150adbe0951a9860928e205749"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-bea7f8fe-ff68-4dd2-9dcb-0106827fa076.png",
+      "bytes": 131050,
+      "sha256": "8d00d9ba76b473e7badd4bdfe28ce9249d988c2aa0262db1ea2f59ff00c448b4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-da2dff75-b8ff-4b0c-a6db-0e3ec03fa7b9.png",
+      "bytes": 44227,
+      "sha256": "a89b349275f56926bb600d6d20610d06623efe39f69d34e389334f86455bfb65"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-e4fde95d-c9a9-41f6-aa04-578059fb9fa7.png",
+      "bytes": 125566,
+      "sha256": "c1061aa19bf4b67480f9eb6bb6f2269473204e0bd86aa26307ecf17f8de6cafa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-f152b617-5cca-4c01-869f-eaef4e365b22.png",
+      "bytes": 69122,
+      "sha256": "ad7412d424a455d88e0da86fe494feb737278a357905b0ce71806c5421ffd197"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/codex-clipboard-fd2aa36a-8f0e-43a5-b16a-ca8eaebad549.png",
+      "bytes": 79717,
+      "sha256": "6075631eb9ba1d5aad138d4d3d8d208e01b9174fd7055a6dc4f6fe8c2f2cff18"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.1-candidate/sources/requirements-thread.json",
+      "bytes": 37380,
+      "sha256": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/CHANGELOG.txt",
+      "bytes": 3056,
+      "sha256": "4fda96f17334d6b5e78aec997b3d2b0d1a70d03610a889cc52413020168b254a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/FRAMEWORK.txt",
+      "bytes": 2801,
+      "sha256": "da0811036b464a4667d057a4c059a886bad3e754fa3e386ff3cdb0178af6c14c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/build.cjs",
+      "bytes": 28321,
+      "sha256": "a405da96eb193a539888c9d04fa2ac71d1c9f183fba542aa21918dde635f97db"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/bundle/README.txt",
+      "bytes": 1020,
+      "sha256": "0981092474259a9673ff7bacba199f4b0a672f639f91960c344e104278594839"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/bundle/assets/app.js",
+      "bytes": 20134,
+      "sha256": "03df708e4e57ba55d65082960037c7614e9b7224c1a2b588f1a83ceee8834dec"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/bundle/assets/styles.css",
+      "bytes": 9380,
+      "sha256": "2aae88edb0ceb0be895f006fdf032405d4e574d2df05bf23b87d1f5305432f06"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/bundle/index.html",
+      "bytes": 37395,
+      "sha256": "2dd7908a7758417dc7a55c58baf3b492cca3c50fd3dea4e7b7910e970ed7a911"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/candidate-summary.json",
+      "bytes": 736,
+      "sha256": "bc770568eadd69a634169922ce68db40a256c0c19ced6e03beac5b6b7ceb956e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/check_candidate.py",
+      "bytes": 876,
+      "sha256": "860dd25e547f53abcf6638474164ad1e0780ac785ee976ababc526346bea9589"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/design.json",
+      "bytes": 66655,
+      "sha256": "5ea73246b26c945ff0aa24b61308d0f9106e9baaf9e1e8a60e0d64fc734ad830"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/document.cjs",
+      "bytes": 11573,
+      "sha256": "7f38348493400652db0cba09c5a7b7fb4969420b93738e1ea41d3f0897c1d0a7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/extend-sidebar.cjs",
+      "bytes": 14507,
+      "sha256": "a9c2059dfbbccec852f9ca392c863ac959ce75f11dfa775d433dfa1f7252ea42"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/framework-seed.json",
+      "bytes": 25164,
+      "sha256": "aff06f20903aad2e200671c84800caf768e04d6d7d844824f596781fb55dbccf"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/manifest.json",
+      "bytes": 696,
+      "sha256": "8527944060d55df3ed67ab1f7ab8a343ce67adce32b742cd63999b8089804997"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/preview.cjs",
+      "bytes": 745,
+      "sha256": "0a0232bad6bb04d86abeba7db37488c8d48f7e8950c797e03c5aca3c69613ec7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/baby-age-mobile.jpg",
+      "bytes": 25426,
+      "sha256": "d6617dd23cd2321a5bf5a8c99552eb10b65890d0dfcc59c2b8155a785edac770"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/baby-desktop.jpg",
+      "bytes": 89131,
+      "sha256": "2489a10effa368dd23ca7aae6b41d41ed3691595d51643f7490147ff7bb134ac"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/baby-mobile.jpg",
+      "bytes": 25674,
+      "sha256": "3be6757f9fc1cd5c805223c03fe74bfb3110c05d868ba040d345bb9edcff977a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/body-desktop.jpg",
+      "bytes": 72314,
+      "sha256": "4260469d48b7fe915c24380e56e28a227c563adedd2eb85d524393449fde4fdb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/body-mobile.jpg",
+      "bytes": 25182,
+      "sha256": "d6a189c7e6ad546daf5775543f85bd0f0c807de26c01090ecc36553118d5f12c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/device-info-desktop.jpg",
+      "bytes": 76572,
+      "sha256": "a2552b3f98b268f1ba62319ad6d56a95d868ddffd0d7ee5f436bc75a7ed20657"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/device-info-mobile.jpg",
+      "bytes": 25561,
+      "sha256": "45a00781a19ffd0bb69ea65a6301217b56bb37b69a1bb0062a42ba06024a9bdc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/devices-desktop.jpg",
+      "bytes": 89196,
+      "sha256": "712c369df1c5a1af60a75a60c7f28431c75a90151bc39848f5f8607188b87348"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/devices-mobile.jpg",
+      "bytes": 25482,
+      "sha256": "92c675e2ae485c65492a60becb4504362ffc55b7ae36a74330ecc459d9e3d6f2"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/feeding-desktop.jpg",
+      "bytes": 77068,
+      "sha256": "313684173b529162e5d93af3c796378a84f2c792414683c1d0ca29706c4e4faa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/feeding-mobile.jpg",
+      "bytes": 27646,
+      "sha256": "fab3e7f252f72adbf655292f35145289a87cb1163f3844df01c19e7433554c77"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/growth-desktop.jpg",
+      "bytes": 71951,
+      "sha256": "438dc90a372f1c6fee256973008f3354f3124b04e52a07977bdd8995731eff98"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/growth-mobile.jpg",
+      "bytes": 25910,
+      "sha256": "bf511676627d7464459fbe09b54f4c185a20f29e351979f8ebd063cf3ed3120c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/mine-desktop.jpg",
+      "bytes": 89568,
+      "sha256": "4c06954b6307b26da5e4ad6be90e73141943a6d339a7172756ab7fad7acd8387"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/mine-mobile.jpg",
+      "bytes": 25568,
+      "sha256": "06a3ea9ca2bb59d18c9d12961e4350c6d6dfc5ae96ee7acfcd291bfbc55f9c74"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/sidebar-desktop.jpg",
+      "bytes": 64061,
+      "sha256": "6d29bc812f5f2c8ca258683a33aa0f31dd2f758157f8d2238e37823d9896daba"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/sidebar-mobile.jpg",
+      "bytes": 12341,
+      "sha256": "e80d3216948b2a4c0582b2672a8523a9a0c81339c00907ec421f8d435922b95f"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/sync-desktop.jpg",
+      "bytes": 72064,
+      "sha256": "35b211ee463d79eca4907fddc488e083566ff19a0c6a0e5df54226a8f9fc5c8c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/sync-mobile.jpg",
+      "bytes": 25633,
+      "sha256": "90f0fb1cbd04717775f69f655f35782786aca0ba7f8d490e331904475c536fb5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/trend-desktop.jpg",
+      "bytes": 76464,
+      "sha256": "88babb4de6cfcaabc8241825f706fa0945b80c3eeaa688a9aad71e6e300849ad"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/screenshots/trend-mobile.jpg",
+      "bytes": 24791,
+      "sha256": "8fe62623c7f5d64f307d83109ee328359cccce52e0af0e12134025d400d898ee"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/sidebar-consistency.json",
+      "bytes": 8531,
+      "sha256": "77529dc894126776baac710b59fd6f65a6a478e2666e81be8d53a01a051932b7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/sidebar-runtime.json",
+      "bytes": 3101,
+      "sha256": "b47ab626d2a815af7fd5683a8a99ae94502638cadd7742d341b3b630f5b2cf69"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/sidebar-visual.json",
+      "bytes": 27233,
+      "sha256": "2604c505bc1cc59c8d2595c5560921c0c880a0e6266b38dd4e618947f995307b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "5be5a3ab22f0a63559b60127d435589b4f78fe4fca0c718be22ae96232ef0732"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-0015884a-eb1d-4a81-a40e-843f1287d9d4.png",
+      "bytes": 56286,
+      "sha256": "3e1fa2a5bd5a085d1e485295784a264215b8e7666d9ff04d19c67286e7e86e09"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-14cb81c3-12c4-4616-9b85-a7145c0048db.png",
+      "bytes": 135590,
+      "sha256": "56af8cfc55e1e9302a6d25b191c29ba90755c9ff04e71f0db9c94f97cbbf09c4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-37c5165e-4e49-4969-871f-a777bacb6034.png",
+      "bytes": 66939,
+      "sha256": "2e14d7c3c16c5990a209aa37d01b461f652eb74bbca044fcc6374af676bdf789"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-47ef0bf1-3b9d-465b-806d-11fc4bdc4be5.png",
+      "bytes": 37679,
+      "sha256": "13733a7b3f1e05038a77a65e182f9637b617f2978180a51585ad65ce6bb27121"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-57f08afc-7ff2-4da2-a82d-bd8efe29b981.png",
+      "bytes": 43380,
+      "sha256": "0cd79394e4bea685cdc99a36526c1df44a6c01500aaaf2df89b702d8612de9bb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-621998f8-fb7f-40f8-8f17-1d174f1bcb33.png",
+      "bytes": 133603,
+      "sha256": "a1e942796b462b6bd5aae4d41d86d19c185c45d9719bfb3e665cb22d80178e70"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-6b1533f4-c439-4528-9eb5-82d0c9da0a35.png",
+      "bytes": 41115,
+      "sha256": "f7c165058647cd665ba008571e493ea1bbb2cbf8755312e6e3e6a33e3d09dffc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-6f0ea783-90fd-4e78-a198-0d4be5310a18.png",
+      "bytes": 130574,
+      "sha256": "a0e0ee2a33605068145bfb8940661244e87f07d56457ca9bdaa186a8b1be9209"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-831a0da8-626d-47cd-9021-f998aaff6ab6.png",
+      "bytes": 65381,
+      "sha256": "05a54e584a52ba60c150cce5210ce7f88298373809cdc1822c88f3c032d3c703"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-875ee3fb-a988-41ea-bb44-fb3581464632.png",
+      "bytes": 69224,
+      "sha256": "2a4dcdde4713b56c5e65a796621733ba3e6cac88ee84ecfcf48b8943dbf9c01a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-935b3d94-6950-4759-abd2-69662cb88d84.png",
+      "bytes": 40915,
+      "sha256": "58fabd1ce6b893badc7cf01c6ccd18577724ccb71b85c06ec1225fdb12bb2c29"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-a4426bb1-fbb9-46a2-989e-e3882bf14d15.png",
+      "bytes": 122531,
+      "sha256": "1678f2d38d7436245fa6b310536ec894057e27150adbe0951a9860928e205749"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-bea7f8fe-ff68-4dd2-9dcb-0106827fa076.png",
+      "bytes": 131050,
+      "sha256": "8d00d9ba76b473e7badd4bdfe28ce9249d988c2aa0262db1ea2f59ff00c448b4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-da2dff75-b8ff-4b0c-a6db-0e3ec03fa7b9.png",
+      "bytes": 44227,
+      "sha256": "a89b349275f56926bb600d6d20610d06623efe39f69d34e389334f86455bfb65"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-e4fde95d-c9a9-41f6-aa04-578059fb9fa7.png",
+      "bytes": 125566,
+      "sha256": "c1061aa19bf4b67480f9eb6bb6f2269473204e0bd86aa26307ecf17f8de6cafa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-f152b617-5cca-4c01-869f-eaef4e365b22.png",
+      "bytes": 69122,
+      "sha256": "ad7412d424a455d88e0da86fe494feb737278a357905b0ce71806c5421ffd197"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/codex-clipboard-fd2aa36a-8f0e-43a5-b16a-ca8eaebad549.png",
+      "bytes": 79717,
+      "sha256": "6075631eb9ba1d5aad138d4d3d8d208e01b9174fd7055a6dc4f6fe8c2f2cff18"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/requirements-thread.json",
+      "bytes": 37380,
+      "sha256": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/requirements-v02.json",
+      "bytes": 49944,
+      "sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/sidebar-0935a1df-f726-4c45-8917-d928db2035ab.png",
+      "bytes": 35398,
+      "sha256": "c1f7a939c1f0d0b4321e16c42c95a33353a075a50633a68adf35453420a10637"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/sidebar-4c217a81-9d2b-43ee-9994-7e12a5048885.png",
+      "bytes": 33086,
+      "sha256": "8f8fc3565e617b63baf35880864935de1c2c78423c3a2d80940e17f5c5108ce7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/sidebar-dc7c158a-592d-4583-a841-1e7c55140638.png",
+      "bytes": 31621,
+      "sha256": "182680d69310f64a14879a9d459b03c782a617fbe4613e129c322ec1eee2d70e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/sidebar-ddb61e70-4a8b-4c77-ac8f-a382f5097e90.png",
+      "bytes": 33756,
+      "sha256": "d009d78abd5122b6168ddbd3592af432d146ded868da1f168b92950c328a5ec9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.2-candidate/sources/sidebar-requirements.json",
+      "bytes": 11812,
+      "sha256": "6180b9f9e6e88235f39bb8cb4ceecb08ac298f1454414df6aae8d3bb412ae526"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/CHANGELOG.txt",
+      "bytes": 1722,
+      "sha256": "e7d11329d969e6215388125e06b4c63f411f580fad95ebc13f50b392c8e1e64f"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/FRAMEWORK.txt",
+      "bytes": 3186,
+      "sha256": "5a7543a5e1e6a706514ad0e302bef0c7f0e1f62bdb987d7529a1b61e345712cf"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/app-upgrade.cjs",
+      "bytes": 14990,
+      "sha256": "ce8bd0e8c58d4df9b7ba9a5593cc6c0a6c3705a425ca318f198a3ccca63006a3"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/build.cjs",
+      "bytes": 34834,
+      "sha256": "b55b5a826d1a3946abb257371bcb46efb232b2088cd9bcdfc568156a10fc7afc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/bundle/README.txt",
+      "bytes": 1410,
+      "sha256": "607945898a27e6c8124814ed7fa3d9ed03af11d796dd2d0c38e95092084b47aa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/bundle/assets/app.js",
+      "bytes": 28942,
+      "sha256": "a907eec46f43a24ddbd76da839d31f733bdacc3618f678ec6d7dab655987dbbc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/bundle/assets/styles.css",
+      "bytes": 12853,
+      "sha256": "ababc597ccb70903146ed4e0941190329dcd4920bfe7c5de48a6a172a72da1e5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/bundle/index.html",
+      "bytes": 41677,
+      "sha256": "7a762676241f14ce1fa934605292f434dd667b4f448803a102c77111efae2cb5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/candidate-summary.json",
+      "bytes": 736,
+      "sha256": "061a893bfeae48b46479dfc8ec4e90306fafa7c19cbd0db6bb52aa4177ddd64f"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/check_candidate.py",
+      "bytes": 876,
+      "sha256": "ecb58c9ccafbd721451bad701f5654c0922aff3a35cf8c244aac7cdabd900d02"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/design.json",
+      "bytes": 84278,
+      "sha256": "41b9768fcb307059606ee47699137819efcd96f0426a8882f84e67f9248f0fb7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/document.cjs",
+      "bytes": 17846,
+      "sha256": "57fe08cba7e42a6dba22fc3482e6035d2f16d832f385937f6312d813a8d8fc39"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/framework-seed.json",
+      "bytes": 28076,
+      "sha256": "bb1091274a15af0b8ade300d79c716b0f130613e2ed1245e4c1063a67265bd55"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/manifest.json",
+      "bytes": 5522,
+      "sha256": "10a1c2d498b4ddccb63c44258b58d4cf4d7943423f0c081ea48dcbc725748721"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/preview.cjs",
+      "bytes": 745,
+      "sha256": "a9200b1a4c037245bec84e2547f476a4f7bf4fc0fbf02fec8b31d731b8c1e5e8"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/age-function-check.json",
+      "bytes": 1408,
+      "sha256": "a83cf67f5be5e0d9dc03cd8c1d3834ff70b6f2d7a9f9b69fa6254943288b8bdf"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/continuous-consistency.json",
+      "bytes": 13409,
+      "sha256": "9852ea9d7c53199a11181423d05888430d898f0de77116e1b4db503091cd62a6"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/continuous-visual.json",
+      "bytes": 38961,
+      "sha256": "40b5284002584b95b1b13e5f64fd6fcda75c4329c0c1190a73632de734e6aa23"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/runtime-consistency-evidence.json",
+      "bytes": 32848,
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/runtime.json",
+      "bytes": 32848,
+      "sha256": "cec0b7ecd819d7103039cea2b4024cb21464d69b51228b942d041264579ed013"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/attachment-final-360.jpg",
+      "bytes": 40007,
+      "sha256": "0bc597afc6a826307f8d3c8904ffd7033609f96eb58ede551866457bcae0b45a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/attachment-final-mobile.jpg",
+      "bytes": 39174,
+      "sha256": "809bd4be4fa0ae75806269a7d584f29501787e0972b176f86885c50ebaea5244"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/attachments-mobile.jpg",
+      "bytes": 42470,
+      "sha256": "ffec66542d8a67b3f1a0250e40e8dec2b87f61673869f4eed1d6cc646277f3dd"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/camera-confirm-mobile.jpg",
+      "bytes": 36604,
+      "sha256": "633516fa9ee132a6bea4c07e5a92277907756517267669e6abb638b8868a8d5a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/camera-error-final-390.jpg",
+      "bytes": 38476,
+      "sha256": "12fb9a62f6ed4c985062ebf054b4a8d2ea4736e05a97293332eb52e8401d2813"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/camera-error-mobile.jpg",
+      "bytes": 39982,
+      "sha256": "c14c7be3122dc9dda67419a80308ea1a2ef0f831ffdb98a209c93c7771e41ce7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/camera-preview-final-390.jpg",
+      "bytes": 36873,
+      "sha256": "f62b636004ddd1b206d80a29dc7c6c2169f2fc7ca867378053a5a42dfe3c80c9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-current-390.jpg",
+      "bytes": 39390,
+      "sha256": "372747f9240f4c5bde24f547485ec3332a998ddbe76fcce7b24f2e7d16e79a6f"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-current-desktop.jpg",
+      "bytes": 102836,
+      "sha256": "4feae6ab7ec46ee76a7c9958e368139a6b79a0ee25e2513d91b22d16f76e3ca1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-final-desktop.jpg",
+      "bytes": 107904,
+      "sha256": "d0b1ff15c51b3f1e73f88af8d8eb14ec029ad6242a83ef234b95b361b53c8ff1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-focused-final-390.jpg",
+      "bytes": 37856,
+      "sha256": "ed181cbaa245f4a24f56d6b95be4fea4759b5367cca1534c472682d46ef048cc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-focused-mobile.jpg",
+      "bytes": 38346,
+      "sha256": "c237174baf1420903be379507522623b3e06c30678e778f41955fdc29dff0b56"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-idle-mobile.jpg",
+      "bytes": 38604,
+      "sha256": "9926d960b4a8d81938c8cf21cafc72d52fad6449a900033b278ed67c04c2cd68"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/chat-waterfall-mobile.jpg",
+      "bytes": 41620,
+      "sha256": "1c0347c54d0dd2f300ac7434b6ad519b93b7544dbd892d7db8bf2722759b74e7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/poop-scroll-fixed-360.jpg",
+      "bytes": 34492,
+      "sha256": "7aab4ee24b643bd6a2d5161f2ab2fe821d8585eea68f0c3db6cebda1e2bcc8b0"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/reference-4174.jpg",
+      "bytes": 85527,
+      "sha256": "d442135f237f628af0119f5d2345dea2e53772ce97511c95a22f8d41f4cdbab6"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/send-error-final-390.jpg",
+      "bytes": 42954,
+      "sha256": "b7de507dfe78d3e0d8cd462bc606c8ea6c572482eb52e086aabfa7aae95954ae"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/send-error-mobile.jpg",
+      "bytes": 41660,
+      "sha256": "80139c08ba57d338f9562fe24aa79fc0a47a222c731779669affca758fbd0957"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/task-final-360.jpg",
+      "bytes": 39413,
+      "sha256": "6cae4bcdd23ae4bd80d782db3f57a71ac3b7ccb526a8cd80e505469c1bab62e1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/task-scroll-fixed-360.jpg",
+      "bytes": 34972,
+      "sha256": "ead1c65b2d191e5057e3eefef139e851a8629bed86e2743eb76f2474ae57714e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/upload-error-final-390.jpg",
+      "bytes": 48771,
+      "sha256": "37db85449fe7258fc70041f43282f2d2d0bed962292463ff12840b6ea78d17ad"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/screenshots/upload-error-mobile.jpg",
+      "bytes": 43671,
+      "sha256": "5e57725b48b6e059efca386f1c0614cbfe3159d6d5df002f8bf563f352e4a3cb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "3e31fd685e2523ddb586e3a9ef582196e5a443d06974f72b1498c81096bfb214"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/reviews/task-scroll-fix.json",
+      "bytes": 1049,
+      "sha256": "9041a3466069ebefb7d230047bd7c8b8b9fdb1bd6b21ae08b975121a28e93318"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-0015884a-eb1d-4a81-a40e-843f1287d9d4.png",
+      "bytes": 56286,
+      "sha256": "3e1fa2a5bd5a085d1e485295784a264215b8e7666d9ff04d19c67286e7e86e09"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-14cb81c3-12c4-4616-9b85-a7145c0048db.png",
+      "bytes": 135590,
+      "sha256": "56af8cfc55e1e9302a6d25b191c29ba90755c9ff04e71f0db9c94f97cbbf09c4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-37c5165e-4e49-4969-871f-a777bacb6034.png",
+      "bytes": 66939,
+      "sha256": "2e14d7c3c16c5990a209aa37d01b461f652eb74bbca044fcc6374af676bdf789"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-47ef0bf1-3b9d-465b-806d-11fc4bdc4be5.png",
+      "bytes": 37679,
+      "sha256": "13733a7b3f1e05038a77a65e182f9637b617f2978180a51585ad65ce6bb27121"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-57f08afc-7ff2-4da2-a82d-bd8efe29b981.png",
+      "bytes": 43380,
+      "sha256": "0cd79394e4bea685cdc99a36526c1df44a6c01500aaaf2df89b702d8612de9bb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-621998f8-fb7f-40f8-8f17-1d174f1bcb33.png",
+      "bytes": 133603,
+      "sha256": "a1e942796b462b6bd5aae4d41d86d19c185c45d9719bfb3e665cb22d80178e70"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-6b1533f4-c439-4528-9eb5-82d0c9da0a35.png",
+      "bytes": 41115,
+      "sha256": "f7c165058647cd665ba008571e493ea1bbb2cbf8755312e6e3e6a33e3d09dffc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-6f0ea783-90fd-4e78-a198-0d4be5310a18.png",
+      "bytes": 130574,
+      "sha256": "a0e0ee2a33605068145bfb8940661244e87f07d56457ca9bdaa186a8b1be9209"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-831a0da8-626d-47cd-9021-f998aaff6ab6.png",
+      "bytes": 65381,
+      "sha256": "05a54e584a52ba60c150cce5210ce7f88298373809cdc1822c88f3c032d3c703"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-875ee3fb-a988-41ea-bb44-fb3581464632.png",
+      "bytes": 69224,
+      "sha256": "2a4dcdde4713b56c5e65a796621733ba3e6cac88ee84ecfcf48b8943dbf9c01a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-935b3d94-6950-4759-abd2-69662cb88d84.png",
+      "bytes": 40915,
+      "sha256": "58fabd1ce6b893badc7cf01c6ccd18577724ccb71b85c06ec1225fdb12bb2c29"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-a4426bb1-fbb9-46a2-989e-e3882bf14d15.png",
+      "bytes": 122531,
+      "sha256": "1678f2d38d7436245fa6b310536ec894057e27150adbe0951a9860928e205749"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-bea7f8fe-ff68-4dd2-9dcb-0106827fa076.png",
+      "bytes": 131050,
+      "sha256": "8d00d9ba76b473e7badd4bdfe28ce9249d988c2aa0262db1ea2f59ff00c448b4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-da2dff75-b8ff-4b0c-a6db-0e3ec03fa7b9.png",
+      "bytes": 44227,
+      "sha256": "a89b349275f56926bb600d6d20610d06623efe39f69d34e389334f86455bfb65"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-e4fde95d-c9a9-41f6-aa04-578059fb9fa7.png",
+      "bytes": 125566,
+      "sha256": "c1061aa19bf4b67480f9eb6bb6f2269473204e0bd86aa26307ecf17f8de6cafa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-f152b617-5cca-4c01-869f-eaef4e365b22.png",
+      "bytes": 69122,
+      "sha256": "ad7412d424a455d88e0da86fe494feb737278a357905b0ce71806c5421ffd197"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/codex-clipboard-fd2aa36a-8f0e-43a5-b16a-ca8eaebad549.png",
+      "bytes": 79717,
+      "sha256": "6075631eb9ba1d5aad138d4d3d8d208e01b9174fd7055a6dc4f6fe8c2f2cff18"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/continuous-chat-request.json",
+      "bytes": 717,
+      "sha256": "55a17c0ac50948150829bb8ee4d4c2b39ea4bf7da6a74bcef0be375fbb6a38f5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/requirements-thread.json",
+      "bytes": 37380,
+      "sha256": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/requirements-v02.json",
+      "bytes": 49944,
+      "sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/requirements-v03.json",
+      "bytes": 51271,
+      "sha256": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/sidebar-0935a1df-f726-4c45-8917-d928db2035ab.png",
+      "bytes": 35398,
+      "sha256": "c1f7a939c1f0d0b4321e16c42c95a33353a075a50633a68adf35453420a10637"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/sidebar-4c217a81-9d2b-43ee-9994-7e12a5048885.png",
+      "bytes": 33086,
+      "sha256": "8f8fc3565e617b63baf35880864935de1c2c78423c3a2d80940e17f5c5108ce7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/sidebar-dc7c158a-592d-4583-a841-1e7c55140638.png",
+      "bytes": 31621,
+      "sha256": "182680d69310f64a14879a9d459b03c782a617fbe4613e129c322ec1eee2d70e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/sidebar-ddb61e70-4a8b-4c77-ac8f-a382f5097e90.png",
+      "bytes": 33756,
+      "sha256": "d009d78abd5122b6168ddbd3592af432d146ded868da1f168b92950c328a5ec9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/sources/sidebar-requirements.json",
+      "bytes": 11812,
+      "sha256": "6180b9f9e6e88235f39bb8cb4ceecb08ac298f1454414df6aae8d3bb412ae526"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.3-candidate/upgrade.cjs",
+      "bytes": 13713,
+      "sha256": "cea57bc51187a10d78175d7f6afeb130a2033304d3741168d3d95425142a4a64"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/ASSET-CONTRACT.txt",
+      "bytes": 6654,
+      "sha256": "1d6def467b6562ba96d89645b84cd6e8e3427528a27c4e82f433d8e4ccb3c8b1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/CHANGELOG.txt",
+      "bytes": 729,
+      "sha256": "5c33e0ac7c6000f8d58ca9d80a173e803e3d10d03a446f34c86130e8f41578ef"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/FRAMEWORK.txt",
+      "bytes": 3533,
+      "sha256": "052c3163bf8897cd1e98647b232c2c1645ce12aaa67a10f772544a1f29975661"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/README.txt",
+      "bytes": 1053,
+      "sha256": "3287d1e0237744b7d55898f55ae81141c963fd69fa9abd220c12f23f5d0b441c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/app.js",
+      "bytes": 37621,
+      "sha256": "e21156dde44a2445f30c462b1162393bdf7b589ef9ce2d3217787ea9fbc5a304"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/asset-map.js",
+      "bytes": 1041,
+      "sha256": "4e5ea669587885c8cb1b50d4251d29c7a6240bc0160f459d5de24aa54ad51be9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/companion/placeholder.svg",
+      "bytes": 877,
+      "sha256": "0ccc46023688e3cdc7ead16fd7204b4650489794b8d75de1f8223d2476422e0e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/camera.svg",
+      "bytes": 407,
+      "sha256": "6129b360920e6043182e86e0ec6cdd915402802d2659ea6a482e090de51fb4e6"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/chevron.svg",
+      "bytes": 315,
+      "sha256": "def11ffd937d351283fc9d1c2cf14f0e8c107b8ea8722d69e4bef72679f446eb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/close.svg",
+      "bytes": 307,
+      "sha256": "fd653d727430a9909670d42c0e62f9ca3578976ae95685c3d64b828538b77da5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/collapse.svg",
+      "bytes": 313,
+      "sha256": "5a261cf095c2807be53de32405682ac132d63ad6dd0324cbfdd10d5ac3596bca"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/cry.svg",
+      "bytes": 339,
+      "sha256": "6400939fa463046a92f985a20a7581e9e4d8b4c2196a0a818928aade0139c23c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/expand.svg",
+      "bytes": 310,
+      "sha256": "bd97130a5f17ca3c97212904eb1378c04c3319e1e50984bdde771d3ee5be237b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/menu.svg",
+      "bytes": 320,
+      "sha256": "bc8cacd6cf8569877835e175b57e9013b0e992363f05e1ec5f4b65147715394b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/microphone.svg",
+      "bytes": 393,
+      "sha256": "0bb3cf7fec32be6db2000406a85b5d07fc4b6481bbc3053c9a91766b3bf10067"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/poop.svg",
+      "bytes": 459,
+      "sha256": "3173926e2a5772bf137d43233ce15676246f293bb2f08a616e08135aafabd88a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/record.svg",
+      "bytes": 446,
+      "sha256": "39430e24dfa7ca2c8347e4b4188cfd1dfebf6e9286527113729d30decbd92050"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/services.svg",
+      "bytes": 489,
+      "sha256": "c89f312845b488c2cdaa2279906c6941a633ef7b48109c92c41b9a7af2102939"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/sound.svg",
+      "bytes": 385,
+      "sha256": "998978ebc1a393381e2786b16206091c0ca571ec63ddf0503f9d589d851e1ec9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/icons/upload.svg",
+      "bytes": 365,
+      "sha256": "b7f5312ea35c42623e071848f99e4297164e9e26ac3d8d8bdffa97b8a5255d73"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/assets/styles.css",
+      "bytes": 18703,
+      "sha256": "86d9ea42bbd8c641524a53a0ad83a90f18b94e449ea071e1f108d882d8a86c99"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/bundle/index.html",
+      "bytes": 48732,
+      "sha256": "0bd114a2c28bf835bea939be9733e49f05f232f76c2ee4199ea36b7b0dbe7d65"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/candidate-summary.json",
+      "bytes": 535,
+      "sha256": "3d9669c91210818e0e09f0a14dd5a8e3593964399a85750c4a540ba9380e04f2"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/check_candidate.py",
+      "bytes": 876,
+      "sha256": "155a0cb52b4caaa1f7b7a67c068805e4347cd09333eb5bef77be81ca8b8c4f1c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/design.json",
+      "bytes": 106876,
+      "sha256": "5b802a4ed38e4610ab0ac6909622442425f121086026e2c4804cc6b19724c4c3"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/document.py",
+      "bytes": 8457,
+      "sha256": "e7f2d3dc910e8457866c9ada61058cbd2a68106dcc58461a1dfacf70417b1561"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/framework-seed.json",
+      "bytes": 29328,
+      "sha256": "f377eae2ea2a54005b47b012f3390ed1fd81ae4a4c87f111144c1907d34904d5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/manifest.json",
+      "bytes": 7253,
+      "sha256": "1be80b42779665c88313f539ce90516048921c585b9e5229781b929917ef84b1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/preview.cjs",
+      "bytes": 1120,
+      "sha256": "f79da16eec320d47698c303c5d21fdd451d919b64fdcce479d45e1e323814f2b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/qa.json",
+      "bytes": 75464,
+      "sha256": "43ec2590ea22cf982b2de243d28a84af21072ebb92623a94e0d0ec8a7ec86f38"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/rebuild.cjs",
+      "bytes": 26116,
+      "sha256": "a2df64284db4398c0d4246fe6352d1234f200742b31dd47041e7619ea7de16d7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/architecture-consistency.json",
+      "bytes": 34964,
+      "sha256": "14428163bd9b64d149f2987c4163b4206eb39ad55d26853ad04d24b60e6d9af6"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/runtime.json",
+      "bytes": 20580,
+      "sha256": "cd4e1b16244931da086d6a90870be78d1d563234f209e5a895e7029e5c8b4b74"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/companion-fallback-390.jpg",
+      "bytes": 38952,
+      "sha256": "c46a81fe0c95b1ce5dbca651e14a24f41cd39f3a4615cb40f5badb6e63a1335b"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/home-360.jpg",
+      "bytes": 36847,
+      "sha256": "371f552058fcb004c58c82a392c23b37625ed060771ff0e9724d0298bda74b81"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/home-desktop.jpg",
+      "bytes": 96822,
+      "sha256": "3d079411cfad12c48897b34828a1ec3d8169095076b762b4f029e8823e0c2bc3"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/home-empty-390.jpg",
+      "bytes": 37589,
+      "sha256": "3c32cc6c260f457317693de1c49981ffc11ad640cf22496980b51daf2a7632a2"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/home-saved-390.jpg",
+      "bytes": 41436,
+      "sha256": "d8478faafd2a76f42bef421af81c9893cf27b2711a87b1c456e72b8e2386365c"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/record-inline-390.jpg",
+      "bytes": 34286,
+      "sha256": "2bfb2658e37b5b30bbec9c18089446dcdbd7723aa807b69c9a40d15680e1aac2"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/record-inline-bottom-390.jpg",
+      "bytes": 34239,
+      "sha256": "e343474198cda16453a964951b726a06967a2cb23ca69a6faca0b9cf1077491a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/services-dialog-390.jpg",
+      "bytes": 35925,
+      "sha256": "5098b9cb52426ef850c749aa6776f504675c1072ee23b0db39c0312182d9bd07"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/services-focus-390.jpg",
+      "bytes": 32694,
+      "sha256": "aff5e4f645c68a8bc2a1f03d1484db1179d683e4998d12db2af4ca2d87a20362"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/screenshots/task-error-390.jpg",
+      "bytes": 39689,
+      "sha256": "45ec07786b4b47c6b7c10b3daaa5491cfef629002f942eb66975c3e583178037"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/static-check.json",
+      "bytes": 313,
+      "sha256": "4b1b96b60e885187e40f4a94110796cc99166205db84828a868cee46831011e0"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/reviews/visual-review.json",
+      "bytes": 34235,
+      "sha256": "4f9529c58e1797916219efd193ffb7473f37c2c4589d7257992cbb56c501a7fa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-0015884a-eb1d-4a81-a40e-843f1287d9d4.png",
+      "bytes": 56286,
+      "sha256": "3e1fa2a5bd5a085d1e485295784a264215b8e7666d9ff04d19c67286e7e86e09"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-14cb81c3-12c4-4616-9b85-a7145c0048db.png",
+      "bytes": 135590,
+      "sha256": "56af8cfc55e1e9302a6d25b191c29ba90755c9ff04e71f0db9c94f97cbbf09c4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-37c5165e-4e49-4969-871f-a777bacb6034.png",
+      "bytes": 66939,
+      "sha256": "2e14d7c3c16c5990a209aa37d01b461f652eb74bbca044fcc6374af676bdf789"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-47ef0bf1-3b9d-465b-806d-11fc4bdc4be5.png",
+      "bytes": 37679,
+      "sha256": "13733a7b3f1e05038a77a65e182f9637b617f2978180a51585ad65ce6bb27121"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-57f08afc-7ff2-4da2-a82d-bd8efe29b981.png",
+      "bytes": 43380,
+      "sha256": "0cd79394e4bea685cdc99a36526c1df44a6c01500aaaf2df89b702d8612de9bb"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-621998f8-fb7f-40f8-8f17-1d174f1bcb33.png",
+      "bytes": 133603,
+      "sha256": "a1e942796b462b6bd5aae4d41d86d19c185c45d9719bfb3e665cb22d80178e70"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-6b1533f4-c439-4528-9eb5-82d0c9da0a35.png",
+      "bytes": 41115,
+      "sha256": "f7c165058647cd665ba008571e493ea1bbb2cbf8755312e6e3e6a33e3d09dffc"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-6f0ea783-90fd-4e78-a198-0d4be5310a18.png",
+      "bytes": 130574,
+      "sha256": "a0e0ee2a33605068145bfb8940661244e87f07d56457ca9bdaa186a8b1be9209"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-831a0da8-626d-47cd-9021-f998aaff6ab6.png",
+      "bytes": 65381,
+      "sha256": "05a54e584a52ba60c150cce5210ce7f88298373809cdc1822c88f3c032d3c703"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-875ee3fb-a988-41ea-bb44-fb3581464632.png",
+      "bytes": 69224,
+      "sha256": "2a4dcdde4713b56c5e65a796621733ba3e6cac88ee84ecfcf48b8943dbf9c01a"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-935b3d94-6950-4759-abd2-69662cb88d84.png",
+      "bytes": 40915,
+      "sha256": "58fabd1ce6b893badc7cf01c6ccd18577724ccb71b85c06ec1225fdb12bb2c29"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-a4426bb1-fbb9-46a2-989e-e3882bf14d15.png",
+      "bytes": 122531,
+      "sha256": "1678f2d38d7436245fa6b310536ec894057e27150adbe0951a9860928e205749"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-bea7f8fe-ff68-4dd2-9dcb-0106827fa076.png",
+      "bytes": 131050,
+      "sha256": "8d00d9ba76b473e7badd4bdfe28ce9249d988c2aa0262db1ea2f59ff00c448b4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-da2dff75-b8ff-4b0c-a6db-0e3ec03fa7b9.png",
+      "bytes": 44227,
+      "sha256": "a89b349275f56926bb600d6d20610d06623efe39f69d34e389334f86455bfb65"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-e4fde95d-c9a9-41f6-aa04-578059fb9fa7.png",
+      "bytes": 125566,
+      "sha256": "c1061aa19bf4b67480f9eb6bb6f2269473204e0bd86aa26307ecf17f8de6cafa"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-f152b617-5cca-4c01-869f-eaef4e365b22.png",
+      "bytes": 69122,
+      "sha256": "ad7412d424a455d88e0da86fe494feb737278a357905b0ce71806c5421ffd197"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/codex-clipboard-fd2aa36a-8f0e-43a5-b16a-ca8eaebad549.png",
+      "bytes": 79717,
+      "sha256": "6075631eb9ba1d5aad138d4d3d8d208e01b9174fd7055a6dc4f6fe8c2f2cff18"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/continuous-chat-request.json",
+      "bytes": 717,
+      "sha256": "55a17c0ac50948150829bb8ee4d4c2b39ea4bf7da6a74bcef0be375fbb6a38f5"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/requirements-thread.json",
+      "bytes": 37380,
+      "sha256": "b5dd17b7885558268e026f962b2cbd981b2f66f237865a7013cce623f5797378"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/requirements-v02.json",
+      "bytes": 49944,
+      "sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/requirements-v03.json",
+      "bytes": 51271,
+      "sha256": "40cd3191c6e18e0867003b1f176877bda2456341c9fee114e6119444fc46e5b1"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/requirements-v04.json",
+      "bytes": 447,
+      "sha256": "362980c1c38365cf0418a3d5725100465304742f42449d5a353a3cd8b5d84874"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/sidebar-0935a1df-f726-4c45-8917-d928db2035ab.png",
+      "bytes": 35398,
+      "sha256": "c1f7a939c1f0d0b4321e16c42c95a33353a075a50633a68adf35453420a10637"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/sidebar-4c217a81-9d2b-43ee-9994-7e12a5048885.png",
+      "bytes": 33086,
+      "sha256": "8f8fc3565e617b63baf35880864935de1c2c78423c3a2d80940e17f5c5108ce7"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/sidebar-dc7c158a-592d-4583-a841-1e7c55140638.png",
+      "bytes": 31621,
+      "sha256": "182680d69310f64a14879a9d459b03c782a617fbe4613e129c322ec1eee2d70e"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/sidebar-ddb61e70-4a8b-4c77-ac8f-a382f5097e90.png",
+      "bytes": 33756,
+      "sha256": "d009d78abd5122b6168ddbd3592af432d146ded868da1f168b92950c328a5ec9"
+    },
+    {
+      "path": "design/2026-10-19-framework/FW-0.4-candidate/sources/sidebar-requirements.json",
+      "bytes": 11812,
+      "sha256": "6180b9f9e6e88235f39bb8cb4ceecb08ac298f1454414df6aae8d3bb412ae526"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/IMPLEMENTATION.txt",
+      "bytes": 5735,
+      "sha256": "4dc1f0736d181a05883ee67d9df8d9e82ac0e1574cad34f80dac2bd6c456d58a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/Momcozy-final.html",
+      "bytes": 2182933,
+      "sha256": "a437f1d2100dfe134ca7c42ca7ff2ee89560034d81ee8d4ab38e4df7deedef24"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/README.txt",
+      "bytes": 9315,
+      "sha256": "312ca31a5c0970ec82ce2733efeaff74719d53160c8c47b9cb90d966a3a72be7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/app.js",
+      "bytes": 84809,
+      "sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/companion.js",
+      "bytes": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/icons.js",
+      "bytes": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/motion-model.js",
+      "bytes": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/assets/style.css",
+      "bytes": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/ARCHITECTURE.txt",
+      "bytes": 9803,
+      "sha256": "45f979a221e6284d840601cc62b202e2e3773cb2e2dacb622cc02ff81f6170d9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/app.js",
+      "bytes": 10849,
+      "sha256": "94b326fab43ee8696425368fd03d6d6ae974f5ffd693aacb9ee978dadcf90637"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/candidate-summary.json",
+      "bytes": 1206,
+      "sha256": "979b5d7f8186f599b3ce0b4903ea2cceb7303158f731bb6c6e013c3b741dcaa0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/design.json",
+      "bytes": 11270,
+      "sha256": "0b92b4cc01b4ef04ff19dc6a6eb2f1e70fc29dc2ec81fc5e67dd586574943157"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/index.html",
+      "bytes": 7441,
+      "sha256": "c913c0a5b19ddb12e17c1ae4ea0e756498b47c18749dc63e984ea297e53b0abc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/baselines/HOME-0.1/style.css",
+      "bytes": 6289,
+      "sha256": "ca56656f0a4a02d8745c16dfe2a967e9e3c836db8cba53289681375bb96befc0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/design.json",
+      "bytes": 48777,
+      "sha256": "c0571445f3d2cac8884561b032d02db182e067f069615fa0881e4d051ddab344"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/file-manifest.json",
+      "bytes": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/index.html",
+      "bytes": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/preview.cjs",
+      "bytes": 863,
+      "sha256": "e6316a0b1985302900686758c6f1bd3a8ccdd6f525492ee9048113d5f3f172fb"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/assistant-idle-360.jpg",
+      "bytes": 22801,
+      "sha256": "f7e0f6ad57fc4066f4c8ccd82af6c646d2f829070f1b04b2d3b697ec43d529e6"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/before/app.js",
+      "bytes": 37195,
+      "sha256": "a9820816f7ae3e16b0f2c261e37acd4d08efafbc6c71444cecff97d8a99844f1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/before/companion.js",
+      "bytes": 2084,
+      "sha256": "b4e4fe03b7b82f3391310da2f03693f0422876c80a36a6ffe5d842b96e1258e9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/before/file-manifest.json",
+      "bytes": 1249,
+      "sha256": "41d7768314d791f393ef7f4cae9de2938a0ef7d94a58040d0fbf5856a32a0d6f"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/before/index.html",
+      "bytes": 9685,
+      "sha256": "8059831656214f73d57f7d3f50db6769be603eb57ebe36cd23c34fb502297530"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/before/style.css",
+      "bytes": 22042,
+      "sha256": "5dc136d9c0f6467751db6e82bc992f3cecb175bdced9527e07b4808dd2863322"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/conversation-360.jpg",
+      "bytes": 25939,
+      "sha256": "e7bcca14e3b65d4cf7d42599ed28981204cee3a5ae60cbc15bb75ca195f77554"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/ai-interaction-02/verification.json",
+      "bytes": 2245,
+      "sha256": "cfbe299b291ab25b8a8767c661504ceb68df9849b6485009a12976cebb653b94"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/assistant-ready-390.png",
+      "bytes": 16225,
+      "sha256": "3f3f7a5cc85a82896d61e3fec85fb359761e896a2fa4472f1d4f22d7a661776c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/before/app.js",
+      "bytes": 40809,
+      "sha256": "f34c511bda1ac562a4b7818a8e2cc75783df5729c2a7ff11fe588045dfac8549"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/before/companion.js",
+      "bytes": 2716,
+      "sha256": "1eb44e9706ce847bada9d14c8f2571bdb5ba6d6823627ade045875c878bd6e34"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/before/file-manifest.json",
+      "bytes": 1314,
+      "sha256": "0afa2964750a7808e23c3d38d68afa88c4537294a2163736ff8369059d83f207"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/before/index.html",
+      "bytes": 9741,
+      "sha256": "b3ed0e01e348da68d21df8d56a06a7907c58b16df9c92642342f4b232f0989b8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/before/style.css",
+      "bytes": 23294,
+      "sha256": "4f28a9ca19b68a2e156ea1e6c331799c6c54fdaab253eb6ea35e6a6ec24aabeb"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/chat-360x640.jpg",
+      "bytes": 28028,
+      "sha256": "fbbfee727e083d958fdf1cd6a166137512026186e3fe9452a850a2d531531eae"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/chat-390.jpg",
+      "bytes": 27798,
+      "sha256": "e9e211461a0fdbbc186f9dd329cc8c379f44f59293da89294b3973a0b36fcc66"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/idle-390.jpg",
+      "bytes": 21724,
+      "sha256": "0c07d13a7768e8e87d6a5b06ea53007e8406768663279034e83afe00754d5498"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/chat-layout-03/verification.json",
+      "bytes": 2927,
+      "sha256": "e6dbbcd684800681c1c8c57c8c0ac90bb710731958f34cd1162349157d7b7649"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/before/app.js",
+      "bytes": 41623,
+      "sha256": "f74c87fa673157b51ce0e24e87028df2af103b71165f8bba49c960d2907394fc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/before/file-manifest.json",
+      "bytes": 1311,
+      "sha256": "036de71d6928452f6465599d53ca60bbe00520c87bd005b9f5697ac8f32c76d5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/before/icons.js",
+      "bytes": 4761,
+      "sha256": "daa0303afcb078abca29dac92de645e161d95b0a3e4e375f2b8a6e3e62a947ff"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/before/index.html",
+      "bytes": 9802,
+      "sha256": "39f40565ab8f1f9f76de0bd006725dcfac1062964af1c4cd29726ebbd7999dea"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/before/style.css",
+      "bytes": 25112,
+      "sha256": "03c39da87e6ebe5a9f79b6ba6356e9cf6bf3d177e625f989b846fafd81e051cd"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/conversation-390.jpg",
+      "bytes": 22619,
+      "sha256": "759441e6c72612b7ae0b49dd8073ee6174502ae2c57dd1c1e097c7e0b56b1c60"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/task-360.jpg",
+      "bytes": 19865,
+      "sha256": "8805df06a0ec4c2adf9b1d7da89fbacd30da1abb66533ef1c1ce2f906f4e55ec"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/today-sun-360.jpg",
+      "bytes": 14378,
+      "sha256": "c3946eea61cf2be3594128f49fe9875a0fc1ef208b9ec78e91f863c7739e5e55"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/verification.json",
+      "bytes": 2234,
+      "sha256": "03db19becbe23b837ab3bb0ac46fa774b41c7bdeef9098ed2056e14bf1478203"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/compact-chat-04/welcome-390.jpg",
+      "bytes": 21669,
+      "sha256": "c659e2101f5ec844bee9a8fda9523d8ac6f389c5aeebb139be1ce54f1d95cd25"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/consistency-review.txt",
+      "bytes": 9590,
+      "sha256": "7b7645a0dda98ea8f86e67829ab2fc023beae41bb4980392a80811fb4a66a1ae"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before-desktop.jpg",
+      "bytes": 36544,
+      "sha256": "add2fff2c07a839695371dbb816f4f4cc9ce453b54c5d3af154e72bce47b1a9a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before/README.txt",
+      "bytes": 4136,
+      "sha256": "dd3d00b119b10bd3fd854608b6932f5b5f6fa9f5b8fcb2c57b382c5382686473"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before/app.js",
+      "bytes": 55152,
+      "sha256": "9f699bf51b7053db359941fac438ca89113d2719e77b91914ccb28e0c90b7dbe"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before/file-manifest.json",
+      "bytes": 1320,
+      "sha256": "3c8f20f3ffdcdd60dd1d25a8108a6f0696c9d5e29395b5cda72d2bfd9f113dff"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before/index.html",
+      "bytes": 10130,
+      "sha256": "1d1a8906af971ebb9a3ea367389d6c4a46a0c417f03b6bc991fd7ba38d15d428"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/before/style.css",
+      "bytes": 28663,
+      "sha256": "30f029c83b59798005416b7542e9b214a65645c2ddff262e5ea8b33465c29b50"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/desktop-entry.jpg",
+      "bytes": 48164,
+      "sha256": "986af174cd877e33f39fec92fd0b1243668cee4341192f3525414f8c64d64a02"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/desktop-form.jpg",
+      "bytes": 50029,
+      "sha256": "8d74db1e343bcf9284efe1c09643938b9bca4914c9b35aa2f712a8cf85e827ba"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/mobile-confirm.jpg",
+      "bytes": 20213,
+      "sha256": "0c5708fd8e9701722511dec803643c5f1b298a8a8c106e30ffdf68d57d162e8c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/mobile-form.jpg",
+      "bytes": 19827,
+      "sha256": "51c58e092a69630a7757b85858ee8a7328da0a29e5fca687d5383001abcb4d15"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/contained-sheets-07/verification.json",
+      "bytes": 15197,
+      "sha256": "3cb4eab35fe40caa1161d8e2fe83f3f995b08ca67822ff7a2dc6e378b1dfe517"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/before/README.txt",
+      "bytes": 2815,
+      "sha256": "915dd81845e3c90718404e0bcb7356c6627107fefeffccee081b46ec602da559"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/before/app.js",
+      "bytes": 41783,
+      "sha256": "f4a77a545c1718abee3a11f28b95f5252726fa311975fca7efeba0bf6d4a14f9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/before/file-manifest.json",
+      "bytes": 1312,
+      "sha256": "733c5d018d8a64d74cd628e34e0601327fc6bffa4ded6d9924539959802e2f75"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/before/index.html",
+      "bytes": 9801,
+      "sha256": "13313b6898c4e84878d01d02ecc0a352f8c5a2b9c3ddc3af8daa4adcdecd6531"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/before/style.css",
+      "bytes": 25725,
+      "sha256": "a0b79cbeceabe157a8f591eaaed6bbbea4602bf420c05694a128a32f417c1243"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/conversation-360.jpg",
+      "bytes": 30525,
+      "sha256": "f334b6dc7288168f6dd4c8555e46477917444956aab2086a927043711fb51014"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/history-360.jpg",
+      "bytes": 25423,
+      "sha256": "22095371c0f0e3894ea9e6121b9ad255b3bdffe140146aec922974068471b232"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/new-welcome-360.jpg",
+      "bytes": 21103,
+      "sha256": "0eea443efa21d559945cdd1b7eea52361d9c1ce3a7cc5518763b32b1f79f3854"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/conversation-history-05/verification.json",
+      "bytes": 2497,
+      "sha256": "1b2723dcd04b9ebfe26ce1d42fb5914089c686d34390573353cd6038e817a4ed"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/development-evidence.json",
+      "bytes": 12224,
+      "sha256": "efbe1d5ef098664464287620e3d3aa802bbce5501ed477ea469bbc6383311b48"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/evidence.json",
+      "bytes": 17817,
+      "sha256": "b80bc626044abde74731bceb192ade8e1deed0e2d804062b6783b9d738a8732e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-assistant-dark-360.jpg",
+      "bytes": 24081,
+      "sha256": "fe7e6a72bfc1b14eb0dfc8963850fe5abac2374cdd33b2b95b4ae683492f8186"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-assistant-dark-360.png",
+      "bytes": 24081,
+      "sha256": "fe7e6a72bfc1b14eb0dfc8963850fe5abac2374cdd33b2b95b4ae683492f8186"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-assistant-light-390.jpg",
+      "bytes": 23522,
+      "sha256": "cd2ca3b0039db792204c0c4deaa3105139e1d86c94737c868cb5c33854dce033"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-assistant-light-390.png",
+      "bytes": 23522,
+      "sha256": "cd2ca3b0039db792204c0c4deaa3105139e1d86c94737c868cb5c33854dce033"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/FINAL_REVIEW.html",
+      "bytes": 13496,
+      "sha256": "600ae59ccc10b2d968ad5508cbad5bc68cd60f37fbc21d452eb813f3395c6cd2"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/consistency-review.json",
+      "bytes": 10113,
+      "sha256": "87f02785370f9d0dc2e39e7734bad90fab55698cf006eccea813e63dea7b1479"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/consistency-review.md",
+      "bytes": 4787,
+      "sha256": "e8af519ffdf97ff5f44fcf1fa5a40884ee88861d1bba1f4dfdf3b01f300ae62d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/final-integrity.json",
+      "bytes": 4167,
+      "sha256": "b5f439bdc076f92929c7eece0d683cf1e0095166bc67e361c942bc35ed64dce8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/findings.json",
+      "bytes": 4079,
+      "sha256": "e5a14ab1371c57591cc401d2976ad40d4ba03a5592d22261a4c914d36f954016"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/interaction-review.json",
+      "bytes": 8969,
+      "sha256": "097568b7bdc5093dc3775cd4b4c8f8e27c3ee0ccdc0b0a47caa8365b94db8e74"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/interaction-review.md",
+      "bytes": 3076,
+      "sha256": "d8e70f44cfe4c50e1abc9e81a2f38cee6240a9f9c1f75a73bf072f41081ee477"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/material-snapshot.json",
+      "bytes": 2099,
+      "sha256": "a537b160813c3d2e4c5917ecc6ad4c1420d1e0ee44836c8a54f25f72caa86d3c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/runtime-checks.json",
+      "bytes": 3189,
+      "sha256": "99c1ebb604121a78681cb571d1e09f1b2bdee579e88dba7adcf870a266c547d1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots.json",
+      "bytes": 19157,
+      "sha256": "e2728c24576469ef7a97d2645582124b4818cd508707d21a5aa40987d9730e93"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/01-onboarding-identity.jpg",
+      "bytes": 28073,
+      "sha256": "d9709ec4f24145b4f2bb205e62f9fa172a80d4c4528080029c675235ee18d8b5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/02-onboarding-details.jpg",
+      "bytes": 31046,
+      "sha256": "93fab54fe7b73791788d735b5b12389e5f5eaf1e54bb2629cdf2e8e16c8c0726"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/03-onboarding-concerns.jpg",
+      "bytes": 32155,
+      "sha256": "91887900896751912d0dfce63ba618396ffeb0489522db0da759db190f82f160"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/04-onboarding-recommendations.jpg",
+      "bytes": 36376,
+      "sha256": "0e5e16baacf1b6d8869425b4e5fb5fe95c1d9230f49b9ec79258125ba75d7364"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/05-today-empty.jpg",
+      "bytes": 26192,
+      "sha256": "2a593da659d2201b7fdfa47cb70a9320c9465c56153cb5f946d5ce757a5822bf"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/06-issue-old-profile-date.jpg",
+      "bytes": 26154,
+      "sha256": "acc458f52aaa3d801cfa3a32805a3da2fea0a1eba5c4a727c3839887023f09c8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/07-issue-empty-stage-default.jpg",
+      "bytes": 23718,
+      "sha256": "2acaba9353024e8ef9c1fa7b05b7e82329935de6a507e2a3a262ca2dc5d856d5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/08-issue-baby-cleared.jpg",
+      "bytes": 28342,
+      "sha256": "382e671893ca0a7335c9f3b5e5379f426788d542d7f15332e6382b2b1e0dff32"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/09-record-picker.jpg",
+      "bytes": 21753,
+      "sha256": "4b09da0f498ec645cafcdd9cf7a6f470dc3f1db5cb33fa696b4bef1c90ca50e1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/10-record-form-draft.jpg",
+      "bytes": 29833,
+      "sha256": "507bbfef50f9288ef34c64b21d581bc12ea31e6b66b9c3408e6d27516612eb1a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/11-record-saved.jpg",
+      "bytes": 21683,
+      "sha256": "bc70292721881b5c0b8d72f4cb46b1cff993fef969695ede0e7be15bce30fa6d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/12-record-unknown.jpg",
+      "bytes": 22337,
+      "sha256": "bf0de0c44ae2ea0372efb5fc305fc57bc666f71e7f0cc3c1087bcc07037177c7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/13-record-deleted.jpg",
+      "bytes": 26777,
+      "sha256": "3a74c496a8d949d8ae22b369aa9f8441da53cfb97a55134ceb19f62e3cdee661"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/14-issue-deleted-record-restored.jpg",
+      "bytes": 21666,
+      "sha256": "10c51f812c7d03ef9f77fc5dcc7a3ded4b26c1e45ca8b7cb28c51ebf30b1f06b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/15-records-baby.jpg",
+      "bytes": 21081,
+      "sha256": "12e7b96ed5a8cd119d4563944c174fea2abbf5d7ecf4b8c2ca316766b61b5762"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/16-records-mom.jpg",
+      "bytes": 20860,
+      "sha256": "d026b22e5d961cdd3a174bb9a5a13864feb3c70a3fe0aeb0dccb8742247dad29"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/17-milk-trend.jpg",
+      "bytes": 23348,
+      "sha256": "14f90f37958b4cd7d913f79e2cd68e1d09fa52f52569e47eeffba6c1eb529159"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/18-today-recorded.jpg",
+      "bytes": 27974,
+      "sha256": "948c367563caa28e2db54eda4f451b8753decd26518451698f38ab9be4d862e5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/19-assistant-welcome.jpg",
+      "bytes": 23710,
+      "sha256": "1eb90a572933b4087e87d03c7f8a80849d33e339c3791221096b9596a891d06f"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/20-assistant-welcome-frame2.jpg",
+      "bytes": 23690,
+      "sha256": "2fb46857185e4298a89e83135cbff3dc7e52aefa7dce0911ea762856ad91b154"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/21-assistant-long-reply.jpg",
+      "bytes": 40207,
+      "sha256": "dd8b7503d093612563e8d42d228636b7196863da05c10e6b702155e73aacca82"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/22-assistant-scroll-history.jpg",
+      "bytes": 46677,
+      "sha256": "ffeb1886c5216fd540c5bc5f5b73c4464f306eb61a309015ea4ebf524a7f3b81"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/23-issue-keyword-task-offscreen.jpg",
+      "bytes": 28944,
+      "sha256": "0084809952f83b6ae9e93b30d1153c5520808989ba38bb4e7a3902577ffaee9b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/24-cry-permission.jpg",
+      "bytes": 26495,
+      "sha256": "09bca15a51debb3c6ccf78a7b5b1ed72dfd9ba999e4cfb81d0d1e8af81906339"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/25-cry-indeterminate.jpg",
+      "bytes": 31203,
+      "sha256": "b5d74541e50d55f1cf209ada773bcf207f07d37664b6d2edcf0f989f9a521a91"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/26-assistant-plus-sheet.jpg",
+      "bytes": 23746,
+      "sha256": "056d834d7dbf0e99b3d4bd03a390c16664a9b506efb0a92cd2ef50c48e98dec1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/27-poop-result.jpg",
+      "bytes": 32581,
+      "sha256": "fe342e2dc8ef643c3bf2d498d979157642b18f1189ef92a5d5503f9bef83b741"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/28-history-search.jpg",
+      "bytes": 27080,
+      "sha256": "854bd7001505271fcb5a77e43b0b4dcb30abf09695f161ec48121f30e54a76e3"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/29-history-delete-confirm.jpg",
+      "bytes": 24394,
+      "sha256": "d9245a66b490f23156805c6fa7423fd1e441ceea983ae74d3c96913654fbb1cc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/30-issue-hidden-baby-date.jpg",
+      "bytes": 32652,
+      "sha256": "5f1925272324fa4f86482b23d965bce68e2369cf664e656d92a9a2adb0a651dd"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/31-onboarding-short.jpg",
+      "bytes": 26883,
+      "sha256": "bd2e18a03858bb0240ad2cebaffc2bc41777a1f6877f866958657daf7e6b6bb2"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/32-assistant-short.jpg",
+      "bytes": 21199,
+      "sha256": "732d012c2ab58677a8aaa0120b94dcbe861b935214241c1129a6b477597df9ac"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/33-chat-short.jpg",
+      "bytes": 27183,
+      "sha256": "e1bc224d1db429692b817ec6edc5890c4af880105cab185c1938a9acf2fb017b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/34-chat-dark-short.jpg",
+      "bytes": 25948,
+      "sha256": "4210b4b73faf1d3b62e2d8a27a49c5f757278d74c6309c34468ff90db3ffbef8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/35-history-dark-short.jpg",
+      "bytes": 22758,
+      "sha256": "91ab08fecc7b5237e2fcd7a7b350e43b16a6859a6151cd6154493fdd548a43f3"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/screenshots/36-history-desktop.jpg",
+      "bytes": 55738,
+      "sha256": "0cd7bc50d94775cb37c9d8d5b591cebc13c66b1d7bb6c3df03ceb61fa3d2ca20"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/visual-review.json",
+      "bytes": 44480,
+      "sha256": "e3e18d74445512d3cf35ef895c54728c2521c10d95e811ca051ad1174100a361"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-audit-13/visual-review.md",
+      "bytes": 3801,
+      "sha256": "9bea7a884efdba378db10c26d5b976e42d819074b7dbf933c208305d92d36450"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-desktop.jpg",
+      "bytes": 50676,
+      "sha256": "870c44583281f5ddc0bd931919b67b70ab6372625bb70e6ed58f46fb49ff572b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-desktop.png",
+      "bytes": 50676,
+      "sha256": "870c44583281f5ddc0bd931919b67b70ab6372625bb70e6ed58f46fb49ff572b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-diaper-form-390.jpg",
+      "bytes": 26454,
+      "sha256": "766e63ae5b4fd388e6beeb2777e55375ee1bb3af71badea3cfaf55bf26133473"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-diaper-form-390.png",
+      "bytes": 26454,
+      "sha256": "766e63ae5b4fd388e6beeb2777e55375ee1bb3af71badea3cfaf55bf26133473"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-dark-360.jpg",
+      "bytes": 27803,
+      "sha256": "90fbc497ea95e4a14726cea3f442caa8c66332a35bc05f58cb83085c59bcf2b0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-dark-360.png",
+      "bytes": 27803,
+      "sha256": "90fbc497ea95e4a14726cea3f442caa8c66332a35bc05f58cb83085c59bcf2b0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-empty-390.jpg",
+      "bytes": 26441,
+      "sha256": "257ae3874a01e134be091d43cac90f46843e3fdfd8554baf2062495ded2488cb"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-empty-390.png",
+      "bytes": 26441,
+      "sha256": "257ae3874a01e134be091d43cac90f46843e3fdfd8554baf2062495ded2488cb"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-error-390.jpg",
+      "bytes": 27340,
+      "sha256": "0f99340bc8912ba10758a94f0e61b0ec1e9d994fdd92a1a4f2d7b0f4671b933e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-error-390.png",
+      "bytes": 27340,
+      "sha256": "0f99340bc8912ba10758a94f0e61b0ec1e9d994fdd92a1a4f2d7b0f4671b933e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-light-390.jpg",
+      "bytes": 31058,
+      "sha256": "a6faf877be590687ddfd78bbac56eb4476a27ac2d2bb8b3c1ba2f39ef00bc8e7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-light-390.png",
+      "bytes": 31058,
+      "sha256": "a6faf877be590687ddfd78bbac56eb4476a27ac2d2bb8b3c1ba2f39ef00bc8e7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-lower-390.jpg",
+      "bytes": 28035,
+      "sha256": "5114d1c21dae4d55b3aeecb876e83b93d672bfded160adda52a763c3dacc4e73"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-home-lower-390.png",
+      "bytes": 28035,
+      "sha256": "5114d1c21dae4d55b3aeecb876e83b93d672bfded160adda52a763c3dacc4e73"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-indeterminate-390.png",
+      "bytes": 30188,
+      "sha256": "203243448d729f7fc16ffc8db9ca2c8deaee5980fa61aa62ccd61ac78a04d04a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-indeterminate-dark-360.jpg",
+      "bytes": 28543,
+      "sha256": "8c436081c7a3240e885a7bf76b11e5ec5d899eea314209bb2fc5ac67e6613873"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-indeterminate-dark-360.png",
+      "bytes": 28543,
+      "sha256": "8c436081c7a3240e885a7bf76b11e5ec5d899eea314209bb2fc5ac67e6613873"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-mine-dark-360.jpg",
+      "bytes": 23093,
+      "sha256": "6d3556a948c2bac7cbaacd5ce448b697686f008d1a15025ce523f8d9400f32e6"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-mine-dark-360.png",
+      "bytes": 23093,
+      "sha256": "6d3556a948c2bac7cbaacd5ce448b697686f008d1a15025ce523f8d9400f32e6"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-mine-light-390.jpg",
+      "bytes": 23596,
+      "sha256": "8f3fc2a06e4f2f6b264e88f208d13af136cd1355a0a9aa6537da5317d249d1fc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-mine-light-390.png",
+      "bytes": 23596,
+      "sha256": "8f3fc2a06e4f2f6b264e88f208d13af136cd1355a0a9aa6537da5317d249d1fc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-permission-390.png",
+      "bytes": 28178,
+      "sha256": "b029e2d233bd89888d41f665fb928e06f3cb19b9977f257295d4d24fe1360e9b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-permission-dark-360.jpg",
+      "bytes": 25648,
+      "sha256": "a1685151e5d70e994a2b1b87c4ac7f25594580f2e98137a457b35090b4e61b55"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-permission-dark-360.png",
+      "bytes": 25648,
+      "sha256": "a1685151e5d70e994a2b1b87c4ac7f25594580f2e98137a457b35090b4e61b55"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-record-form-390.png",
+      "bytes": 29818,
+      "sha256": "cd2427e5f7e9a7b3d67e75c63d8c910c2057b400b3ea8beb11db956f1d9bcaa4"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-record-types-390.jpg",
+      "bytes": 21551,
+      "sha256": "b3b3a5fe4d72afec193f8fc02bea31af8ac0e3d3c4e86fc5e9aeec7a2f49d7a7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-record-types-390.png",
+      "bytes": 21551,
+      "sha256": "b3b3a5fe4d72afec193f8fc02bea31af8ac0e3d3c4e86fc5e9aeec7a2f49d7a7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-records-dark-360.jpg",
+      "bytes": 27015,
+      "sha256": "0337386751155ccd5b29d729d0c9bc3afd2a57a70e3a2601e885df1a349971db"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-records-dark-360.png",
+      "bytes": 27015,
+      "sha256": "0337386751155ccd5b29d729d0c9bc3afd2a57a70e3a2601e885df1a349971db"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-records-light-390.jpg",
+      "bytes": 28027,
+      "sha256": "d259196d8b415bcd60f1e4d4a3466e1d6d3221541a5348e07f257bed180fae94"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-records-light-390.png",
+      "bytes": 28027,
+      "sha256": "d259196d8b415bcd60f1e4d4a3466e1d6d3221541a5348e07f257bed180fae94"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/FINAL_DELIVERY.txt",
+      "bytes": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/before/app.js",
+      "bytes": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/before/style.css",
+      "bytes": 45796,
+      "sha256": "4b32798d6c2be5865bcfee064f2f87de8434ceaf2f75b180281746e5756907b6"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/change-scope.json",
+      "bytes": 7004,
+      "sha256": "91f0d395a5c749a7f02e7095e77fbcd5b8bb352ea07477e898975af26a52b266"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/delivery-integrity.json",
+      "bytes": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/interaction-review.json",
+      "bytes": 10218,
+      "sha256": "4b096a1c5349aca39018a64d5810df27150f69193387a7656579cc3f177507b7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/interaction-review.md",
+      "bytes": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/profile-patch.cjs",
+      "bytes": 7547,
+      "sha256": "dcef72c17f5e45864689efe25b8f7c3b9420867419874e24be1df3f886db2cba"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/profile-verification.json",
+      "bytes": 735,
+      "sha256": "b94a65532d5de43f01394222773dad9d57f3289fb87fe6f8e78c2e68896f5916"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/runtime-checks.json",
+      "bytes": 3575,
+      "sha256": "7858fb310274742ea4eeb5a1d700089c88f7cda59dd5c21603321981352606bd"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/runtime-snapshot.json",
+      "bytes": 1170,
+      "sha256": "660a74a1c6baeebac81dfb282f16988837a1b5a317f43fcb9ebbaa7959389339"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots.json",
+      "bytes": 9586,
+      "sha256": "91ac8263b5ec72a857fb8b3e41f4359916ca556f26e4d80d44cb15a742295ef3"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/01-identity-icons.jpg",
+      "bytes": 28542,
+      "sha256": "a3dbbb9a7c8bddc2c0e0333db4e1a9b014fe0b588e931ab366df1270bbf80651"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/02-profile-fields.jpg",
+      "bytes": 32696,
+      "sha256": "67b42710053bb1aff56b42199da7168dcd6f38a01a3eed0036748c69b0e5d631"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/03-concern-icons.jpg",
+      "bytes": 33222,
+      "sha256": "b05877a6130ecc126484c3cd9f9912f78f26b1e255f1c16e006c9a873e855a09"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/04-recommendations.jpg",
+      "bytes": 37002,
+      "sha256": "0e673c0b4e9a3dfbc6a517b408c0212c3a185bfc18572be37efd3a191e2291b5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/05-record-menu.jpg",
+      "bytes": 23814,
+      "sha256": "60cdf8591eb00f304352ee036d0f2b18c295bf7c3bbcd861b5e1b7a412af0f70"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/06-diaper-form.jpg",
+      "bytes": 30198,
+      "sha256": "f19efc059211c635c29250af11b444e4da074d0aeb70a4bd7d4a07328596d573"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/07-breast-form.jpg",
+      "bytes": 29797,
+      "sha256": "ab877705bb6d84dd65d84c20ce21f619e202abf29b10499eada85ebede65d3a9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/08-chat-record-menu.jpg",
+      "bytes": 27418,
+      "sha256": "6fb8795f4e1399fb20b350f10adb6294f4970683c382856d055263853f076194"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/09-chat-record-form.jpg",
+      "bytes": 27858,
+      "sha256": "6298b77deae37d5e1859b09675571572dcc17daa9bb80c914328327bbb728931"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/10-chat-record-cancel.jpg",
+      "bytes": 22872,
+      "sha256": "c46c49b9600521f3430b85a7c90ba7ba80cd6ef764717de628f0fa8c63460045"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/11-chat-record-failed.jpg",
+      "bytes": 22756,
+      "sha256": "d7e33bb8718908f0a4d5868b431e8db70deba81be84273b50c1f25b2fea36a15"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/12-chat-record-saved.jpg",
+      "bytes": 22887,
+      "sha256": "4e78f20d8e9501988dd38880495bd06aaa2fcb9a2d55b9b12d78786aaf3d68da"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/13-cry-confirm.jpg",
+      "bytes": 28945,
+      "sha256": "bd4526903c31cae5b5236e212a36de2a793ecb0ede733924f93df4c1ee2e2492"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/14-cry-result.jpg",
+      "bytes": 31173,
+      "sha256": "4e1b92635cae40efb7217858581ba517f32ff4fc35a53a0d1de9ff0cbfe3b71d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/15-task-chronology.jpg",
+      "bytes": 28551,
+      "sha256": "1304be159bd90e860962d2587d51381ffeecdaf4e8db8c1bf77538b729cbb8b7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/16-task-dark-short.jpg",
+      "bytes": 21508,
+      "sha256": "8777cebcbf94ecb5d8dd696d429d8c88059fa37e683df02d1c0d6b19426e04c8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/17-record-bottom-short.jpg",
+      "bytes": 19148,
+      "sha256": "e6cf4c146768f8cf19b048d53616cf2adae3047a45200e1705361a119fc78989"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/screenshots/18-recommendation-bottom-short.jpg",
+      "bytes": 28527,
+      "sha256": "46b3413c7c0a4bb2d854cd80d6f5892055e88119a4319b0fb0be7dc8c30129eb"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/visual-review.json",
+      "bytes": 24110,
+      "sha256": "3ae75267cd99589451c935f05861675184b9487bc5a2cd6ee5bc22585255e55c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-revision-14/visual-review.md",
+      "bytes": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-save-failed-390.jpg",
+      "bytes": 21224,
+      "sha256": "70a494b1155496f1813d83e199dc95c1ccb014a08ad5bfdc0d97114d88142a4b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-save-failed-390.png",
+      "bytes": 21224,
+      "sha256": "70a494b1155496f1813d83e199dc95c1ccb014a08ad5bfdc0d97114d88142a4b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/final-save-success-390.png",
+      "bytes": 21281,
+      "sha256": "26caebec7580a14c817996d47549d91bcbf76d3226074af5c2780d1a84d7c361"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/before/README.txt",
+      "bytes": 4606,
+      "sha256": "53a628a0ddcf996474db5c9f4d9b24a006c72fdcba5c94ac0b477f59f743eab9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/before/app.js",
+      "bytes": 56213,
+      "sha256": "7863c4b8d1c54ecd39c29a1e349d5ac2fabcde009c22010f0f33fdb500fb3cd4"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/before/file-manifest.json",
+      "bytes": 1318,
+      "sha256": "95c462a0c9367874ab3553af0103dac363cac28443bd0317982334f0071d04b8"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/before/index.html",
+      "bytes": 10169,
+      "sha256": "ccb3688c18e01670429df38e8a97bc39ea3d0954154fdede88db6fb883d3d980"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/before/style.css",
+      "bytes": 30130,
+      "sha256": "b5fafb430d6a722b9f505c766dcc352895b08923e1beabb86f9b324f2b50158d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/ended-task-services-360.jpg",
+      "bytes": 24568,
+      "sha256": "d91f10516ee306ab5761f8378a6a8be061852b88a916ba407761a6616468096f"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/reply-services-360.jpg",
+      "bytes": 28171,
+      "sha256": "338268595a5f260022bc94b9bc8592073ebd14c449287963e126d981321a8380"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/followup-services-08/verification.json",
+      "bytes": 2141,
+      "sha256": "7211606265546eb5afe83dc30125604617c7e0b6bc4493d6ca068b60b7ce4d1e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/guard-result.json",
+      "bytes": 178,
+      "sha256": "4749be023c0d08a2b553ea61e1afaed0d1aec22d10bb67e476765a9a05298a80"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/before/README.txt",
+      "bytes": 3428,
+      "sha256": "38d34138058972a599ab26c33c245a8dae24d918d3761601b38460e27657ee3d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/before/app.js",
+      "bytes": 48164,
+      "sha256": "9b1b1eb0bf52179951e0f51f56771e92405df8dc1769bb61de83565a99575c86"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/before/file-manifest.json",
+      "bytes": 1320,
+      "sha256": "c28d355e438547a4523237db202e302aa220372b167c6e7022b71a1e37b141a4"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/before/index.html",
+      "bytes": 9977,
+      "sha256": "7992191b3a743260c2cf3fc5a005eba81ced27668703b20bf9ecd553e31efbc1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/before/style.css",
+      "bytes": 27116,
+      "sha256": "ff80a6b935ffabc7694d66194e8263b3b40b89049e944bbd8d29d7c8ac70192d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/delete-confirmation-360.jpg",
+      "bytes": 26216,
+      "sha256": "e682956fbaf741c2099d1c6b75427c6178507cf80a2ad94825a170d154915cfc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/history-management-360.jpg",
+      "bytes": 29190,
+      "sha256": "2c6bb8e13caa83345bfb84186dc573c5252d985fe7d84f33df1b9a8dbfab6229"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/history-management-360x640.jpg",
+      "bytes": 24958,
+      "sha256": "4dadcbeef83726e43d550dbeb293fc706e0549dc5691a0540215290cc640c1da"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/long-chat-reading-360.jpg",
+      "bytes": 38624,
+      "sha256": "3e8ab26348d28802843db4a9b07c6778333e05a3558daeb4f3a2fc44063a3d5b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/history-management-06/verification.json",
+      "bytes": 3713,
+      "sha256": "627ddcdf1575fb1911858cf15cd159f61e88d7cf60cee8cfe4c956949b380cd5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/home-light-390.png",
+      "bytes": 32059,
+      "sha256": "8bc04d4a934ab07f736b1b18e521f86c25b4395cb2e66c2585ed7c0662245392"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/interaction-log.json",
+      "bytes": 2566,
+      "sha256": "57a9d31454c3dfe261f9d92fde3f3c3c543f2b26f2d80e0f398ec8927bfb44e1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/before/app.js",
+      "bytes": 37193,
+      "sha256": "956319eff9bf5031bd121f4ec2adcf6b9780b35345b509658a09bc75895cf0db"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/before/icons.js",
+      "bytes": 3927,
+      "sha256": "646c49c40ab2737c97ac9a89683cdf593d332fdf79b89188382ba8c1bb8b40f0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/before/index.html",
+      "bytes": 9682,
+      "sha256": "fda3fa12a3607452de633862df467a7e9df5fa18d1c7b442ab3936b3ad4eaf2c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/before/style.css",
+      "bytes": 20306,
+      "sha256": "6242626e87a2126ee62558b016e0d674ed3ba49ae25ba1b039544734ee9c881f"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/momcozy-ai-360.jpg",
+      "bytes": 23917,
+      "sha256": "84715a078790b5667997bc0711f137d6e49dc16fc1c78e9f71de6990683f3669"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/momcozy-ai-night-360.jpg",
+      "bytes": 24746,
+      "sha256": "997eea58b076116774faec7342be1a65c877364c1feaebfff9cbecb9504ef5a5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/liquid-glass-01/verification.json",
+      "bytes": 1397,
+      "sha256": "2f3a3867584b95942921e442e23f03e31e74d909dfba6442163c9dd62dc73a7e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/mine-390.png",
+      "bytes": 16171,
+      "sha256": "adc290546d1b9f7f88c3aa09debae600d913850a827c8840ee0695e08cf7f7f7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/before/README.txt",
+      "bytes": 5093,
+      "sha256": "fcf039adcca295453a90ede834d1f191bb0f9ff7543ecf472666659941e2887d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/before/app.js",
+      "bytes": 56497,
+      "sha256": "c545c1825090179e30d87690b20b206ea7dc32eec392bf4fa227ab0cfbb689f0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/before/file-manifest.json",
+      "bytes": 1319,
+      "sha256": "6fba249200f2d0c8cfd74e2be93ed97ef0ea221dc66410b78fc030adc4d225da"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/before/index.html",
+      "bytes": 10169,
+      "sha256": "ccb3688c18e01670429df38e8a97bc39ea3d0954154fdede88db6fb883d3d980"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/before/style.css",
+      "bytes": 30848,
+      "sha256": "f13841bd2cbec80c6429b6527a312513b1b0f3987ef9152debc34ea9f5ead419"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/concerns-360.jpg",
+      "bytes": 33815,
+      "sha256": "2b8a90bde41e365ed912ecd4e8fa8c8d287d77aa188bd88cc7d59e70a23b9823"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/details-360.jpg",
+      "bytes": 30278,
+      "sha256": "ed72a7a2718beea15c3b0b8d79015ca20a6ab30d5a697180aa631d9b00eef6a6"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/field-rules.txt",
+      "bytes": 1867,
+      "sha256": "ec701d164d448d75e700c76b79e2872f3092eb24273b18b12af15fd998ee7407"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/onboarding-desktop.jpg",
+      "bytes": 54077,
+      "sha256": "1829f08339bc06830f5093ba6556afd468089256f861aa26f83caafd10cb39bc"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/recommendations-desktop.jpg",
+      "bytes": 59456,
+      "sha256": "9df73a61ecb2d9a069862070e88d97cf84b91894c43925c626038daf7c4b6e5e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/role-stage-360x640.jpg",
+      "bytes": 25444,
+      "sha256": "f1121e87283602c76579347321ec41d0847179be5dad7804fe3d33820bd2f846"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-09/verification.json",
+      "bytes": 3339,
+      "sha256": "13471a3d6e30ee04521a23a115ce64a807eb0ccf864e07a670f95e22b6d52cd1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/before/README.txt",
+      "bytes": 5974,
+      "sha256": "c534e8491fed5ca54344e91edca504d3fe5f936cf501fc35fcf015c71e47f161"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/before/app.js",
+      "bytes": 69161,
+      "sha256": "25f5ecd1d4aa276f4404aa95120a4f75d64ea1f237fb2882d4f97daa95d324c2"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/before/file-manifest.json",
+      "bytes": 1312,
+      "sha256": "7dc278386dbcc306be9348b82b342a2aab5bad2c55d09cc77c5ab76f28f8f6fd"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/before/index.html",
+      "bytes": 11376,
+      "sha256": "aa7577a309b980aa32607d2584f77ac94c2d4c0fc3ba814ae1e58778b996cb5a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/before/style.css",
+      "bytes": 35419,
+      "sha256": "e4e3e86cc04e148eb2c8dc59f1223c778b6234a692fb0ab3161e1df7d6756083"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/field-rules.txt",
+      "bytes": 762,
+      "sha256": "4810aff2f4c65d16298af7029f4cd370ed79eefd2f7316dd3a7d171fd5d8cd80"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/identity-desktop.jpg",
+      "bytes": 51901,
+      "sha256": "d3afee269524b763d3cf4161762b03041a6d5a9a9af1e78bed592a132c941019"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/recommendations-mobile.jpg",
+      "bytes": 33688,
+      "sha256": "6907184990706aeef4cded27dded3c01874b36068406ff2458f45345df3acdbd"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/sliders-mobile.jpg",
+      "bytes": 29274,
+      "sha256": "514eff7040a802c372797d8d6fa8afb31cd9c4d0e82d6f9d51f0933662b5115e"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-refine-10/verification.json",
+      "bytes": 2424,
+      "sha256": "e20b5daad8094486c9a79a1936e1aad308309ed913836b02ed49070ca05bd428"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/baby-focus-360x640.jpg",
+      "bytes": 27992,
+      "sha256": "dd6d0bf95e014b9505a78648a82e638366ac756300e4bd6ec340cc94c5cebbc4"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/before/README.txt",
+      "bytes": 7385,
+      "sha256": "a4145e3ff004c9da651a42e535dfaeb21e816342789f26f4c3d94322ca02c223"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/before/app.js",
+      "bytes": 73906,
+      "sha256": "7e3fc04abc0944e8d8ffd74b424f75684e1ed9b13d6fed4136b2206e7bdbc97b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/before/file-manifest.json",
+      "bytes": 1318,
+      "sha256": "a621f162f36864857150865795c4c8863edad22ba56ec9d00745e57e1c346a90"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/before/style.css",
+      "bytes": 40070,
+      "sha256": "f1d8ae31ff9e74e78f912997d7701c37e688f52b3efdc4966df09164d32735ae"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/concerns-360x800.jpg",
+      "bytes": 31909,
+      "sha256": "136822067f012f564be208f4304676ea5a30cd974916964c7db5c04a65200714"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/details-390x844.jpg",
+      "bytes": 29967,
+      "sha256": "91b223a45e7c9ab5f822118069ea3e0adc09f2addd166db8600121c333dc47d7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/details-desktop.jpg",
+      "bytes": 54155,
+      "sha256": "b30af227e6f4f9cca20aacbd5ce3fa61b063f62ee24984278e2990c4ac235a1a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/details-multiple-360x640.jpg",
+      "bytes": 26907,
+      "sha256": "7ef612ac46f1aefbd382189b3dcd4d8693da89adb366b7af391970c08871f10c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/identity-360x800.jpg",
+      "bytes": 29096,
+      "sha256": "9360970988113ec3697bba8aaa76b38b05ea0e0d5733322e243a5190e9794686"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/recommendations-360x800.jpg",
+      "bytes": 33017,
+      "sha256": "784fa9a0941d44da53c91b6a34c021304feb48a20520f7e19a83f2d3133c2f64"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-spacing-12/verification.json",
+      "bytes": 6607,
+      "sha256": "4f66e77260c2799a2b0b7903bb574f2085eedc9b376a593fc307054a862d4879"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/before/README.txt",
+      "bytes": 6675,
+      "sha256": "2299db1f372aab557b4481c2229ab1c1e47ac6e3d67243c0c4cd698b788ebba0"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/before/app.js",
+      "bytes": 71960,
+      "sha256": "c0da09ba32f60a28be43e6e0329f8abf4ace910412994bc2f773dc164159464a"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/before/file-manifest.json",
+      "bytes": 1319,
+      "sha256": "0c74787d946871cbe2cc6f478ee288d47dd40f4b9e2d3aaff95671da5a59a28b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/before/style.css",
+      "bytes": 37857,
+      "sha256": "88e581e512279148cc04442c01734a0d7ea4b119443f75c04925d5b79f7abf1d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/field-rules.txt",
+      "bytes": 645,
+      "sha256": "258848e1d7b2534451dee8167640b0ee73ec1d2cc3f959e04831b65e22992018"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/multiple-babies-360x640.jpg",
+      "bytes": 28851,
+      "sha256": "7a9974741ce2b9d3bc0cd1b2b38cbbd148f3855eaeaae798318a9df4bc16a11d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/verification.json",
+      "bytes": 3769,
+      "sha256": "bfbec5d30e6090e3c9abc3a94fd4b285dc6c412a7155c4f5beb67b7aadf7bdf9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/wheels-390x844.jpg",
+      "bytes": 31497,
+      "sha256": "bd20ba1dc6b8cca02dd9ddd62784a9aaa2e7051059c44fc2201d09c6c672053b"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/onboarding-wheel-11/wheels-desktop.jpg",
+      "bytes": 55214,
+      "sha256": "49dd9e0563e86cc2063be42e92a454c7caf94cf22b27ca7656a2c661556e4e1c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/record-form-390.png",
+      "bytes": 29166,
+      "sha256": "81c6d7f276318e0c9d615a5d89c2346ce458f9cc1f1c7ae60be660e82ca128c5"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/record-types-390.png",
+      "bytes": 21126,
+      "sha256": "5c8dfbb9182df5a5f5e2a5013c4c41c7cbd66dfddf191bc3b8ed3c4f8e2b8a5d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/records-baby-390.png",
+      "bytes": 26526,
+      "sha256": "ff5ccefa99e89cb83bf318f33eaf7b1d6eb6bd67e0796bf4746ea738f50a60c1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/records-mom-390.png",
+      "bytes": 25434,
+      "sha256": "3269228725ffca248b63684c1121d84c24965f3bb975bf692d4de9ee96a01c29"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/save-success-390.png",
+      "bytes": 21281,
+      "sha256": "26caebec7580a14c817996d47549d91bcbf76d3226074af5c2780d1a84d7c361"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/save-unknown-390.png",
+      "bytes": 21990,
+      "sha256": "5db554e240c245962184d3282cf96d587b955db38d8a53612be84ab5ba7653d7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/task-indeterminate-390.png",
+      "bytes": 28895,
+      "sha256": "af179e6bfc93a10c9370b4f37d34c30eef27110b112e7eed45ae2b5fc0be3854"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/task-offline-390.png",
+      "bytes": 26952,
+      "sha256": "3905e13a8dcd7440c7c4f0c4fb4914d836f22260d8c2fa7cf8bcc97a98158f19"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/task-permission-390.png",
+      "bytes": 30363,
+      "sha256": "8c287bfebcc647a43c72e40e70d83703373ef02a19809bb79c85fed80905bdc1"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/task-timeout-390.png",
+      "bytes": 31268,
+      "sha256": "23f85752547dd7d7540d9f78db1c1398c1287df66d60663acd58b7e2be01eb2d"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/trend-390.png",
+      "bytes": 22757,
+      "sha256": "25b147beb1a83a555819e215902daba37d02ae5ca651927625d7f32068eadfb7"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/verification.json",
+      "bytes": 889,
+      "sha256": "851ac47ae8c02438616b2e763a5869b07cf3cbe5c4a8116df78474dd54e54520"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/reviews/visual-review.txt",
+      "bytes": 14559,
+      "sha256": "5f47e98f3cb49b1894a11eaa8883bb8671ce46d3d193b5f01fd3d0659ab469ba"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/sources/Avatar.jsx",
+      "bytes": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/sources/STYLE_SPEC.txt",
+      "bytes": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/sources/motion-model.mjs",
+      "bytes": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/sources/requirements.json",
+      "bytes": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "design/2026-10-19-home-ia/HOME-1.0/sources/revision-14-requirements.json",
+      "bytes": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/Momcozy-Quiet-Order-QO-1.0-candidate.zip",
+      "bytes": 4537366,
+      "sha256": "bb7b19f0635124a183d013f6e9d7ccbdd1222572971982e21ad414dafe2118b0"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/DESIGN_INPUT.txt",
+      "bytes": 4406,
+      "sha256": "38b9fdcc11d56568918199ff1b1d2d170511491974cbe7dfec45f8609b632316"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/design-input.json",
+      "bytes": 11646,
+      "sha256": "cb9d851d5aebc1a1f87a8c44f348464ec670853389b6278d7984a1fddbe5887e"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/generation-prompts.json",
+      "bytes": 8872,
+      "sha256": "fd7848dd770b8e2f82d0c327c9d5c20beb2810dd4953a705a5455fd6a497889b"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/manifest.json",
+      "bytes": 1366,
+      "sha256": "4961a18193afbf7dce49cbfa81a26664577421e6e8f74181d213ea860addfe19"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/quiet-order-refined.png",
+      "bytes": 1752109,
+      "sha256": "17e42b3b283559f0ff3b50a79e1976aabf33a5ebfd279457f3df391d85ac2a38"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/quiet-order-states.png",
+      "bytes": 1605693,
+      "sha256": "dce345ec28cbdb10251ab216c7b1f18a2b574b523572e5b2ba4d050b80c8eb61"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/review.json",
+      "bytes": 1304,
+      "sha256": "3c5f23f8e7ef1e04c36001201f2737591e86e3c5baa2c3ac9959dc84faee8ea0"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/selected-direction-v0.1.png",
+      "bytes": 1711524,
+      "sha256": "2756ee1388b97c9fa8142d62f0e28e1dbc4f79d460c4207896eba6a4371f8696"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/QO-1.0-candidate/source-brief-v0.1.json",
+      "bytes": 8282,
+      "sha256": "9413f066062c6f87da0bcccea76a59fe624b8ac08e3f199e2d84e226e1b464b5"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/clear-rhythm.png",
+      "bytes": 1643413,
+      "sha256": "8e3cd18f178cbb2cc61a2d37bd6be0114153348ed68cdd21817983843fc2bfc6"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/design-brief-v0.1.json",
+      "bytes": 8282,
+      "sha256": "9413f066062c6f87da0bcccea76a59fe624b8ac08e3f199e2d84e226e1b464b5"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/generation-prompts.json",
+      "bytes": 9166,
+      "sha256": "847266d35880c515702dd5e4da33cd563f7d6519405b446653af25680b82e905"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/moodboard-review.html",
+      "bytes": 9196,
+      "sha256": "87b081598e19ab5fca244b84be597c2a3fa997a75e53a0d4bfd02b33492acc67"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/quiet-order.png",
+      "bytes": 1711524,
+      "sha256": "2756ee1388b97c9fa8142d62f0e28e1dbc4f79d460c4207896eba6a4371f8696"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/soft-presence.png",
+      "bytes": 1768405,
+      "sha256": "029584fc40fe6803826419237c1b1ebf01845c3de56fba4de84d942467002034"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/sources/momcozy-home.png",
+      "bytes": 101408,
+      "sha256": "c96f4c13c616da22dc2335387dde3c67eace284c78e890420ded17e6c10de2d6"
+    },
+    {
+      "path": "design/2026-10-19-moodboards/sources/original-chat-prototype.png",
+      "bytes": 131050,
+      "sha256": "8d00d9ba76b473e7badd4bdfe28ce9249d988c2aa0262db1ea2f59ff00c448b4"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/README.txt",
+      "bytes": 2403,
+      "sha256": "fbf65e6d31a9a55367c3c0c98ad38556e1520cdbcd72c39a58db4b969952b9ca"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/.npmrc",
+      "bytes": 23,
+      "sha256": "f7dbda001b627b3a792fb6929303b517f047f03916f2c55227e81216d38a2008"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/AGENTS.md",
+      "bytes": 1044,
+      "sha256": "4e20d00d0612fe53f04c26b11175879780ae6ba4a4d2245af9599f50e448e505"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/assets/reference.png",
+      "bytes": 1516074,
+      "sha256": "ceb0185b13376654ef9a43f0aa49bb0929f96518305fc75ab3d4e2c3efb8cc98"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/design-qa.md",
+      "bytes": 5189,
+      "sha256": "3e5010c1f366ca05e70d00ebf33907b462059f80b3d8a584fdb4227432c3da4d"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/index.html",
+      "bytes": 318,
+      "sha256": "c9a68e2a843af03eddfbdb743386982abf27ad60aad1b22365d97b33db3aa296"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/package-lock.json",
+      "bytes": 57071,
+      "sha256": "5be2b05527f458e378c6897694583af60d611d23a5c7d8822c888cc3fbd4140c"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/package.json",
+      "bytes": 435,
+      "sha256": "c97c666b9843509e5a5a257aa3c346ccac720600d2525c404bfbb3751db4bb18"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/pnpm-lock.yaml",
+      "bytes": 35886,
+      "sha256": "9f9ef58f46b7c2432771e44346f59ab172a7711db98877e386feabacc9af1c3b"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/public/standalone.html",
+      "bytes": 4263523,
+      "sha256": "3a0a498836df04a98785d0e5ddc1fed57b33b5c5ca24da56702b1a2a7a364eb7"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/scripts/export-standalone.mjs",
+      "bytes": 1327,
+      "sha256": "f4c59a0d93b445e3b378ef10d25411480cdae954c474baa5319eadb0ece2cd04"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/scripts/prepare-sites-build.mjs",
+      "bytes": 910,
+      "sha256": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/App.jsx",
+      "bytes": 10284,
+      "sha256": "66d7c07d9d2a332b425a2683e8a9fb920f4d8f3b15705300248c1e6ced226292"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/Avatar.jsx",
+      "bytes": 2252,
+      "sha256": "9fb584d9c988a4410cbed8cb1f8753c433102a1de0484bd8cc6414a696ca1dc0"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/main.jsx",
+      "bytes": 265,
+      "sha256": "372bf7e685894cafd21c5253fc3a24a5ba43aa0a7742272ff81fb5899ef04cc4"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/motion-model.mjs",
+      "bytes": 9222,
+      "sha256": "1f30c5a7b9b698ca53808e82c5cdccccf368b18eb8a02142c48b797214d6c819"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/motion.css",
+      "bytes": 8627,
+      "sha256": "5042051954337cdd8954b7e2edddd5635d6061509d3b45f6ef464548cdf8ceae"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/src/styles.css",
+      "bytes": 292,
+      "sha256": "a40fc885072f72841eb425fd476e9b90d459d515f6ff9f3dde2d7c375baf9dfc"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/tests/motion.test.mjs",
+      "bytes": 5159,
+      "sha256": "57b700e9e26d658069cf67e1e17cb8cddb599ce2d02ca065574d38c898e5f90a"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/tests/sites-worker.test.mjs",
+      "bytes": 2219,
+      "sha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/vite.config.mjs",
+      "bytes": 382,
+      "sha256": "5f20ad6ef5aa89956c8791d8caefa224bc80718ca38df213b5e0c9c883d4bfee"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/app/worker/index.js",
+      "bytes": 483,
+      "sha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/bundle/index.html",
+      "bytes": 4263523,
+      "sha256": "3a0a498836df04a98785d0e5ddc1fed57b33b5c5ca24da56702b1a2a7a364eb7"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/generation-prompts.json",
+      "bytes": 4851,
+      "sha256": "99868155bbdde29d32f7c38e12bd78fd5fe81ab4c7b5b2a886631a7d8b13a57c"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/manifest.json",
+      "bytes": 15624,
+      "sha256": "0f8e5a668493e20222928674f6dbd04ea516fda093b319f4d220598448dd2129"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/package_delivery.py",
+      "bytes": 2285,
+      "sha256": "138c6cb7d3a04ef8c1bf88a95ee40e1a9aae675d8c30d0ffb07ce5046e8ed7e3"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/auto-loop-preview.jpg",
+      "bytes": 54583,
+      "sha256": "331ea64f38391212b4d2983909eea8c6027da824cacc92c0e60d598e695eeb47"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/auto-loop-preview.md",
+      "bytes": 610,
+      "sha256": "19c49058859ff42ba33f42c214ea973ec3d009a3298bb88c4adbe2e4c96773cf"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/avatar-24px.png",
+      "bytes": 113625,
+      "sha256": "af71e591fbcb85c18939335e93c290d8a4e0256bebb0bb224bbee8ae9eb05d8f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/avatar-48px.png",
+      "bytes": 113854,
+      "sha256": "8fb26328924b1d15349ebc81a8fb4346c889fd7542c779f1a0e665b193ece7fb"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/avatar-96px.png",
+      "bytes": 114382,
+      "sha256": "d0c8c50d718ded968f021d7b750d315ad4f78e8f70aa5b97d93a07e8cc077db6"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-preview.png",
+      "bytes": 73202,
+      "sha256": "3c7d40c17a0de7d7d7a95d70424ef8406d352e40cea80b92b6d0ba453bf5f72f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-reduced.png",
+      "bytes": 123590,
+      "sha256": "af51e88afa1ebb0e6155e556d1f92998135db8b925a08959e634933383ba11d5"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-01.png",
+      "bytes": 108803,
+      "sha256": "2a978fea8e22962763f2b7c7ed6425a8114dbc8ff0ca4db272bbf89e91f29f6d"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-02.png",
+      "bytes": 114628,
+      "sha256": "0195a4a8dcd89b178829f5ca89be1edd574cb175a8a5a6ce4c1f7967d0f690f7"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-03.png",
+      "bytes": 114670,
+      "sha256": "c906088074e4aaef42e78f55e6bcebe2ee83f5c47b1bfff080bfb26d3fdb5da1"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-04.png",
+      "bytes": 118300,
+      "sha256": "09a906fae9afca38ae4c8185a9bea7fb089cbca2ddb04309ed908280a1d4cd12"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-05.png",
+      "bytes": 120496,
+      "sha256": "bc07d2e0ac027accafde0f2e04ff1d62a6ea9301c887510b1bda6c6e01d09b9f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-06.png",
+      "bytes": 116213,
+      "sha256": "60f1bc706ac77dc6f8667cf98f9ba1ff0b5fec1f776487f0b8b9880ea21bb457"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-07.png",
+      "bytes": 118060,
+      "sha256": "361fd928bc58ab46b47e988bf0588ace3057d1907a09c9286436f4e12fc41f43"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-08.png",
+      "bytes": 122161,
+      "sha256": "c1fa61f11de828cb57f5ee806868d2fbeb025ae824cfac0466062d85448616e7"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-09.png",
+      "bytes": 121667,
+      "sha256": "c7d659fcefc585d8cb4e87f10e3afc3c9ee72d098563921ced81d920972fa91a"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-10.png",
+      "bytes": 119588,
+      "sha256": "ed032bf09819a3f8a8d68c39f0997ce5cd896bf1c0fbb16b481efcd9da65cfaa"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-11.png",
+      "bytes": 120456,
+      "sha256": "b0bede5df2d48ed645e96425d5c1acfe0e93eaca0a21cd4af90761383270bd21"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-12.png",
+      "bytes": 122812,
+      "sha256": "d26c585e7d17cc6b42ced1c67a6fb8172de19dfcbe8d97a190784c364d361b61"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-13.png",
+      "bytes": 120598,
+      "sha256": "9936f315421106e56450efada5659c7b660cafeab80bcd836505cf8b28d3d2a0"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-14.png",
+      "bytes": 119204,
+      "sha256": "949ab10c2a8e090b4c510cbff7d08e9f7da32455c279825f417234c6b2ae186b"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/desktop-state-15.png",
+      "bytes": 118500,
+      "sha256": "7d45ebf4998ca531b948d260c4e7cc52a2205bcef76c0f3a4ac2efa811c3d883"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/flow-checks.json",
+      "bytes": 492,
+      "sha256": "d5e32cd4c9a7fd9b5032ef260ae7f0653c8331e4eac20f8fc5f4fc2965861df7"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/independent-logic-review.md",
+      "bytes": 3127,
+      "sha256": "1d9cc76d7661b869426a3835b48a22addbbe38b93871a2dcfdf6f06fd8e25885"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/independent-visual-review.md",
+      "bytes": 6891,
+      "sha256": "38dfe31c8da3627d49c8344be6e2f881d2d9bf68182672c057849755794b8e59"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-ready.png",
+      "bytes": 95620,
+      "sha256": "2723b506766d441d829c88598b96e2e238ae4eda26fdc61ed02e8828ff840577"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-01.png",
+      "bytes": 95549,
+      "sha256": "e3af1aec2ccda689fe065464d50c552ad1e6cc645bee847ca4b8d9bfe2f3dc18"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-02.png",
+      "bytes": 99697,
+      "sha256": "e50e6283b2911b023ac1c4527dcdc5e5d1e37aafe666761c65a2a198996975b4"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-03.png",
+      "bytes": 97760,
+      "sha256": "b91fd8f807e39387b160ed380c55313a16867d012a8e5d1111585b0942415b75"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-04.png",
+      "bytes": 100364,
+      "sha256": "e966e1526f82bfe8d6ea5247312ed6df30c48ba1307ba9993acd271ebb1722fa"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-05.png",
+      "bytes": 100539,
+      "sha256": "955244c3ac415a358b6bde5e72f58b0b450bc978c44a511bf60104bd6ec88ade"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-06.png",
+      "bytes": 95698,
+      "sha256": "8e7729ede53e79d3af3559c513806b3f732bb6a1d941bc1fcc9a2f4a6b5101b5"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-07.png",
+      "bytes": 97231,
+      "sha256": "203f5efa93fbf089922f9bc269263d0aeced527eff20c25a5ab14c12d7bc8082"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-08.png",
+      "bytes": 101456,
+      "sha256": "02b1a391ae00a84cb0bcd89b897357c92dfea5d94d6f9dc1306c9d04f8e91aee"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-09.png",
+      "bytes": 100349,
+      "sha256": "1e58af09d318759d24eee96d91624d5e4a96c913dd16836d90ecf44314bb170a"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-10.png",
+      "bytes": 99012,
+      "sha256": "12b9e89070ea003e02d795c3ed961edef16c395b9652f23bcb65062fc6dc8375"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-11.png",
+      "bytes": 99927,
+      "sha256": "f056b175a89240c9c48df7e72262e72501e43166491d8d1ca79f43de6f52be4f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-12.png",
+      "bytes": 101806,
+      "sha256": "f0e94ea6af71a769d75f6e25b42df6d8a525e5eddd44d84720604523915e861e"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-13.png",
+      "bytes": 99965,
+      "sha256": "68d2251183526e818eb563c89dddc6d0790476df4cbcad240651699c5fa4882b"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-14.png",
+      "bytes": 99009,
+      "sha256": "599e1eae7e564a0a68864ffd1b29d61370b0641c307371d2470d5af5272dc78f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-state-15.png",
+      "bytes": 97782,
+      "sha256": "ee6b6418d65f13d44ce38e167da4051f8f408c7650d7d809b7d0e08a7d377fcf"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/mobile-timeline-scrolled.png",
+      "bytes": 97471,
+      "sha256": "f0d8c477e05df3079cf678163c291c999e27d7dfdfd50b7353f8d52d7aebaa0f"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/runtime.json",
+      "bytes": 6837,
+      "sha256": "f446ea964e9d70b53f52dedbfb2b52149b88b53362899741d892db27ab45bb60"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/source-and-implementation.png",
+      "bytes": 139325,
+      "sha256": "5aa48196b92a0ca09b7d909fcf402329d12dd4438249a74fd1ac163b5955681e"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/speaking-active.png",
+      "bytes": 120409,
+      "sha256": "825b6317257c0994c4caebe465d8b929fd6a64d9068c19b50a86295dfff46976"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/speaking-fixed.jpg",
+      "bytes": 55381,
+      "sha256": "7d42be680ecc43f8790052a7c3e4275feae6ddf1e348de31eb960a51b1e4d3c2"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/speaking-restarted-fixed.jpg",
+      "bytes": 54975,
+      "sha256": "dca2cf5dc0dfeacdfafae6c26cbe570dc765390fa43e258caa8a319236364086"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/speaking-visibility-fix.md",
+      "bytes": 1442,
+      "sha256": "5d7304fd3aed8eafe69908e37ac327796eb226a27b62ac261ab96991ee587bf2"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/reviews/state-captures.json",
+      "bytes": 4385,
+      "sha256": "56053fc78395cf8a299e80010efefff79b119d5b552ba4a649c1613b7c218b5c"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/soft-companion-motion-v0.1.zip",
+      "bytes": 7783194,
+      "sha256": "76468981c223aa57e9e61547fab5154f37fc6222a2330ac5c7a299b0caf0f2a0"
+    },
+    {
+      "path": "design/2026-10-19-soft-companion-motion/v0.1/state-spec.json",
+      "bytes": 9699,
+      "sha256": "d75aa492b7bcb4b086537ef756a5d4534b5799f0aa4c910507abd404fe3fd539"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/Momcozy-QO-2.0-candidate.zip",
+      "bytes": 1271895,
+      "sha256": "d3a07204c2e82c22d17f6cda16618435d9e31bbd66652d591c9a6b2dfeaf2649"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/README.txt",
+      "bytes": 1246,
+      "sha256": "417a9b18de8c2905894fd24cdba7ef1cd3b60d14a0c36aafabd5dda7dec480f2"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/STYLE_SPEC.txt",
+      "bytes": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/assets/app.js",
+      "bytes": 8200,
+      "sha256": "db7216fd5ffaf6b4da223767e553a7b8a07cd9bac1e39c3655acaf009022cf27"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/assets/style.css",
+      "bytes": 16745,
+      "sha256": "423cc0e8b0c84c9b1ae0f1de22b0dac5a3e6f6da5464e2194ec67170f3ce7990"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/build-metadata.cjs",
+      "bytes": 7538,
+      "sha256": "57591efdf4ca5cab5736de98bde37d550e1f644b7604b0a3ea3c39f55c0a53b3"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/candidate-summary.json",
+      "bytes": 956,
+      "sha256": "f3ed92889cd0307b483e87bd2a7d11a28948f8ca973cd7cb6744e24984d17b91"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/design.json",
+      "bytes": 10489,
+      "sha256": "508cc7c254b61f27078246be0cd608c7439bb8736a5f23b541217ef584bff73a"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/index.html",
+      "bytes": 13126,
+      "sha256": "d6b6afe6281f4ae67f559728dc4df8d5ec0ea8dceda13ad6e1f7685f5f835d52"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/package.cjs",
+      "bytes": 2244,
+      "sha256": "cb009d5741f02c50622be618803fde687a519169f850b18b40a7cadd7002f8d4"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/preview.cjs",
+      "bytes": 927,
+      "sha256": "e5965ace13ddd7cd1db02f952e177d1fc789e3951d08b5f85a7f5e7108c4d9e9"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/capture-matrix.json",
+      "bytes": 8714,
+      "sha256": "4ba36007d3f2bf210247ff3b56a0fc62a027dba02b91cdf5a48b0a7b5c898b08"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/challenger.txt",
+      "bytes": 9050,
+      "sha256": "572be70a4cdfe0f6a66e6e158a3cd99f147e2b3e9e04b9c9f8d562070ddb2d25"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/desktop-accessibility.png",
+      "bytes": 95731,
+      "sha256": "409fee01a73eaf65eed3d52f8c9b40e2c35cfe154c19d5180419ae3e1e8baec8"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/desktop-failure.png",
+      "bytes": 94897,
+      "sha256": "a37e979f9393b1b0c78859a57494183cadbe91d78b45d07f8a857915907d7de6"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/desktop-ios-light.png",
+      "bytes": 84608,
+      "sha256": "b8df22a2d779c04301a274e78e870e208af8cf814f5805ff9ab60c8e926fb8c6"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-failed.png",
+      "bytes": 31596,
+      "sha256": "e68e348be795f90be719ce90b0e4ece400ddc0811d8ff2422ff11bab62252a01"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-local.png",
+      "bytes": 32029,
+      "sha256": "f351ebd1e2a32b52ebe39f2ec38399241d2a2e14a2884737cf7ef90a9ab972ab"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-review.png",
+      "bytes": 31329,
+      "sha256": "cdbaf28cb1631950c16899af95f607140d0e4cf891770ba2ce65c561de2fc778"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-saving.png",
+      "bytes": 30290,
+      "sha256": "e086962a5502d279568ae86ede0f5f9fe8d0fe612aaa30befc4a076770ed4f8c"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-syncFailed.png",
+      "bytes": 32400,
+      "sha256": "ced501f1cb5a3687f374981beec22599abe035f2ed4a572c9325bd6ee638cbd0"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-synced.png",
+      "bytes": 30203,
+      "sha256": "5f7b69328a136d250fa2f61e6d18bf8ef41b666ad0e2895433cf8679d89cf1c1"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-syncing.png",
+      "bytes": 30814,
+      "sha256": "353d06130b1cbff18aaae509a4de4a8e2ecbd4cf1e5d82d51924b62db20476c5"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-dark-unknown.png",
+      "bytes": 32526,
+      "sha256": "01df86372563587bdf0ea44cc1d134628e67959bd7dacc5086098f3299824fc2"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-failed.png",
+      "bytes": 28343,
+      "sha256": "2c320eedd3164c1d9d79573fb7276fbe838f1fd025e1ba35d68a1b9e4851c135"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-local.png",
+      "bytes": 29180,
+      "sha256": "1a81bac39d9defdbc535eab0ed431e33b39eec3a3df31f607ad63a72c358cfa8"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-review.png",
+      "bytes": 28382,
+      "sha256": "f25d9c5d9686aee2534a7f461e21f4848c61d31d1fdc8c4ff76a9e82feb1219b"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-saving.png",
+      "bytes": 27125,
+      "sha256": "036fea20790cfc4305d83783a6859668ce6e829dd8582cba8aa707b23ab3d2c7"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-syncFailed.png",
+      "bytes": 29180,
+      "sha256": "5e755e0b03bac5edaae004e3d083443d852252eb07c61199469fa95c89a22fb5"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-synced.png",
+      "bytes": 26927,
+      "sha256": "cff52c938a3959accf1db0d37af69513efaadc90cf876da9febc60d023acb3b7"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-syncing.png",
+      "bytes": 27643,
+      "sha256": "e222b63f892404ca0f8d29ece97cc65e24a48361b0ceade39e01643a841dbd35"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-android-light-unknown.png",
+      "bytes": 29724,
+      "sha256": "45dc74e9dd39ec9aaff54da4ae562964ece66ac3266c93e6270da78287232094"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-failed.png",
+      "bytes": 30198,
+      "sha256": "72dc991d663da6273ff99938523e9543b1a06f5cc8d6ac48400d5d50a262dbe5"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-local.png",
+      "bytes": 30545,
+      "sha256": "625f7b67561731610e8fafb8537d009fc2db8d5f6a3d5e5651eca8c967641af5"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-review.png",
+      "bytes": 29935,
+      "sha256": "c1fb1a45bf14eb200090c318223f98c612bb84e15caa538f523161e089d6ac7d"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-saving.png",
+      "bytes": 28883,
+      "sha256": "0bb219727d5c8037ab129a132ac62a3b444e9ec37d766c8fdf3aed0843973b52"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-syncFailed.png",
+      "bytes": 31187,
+      "sha256": "0f0eb648fcc05e957297772be92e42911970451f6cf726d77f86b73425c42dd1"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-synced.png",
+      "bytes": 28818,
+      "sha256": "fe9be529e53ae885b5e26ca53a34a969c18542b7713d1508cd28f82afa3f3389"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-syncing.png",
+      "bytes": 29416,
+      "sha256": "0fa3f95b6f61945a09b22a7326acde968a876c6bc4768e9d38bb4a5572bf6909"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-dark-unknown.png",
+      "bytes": 31488,
+      "sha256": "a29355061041fbaac8bab3f428eddef09007db838e6ded7474037aebb96d15cc"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-failed.png",
+      "bytes": 27465,
+      "sha256": "1c413b5e687170b109109ef9528431cf6ff1395779faf2e8e1013e2f78482954"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-local.png",
+      "bytes": 28092,
+      "sha256": "e2b2f9e073c7955745a92b6541c7c84606a6a8bf3b540628975c3037022a7f25"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-review.png",
+      "bytes": 27406,
+      "sha256": "b397100868b99d5387d2c34e48511a2a9c227b71d2e2ddc76a8a6329e5f7470a"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-saving.png",
+      "bytes": 26326,
+      "sha256": "c39eb4609b50e0485d84fece968864a53d9d0b4a8b242f206437ca0a13dc0475"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-syncFailed.png",
+      "bytes": 28475,
+      "sha256": "7d2b5a82fe927bfc5bee5e8451c3bac8a8a7a1698f0648b9699affa9b8290855"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-synced.png",
+      "bytes": 26168,
+      "sha256": "ef953d82b4a11a914723c19573da727929eb016653f8c3440727dcbae4fac41d"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-syncing.png",
+      "bytes": 26886,
+      "sha256": "578ca03febb81c05d477e4d091ce42812b99c0dfeb48e06a6bf897c4c0dfe113"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/matrix-ios-light-unknown.png",
+      "bytes": 29042,
+      "sha256": "7c912d7fb4e42285721cf413b9dcf88c461b246f8dd97640439e580dbc09c0c5"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/mobile-360-android-dark.png",
+      "bytes": 27639,
+      "sha256": "42a206ff7060bd201a9d2bc6609d2367b429417fcc915fc9e32a4651d3f6b5b7"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/mobile-390-ios-light.png",
+      "bytes": 25762,
+      "sha256": "8d4d090c66635a301f6118d9eb57dfcbc6686134e0c84aa1b1542f1247c9d0fb"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/motion-reduced.png",
+      "bytes": 79840,
+      "sha256": "a74f8057cc80625486211d59453e42c9329c98f1c84ad05b4dbd723dc5276f65"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/runtime.json",
+      "bytes": 3164,
+      "sha256": "f74df95766a6480eb1f501c417c00115bf30528216e6a1e852ddfaaa35fdf713"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/stage-check.png",
+      "bytes": 31971,
+      "sha256": "c1815a10745b9a418ac63d7e5224d1dbbefe8901ece01386d862b2cefcea203e"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/reviews/static-check.json",
+      "bytes": 3449,
+      "sha256": "09ba7895a6fa6fffe6ee884523e71ec0c600932a931b98105b9b91e22870c2bc"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/QO-2.0-candidate/source-input.json",
+      "bytes": 681,
+      "sha256": "91cea7088672648a87d1af326fbb41e8cb10ab3a67ef39e8c435677411c8e247"
+    },
+    {
+      "path": "design/2026-10-19-ui-style/package-manifest.json",
+      "bytes": 8331,
+      "sha256": "f74346a8fc5011ed747b2c069543f7fbf5321760a8cfeb33edcd4d0262d6b81a"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/STYLE_SPEC.md",
+      "bytes": 4514,
+      "sha256": "58197c3544efe02ae102a2a550a299d8c106419301f9f20e72b7c5584086245a"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/assets/app.js",
+      "bytes": 11668,
+      "sha256": "f280416147052594be375e4892fc3a1e7eab9eee4c1bbd1b3ed379da207ec22e"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/assets/style.css",
+      "bytes": 22138,
+      "sha256": "c16b60a0fbac12dad5292647134523f31ec93446f04d9e5c9715e6accd8fcfb6"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/candidate-summary.json",
+      "bytes": 1316,
+      "sha256": "6f831f014c4b97eb4bb77fc4b34fa2f1de36c4b0a57ce4c3623ffa3476c817f8"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/design.json",
+      "bytes": 4094,
+      "sha256": "0ea1f37341b21c794af54a67ab02aaba9f36de768791d58d984c50fe387279f7"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/index.html",
+      "bytes": 10743,
+      "sha256": "1737d8426445f5469bb2d1b12a7d188193372dc876959a26ca48b6a028ad786a"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.1-candidate/source-input.json",
+      "bytes": 849,
+      "sha256": "ffd4857336ad7ba482a76a70e00228491ff21b642df22bcf59ebd9fcdbc8c9a3"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/STYLE_SPEC.md",
+      "bytes": 7166,
+      "sha256": "ecb9301aef2124a8e02e1a30c11cbd89705140b23273ef712e3d68c2f53d9238"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/assets/board.css",
+      "bytes": 29050,
+      "sha256": "3db4b5b0dd49ca3ca7e2d2d2feb56550f935809499a5adf98b4474c7939d452b"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/assets/board.js",
+      "bytes": 16302,
+      "sha256": "3c52109e52d10cbc943d4e4508a654fa97b7c8f2e948cbbc3f3c99e41317ee59"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/bloom.html",
+      "bytes": 396,
+      "sha256": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/candidate-summary.json",
+      "bytes": 1951,
+      "sha256": "8bfcdae5f275b23865b8c2b75113161c35b3547632add2c6db8ffa228f74b336"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/design.json",
+      "bytes": 4760,
+      "sha256": "bf2f21de45812ae285d91cf56033958c539f0c7be84d46d95369d3efd809c8fb"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/finalize.cjs",
+      "bytes": 2200,
+      "sha256": "6071b681d937af7b057d78a071d5fe3ebd1ae93ec08ac6e4ef26809718bd0aab"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/index.html",
+      "bytes": 7344,
+      "sha256": "ad2e16730a49a95c369d9c6963459d334d205c6d58ed174657cb7863484e2682"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/lumen.html",
+      "bytes": 396,
+      "sha256": "f2139a52a0d0fa9b8f7767fbdffefc62e5949c5e05543ff79c01b5137cd7c5bc"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/orbit.html",
+      "bytes": 396,
+      "sha256": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/source-input.json",
+      "bytes": 1036,
+      "sha256": "7c4605b75bd41492e279b295d00e9d46b184629691a5d3c5ad235b4d20984465"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.2-testboards/validate.cjs",
+      "bytes": 3802,
+      "sha256": "364c1b273ab458445b7eca0d283721cc5ab01c2e776bc141faf5c1e1a564c4ab"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/STYLE_SPEC.md",
+      "bytes": 7802,
+      "sha256": "54292a81d2b0a8ddf02233d03506df6194bbd1e9ab10d10daabb20402eb29e49"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/assets/board.css",
+      "bytes": 30063,
+      "sha256": "780ce9d35b40823233a1defb6282d5ef30cd5545dc9d285aa334436a580e3081"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/assets/board.js",
+      "bytes": 16322,
+      "sha256": "900a8151f7847251cb91d987baa5130c7acbfa80b4773ba8d023c2599d97c1fa"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/bloom.html",
+      "bytes": 396,
+      "sha256": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/candidate-summary.json",
+      "bytes": 1952,
+      "sha256": "55ac643ceb550514dac88974e79568e881208286a52535cd959e05dc3a9b43b9"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/design.json",
+      "bytes": 5045,
+      "sha256": "2ea0da3057390679f36ff04ce38f25374cdefd78b63d357f40bcb24220d77221"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/finalize.cjs",
+      "bytes": 2201,
+      "sha256": "ec09036499fd419437348fef68e4400a95247e31f06161cde6df212f4a3cc52f"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/garden.html",
+      "bytes": 392,
+      "sha256": "d332ecb3f9d06d48749dbabfb38a2971a406e417b8923284fe6f4924cf74925a"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/index.html",
+      "bytes": 7712,
+      "sha256": "6f954a0338fd543c0cfa52334a88b11438f6f07d2af4d91176d57e2a9de833d7"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/orbit.html",
+      "bytes": 396,
+      "sha256": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/source-input.json",
+      "bytes": 1177,
+      "sha256": "e990abbf0976ea2c36d8a9cfe8f737785b35339990337f059a8d50588494f98f"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.3-testboards/validate.cjs",
+      "bytes": 3804,
+      "sha256": "da577bcc261da2774140d315256fd6139dc0f7c9a660283735af1ec54b65eb27"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/STYLE_SPEC.md",
+      "bytes": 8261,
+      "sha256": "43a7f73e44622bfc19f9f95c4720d6f2cdf0a185581d990bbd3bbe5a13d00dfd"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/assets/board.css",
+      "bytes": 33607,
+      "sha256": "3092336c160cf0ec3987764bc224db7f9204791968e86074df13c37953c61b7c"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/assets/board.js",
+      "bytes": 16637,
+      "sha256": "cc24382b21d20e801ffcd0e465e9ba93a4dcb50ff65ec747107393e2412e4597"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/berry.html",
+      "bytes": 391,
+      "sha256": "c7fc177614dd01f4381343485e1b3f970550a4a11b02971db867268423e6b55f"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/bloom.html",
+      "bytes": 396,
+      "sha256": "79f305962e711078b4aa7fd6555fad1e200c58a15a8d9d689552fc15239995cb"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/candidate-summary.json",
+      "bytes": 2037,
+      "sha256": "a2801ef558dacb148a960533cf52f3774d831142e4d979b4d7b24c5b4573c094"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/design.json",
+      "bytes": 5687,
+      "sha256": "8c0b76789a0c4f2a4d29f6d4f0eb6cb83416d69a23bb70f5b6072e244b505557"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/finalize.cjs",
+      "bytes": 2214,
+      "sha256": "4af6b78a56ec23fadbffb244e9fd5502f770bc87926ccc6536355dc1ad645cbe"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/garden.html",
+      "bytes": 392,
+      "sha256": "d332ecb3f9d06d48749dbabfb38a2971a406e417b8923284fe6f4924cf74925a"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/index.html",
+      "bytes": 8711,
+      "sha256": "990e1a4f249aca5cc8222d5c0e0d9d5eb804a33bbb4a4b4792ea23211cec77db"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/orbit.html",
+      "bytes": 396,
+      "sha256": "643eca5f263d11c71a4fba5064e04bb1702ccceb488d668cf0f258237bc5ecde"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/source-input.json",
+      "bytes": 1280,
+      "sha256": "989ae4d8a02e31fd2443a13d53020da63672b2e56891e990d86b32a8fa19eb22"
+    },
+    {
+      "path": "design/2026-10-20-semantic-style/CS-0.4-testboards/validate.cjs",
+      "bytes": 4101,
+      "sha256": "8f938dc04acc415f3ef8738216ebd40d9ddd2bdc2b8ca1957047e8569e1cf07f"
+    },
+    {
+      "path": "prototype/current/IMPLEMENTATION.txt",
+      "bytes": 5735,
+      "sha256": "4dc1f0736d181a05883ee67d9df8d9e82ac0e1574cad34f80dac2bd6c456d58a"
+    },
+    {
+      "path": "prototype/current/Momcozy-final.html",
+      "bytes": 2197478,
+      "sha256": "27968ce5820fda788a16566bbfcce8e7bc0940efcd0c623da2348b686d2e671e"
+    },
+    {
+      "path": "prototype/current/README.txt",
+      "bytes": 10325,
+      "sha256": "4bdcce7a23ef1e6c76e49dfd159c0bcce94b0bcfe38050b14b342d77cea04c79"
+    },
+    {
+      "path": "prototype/current/assets/app.js",
+      "bytes": 84809,
+      "sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19"
+    },
+    {
+      "path": "prototype/current/assets/bloom.css",
+      "bytes": 14538,
+      "sha256": "9fa8c0cf85d5812edc2fc7b9aaa6d85377f10745e6f885739e2e3ebfc38e70bf"
+    },
+    {
+      "path": "prototype/current/assets/companion.js",
+      "bytes": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "prototype/current/assets/icons.js",
+      "bytes": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32"
+    },
+    {
+      "path": "prototype/current/assets/motion-model.js",
+      "bytes": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "prototype/current/assets/soft-expressions.png",
+      "bytes": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "prototype/current/assets/style.css",
+      "bytes": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "prototype/current/build-manifest.cjs",
+      "bytes": 1801,
+      "sha256": "978d1be8bf6a3cd3eb82a3dded5233504847050394f4824653bf3fa55e1ebeb1"
+    },
+    {
+      "path": "prototype/current/build-standalone.cjs",
+      "bytes": 1457,
+      "sha256": "64a3ca8456b85d141014a46e3d851fde31d508eb472b2699b71740fede18b4b5"
+    },
+    {
+      "path": "prototype/current/delivery-review/FINAL_DELIVERY.txt",
+      "bytes": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/DELIVERY.md",
+      "bytes": 6288,
+      "sha256": "3e186cc3ed18ad5e955714dfd62978d98e924ad088e855d94785b70f86cd9ea9"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/evidence.json",
+      "bytes": 2550,
+      "sha256": "96ef32eff2cd6f6e13e415449b8646a66628f235482065e32d38d2b252bc17cd"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/screenshots/01-today-empty-pre-fix.png",
+      "bytes": 217474,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/screenshots/02-ai-welcome-pre-fix.png",
+      "bytes": 213814,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/screenshots/03-records-empty-pre-fix.png",
+      "bytes": 207797,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/screenshots/04-ai-saved-card-pre-fix.png",
+      "bytes": 152436,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf"
+    },
+    {
+      "path": "prototype/current/delivery-review/bloom-glass-01/screenshots/05-ai-conversation-pre-fix.png",
+      "bytes": 162301,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93"
+    },
+    {
+      "path": "prototype/current/delivery-review/delivery-integrity.json",
+      "bytes": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "prototype/current/delivery-review/interaction-review.md",
+      "bytes": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "prototype/current/delivery-review/visual-review.md",
+      "bytes": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "prototype/current/design.json",
+      "bytes": 49490,
+      "sha256": "a7db44a8abf30d4cb169880dae7770c00d1e21e95bae650c509ef92b2a6539b1"
+    },
+    {
+      "path": "prototype/current/file-manifest.json",
+      "bytes": 5562,
+      "sha256": "1276dc898541bf8987ffd1a5954c36fbfd85f13251f60289a966f067b7198c1c"
+    },
+    {
+      "path": "prototype/current/index.html",
+      "bytes": 11435,
+      "sha256": "f957a4f3315d339d43b672842b1c186001ffab677dc96ebc7cd34409956ff377"
+    },
+    {
+      "path": "prototype/current/preview.cjs",
+      "bytes": 863,
+      "sha256": "e6316a0b1985302900686758c6f1bd3a8ccdd6f525492ee9048113d5f3f172fb"
+    },
+    {
+      "path": "prototype/current/sources/Avatar.jsx",
+      "bytes": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "prototype/current/sources/STYLE_SPEC.txt",
+      "bytes": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    },
+    {
+      "path": "prototype/current/sources/motion-model.mjs",
+      "bytes": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "prototype/current/sources/requirements.json",
+      "bytes": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "prototype/current/sources/revision-14-file-manifest.json",
+      "bytes": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "prototype/current/sources/revision-14-requirements.json",
+      "bytes": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    }
+  ]
+}

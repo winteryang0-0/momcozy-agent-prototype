@@ -1,0 +1,35 @@
+/* English version of the current Today card layout. */
+.compact-advice .compact-advice-action{display:none}
+.conversation-home-head[data-expanded=false] .compact-advice .icon{transform:rotate(90deg)}
+.conversation-home-head[data-expanded=true]{padding:7px 12px 9px;border-radius:20px;box-shadow:0 10px 24px var(--layout-control-shadow)}
+.conversation-home-head[data-expanded=true] .compact-advice{min-height:36px;padding:0 2px;background:transparent}
+.conversation-home-head[data-expanded=true] .compact-advice #compact-advice{display:none}
+.conversation-home-head[data-expanded=true] .compact-advice .compact-advice-action{display:inline;margin-left:auto;color:var(--action);font-size:12px;font-weight:700}
+.conversation-home-head[data-expanded=true] .compact-advice .icon{transform:rotate(-90deg)}
+.conversation-home-head .compact-advice .icon{transition:transform 180ms cubic-bezier(.2,.8,.2,1)}
+
+.daily-advice .advice-card{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:124px}
+.daily-advice .advice-widget{touch-action:pan-y}
+.daily-advice .advice-card-main{display:flex;align-items:flex-start;gap:12px;flex:1;min-width:0}
+.daily-advice .advice-controls{display:flex;align-items:center;justify-content:center;width:100%;margin-top:8px}
+.daily-advice .advice-dots{display:flex;align-items:center;justify-content:center;gap:3px}
+.daily-advice .advice-dot,.daily-advice .advice-dot[aria-current=true]{position:relative;display:grid;place-items:center;width:32px;height:28px;padding:0;border:0;border-radius:999px;background:transparent;cursor:pointer}
+.daily-advice .advice-dot::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--divider)}
+.daily-advice .advice-dot[aria-current=true]::before{width:18px;border-radius:999px;background:var(--action)}
+.daily-advice .advice-dot:focus-visible{outline:2px solid var(--action);outline-offset:1px}
+
+.conversation-home-head #expanded-advice{margin-top:6px;padding-top:9px;border-top:1px solid var(--divider)}
+#expanded-advice .advice-card{min-height:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+body[data-theme=dark] #expanded-advice .advice-card{background:transparent;box-shadow:none}
+#expanded-advice .advice-card-heading{display:flex;align-items:center;gap:9px;min-width:0}
+#expanded-advice .advice-card-heading strong{min-width:0;color:var(--text);font-size:15px;font-weight:700;line-height:21px;letter-spacing:-.25px}
+#expanded-advice .advice-icon{width:32px;height:32px;border-radius:11px}
+#expanded-advice .advice-icon .icon{width:19px;height:19px}
+#expanded-advice .advice-reason{margin:7px 0 0;color:var(--secondary);font-size:12px;line-height:18px}
+#expanded-advice .advice-controls{margin-top:5px}
+#expanded-advice:not([hidden]){animation:today-expand-in 180ms cubic-bezier(.2,.8,.2,1) both}
+@keyframes today-expand-in{from{opacity:.55;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+body[data-reduced=true] #expanded-advice:not([hidden]){animation:none}
+body[data-reduced=true] .conversation-home-head .compact-advice .icon{transition:none}
+@media(prefers-reduced-motion:reduce){#expanded-advice:not([hidden]){animation:none}.conversation-home-head .compact-advice .icon{transition:none}}
+@media(max-height:680px){.daily-advice .advice-card{min-height:112px;padding:11px}.conversation-home-head[data-expanded=true]{padding-bottom:7px}#expanded-advice .advice-card{min-height:0;padding:0}#expanded-advice .advice-reason{line-height:17px}#expanded-advice .advice-controls{margin-top:3px}}

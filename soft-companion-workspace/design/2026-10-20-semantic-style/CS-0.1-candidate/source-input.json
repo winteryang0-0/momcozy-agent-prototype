@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-20",
+  "user_request": "重新探索 UI 风格板，使内容焦点、反馈和图标更生动，功能与模块符合用户认知和语义；可参照 Momcozy App 内的组件风格和语义。",
+  "reference_policy": "借鉴可核实的任务分组与公开界面表现，不复制官方图标、图片或整屏设计。",
+  "sources": [
+    {"id":"S01","type":"official","locator":"https://momcozy.com/pages/app","observed":"2026-10-20","scope":"公开营销页面与展示图；App 版本和设计规范未知"},
+    {"id":"P01","type":"project-candidate","locator":"../../2026-10-19-home-ia/HOME-1.0/design.json","scope":"本项目 HOME-1.0 候选页面与评审截图，未冻结"},
+    {"id":"U01","type":"user","locator":"本会话 2026-10-20 用户消息","scope":"允许重新探索，Momcozy App 作为参考"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-20",
+  "user_request": "为测试制作三个风格板；改善此前过于扁平的细节，增加液态玻璃风格和更有生命力的色彩，同时延续 Momcozy App 组件风格与功能语义的参考。",
+  "reference_policy": "只借鉴公开可见的任务语义与一般视觉特征；不复制官方图片、图标或整屏设计。",
+  "sources": [
+    {"id":"U01","type":"user","locator":"本会话 2026-10-20 用户消息","scope":"三板测试、液态玻璃、鲜活色彩及 Momcozy 参考"},
+    {"id":"P01","type":"project-candidate","locator":"../CS-0.1-candidate/STYLE_SPEC.md","scope":"既有语义风格候选与其来源记录，未冻结"},
+    {"id":"P02","type":"project-candidate","locator":"../../2026-10-19-home-ia/HOME-1.0/design.json","scope":"首页、记录和 AI 助手的职责参考，未冻结"},
+    {"id":"S01","type":"official-public-page","locator":"https://momcozy.com/pages/app","scope":"Momcozy App 公开展示；非正式设计规范，未取得品牌 token"}
+  ]
+}

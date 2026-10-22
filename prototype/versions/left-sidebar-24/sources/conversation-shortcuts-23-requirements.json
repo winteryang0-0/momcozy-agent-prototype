@@ -1,0 +1,30 @@
+{
+  "revision": "conversation-shortcuts-23",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "secondary-sheet-motion-22",
+  "authority": "Current conversation: remove the suggested function entries repeated inside conversation function cards; place them permanently above the composer in one horizontal row at about half the default composer height, retaining the existing interaction rules and page architecture.",
+  "changes": [
+    {
+      "id": "R23-01",
+      "title": "移除会话内重复功能入口",
+      "rule": "欢迎内容、AI 回复及照护任务卡片内不再反复呈现「记一笔」「听哭闹」「看便便」建议入口。任务卡片自身的类型选择、采集、保存、重试、取消及回执操作保留。"
+    },
+    {
+      "id": "R23-02",
+      "title": "输入框上方常驻横排入口",
+      "rule": "在输入框上方常驻一行「记一笔」「听哭闹」「看便便」入口，顺序固定；默认行高约为单行输入框外框 58px 的一半（目标 29px），沿用莓色留白的语义色与键盘焦点样式。在欢迎、连续对话、进行中任务、深色和短屏下均可见，不产生横向溢出。"
+    },
+    {
+      "id": "R23-03",
+      "title": "沿用三项功能的原有交互",
+      "rule": "常驻入口继续调用原有会话任务流程：记一笔独立草稿与保存，听哭闹直接请求麦克风，看便便直接请求相机或选照片；任务进行中点击其他入口应保留当前任务并给出反馈。刷新与 file:// 单文件、模块版均保持入口可用；不新增路由或底部导航。"
+    }
+  ],
+  "scope": "沿用 R22 的四条 hash 路由、会话时间线、今日提醒、共用二级弹窗、CS-0.5 莓色留白与既有任务状态；仅移动三项会话照护入口的位置和表现。",
+  "assumptions": [
+    "「对话框」指底部默认 58px 的输入框外框，高度一半按 29px 实现。",
+    "三个常驻入口在活跃任务中保持可见，任务互斥沿用现有提示与保留草稿的规则。",
+    "本轮仍为本地可交互候选，尚无用户确认的合法 B-ID 冻结基线。"
+  ]
+}

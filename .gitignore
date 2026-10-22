@@ -1,0 +1,24 @@
+# Local dependencies and build caches
+.pnpm-store/
+**/node_modules/
+**/dist/
+**/.vite/
+**/.vite-temp/
+**/coverage/
+**/playwright-report/
+**/test-results/
+**/__pycache__/
+*.pyc
+
+# Machine-specific state and credentials
+**/.openai/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Local task handoff and machine-specific notes
+.local/

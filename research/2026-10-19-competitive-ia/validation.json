@@ -1,0 +1,21 @@
+{
+  "structural_pass": true,
+  "ready_checks_run": false,
+  "semantic_review_required": true,
+  "ledger_hash": "9398875c763756f65c0b4bae7cfbfde4129024adeca83287319ee839b1d51a4e",
+  "counts": {
+    "inputs": 3,
+    "sources": 13,
+    "claims": 25,
+    "insights": 6,
+    "decisions": 0,
+    "requirements": 0,
+    "scenarios": 0,
+    "reviews": 1
+  },
+  "errors": [],
+  "warnings": [
+    "Draft/review: ready gate not run; this is not a ready-to-build verdict.",
+    "Structure and recorded identities do not prove source truth, real independence or PRD quality."
+  ]
+}

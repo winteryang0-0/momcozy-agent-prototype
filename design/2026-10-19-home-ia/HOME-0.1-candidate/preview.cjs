@@ -1,0 +1,3 @@
+const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const files={'/':'index.html','/index.html':'index.html','/style.css':'style.css','/app.js':'app.js','/ARCHITECTURE.txt':'ARCHITECTURE.txt'};
+http.createServer((req,res)=>{const name=files[new URL(req.url,'http://127.0.0.1').pathname];if(!name){res.writeHead(404);res.end();return;}res.setHeader('Content-Type',name.endsWith('.css')?'text/css; charset=utf-8':name.endsWith('.js')?'text/javascript; charset=utf-8':name.endsWith('.txt')?'text/plain; charset=utf-8':'text/html; charset=utf-8');fs.createReadStream(path.join(__dirname,name)).pipe(res);}).listen(4191,'127.0.0.1',()=>console.log('Home IA preview: http://127.0.0.1:4191'));

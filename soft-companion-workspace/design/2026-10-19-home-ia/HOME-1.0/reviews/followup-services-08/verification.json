@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-20T02:47:18.882Z",
+  "scope": "对话和结束任务的追加服务入口",
+  "pending": "新用户录入步骤等待用户补充字段、必填性与顺序",
+  "tests": {
+    "terminalChecks": {
+      "ready": 0,
+      "processing": 0,
+      "result": 3,
+      "indeterminate": 3,
+      "cancelled": 3,
+      "offline": 0,
+      "timeout": 0
+    },
+    "renderChecks": {
+      "pendingNoActions": true,
+      "completedAllThree": true,
+      "archivedTaskAllThree": true
+    },
+    "browser": {
+      "historicalReplies": 3,
+      "eachReplyServices": 3,
+      "cancelledTaskServices": 3,
+      "recordOpensContainedSheet": true,
+      "reloadServicesRetained": true,
+      "viewport": "360x800",
+      "horizontalOverflow": false,
+      "consoleErrors": []
+    }
+  },
+  "limits": [
+    "听哭闹与看便便复用现有处理，本轮未新建任务改动原有对话",
+    "新用户基础数据录入未实现，等待用户补充范围"
+  ],
+  "screenshots": [
+    "reply-services-360.jpg",
+    "ended-task-services-360.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 10169,
+      "sha256": "ccb3688c18e01670429df38e8a97bc39ea3d0954154fdede88db6fb883d3d980"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 30848,
+      "sha256": "f13841bd2cbec80c6429b6527a312513b1b0f3987ef9152debc34ea9f5ead419"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 56497,
+      "sha256": "c545c1825090179e30d87690b20b206ea7dc32eec392bf4fa227ab0cfbb689f0"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 5158,
+      "sha256": "a8673281461a2bc0373e3615b0e958d32983bfb3bdbd250f8f13e1280c0dc657"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ]
+}

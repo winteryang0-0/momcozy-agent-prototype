@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-19",
+  "method": "built-in image_gen",
+  "status": "static concepts pending user selection",
+  "reference": "C:/Users/user/Documents/ChatGPT/Momcozy Agent/design/2026-10-19-moodboards/QO-1.0-candidate/selected-direction-v0.1.png",
+  "animation_implemented": false,
+  "outputs": [
+    {
+      "display_order": 1,
+      "file": "folded-assistant-v0.1.png",
+      "prompt": "Use case: stylized-concept.\nCreate one polished static AI character concept sheet called \"FOLDED ASSISTANT\" for Momcozy Agent, a practical caregiving assistant for adult postpartum mothers. This is character design exploration only, no UI and no animation implementation.\nInput image 1 is STYLE AND BRAND REFERENCE only: use the Quiet Order moodboard's ivory / burgundy palette, mature warmth, quiet natural light and especially its ivory folded ribbon forms with burgundy inner surfaces. Do not copy its layout, UI, logo, or text.\nTarget: landscape 1536 x 1024. Warm off-white #FAF7F2 seamless studio background. Elegant restrained editorial presentation, generous margins.\nCharacter: a distinctive upright anthropomorphic folded-ribbon helper. Clear modest head-and-body division created by a continuous sculptural fold, not a separate spherical robot head. Head no more than one third of overall height. Ivory #F3EBDD outer surface, deep muted burgundy #692A3A interior fold; two very small dark burgundy eyes placed naturally on the upper ivory face, no screen, no visor. Calm neutral face with NO mouth for this direction. Two very short integrated folded wing-like arms, no fingers; one makes a very slight welcoming task-oriented opening, never a dramatic wave. Continuous stable rounded base, no legs or shoes. Refined sculptural matte soft ceramic/silicone, no fabric weave, no glossy toy plastic. It should feel quietly capable, mature, considerate and approachable. Avoid infant proportions, robot hardware, antennas, ears, medical uniforms, hearts, blush, sparkles.\nComposition: left two-thirds contains ONE large complete full-body three-quarter hero render, filling about 65 percent of image height. Right third contains two small supporting renders of EXACTLY THE SAME character and structure, front view at top and side view at bottom, consistent materials/proportions. These are alternate views of one single concept, NOT different characters, states or options. All fully visible, balanced soft contact shadows, diffuse light from upper left. The front view is neutral, arms resting.\nSmall restrained upper-left title text exactly \"FOLDED ASSISTANT\", lower-left subtitle exactly \"Quiet Order / Character Study\". No other text, no logos, no icons, no cards, no furniture, no props, no color swatches. Prioritize a memorable folded silhouette, identifiable at avatar scale."
+    },
+    {
+      "display_order": 2,
+      "file": "soft-companion-v0.1.png",
+      "prompt": "Use case: stylized-concept.\nCreate one polished static AI character concept sheet called \"SOFT COMPANION\" for Momcozy Agent, a caregiving companion for adult postpartum mothers. Character exploration only, no UI and no animation implementation.\nInput image 1 is STYLE AND BRAND REFERENCE only: use the Quiet Order moodboard's warm ivory / muted burgundy palette, mature warmth, diffuse natural light and restrained sculptural material. Do not copy its folded ring character, layout, UI, logo, or text. This direction must instead have an entirely different SINGLE LOW HORIZONTAL PEBBLE silhouette.\nTarget: landscape 1536 x 1024. Warm off-white #FAF7F2 seamless studio backdrop. Elegant restrained editorial presentation, generous margins.\nCharacter: one continuous gently asymmetric soft pebble form, about 1.45 times wider than tall, slightly flattened base, no head/body division whatsoever. Mature calm form like a carefully polished river stone, a quiet digital presence with a subtle expressive face. Warm ivory body #F3EBDD. A restrained deep muted burgundy #692A3A curved inset along the lower side / underside, organically part of the form, no belt, collar or separate base. Two tiny dark burgundy vertical oval eyes, very short delicate mouth line with a barely perceptible soft smile. Eyes are small relative to the body and not widely spaced like a baby. No dimples, eyebrows, cheeks or nose. No arms, legs, hands, ears, antennae, tail, wings, floating accessory, hair, animal features. No separate little companion. NOT a snowman, bean with feet, pet, baby, toy robot, emoji or medical mascot. Smooth premium matte ceramic/silicone with very fine surface grain, NOT fluffy fabric or shiny toy plastic. A grounded reassuring character with adult restraint, not overly cute. No radiating light or rainbow.\nComposition: left two-thirds ONE large complete three-quarter hero render with the barely-there smile. Its horizontal silhouette must be clear. Hero occupies similar visual weight to an editorial character hero: approx 60% canvas width, no stretching. Right third two small supporting renders of EXACTLY THE SAME character and geometry: front view at top with neutral tiny mouth line, side view at bottom. Keep proportions, facial placement, burgundy inset consistent in all views. Alternate views of ONE single concept, NOT multiple options or state illustrations. Soft contact shadow, diffuse upper-left studio light. All forms fully visible.\nSmall restrained upper-left title text exactly \"SOFT COMPANION\". Lower-left subtitle exactly \"Quiet Order / Character Study\". No other text, logos, icons, swatches, furniture, props, UI cards. Focus on a memorable horizontally rounded silhouette and subtle facial expression."
+    }
+  ],
+  "review": {
+    "method": "Both generated images directly inspected",
+    "observations": [
+      "Two distinct silhouettes: upright folded anthropomorphic helper and horizontal single-body companion.",
+      "Ivory/burgundy materials and warm neutral backdrop follow selected moodboard.",
+      "Each sheet has one hero and two supporting views; views are concept renderings, not a geometrically validated model."
+    ],
+    "pending": [
+      "Actual avatar-size legibility",
+      "User preference and interpretation",
+      "Geometrically consistent production assets"
+    ]
+  }
+}

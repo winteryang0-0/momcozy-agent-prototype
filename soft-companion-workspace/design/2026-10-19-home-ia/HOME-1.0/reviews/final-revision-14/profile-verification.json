@@ -1,0 +1,41 @@
+{
+  "method": "Source patch compilation and isolated JavaScript regression checks; no browser assertions",
+  "syntax": "pass",
+  "replacementCount": 14,
+  "cases": [
+    {
+      "id": "hidden-baby-future-date",
+      "passed": true
+    },
+    {
+      "id": "optional-date",
+      "passed": true
+    },
+    {
+      "id": "today-date",
+      "passed": true
+    },
+    {
+      "id": "invalid-calendar-date",
+      "passed": true
+    },
+    {
+      "id": "stage-change-preserves-existing-baby",
+      "passed": true
+    },
+    {
+      "id": "valid-all-babies-allowed",
+      "passed": true
+    }
+  ],
+  "icons": [
+    "mom",
+    "dad",
+    "grandparents",
+    "family",
+    "baby-satisfied",
+    "recovery",
+    "emotion",
+    "rest"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "candidate": "QO-2.0",
+  "status": "awaiting-user-review-not-frozen",
+  "framework_sha256": "6deb72072821329fb2bd34b92df8b8a3fd2e640175a2123b07925b7e27b2f070",
+  "system_sha256": "023b5088341bd9555d3ec7c72cff85767ff02dd434be973003acbb27ce6d217a",
+  "source_sha256": "91cea7088672648a87d1af326fbb41e8cb10ab3a67ef39e8c435677411c8e247",
+  "scope_sha256": "7b2ca61e675484f109e6c7620880fccd22a2b7cc099a3d3a800f596127ef82bb",
+  "confirmation": null,
+  "scope": "style-system and style-lab only",
+  "files": {
+    "index.html": "d6b6afe6281f4ae67f559728dc4df8d5ec0ea8dceda13ad6e1f7685f5f835d52",
+    "assets/style.css": "423cc0e8b0c84c9b1ae0f1de22b0dac5a3e6f6da5464e2194ec67170f3ce7990",
+    "assets/app.js": "db7216fd5ffaf6b4da223767e553a7b8a07cd9bac1e39c3655acaf009022cf27",
+    "STYLE_SPEC.txt": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73",
+    "design.json": "508cc7c254b61f27078246be0cd608c7439bb8736a5f23b541217ef584bff73a"
+  }
+}

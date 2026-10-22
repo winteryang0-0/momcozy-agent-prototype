@@ -1,0 +1,2780 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "momcozy-framework-fw02",
+    "mode": "live",
+    "stage": "draft",
+    "designer": "/root"
+  },
+  "source": {
+    "path": "sources/requirements-v02.json",
+    "sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4",
+    "requirements": [
+      "ONB-01",
+      "ONB-02",
+      "ONB-03",
+      "ONB-04",
+      "ONB-05",
+      "ONB-06",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C09.1",
+      "C09.2",
+      "C09.3",
+      "C09.4",
+      "C09.5",
+      "C01.1",
+      "C01.2",
+      "C01.3",
+      "C01.1.1",
+      "C01.1.2",
+      "C01.2.1",
+      "C01.2.2",
+      "C01.3.1",
+      "C01.3.2"
+    ]
+  },
+  "framework": {
+    "revision": 2,
+    "pages": [
+      {
+        "id": "PAGE-identity",
+        "route": "#/identity",
+        "parent_id": null,
+        "regions": [
+          "PAGE-identity-header",
+          "PAGE-identity-body"
+        ],
+        "title": "身份选择"
+      },
+      {
+        "id": "PAGE-stage",
+        "route": "#/stage",
+        "parent_id": null,
+        "regions": [
+          "PAGE-stage-header",
+          "PAGE-stage-body"
+        ],
+        "title": "所处阶段"
+      },
+      {
+        "id": "PAGE-basic",
+        "route": "#/basic",
+        "parent_id": null,
+        "regions": [
+          "PAGE-basic-header",
+          "PAGE-basic-body"
+        ],
+        "title": "基本信息"
+      },
+      {
+        "id": "PAGE-birth",
+        "route": "#/birth",
+        "parent_id": null,
+        "regions": [
+          "PAGE-birth-header",
+          "PAGE-birth-body"
+        ],
+        "title": "本次分娩"
+      },
+      {
+        "id": "PAGE-focus",
+        "route": "#/focus",
+        "parent_id": null,
+        "regions": [
+          "PAGE-focus-header",
+          "PAGE-focus-body"
+        ],
+        "title": "当前关注"
+      },
+      {
+        "id": "PAGE-recommend",
+        "route": "#/recommend",
+        "parent_id": null,
+        "regions": [
+          "PAGE-recommend-header",
+          "PAGE-recommend-body"
+        ],
+        "title": "服务推荐"
+      },
+      {
+        "id": "PAGE-chat",
+        "route": "#/chat",
+        "parent_id": null,
+        "regions": [
+          "PAGE-chat-header",
+          "PAGE-chat-body"
+        ],
+        "title": "主对话"
+      },
+      {
+        "id": "PAGE-breast",
+        "route": "#/breast",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-breast-header",
+          "PAGE-breast-body"
+        ],
+        "title": "亲喂"
+      },
+      {
+        "id": "PAGE-formula",
+        "route": "#/formula",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-formula-header",
+          "PAGE-formula-body"
+        ],
+        "title": "配方奶"
+      },
+      {
+        "id": "PAGE-bottle",
+        "route": "#/bottle",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-bottle-header",
+          "PAGE-bottle-body"
+        ],
+        "title": "瓶喂母乳"
+      },
+      {
+        "id": "PAGE-diaper",
+        "route": "#/diaper",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-diaper-header",
+          "PAGE-diaper-body"
+        ],
+        "title": "换尿布"
+      },
+      {
+        "id": "PAGE-pump",
+        "route": "#/pump",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-pump-header",
+          "PAGE-pump-body"
+        ],
+        "title": "吸奶"
+      },
+      {
+        "id": "PAGE-mine",
+        "route": "#/mine",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-mine-header",
+          "PAGE-mine-body"
+        ],
+        "title": "我的"
+      },
+      {
+        "id": "PAGE-baby",
+        "route": "#/baby",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-baby-header",
+          "PAGE-baby-body"
+        ],
+        "title": "宝宝"
+      },
+      {
+        "id": "PAGE-devices",
+        "route": "#/devices",
+        "parent_id": "PAGE-chat",
+        "regions": [
+          "PAGE-devices-header",
+          "PAGE-devices-body"
+        ],
+        "title": "设备"
+      }
+    ],
+    "controls": [
+      {
+        "id": "ONB-role",
+        "page_id": "PAGE-identity",
+        "component_id": "CMP-control",
+        "role": "使用者身份"
+      },
+      {
+        "id": "PAGE-identity-next",
+        "page_id": "PAGE-identity",
+        "component_id": "CMP-control",
+        "role": "继续"
+      },
+      {
+        "id": "ONB-stage",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "所处阶段"
+      },
+      {
+        "id": "PAGE-stage-back",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "返回"
+      },
+      {
+        "id": "PAGE-stage-next",
+        "page_id": "PAGE-stage",
+        "component_id": "CMP-control",
+        "role": "继续"
+      },
+      {
+        "id": "ONB-age",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "妈妈年龄"
+      },
+      {
+        "id": "ONB-parity",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "这次是第几次生育？"
+      },
+      {
+        "id": "PAGE-basic-back",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "返回"
+      },
+      {
+        "id": "PAGE-basic-next",
+        "page_id": "PAGE-basic",
+        "component_id": "CMP-control",
+        "role": "继续"
+      },
+      {
+        "id": "ONB-date",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "分娩日期"
+      },
+      {
+        "id": "ONB-week",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "分娩孕周"
+      },
+      {
+        "id": "ONB-count",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "这次有几个宝宝？"
+      },
+      {
+        "id": "PAGE-birth-back",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "返回"
+      },
+      {
+        "id": "PAGE-birth-next",
+        "page_id": "PAGE-birth",
+        "component_id": "CMP-control",
+        "role": "继续"
+      },
+      {
+        "id": "ONB-focus-0",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝奶量"
+      },
+      {
+        "id": "ONB-focus-1",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝是否吃饱"
+      },
+      {
+        "id": "ONB-focus-2",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝哭闹"
+      },
+      {
+        "id": "ONB-focus-3",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝便便"
+      },
+      {
+        "id": "ONB-focus-4",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝睡眠"
+      },
+      {
+        "id": "ONB-focus-5",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "宝宝生长发育"
+      },
+      {
+        "id": "ONB-focus-6",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "妈妈身体恢复"
+      },
+      {
+        "id": "ONB-focus-7",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "妈妈情绪与压力"
+      },
+      {
+        "id": "ONB-focus-8",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "睡眠不足和疲惫"
+      },
+      {
+        "id": "ONB-focus-9",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "缺少照护帮手"
+      },
+      {
+        "id": "PAGE-focus-back",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "返回"
+      },
+      {
+        "id": "PAGE-focus-next",
+        "page_id": "PAGE-focus",
+        "component_id": "CMP-control",
+        "role": "继续"
+      },
+      {
+        "id": "PAGE-recommend-back",
+        "page_id": "PAGE-recommend",
+        "component_id": "CMP-control",
+        "role": "返回"
+      },
+      {
+        "id": "PAGE-recommend-next",
+        "page_id": "PAGE-recommend",
+        "component_id": "CMP-control",
+        "role": "进入首页"
+      },
+      {
+        "id": "C01",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "<span aria-hidden=\"true\">☰</span><span class=\"sr-only\">打开侧边栏</span>"
+      },
+      {
+        "id": "C03",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "声音关闭"
+      },
+      {
+        "id": "C10-start",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "开始录宝宝哭声"
+      },
+      {
+        "id": "C10-stop",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "结束录音"
+      },
+      {
+        "id": "C10-redo",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重新录制"
+      },
+      {
+        "id": "cry-submit",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "确认素材并分析"
+      },
+      {
+        "id": "cry-ask",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "继续聊这个结果"
+      },
+      {
+        "id": "cry-retry-unknown",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重新采集"
+      },
+      {
+        "id": "cry-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重试分析"
+      },
+      {
+        "id": "cry-retry-permission",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重新尝试"
+      },
+      {
+        "id": "cry-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "放弃本次任务"
+      },
+      {
+        "id": "C11-camera",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "拍照"
+      },
+      {
+        "id": "C11-album",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "从相册选择"
+      },
+      {
+        "id": "C11-add",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "继续添加图片"
+      },
+      {
+        "id": "C11-remove",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "移除最后一张"
+      },
+      {
+        "id": "poop-submit",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "确认素材并分析"
+      },
+      {
+        "id": "poop-ask",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "继续聊这个结果"
+      },
+      {
+        "id": "poop-retry-unknown",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重新采集"
+      },
+      {
+        "id": "poop-retry",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重试分析"
+      },
+      {
+        "id": "poop-retry-permission",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "重新尝试"
+      },
+      {
+        "id": "poop-cancel",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "放弃本次任务"
+      },
+      {
+        "id": "C09",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "记录"
+      },
+      {
+        "id": "C10",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "听哭闹"
+      },
+      {
+        "id": "C11",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "看便便"
+      },
+      {
+        "id": "C12",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "文本输入"
+      },
+      {
+        "id": "CHAT-send",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "发送"
+      },
+      {
+        "id": "C13",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "图片"
+      },
+      {
+        "id": "C14",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "语音"
+      },
+      {
+        "id": "C15",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "更多"
+      },
+      {
+        "id": "C01-close",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "×"
+      },
+      {
+        "id": "C01.1",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "我的"
+      },
+      {
+        "id": "C01.2",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "宝宝"
+      },
+      {
+        "id": "C01.3",
+        "page_id": "PAGE-chat",
+        "component_id": "CMP-control",
+        "role": "设备"
+      },
+      {
+        "id": "breast-time",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "开始时间"
+      },
+      {
+        "id": "breast-side",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "喂养侧别"
+      },
+      {
+        "id": "breast-duration",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "喂养时长（分钟）"
+      },
+      {
+        "id": "breast-note",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "选填备注"
+      },
+      {
+        "id": "breast-back",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "返回对话"
+      },
+      {
+        "id": "breast-save",
+        "page_id": "PAGE-breast",
+        "component_id": "CMP-control",
+        "role": "保存记录"
+      },
+      {
+        "id": "formula-time",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "开始时间"
+      },
+      {
+        "id": "formula-minus",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "−"
+      },
+      {
+        "id": "formula-amount",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "奶量数值"
+      },
+      {
+        "id": "formula-plus",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "＋"
+      },
+      {
+        "id": "formula-end",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "结束时间（可选）"
+      },
+      {
+        "id": "formula-note",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "选填备注"
+      },
+      {
+        "id": "formula-back",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "返回对话"
+      },
+      {
+        "id": "formula-save",
+        "page_id": "PAGE-formula",
+        "component_id": "CMP-control",
+        "role": "保存记录"
+      },
+      {
+        "id": "bottle-time",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "开始时间"
+      },
+      {
+        "id": "bottle-minus",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "−"
+      },
+      {
+        "id": "bottle-amount",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "奶量数值"
+      },
+      {
+        "id": "bottle-plus",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "＋"
+      },
+      {
+        "id": "bottle-end",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "结束时间（可选）"
+      },
+      {
+        "id": "bottle-note",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "选填备注"
+      },
+      {
+        "id": "bottle-back",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "返回对话"
+      },
+      {
+        "id": "bottle-save",
+        "page_id": "PAGE-bottle",
+        "component_id": "CMP-control",
+        "role": "保存记录"
+      },
+      {
+        "id": "diaper-time",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "更换时间"
+      },
+      {
+        "id": "diaper-diaper",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "尿布状态"
+      },
+      {
+        "id": "diaper-rash",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "红屁屁"
+      },
+      {
+        "id": "diaper-note",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "选填备注"
+      },
+      {
+        "id": "diaper-back",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "返回对话"
+      },
+      {
+        "id": "diaper-save",
+        "page_id": "PAGE-diaper",
+        "component_id": "CMP-control",
+        "role": "保存记录"
+      },
+      {
+        "id": "pump-time",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "开始时间"
+      },
+      {
+        "id": "pump-minus",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "−"
+      },
+      {
+        "id": "pump-amount",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "奶量数值"
+      },
+      {
+        "id": "pump-plus",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "＋"
+      },
+      {
+        "id": "pump-end",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "结束时间（可选）"
+      },
+      {
+        "id": "pump-note",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "选填备注"
+      },
+      {
+        "id": "pump-back",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "返回对话"
+      },
+      {
+        "id": "pump-save",
+        "page_id": "PAGE-pump",
+        "component_id": "CMP-control",
+        "role": "保存记录"
+      },
+      {
+        "id": "C01.1.1",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "<span><strong>奶量趋势</strong><small>按天查看泵奶记录</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.1.2",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "<span><strong>身体与状态</strong><small>回看最近的状态记录</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.1.1-close",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "返回我的"
+      },
+      {
+        "id": "C01.1.2-close",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "返回我的"
+      },
+      {
+        "id": "C01.1-back",
+        "page_id": "PAGE-mine",
+        "component_id": "CMP-control",
+        "role": "返回侧边栏"
+      },
+      {
+        "id": "C01.2.1",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "<span><strong>喂养与睡眠</strong><small>今天 4 次喂养 · 2 次小睡</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.2.2",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "<span><strong>生长发育</strong><small>查看最近的身长与体重变化</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.2.1-close",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "返回宝宝"
+      },
+      {
+        "id": "C01.2.2-close",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "返回宝宝"
+      },
+      {
+        "id": "C01.2-back",
+        "page_id": "PAGE-baby",
+        "component_id": "CMP-control",
+        "role": "返回侧边栏"
+      },
+      {
+        "id": "C01.3.1",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "<span><strong>设备信息</strong><small>型号、连接状态与最近同步</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.3.2",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "<span><strong>同步记录</strong><small>查看已保存的泵奶记录</small></span><span aria-hidden=\"true\">›</span>"
+      },
+      {
+        "id": "C01.3.1-close",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "返回设备"
+      },
+      {
+        "id": "C01.3.2-close",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "返回设备"
+      },
+      {
+        "id": "C01.3-back",
+        "page_id": "PAGE-devices",
+        "component_id": "CMP-control",
+        "role": "返回侧边栏"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-identity-next",
+        "control_id": "PAGE-identity-next",
+        "event": "click",
+        "target_page_id": "PAGE-stage",
+        "from_state": "ST-identity",
+        "to_state": "ST-stage"
+      },
+      {
+        "id": "ACT-stage-next",
+        "control_id": "PAGE-stage-next",
+        "event": "click",
+        "target_page_id": "PAGE-basic",
+        "from_state": "ST-stage",
+        "to_state": "ST-basic"
+      },
+      {
+        "id": "ACT-basic-next",
+        "control_id": "PAGE-basic-next",
+        "event": "click",
+        "target_page_id": "PAGE-birth",
+        "from_state": "ST-basic",
+        "to_state": "ST-birth"
+      },
+      {
+        "id": "ACT-birth-next",
+        "control_id": "PAGE-birth-next",
+        "event": "click",
+        "target_page_id": "PAGE-focus",
+        "from_state": "ST-birth",
+        "to_state": "ST-focus"
+      },
+      {
+        "id": "ACT-focus-next",
+        "control_id": "PAGE-focus-next",
+        "event": "click",
+        "target_page_id": "PAGE-recommend",
+        "from_state": "ST-focus",
+        "to_state": "ST-recommend"
+      },
+      {
+        "id": "ACT-recommend-next",
+        "control_id": "PAGE-recommend-next",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-recommend",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-breast-save",
+        "control_id": "breast-save",
+        "event": "click",
+        "target_page_id": "PAGE-breast",
+        "from_state": "ST-breast-edit",
+        "to_state": "ST-breast-saving"
+      },
+      {
+        "id": "ACT-breast-saved",
+        "control_id": "breast-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-breast-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-formula-save",
+        "control_id": "formula-save",
+        "event": "click",
+        "target_page_id": "PAGE-formula",
+        "from_state": "ST-formula-edit",
+        "to_state": "ST-formula-saving"
+      },
+      {
+        "id": "ACT-formula-saved",
+        "control_id": "formula-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-formula-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-bottle-save",
+        "control_id": "bottle-save",
+        "event": "click",
+        "target_page_id": "PAGE-bottle",
+        "from_state": "ST-bottle-edit",
+        "to_state": "ST-bottle-saving"
+      },
+      {
+        "id": "ACT-bottle-saved",
+        "control_id": "bottle-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-bottle-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-diaper-save",
+        "control_id": "diaper-save",
+        "event": "click",
+        "target_page_id": "PAGE-diaper",
+        "from_state": "ST-diaper-edit",
+        "to_state": "ST-diaper-saving"
+      },
+      {
+        "id": "ACT-diaper-saved",
+        "control_id": "diaper-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-diaper-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-pump-save",
+        "control_id": "pump-save",
+        "event": "click",
+        "target_page_id": "PAGE-pump",
+        "from_state": "ST-pump-edit",
+        "to_state": "ST-pump-saving"
+      },
+      {
+        "id": "ACT-pump-saved",
+        "control_id": "pump-save",
+        "event": "save-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-pump-saving",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-cry-open",
+        "control_id": "C10",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-cry-ready"
+      },
+      {
+        "id": "ACT-poop-open",
+        "control_id": "C11",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-poop-ready"
+      },
+      {
+        "id": "ACT-send",
+        "control_id": "CHAT-send",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat-generating"
+      },
+      {
+        "id": "ACT-reply",
+        "control_id": "CHAT-send",
+        "event": "reply-success",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat-generating",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-sound",
+        "control_id": "C03",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-image",
+        "control_id": "C13",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-voice",
+        "control_id": "C14",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-more",
+        "control_id": "C15",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-sidebar-open",
+        "control_id": "C01",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-chat",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-sidebar-close",
+        "control_id": "C01-close",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-chat"
+      },
+      {
+        "id": "ACT-open-mine",
+        "control_id": "C01.1",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-return-mine",
+        "control_id": "C01.1-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-mine",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-trend",
+        "control_id": "C01.1.1",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-mine",
+        "to_state": "ST-trend-scope"
+      },
+      {
+        "id": "ACT-close-trend",
+        "control_id": "C01.1.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-trend-scope",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-open-body",
+        "control_id": "C01.1.2",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-mine",
+        "to_state": "ST-body-scope"
+      },
+      {
+        "id": "ACT-close-body",
+        "control_id": "C01.1.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-mine",
+        "from_state": "ST-body-scope",
+        "to_state": "ST-mine"
+      },
+      {
+        "id": "ACT-open-baby",
+        "control_id": "C01.2",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-return-baby",
+        "control_id": "C01.2-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-baby",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-feeding",
+        "control_id": "C01.2.1",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-baby",
+        "to_state": "ST-feeding-scope"
+      },
+      {
+        "id": "ACT-close-feeding",
+        "control_id": "C01.2.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-feeding-scope",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-open-growth",
+        "control_id": "C01.2.2",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-baby",
+        "to_state": "ST-growth-scope"
+      },
+      {
+        "id": "ACT-close-growth",
+        "control_id": "C01.2.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-baby",
+        "from_state": "ST-growth-scope",
+        "to_state": "ST-baby"
+      },
+      {
+        "id": "ACT-open-devices",
+        "control_id": "C01.3",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-sidebar-open",
+        "to_state": "ST-devices"
+      },
+      {
+        "id": "ACT-return-devices",
+        "control_id": "C01.3-back",
+        "event": "click",
+        "target_page_id": "PAGE-chat",
+        "from_state": "ST-devices",
+        "to_state": "ST-sidebar-open"
+      },
+      {
+        "id": "ACT-open-device-info",
+        "control_id": "C01.3.1",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-devices",
+        "to_state": "ST-device-info-scope"
+      },
+      {
+        "id": "ACT-close-device-info",
+        "control_id": "C01.3.1-close",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-device-info-scope",
+        "to_state": "ST-devices"
+      },
+      {
+        "id": "ACT-open-sync",
+        "control_id": "C01.3.2",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-devices",
+        "to_state": "ST-sync-scope"
+      },
+      {
+        "id": "ACT-close-sync",
+        "control_id": "C01.3.2-close",
+        "event": "click",
+        "target_page_id": "PAGE-devices",
+        "from_state": "ST-sync-scope",
+        "to_state": "ST-devices"
+      }
+    ],
+    "states": [
+      {
+        "id": "ST-identity",
+        "page_id": "PAGE-identity",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-stage",
+        "page_id": "PAGE-stage",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-stage-unprovided",
+        "page_id": "PAGE-stage",
+        "kind": "other"
+      },
+      {
+        "id": "ST-basic",
+        "page_id": "PAGE-basic",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-birth",
+        "page_id": "PAGE-birth",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-focus",
+        "page_id": "PAGE-focus",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-recommend",
+        "page_id": "PAGE-recommend",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-chat",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-capture",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-cry-preview",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-processing",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-cry-result",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-cry-unknown",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-cry-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-cry-permission",
+        "page_id": "PAGE-chat",
+        "kind": "permission"
+      },
+      {
+        "id": "ST-cry-cancelled",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-poop-ready",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-capture",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-poop-preview",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-processing",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-poop-result",
+        "page_id": "PAGE-chat",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-poop-unknown",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-poop-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-poop-permission",
+        "page_id": "PAGE-chat",
+        "kind": "permission"
+      },
+      {
+        "id": "ST-poop-cancelled",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-chat-generating",
+        "page_id": "PAGE-chat",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-chat-error",
+        "page_id": "PAGE-chat",
+        "kind": "error"
+      },
+      {
+        "id": "ST-sidebar-open",
+        "page_id": "PAGE-chat",
+        "kind": "other"
+      },
+      {
+        "id": "ST-breast-edit",
+        "page_id": "PAGE-breast",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-breast-error",
+        "page_id": "PAGE-breast",
+        "kind": "error"
+      },
+      {
+        "id": "ST-breast-saving",
+        "page_id": "PAGE-breast",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-formula-edit",
+        "page_id": "PAGE-formula",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-formula-error",
+        "page_id": "PAGE-formula",
+        "kind": "error"
+      },
+      {
+        "id": "ST-formula-saving",
+        "page_id": "PAGE-formula",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-bottle-edit",
+        "page_id": "PAGE-bottle",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-bottle-error",
+        "page_id": "PAGE-bottle",
+        "kind": "error"
+      },
+      {
+        "id": "ST-bottle-saving",
+        "page_id": "PAGE-bottle",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-diaper-edit",
+        "page_id": "PAGE-diaper",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-diaper-error",
+        "page_id": "PAGE-diaper",
+        "kind": "error"
+      },
+      {
+        "id": "ST-diaper-saving",
+        "page_id": "PAGE-diaper",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-pump-edit",
+        "page_id": "PAGE-pump",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-pump-error",
+        "page_id": "PAGE-pump",
+        "kind": "error"
+      },
+      {
+        "id": "ST-pump-saving",
+        "page_id": "PAGE-pump",
+        "kind": "loading"
+      },
+      {
+        "id": "ST-trend-scope",
+        "page_id": "PAGE-mine",
+        "kind": "other"
+      },
+      {
+        "id": "ST-body-scope",
+        "page_id": "PAGE-mine",
+        "kind": "other"
+      },
+      {
+        "id": "ST-mine",
+        "page_id": "PAGE-mine",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-feeding-scope",
+        "page_id": "PAGE-baby",
+        "kind": "other"
+      },
+      {
+        "id": "ST-growth-scope",
+        "page_id": "PAGE-baby",
+        "kind": "other"
+      },
+      {
+        "id": "ST-baby",
+        "page_id": "PAGE-baby",
+        "kind": "normal"
+      },
+      {
+        "id": "ST-device-info-scope",
+        "page_id": "PAGE-devices",
+        "kind": "other"
+      },
+      {
+        "id": "ST-sync-scope",
+        "page_id": "PAGE-devices",
+        "kind": "other"
+      },
+      {
+        "id": "ST-devices",
+        "page_id": "PAGE-devices",
+        "kind": "normal"
+      }
+    ],
+    "flows": [
+      {
+        "id": "FLOW-identity",
+        "requirement_ids": [
+          "ONB-01"
+        ],
+        "action_ids": [
+          "ACT-identity-next"
+        ]
+      },
+      {
+        "id": "FLOW-stage",
+        "requirement_ids": [
+          "ONB-02"
+        ],
+        "action_ids": [
+          "ACT-stage-next"
+        ]
+      },
+      {
+        "id": "FLOW-basic",
+        "requirement_ids": [
+          "ONB-03"
+        ],
+        "action_ids": [
+          "ACT-basic-next"
+        ]
+      },
+      {
+        "id": "FLOW-birth",
+        "requirement_ids": [
+          "ONB-04"
+        ],
+        "action_ids": [
+          "ACT-birth-next"
+        ]
+      },
+      {
+        "id": "FLOW-focus",
+        "requirement_ids": [
+          "ONB-05"
+        ],
+        "action_ids": [
+          "ACT-focus-next"
+        ]
+      },
+      {
+        "id": "FLOW-recommend",
+        "requirement_ids": [
+          "ONB-06"
+        ],
+        "action_ids": [
+          "ACT-recommend-next"
+        ]
+      },
+      {
+        "id": "FLOW-breast",
+        "requirement_ids": [
+          "C09",
+          "C09.1"
+        ],
+        "action_ids": [
+          "ACT-breast-save",
+          "ACT-breast-saved"
+        ]
+      },
+      {
+        "id": "FLOW-formula",
+        "requirement_ids": [
+          "C09",
+          "C09.2"
+        ],
+        "action_ids": [
+          "ACT-formula-save",
+          "ACT-formula-saved"
+        ]
+      },
+      {
+        "id": "FLOW-bottle",
+        "requirement_ids": [
+          "C09",
+          "C09.3"
+        ],
+        "action_ids": [
+          "ACT-bottle-save",
+          "ACT-bottle-saved"
+        ]
+      },
+      {
+        "id": "FLOW-diaper",
+        "requirement_ids": [
+          "C09",
+          "C09.4"
+        ],
+        "action_ids": [
+          "ACT-diaper-save",
+          "ACT-diaper-saved"
+        ]
+      },
+      {
+        "id": "FLOW-pump",
+        "requirement_ids": [
+          "C09",
+          "C09.5"
+        ],
+        "action_ids": [
+          "ACT-pump-save",
+          "ACT-pump-saved"
+        ]
+      },
+      {
+        "id": "FLOW-cry",
+        "requirement_ids": [
+          "C10"
+        ],
+        "action_ids": [
+          "ACT-cry-open"
+        ]
+      },
+      {
+        "id": "FLOW-poop",
+        "requirement_ids": [
+          "C11"
+        ],
+        "action_ids": [
+          "ACT-poop-open"
+        ]
+      },
+      {
+        "id": "FLOW-chat",
+        "requirement_ids": [
+          "C02",
+          "C04",
+          "C05",
+          "C06",
+          "C07",
+          "C08",
+          "C12"
+        ],
+        "action_ids": [
+          "ACT-send",
+          "ACT-reply"
+        ]
+      },
+      {
+        "id": "FLOW-sound",
+        "requirement_ids": [
+          "C03"
+        ],
+        "action_ids": [
+          "ACT-sound"
+        ]
+      },
+      {
+        "id": "FLOW-image",
+        "requirement_ids": [
+          "C13"
+        ],
+        "action_ids": [
+          "ACT-image"
+        ]
+      },
+      {
+        "id": "FLOW-voice",
+        "requirement_ids": [
+          "C14"
+        ],
+        "action_ids": [
+          "ACT-voice"
+        ]
+      },
+      {
+        "id": "FLOW-more",
+        "requirement_ids": [
+          "C15"
+        ],
+        "action_ids": [
+          "ACT-more"
+        ]
+      },
+      {
+        "id": "FLOW-sidebar",
+        "requirement_ids": [
+          "C01"
+        ],
+        "action_ids": [
+          "ACT-sidebar-open",
+          "ACT-sidebar-close"
+        ]
+      },
+      {
+        "id": "FLOW-mine",
+        "requirement_ids": [
+          "C01",
+          "C01.1"
+        ],
+        "action_ids": [
+          "ACT-open-mine",
+          "ACT-return-mine"
+        ]
+      },
+      {
+        "id": "FLOW-trend",
+        "requirement_ids": [
+          "C01.1.1"
+        ],
+        "action_ids": [
+          "ACT-open-trend",
+          "ACT-close-trend"
+        ]
+      },
+      {
+        "id": "FLOW-body",
+        "requirement_ids": [
+          "C01.1.2"
+        ],
+        "action_ids": [
+          "ACT-open-body",
+          "ACT-close-body"
+        ]
+      },
+      {
+        "id": "FLOW-baby",
+        "requirement_ids": [
+          "C01",
+          "C01.2"
+        ],
+        "action_ids": [
+          "ACT-open-baby",
+          "ACT-return-baby"
+        ]
+      },
+      {
+        "id": "FLOW-feeding",
+        "requirement_ids": [
+          "C01.2.1"
+        ],
+        "action_ids": [
+          "ACT-open-feeding",
+          "ACT-close-feeding"
+        ]
+      },
+      {
+        "id": "FLOW-growth",
+        "requirement_ids": [
+          "C01.2.2"
+        ],
+        "action_ids": [
+          "ACT-open-growth",
+          "ACT-close-growth"
+        ]
+      },
+      {
+        "id": "FLOW-devices",
+        "requirement_ids": [
+          "C01",
+          "C01.3"
+        ],
+        "action_ids": [
+          "ACT-open-devices",
+          "ACT-return-devices"
+        ]
+      },
+      {
+        "id": "FLOW-device-info",
+        "requirement_ids": [
+          "C01.3.1"
+        ],
+        "action_ids": [
+          "ACT-open-device-info",
+          "ACT-close-device-info"
+        ]
+      },
+      {
+        "id": "FLOW-sync",
+        "requirement_ids": [
+          "C01.3.2"
+        ],
+        "action_ids": [
+          "ACT-open-sync",
+          "ACT-close-sync"
+        ]
+      }
+    ],
+    "viewports": [
+      {
+        "id": "VP-desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "id": "VP-mobile",
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "system": {
+    "revision": 1,
+    "tokens": {
+      "--bg": "#FAF7F2",
+      "--surface": "#FFFFFF",
+      "--ink": "#282725",
+      "--muted": "#625B57",
+      "--brand": "#692A3A",
+      "--soft": "#E9DED4",
+      "--sage": "#DCE5DE",
+      "--border": "#80716B",
+      "--line": "#E4DCD4",
+      "--error": "#8B2E26",
+      "--radius": "12px",
+      "--radius-lg": "16px",
+      "--font": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "--body": "16px",
+      "--small": "14px",
+      "--title": "24px",
+      "--shadow": "0 14px 45px #28272512"
+    },
+    "components": [
+      {
+        "id": "CMP-control",
+        "states": [
+          "default",
+          "hover",
+          "focus",
+          "disabled"
+        ],
+        "token_refs": [
+          "--brand",
+          "--surface",
+          "--ink",
+          "--radius",
+          "--border"
+        ]
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "requirement_id": "ONB-01",
+      "page_ids": [
+        "PAGE-identity"
+      ],
+      "flow_ids": [
+        "FLOW-identity"
+      ],
+      "state_ids": [
+        "ST-identity"
+      ]
+    },
+    {
+      "requirement_id": "ONB-02",
+      "page_ids": [
+        "PAGE-stage"
+      ],
+      "flow_ids": [
+        "FLOW-stage"
+      ],
+      "state_ids": [
+        "ST-stage",
+        "ST-stage-unprovided"
+      ]
+    },
+    {
+      "requirement_id": "ONB-03",
+      "page_ids": [
+        "PAGE-basic"
+      ],
+      "flow_ids": [
+        "FLOW-basic"
+      ],
+      "state_ids": [
+        "ST-basic"
+      ]
+    },
+    {
+      "requirement_id": "ONB-04",
+      "page_ids": [
+        "PAGE-birth"
+      ],
+      "flow_ids": [
+        "FLOW-birth"
+      ],
+      "state_ids": [
+        "ST-birth"
+      ]
+    },
+    {
+      "requirement_id": "ONB-05",
+      "page_ids": [
+        "PAGE-focus"
+      ],
+      "flow_ids": [
+        "FLOW-focus"
+      ],
+      "state_ids": [
+        "ST-focus"
+      ]
+    },
+    {
+      "requirement_id": "ONB-06",
+      "page_ids": [
+        "PAGE-recommend"
+      ],
+      "flow_ids": [
+        "FLOW-recommend"
+      ],
+      "state_ids": [
+        "ST-recommend"
+      ]
+    },
+    {
+      "requirement_id": "C01",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-mine",
+        "PAGE-baby",
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-sidebar",
+        "FLOW-mine",
+        "FLOW-baby",
+        "FLOW-devices"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-sidebar-open",
+        "ST-mine",
+        "ST-baby",
+        "ST-devices"
+      ]
+    },
+    {
+      "requirement_id": "C02",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C03",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-sound"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C04",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C05",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C06",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C07",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C08",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C09",
+      "page_ids": [
+        "PAGE-breast",
+        "PAGE-formula",
+        "PAGE-bottle",
+        "PAGE-diaper",
+        "PAGE-pump"
+      ],
+      "flow_ids": [
+        "FLOW-breast",
+        "FLOW-formula",
+        "FLOW-bottle",
+        "FLOW-diaper",
+        "FLOW-pump"
+      ],
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error",
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error",
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error",
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error",
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error"
+      ]
+    },
+    {
+      "requirement_id": "C10",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-cry"
+      ],
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-capture",
+        "ST-cry-preview",
+        "ST-cry-processing",
+        "ST-cry-result",
+        "ST-cry-unknown",
+        "ST-cry-error",
+        "ST-cry-permission",
+        "ST-cry-cancelled"
+      ]
+    },
+    {
+      "requirement_id": "C11",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-poop"
+      ],
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-capture",
+        "ST-poop-preview",
+        "ST-poop-processing",
+        "ST-poop-result",
+        "ST-poop-unknown",
+        "ST-poop-error",
+        "ST-poop-permission",
+        "ST-poop-cancelled"
+      ]
+    },
+    {
+      "requirement_id": "C12",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-chat"
+      ],
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ]
+    },
+    {
+      "requirement_id": "C13",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-image"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C14",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-voice"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C15",
+      "page_ids": [
+        "PAGE-chat"
+      ],
+      "flow_ids": [
+        "FLOW-more"
+      ],
+      "state_ids": [
+        "ST-chat"
+      ]
+    },
+    {
+      "requirement_id": "C09.1",
+      "page_ids": [
+        "PAGE-breast"
+      ],
+      "flow_ids": [
+        "FLOW-breast"
+      ],
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.2",
+      "page_ids": [
+        "PAGE-formula"
+      ],
+      "flow_ids": [
+        "FLOW-formula"
+      ],
+      "state_ids": [
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.3",
+      "page_ids": [
+        "PAGE-bottle"
+      ],
+      "flow_ids": [
+        "FLOW-bottle"
+      ],
+      "state_ids": [
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.4",
+      "page_ids": [
+        "PAGE-diaper"
+      ],
+      "flow_ids": [
+        "FLOW-diaper"
+      ],
+      "state_ids": [
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error"
+      ]
+    },
+    {
+      "requirement_id": "C09.5",
+      "page_ids": [
+        "PAGE-pump"
+      ],
+      "flow_ids": [
+        "FLOW-pump"
+      ],
+      "state_ids": [
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error"
+      ]
+    },
+    {
+      "requirement_id": "C01.1",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-mine"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-mine"
+      ]
+    },
+    {
+      "requirement_id": "C01.2",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-baby"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-baby"
+      ]
+    },
+    {
+      "requirement_id": "C01.3",
+      "page_ids": [
+        "PAGE-chat",
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-devices"
+      ],
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-devices"
+      ]
+    },
+    {
+      "requirement_id": "C01.1.1",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-trend"
+      ],
+      "state_ids": [
+        "ST-mine",
+        "ST-trend-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.1.2",
+      "page_ids": [
+        "PAGE-mine"
+      ],
+      "flow_ids": [
+        "FLOW-body"
+      ],
+      "state_ids": [
+        "ST-mine",
+        "ST-body-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.2.1",
+      "page_ids": [
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-feeding"
+      ],
+      "state_ids": [
+        "ST-baby",
+        "ST-feeding-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.2.2",
+      "page_ids": [
+        "PAGE-baby"
+      ],
+      "flow_ids": [
+        "FLOW-growth"
+      ],
+      "state_ids": [
+        "ST-baby",
+        "ST-growth-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.3.1",
+      "page_ids": [
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-device-info"
+      ],
+      "state_ids": [
+        "ST-devices",
+        "ST-device-info-scope"
+      ]
+    },
+    {
+      "requirement_id": "C01.3.2",
+      "page_ids": [
+        "PAGE-devices"
+      ],
+      "flow_ids": [
+        "FLOW-sync"
+      ],
+      "state_ids": [
+        "ST-devices",
+        "ST-sync-scope"
+      ]
+    }
+  ],
+  "pending_decisions": [
+    {
+      "id": "D-sidebar-targets",
+      "question": "六个下级功能目标界面尚未展示，本版只实现入口和可返回的范围说明。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-sidebar-return",
+      "question": "本候选采用概览返回侧抽屉、关闭恢复主对话；遮罩和Esc关闭为必要完善。",
+      "blocks_design": false,
+      "status": "resolved"
+    },
+    {
+      "id": "D-overview-data",
+      "question": "概览统计保留来源固定示例，未与本地记录联动；宝宝年龄取已录入背景。多宝宝身份及正式汇总规则待定。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-scope",
+      "question": "用户已选独立产品，仅还原已录入拆解功能并做必要完善。",
+      "blocks_design": false,
+      "status": "resolved"
+    },
+    {
+      "id": "D-business",
+      "question": "奶量含义、亲喂计时、年龄孕周范围、单位与正式默认值待定；本版仅用候选演示规则。",
+      "blocks_design": false,
+      "status": "open"
+    },
+    {
+      "id": "D-baseline",
+      "question": "FW-0.2实际框架和规范样张待查看确认，尚未冻结。",
+      "blocks_design": false,
+      "status": "open"
+    }
+  ],
+  "tests": [
+    {
+      "id": "TEST-FLOW-identity",
+      "flow_id": "FLOW-identity",
+      "state_ids": [
+        "ST-identity"
+      ],
+      "steps": [
+        "打开 identity",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 stage；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-stage",
+      "flow_id": "FLOW-stage",
+      "state_ids": [
+        "ST-stage",
+        "ST-stage-unprovided"
+      ],
+      "steps": [
+        "打开 stage",
+        "填写已提供字段；继续；返回检查值保留",
+        "选择孕期并继续，再改为产后"
+      ],
+      "expected": "进入 basic；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-basic",
+      "flow_id": "FLOW-basic",
+      "state_ids": [
+        "ST-basic"
+      ],
+      "steps": [
+        "打开 basic",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 birth；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-birth",
+      "flow_id": "FLOW-birth",
+      "state_ids": [
+        "ST-birth"
+      ],
+      "steps": [
+        "打开 birth",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 focus；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-focus",
+      "flow_id": "FLOW-focus",
+      "state_ids": [
+        "ST-focus"
+      ],
+      "steps": [
+        "打开 focus",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 recommend；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-recommend",
+      "flow_id": "FLOW-recommend",
+      "state_ids": [
+        "ST-recommend"
+      ],
+      "steps": [
+        "打开 recommend",
+        "填写已提供字段；继续；返回检查值保留"
+      ],
+      "expected": "进入 chat；未提供阶段留在阶段页说明边界"
+    },
+    {
+      "id": "TEST-FLOW-breast",
+      "flow_id": "FLOW-breast",
+      "state_ids": [
+        "ST-breast-edit",
+        "ST-breast-saving",
+        "ST-breast-error"
+      ],
+      "steps": [
+        "记录类型面板选 亲喂",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "保留原类型和字段含义；仅一条记录被修改；错误定位、保存忙碌和本地状态明确"
+    },
+    {
+      "id": "TEST-FLOW-formula",
+      "flow_id": "FLOW-formula",
+      "state_ids": [
+        "ST-formula-edit",
+        "ST-formula-saving",
+        "ST-formula-error"
+      ],
+      "steps": [
+        "记录类型面板选 配方奶",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "保留原类型和字段含义；仅一条记录被修改；错误定位、保存忙碌和本地状态明确"
+    },
+    {
+      "id": "TEST-FLOW-bottle",
+      "flow_id": "FLOW-bottle",
+      "state_ids": [
+        "ST-bottle-edit",
+        "ST-bottle-saving",
+        "ST-bottle-error"
+      ],
+      "steps": [
+        "记录类型面板选 瓶喂母乳",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "保留原类型和字段含义；仅一条记录被修改；错误定位、保存忙碌和本地状态明确"
+    },
+    {
+      "id": "TEST-FLOW-diaper",
+      "flow_id": "FLOW-diaper",
+      "state_ids": [
+        "ST-diaper-edit",
+        "ST-diaper-saving",
+        "ST-diaper-error"
+      ],
+      "steps": [
+        "记录类型面板选 换尿布",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "保留原类型和字段含义；仅一条记录被修改；错误定位、保存忙碌和本地状态明确"
+    },
+    {
+      "id": "TEST-FLOW-pump",
+      "flow_id": "FLOW-pump",
+      "state_ids": [
+        "ST-pump-edit",
+        "ST-pump-saving",
+        "ST-pump-error"
+      ],
+      "steps": [
+        "记录类型面板选 吸奶",
+        "空值保存；填合法字段；结束时间早于开始应阻止",
+        "演示保存失败，输入应保留；改正常并保存",
+        "从保存摘要修改；保留草稿返回；同类型恢复再保存"
+      ],
+      "expected": "保留原类型和字段含义；仅一条记录被修改；错误定位、保存忙碌和本地状态明确"
+    },
+    {
+      "id": "TEST-FLOW-cry",
+      "flow_id": "FLOW-cry",
+      "state_ids": [
+        "ST-cry-ready",
+        "ST-cry-capture",
+        "ST-cry-preview",
+        "ST-cry-processing",
+        "ST-cry-result",
+        "ST-cry-unknown",
+        "ST-cry-error",
+        "ST-cry-permission",
+        "ST-cry-cancelled"
+      ],
+      "steps": [
+        "打开 cry；模拟权限不可用；重新尝试",
+        "采集模拟素材；哭声结束录音，图片添加到3张并移除",
+        "确认素材分析；分别选择完成、无法判断、失败；失败重试",
+        "处理中取消；重新进入；完成后再次点击快捷入口",
+        "刷新：进行中的分析变为可重试，录音回到待录制"
+      ],
+      "expected": "卡片保持在同一会话；素材数上限有效；取消后旧回调不覆盖；可发起第二次任务；无真实采集或分析"
+    },
+    {
+      "id": "TEST-FLOW-poop",
+      "flow_id": "FLOW-poop",
+      "state_ids": [
+        "ST-poop-ready",
+        "ST-poop-capture",
+        "ST-poop-preview",
+        "ST-poop-processing",
+        "ST-poop-result",
+        "ST-poop-unknown",
+        "ST-poop-error",
+        "ST-poop-permission",
+        "ST-poop-cancelled"
+      ],
+      "steps": [
+        "打开 poop；模拟权限不可用；重新尝试",
+        "采集模拟素材；哭声结束录音，图片添加到3张并移除",
+        "确认素材分析；分别选择完成、无法判断、失败；失败重试",
+        "处理中取消；重新进入；完成后再次点击快捷入口",
+        "刷新：进行中的分析变为可重试，录音回到待录制"
+      ],
+      "expected": "卡片保持在同一会话；素材数上限有效；取消后旧回调不覆盖；可发起第二次任务；无真实采集或分析"
+    },
+    {
+      "id": "TEST-FLOW-chat",
+      "flow_id": "FLOW-chat",
+      "state_ids": [
+        "ST-chat",
+        "ST-chat-generating",
+        "ST-chat-error"
+      ],
+      "steps": [
+        "输入文本；失败时保留；正常发送",
+        "发送后立即输入下一段；回复后检查草稿",
+        "刷新，检查会话、卡片和已保存记录"
+      ],
+      "expected": "模拟回复明确标注；输入不丢失；空输入不能发送；防重复提交"
+    },
+    {
+      "id": "TEST-FLOW-sound",
+      "flow_id": "FLOW-sound",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C03",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-image",
+      "flow_id": "FLOW-image",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C13",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-voice",
+      "flow_id": "FLOW-voice",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C14",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-more",
+      "flow_id": "FLOW-more",
+      "state_ids": [
+        "ST-chat"
+      ],
+      "steps": [
+        "点击 C15",
+        "操作弹层或状态，关闭后回到原控件"
+      ],
+      "expected": "已提供入口可操作；未定义行为说明候选/范围边界；焦点回归，不增加未录入业务"
+    },
+    {
+      "id": "TEST-FLOW-sidebar",
+      "flow_id": "FLOW-sidebar",
+      "state_ids": [
+        "ST-chat",
+        "ST-sidebar-open"
+      ],
+      "steps": [
+        "聊天填写草稿并打开侧栏",
+        "关闭按钮、Esc和遮罩分别退出",
+        "重新进入侧栏"
+      ],
+      "expected": "保持聊天输入、滚动位置和任务状态，焦点恢复菜单入口"
+    },
+    {
+      "id": "TEST-FLOW-mine",
+      "flow_id": "FLOW-mine",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-mine"
+      ],
+      "steps": [
+        "侧栏进入 mine",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-trend",
+      "flow_id": "FLOW-trend",
+      "state_ids": [
+        "ST-mine",
+        "ST-trend-scope"
+      ],
+      "steps": [
+        "点击下级入口 trend",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-body",
+      "flow_id": "FLOW-body",
+      "state_ids": [
+        "ST-mine",
+        "ST-body-scope"
+      ],
+      "steps": [
+        "点击下级入口 body",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-baby",
+      "flow_id": "FLOW-baby",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-baby"
+      ],
+      "steps": [
+        "侧栏进入 baby",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-feeding",
+      "flow_id": "FLOW-feeding",
+      "state_ids": [
+        "ST-baby",
+        "ST-feeding-scope"
+      ],
+      "steps": [
+        "点击下级入口 feeding",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-growth",
+      "flow_id": "FLOW-growth",
+      "state_ids": [
+        "ST-baby",
+        "ST-growth-scope"
+      ],
+      "steps": [
+        "点击下级入口 growth",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-devices",
+      "flow_id": "FLOW-devices",
+      "state_ids": [
+        "ST-sidebar-open",
+        "ST-devices"
+      ],
+      "steps": [
+        "侧栏进入 devices",
+        "检查固定示例及说明",
+        "返回侧栏，再关闭恢复聊天"
+      ],
+      "expected": "导航关闭抽屉进入概览；返回恢复选中项，数据非真实同步"
+    },
+    {
+      "id": "TEST-FLOW-device-info",
+      "flow_id": "FLOW-device-info",
+      "state_ids": [
+        "ST-devices",
+        "ST-device-info-scope"
+      ],
+      "steps": [
+        "点击下级入口 device-info",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    },
+    {
+      "id": "TEST-FLOW-sync",
+      "flow_id": "FLOW-sync",
+      "state_ids": [
+        "ST-devices",
+        "ST-sync-scope"
+      ],
+      "steps": [
+        "点击下级入口 sync",
+        "阅读未提供范围，按钮或Esc返回"
+      ],
+      "expected": "保持概览页与焦点；不虚构目标界面、不执行连接或同步"
+    }
+  ]
+}

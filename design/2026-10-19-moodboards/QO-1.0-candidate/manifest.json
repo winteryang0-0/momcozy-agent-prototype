@@ -1,0 +1,47 @@
+{
+  "id": "QO-1.0",
+  "status": "candidate_pending_user_confirmation",
+  "created": "2026-10-19",
+  "files": [
+    {
+      "path": "DESIGN_INPUT.txt",
+      "bytes": 4406,
+      "sha256": "38b9fdcc11d56568918199ff1b1d2d170511491974cbe7dfec45f8609b632316"
+    },
+    {
+      "path": "design-input.json",
+      "bytes": 11646,
+      "sha256": "cb9d851d5aebc1a1f87a8c44f348464ec670853389b6278d7984a1fddbe5887e"
+    },
+    {
+      "path": "generation-prompts.json",
+      "bytes": 8872,
+      "sha256": "fd7848dd770b8e2f82d0c327c9d5c20beb2810dd4953a705a5455fd6a497889b"
+    },
+    {
+      "path": "quiet-order-refined.png",
+      "bytes": 1752109,
+      "sha256": "17e42b3b283559f0ff3b50a79e1976aabf33a5ebfd279457f3df391d85ac2a38"
+    },
+    {
+      "path": "quiet-order-states.png",
+      "bytes": 1605693,
+      "sha256": "dce345ec28cbdb10251ab216c7b1f18a2b574b523572e5b2ba4d050b80c8eb61"
+    },
+    {
+      "path": "review.json",
+      "bytes": 1304,
+      "sha256": "3c5f23f8e7ef1e04c36001201f2737591e86e3c5baa2c3ac9959dc84faee8ea0"
+    },
+    {
+      "path": "selected-direction-v0.1.png",
+      "bytes": 1711524,
+      "sha256": "2756ee1388b97c9fa8142d62f0e28e1dbc4f79d460c4207896eba6a4371f8696"
+    },
+    {
+      "path": "source-brief-v0.1.json",
+      "bytes": 8282,
+      "sha256": "9413f066062c6f87da0bcccea76a59fe624b8ac08e3f199e2d84e226e1b464b5"
+    }
+  ]
+}

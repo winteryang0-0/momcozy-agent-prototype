@@ -1,0 +1,125 @@
+{
+  "material": "Momcozy-final.html",
+  "sha256": "c80ab8033318bc3423dcd92d0f6aaceecdebe5949a368ddeaa0972e5a6aacd50",
+  "capturedAt": "2026-10-21T13:12:45.348Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "browser": "155.0.8059.86",
+  "checks": [
+    {
+      "name": "home keeps the baby name and user message",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "Today tip expands, cycles with dots and keyboard, and collapses",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "side menu opens and Escape closes it",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "side menu opens the baby profile",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "side menu opens My Care Space and returns home",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "side menu reaches the journal",
+      "passed": true,
+      "route": "#/records"
+    },
+    {
+      "name": "journal note remains verbatim",
+      "passed": true,
+      "route": "#/records"
+    },
+    {
+      "name": "growth view keeps the baby name while translating the label",
+      "passed": true,
+      "route": "#/records"
+    },
+    {
+      "name": "My Care Space returns to the journal",
+      "passed": true,
+      "route": "#/records"
+    },
+    {
+      "name": "history title and preview remain verbatim",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "voice sample inserts natural English",
+      "passed": true,
+      "route": "#/home"
+    },
+    {
+      "name": "user content survives a file reload",
+      "passed": true,
+      "route": "#/home"
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "home-user-text",
+      "path": "delivery-review/screenshots/final-home-user-text.png",
+      "sha256": "4287d8303677ff641dbe900ef7a30d71f1767a3bdff6644c4f06b83bd5c5cdef",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false
+    },
+    {
+      "name": "today-tip-expanded",
+      "path": "delivery-review/screenshots/final-today-tip-expanded.png",
+      "sha256": "cb91fa285ca6f3d3f3b53c5a4f2510e5b0bef77b4ef3d3257c9f4bbb0e76eb88",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false
+    },
+    {
+      "name": "main-menu",
+      "path": "delivery-review/screenshots/final-main-menu.png",
+      "sha256": "05a284b6755dca16ea95109719ce3fcc906dba38ff49a9c2e1765044db5ef49c",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false
+    },
+    {
+      "name": "journal-user-name",
+      "path": "delivery-review/screenshots/final-journal-user-name.png",
+      "sha256": "940659f31424fc77c8e2c300b01ec03185cd90fd7b88d5ca301348c7ca87798e",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false
+    },
+    {
+      "name": "journal-after-mine",
+      "path": "delivery-review/screenshots/final-journal-after-mine.png",
+      "sha256": "154c464dfbda5a0a07843de2cb35b925d0837515d9ee1dbe0ae1caa97c6b0fe3",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

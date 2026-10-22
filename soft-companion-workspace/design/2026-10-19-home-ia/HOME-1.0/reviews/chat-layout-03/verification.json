@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-19T13:26:54.067Z",
+  "request": "独立聊天滚动，固定输入框位于 Dock 上方，每次回复自动滚到最新；Dock 为 Today、momcozy AI、记录；默认动画加快且多段轮播",
+  "checks": {
+    "viewports": [
+      "390x844",
+      "360x640",
+      "original desktop viewport"
+    ],
+    "longConversation": true,
+    "manualHistoryScroll": true,
+    "replyReturnsToBottom": true,
+    "outerScrollRemained": 0,
+    "composerTopStableAt390": 606.67,
+    "smallScreen": {
+      "chatInputGap": 8,
+      "inputDockGap": 13.999969482421877,
+      "latestGap": -0.333343505859375,
+      "outerScroll": 0,
+      "overflow": false
+    },
+    "attachment": {
+      "chatHeight": 179,
+      "dockGap": 14,
+      "latestVisible": true
+    },
+    "taskReplyScroll": true,
+    "taskButtonScrollOffset": 8,
+    "dockOrder": [
+      "Today",
+      "momcozy AI",
+      "记录"
+    ],
+    "profileViaToday": true,
+    "motionSamples": [
+      {
+        "segment": "curious-sway",
+        "time": "9343"
+      },
+      {
+        "segment": "gentle-smile",
+        "time": "11176"
+      },
+      {
+        "segment": "double-blink",
+        "time": "12993"
+      },
+      {
+        "segment": "breath-blink",
+        "time": "14826"
+      },
+      {
+        "segment": "curious-sway",
+        "time": "16660"
+      }
+    ],
+    "reducedMotionStopsLoop": true,
+    "syntax": true
+  },
+  "motion": {
+    "segmentDurationMs": 1800,
+    "loopDurationMs": 7200,
+    "segments": [
+      "breath-blink",
+      "curious-sway",
+      "gentle-smile",
+      "double-blink"
+    ]
+  },
+  "screenshots": [
+    "idle-390.jpg",
+    "chat-390.jpg",
+    "chat-360x640.jpg"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "size": 9802,
+      "sha256": "39f40565ab8f1f9f76de0bd006725dcfac1062964af1c4cd29726ebbd7999dea"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 25112,
+      "sha256": "03c39da87e6ebe5a9f79b6ba6356e9cf6bf3d177e625f989b846fafd81e051cd"
+    },
+    {
+      "path": "assets/app.js",
+      "size": 41623,
+      "sha256": "f74c87fa673157b51ce0e24e87028df2af103b71165f8bba49c960d2907394fc"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 4761,
+      "sha256": "daa0303afcb078abca29dac92de645e161d95b0a3e4e375f2b8a6e3e62a947ff"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    }
+  ],
+  "limitations": [
+    "响应仍为本地示例；未验证真机软键盘",
+    "旧版评审记录对应此前源码；本记录仅覆盖本次修改"
+  ]
+}

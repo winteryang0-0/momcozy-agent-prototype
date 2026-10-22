@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "branch": "ENGINEERING-1.0-candidate",
+  "source_standalone_sha256": "7d3bebe5676a09cd3dd2d744fb9b3ae7e31c2844ff702af5aaaccb45afda4676",
+  "purpose": "Runtime file integrity only; design and browser reviews are separate.",
+  "files": [
+    {
+      "path": "Momcozy-final.html",
+      "size": 2290697,
+      "sha256": "6d92641563bfd0ff239302f2f9a7ce283c37bb36f8af68f95fe1f4fbab4069a8"
+    },
+    {
+      "path": "assets/app/00-foundation.js",
+      "size": 3769,
+      "sha256": "046b038734993c99b34d8e4480c4df9a36ae183dbde606ef476e9b48bab64576"
+    },
+    {
+      "path": "assets/app/10-conversations.js",
+      "size": 11069,
+      "sha256": "a622f2acd714b9648639cf4d23dfa1bca7c54f95b6e96d7da7efc45b47cef69a"
+    },
+    {
+      "path": "assets/app/20-onboarding.js",
+      "size": 21195,
+      "sha256": "df401374be2f56f91e0af060482d836b2d878cf55c0fd018d2e14ce037933956"
+    },
+    {
+      "path": "assets/app/30-home-navigation.js",
+      "size": 15622,
+      "sha256": "2fe7c358ff9d40c7fd740da6f0c1226656b49d64157b7c36c7fa224a7a4a8ac9"
+    },
+    {
+      "path": "assets/app/40-records.js",
+      "size": 9658,
+      "sha256": "b751088fd9dd304acaebfc10c03dcfa29b269a27923c40cd16c140718bb762f1"
+    },
+    {
+      "path": "assets/app/50-care-tasks.js",
+      "size": 30812,
+      "sha256": "c8c5c76b2879350e003ecfe06080659c42790def43e95e33cd5fe44a652948b9"
+    },
+    {
+      "path": "assets/app/60-profile-settings.js",
+      "size": 15535,
+      "sha256": "d9a5f5248ad7804ff0dde90a9f2b1da8f9a7b20000e03e6576ec160e4de0042d"
+    },
+    {
+      "path": "assets/app/70-events.js",
+      "size": 20003,
+      "sha256": "40eed2053627d5f9222420fc681916021005a3a108e783d391355c72155df94f"
+    },
+    {
+      "path": "assets/berry.css",
+      "size": 21092,
+      "sha256": "50f420609ec53466adfcd4b0e2a96fee804d800b86f43fabb355154ab654dd48"
+    },
+    {
+      "path": "assets/care-shortcuts-23.css",
+      "size": 1065,
+      "sha256": "6d1778583fcee0df0ea7b262a6f1e095aeb327068c84e3fd0858a77b07bffbed"
+    },
+    {
+      "path": "assets/chat-care-20.css",
+      "size": 6074,
+      "sha256": "2b11d35e82caf06165ba3697abbb40c487783679d28a0e501eaacf4853d072a6"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3704,
+      "sha256": "dd44d1ee73155903f8e42e24215bee5e5922ea9f8867cafa47eeae2aa0a64613"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6356,
+      "sha256": "8640b7e6f39c72a99704a24cc0bfafa3b367f18d82c7b74df3db090e98b24f26"
+    },
+    {
+      "path": "assets/layout-16.css",
+      "size": 13170,
+      "sha256": "198009b9fcc0cad3cc525aee25000bc14a7213e2861a306a690705e4cb1e5aa0"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/onboarding-berry.css",
+      "size": 10023,
+      "sha256": "4a63b02ca5b974d07ce2bcfe26acc079322c1a432373ff25af42be0aaf0b363f"
+    },
+    {
+      "path": "assets/profile-ranges-21.css",
+      "size": 853,
+      "sha256": "94b2dad5504d691bf1f711d3908261beef1dd45d4effbe4e4cf20d48cb4799ed"
+    },
+    {
+      "path": "assets/profile-sections-27.css",
+      "size": 1308,
+      "sha256": "6cbbbd47533ef68673c7fda25b7239f38ad336a782882d2a51569e1fddea00a6"
+    },
+    {
+      "path": "assets/sidebar-24.css",
+      "size": 3670,
+      "sha256": "e2f8846c9a79af00c81c0846ce9977b1f654dc1838f35488711840495b2cf4ac"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50113,
+      "sha256": "e0fe80419422a9300ffdf56624296f761c22fa193c7f0078d18444e106b03927"
+    },
+    {
+      "path": "assets/today-card-26.css",
+      "size": 3557,
+      "sha256": "7d1e992b1e771a444b43506f43824dd56529c615831097562644dbcd4c94e943"
+    },
+    {
+      "path": "index.html",
+      "size": 16014,
+      "sha256": "88b4d3a0d76aa0945fef6c7ea0ebe91774e77d06779a75e318a9a34aede58e65"
+    }
+  ]
+}

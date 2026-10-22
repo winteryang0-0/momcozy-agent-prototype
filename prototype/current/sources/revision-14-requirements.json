@@ -1,0 +1,140 @@
+{
+  "revision": "HOME-1.0-final-revision-14",
+  "date": "2026-10-20",
+  "status": "authorized-implementation-candidate-not-frozen",
+  "authority": {
+    "kind": "human-conversation",
+    "locator": "Current task: user message after final-audit-13 report",
+    "verbatim": "1. 数据采集页面icon优化 2. 对话中的交互卡片需要以会话的卡片功能形式流转而不是固定回到顶部 3. AI会话功能中的记一笔也需要独立与其他记一笔功能，会话中需要以卡片的形式展开 4. 记一笔的下阶段二级菜单也需要按UX/UI规范修正 5. 以上整合按你的审查建议进行修正，并输出终版html",
+    "meaning": "授权实现和导出本轮原型，不等于对尚未展示的新基线作出冻结批准。"
+  },
+  "historical_sources": [
+    {
+      "path": "sources/requirements.json",
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe",
+      "role": "历史需求索引，原文件保持不变"
+    },
+    {
+      "path": "baselines/HOME-0.1/ARCHITECTURE.txt",
+      "role": "历史架构快照；导航和录入规则以当前会话后续授权为准"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "role": "QO-2.0 UI/UX 规范；默认形象循环等已由后续用户明确修订"
+    },
+    {
+      "path": "reviews/final-audit-13/findings.json",
+      "role": "五项确认重大问题 F01–F05，修复验收来源"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R14-U01",
+      "title": "数据采集页面语义图标优化",
+      "rule": "身份、妈妈/宝宝资料、关注点和功能推荐的图标应与文字语义一致；保持既有留白和纵向滚轮。",
+      "source": "current-task-latest-human-message"
+    },
+    {
+      "id": "R14-U02",
+      "title": "任务在对话时间线上流转",
+      "rule": "听哭闹、看便便、记一笔作为当前对话中的任务卡片出现和更新，不固定置于全部历史消息之前。",
+      "source": "current-task-latest-human-message"
+    },
+    {
+      "id": "R14-U03",
+      "title": "会话记一笔独立展开",
+      "rule": "会话内选择类型、填写、保存和回执；会话草稿及请求独立于 Today/记录入口，成功记录写入共同日志。",
+      "source": "current-task-latest-human-message"
+    },
+    {
+      "id": "R14-U04",
+      "title": "记一笔二级菜单和表单规范",
+      "rule": "按妈妈/宝宝分组，语义图标、类型说明与字段组清楚；全局入口采用页面内底部弹窗，会话入口保持卡片内展开。",
+      "source": "current-task-latest-human-message"
+    },
+    {
+      "id": "R14-U05",
+      "title": "整合修复并导出终版 HTML",
+      "rule": "保留相对资源版 index.html，另外导出单文件 Momcozy-final.html；交付应准确说明验证范围与模拟边界。",
+      "source": "current-task-latest-human-message"
+    },
+    {
+      "id": "R14-F01",
+      "title": "修复阶段编辑清空宝宝资料",
+      "rule": "空阶段保持空值；保存妈妈阶段不会隐式清空已有宝宝信息。",
+      "source": "reviews/final-audit-13/findings.json#F01"
+    },
+    {
+      "id": "R14-F02",
+      "title": "修复两个生日入口规则冲突",
+      "rule": "引导和资料编辑统一使用本机当天日期上限，出生日期选填，未来/无效日期不可保存。",
+      "source": "reviews/final-audit-13/findings.json#F02"
+    },
+    {
+      "id": "R14-F03",
+      "title": "修复隐藏宝宝字段绕过校验",
+      "rule": "提交时检查将保存的全部宝宝；数量缩减恢复或切换阶段不允许保存隐藏的无效日期，错误定位到宝宝字段。",
+      "source": "reviews/final-audit-13/findings.json#F03"
+    },
+    {
+      "id": "R14-F04",
+      "title": "修复删除后旧请求恢复记录",
+      "rule": "删除撤销关联待处理保存并保存删除标记；旧请求重试/核对不能重新创建已删除记录。",
+      "source": "reviews/final-audit-13/findings.json#F04"
+    },
+    {
+      "id": "R14-F05",
+      "title": "修复长会话新任务不可见",
+      "rule": "关键词和快捷入口都应把任务放到当前会话顺序位置，启动后可见并可操作，保留回看滚动能力。",
+      "source": "reviews/final-audit-13/findings.json#F05"
+    },
+    {
+      "id": "R14-H01",
+      "title": "保留三项 Dock 与个人资料入口",
+      "rule": "Dock 为 Today、momcozy AI、记录；Today 使用太阳图标，个人资料从 Today 顶部访问。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H02",
+      "title": "保留四步基础资料录入",
+      "rule": "身份→基础资料→关注点→功能推荐；仅妈妈展开选填阶段，妈妈与宝宝数字采用纵向滚轮同页展示，可跳过并续填。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H03",
+      "title": "保留对话基础布局和形象",
+      "rule": "欢迎页循环形象及三个入口；会话顶部收紧，输入栏固定在 Dock 上方，独立滚动；逐条 AI 回复带形象和署名。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H04",
+      "title": "保留会话历史管理",
+      "rule": "新对话回到欢迎页；历史可恢复、搜索、重命名、确认删除；删除当前回欢迎页，其他对话保持。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H05",
+      "title": "保留五类日志闭环",
+      "rule": "亲喂、瓶喂母乳、配方奶、换尿布、吸奶的保存、回看、编辑、确认删除、失败重试和结果核对。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H06",
+      "title": "保留专项采集闭环和追加服务",
+      "rule": "显式模拟权限、采集、确认、分析、结束与恢复；完成回复和终态任务提供记一笔、听哭闹、看便便。",
+      "source": "current-task-earlier-human-messages"
+    },
+    {
+      "id": "R14-H07",
+      "title": "保留弹窗边界与阅读设置",
+      "rule": "弹窗限制在交互页面内，标题固定、正文滚动；支持夜间、减少动态效果、减少透明度和对比偏好。",
+      "source": "current-task-earlier-human-messages"
+    }
+  ],
+  "scope_limits": [
+    "原型不连接真实 AI、麦克风、相机、上传、设备或云同步。",
+    "用户填写了多宝宝基础资料，不代表已扩展逐宝宝日志归属。",
+    "睡眠、身体状态、身长体重录入及生产级跨时区规则仍不在本轮实现范围。",
+    "独立审阅和浏览器回归以 reviews/final-revision-14 下实际产物为准；此来源文件不宣称测试通过。"
+  ]
+}

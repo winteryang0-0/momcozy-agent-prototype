@@ -1,0 +1,14 @@
+{
+  "candidate": "FW-0.2",
+  "status": "awaiting-review-not-frozen",
+  "framework_sha256": "d30153549a8de859dba1520f4977ee717395706e7324356e4f4df974be55a463",
+  "system_sha256": "9151793637b0df5b78c03efd6d40c23afe5272c8177f833d7dfad3d5ff835bac",
+  "source_sha256": "1ae75d0af1e74f5d8b1c1e33f9b56b0c08ff38a10713696731364605d47274d4",
+  "scope_sha256": "f5c8bcc0ef0d6c433409aad3a92b44ff8d34f404d262966b147cfbbfe14d9795",
+  "bundle_sha256": {
+    "index.html": "2dd7908a7758417dc7a55c58baf3b492cca3c50fd3dea4e7b7910e970ed7a911",
+    "assets/styles.css": "2aae88edb0ceb0be895f006fdf032405d4e574d2df05bf23b87d1f5305432f06",
+    "assets/app.js": "03df708e4e57ba55d65082960037c7614e9b7224c1a2b588f1a83ceee8834dec"
+  },
+  "confirmation": null
+}

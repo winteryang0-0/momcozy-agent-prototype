@@ -1,0 +1,960 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "momcozy-agent-competitive-ia",
+    "title": "Momcozy Agent 基础竞品分析",
+    "revision": 1,
+    "mode": "live",
+    "stage": "draft",
+    "authors": {
+      "analysis": "/root",
+      "evidence": "/root",
+      "challenger": "/root/challenge_review"
+    },
+    "artifacts": [
+      "analysis.md"
+    ],
+    "boundary_dimensions": []
+  },
+  "inputs": [
+    {
+      "id": "INP-01",
+      "text": "基于当前产品定义寻找直接间接竞品，包括通用AI服务内应用。",
+      "locator": "current chat user request 2026-10-19"
+    },
+    {
+      "id": "INP-02",
+      "text": "用户选择A：服务于信息架构与交互重构。",
+      "locator": "current chat user reply A 2026-10-19"
+    },
+    {
+      "id": "INP-03",
+      "text": "服务不同阶段妈妈及宝宝；记录独立表单，听哭闹和看便便会话内展开。",
+      "locator": "chat 01a1523b-1368-79d2-bfa1-649fb261c5ed user messages 2026-10-19"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "What is Berry?",
+      "origin": "official",
+      "locator": "https://huckleberry.zendesk.com/hc/en-us/articles/44561361627667-What-is-Berry",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      }
+    },
+    {
+      "id": "S02",
+      "title": "Berry - Memory and chat history",
+      "origin": "official",
+      "locator": "https://huckleberry.zendesk.com/hc/en-us/articles/46601880952211-Berry-Memory-and-chat-history",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-05"
+      }
+    },
+    {
+      "id": "S03",
+      "title": "Nanni AI App Store",
+      "origin": "official",
+      "locator": "https://apps.apple.com/us/app/nanni-ai-your-baby-translator/id6446214576",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Nanni AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone and Apple Watch; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S04",
+      "title": "宝宝树产品介绍",
+      "origin": "official",
+      "locator": "https://m.babytree.com/about/product-intro",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "宝宝树孕育 米卡AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "Chinese official page; distribution region unknown",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S05",
+      "title": "Android widgets & Watch app",
+      "origin": "official",
+      "locator": "https://babydaybook.app/android-widgets-watch-app/",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Baby Daybook",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Android and Wear OS; version unknown",
+        "region": "English page; region unknown",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S06",
+      "title": "BabyPoop AI App Store",
+      "origin": "official",
+      "locator": "https://apps.apple.com/us/app/babypoop-ai/id6747193200",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "BabyPoop AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S07",
+      "title": "How do I chat with Flo Health Assistant?",
+      "origin": "official",
+      "locator": "https://help.flo.health/hc/en-us/articles/360052676191-How-do-I-chat-with-Flo-Health-Assistant",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Flo Health Assistant",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown; delete interaction iOS only",
+        "region": "English help; region unknown",
+        "valid_on": "2025-05-28"
+      }
+    },
+    {
+      "id": "S08",
+      "title": "Connected apps in ChatGPT",
+      "origin": "official",
+      "locator": "https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "ChatGPT connected apps",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "account and interface dependent",
+        "region": "region dependent",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S09",
+      "title": "Introducing apps in ChatGPT",
+      "origin": "official",
+      "locator": "https://openai.com/index/introducing-apps-in-chatgpt/",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "ChatGPT apps",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "historical launch examples",
+        "region": "launch regions only; not current coverage",
+        "valid_on": "2025-10-06"
+      }
+    },
+    {
+      "id": "S10",
+      "title": "UI guidelines",
+      "origin": "official",
+      "locator": "https://developers.openai.com/plugins/concepts/ui-guidelines",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "ChatGPT app UI guidelines",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "documentation; not runtime verification",
+        "region": "unknown",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S11",
+      "title": "What are artifacts and how do I use them?",
+      "origin": "official",
+      "locator": "https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Claude Artifacts",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "web desktop mobile differences; version unknown",
+        "region": "unknown",
+        "valid_on": "unknown"
+      }
+    },
+    {
+      "id": "S12",
+      "title": "Use Gems in Gemini Apps",
+      "origin": "official",
+      "locator": "https://support.google.com/gemini/answer/15146780?hl=en",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Gemini Gems",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "personal accounts transition from November 2026",
+        "region": "account and region dependent",
+        "valid_on": "2026-10-19"
+      }
+    },
+    {
+      "id": "S13",
+      "title": "Momcozy APP",
+      "origin": "official",
+      "locator": "https://momcozy.com/pages/app",
+      "retrieved_at": "2026-10-19T04:04:29Z",
+      "access_status": "readable",
+      "scope": {
+        "product": "Momcozy existing app",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown; internal comparison only",
+        "region": "English site; region dependent",
+        "valid_on": "unknown"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-001",
+      "text": "Berry 可从底部 Berry 标签进入，需 Premium。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      },
+      "evidence": [
+        {
+          "source_id": "S01",
+          "locator": "Membership & Access",
+          "excerpt": "Berry 可从底部 Berry 标签进入，需 Premium。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-002",
+      "text": "Berry 支持语音录入照护记录。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      },
+      "evidence": [
+        {
+          "source_id": "S01",
+          "locator": "Easier Logging",
+          "excerpt": "Berry 支持语音录入照护记录。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-003",
+      "text": "Berry 支持文字录入照护记录。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      },
+      "evidence": [
+        {
+          "source_id": "S01",
+          "locator": "Easier Logging",
+          "excerpt": "Berry 支持文字录入照护记录。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-004",
+      "text": "Berry 支持图片转录与批量录入。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      },
+      "evidence": [
+        {
+          "source_id": "S01",
+          "locator": "Easier Logging",
+          "excerpt": "Berry 支持图片转录与批量录入。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-005",
+      "text": "Berry 的上下文包括档案、记录、最新睡眠计划和对话补充内容。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Premium; app version unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-12"
+      },
+      "evidence": [
+        {
+          "source_id": "S01",
+          "locator": "Pro-tip: The power of context",
+          "excerpt": "Berry 的上下文包括档案、记录、最新睡眠计划和对话补充内容。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-006",
+      "text": "帮助文档将最近12小时可见聊天与独立保存的记忆区分。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-05"
+      },
+      "evidence": [
+        {
+          "source_id": "S02",
+          "locator": "How is memory different from chat history?",
+          "excerpt": "帮助文档将最近12小时可见聊天与独立保存的记忆区分。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-007",
+      "text": "帮助文档指出旧背景可能过时，可通过告知新信息更正。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Huckleberry Berry",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "English help; region unknown",
+        "valid_on": "2026-02-05"
+      },
+      "evidence": [
+        {
+          "source_id": "S02",
+          "locator": "Why does Berry bring up old information?",
+          "excerpt": "帮助文档指出旧背景可能过时，可通过告知新信息更正。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-008",
+      "text": "Nanni 开发者声明可录制哭声并给出可能原因和安抚提示；效果未验证。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Nanni AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone and Apple Watch; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S03",
+          "locator": "Developer description - NEWBORN CRY TRANSLATOR",
+          "excerpt": "Nanni 开发者声明可录制哭声并给出可能原因和安抚提示；效果未验证。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-009",
+      "text": "Nanni 开发者声明提供喂养、睡眠、尿布记录及时间线和汇总，支持手动及语音。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Nanni AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone and Apple Watch; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S03",
+          "locator": "Developer description - FREE BABY TRACKER",
+          "excerpt": "Nanni 开发者声明提供喂养、睡眠、尿布记录及时间线和汇总，支持手动及语音。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-010",
+      "text": "宝宝树官方列出孕期报告解读、营养计算及档案能力。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "宝宝树孕育 米卡AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "Chinese official page; distribution region unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S04",
+          "locator": "孕期健康管理 / 米卡AI智能孕育",
+          "excerpt": "宝宝树官方列出孕期报告解读、营养计算及档案能力。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-011",
+      "text": "宝宝树官方列出宝宝成长管理及育儿阶段AI工具。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "宝宝树孕育 米卡AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown",
+        "region": "Chinese official page; distribution region unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S04",
+          "locator": "宝宝成长管理 / 米卡AI智能孕育",
+          "excerpt": "宝宝树官方列出宝宝成长管理及育儿阶段AI工具。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-012",
+      "text": "Baby Daybook Android 部分小组件可直接启停活动。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Baby Daybook",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Android and Wear OS; version unknown",
+        "region": "English page; region unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S05",
+          "locator": "Home Screen widgets",
+          "excerpt": "Baby Daybook Android 部分小组件可直接启停活动。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-013",
+      "text": "Baby Daybook Wear OS记录可同步手机。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Baby Daybook",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "Android and Wear OS; version unknown",
+        "region": "English page; region unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S05",
+          "locator": "Android Watch (Wear OS) app",
+          "excerpt": "Baby Daybook Wear OS记录可同步手机。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-014",
+      "text": "BabyPoop AI开发者声明按图片描述颜色与纹理等视觉特征。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "BabyPoop AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S06",
+          "locator": "Developer description - KEY FEATURES",
+          "excerpt": "BabyPoop AI开发者声明按图片描述颜色与纹理等视觉特征。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-015",
+      "text": "BabyPoop AI开发者声明结合年龄和喂养背景并提供数字尿布日志。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "BabyPoop AI",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "iPhone; version unknown",
+        "region": "US",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S06",
+          "locator": "Developer description - KEY FEATURES",
+          "excerpt": "BabyPoop AI开发者声明结合年龄和喂养背景并提供数字尿布日志。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-016",
+      "text": "Flo帮助描述Messages入口及阶段或症状触发对话。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Flo Health Assistant",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown; delete interaction iOS only",
+        "region": "English help; region unknown",
+        "valid_on": "2025-05-28"
+      },
+      "evidence": [
+        {
+          "source_id": "S07",
+          "locator": "Messages tab and new dialogues",
+          "excerpt": "Flo帮助描述Messages入口及阶段或症状触发对话。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-017",
+      "text": "Flo帮助描述部分对话可失效，已提交答案不可修改。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Flo Health Assistant",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown; delete interaction iOS only",
+        "region": "English help; region unknown",
+        "valid_on": "2025-05-28"
+      },
+      "evidence": [
+        {
+          "source_id": "S07",
+          "locator": "Chat history behavior",
+          "excerpt": "Flo帮助描述部分对话可失效，已提交答案不可修改。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-018",
+      "text": "ChatGPT部分连接应用呈现交互卡片或地图，受地区、套餐、模型及界面等限制。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "ChatGPT connected apps",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "account and interface dependent",
+        "region": "region dependent",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S08",
+          "locator": "Overview / Availability",
+          "excerpt": "ChatGPT部分连接应用呈现交互卡片或地图，受地区、套餐、模型及界面等限制。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-019",
+      "text": "2025发布案例以Spotify、Zillow和Canva说明会话内应用；不代表当前全面可用性。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "ChatGPT apps",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "historical launch examples",
+        "region": "launch regions only; not current coverage",
+        "valid_on": "2025-10-06"
+      },
+      "evidence": [
+        {
+          "source_id": "S09",
+          "locator": "How to use apps in ChatGPT",
+          "excerpt": "2025发布案例以Spotify、Zillow和Canva说明会话内应用；不代表当前全面可用性。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-020",
+      "text": "ChatGPT UI指南建议轻量卡片避免深层导航和嵌套滚动。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "ChatGPT app UI guidelines",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "documentation; not runtime verification",
+        "region": "unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S10",
+          "locator": "Display modes - Inline card",
+          "excerpt": "ChatGPT UI指南建议轻量卡片避免深层导航和嵌套滚动。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-021",
+      "text": "ChatGPT UI指南将复杂浏览和编辑列为可使用更大视图的场景。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "ChatGPT app UI guidelines",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "documentation; not runtime verification",
+        "region": "unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S10",
+          "locator": "Display modes - fullscreen",
+          "excerpt": "ChatGPT UI指南将复杂浏览和编辑列为可使用更大视图的场景。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-022",
+      "text": "Claude官方帮助说明成果在独立视图打开并可从Artifacts集中找回。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Claude Artifacts",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "web desktop mobile differences; version unknown",
+        "region": "unknown",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S11",
+          "locator": "Find your artifacts / Work with artifacts",
+          "excerpt": "Claude官方帮助说明成果在独立视图打开并可从Artifacts集中找回。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-023",
+      "text": "Gems可保存指令并添加知识文件。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Gemini Gems",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "personal accounts transition from November 2026",
+        "region": "account and region dependent",
+        "valid_on": "2026-10-19"
+      },
+      "evidence": [
+        {
+          "source_id": "S12",
+          "locator": "Create a Gem / Knowledge",
+          "excerpt": "Gems可保存指令并添加知识文件。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-024",
+      "text": "官方公告个人账号Gems从2026年11月起自动迁移到skills。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Gemini Gems",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "personal accounts transition from November 2026",
+        "region": "account and region dependent",
+        "valid_on": "2026-10-19"
+      },
+      "evidence": [
+        {
+          "source_id": "S12",
+          "locator": "Gems will soon transition to skills",
+          "excerpt": "官方公告个人账号Gems从2026年11月起自动迁移到skills。"
+        }
+      ]
+    },
+    {
+      "id": "CLM-025",
+      "text": "Momcozy现有App官网描述阶段切换、统一日志和提醒；与当前Agent关系未确认。",
+      "kind": "fact",
+      "status": "verified",
+      "scope": {
+        "product": "Momcozy existing app",
+        "model": "not applicable",
+        "hardware": "not assessed",
+        "firmware": "not applicable",
+        "app": "unknown; internal comparison only",
+        "region": "English site; region dependent",
+        "valid_on": "unknown"
+      },
+      "evidence": [
+        {
+          "source_id": "S13",
+          "locator": "Track Your Journey / Keep Your Day Organized",
+          "excerpt": "Momcozy现有App官网描述阶段切换、统一日志和提醒；与当前Agent关系未确认。"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "id": "INS-01",
+      "conclusion": "保留快速记录与自然语言记录两种候选路径",
+      "claim_ids": [
+        "CLM-002",
+        "CLM-003",
+        "CLM-004",
+        "CLM-012"
+      ],
+      "reasoning": "入口可分工，统一记录对象",
+      "limitations": "未测试效率，不代表竞品已有确认规则"
+    },
+    {
+      "id": "INS-02",
+      "conclusion": "会话卡片承接当前任务，更大视图承接复杂操作",
+      "claim_ids": [
+        "CLM-020",
+        "CLM-021"
+      ],
+      "reasoning": "依据任务复杂度分配载体",
+      "limitations": "平台指南不等于本产品最佳方案"
+    },
+    {
+      "id": "INS-03",
+      "conclusion": "区分长期背景、记录、分析结果和会话历史",
+      "claim_ids": [
+        "CLM-006",
+        "CLM-022"
+      ],
+      "reasoning": "记忆与可见历史、成果可分别管理",
+      "limitations": "我方信息对象为架构建议"
+    },
+    {
+      "id": "INS-04",
+      "conclusion": "使个性化背景可理解并可更正",
+      "claim_ids": [
+        "CLM-005",
+        "CLM-007",
+        "CLM-023"
+      ],
+      "reasoning": "持续使用背景需要纠错入口",
+      "limitations": "需验证信息密度"
+    },
+    {
+      "id": "INS-05",
+      "conclusion": "保留妈妈自身需求的入口与阶段适配",
+      "claim_ids": [
+        "CLM-010",
+        "CLM-011",
+        "CLM-016"
+      ],
+      "reasoning": "用事件和阶段组织服务",
+      "limitations": "不预先确认新增业务范围"
+    },
+    {
+      "id": "INS-06",
+      "conclusion": "专项分析应具备任务身份和恢复路径",
+      "claim_ids": [
+        "CLM-008",
+        "CLM-014",
+        "CLM-015"
+      ],
+      "reasoning": "素材分析任务有独立生命周期",
+      "limitations": "恢复流程是派生建议，未证实竞品具备"
+    }
+  ],
+  "decisions": [],
+  "requirements": [],
+  "scenarios": [],
+  "reviews": [
+    {
+      "id": "REV-01",
+      "role": "challenger",
+      "author": "/root/challenge_review",
+      "independent": true,
+      "reviewed_revision": 1,
+      "artifact_hashes": {
+        "analysis.md": "b56ee3bee684e64793f85d7d8d79b6e485b2c2a2f07cac244b6e797da8f49bda"
+      },
+      "ledger_hash": "9398875c763756f65c0b4bae7cfbfde4129024adeca83287319ee839b1d51a4e",
+      "verdict": "pass",
+      "scope": "Basic desktop competitor study; independently sampled 8 of 13 sources; no runtime or PRD readiness verdict",
+      "record": "reviews/challenger.md",
+      "findings": [
+        {
+          "id": "FND-01",
+          "severity": "minor",
+          "target_ids": [
+            "S01",
+            "S02",
+            "INS-04"
+          ],
+          "location": "analysis.md section 3 Berry",
+          "observation": "Reviewer initially thought profile and sleep plan lacked citation support.",
+          "impact": "Potential overstatement of context access.",
+          "fix": "Re-read source context section.",
+          "status": "resolved",
+          "resolution": {
+            "evidence": "S01 Pro-tip explicitly lists profile, latest Sleep Plan and conversations; reviewer withdrew finding.",
+            "verified_by": "/root/challenge_review",
+            "verified_revision": 1
+          }
+        },
+        {
+          "id": "FND-02",
+          "severity": "minor",
+          "target_ids": [
+            "S03",
+            "S06"
+          ],
+          "location": "analysis.md section 3 Nanni / BabyPoop",
+          "observation": "Task combination vs single-task competitor labels could be clearer.",
+          "impact": "Reader could overgeneralize scope.",
+          "fix": "Label Nanni as a postpartum task-combination competitor.",
+          "status": "resolved",
+          "resolution": {
+            "evidence": "Revised Nanni label independently read in final report.",
+            "verified_by": "/root/challenge_review",
+            "verified_revision": 1
+          }
+        },
+        {
+          "id": "FND-03",
+          "severity": "minor",
+          "target_ids": [
+            "INS-01",
+            "INS-03",
+            "INS-05"
+          ],
+          "location": "analysis.md section 6",
+          "observation": "Two candidates could be mistaken for exhaustive choices.",
+          "impact": "Could narrow exploration prematurely.",
+          "fix": "State candidates are non-exhaustive and mixed or stage-based options remain.",
+          "status": "resolved",
+          "resolution": {
+            "evidence": "Explicit non-exhaustive sentence added and independently re-read.",
+            "verified_by": "/root/challenge_review",
+            "verified_revision": 1
+          }
+        }
+      ]
+    }
+  ],
+  "research_limitations": [
+    "Desktop research only; no signed-in runtime tests or screenshot audit.",
+    "Single-stage draft; no PRD readiness claim.",
+    "Source retrieval timestamp records final source audit request start; publication dates remain in scope."
+  ]
+}

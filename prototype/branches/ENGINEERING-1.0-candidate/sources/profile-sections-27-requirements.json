@@ -1,0 +1,34 @@
+{
+  "revision": "profile-sections-27",
+  "date": "2026-10-21",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "today-card-26",
+  "authority": "Current conversation: sidebar only keeps 我的 and 宝宝, removes 当日记录; 宝宝 follows the same page-level navigation logic as 我的; compact Today text is centered. Preserve the records page and its new-entry control.",
+  "changes": [
+    {
+      "id": "R27-01",
+      "title": "侧栏仅保留两个入口",
+      "rule": "侧栏只显示「我的」「宝宝」和关闭控件。侧栏不展示当日记录或智能体服务；记录仍可从我的或宝宝页面进入并新建。"
+    },
+    {
+      "id": "R27-02",
+      "title": "宝宝与我的同层级",
+      "rule": "宝宝成为独立 #/baby 页面，使用与我的相同的顶部返回、资料概览和分组入口。宝宝资料在该页打开原有编辑表单，保存后返回宝宝页并更新显示。我的和宝宝分别通往当前对象的当日记录及已有二级分析，记录页返回来源页。"
+    },
+    {
+      "id": "R27-03",
+      "title": "折叠 Today 信息居中",
+      "rule": "对话后收缩的 Today 条内，当前提醒标题相对整个缩略条水平居中；左侧 Today 标记、右侧展开图标保持可见，点击整条恢复展开，明暗和窄屏一致。"
+    }
+  ],
+  "supersedes": [
+    "R24-02 中宝宝仅打开资料弹窗的入口形式",
+    "R26-05 与 R26-06 中侧栏保留当日记录的入口形式"
+  ],
+  "scope": "调整侧栏导航、宝宝资料与照护总览的页面层级，以及 Today 折叠条的文字对齐；继续复用现有记录页、资料表单、二级分析与新建记录。",
+  "assumptions": [
+    "「与我的一致」指宝宝使用同层级的独立页面、返回和分组入口，不复制妈妈设备与连接模块。",
+    "「Today 缩略状态下文字信息居中」指当前提醒标题相对缩略条可视宽度居中，Today 标记和展开图标仍保留。",
+    "本轮为可审阅候选，尚无用户确认的合法 B-ID 冻结基线。"
+  ]
+}

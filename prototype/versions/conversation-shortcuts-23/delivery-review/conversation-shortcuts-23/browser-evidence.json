@@ -1,0 +1,187 @@
+{
+  "revision": "conversation-shortcuts-23",
+  "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+  "modular_sha256": "5b3ab89790981c16915cd25d1218ef09dbdf5e7c8879d230b7a3aab1231239bc",
+  "shortcut_css_sha256": "6d1778583fcee0df0ea7b262a6f1e095aeb327068c84e3fd0858a77b07bffbed",
+  "browser": "Chrome 155.0.8059.86",
+  "protocol": "file://",
+  "operator": "Playwright Chrome headless",
+  "captured_at": "2026-10-21T10:11:15.900Z",
+  "checks": [
+    "welcome: one horizontal row above the 58px composer, height 29px",
+    "three replies: no repeated care entry in the conversation and persistent row remains visible",
+    "keyboard: visible focus and left-to-right tab order",
+    "active record task blocks another task without losing the record picker",
+    "record: type selection, form, save and local receipt still work",
+    "active cry task blocks photo without replacing the current card",
+    "cry: existing capture and device-error recovery remain reachable; an error state blocks another task until cancelled",
+    "photo: existing camera error, retry and file choice remain reachable",
+    "refresh: persistent row survives and old replies do not regain repeated entries",
+    "dark 360x640: row stays visible, horizontal and free of page overflow",
+    "reduced motion: entries remain visible and transitions are disabled",
+    "module index.html under file:// has the same shortcut and task behavior"
+  ],
+  "screenshots": [
+    {
+      "name": "01-welcome-light-390",
+      "note": "Welcome screen with one persistent three-button care row",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/01-welcome-light-390.png",
+      "sha256": "750c03f980e92cac3f393696582ba6ca9e655e7ea6c3edf36ab1f513a14452d6",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:10:58.612Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-conversation-light-390",
+      "note": "Repeated replies have no care shortcuts and the persistent row remains visible",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/02-conversation-light-390.png",
+      "sha256": "135c819302df743258f075e27eac0391f80ed1fb666e1f4592dba3432a1d636a",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:00.889Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-record-picker-light-390",
+      "note": "Persistent row with the original record type picker",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/03-record-picker-light-390.png",
+      "sha256": "cb222a5772fef3af9f1229a6453d00207792e475be95b315641100176f3d060d",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:01.101Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-record-saved-light-390",
+      "note": "Saved record receipt keeps the character and has no repeated function row",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/04-record-saved-light-390.png",
+      "sha256": "8539c217cde6db0163d7fec6cb0a608bc6a9a5c92a9986353e96226c01f6c933",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:05.157Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-cry-permission-error-light-390",
+      "note": "Cry card retains device error recovery while shortcuts stay above composer",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/05-cry-permission-error-light-390.png",
+      "sha256": "a08a628af04569974993eb2c90dd65b7fb20f2ea2b1f9f632cb3dc91dd1115df",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:13.484Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-poop-permission-error-light-390",
+      "note": "Photo card retains retry and file choice while shortcuts stay above composer",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/06-poop-permission-error-light-390.png",
+      "sha256": "94563fe33a54bbe54d0c333b7b4413975d37b584f5bcbb80f2c76759df9321b3",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:13.720Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-dark-short-360",
+      "note": "Dark 360x640 task view with all three persistent controls",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/07-dark-short-360.png",
+      "sha256": "825f8d50532968ede5816441a5e8b9dd89ca9943fe1f6e8aa191a6efbcee44d3",
+      "source_file": "Momcozy-final.html",
+      "material_sha256": "a8e5650f92b8bbb3b60ec05ac78322f16c3b4f5de514d4f13a4ce75f48f2c5df",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "captured_at": "2026-10-21T10:11:14.653Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-modular-record-390",
+      "note": "Modular file opens the same persistent entry and record picker",
+      "path": "delivery-review/conversation-shortcuts-23/screenshots/08-modular-record-390.png",
+      "sha256": "e7f51c9ecfd5c1cca0320b02ba757981c7a663e4081284e2cf6abca56dd06858",
+      "source_file": "index.html",
+      "material_sha256": "5b3ab89790981c16915cd25d1218ef09dbdf5e7c8879d230b7a3aab1231239bc",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/index.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_scroll_y": 0,
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T10:11:15.887Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}

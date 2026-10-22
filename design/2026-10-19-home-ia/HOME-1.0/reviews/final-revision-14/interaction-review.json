@@ -1,0 +1,263 @@
+{
+  "id": "REV-FINAL-14-INTERACTION",
+  "role": "interaction",
+  "author": "/root/review14_logic",
+  "independent": true,
+  "reviewed_revision": "HOME-1.0 / final-revision-14",
+  "reviewed_at": "2026-10-20T04:10:43.779Z",
+  "artifact_hashes": {
+    "assets/app.js": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19",
+    "assets/icons.js": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32",
+    "assets/style.css": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+  },
+  "ledger_hash": null,
+  "verdict": "pass",
+  "scope": "静态交互逻辑审查及隔离 VM 纯逻辑验证；本评审人未操作浏览器，未验证视觉、触控与真实存储运行。",
+  "coverage": [
+    "会话任务 marker 按 messages 顺序渲染，迁移去重，历史任务快照",
+    "AI 记一笔独立 task.drafts / recordJob，与首页 drafts / saveJob 分离",
+    "会话记录保存、失败、核对幂等、停止、切换对话及刷新恢复逻辑",
+    "取消记录草稿当前卡恢复、历史副本恢复、在途任务互斥",
+    "已删除 ID tombstone、旧保存请求失效、删除回执不重新生成记录",
+    "可选妈妈阶段、生日统一规则、多宝宝隐藏生日最终校验",
+    "角色与关注点语义 icon 定义、记录菜单分组与表单可选项的静态结构"
+  ],
+  "logic_checks": [
+    {
+      "case": "birth ",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "case": "birth 2026-10-20",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "case": "birth 2027-01-01",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "case": "birth 2026-02-30",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "case": "birth 2024-02-29",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "case": "hidden baby validation includes baby 2",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "case": "pregnancy stage preserves existing babies",
+      "actual": "2026-10-01",
+      "expected": "2026-10-01",
+      "pass": true
+    },
+    {
+      "case": "deleted pending update cannot resurrect record",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "case": "inline save repeated confirm is idempotent",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "case": "inline deleted receipt cannot resurrect record",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "case": "timeline reload migration preserves chronology without duplication",
+      "actual": "first,t1,next,t2",
+      "expected": "first,t1,next,t2",
+      "pass": true
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "F01",
+      "result": "confirmed_closed_in_tested_path",
+      "evidence": "妈妈资料具有空值选项；profile submit 不再清空 babies；onboardingBabiesToSave 在孕前/孕期保留已存宝宝。",
+      "runtime_reference": "runtime_evidence_reported_by_parent[F01]"
+    },
+    {
+      "id": "F02",
+      "result": "confirmed_closed_in_tested_path",
+      "evidence": "旧资料入口日期 max 使用 profileToday()；生日无 required。",
+      "runtime_reference": "runtime_evidence_reported_by_parent[F02]"
+    },
+    {
+      "id": "F03-hidden-baby",
+      "result": "confirmed_closed_in_tested_path",
+      "evidence": "validateOnboarding 在步骤 1/3 遍历 onboardingBabiesToSave 全量宝宝；不合法日期定位具体宝宝；含隐藏未来日期的纯逻辑测试通过。",
+      "runtime_reference": "runtime_evidence_reported_by_parent[F03]"
+    },
+    {
+      "id": "F04-record-resurrection",
+      "result": "confirmed_closed_in_tested_path",
+      "evidence": "删除时清除 saveJob 并加入 deletedRecordIds；commitSave 与 commitInlineSave 均检查 tombstone；独立逻辑测试未复活、未重复新增。",
+      "runtime_reference": "runtime_evidence_reported_by_parent[F04]"
+    },
+    {
+      "id": "F05-task-top",
+      "result": "confirmed_closed_in_tested_path",
+      "evidence": "startTask 将 task marker 插入 messages；renderTask 清空旧 task-slot 并按消息顺序渲染；scrollChatTask 定位特定 task-id。",
+      "runtime_reference": "runtime_evidence_reported_by_parent[F05]"
+    }
+  ],
+  "findings": [
+    {
+      "id": "INT14-01",
+      "severity": "minor",
+      "target_ids": [
+        "CHAT-CONTINUOUS"
+      ],
+      "location": "assets/app.js:279-285,344",
+      "observation": "首次审查时取消态称草稿保留，但没有重开入口。主代理随后补上继续这份草稿。",
+      "impact": "取消后的数据虽存于会话但原先无法通过 UI 取回。",
+      "fix": "在取消卡提供恢复入口，并保留历史快照与在途任务互斥。",
+      "status": "resolved",
+      "resolution": {
+        "verified_by": "/root/review14_logic",
+        "verified_revision": "final-revision-14",
+        "evidence": "复读最新源码：当前取消任务原位恢复；历史任务 structuredClone 复制到新 record task；存在未结束任务时拒绝恢复并定位当前任务；deleted 回执不显示恢复入口。"
+      },
+      "reproduction": {
+        "evidence_type": "spec_counterexample",
+        "steps": [
+          "AI 记一笔填写字段",
+          "结束本次记录并确认",
+          "查看取消卡，尝试重新打开草稿"
+        ]
+      },
+      "recheck_scenarios": [
+        "当前取消卡恢复字段不丢失",
+        "历史取消卡恢复不改变原快照",
+        "其他任务进行中阻止恢复并说明原因"
+      ]
+    }
+  ],
+  "runtime_evidence_reported_by_parent": [
+    {
+      "id": "F01",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "空阶段两宝宝完成→旧妈妈资料显示暂不填写→直接保存→宝宝1仍为2026-10-01，Today仍显示共2宝宝。",
+      "closure": "confirmed_in_tested_path"
+    },
+    {
+      "id": "F02",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "旧宝宝资料 max=2026-10-20、required=false；保存当天2026-10-20后刷新仍为当天。",
+      "closure": "confirmed_in_tested_path"
+    },
+    {
+      "id": "F03",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "宝宝数量2→1→2且停在宝宝1；继续时自动定位宝宝2并提示不得晚于今天；修正日期后可以完成。",
+      "closure": "confirmed_in_tested_path"
+    },
+    {
+      "id": "F04",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "原会话保存101ml→全局编辑130ml结果未知→删除原101ml→重开记一笔显示类型菜单，不再出现旧核对请求，Today为空。",
+      "closure": "confirmed_in_tested_path"
+    },
+    {
+      "id": "F05",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "长对话后关键词便便卡 top=185..578，聊天视口96..594；记录/哭声/长消息/便便顺序完整且刷新保持。",
+      "closure": "confirmed_in_tested_path"
+    },
+    {
+      "id": "CHAT-RECORD-ISOLATION",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "会话101ml与全局88ml草稿隔离；会话刷新恢复。"
+    },
+    {
+      "id": "CHAT-RECORD-UNKNOWN",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "未知状态刷新后核对95ml仅形成一条记录。"
+    },
+    {
+      "id": "CHAT-RECORD-FAILURE",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "保存125ml失败后重试成功。"
+    },
+    {
+      "id": "CHAT-RECORD-CANCEL",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "取消125ml草稿后恢复仍为125ml。"
+    },
+    {
+      "id": "CHAT-RECORD-INTERRUPT",
+      "provided_by": "/root",
+      "evidence_type": "observed_runtime",
+      "observed_by": "/root",
+      "reviewer_operated_browser": false,
+      "result": "保存110ml期间立即新对话→历史恢复显示未保存，返回草稿仍为110ml。"
+    }
+  ],
+  "limitations": [
+    "此 pass 仅限所审静态范围与列明的纯逻辑测试，不是正式冻结或全产品 ready。",
+    "浏览器端焦点、滚动、表单原生有效性及存储恢复须结合主代理的运行报告。",
+    "历史旧版任务缺少消息位置时，迁移追加未引用卡片；无法凭缺失数据重建原始时间点。",
+    "真实模型、硬件、麦克风、相机、账户及云端并未接入；相关真实业务边界不在本原型验证范围。",
+    "未获得完整现行场景账本，因此 ledger_hash 为 null，不宣称全部需求覆盖。"
+  ],
+  "confirmed_closure": {
+    "scope": "旧审查F01–F05在所列运行路径上确认关闭；采用/root提供的实际浏览器运行结果，并结合本评审独立静态复核。",
+    "reviewer_operated_browser": false,
+    "provided_by": "/root",
+    "source_note": "主代理通过协作消息提供；配套runtime-checks.json由主代理保存。本审查未独立操作或录制浏览器。",
+    "material_sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19",
+    "does_not_claim": [
+      "完整状态或视口矩阵",
+      "正式冻结或全产品ready",
+      "file://运行验证"
+    ]
+  }
+}

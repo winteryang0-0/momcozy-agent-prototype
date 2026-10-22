@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "revision": "bloom-glass-01",
+  "generated_at": "2026-10-20T08:37:44.864Z",
+  "purpose": "static file integrity; not a browser or design approval",
+  "historical_manifest": "sources/revision-14-file-manifest.json",
+  "files": [
+    {
+      "path": "assets/app.js",
+      "size": 84809,
+      "sha256": "8d93236babb1570dbeba64bbcf3a403c57320cfad811f5a9a0e68ebe842f5f19"
+    },
+    {
+      "path": "assets/bloom.css",
+      "size": 14538,
+      "sha256": "9fa8c0cf85d5812edc2fc7b9aaa6d85377f10745e6f885739e2e3ebfc38e70bf"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "build-manifest.cjs",
+      "size": 1801,
+      "sha256": "978d1be8bf6a3cd3eb82a3dded5233504847050394f4824653bf3fa55e1ebeb1"
+    },
+    {
+      "path": "build-standalone.cjs",
+      "size": 1457,
+      "sha256": "64a3ca8456b85d141014a46e3d851fde31d508eb472b2699b71740fede18b4b5"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/DELIVERY.md",
+      "size": 6288,
+      "sha256": "3e186cc3ed18ad5e955714dfd62978d98e924ad088e855d94785b70f86cd9ea9"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/evidence.json",
+      "size": 2550,
+      "sha256": "96ef32eff2cd6f6e13e415449b8646a66628f235482065e32d38d2b252bc17cd"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/01-today-empty-pre-fix.png",
+      "size": 217474,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/02-ai-welcome-pre-fix.png",
+      "size": 213814,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/03-records-empty-pre-fix.png",
+      "size": 207797,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/04-ai-saved-card-pre-fix.png",
+      "size": 152436,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/05-ai-conversation-pre-fix.png",
+      "size": 162301,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93"
+    },
+    {
+      "path": "delivery-review/delivery-integrity.json",
+      "size": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "delivery-review/FINAL_DELIVERY.txt",
+      "size": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "delivery-review/interaction-review.md",
+      "size": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "delivery-review/visual-review.md",
+      "size": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "design.json",
+      "size": 49490,
+      "sha256": "a7db44a8abf30d4cb169880dae7770c00d1e21e95bae650c509ef92b2a6539b1"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 5735,
+      "sha256": "4dc1f0736d181a05883ee67d9df8d9e82ac0e1574cad34f80dac2bd6c456d58a"
+    },
+    {
+      "path": "index.html",
+      "size": 11435,
+      "sha256": "f957a4f3315d339d43b672842b1c186001ffab677dc96ebc7cd34409956ff377"
+    },
+    {
+      "path": "Momcozy-final.html",
+      "size": 2197478,
+      "sha256": "27968ce5820fda788a16566bbfcce8e7bc0940efcd0c623da2348b686d2e671e"
+    },
+    {
+      "path": "preview.cjs",
+      "size": 863,
+      "sha256": "e6316a0b1985302900686758c6f1bd3a8ccdd6f525492ee9048113d5f3f172fb"
+    },
+    {
+      "path": "README.txt",
+      "size": 10325,
+      "sha256": "4bdcce7a23ef1e6c76e49dfd159c0bcce94b0bcfe38050b14b342d77cea04c79"
+    },
+    {
+      "path": "sources/Avatar.jsx",
+      "size": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "sources/motion-model.mjs",
+      "size": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "sources/revision-14-file-manifest.json",
+      "size": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "sources/revision-14-requirements.json",
+      "size": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    }
+  ]
+}

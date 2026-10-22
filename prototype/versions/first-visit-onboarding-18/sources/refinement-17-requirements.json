@@ -1,0 +1,68 @@
+{
+  "revision": "smart-reminders-entry-sound-17",
+  "date": "2026-10-20",
+  "status": "user-authorized-candidate-not-frozen",
+  "previous_revision": "conversation-home-journal-16",
+  "authority": "Current conversation: user requests home upper-left direct entry to today's records, records upper-right entry to My and secondary features, a working sound toggle, a horizontally switchable smart reminder card, and tap-to-restore from its compact Today state.",
+  "changes": [
+    {
+      "id": "R17-01",
+      "title": "首页与记录入口调整",
+      "rule": "首页左上直接打开所选当日记录；记录页右上打开我的与二级功能面板，保留记录日期切换与底部新建。历史对话、新对话及个人功能从该面板可达。"
+    },
+    {
+      "id": "R17-02",
+      "title": "声音按钮可切换",
+      "rule": "首页右上按钮直接切换开关，清楚显示状态、写入本机偏好；关闭时停止当前播报。浏览器支持时，结果页的主动播报使用系统语音；不可用时显示文字回退。"
+    },
+    {
+      "id": "R17-03",
+      "title": "今日智能提醒卡",
+      "rule": "Today 区为一张可左右切换的智能提示卡；各提示依据本地记录或资料，展示来源，不凭空推断健康结论。按钮、触屏滑动及键盘方向键可切换。"
+    },
+    {
+      "id": "R17-04",
+      "title": "收缩态可恢复",
+      "rule": "进入会话后 Today 默认收缩为一行提示，用户点击可恢复完整卡；展开后保留当前提醒索引，可再次收起。"
+    }
+  ],
+  "assumptions": [
+    "当日记录延续原型的演示日期语义，首页入口进入记录页；记录页内的日期控件仍能切换日期。",
+    "声音开关控制浏览器系统语音播报，不在未接入真实模型的原型里声称 AI 实时语音。",
+    "智能提示卡是基于本机数据的交互演示，暂不设计推送、医学阈值或生产级推荐排序。"
+  ],
+  "requirements": [
+    "R14-U01",
+    "R14-U02",
+    "R14-U03",
+    "R14-U04",
+    "R14-U05",
+    "R14-F01",
+    "R14-F02",
+    "R14-F03",
+    "R14-F04",
+    "R14-F05",
+    "R14-H01",
+    "R14-H02",
+    "R14-H03",
+    "R14-H04",
+    "R14-H05",
+    "R14-H06",
+    "R14-H07",
+    "R15-01",
+    "R15-02",
+    "R15-03",
+    "R15-04",
+    "R15-05",
+    "R15-06",
+    "R15-07",
+    "R15-08",
+    "R16-01",
+    "R16-02",
+    "R16-03",
+    "R17-01",
+    "R17-02",
+    "R17-03",
+    "R17-04"
+  ]
+}

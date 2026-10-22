@@ -1,0 +1,9 @@
+{
+  "candidate": "FW-0.1",
+  "passed": true,
+  "checks": "design_guard.validate_design + inspect_bundle",
+  "baseline_checks_run": false,
+  "delivery_checks_run": false,
+  "errors": [],
+  "limits": "Candidate only; no user confirmation or frozen baseline; static pass is not runtime or visual approval."
+}

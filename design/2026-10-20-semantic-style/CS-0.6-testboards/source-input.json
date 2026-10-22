@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21",
+  "user_request": "这几个风格板的颜色有差异化了，图标差异我理解风格差异可以再大一点，从拟物到扁平化、从磨砂玻璃到液态玻璃。",
+  "working_assumption": "保留四板已有任务类别配色与同板跨页面映射；拉开图标绘制方式和玻璃材质。花瓣玻璃为柔和拟物/暖雾磨砂，日光轨道为几何扁平/细腻磨砂，雨后花园为通透立体/流动液态，莓色留白为极简线性/克制清透。均为候选而非官方原生规范。",
+  "reference_policy": "只借鉴公开可见的任务语义与一般视觉特征；不复制官方图片、图标或整屏设计。",
+  "sources": [
+    {"id":"U01","type":"user","locator":"本会话 2026-10-20 前次用户消息","scope":"新增第四板；近似丰富的颜色，但以主题色做更克制的表达"},
+    {"id":"U02","type":"user","locator":"本会话 2026-10-20 用户消息","scope":"细化几个风格板；记录的颜色跟功能入口的颜色一致"},
+    {"id":"U03","type":"user","locator":"本会话 2026-10-21 最新用户消息","scope":"图标差异再大一些，覆盖拟物到扁平化；玻璃覆盖磨砂到液态"},
+    {"id":"P00","type":"project-candidate","locator":"../CS-0.3-testboards/index.html","scope":"前三板候选及其测试内容，保留供比较"},
+    {"id":"P01","type":"project-candidate","locator":"../CS-0.1-candidate/STYLE_SPEC.md","scope":"既有语义风格候选与其来源记录，未冻结"},
+    {"id":"P02","type":"project-candidate","locator":"../../2026-10-19-home-ia/HOME-1.0/design.json","scope":"首页、记录和 AI 助手的职责参考，未冻结"},
+    {"id":"P03","type":"project-candidate","locator":"../CS-0.4-testboards/index.html","scope":"四板候选基底与共享内容，保留供本轮对比"},
+    {"id":"P04","type":"project-candidate","locator":"../CS-0.5-testboards/index.html","scope":"四板任务颜色连续性候选；本轮沿用类别映射并扩展图标和材质"},
+    {"id":"S01","type":"official-public-page","locator":"https://momcozy.com/pages/app","scope":"Momcozy App 公开展示；非正式设计规范，未取得品牌 token"}
+  ]
+}

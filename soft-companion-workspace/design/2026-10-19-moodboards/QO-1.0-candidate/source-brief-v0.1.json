@@ -1,0 +1,232 @@
+{
+  "version": "0.1",
+  "date": "2026-10-19",
+  "status": "候选情绪板；未选定、未冻结UI或信息架构",
+  "decision": {
+    "user_input": "C+B+A",
+    "interpretation": "可靠省心助手 > 理解陪伴 > 有条理照护向导",
+    "no_numeric_weight_inferred": true
+  },
+  "audience": {
+    "confirmed": "北美产后妈妈",
+    "core_tasks": [
+      "日常与生长记录",
+      "哭闹理解与安抚支持",
+      "健康记录及照护行动参考"
+    ],
+    "hypotheses": [
+      "0–12个月，优先0–6个月",
+      "单手、夜间、被打断场景"
+    ],
+    "not_claimed": "并无品牌客户审美偏好的直接验证"
+  },
+  "experience": [
+    {
+      "priority": "C",
+      "promise": "少记忆、少重复、好找回",
+      "ui": "内容与动作优先；清楚显示对象、时间、状态；AI形象辅助",
+      "interaction": "明确区分待确认、保存中、已保存、失败；对话信息不自动视为正式记录"
+    },
+    {
+      "priority": "B",
+      "promise": "有选择、不被责备",
+      "ui": "温暖浅底、深色文字、克制装饰",
+      "interaction": "允许修改和补记；不以打卡或得分评价妈妈；未记录不等于未照护"
+    },
+    {
+      "priority": "A",
+      "promise": "知道下一步以及依据",
+      "ui": "结论摘要和下一步优先、依据可展开",
+      "interaction": "区分用户记录与AI推断；无法判断时明确说明，不以表情或颜色代替文字"
+    }
+  ],
+  "directions": [
+    {
+      "name": "Quiet Order / 温暖有序",
+      "recommended": "首选候选，设计判断而非用户验证",
+      "palette": [
+        "#692A3A",
+        "#FAF7F2",
+        "#E9DED4",
+        "#DCE5DE",
+        "#282725"
+      ],
+      "layout": "结构化记录核对，靠分组和对齐建立秩序",
+      "identity": "无性别、无面孔、折叠环形；由图形逐步发展AI形象",
+      "risk": "过度留白或米色会降低扫描效率；不能把宁静等同于低对比"
+    },
+    {
+      "name": "Soft Presence / 轻柔陪伴",
+      "palette": [
+        "#692A3A",
+        "#FFF9F4",
+        "#EBD4CA",
+        "#E5DFD7",
+        "#302B2A"
+      ],
+      "layout": "简短对话上下文中的记录核对；记录与保存仍占主要权重",
+      "identity": "成熟抽象双体软石",
+      "risk": "过大头像或气泡会让B盖过C"
+    },
+    {
+      "name": "Clear Rhythm / 清晰从容",
+      "palette": [
+        "#692A3A",
+        "#FFFFFF",
+        "#E9EFF2",
+        "#526977",
+        "#202A30"
+      ],
+      "layout": "同一记录的时间与数值突出，线性清楚",
+      "identity": "无面孔双弧形",
+      "risk": "灰蓝和数据感可能显得冷淡；避免诊断仪器联想"
+    }
+  ],
+  "interaction_samples": [
+    {
+      "state": "手动记录待保存",
+      "text": "Review your entry / Not saved yet / Save entry / Edit",
+      "rule": "三张样张使用相同示例数据；不预先裁定奶量为准备量或实际摄入量，该需求仍需产品定义"
+    },
+    {
+      "state": "保存成功",
+      "text": "Entry saved / Edit",
+      "rule": "仅后端确认成功后使用；如只本地保存须说明"
+    },
+    {
+      "state": "保存失败",
+      "text": "Couldn’t save. Try again.",
+      "rule": "保留已输入内容、避免重复提交；具体恢复范围待技术确认"
+    },
+    {
+      "state": "正在录音",
+      "text": "Recording / Stop",
+      "rule": "状态由用户启动；明确麦克风工作中；形象不单独承担提示"
+    },
+    {
+      "state": "分析中",
+      "text": "Reviewing your recording",
+      "rule": "不暗示准确进度；是否可后台继续另由功能范围决定"
+    },
+    {
+      "state": "无法判断",
+      "text": "I can’t determine this from the recording alone.",
+      "rule": "提供补充上下文或重新采集的可执行入口；不承诺翻译哭声"
+    },
+    {
+      "state": "夜间/静音",
+      "text": "",
+      "rule": "不自动发声；运动减少模式取消非必要动效；夜间样张尚未制作"
+    },
+    {
+      "state": "权限/通知",
+      "text": "",
+      "rule": "权限按任务时机请求且可取消；仅在业务纳入通知时定义重要程度与直达任务，未经批准不新增推送"
+    }
+  ],
+  "visual_rules": {
+    "body": "16px候选，英文样张服务于北美；具体字号在真实设备验证",
+    "touch": "44–48px候选，不宣称已测试",
+    "corners": "12–16px候选，不将所有区域装进卡片",
+    "color": "莓红保留品牌识别；语义警告另用文字、图标、层级，不能只靠颜色",
+    "motion": "只为状态变化提供有限反馈；静止默认；尊重减少动态效果",
+    "imagery": "材质与光影只用于情绪板；不铺到正文底下",
+    "font": "Montserrat为官网自动抽取观察；非正式品牌规范"
+  },
+  "contrast": {
+    "method": "sRGB relative luminance WCAG formula, proposed flat colors only",
+    "pairs": [
+      {
+        "fg": "#FFFFFF",
+        "bg": "#692A3A",
+        "ratio": "10.54"
+      },
+      {
+        "fg": "#282725",
+        "bg": "#FAF7F2",
+        "ratio": "13.97"
+      },
+      {
+        "fg": "#526977",
+        "bg": "#E9EFF2",
+        "ratio": "4.96"
+      }
+    ],
+    "limitation": "只验证候选色值，不证明生成图片或最终UI整体达标"
+  },
+  "sources": [
+    {
+      "id": "P01",
+      "type": "用户确认",
+      "locator": "本聊天：C+B+A",
+      "supports": "关系优先级"
+    },
+    {
+      "id": "P02",
+      "type": "既有工作画像",
+      "locator": "聊天 创建项目用户画像；01a15249-3ab6-78b2-8a31-c3c5fb82b86f",
+      "supports": "北美产后妈妈与任务；人口和偏好假设非实测"
+    },
+    {
+      "id": "P03",
+      "type": "需求拆解",
+      "locator": "聊天 重构需求拆解与原型交互；01a1523b-1368-79d2-bfa1-649fb261c5ed",
+      "supports": "记录表单、主对话、哭声与便便工具；部分规则待决"
+    },
+    {
+      "id": "B01",
+      "url": "https://momcozy.com",
+      "date": "2026-10-19",
+      "supports": "官网自动抽取颜色#692A3A、#FFFFFF、#1A1A1A及Montserrat；浏览器截图核对视觉",
+      "limitation": "网页呈现，非品牌手册；不采用抓取器生成的人格判断"
+    },
+    {
+      "id": "B02",
+      "url": "https://momcozy.com/pages/our-story",
+      "date": "2026-10-19",
+      "supports": "妈妈优先、舒适和实际支持的品牌自述"
+    },
+    {
+      "id": "A01",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "date": "2026-10-19",
+      "supports": "普通正文4.5:1对比度目标"
+    },
+    {
+      "id": "G01",
+      "type": "AI生成原创探索",
+      "supports": "三张情绪板、材质及形象草案",
+      "limitation": "非官方设计、不证明临床心理效果；原型截图只作现有任务参考"
+    }
+  ],
+  "review": {
+    "reviewer": "/root/moodboard_challenger",
+    "independent": true,
+    "scope": "生成前策略文字；非实际图稿视觉审核",
+    "findings": [
+      "事务和保存优先，Soft Presence不能变成聊天优先",
+      "明确草稿与保存、记录与推断",
+      "角色不能成为需要被照顾的对象或医疗权威",
+      "关怀落实为语言和控制权",
+      "心理感受为设计意图而非实证"
+    ],
+    "applied": "提示词和本说明均已落实；采用同一任务控制比较",
+    "pending": "生成图片检查与真实用户验证",
+    "image_review": {
+      "image": "quiet-order.png",
+      "reviewer": "/root/moodboard_challenger",
+      "method": "actual image inspected",
+      "judgment": "整体符合C>B>A；非完整UI验收",
+      "pending": [
+        "单字段箭头与全局Edit职责须明确",
+        "小尺寸AI状态需文字或明确标记，不能只靠旋转",
+        "弱文字和描边需真实字号及低亮度验证"
+      ]
+    }
+  },
+  "delivery": {
+    "images": "三张最终图均已逐张查看；第二、三张已修正首轮内容偏差",
+    "html_preview": "未执行成功：浏览器安全策略不允许file协议；未绕过",
+    "status": "候选视觉方向待用户选择"
+  }
+}

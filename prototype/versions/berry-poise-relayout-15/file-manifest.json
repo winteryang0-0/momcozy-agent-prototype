@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "revision": "berry-poise-relayout-15",
+  "generated_at": "2026-10-20T10:57:30.824Z",
+  "purpose": "static file integrity; not a browser or design approval",
+  "historical_manifest": "sources/revision-14-file-manifest.json",
+  "previous_manifest": "../versions/berry-poise-01/file-manifest.json",
+  "files": [
+    {
+      "path": "assets/app.js",
+      "size": 90235,
+      "sha256": "ac66ceb06fbf78d5bdf6bb52d45e377a02bf78583e296e1f089879b52954c4c5"
+    },
+    {
+      "path": "assets/berry.css",
+      "size": 21363,
+      "sha256": "a4294c17fda89f9fea9acc965bca770bc582df6354442aee6cb7df6282b84d0b"
+    },
+    {
+      "path": "assets/companion.js",
+      "size": 3255,
+      "sha256": "eae16b387ed5b30740d7c16465e4b43d234b3e42b8252be829b6399f50a5c15d"
+    },
+    {
+      "path": "assets/icons.js",
+      "size": 6218,
+      "sha256": "8792fc5e24840d0f055a993cd4ba55babff7566c9e732fe6291603958329bb32"
+    },
+    {
+      "path": "assets/motion-model.js",
+      "size": 8665,
+      "sha256": "f2cf8f0a6b7e429e3baf6ae21d6d39e3d3a2ed595a6ae9d722478ccf5ab597f9"
+    },
+    {
+      "path": "assets/soft-expressions.png",
+      "size": 1513592,
+      "sha256": "7b449a6684a1b63c1a913b7aef000db584d20af45939770197f4e44c0abd7080"
+    },
+    {
+      "path": "assets/style.css",
+      "size": 50614,
+      "sha256": "5893a3538d74f70b981b955d8683b917f6dd39fa54ee60d8a3f0bcd2a951ebff"
+    },
+    {
+      "path": "build-manifest.cjs",
+      "size": 1891,
+      "sha256": "6ac7a8372947e4ed7c926011c9afeca54c83a1744d50f49a268d844daf79406d"
+    },
+    {
+      "path": "build-standalone.cjs",
+      "size": 1457,
+      "sha256": "0e1bcf381bcee9d757fea168f04450cd656b45106c60cf2de608e007986fec75"
+    },
+    {
+      "path": "delivery-review/berry-poise-01/DELIVERY.md",
+      "size": 5902,
+      "sha256": "ce9f08a69f5ca5069830a492ce7e407c5400422f1122f499eefc9230c48b7b3f"
+    },
+    {
+      "path": "delivery-review/berry-poise-relayout-15/DELIVERY.md",
+      "size": 4201,
+      "sha256": "17ff52a86fcb4b062daba0e85b59b539a985f6e3101dc08c3551fe2fafac687b"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/DELIVERY.md",
+      "size": 6288,
+      "sha256": "3e186cc3ed18ad5e955714dfd62978d98e924ad088e855d94785b70f86cd9ea9"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/evidence.json",
+      "size": 2550,
+      "sha256": "96ef32eff2cd6f6e13e415449b8646a66628f235482065e32d38d2b252bc17cd"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/01-today-empty-pre-fix.png",
+      "size": 217474,
+      "sha256": "b89797d271ff1e4602aedbc83d730fc723ebc7e00d36e257b55da5fd0f2ff300"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/02-ai-welcome-pre-fix.png",
+      "size": 213814,
+      "sha256": "a6ebf8ab3a72844220d68697ac3b1ece6ed4d70b327c286a42351a84e2d32acc"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/03-records-empty-pre-fix.png",
+      "size": 207797,
+      "sha256": "ee7f1a670ec018ef32c13a7e8c5b262ed9f4a4e3ef0ab195f778c6eea80a4fc5"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/04-ai-saved-card-pre-fix.png",
+      "size": 152436,
+      "sha256": "b6203e411064dbef1cf787e2985a0682dd2246d8a9c352c57b1dc7fd6aef5aaf"
+    },
+    {
+      "path": "delivery-review/bloom-glass-01/screenshots/05-ai-conversation-pre-fix.png",
+      "size": 162301,
+      "sha256": "33e14dfc49aab14b2ab3e66bb7851f9c54b4d8d14360d065f9fa504dfd4f4f93"
+    },
+    {
+      "path": "delivery-review/delivery-integrity.json",
+      "size": 1288,
+      "sha256": "a812aeb5e70dae265fc1b2f2621bbc17aaf411e21f1517ed8cdc693223e3bacc"
+    },
+    {
+      "path": "delivery-review/FINAL_DELIVERY.txt",
+      "size": 1142,
+      "sha256": "66ae3bea0230eace24a8b5714b9996131cbdbb016a88f686946e724e9516b60c"
+    },
+    {
+      "path": "delivery-review/interaction-review.md",
+      "size": 4275,
+      "sha256": "deabb37899309776a0b06412832831d4413131673a2bfa5bfe0c1a5886305203"
+    },
+    {
+      "path": "delivery-review/visual-review.md",
+      "size": 5009,
+      "sha256": "c122316227d4916f05c2195a8878b0ba0ea347034161ce6e23f027fe4ecff2c3"
+    },
+    {
+      "path": "design.json",
+      "size": 67889,
+      "sha256": "3a73467ceb56ce23221468e50efe5758e643a388b05f8b91235b2c2ae8a96a33"
+    },
+    {
+      "path": "IMPLEMENTATION.txt",
+      "size": 6669,
+      "sha256": "980588f62c4f47e3e468292f944072deed401a9389e346f85039010fa0bade39"
+    },
+    {
+      "path": "index.html",
+      "size": 10748,
+      "sha256": "652239223cfa3ecf6a276cb302a53fffd3824141501d807ee34c1c23d1730643"
+    },
+    {
+      "path": "Momcozy-final.html",
+      "size": 2209042,
+      "sha256": "35a6e0cd118ea0174834b18697f128827356b9ad8c38cb392ebc65465ac90e9c"
+    },
+    {
+      "path": "preview.cjs",
+      "size": 882,
+      "sha256": "a8415db707f7e5edb0ea9495ec44d255c9c3f8b7a78182a2d533fd06d7fb80ab"
+    },
+    {
+      "path": "README.txt",
+      "size": 11144,
+      "sha256": "da9159e8a7e9e2ee354b55c94ea0d9c10d4f59dc2a2dddfde8d4e511e53f12f7"
+    },
+    {
+      "path": "sources/Avatar.jsx",
+      "size": 2158,
+      "sha256": "b6517f6895f1633ce24af638a51495ea4dc2bfa2842f693372298644b038199c"
+    },
+    {
+      "path": "sources/motion-model.mjs",
+      "size": 8693,
+      "sha256": "9990dec4d7b82ff44d5305181149b98e850fb15ce3b5accba39ce628574db5d9"
+    },
+    {
+      "path": "sources/relayout-15-requirements.json",
+      "size": 1179,
+      "sha256": "ba8b748b708e7f844115b00e85d9e8bce032ef8c5e4f71fe0a95a8951d521e44"
+    },
+    {
+      "path": "sources/requirements.json",
+      "size": 1220,
+      "sha256": "d53ba1995111823a2b68bf033803db3abdf4a8a20c3a9cc679c1789e4f2452fe"
+    },
+    {
+      "path": "sources/revision-14-file-manifest.json",
+      "size": 2129,
+      "sha256": "42fa4292523322485c78ecced70d532284ece27bdcfa378c2780fb5168730c47"
+    },
+    {
+      "path": "sources/revision-14-requirements.json",
+      "size": 6824,
+      "sha256": "d389373557d9352e96b03edcc9c91c9e6d6f2ab17cb39509f3c3a9945febaaae"
+    },
+    {
+      "path": "sources/STYLE_SPEC.txt",
+      "size": 16571,
+      "sha256": "c118752d734788daa04ed23546751786c6f51e2177ec8d16061d637a5ec34d73"
+    }
+  ]
+}

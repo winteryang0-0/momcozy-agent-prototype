@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "ENGINEERING-1.0-candidate",
+  "project_id": "momcozy-engineering-1.0",
+  "status": "draft",
+  "created_on": "2026-10-22",
+  "storage_namespace": "momcozy-engineering-1.0",
+  "design_delta": {
+    "status": "none",
+    "change_log": null
+  },
+  "source": {
+    "directory": "prototype/current",
+    "revision": "profile-sections-27",
+    "standalone_sha256": "7d3bebe5676a09cd3dd2d744fb9b3ae7e31c2844ff702af5aaaccb45afda4676",
+    "app_js_sha256": "a20e5cbc0dd11684c8e72bc00412510abb709e5a655f1f46e927afb6183c86e3",
+    "baseline_id": "B-MOMCOZY-20261022-R27",
+    "baseline_snapshot_sha256": "c744b66e47b5d676bbbb6374e2d4afcef5904842604031170bf72501c6ed8179",
+    "baseline_receipt_sha256": "246f95e5ff80ad286189a8901a621ddb59d2629eaa2f0e18a79d530d1e3d18ef"
+  },
+  "scope": "Independent engineering candidate; R27 pages, information order, visual tokens and interaction meaning inherited."
+}

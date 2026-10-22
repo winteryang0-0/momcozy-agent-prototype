@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "code": "input_error",
+      "at": "$",
+      "message": "Baseline ID must be B plus letters/digits/hyphens"
+    }
+  ]
+}

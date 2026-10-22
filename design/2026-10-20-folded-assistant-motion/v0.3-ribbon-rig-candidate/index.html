@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>02 折叠助手 · 动画候选 V0.3</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">momcozy <span>AGENT</span></div>
+    <div class="top-meta">02 / FOLDED ASSISTANT · MOTION STUDY</div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div>
+        <p class="eyebrow">QUIET ORDER / CHARACTER MOTION</p>
+        <h1>让折面动起来</h1>
+        <p class="lede">终帧采用原图角色像素；折带成形和折翼内收是基于现有视角制作的动作候选。</p>
+      </div>
+      <span class="candidate">V0.3 · 待评审</span>
+    </div>
+
+    <div class="workspace">
+      <section class="player panel" aria-labelledby="player-title">
+        <div class="panel-head">
+          <div>
+            <p class="kicker">MOTION PREVIEW</p>
+            <h2 id="player-title">02 折叠助手</h2>
+          </div>
+          <div class="clip-meta" id="clip-meta">丝带成形 · 2.4 秒</div>
+        </div>
+
+        <div class="stage" id="stage" role="img" aria-label="折叠助手动画预览。下方按钮可切换动作、播放、暂停与逐帧查看。">
+          <canvas id="motion-canvas"></canvas>
+          <div class="stage-topline"><span>ORIGINAL IMAGE → INFERRED MOTION</span><span id="stage-state">推断动作</span></div>
+          <div class="stage-bottomline"><span>02 / FOLDED ASSISTANT</span><span>IVORY · BURGUNDY</span></div>
+        </div>
+
+        <div class="clip-picker" role="group" aria-label="选择动作">
+          <button type="button" class="clip-button" data-clip="form" aria-pressed="true"><span class="clip-no">01</span><span>丝带成形</span></button>
+          <button type="button" class="clip-button" data-clip="jump" aria-pressed="false"><span class="clip-no">02</span><span>轻跳</span></button>
+          <button type="button" class="clip-button" data-clip="clap" aria-pressed="false"><span class="clip-no">03</span><span>折翼内收</span></button>
+          <button type="button" class="clip-button" data-clip="sway" aria-pressed="false"><span class="clip-no">04</span><span>轻摇</span></button>
+        </div>
+
+        <div class="transport">
+          <button id="play" type="button" class="primary">播放</button>
+          <button id="pause" type="button" class="secondary" disabled>暂停</button>
+          <label class="seek-label" for="seek">逐帧</label>
+          <input id="seek" type="range" min="0" max="1000" value="0" step="1">
+          <span class="timecode" id="timecode">0.00 / 2.40 秒</span>
+        </div>
+
+        <div class="options">
+          <label><input id="loop" type="checkbox"> 循环当前动作</label>
+          <label><input id="slow" type="checkbox"> 0.5× 慢放</label>
+          <label><input id="reduce" type="checkbox"> 减少动态</label>
+          <span class="status" id="status" role="status" aria-live="polite">丝带成形：原图折面收为窄带，再展开到原图姿态。</span>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="panel notes" aria-labelledby="notes-title">
+          <p class="kicker">CURRENT CLIP</p>
+          <h2 id="notes-title">动作节奏</h2>
+          <ol id="clip-steps"></ol>
+          <p class="notes-foot" id="clip-boundary"></p>
+        </section>
+
+        <section class="panel reference" aria-labelledby="reference-title">
+          <div class="panel-head compact">
+            <div><p class="kicker">SOURCE REFERENCE</p><h2 id="reference-title">原始形象</h2></div>
+            <span class="source-tag">原图</span>
+          </div>
+          <img src="../../2026-10-19-ai-characters/folded-assistant-v0.1.png" alt="折叠助手原始概念板，包含主视角、正面和侧面" width="1536" height="1024">
+          <p>主视角与正面动作的头身比例、眼睛、折翼形状及象牙白和莓红材质均来自这张概念图。</p>
+        </section>
+
+        <section class="panel boundary" aria-labelledby="boundary-title">
+          <p class="kicker">REVIEW BOUNDARY</p>
+          <h2 id="boundary-title">需要重点看什么</h2>
+          <ul>
+            <li>丝带成形的中段是否还像同一块材料。</li>
+            <li>折翼内收时，肩部接缝和遮挡是否成立；拍手接触仍待验证。</li>
+            <li>跳跃与轻摇是否足够克制，角色是否始终完整入镜。</li>
+          </ul>
+          <p class="boundary-note">原图只提供静态视角。成形和折翼动作属于二维半重建，不能作为已验证的三维绑定。</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer><span>Momcozy Agent / Quiet Order</span><span>2026.10.21 · V0.3 动画候选</span></footer>
+</body>
+</html>

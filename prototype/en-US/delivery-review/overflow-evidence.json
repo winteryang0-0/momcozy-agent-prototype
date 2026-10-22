@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "label": "home-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "journal-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "profile-menu-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "mom-profile-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-picker-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-亲喂-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-瓶喂母乳-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-配方奶-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-换尿布-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-吸奶-360",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "home-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "journal-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "profile-menu-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "mom-profile-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-picker-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-亲喂-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-瓶喂母乳-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-配方奶-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-换尿布-390",
+      "clipped": [],
+      "outside": []
+    },
+    {
+      "label": "record-吸奶-390",
+      "clipped": [],
+      "outside": []
+    }
+  ],
+  "errors": []
+}

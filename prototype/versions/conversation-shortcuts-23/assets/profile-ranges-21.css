@@ -1,0 +1,9 @@
+#onboarding-form .wheel-warning{display:block;margin-top:7px;color:var(--error);font-size:11px;line-height:16px;text-align:left}
+#onboarding-form .wheel-warning[hidden]{display:none}
+#onboarding-form .number-wheel[aria-invalid="true"]{box-shadow:inset 0 0 0 1px var(--error);border-radius:13px}
+#onboarding-form .wheel-option[data-wheel-invalid="true"].selected{box-sizing:border-box;padding-inline:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+#profile-form .profile-number-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#profile-form .profile-number-grid label{min-width:0}
+#profile-form .range-hint{display:block;color:var(--secondary);font-size:11px;line-height:16px}
+#profile-form .range-hint.invalid{color:var(--error)}
+#profile-form input[aria-invalid="true"]{border-color:var(--error)}

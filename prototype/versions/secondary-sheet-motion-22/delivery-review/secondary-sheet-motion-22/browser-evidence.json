@@ -1,0 +1,1305 @@
+{
+  "revision": "secondary-sheet-motion-22",
+  "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+  "modular_sha256": "dd00cccf30c16d79709c96f690e48614687cf90ece96f0c65d377644ad799d9b",
+  "previous_material_sha256": "e650f5084b6cb1cdee11cca55f87aa360ff213b434586732fe03641ed814f20f",
+  "browser": "Chrome 155.0.8059.80",
+  "protocol": "file://",
+  "operator": "Playwright Chrome headless",
+  "captured_at": "2026-10-21T07:01:31.870Z",
+  "checks": [
+    "My title; first sheet and in-place submenu move upward with opaque panel and stable shade",
+    "record picker and nested record form share the same entrance; close still works",
+    "chat plus, nested photo panel, and preview settings use the shared entrance",
+    "dark 360×640 entrance is directional and has no horizontal overflow",
+    "user reduced motion disables entrance without hiding controls",
+    "OS reduced motion disables entrance",
+    "desktop bottom sheet stays within the app viewport",
+    "modular index.html uses the same file:// sheet motion"
+  ],
+  "comparison": {
+    "previous_open": {
+      "title": "我的与二级功能",
+      "kind": "profile-menu",
+      "open": true,
+      "frames": [
+        {
+          "ms": 0,
+          "top": 362,
+          "bottom": 1150,
+          "opacity": 0,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 33,
+          "top": 55.7,
+          "bottom": 843.7,
+          "opacity": 0.558804,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 183,
+          "top": 55.6,
+          "bottom": 843.6,
+          "opacity": 0.992933,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 200,
+          "top": 55.9,
+          "bottom": 843.9,
+          "opacity": 0.996352,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 217,
+          "top": 56.3,
+          "bottom": 844.3,
+          "opacity": 0.998334,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 233,
+          "top": 56.5,
+          "bottom": 844.5,
+          "opacity": 0.999391,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 250,
+          "top": 56.1,
+          "bottom": 844.1,
+          "opacity": 0.99985,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 267,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 0.999988,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 283,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 300,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 317,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 333,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 350,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 367,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 383,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 400,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 417,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 433,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 450,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 467,
+          "top": 56,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        }
+      ]
+    },
+    "previous_submenu": {
+      "title": "妈妈资料",
+      "kind": "profile",
+      "open": true,
+      "frames": [
+        {
+          "ms": 0,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 17,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 33,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 50,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 67,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 83,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 100,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 117,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 133,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 150,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 167,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 183,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 200,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 217,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 233,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 250,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 267,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 283,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 300,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 317,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 333,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 350,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 367,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 383,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 400,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 417,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 433,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 450,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        },
+        {
+          "ms": 467,
+          "top": 203.3,
+          "bottom": 844,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "",
+          "backdrop_motion": ""
+        }
+      ]
+    }
+  },
+  "motion": {
+    "profile_menu": {
+      "title": "我的",
+      "kind": "profile-menu",
+      "open": true,
+      "frames": [
+        {
+          "ms": 0,
+          "top": 800,
+          "bottom": 1576,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 17,
+          "top": 800,
+          "bottom": 1576,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 33,
+          "top": 654.7,
+          "bottom": 1430.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.11369,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 50,
+          "top": 522.8,
+          "bottom": 1298.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.219537,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 67,
+          "top": 411.3,
+          "bottom": 1187.3,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.319936,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 83,
+          "top": 322.8,
+          "bottom": 1098.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.415677,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 100,
+          "top": 255.1,
+          "bottom": 1031.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.506619,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 117,
+          "top": 204.4,
+          "bottom": 980.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.590984,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 133,
+          "top": 165.9,
+          "bottom": 941.9,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.669105,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 150,
+          "top": 135.6,
+          "bottom": 911.6,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.742323,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 167,
+          "top": 112.1,
+          "bottom": 888.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.808194,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 183,
+          "top": 93.4,
+          "bottom": 869.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.866423,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 200,
+          "top": 78.7,
+          "bottom": 854.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.91578,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 217,
+          "top": 66.7,
+          "bottom": 842.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.955621,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 233,
+          "top": 57.1,
+          "bottom": 833.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.983983,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 250,
+          "top": 49.4,
+          "bottom": 825.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 0.998596,
+          "motion": "enter",
+          "backdrop_motion": "enter"
+        },
+        {
+          "ms": 267,
+          "top": 43.1,
+          "bottom": 819.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 283,
+          "top": 38.1,
+          "bottom": 814.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 300,
+          "top": 34.1,
+          "bottom": 810.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 317,
+          "top": 31,
+          "bottom": 807,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 333,
+          "top": 28.6,
+          "bottom": 804.6,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 350,
+          "top": 26.8,
+          "bottom": 802.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 367,
+          "top": 25.5,
+          "bottom": 801.5,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 383,
+          "top": 24.6,
+          "bottom": 800.6,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 400,
+          "top": 24.1,
+          "bottom": 800.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 417,
+          "top": 24,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 433,
+          "top": 24,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 450,
+          "top": 24,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 467,
+          "top": 24,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        }
+      ]
+    },
+    "profile_submenu": {
+      "title": "妈妈资料",
+      "kind": "profile",
+      "open": true,
+      "frames": [
+        {
+          "ms": 0,
+          "top": 800,
+          "bottom": 1440.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 17,
+          "top": 681,
+          "bottom": 1321.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 33,
+          "top": 571.3,
+          "bottom": 1212,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 50,
+          "top": 478.8,
+          "bottom": 1119.5,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 67,
+          "top": 406.2,
+          "bottom": 1046.9,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 83,
+          "top": 350.5,
+          "bottom": 991.2,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 100,
+          "top": 308.3,
+          "bottom": 949,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 117,
+          "top": 276.4,
+          "bottom": 917.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 133,
+          "top": 251.4,
+          "bottom": 892.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 150,
+          "top": 232.1,
+          "bottom": 872.9,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 167,
+          "top": 216.7,
+          "bottom": 857.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 183,
+          "top": 204.5,
+          "bottom": 845.2,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 200,
+          "top": 194.6,
+          "bottom": 835.3,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 217,
+          "top": 186.7,
+          "bottom": 827.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 233,
+          "top": 180.3,
+          "bottom": 821,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 250,
+          "top": 175.1,
+          "bottom": 815.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 267,
+          "top": 171,
+          "bottom": 811.7,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 283,
+          "top": 167.7,
+          "bottom": 808.4,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 300,
+          "top": 165.1,
+          "bottom": 805.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 317,
+          "top": 163.1,
+          "bottom": 803.8,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 333,
+          "top": 161.6,
+          "bottom": 802.3,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 350,
+          "top": 160.5,
+          "bottom": 801.2,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 367,
+          "top": 159.8,
+          "bottom": 800.5,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 383,
+          "top": 159.4,
+          "bottom": 800.1,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 400,
+          "top": 159.3,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "sheet-rise",
+          "shade": 1,
+          "motion": "enter",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 417,
+          "top": 159.3,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 433,
+          "top": 159.3,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 450,
+          "top": 159.3,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        },
+        {
+          "ms": 467,
+          "top": 159.3,
+          "bottom": 800,
+          "opacity": 1,
+          "animation": "none",
+          "shade": 1,
+          "motion": "steady",
+          "backdrop_motion": "steady"
+        }
+      ]
+    }
+  },
+  "screenshots": [
+    {
+      "name": "01-my-menu-390",
+      "note": "My title and settled bottom sheet",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/01-my-menu-390.png",
+      "sha256": "d3d42b66c30f7e3303e47b61cea06a8e4ca35059a5c73e1d698d0098449a56aa",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:21.952Z",
+      "fullPage": false
+    },
+    {
+      "name": "02-mom-profile-390",
+      "note": "In-place submenu rises while shade stays steady",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/02-mom-profile-390.png",
+      "sha256": "aaf25cd15f2a258cc0ec06a23d68b7c6ac7eb57c610bacee94f996e2d608bb4e",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:22.476Z",
+      "fullPage": false
+    },
+    {
+      "name": "03-record-picker-390",
+      "note": "Record picker uses the shared bottom entrance",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/03-record-picker-390.png",
+      "sha256": "c48cef0ba3b5de4f4107ef2d1c7f70de451a9b9995b658fbf5488bee79a6f40a",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:23.066Z",
+      "fullPage": false
+    },
+    {
+      "name": "04-record-form-390",
+      "note": "Record form opens upward from picker",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/04-record-form-390.png",
+      "sha256": "576d77c30bfe25611f594aa5ff8d9abe40cc1fbc9facd6fc6d04849410bd897e",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:23.585Z",
+      "fullPage": false
+    },
+    {
+      "name": "05-chat-more-390",
+      "note": "Chat attachment menu rises from bottom",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/05-chat-more-390.png",
+      "sha256": "289bea5ec48588b3e9d59f12aee74eea5a31abaa3b0343afa89b2a20d7f39bef",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:24.539Z",
+      "fullPage": false
+    },
+    {
+      "name": "06-photo-attachment-390",
+      "note": "Nested photo panel rises from bottom",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/06-photo-attachment-390.png",
+      "sha256": "f9edd69d966f693451a0ba1c5e7f8aa574a38d05a897b6a46215ac8d69000a69",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:25.093Z",
+      "fullPage": false
+    },
+    {
+      "name": "07-dark-enter-360",
+      "note": "Dark short screen during upward motion",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/07-dark-enter-360.png",
+      "sha256": "1e2087bfa3844d773aae6b6abe02938e9252dae34d9b53733e76d38e36bea978",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "captured_at": "2026-10-21T07:01:26.836Z",
+      "fullPage": false
+    },
+    {
+      "name": "08-dark-settled-360",
+      "note": "Dark short screen after upward motion",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/08-dark-settled-360.png",
+      "sha256": "1429fb1a10dd191f90d96081a8df616a9ad0be4191d2c5187d4457e84b06c5f8",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "image_pixels": {
+        "width": 360,
+        "height": 640
+      },
+      "captured_at": "2026-10-21T07:01:27.237Z",
+      "fullPage": false
+    },
+    {
+      "name": "09-reduced-motion-390",
+      "note": "User reduced motion shows the complete sheet immediately",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/09-reduced-motion-390.png",
+      "sha256": "6b0e665ea72256a00dd8d034a5dd4b4b1b34c2b16cf4698d6eebc4ddba674c31",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "captured_at": "2026-10-21T07:01:27.952Z",
+      "fullPage": false
+    },
+    {
+      "name": "10-my-menu-desktop-1280",
+      "note": "Desktop sheet remains inside app viewport",
+      "path": "delivery-review/secondary-sheet-motion-22/screenshots/10-my-menu-desktop-1280.png",
+      "sha256": "90a25a12feb2bb6221c164311f0ed22bb069525eae7686cc5df226f42f405418",
+      "material_sha256": "f556bbafad4e0ebdcb3302ba28513ab7ba63a5d5775ff2f905a1516be798e529",
+      "url": "file:///C:/Users/user/Documents/ChatGPT/Momcozy%20Agent/prototype/current/Momcozy-final.html#/records",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "image_pixels": {
+        "width": 1280,
+        "height": 900
+      },
+      "captured_at": "2026-10-21T07:01:30.417Z",
+      "fullPage": false
+    }
+  ],
+  "errors": []
+}
