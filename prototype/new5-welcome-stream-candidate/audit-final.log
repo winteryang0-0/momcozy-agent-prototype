@@ -1,0 +1,9 @@
+{
+  "structural_gate": "pass",
+  "errors": [],
+  "warnings": [
+    "assets\\google-app.css: review fixed-fullscreen",
+    "review\\home-v01\\before-assets-google-app.css: review fixed-fullscreen"
+  ],
+  "note": "Passing confirms manifest/evidence presence only. Independently inspect UI, runtime and evidence."
+}
