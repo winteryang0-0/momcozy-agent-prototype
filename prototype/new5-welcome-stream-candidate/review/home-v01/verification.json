@@ -1,0 +1,43 @@
+{
+  "unchanged": [
+    {
+      "file": "assets/onboarding.css",
+      "unchanged": true
+    },
+    {
+      "file": "assets/google-app.css",
+      "unchanged": true
+    },
+    {
+      "file": "assets/refined-surfaces.css",
+      "unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "file": "index.html",
+      "sha256": "1c340960e468021de44e4cfd07eb90f639ddb3880aaebbe62622f189d9eb8d8e"
+    },
+    {
+      "file": "assets/conversation.js",
+      "sha256": "59ef7a8da00290824b3421b7db51f77656b47298a3d2185905ec2c0f8e5d0300"
+    },
+    {
+      "file": "assets/home-v01.css",
+      "sha256": "55193e5e2a6d1ad479816f9ecf276c2549c5eddb4e746817aebcf25571cd2eca"
+    },
+    {
+      "file": "Momcozy-Soft-Companion.html",
+      "sha256": "7ee2dd75b50f623ae79754f67a452ea467b2f47063dff29f70c2781511aafad6"
+    }
+  ],
+  "tests": {
+    "home_single": 11,
+    "home_split": 11,
+    "onboarding": 21
+  },
+  "limitations": [
+    "Local prototype; existing simulated AI/media capabilities unchanged",
+    "No device keyboard or user study certification"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "selected date highlighted",
+    "rings removed",
+    "month changes",
+    "date sync and focus",
+    "selection persists",
+    "month navigation retains focus",
+    "future dates disabled",
+    "edit opens native date picker",
+    "small no horizontal overflow",
+    "continues to gestation",
+    "no runtime errors"
+  ],
+  "errors": []
+}

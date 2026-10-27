@@ -1,0 +1,503 @@
+{
+  "schema": 1,
+  "skill_version": "1.0.0",
+  "profile": "B",
+  "platform": "UNSET",
+  "baseline_date": "2026-10-25",
+  "dependencies": {},
+  "components": [
+    {
+      "id": "buttons",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "icon-buttons",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "button-groups",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "split-buttons",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "fab",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "fab-menu",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "chips",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "cards",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "lists",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "navigation",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "tabs",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "app-bars-toolbars",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "menus",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "sheets",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "dialogs",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "text-fields",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "selection-controls",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "sliders",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "search",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "pickers",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "snackbar",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "tooltip",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "badges",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "progress",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "loading-indicator",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "carousel",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "dividers",
+      "status": "deferred",
+      "reason": "Inventory actual application before release",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    }
+  ],
+  "tests": [
+    {
+      "id": "visual",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    },
+    {
+      "id": "interaction",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    },
+    {
+      "id": "motion",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    },
+    {
+      "id": "process",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    },
+    {
+      "id": "regression",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    },
+    {
+      "id": "challenger",
+      "status": "not-run",
+      "command": "",
+      "evidence": ""
+    }
+  ],
+  "deviations": [],
+  "processes": [
+    {
+      "id": "short-load",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "long-task",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "save",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "upload",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "recording",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "ai-response",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "device-connection",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "refresh",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "delete",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "empty-offline",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    }
+  ],
+  "os_surfaces": [
+    {
+      "id": "system-bars",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "launcher",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "lock-screen",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "notification-shade",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "quick-settings",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "recents",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "predictive-back",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "settings",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "permissions",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "live-updates",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "media-haptics",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "adaptive-windows",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    },
+    {
+      "id": "wear-os",
+      "status": "deferred",
+      "reason": "Inventory requested scope",
+      "classification": "project-policy",
+      "source": "",
+      "implementation": "",
+      "evidence": ""
+    }
+  ]
+}

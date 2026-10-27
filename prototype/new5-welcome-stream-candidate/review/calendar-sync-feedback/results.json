@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "leap day clamps",
+    "header year synchronized",
+    "month and header synchronized",
+    "date persists",
+    "month end clamps",
+    "name feedback starts",
+    "repeat restarts feedback",
+    "name unchanged",
+    "reduced motion suppresses feedback",
+    "rapid option click restarts feedback",
+    "all concerns kept",
+    "no horizontal overflow 390",
+    "whole concern phrases 390",
+    "no horizontal overflow 320",
+    "whole concern phrases 320"
+  ]
+}

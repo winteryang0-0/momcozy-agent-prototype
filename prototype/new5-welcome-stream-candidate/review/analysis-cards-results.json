@@ -1,0 +1,29 @@
+{
+  "passed": 22,
+  "out": [
+    "processing response contains active AI character",
+    "photo response five structured sections",
+    "color shape special features all present",
+    "explicit insufficient simulated status",
+    "assistant response shows original AI shape",
+    "source material can be reopened",
+    "reply input survives refresh",
+    "expired attachment has re-add recovery",
+    "reply updates existing card once",
+    "observation is marked unverified",
+    "no care record from media or followup",
+    "cancel followup leaves prior observations intact",
+    "followup failure retains input for retry",
+    "question answered without diagnostic inference",
+    "recorder starts with AI character",
+    "recorder character follows listening state",
+    "green duration and listening remain synchronized",
+    "stopped recording character awaits review",
+    "audio card three requested sections",
+    "cards fit small viewport",
+    "structured reply and observation persist",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "limitations": "Microphone mocked; real AI and device verification not available."
+}

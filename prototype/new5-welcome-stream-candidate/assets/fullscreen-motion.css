@@ -1,0 +1,30 @@
+/* Conversation canvas with floating controls, scoped away from native pages. */
+#app[data-route="home"] .conversation{position:relative;overflow:hidden}
+#app[data-route="home"] .topbar{position:absolute;inset:0 0 auto;z-index:12;background:transparent;border:0;box-shadow:none;pointer-events:none;justify-content:space-between;padding:16px 20px}
+#app[data-route="home"] .topbar>button{pointer-events:auto}
+#app[data-route="home"] .assistant-identity,#app[data-route="home"] #trend-entry,#app[data-route="home"] #record-entry,#app[data-route="home"] #baby-label,#app[data-route="home"] .family-button i{display:none!important}
+#app[data-route="home"] .family-button{padding:4px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.7);margin-left:auto}
+#app[data-route="home"] #thread{height:100%;flex:1;padding-top:84px;padding-bottom:180px;box-sizing:border-box}
+#app[data-route="home"] .composer-area{position:absolute;bottom:16px;left:12px;right:12px;z-index:15;background:transparent;border:0;box-shadow:none;padding:0}
+#app[data-route="home"] .floating-tools{background:rgba(255,255,255,.82);backdrop-filter:blur(16px)}
+#baby-age-card{display:none!important}
+#welcome-baby-age{font-size:14px;color:var(--muted,#586b7b);line-height:1.5;margin:8px 0 12px;font-weight:500}
+#panel.drawer{width:min(290px,78%)!important;max-width:78%!important}
+#panel.drawer .theme-picker{gap:8px}
+#panel.drawer .theme-picker button{font-size:12px;padding:10px 7px}
+#panel:has(.attachment-menu) .panel-head{display:none}
+#panel:has(.attachment-menu) #panel-body{padding:16px 20px 22px;min-height:0}
+.attachment-menu{gap:12px!important;margin:0!important}
+.attachment-menu button{min-height:76px!important;padding:14px!important;display:flex;align-items:center;justify-content:center;gap:12px}
+#panel[data-design="feeding"] .optional-field{display:none}
+#panel[data-design="feeding"] .feeding-time{padding-top:18px;margin-top:20px}
+.feeding-time .field[hidden]{display:none!important}
+.record-centered-ruler{background:linear-gradient(90deg,rgba(235,241,248,.2),rgba(229,237,247,.85),rgba(235,241,248,.2));border-radius:24px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.8);min-height:90px}
+#welcome::before,#ob-voice-live::before,#audio-capture::before,.cozie-voice-orbit::before{animation:none!important;transform:var(--wave-0-transform)!important;border-radius:var(--wave-0-radius)!important;background:var(--wave-0-color)!important;clip-path:none!important;transition:background 700ms ease}
+#welcome::after,#ob-voice-live::after,#audio-capture::after,.cozie-voice-orbit::after{animation:none!important;transform:var(--wave-1-transform)!important;border-radius:var(--wave-1-radius)!important;background:var(--wave-1-color)!important;clip-path:none!important;transition:background 700ms ease}
+#app.is-voice-active #thread,#app.is-voice-active .topbar{filter:blur(5px);transition:filter 180ms}
+#app.is-voice-active .floating-tools{filter:blur(3px)}
+.cozie-voice-orbit{backdrop-filter:blur(16px);border-radius:40%;background:rgba(255,255,255,.18)}
+@media(prefers-reduced-motion:reduce){#app.is-voice-active::after{animation:none!important}}
+
+#app.is-voice-active::after{animation:none!important;padding:var(--edge-width,8px);background:conic-gradient(from var(--edge-angle,25deg),var(--edge-a),var(--edge-b),rgba(255,255,255,.08),var(--edge-a));transition:background 700ms ease}

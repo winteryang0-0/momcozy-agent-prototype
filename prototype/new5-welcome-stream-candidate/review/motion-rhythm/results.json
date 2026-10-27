@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Chinese slower than Latin",
+    "punctuation pause",
+    "gentle message slower",
+    "entry eases into pace",
+    "days enter with active animation",
+    "expanded stable",
+    "collapse immediately prevents focus",
+    "rapid reversal stays expanded",
+    "collapse finishes hidden",
+    "reduced motion has no reveal animation",
+    "no horizontal overflow",
+    "no runtime errors"
+  ],
+  "errors": []
+}

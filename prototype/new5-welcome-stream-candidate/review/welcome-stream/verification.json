@@ -1,0 +1,122 @@
+{
+  "base": "B-MOMCOZY-20261026-NEW5",
+  "previous_candidate": "prototype/new5-name-first-candidate",
+  "scope": [
+    "Remove onboarding top-right close button",
+    "Merge welcome and introduction heading; retire step 1",
+    "Present preset greeting progressively without blocking continue"
+  ],
+  "standalone_sha256": "cc06508e9f592de3af0db7b075bb60f7e970d22e107765e66195b10bf97e0d64",
+  "source_sha256": "970edf18b9f6b833fd3d93c050f66609fa809fc551dffddb2ae2a85e5b3e3000",
+  "css_sha256": "ac04728358b0b81f467c6e55e318aa0598e4c0657a975837f38e0b17717a9f2d",
+  "unchanged_other_assets": [
+    "analysis-cards.css",
+    "analysis-cards.js",
+    "care-engine.js",
+    "companion.js",
+    "conversation.css",
+    "demo-data.js",
+    "fonts.css",
+    "google-app.css",
+    "growth-reference.js",
+    "icons.js",
+    "material-motion.js",
+    "media-analysis.js",
+    "native-app.css",
+    "record-views.js",
+    "refined-surfaces.css",
+    "ui-controls.js"
+  ],
+  "checks": [
+    {
+      "file": "single-results.json",
+      "passed": 32
+    },
+    {
+      "file": "split-results.json",
+      "passed": 32
+    },
+    {
+      "file": "stream-single-results.json",
+      "passed": 20
+    },
+    {
+      "file": "stream-split-results.json",
+      "passed": 20
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "review/welcome-stream/onboarding-needs.png",
+      "sha256": "72d68a846602fca759d767645fa48b766f466ae7e7110cbb81ce0bbd3a1a107c"
+    },
+    {
+      "path": "review/welcome-stream/onboarding-review.png",
+      "sha256": "f89c436d804fe2798eaa109e75e8ed3b0800dbc7adc820670c2faea3e6c67d1d"
+    },
+    {
+      "path": "review/welcome-stream/onboarding-small-large.png",
+      "sha256": "f2d651f07e557182ba75f0c2dda6c807a65933a401fec39665c61e0059ca3f09"
+    },
+    {
+      "path": "review/welcome-stream/welcome-dark-390-single.png",
+      "sha256": "4480d941d254dd07f8819f07defad55559e597fc2ce7bc5c1a8d9912fa3b7962"
+    },
+    {
+      "path": "review/welcome-stream/welcome-dark-390-split.png",
+      "sha256": "3d769d4522331511a3de1e6c8f7d00b7c9f19a132ab096dbb5c9357afcf9b183"
+    },
+    {
+      "path": "review/welcome-stream/welcome-large-text-single.png",
+      "sha256": "f385971f68962a222d9cbc9bcecdd3b6337ebad72185331edf032d3a4e2ee41a"
+    },
+    {
+      "path": "review/welcome-stream/welcome-large-text-split.png",
+      "sha256": "f385971f68962a222d9cbc9bcecdd3b6337ebad72185331edf032d3a4e2ee41a"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-1440-single.png",
+      "sha256": "ab10399bbf956dc0f031f305c9f5015aca96a7fc0c466710cc422031456f9f00"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-1440-split.png",
+      "sha256": "ab10399bbf956dc0f031f305c9f5015aca96a7fc0c466710cc422031456f9f00"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-320-single.png",
+      "sha256": "f385971f68962a222d9cbc9bcecdd3b6337ebad72185331edf032d3a4e2ee41a"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-320-split.png",
+      "sha256": "f385971f68962a222d9cbc9bcecdd3b6337ebad72185331edf032d3a4e2ee41a"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-390-single.png",
+      "sha256": "ea82a4b79f63b61eae6e78ab7db76224ece58ac02ecb2bc535b9124f45ed09b3"
+    },
+    {
+      "path": "review/welcome-stream/welcome-light-390-split.png",
+      "sha256": "ea82a4b79f63b61eae6e78ab7db76224ece58ac02ecb2bc535b9124f45ed09b3"
+    },
+    {
+      "path": "review/welcome-stream/welcome-streaming-single.png",
+      "sha256": "d2a1eb1f041c99e043acf64eaf20d5fcff75a1d92231b54858e7dc93999683aa"
+    },
+    {
+      "path": "review/welcome-stream/welcome-streaming-split.png",
+      "sha256": "194bb1367f6236a7ff73565f3d5a346450eb3fe9ec5061a44a573a54ceb4c441"
+    }
+  ],
+  "independent_review": {
+    "reviewer": "/root/review_name_first",
+    "mode": "read-only source comparison and 8 isolated lifecycle checks",
+    "result": "No blocking issue or business drift found",
+    "limits": "No independent browser, real background or screen-reader test"
+  },
+  "limits": [
+    "Preset greeting presentation, not a connected model stream.",
+    "Background pause tested with injected visibility event.",
+    "No real-phone or screen-reader acceptance.",
+    "Old review files are historical; this candidate evidence is in review/welcome-stream."
+  ]
+}

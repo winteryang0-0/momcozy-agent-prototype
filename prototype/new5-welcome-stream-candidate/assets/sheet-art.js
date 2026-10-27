@@ -1,0 +1,1 @@
+window.sheetArt=function(type){const names={'瓶喂母乳':'bottle','配方奶':'formula','亲喂':'breast','换尿布':'diaper','睡眠':'rest','体重':'weight','吸奶':'pump','喝水':'water','辅食':'food','营养补剂':'supplement','其他':'custom-log'};return icon(names[type]||'custom-log','sheet-art');};

@@ -1,33 +1,36 @@
-# 高保真原型 Git 协作基线
+# 当前原型基线：New5 Soft Companion
 
-## 身份与范围
+角色外观另以 2026-10-26 用户确认的 **Sprout Creature** 为当前基线，见 [角色基线说明](CHARACTER_BASELINE.md)与[机器索引](character-baseline.json)。这一更新优先于本快照中的旧角色外观，不改变 New5 原型架构或原样快照；页面替换尚未实施。
 
-- 基线：`B-MOMCOZY-20261022-R27`
-- 用户确认：本次对话中 Wentao 指定“当前的高保真原型作为基线，作为可冻结内容”，并要求内测优化另行管理。
-- 实现来源：`prototype/current/` 的 `profile-sections-27`。截至冻结时的现行页面为会话首页、记录、我的、宝宝、资料录入，共五条路由。
-- 来源账本：`prototype/current/sources/profile-sections-27-requirements.json`；`design.json` 映射 61 个需求 ID、5 个页面、41 个控件、94 个动作、52 个状态、55 条流程、45 个 token、12 个组件与 94 条测试描述。
-- 浏览器验收视口：390×844、360×640、1280×720。已有截图和操作记录覆盖其中部分页面与状态，不能推断为全部组合。
+## 用户决定
 
-## 可复现材料
+- 基线 ID：B-MOMCOZY-20261026-NEW5。
+- 确认人：Wentao；日期：2026-10-26，Asia/Shanghai。
+- 确认原文：“C:\Users\user\Desktop\Root Work\Momcozy Agent\New5\Momcozy-Soft-Companion；修正以这一版为我们的原型基线”。
+- 确认定位：Codex 聊天 01a17632-0595-7220-a858-70a2d2b0c24a 中指定 New5 目录的用户消息。
+- 该决定替代此前将 R27 作为当前原型基线的项目说明；R41 保持历史候选身份。
 
-| 材料 | 路径 |
-| --- | --- |
-| 原型单文件版 | `prototype/current/Momcozy-final.html` |
-| 原型分文件版 | `prototype/current/index.html` 与 `assets/` |
-| 设计账本与来源 | `prototype/current/design.json` 与 `sources/` |
-| 实现说明、运行方式 | `prototype/current/IMPLEMENTATION.txt`、`README.txt` |
-| 文件级 SHA-256 | `prototype/current/file-manifest.json` |
-| 冻结设计快照与确认收据 | `prototype/current/baselines/B-MOMCOZY-20261022-R27/` |
-| 本次仓库级锁定摘要 | `docs/baseline-lock.json` |
-| 当时的浏览器与评审证据 | `prototype/current/delivery-review/profile-sections-27/` |
+## 当前材料
 
-`receipt.json` 将需求来源、范围、框架和系统摘要绑定到用户确认。`baseline-lock.json` 另行锁定实际原型和文件清单。`scripts/verify-repository.cjs` 会逐项重新计算，而非只信任清单文字。
+[机器索引](prototype-baseline.json)指向仓库内[原样快照](../prototype/baselines/B-MOMCOZY-20261026-NEW5/package/)。单文件入口为 Momcozy-Soft-Companion.html，分文件入口为 index.html。
 
-## 冻结边界
+快照包含来源目录全部 112 个文件，包括源码、资源、项目指令、设计规范、首次引导契约、测试脚本、历史文字评审及随包 Material 规则。未修改来源目录或快照内原始文件。
 
-- 现有需求账本中关于旧轮次“待查看后冻结”的记录保留为历史审批过程；本次确认只锁定当前 R27 合并后的可见原型与账本，不追认每个旧候选曾单独获批。
-- 现有 R27 评审在指定截图范围内未发现重大视觉问题；旧评审文件保留其原日期、原结论，不改写为本次正式认证。
-- `design_guard.py freeze` 已创建合法 B-ID 收据；`check` 当前因缺少该工具要求的 `bundle/index.html` 和静态 DOM 标记导出而未通过。仓库的 SHA-256 检查是文件完整性门槛，不替代该设计 guard、独立评审或完整交付门槛。
-- 真机触控、系统权限、软键盘、屏幕阅读器及全部状态×视口矩阵仍是未验收项。AI、健康分析、云同步、设备连接和服务端幂等仍为模拟或待定义能力。
+[manifest.json](../prototype/baselines/B-MOMCOZY-20261026-NEW5/manifest.json)记录逐文件字节数与 SHA-256；[receipt.json](../prototype/baselines/B-MOMCOZY-20261026-NEW5/receipt.json)记录实际用户指令、来源、清单摘要和替代关系。索引再锁定这两份元数据的摘要。
 
-任何后续优化都在内测分支保留差异证据。产品负责人确认具体差异后，新建 B-ID 和快照；旧快照与收据只读。
+单文件 SHA-256：7645953259d1056ab7511ea99c4df9b03e0fcd8ffbb32379fa5eb3a19da4f986。
+
+## 规则与验收边界
+
+继承快照内 AGENTS.md、DESIGN.md、DELIVERY.md 及 ONBOARDING-INTERACTION.md。Google/Material 1.1.0 为随包约定，后续 UI 变更按该约定执行；本次仅登记并保存选定版本，没有重新设计界面。
+
+本次确认是现有原型版本的用户指定基线。它没有新增完整 PRD 映射或 design.json，也未执行 design_guard freeze；不得表述为该工具的正式设计冻结认证。无需为了登记版本改造用户已经指定的原型。
+
+历史测试/评审按原字节保留，本次不将其改写为重新执行通过。当前只验证源包复制、文件集合及摘要完整性；不追加真实 AI、临床、真机、云服务或完整交互验收结论。
+
+## 校验与历史保存
+
+- node scripts/verify-repository.cjs：同时核对当前 New5 快照与旧 R27。
+- node scripts/verify-prototype-baseline.cjs --source：在本机额外核对桌面来源和仓库快照一致；若桌面版后来改变，检查会报告差异，不自动重建摘要。
+- prototype/current/ 和 docs/baseline-lock.json 原样保留为历史 R27 包与历史锁；旧说明原样保存在[历史文档](history/B-MOMCOZY-20261022-R27.md)。
+- 当前基线切换不意味着 main、远端或 Git 标签已经更新。后续提交/发布另行管理。

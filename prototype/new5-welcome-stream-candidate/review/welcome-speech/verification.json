@@ -1,0 +1,58 @@
+{
+  "scope": "Welcome page only: hide role badge, tighten companion/speech spacing and point the tail toward the companion.",
+  "standalone_sha256": "5b5ea7c0a68d3ad3c59846fdc3b18f1c4cef3c84305d6e22fc1ee58580a79153",
+  "source_sha256": "970edf18b9f6b833fd3d93c050f66609fa809fc551dffddb2ae2a85e5b3e3000",
+  "behavior_source_unchanged": true,
+  "css_sha256": "e7a68e97efaf6ac58303b3b5edc98e17b6bd60991db82554e8cd14b3cf358af4",
+  "runtime_checks": 21,
+  "errors": [],
+  "scope_evidence": "scope-results.json",
+  "screenshots": [
+    {
+      "path": "welcome-dark-390-single.png",
+      "sha256": "d221059a30e915de316f7902d1b65db2e16b887bb2733769f7c2425abc0b5e7e"
+    },
+    {
+      "path": "welcome-dark-390.png",
+      "sha256": "e6909f0c4d1b1715fe8a7813848d8caefcd2f7b559311c06dac72a6004d59d51"
+    },
+    {
+      "path": "welcome-large-text-single.png",
+      "sha256": "0173fe2e6cae650ea27fa29b15bfc5989c656fe2fc452042f09805d40241bfc5"
+    },
+    {
+      "path": "welcome-light-1440-single.png",
+      "sha256": "bc5f441ff0f4705b21ceaeb1aa97105dd57a818cddea9ad330945eadf106ebd3"
+    },
+    {
+      "path": "welcome-light-320-single.png",
+      "sha256": "6bbb0ca9bbdcfaad3c11755d46226d27a7bc3b4e0a68a5d735aeabaefa34dc90"
+    },
+    {
+      "path": "welcome-light-320.png",
+      "sha256": "6bbb0ca9bbdcfaad3c11755d46226d27a7bc3b4e0a68a5d735aeabaefa34dc90"
+    },
+    {
+      "path": "welcome-light-390-single.png",
+      "sha256": "c748c15a874f274f63baef53239128c44dc71df8224fd4698afa5aa4e5ac192d"
+    },
+    {
+      "path": "welcome-light-390.png",
+      "sha256": "ed53f65d8b0de733ef850c93d0eace194cec005038aad928cf1dc63be9671748"
+    },
+    {
+      "path": "welcome-streaming-single.png",
+      "sha256": "22a528786421b8264ac7a55973128cfdd95ca499f7c72db321c07b98d122799a"
+    }
+  ],
+  "independent_review": {
+    "reviewer": "/root/review_name_first",
+    "mode": "scoped CSS and 390px/320px screenshot review",
+    "result": "No issue found in speech ownership, overlap or style preservation"
+  },
+  "test_correction": "The prior large-font test selector was less specific than production CSS. It now overrides the actual heading and asserts computed font-size=48px before checking scrolling.",
+  "limits": [
+    "No real-device or screen-reader test.",
+    "Historical full-flow evidence retained; this CSS-only change reran 21 welcome checks and verified badge scope in the split entry."
+  ]
+}

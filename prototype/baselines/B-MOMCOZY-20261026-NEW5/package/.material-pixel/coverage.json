@@ -1,0 +1,558 @@
+{
+  "schema": 1,
+  "skill_version": "1.1.0",
+  "profile": "B",
+  "platform": "web",
+  "baseline_date": "2026-10-25",
+  "dependencies": {
+    "runtime": "vanilla JS",
+    "icons": "project SVG approximations",
+    "font": "Noto Sans SC bundled",
+    "motion": "Numerical spatial spring + linear opacity; CSS processing-shape approximation"
+  },
+  "components": [
+    {
+      "id": "buttons",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "icon-buttons",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "button-groups",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "split-buttons",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "fab",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "fab-menu",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "chips",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "cards",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "lists",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "navigation",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "tabs",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "app-bars-toolbars",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "menus",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "sheets",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "dialogs",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "text-fields",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "selection-controls",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "sliders",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "search",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "pickers",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "snackbar",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "tooltip",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "badges",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "progress",
+      "status": "implemented",
+      "reason": "Actual component in maternal conversation APP",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "loading-indicator",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "carousel",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "dividers",
+      "status": "not-used",
+      "reason": "Not used by the scoped conversation and recording flows",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/google-app.css",
+      "evidence": "review/google-results.json"
+    }
+  ],
+  "tests": [
+    {
+      "id": "visual",
+      "status": "pass",
+      "command": "node tests/care-app.cjs",
+      "evidence": "review/care-app-results.json"
+    },
+    {
+      "id": "interaction",
+      "status": "pass",
+      "command": "node tests/care-app.cjs",
+      "evidence": "review/care-app-results.json"
+    },
+    {
+      "id": "motion",
+      "status": "pass",
+      "command": "node tests/google-motion.cjs",
+      "evidence": "review/google-motion-results.json"
+    },
+    {
+      "id": "process",
+      "status": "pass",
+      "command": "node tests/care-app.cjs",
+      "evidence": "review/care-app-results.json"
+    },
+    {
+      "id": "regression",
+      "status": "pass",
+      "command": "node tests/care-app.cjs",
+      "evidence": "review/care-app-results.json"
+    },
+    {
+      "id": "challenger",
+      "status": "pass",
+      "command": "Independent reviewer browser reproductions and fixes documented in DELIVERY.md",
+      "evidence": "DELIVERY.md"
+    }
+  ],
+  "deviations": [
+    "CSS/semantic SVG adaptation, not native Material SDK; approximate movement curves.",
+    "No clinical thresholds or clinically validated development content.",
+    "Real microphone recognition, true-device keyboard and screen readers not verified.",
+    "Voice success state tests use explicit SpeechRecognition test doubles.",
+    "No cloud synchronization, background push or multi-caregiver sync."
+  ],
+  "processes": [
+    {
+      "id": "short-load",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "long-task",
+      "status": "not-used",
+      "reason": "No corresponding backend or device process in scope",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "save",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "upload",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "recording",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "ai-response",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "device-connection",
+      "status": "not-used",
+      "reason": "No corresponding backend or device process in scope",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "refresh",
+      "status": "not-used",
+      "reason": "No corresponding backend or device process in scope",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "delete",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    },
+    {
+      "id": "empty-offline",
+      "status": "implemented",
+      "reason": "Local prototype flow; media/AI limitations in DESIGN.md",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-edge-results.json"
+    }
+  ],
+  "os_surfaces": [
+    {
+      "id": "system-bars",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "launcher",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "lock-screen",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "notification-shade",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "quick-settings",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "recents",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "predictive-back",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "settings",
+      "status": "implemented",
+      "reason": "Web app adaptation; permissions owned by browser",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "permissions",
+      "status": "implemented",
+      "reason": "Web app adaptation; permissions owned by browser",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "live-updates",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "media-haptics",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "adaptive-windows",
+      "status": "implemented",
+      "reason": "Web app adaptation; permissions owned by browser",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    },
+    {
+      "id": "wear-os",
+      "status": "not-used",
+      "reason": "System-owned surface, not an application requirement",
+      "classification": "project-policy",
+      "source": "DESIGN.md",
+      "implementation": "assets/conversation.js",
+      "evidence": "review/google-results.json"
+    }
+  ],
+  "supplemental_tests": [
+    {
+      "id": "pixel-flow-20261025",
+      "status": "pass",
+      "evidence": "review/pixel-flow-results.json",
+      "command": "node tests/pixel-flow.cjs"
+    },
+    {
+      "id": "refined-surfaces",
+      "status": "pass",
+      "evidence": "review/refined-surfaces-results.json",
+      "command": "node tests/refined-surfaces.cjs"
+    },
+    {
+      "id": "refined-edge",
+      "status": "pass",
+      "evidence": "review/refined-edge-results.json",
+      "command": "node tests/refined-edge.cjs"
+    },
+    {
+      "id": "media-schedule-current",
+      "status": "pass",
+      "evidence": "review/media-schedule-results.json",
+      "command": "node tests/media-schedule.cjs"
+    },
+    {
+      "id": "onboarding-current",
+      "status": "pass",
+      "evidence": "review/onboarding-results.json",
+      "command": "node tests/onboarding-flow.cjs"
+    },
+    {
+      "id": "media-errors-current",
+      "status": "pass",
+      "evidence": "review/media-errors-results.json",
+      "command": "node tests/media-errors.cjs"
+    },
+    {
+      "id": "analysis-cards-current",
+      "status": "pass",
+      "evidence": "review/analysis-cards-results.json",
+      "command": "node tests/analysis-cards.cjs"
+    }
+  ]
+}

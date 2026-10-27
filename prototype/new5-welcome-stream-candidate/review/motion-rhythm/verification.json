@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "Chinese slower than Latin",
+      "punctuation pause",
+      "gentle message slower",
+      "entry eases into pace",
+      "days enter with active animation",
+      "expanded stable",
+      "collapse immediately prevents focus",
+      "rapid reversal stays expanded",
+      "collapse finishes hidden",
+      "reduced motion has no reveal animation",
+      "no horizontal overflow",
+      "no runtime errors"
+    ],
+    "errors": []
+  },
+  "flow_checks": 21,
+  "visuals": [
+    "slider.png",
+    "small.png"
+  ],
+  "limits": [
+    "Web implementation inspired by existing Material 3 baseline; not native SDK.",
+    "No real device or screen reader test."
+  ],
+  "sha256": {
+    "assets/conversation.js": "90dc00c5b7207070f0d565496aeaa5231d9340d32307eedae57694c8c3a18a55",
+    "assets/onboarding.css": "ea4a6f2486ea66631646ec7ef9a87090e8f10de35cdf2e812f55410b1a92cca6",
+    "Momcozy-Soft-Companion.html": "63753d7366379a1ce12b8267a947e345bffc155626af7ee429abd4e4c71c4541"
+  },
+  "independent_review": "No blockers: reversal callbacks, inert, immediate day reset, reduced motion and lifecycle preserved."
+}

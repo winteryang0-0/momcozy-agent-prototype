@@ -1,0 +1,21 @@
+{
+  "passed": 15,
+  "results": [
+    "female avatar",
+    "left swipe today",
+    "baby scoped timeline",
+    "previous day empty",
+    "right swipe trends",
+    "seven day chart",
+    "trend scoped",
+    "chart opens source",
+    "detail back to trends",
+    "male avatar",
+    "small page no horizontal overflow",
+    "small trends no overflow",
+    "new baby refreshes trends",
+    "gender persisted",
+    "no script errors"
+  ],
+  "errors": []
+}

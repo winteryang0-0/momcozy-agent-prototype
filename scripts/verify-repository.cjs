@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-// This verifies the bytes committed for the R27 collaboration baseline.
+// This verifies historical R27 bytes and the current user-selected snapshot.
 // It is an integrity check, not a visual, interaction, or design approval.
 const assert = require("node:assert/strict");
 const crypto = require("node:crypto");
@@ -130,6 +130,7 @@ function verify() {
 
 try {
   verify();
+  require("./verify-prototype-baseline.cjs").verify();
 } catch (error) {
   console.error(`FAIL baseline integrity: ${error.message}`);
   process.exitCode = 1;

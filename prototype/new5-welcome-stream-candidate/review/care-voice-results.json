@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "results": [
+    "mock listening state",
+    "mock voice review before save",
+    "cancel review leaves no record",
+    "cancel recording feedback",
+    "mock recognition permission denial",
+    "parse failure preserves input",
+    "mock parse creates shared record",
+    "offline supports local"
+  ],
+  "scope": "All SpeechRecognition success/denial events are browser test doubles; no real microphone or ASR network verified."
+}

@@ -1,0 +1,9 @@
+{
+  "hashes": {
+    "assets/conversation.js": "eafc4efc3fa489f7cff3aca1a43bc860ab5f22c58ed9cee3efa78e8dcfed4d5b",
+    "assets/onboarding.css": "56b529d34531570f33c3bd2e1cebe0b513b2807431829e8bca257e6a5e7d64fa",
+    "Momcozy-Soft-Companion.html": "c51a77f4df4e9a3ccf07a2ea6d5f286811d0af842ad41ae3b48db2d98ce75a27"
+  },
+  "checks": 29,
+  "scope": "Local prototype; calendar live synchronization, repeat feedback and long concerns layout"
+}

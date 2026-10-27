@@ -1,0 +1,13 @@
+{
+  "passed": 8,
+  "out": [
+    "custom template remains accessible",
+    "older seven days accessible",
+    "reference table verified sentinels",
+    "dark rendering no horizontal overflow",
+    "landscape app in viewport",
+    "failed save retains record for retry",
+    "retry double click one record",
+    "reload saved count"
+  ]
+}

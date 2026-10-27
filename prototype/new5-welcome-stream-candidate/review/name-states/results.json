@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "empty has no selected state",
+    "filled changes visual state",
+    "filled state survives reload",
+    "whitespace returns to empty",
+    "empty styling matches option",
+    "selected styling matches option",
+    "baby selected styling matches caregiver",
+    "baby selected persists",
+    "icon and text stay in same row"
+  ]
+}

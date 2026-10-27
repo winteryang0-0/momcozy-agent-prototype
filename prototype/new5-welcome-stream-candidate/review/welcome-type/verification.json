@@ -1,0 +1,38 @@
+{
+  "scope": "Welcome-only font size 20px, natural paragraph breaks, CTA weight 600 and no CTA icon.",
+  "checks": 21,
+  "errors": [],
+  "standalone_sha256": "a3c669400f73caec5176dd8f21d6b86b7c0185518dd5b97de81d0e76320d9a02",
+  "source_sha256": "a287001a0dacf4e66bd32afd7e173ed57e13409c8560a7361a4968e6f3570017",
+  "css_sha256": "aa0ba1bfab8a4cd3cc24cc2a05b138235feae89709972b778cdd1f0ff2ef348a",
+  "screenshots": [
+    {
+      "path": "welcome-dark-390-single.png",
+      "sha256": "c01dfac596235ebc9bacd4bc1eebc256ed77d97c35fd159d935b5d524ec2b76c"
+    },
+    {
+      "path": "welcome-large-text-single.png",
+      "sha256": "aaef389f645aaae1a451305ae8e1a72324aec52681f2e96819c8dc64194e9761"
+    },
+    {
+      "path": "welcome-light-1440-single.png",
+      "sha256": "2433c20c71de4407115920c17a0f0623aa2299ed7f838cd7c9fcbf238cda0ba3"
+    },
+    {
+      "path": "welcome-light-320-single.png",
+      "sha256": "838ffba4a624ed9ad1d8691e4250cb84dba2624a6e0d2a91e35a3179d766892e"
+    },
+    {
+      "path": "welcome-light-390-single.png",
+      "sha256": "370e0108b79908dd9827272c4feebf38efea1958e574fa9a4577440d8b1d7d62"
+    },
+    {
+      "path": "welcome-streaming-single.png",
+      "sha256": "6fbac75a961f383845d7a7399d75ed10a98517fe1b0a202353c84bd8fdb6d6f5"
+    }
+  ],
+  "limits": [
+    "No physical phone or screen-reader test.",
+    "Earlier review folders are historical."
+  ]
+}

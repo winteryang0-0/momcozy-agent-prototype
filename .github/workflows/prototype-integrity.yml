@@ -20,7 +20,7 @@ jobs:
           node-version: '22'
       - name: Verify frozen prototype and source hashes
         run: node scripts/verify-repository.cjs
-      - name: Compare frozen files with the baseline tag
+      - name: Preserve historical R27 files against their original tag
         run: git diff --exit-code refs/tags/baseline/B-MOMCOZY-20261022-R27 -- prototype/current docs/baseline-lock.json
       - name: Verify pending Onboarding receipt
         run: node scripts/verify-candidate-receipt.cjs

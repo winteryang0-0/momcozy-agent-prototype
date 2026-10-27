@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "year changes immediately",
+    "browsing year does not alter birthday",
+    "focus returns to year",
+    "leap date selectable",
+    "saved year restores",
+    "non leap year has no Feb29",
+    "current year clamps future month",
+    "small no horizontal overflow"
+  ]
+}

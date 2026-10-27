@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "out": [
+    "denied permission has retry and no send",
+    "recorder error releases stream and permits retry",
+    "decode failure has recovery and no saved claim",
+    "normal process animation runs",
+    "reduced motion stops process loop",
+    "cancel blocks delayed success",
+    "dark onboarding no horizontal overflow",
+    "desktop remains bounded phone"
+  ],
+  "limits": "Microphone errors injected; no physical device used."
+}

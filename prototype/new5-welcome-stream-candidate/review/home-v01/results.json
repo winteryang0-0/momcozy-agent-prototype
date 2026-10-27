@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "text input ready",
+    "home only",
+    "real empty summary",
+    "summary opens",
+    "message sent",
+    "voice still available",
+    "records route intact",
+    "home returns",
+    "no horizontal overflow 320",
+    "no horizontal overflow 430",
+    "no runtime errors"
+  ],
+  "errors": []
+}

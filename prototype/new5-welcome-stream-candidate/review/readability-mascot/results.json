@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "welcome animation active",
+    "welcome motion changes visibly",
+    "explicit caregiver prompt",
+    "name page has no extra bounce",
+    "explicit baby prompt",
+    "month spacing",
+    "review typography unified",
+    "small review fits",
+    "completion animation active",
+    "reduce stops movement",
+    "home mascot has no onboarding animation"
+  ]
+}

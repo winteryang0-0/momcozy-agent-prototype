@@ -1,0 +1,1 @@
+(()=>{const button=document.querySelector('#home-debug');document.querySelector('#app').append(button);button.removeAttribute('aria-pressed');button.textContent='Debug · 清空对话';button.title='清空当前对话，显示欢迎卡片；保留资料和日常记录';button.addEventListener('click',()=>document.dispatchEvent(new Event('debug-clear-chat')));})();

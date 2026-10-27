@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "checks": 11,
+  "visuals": [
+    "light.png",
+    "small-dark.png"
+  ],
+  "sha256": {
+    "assets/conversation.js": "cc3ee81d3f55dddb8d751ada8b81f1cb3c66d0b86c57985295f6d83d2af69e91",
+    "assets/onboarding.css": "25410364427a7b5dd494a430f14f93a51df30656ec26dbf8b2593463faf16251",
+    "Momcozy-Soft-Companion.html": "35c4c773ce83d8d9ed49c8ec2da1b4aee7865aee41cc4c3b34135b7a64c5f359"
+  }
+}

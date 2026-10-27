@@ -1,0 +1,68 @@
+/* V01 user reference: scoped home treatment; existing routes and onboarding are untouched. */
+#app[data-route=home]{--home-bg:#f6fbff;--home-ink:#15365a;--home-muted:#536b86;--home-blue:#dcefff;--home-mint:#d6f5eb;--home-bubble:#edf4f9;--home-white:#ffffff;background:var(--home-bg);color:var(--home-ink)}
+#app[data-route=home] .conversation{background:var(--home-bg)}
+#app[data-route=home] .topbar{background:transparent;padding:16px 16px 8px;gap:4px;min-height:80px;color:var(--home-ink)}
+#app[data-route=home] .topbar>.icon-button{width:40px;min-width:40px;min-height:44px;color:var(--home-ink)}
+#app[data-route=home] .assistant-identity{padding-left:4px}
+#app[data-route=home] .assistant-identity strong{font-size:20px;font-weight:600;letter-spacing:-.5px}
+#app[data-route=home] .assistant-identity span{font-size:12px;color:var(--home-muted)}
+#app[data-route=home] .family-button{background:var(--home-blue);border-radius:28px;padding:6px 10px;gap:6px;min-height:48px;color:var(--home-ink)}
+#app[data-route=home] .family-button>span:nth-child(2){max-width:54px;font-size:13px}
+#app[data-route=home] .family-button>.icon:last-child{transform:rotate(90deg);width:14px}
+#app[data-route=home] .thread{background:transparent;border-radius:0;padding:8px 16px 24px;scroll-padding-bottom:24px}
+#app[data-route=home] .day-divider{display:none}
+#app[data-route=home] #welcome,#app[data-route=home] #welcome.compact{position:relative;isolation:isolate;display:grid;grid-template-columns:40% minmax(0,1fr);align-items:center;gap:0;min-height:224px;padding:24px 0 16px;margin:0 0 8px;text-align:left}
+#app[data-route=home] #welcome::before,#app[data-route=home] #welcome::after{content:"";position:absolute;z-index:-1;pointer-events:none;background:var(--home-mint);opacity:.7;inset:8px -4px 0;border-radius:43% 57% 35% 65% / 48% 35% 65% 52%;transform:rotate(-8deg)}
+#app[data-route=home] #welcome::after{inset:28px 28px 8px -2px;opacity:.65;transform:rotate(16deg);border-radius:64% 36% 61% 39% / 37% 62% 38% 63%}
+#app[data-route=home] #welcome .mascot-wrap{width:100%;height:164px;min-height:0;align-self:end;z-index:1}
+#app[data-route=home] #welcome canvas{width:100%;height:164px;display:block}
+#app[data-route=home] #welcome .mascot-wrap>span{display:none}
+#app[data-route=home] #welcome>div:not(.mascot-wrap){position:relative;border-radius:24px 24px 24px 8px;background:var(--home-white);padding:20px 16px;box-shadow:0 8px 24px #24587806;margin:0 0 24px -4px}
+#app[data-route=home] #welcome h1{font-size:18px;line-height:1.55;font-weight:600;letter-spacing:0;margin:0 0 8px;color:var(--home-ink)}
+#app[data-route=home] #welcome .welcome-copy{display:block;font-size:14px;line-height:1.65;color:var(--home-ink)}
+#app[data-route=home] #welcome.compact .welcome-copy{display:block}
+#app[data-route=home] #today-summary{border:0;border-radius:32px;background:var(--home-mint);margin:0 0 20px;color:var(--home-ink)}
+#app[data-route=home] #today-summary summary{padding:20px;min-height:96px;gap:12px;align-items:flex-start}
+#app[data-route=home] .home-today-symbol .icon{width:24px;height:24px;color:#167f75}
+#app[data-route=home] .home-today-copy{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600}
+#app[data-route=home] #today-summary summary strong{font-weight:400;font-size:14px;line-height:1.65;color:var(--home-ink);margin:0}
+#app[data-route=home] #today-summary summary>.icon{width:32px;height:32px;padding:6px;background:#ffffff80;border-radius:50%;flex-shrink:0;align-self:center}
+#app[data-route=home] .summary-body{padding:0 20px 20px}
+#app[data-route=home] .summary-body p,#app[data-route=home] .summary-stats span{color:var(--home-muted)}
+#app[data-route=home] .quiet-state{padding:0 4px 16px;font-size:13px;color:var(--home-muted)}
+#app[data-route=home] .quiet-state small{display:none}
+#app[data-route=home] .task-primary{border-radius:28px;background:var(--home-bubble);padding:20px;margin-bottom:20px}
+#app[data-route=home] .message{margin:20px 0}
+#app[data-route=home] .message.assistant{position:relative;padding:0 0 0 44px}
+#app[data-route=home] .message-author{position:absolute;left:0;top:0;margin:0;display:block}
+#app[data-route=home] .message-author .speaker{display:none}
+#app[data-route=home] .message-avatar{width:36px;height:36px;background:var(--home-bubble);border-radius:50%;display:block}
+#app[data-route=home] .message-avatar canvas{width:36px;height:36px}
+#app[data-route=home] .message.assistant>.message-body{background:var(--home-bubble);padding:16px;border-radius:8px 24px 24px 24px;font-size:16px;line-height:1.65;color:var(--home-ink)}
+#app[data-route=home] .message.user{margin-left:40px}
+#app[data-route=home] .message.user .message-body{background:var(--home-blue);padding:16px;border-radius:24px 8px 24px 24px;color:var(--home-ink);font-size:16px;line-height:1.65}
+#app[data-route=home] .composer-area{background:var(--home-bg);padding:8px 16px max(8px,env(safe-area-inset-bottom));border:0}
+#app[data-route=home] .floating-tools{border:0;border-radius:28px;padding:8px;margin-bottom:12px;background:var(--home-white);box-shadow:0 4px 24px #26487509;gap:8px}
+#app[data-route=home] .floating-tools button{flex-direction:column;gap:4px;min-height:76px;padding:0 8px;background:transparent;color:var(--home-ink);font-size:12px}
+#app[data-route=home] .floating-tools button>.icon{width:48px;height:48px;padding:12px;border-radius:50%;background:var(--home-blue);color:#2856d8}
+#app[data-route=home] .floating-tools button:nth-child(2)>.icon{background:var(--home-mint);color:#167f75}
+#app[data-route=home] .floating-tools button:nth-child(3)>.icon{background:var(--sleep);color:var(--sleep-ink)}
+#app[data-route=home] .composer{background:transparent;padding:0;gap:4px;border:0}
+#app[data-route=home] .composer>.icon-button{width:40px;min-width:40px;min-height:48px;color:var(--home-ink);padding:8px}
+#app[data-route=home] #chat-form{gap:8px}
+#app[data-route=home] #chat-input{background:var(--home-bubble);border-radius:28px;padding:14px 16px;min-height:48px;color:var(--home-ink);line-height:1.5}
+#app[data-route=home] #chat-input::placeholder{color:var(--home-muted)}
+#app[data-route=home] .send-button{width:44px;min-width:44px;min-height:44px;height:44px;border-radius:50%;background:#2856d8;color:white}
+#app[data-route=home] .voice-button{background:var(--home-bubble);border-radius:28px;color:var(--home-ink)}
+#app[data-route=home] .voice-button.recording{background:var(--home-blue)}
+#app[data-route=home] .home-indicator{background:var(--home-bg)}
+#app[data-route=home] :is(button,summary,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#app[data-route=home] .floating-tools button:hover{background:var(--home-bubble)}
+#app[data-route=home] .floating-tools button:active{transform:scale(.97)}
+.keyboard-open #app[data-route=home] #welcome{display:none}
+@media(max-width:360px){#app[data-route=home] .topbar{padding-inline:8px;gap:0}#app[data-route=home] .topbar>.icon-button{width:36px;min-width:36px}#app[data-route=home] .assistant-identity strong{font-size:16px}#app[data-route=home] .family-button{padding:4px 6px;gap:3px}#app[data-route=home] .family-button>span:nth-child(2){max-width:32px}#app[data-route=home] .thread{padding-inline:12px}#app[data-route=home] #welcome>div:not(.mascot-wrap){padding:16px 12px}#app[data-route=home] #welcome h1{font-size:16px}#app[data-route=home] .composer-area{padding-inline:8px}#app[data-route=home] .composer>#mode-button{width:32px;min-width:32px}}
+@media(max-height:650px){#app[data-route=home] #welcome{min-height:176px}#app[data-route=home] #welcome canvas,#app[data-route=home] #welcome .mascot-wrap{height:128px}#app[data-route=home] .floating-tools button{min-height:60px}#app[data-route=home] .floating-tools button>.icon{height:36px;width:36px;padding:8px}}
+@media(prefers-color-scheme:dark){#app[data-route=home]{--home-bg:#171f2a;--home-ink:#d8e8fa;--home-muted:#b1c5dc;--home-blue:#243f5b;--home-mint:#244d45;--home-bubble:#253341;--home-white:#1e2b39}#app[data-route=home] .home-today-symbol .icon,#app[data-route=home] .floating-tools button:nth-child(2)>.icon{color:#9ee6d3}#app[data-route=home] .floating-tools button:first-child>.icon{color:#b4d4ff}#app[data-route=home] #today-summary summary>.icon{background:#ffffff12}}
+#app[data-route=home] #welcome{overflow:clip}
+
+#app[data-route=home] .quiet-state{background:transparent;border:0;border-radius:0;box-shadow:none}

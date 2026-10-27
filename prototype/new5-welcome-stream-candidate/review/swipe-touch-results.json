@@ -1,0 +1,10 @@
+{
+  "passed": 4,
+  "results": [
+    "real touch left opens records",
+    "real touch right opens trends",
+    "short drag ignored",
+    "vertical scroll preserved"
+  ],
+  "scope": "Chromium mobile CDP touch, not real hardware"
+}

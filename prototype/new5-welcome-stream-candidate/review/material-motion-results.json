@@ -1,0 +1,16 @@
+{
+  "passed": 10,
+  "results": [
+    "footer notes removed",
+    "motion bundled",
+    "summary reversal settles closed",
+    "summary expanded",
+    "sheet settles",
+    "sheet close immediate and focus returns",
+    "runtime reduced motion settles",
+    "page title receives focus",
+    "small dark fits",
+    "no runtime errors"
+  ],
+  "errors": []
+}

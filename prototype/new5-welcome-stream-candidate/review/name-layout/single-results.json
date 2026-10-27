@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "filled caregiver remains one row",
+    "stage before baby name",
+    "stage addresses user",
+    "two stages without descriptions",
+    "unborn blocked with feedback",
+    "baby name follows stage",
+    "filled baby name stays one row on small screen",
+    "gender asks actual baby name",
+    "gender has only two options",
+    "calendar is date entry",
+    "calendar click invokes native picker",
+    "calendar updates",
+    "gestation after birthday",
+    "gestation asks actual baby name",
+    "old review draft visits missing gestation",
+    "old unborn draft returns to blocked stage",
+    "week bounds",
+    "preterm days shown and prompt",
+    "37 hides and resets days",
+    "gestation persists",
+    "small viewport no overflow",
+    "concerns no small copy",
+    "review gestation",
+    "brief natural welcome",
+    "gestation saved",
+    "no runtime errors"
+  ],
+  "errors": []
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Welcome greeting, removal of supporting sentence, and primary button copy only.",
+  "greeting": "Hey there! 💕 I'm Momcozy AI. Wanna tell me a little about yourself?",
+  "button": "Let's do it",
+  "checks": 21,
+  "errors": [],
+  "standalone_sha256": "997f6c5d697acc0a9f0472a5e9d742e08a14cba619f90c61fc0323b64c363349",
+  "source_sha256": "551de7de70e3f2580e5591d016d15ff84333767ff4401ca922d853538f9af010",
+  "screenshots": [
+    {
+      "path": "welcome-dark-390-single.png",
+      "sha256": "efe3a7e6c9eac68cf63ecd17ff8e91aa118d975acb61b63762889bd525ad4ae2"
+    },
+    {
+      "path": "welcome-large-text-single.png",
+      "sha256": "65a362380951b57e5983c94e0a09db41298f504f820c32a2c8adef036a080245"
+    },
+    {
+      "path": "welcome-light-1440-single.png",
+      "sha256": "b909a48dd36f83219934896713951aeb592cdfce33e86744a3aa89e46eee639b"
+    },
+    {
+      "path": "welcome-light-320-single.png",
+      "sha256": "dd756ff29fc85c76547fd0782aca5d46a86a8cec0e83febe3fa18059f0bd7b6b"
+    },
+    {
+      "path": "welcome-light-390-single.png",
+      "sha256": "91ddf158838aa25c5262630439ced332d66f096a6c12b054dd52c8c0a065eae5"
+    },
+    {
+      "path": "welcome-streaming-single.png",
+      "sha256": "eb68398ce3571a56071945c9bf4db92bae86b80c2171c100c3c01ba2cc259e4d"
+    }
+  ]
+}

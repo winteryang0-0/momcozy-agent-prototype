@@ -9,3 +9,10 @@ prototype/current/** -text -eol
 
 # Keep the R30 candidate's published bytes identical to its review receipt.
 prototype/onboarding-chat-r30-candidate/** -text -eol
+
+# Preserve user-selected prototype snapshots and their file manifests.
+prototype/baselines/** -text -eol
+
+# Preserve this delivered package byte-for-byte against its release manifest.
+prototype/new5-welcome-stream-candidate/** -text -eol
+releases/new5-main-20261027/** -text -eol

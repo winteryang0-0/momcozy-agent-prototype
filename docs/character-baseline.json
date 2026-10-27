@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "baseline_id": "C-MOMCOZY-20261026-SPROUT",
+  "status": "user-selected-character-reference",
+  "character_label": "Sprout Creature",
+  "selected_by": "Wentao",
+  "selected_on": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "user_request": "OK，我们来更新基线形象，现在以这个形象为基准",
+  "source_type": "user-attached-image",
+  "source_filename": "codex-clipboard-07d44ed4-b795-40ff-9b87-c94057c9f510.png",
+  "reference": {
+    "path": "design/baselines/C-MOMCOZY-20261026-SPROUT/reference.png",
+    "sha256": "569e965b12b26a86679abb9f91f9c06d2c26395d69eef2d9f11588a3a694c46d",
+    "preserved_unmodified": true
+  },
+  "specification": "docs/CHARACTER_BASELINE.md",
+  "prototype_baseline_id": "B-MOMCOZY-20261026-NEW5",
+  "precedence": "Replaces earlier character appearance references only; preserves the prototype architecture baseline and original snapshots.",
+  "superseded_appearance": "Nest character candidates",
+  "implementation_status": "reference-registered; app replacement and animation migration not implemented"
+}

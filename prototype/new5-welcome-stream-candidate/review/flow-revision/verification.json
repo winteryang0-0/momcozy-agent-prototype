@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-26",
+  "status": "local-candidate",
+  "baseline": "B-MOMCOZY-20261026-NEW5 unchanged",
+  "results": [
+    {
+      "path": "review/flow-revision/single-results.json",
+      "checks": 26,
+      "errors": []
+    },
+    {
+      "path": "review/flow-revision/split-results.json",
+      "checks": 26,
+      "errors": []
+    },
+    {
+      "path": "review/flow-revision-stream/stream-single-results.json",
+      "checks": 21,
+      "errors": []
+    },
+    {
+      "path": "review/flow-revision-stream/stream-split-results.json",
+      "checks": 21,
+      "errors": []
+    }
+  ],
+  "total_checks": 94,
+  "visual_inspection": [
+    "welcome-single.png",
+    "caregiver-single.png",
+    "baby-name-single.png",
+    "birthday-single.png",
+    "name-dark-single.png"
+  ],
+  "independent_review": {
+    "finding": "Switching unborn then born could return to review without first record.",
+    "resolution": "Pre-save guard returns to record choice; independent isolated verification and browser regression pass."
+  },
+  "test_correction": "Legacy draft injection now blurs the input first so its change event cannot overwrite injected fixture on navigation.",
+  "limits": [
+    "Preset greeting only; no live AI stream.",
+    "Real phone keyboard and screen reader not tested.",
+    "Structural audit retains pre-existing fixed-fullscreen warning."
+  ],
+  "sha256": {
+    "index.html": "18a5a9e74705529a8b4471a25398cbaa0fd8f3953447f5b91a544995e38f54c8",
+    "assets/conversation.js": "906c5ff8a13c2e8cccaa50ebf0eccc67b806397e756f0ef4e13e8988d34082a7",
+    "assets/onboarding.css": "9df21fb53c35c3aad2f6d4486ede0720c5d61def56f39ba31b42544c14566d83",
+    "Momcozy-Soft-Companion.html": "3070596edf624ceb8b0a3918bdc8f51ba63162e1926392de28a6c70c651b5d38",
+    "tests/onboarding-revised.cjs": "73efa26817d0883a01a7f3da7f348c31731ad018032e635abbf503349b689f64",
+    "tests/welcome-stream.cjs": "f4f20575c550e37a694fb257b9ad012a3a98bf5d42ab2c16524d9482b535d1c4",
+    "review/flow-revision/baby-name-single.png": "3baf2639e86b8fca30a2dc035f899ff4b72f42aee37a3ddd8dd3f124af54c003",
+    "review/flow-revision/baby-name-split.png": "3baf2639e86b8fca30a2dc035f899ff4b72f42aee37a3ddd8dd3f124af54c003",
+    "review/flow-revision/birthday-single.png": "29fe388bc1fc756f4c38337cad20bf28ef033d1e09a194615a187dfe717a4e1b",
+    "review/flow-revision/birthday-split.png": "29fe388bc1fc756f4c38337cad20bf28ef033d1e09a194615a187dfe717a4e1b",
+    "review/flow-revision/caregiver-single.png": "60b80d2dc1ad3fce482ee8e2f91a683ddf42e064335127b0632603082c2dc302",
+    "review/flow-revision/caregiver-split.png": "60b80d2dc1ad3fce482ee8e2f91a683ddf42e064335127b0632603082c2dc302",
+    "review/flow-revision/name-dark-single.png": "e9c4c1f65b9ff9d98bfd4a9be15a01905ad4106d442fa1da8ad70e0666c0ffb0",
+    "review/flow-revision/name-dark-split.png": "e9c4c1f65b9ff9d98bfd4a9be15a01905ad4106d442fa1da8ad70e0666c0ffb0",
+    "review/flow-revision/name-small-single.png": "a7b52ff766162498665f0de83bf0103737c70b3dd4f887b59292094adf031d78",
+    "review/flow-revision/name-small-split.png": "a7b52ff766162498665f0de83bf0103737c70b3dd4f887b59292094adf031d78",
+    "review/flow-revision/welcome-single.png": "a5b16d7f6a937704d2bba62a81b3ad7198103aa81059af62620fdf33e0a82963",
+    "review/flow-revision/welcome-split.png": "a5b16d7f6a937704d2bba62a81b3ad7198103aa81059af62620fdf33e0a82963"
+  }
+}

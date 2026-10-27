@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "welcome animation active",
+      "welcome motion changes visibly",
+      "explicit caregiver prompt",
+      "name page has no extra bounce",
+      "explicit baby prompt",
+      "month spacing",
+      "review typography unified",
+      "small review fits",
+      "completion animation active",
+      "reduce stops movement",
+      "home mascot has no onboarding animation"
+    ]
+  },
+  "review": "Independent read-only review passed: scope, font, no data changes, animation stop and reduced motion.",
+  "visuals": [
+    "baby-name.png",
+    "review.png",
+    "review-small.png"
+  ],
+  "motion": "Browser checks confirm changing transforms, entry/completion animation names, reduced motion and home cleanup.",
+  "sha256": {
+    "assets/conversation.js": "ddc29ac3e288cd9e9390a3d160ce7f55b7c8a43015c7717cfed9d5a9f3f9b57c",
+    "assets/onboarding.css": "ad237e950facb2591327c218600ba8734ab7bf3129cc945b37eecef3d44886ab",
+    "Momcozy-Soft-Companion.html": "c9465a0e718683207b650e2d006746414df70aeb4af87ece31e646a17e7c5183"
+  }
+}

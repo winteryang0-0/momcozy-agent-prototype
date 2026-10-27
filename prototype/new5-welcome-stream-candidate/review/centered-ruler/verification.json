@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "stage before baby name",
+      "two stages without descriptions",
+      "unborn blocked with feedback",
+      "baby name follows stage",
+      "gender has only two options",
+      "calendar is date entry",
+      "calendar click invokes native picker",
+      "calendar updates",
+      "gestation after birthday",
+      "default 38",
+      "default centered",
+      "drag moves scale under fixed focus",
+      "keyboard updates centered value",
+      "tap neighboring tick selects it",
+      "max remains centered",
+      "min remains centered",
+      "old review draft visits missing gestation",
+      "old unborn draft returns to blocked stage",
+      "week bounds",
+      "preterm days shown and prompt",
+      "days selected value centered",
+      "37 hides and resets days",
+      "gestation persists",
+      "small viewport no overflow",
+      "concerns no small copy",
+      "review gestation",
+      "brief natural welcome",
+      "gestation saved",
+      "no runtime errors"
+    ],
+    "errors": []
+  },
+  "visuals": [
+    "default-single.png",
+    "preterm-single.png",
+    "review-single.png"
+  ],
+  "independent_review": "Neighbor-tick tap issue identified and fixed with coordinate calculation, browser regression passes.",
+  "limits": [
+    "Real mobile gesture and screen reader not tested."
+  ],
+  "sha256": {
+    "assets/conversation.js": "a32789115afffb02862035bd81a4732840d64a56b0a43ec9468550e40d4bc274",
+    "assets/onboarding.css": "2e3f6f532a3aff803d31869b11f17d46004f9fb3b450b9b14ab668116d64e36c",
+    "Momcozy-Soft-Companion.html": "69a38c133d2b3fb97fda2d7366ff8bc36d15eabc065796bb3e809036ef4061d5"
+  }
+}

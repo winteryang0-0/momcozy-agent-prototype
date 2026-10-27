@@ -1,0 +1,83 @@
+{
+  "reviewer": "independent review_google",
+  "mode": "bounded challenge + ai-slop-cleaner --review; no product edits",
+  "date": "2026-10-25",
+  "environment": "Playwright Chromium; 390x844 and 320x650",
+  "checks": [
+    {
+      "name": "full-screen onboarding and mascot ownership",
+      "status": "pass",
+      "evidence": "Dialog 390x844; mascot count 1 during entry/back; count 1 restored under #welcome after completion."
+    },
+    {
+      "name": "attachment menu",
+      "status": "pass",
+      "evidence": "Exactly 拍照 and 录音上传."
+    },
+    {
+      "name": "four primary records above fold",
+      "status": "pass",
+      "evidence": "Measured against #panel-body clipping: 喂养/尿布/体重/睡眠 fully visible; other entries reachable by panel scrolling."
+    },
+    {
+      "name": "daily records dock",
+      "status": "pass",
+      "evidence": ".records-dock present on records route."
+    },
+    {
+      "name": "pattern grid drilldown",
+      "status": "pass",
+      "evidence": "7 columns, 81 event groups for synthetic week; event click opens detail/group panel."
+    },
+    {
+      "name": "weight chart rendering and keyboard detail",
+      "status": "pass",
+      "evidence": "5 WHO-labelled reference lines (3/15/50/85/97), 7 sample points; Enter on SVG point opens record detail; list contains 7 records."
+    },
+    {
+      "name": "narrow and reduced motion",
+      "status": "pass",
+      "evidence": "Weight page scrollWidth=clientWidth=320; reduced-motion list switching usable."
+    },
+    {
+      "name": "daily dock failure/retry",
+      "status": "pass-after-fix",
+      "evidence": "Storage failure keeps route records; reopened form displays persistent error; retry writes exactly one record with same pending ID and closes form."
+    },
+    {
+      "name": "trend weight failure/retry",
+      "status": "pass-after-fix",
+      "evidence": "Storage failure keeps route trends; visible form error; retry writes same ID once."
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P1",
+      "status": "fixed and independently retested",
+      "description": "New record failure from non-home route previously wrote error and retry into hidden conversation."
+    },
+    {
+      "id": "R2",
+      "severity": "P2",
+      "status": "reported restored by author",
+      "description": "Custom template creation entry was removed with old attachment menu; author restored it to record picker tail."
+    },
+    {
+      "id": "C1",
+      "severity": "P3",
+      "status": "cleanup suggestion",
+      "description": "recordOverview has definition only and no call in conversation.js; remove obsolete renderer in a bounded cleanup."
+    }
+  ],
+  "limits": [
+    "WHO numerical table ingestion was not independently re-downloaded in this pass; chart rendering, labels, axis and interaction were checked.",
+    "No physical-device camera, microphone or touch-haptic validation.",
+    "Audio file preview/rejection was inspected in source but not independently exercised in this pass."
+  ],
+  "commands": [
+    "node /tmp/challenge-refined2.cjs",
+    "node /tmp/challenge-refined-charts.cjs",
+    "node /tmp/challenge-refined-retry.cjs"
+  ]
+}

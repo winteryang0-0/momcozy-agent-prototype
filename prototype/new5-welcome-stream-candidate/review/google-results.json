@@ -1,0 +1,28 @@
+{
+  "checks": 22,
+  "passed": [
+    "no dock or character runtime",
+    "records page reachable",
+    "empty state honest",
+    "record survives reload",
+    "undo restores record",
+    "side drawer",
+    "permission last step",
+    "profile saved",
+    "custom template saved",
+    "custom values survive reload",
+    "failure keeps draft",
+    "retry succeeds",
+    "no duplicate save",
+    "filter works",
+    "age computed",
+    "dismiss respected",
+    "conversation creates review",
+    "320px no horizontal overflow",
+    "reduced motion removes animation",
+    "desktop stays mobile",
+    "escape closes modal",
+    "no runtime errors"
+  ],
+  "errors": []
+}

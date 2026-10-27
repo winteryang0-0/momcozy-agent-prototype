@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "month jumps directly",
+    "month change synchronizes birthday",
+    "future month disabled",
+    "month focus restored",
+    "year changes immediately",
+    "year change synchronizes birthday",
+    "focus returns to year",
+    "leap date selectable",
+    "saved year restores",
+    "non leap year has no Feb29",
+    "current year clamps future month",
+    "small no horizontal overflow",
+    "review omits caregiver card",
+    "personalized prompt retained"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "passed": 16,
+  "results": [
+    "seeded 14 dates",
+    "synthetic rows isolated",
+    "reload no duplicate samples",
+    "gender selection feedback",
+    "profile save updates visible card",
+    "profile durable",
+    "direct save without second confirmation",
+    "solid food saved",
+    "free text saved",
+    "14 day chart and totals",
+    "sleep segments and weight chart",
+    "sleep interval visualization",
+    "chart opens data detail",
+    "charts contained horizontally",
+    "no draft or prototype words",
+    "no JS errors"
+  ],
+  "errors": []
+}

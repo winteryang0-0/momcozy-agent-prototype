@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "welcome starts before complete text is displayed",
+    "onboarding has no visible close button",
+    "full greeting is accessible without per-character announcements",
+    "visible text grows progressively",
+    "merged greeting completes exactly once",
+    "speech geometry stays stable while typing",
+    "start goes directly to name-first profile",
+    "back returns directly to merged welcome",
+    "rapid continue does not skip profile step",
+    "old stream cannot overwrite next page",
+    "old step-1 draft resumes at merged welcome",
+    "legacy names survive migration",
+    "switching reduced motion completes text immediately",
+    "reduced-motion entry displays full greeting",
+    "simulated hidden state pauses presentation",
+    "visibility restoration finishes remaining text",
+    "small welcome has no horizontal overflow",
+    "small-screen primary action remains visible",
+    "large text override is applied",
+    "large text remains scrollable without horizontal overflow",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "limits": [
+    "Visibility pause was tested by injected document.hidden/event, not a real background mobile app.",
+    "No live model or network stream; preset greeting presentation only.",
+    "Real phone and screen-reader announcement not tested."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "passed": 18,
+  "results": [
+    "three floating tools",
+    "tools above input without overlap",
+    "visible swipe guidance",
+    "ruler present",
+    "no fabricated initial value",
+    "preset commits draft value",
+    "keyboard ruler works",
+    "preset record really saved",
+    "side selected",
+    "optional selection clears",
+    "stool photo and limitations",
+    "cry recording control",
+    "calendar and weight overview",
+    "trend filter preserves expanded state",
+    "calendar opens correct day",
+    "small floating card fits",
+    "large text sheet fits",
+    "no runtime errors"
+  ],
+  "errors": []
+}

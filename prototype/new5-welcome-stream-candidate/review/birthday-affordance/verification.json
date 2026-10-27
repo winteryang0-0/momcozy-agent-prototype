@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-26",
+  "change": "Streamed click instruction plus visible choose/edit action within calendar",
+  "checks": 21,
+  "visual": "birthday.png",
+  "sha256": {
+    "assets/conversation.js": "db10c7d767399590ad6986dd7ce784bde8170ea9963d319f7b68292d8fff8c72",
+    "assets/onboarding.css": "5eda51d5b9658047a3365a0cebda1efe30fd868c656f0fe32b111348f8fca4e3",
+    "Momcozy-Soft-Companion.html": "b685710c006b0fe9f83c297a68fe9c9c81ea525d3d549626928e43b6d362cc30"
+  }
+}

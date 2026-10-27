@@ -1,0 +1,23 @@
+{
+  "passed": 17,
+  "results": [
+    "mobile app fits",
+    "three bottom tabs",
+    "no desktop sidebar",
+    "records is primary page",
+    "record returns to conversation",
+    "profile page",
+    "draft survives navigation",
+    "saved record in page",
+    "detail in bottom sheet",
+    "undo updates primary list",
+    "profile refreshes after update",
+    "escape returns to home",
+    "desktop remains phone width",
+    "desktop sheet matches phone width",
+    "small screen no overflow",
+    "small composer above tabs",
+    "no JS errors"
+  ],
+  "errors": []
+}

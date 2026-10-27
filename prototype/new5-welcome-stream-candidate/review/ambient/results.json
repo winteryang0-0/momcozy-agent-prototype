@@ -1,0 +1,292 @@
+{
+  "timing": [
+    {
+      "name": "chat-ambient-palette",
+      "delay": 5000,
+      "direction": "normal",
+      "duration": 10000,
+      "easing": "linear",
+      "endDelay": 0,
+      "fill": "none",
+      "iterationStart": 0,
+      "iterations": null
+    },
+    {
+      "name": "chat-ambient-drift",
+      "delay": 0,
+      "direction": "alternate",
+      "duration": 5000,
+      "easing": "linear",
+      "endDelay": 0,
+      "fill": "none",
+      "iterationStart": 0,
+      "iterations": null
+    }
+  ],
+  "samples": [
+    {
+      "t": 0,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.00744, -0.159563, 0.159563, 1.00744, -82.2109, -102.919)",
+      "opacity": 0
+    },
+    {
+      "t": 5000,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.10621, 0.175207, -0.175207, 1.10621, 82.2109, 113.211)",
+      "opacity": 0
+    },
+    {
+      "t": 5750,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.10411, 0.158834, -0.158834, 1.10411, 74.7774, 103.439)",
+      "opacity": 0.5
+    },
+    {
+      "t": 6500,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.09595, 0.107978, -0.107978, 1.09595, 51.3989, 72.7089)",
+      "opacity": 1
+    },
+    {
+      "t": 10000,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.00744, -0.159563, 0.159563, 1.00744, -82.2109, -102.919)",
+      "opacity": 1
+    },
+    {
+      "t": 10750,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.01408, -0.145882, 0.145882, 1.01408, -74.7774, -93.1475)",
+      "opacity": 0.5
+    },
+    {
+      "t": 11500,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.03373, -0.101848, 0.101848, 1.03373, -51.3989, -62.417)",
+      "opacity": 0
+    },
+    {
+      "t": 15000,
+      "paused": "false",
+      "static": "false",
+      "hidden": false,
+      "transform": "matrix(1.10621, 0.175207, -0.175207, 1.10621, 82.2109, 113.211)",
+      "opacity": 0
+    }
+  ],
+  "comparison": {
+    "before": [
+      {
+        "s": ".topbar",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 80,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "16px 20px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#thread",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 830,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "84px 16px 180px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) linear-gradient(145deg, rgb(244, 250, 252), rgb(241, 250, 246)) repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#welcome",
+        "x": 16,
+        "y": 84,
+        "w": 358,
+        "h": 240.078125,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "24px 0px 16px",
+        "margin": "0px 0px 8px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".mascot-wrap",
+        "x": 16,
+        "y": 144.078125,
+        "w": 143.1875,
+        "h": 164,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#mascot",
+        "x": 16,
+        "y": 144.078125,
+        "w": 143.1875,
+        "h": 164,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".composer-area",
+        "x": 12,
+        "y": 694,
+        "w": 366,
+        "h": 120,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#chat-input",
+        "x": 56,
+        "y": 762,
+        "w": 270,
+        "h": 52,
+        "font": "16px / 24px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "14px 44px 14px 16px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgb(237, 244, 249) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".floating-tools",
+        "x": 12,
+        "y": 694,
+        "w": 366,
+        "h": 60,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "6px",
+        "margin": "0px 0px 8px",
+        "animation": "none",
+        "background": "rgba(255, 255, 255, 0.82) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    ],
+    "after": [
+      {
+        "s": ".topbar",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 80,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "16px 20px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#thread",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 830,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "84px 16px 180px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#welcome",
+        "x": 16,
+        "y": 84,
+        "w": 358,
+        "h": 240.078125,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "24px 0px 16px",
+        "margin": "0px 0px 8px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".mascot-wrap",
+        "x": 16,
+        "y": 144.078125,
+        "w": 143.1875,
+        "h": 164,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#mascot",
+        "x": 16,
+        "y": 144.078125,
+        "w": 143.1875,
+        "h": 164,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".composer-area",
+        "x": 12,
+        "y": 694,
+        "w": 366,
+        "h": 120,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "0px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": "#chat-input",
+        "x": 56,
+        "y": 762,
+        "w": 270,
+        "h": 52,
+        "font": "16px / 24px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "14px 44px 14px 16px",
+        "margin": "0px",
+        "animation": "none",
+        "background": "rgb(237, 244, 249) none repeat scroll 0% 0% / auto padding-box border-box"
+      },
+      {
+        "s": ".floating-tools",
+        "x": 12,
+        "y": 694,
+        "w": 366,
+        "h": 60,
+        "font": "16px Roboto, Arial, \"Noto Sans SC\", \"Microsoft YaHei\", sans-serif",
+        "padding": "6px",
+        "margin": "0px 0px 8px",
+        "animation": "none",
+        "background": "rgba(255, 255, 255, 0.82) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    ]
+  },
+  "errors": [],
+  "visibility": "document.hidden simulated; OS background not exercised"
+}

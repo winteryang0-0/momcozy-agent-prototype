@@ -1,0 +1,84 @@
+
+#app[data-route="home"] .conversation.chat-ambient-host {
+  position: relative;
+  isolation: isolate;
+}
+
+.chat-ambient-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(159deg,
+    #f9edfd 0%, #fdeaf1 43%, #fff9e7 100%);
+}
+
+.chat-ambient-background::before,
+.chat-ambient-background::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+/* 效果轨道：延迟5秒开始，10秒一轮。 */
+.chat-ambient-background::before {
+  inset: 0;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 50% 108%,
+      #ffae14 0%, #ffae1400 42%),
+    linear-gradient(180deg,
+      #c6b8d8 0%, #dcb4d0 33%, #eeafc8 59%,
+      #f5ad79 83%, #f2a34d 100%);
+  animation: chat-ambient-palette 10s ease-in-out 5s infinite;
+}
+
+/* 空间轨道：色斑整体运动，单程5秒。 */
+.chat-ambient-background::after {
+  inset: -12%;
+  opacity: .94;
+  background:
+    radial-gradient(ellipse 36% 24% at 24% 20%,
+      #d999eddf 0%, #d999ed00 85%),
+    radial-gradient(ellipse 38% 28% at 82% 48%,
+      #ff87b9d9 0%, #ff87b900 85%),
+    radial-gradient(ellipse 40% 27% at 23% 84%,
+      #ffdc78e8 0%, #ffdc7800 85%);
+  filter: blur(16px);
+  transform-origin: center;
+  animation: chat-ambient-drift 5s ease-in-out infinite alternate;
+}
+
+@keyframes chat-ambient-drift {
+  from { transform: translate(-17%, -10%) rotate(-9deg) scale(1.02); }
+  to   { transform: translate(17%, 11%) rotate(9deg) scale(1.12); }
+}
+
+@keyframes chat-ambient-palette {
+  0%, 65%, 100% { opacity: 0; }
+  15%, 50%     { opacity: 1; }
+}
+
+.chat-ambient-background[data-paused="true"]::before,
+.chat-ambient-background[data-paused="true"]::after {
+  animation-play-state: paused;
+}
+
+.chat-ambient-background[data-static="true"]::before,
+.chat-ambient-background[data-static="true"]::after {
+  animation: none;
+}
+.chat-ambient-background[data-static="true"]::before { opacity: 0; }
+.chat-ambient-background[data-static="true"]::after { transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-ambient-background::before,
+  .chat-ambient-background::after { animation: none !important; }
+  .chat-ambient-background::before { opacity: 0; }
+  .chat-ambient-background::after { transform: none; }
+}
+
+/* Only the scrolling carrier must reveal the fixed decorative layer. */
+#app[data-route="home"] .chat-ambient-host > #thread { background: transparent; }

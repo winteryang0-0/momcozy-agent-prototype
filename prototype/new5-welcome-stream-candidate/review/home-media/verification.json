@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "file": "index.html",
+      "sha256": "4637429beec7be993c42fa214b083500ffa1dded5a92e9ac6c3b41c91182b9fb"
+    },
+    {
+      "file": "assets/conversation.js",
+      "sha256": "8e8c26a66384c46ccf584a0298b6e8762f885a6dd92c009facd023cf285f26ce"
+    },
+    {
+      "file": "assets/home-v01.css",
+      "sha256": "ed97f05c819cdc2f8259e9715c38266a6baa583f33c3a3586784b9246aab6879"
+    },
+    {
+      "file": "assets/home-media.js",
+      "sha256": "22e7b237477adf008ea5e3e28e7b5a0a9be4f94215af96385d1bb5a1381d17bf"
+    },
+    {
+      "file": "Momcozy-Soft-Companion.html",
+      "sha256": "659c0691c253d8db47421d284f0e0e55a9341d4ec4c98c4211ad26b2fba9c0ac"
+    }
+  ],
+  "onboardingCSSUnchanged": true,
+  "checks": 20,
+  "onboardingRegression": 21
+}

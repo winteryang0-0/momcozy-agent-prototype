@@ -1,0 +1,28 @@
+{
+  "mode": "independent browser challenge; implementation unchanged",
+  "build": "Momcozy-Soft-Companion.html",
+  "findings": [
+    {
+      "id": "P2-unborn-stale-start",
+      "status": "fixed and independently retested",
+      "originalEvidence": "Select record for born baby at step 9, return to step 3 and switch to unborn, advance to step 9. Only home option visible but continue enabled, advancing to record step 10.",
+      "retestEvidence": "Same return-and-change path on rebuilt HTML: step 9 shows only home; Continue disabled; attempted click remains step 9."
+    }
+  ],
+  "passed": [
+    "New clean state automatically opens onboarding step 0.",
+    "Selected father relationship, name, born stage, female gender and baby name survive refresh at step 4; back restores stage selection.",
+    "Skipping birth, concerns and permission introduction advances correctly.",
+    "First weight record numeric value starts empty and Continue disabled; exact input works after expanding it.",
+    "320x568 viewport: step 11 main CTA rect x16,y434,width288,height54 within viewport.",
+    "Injected DB write failure leaves step 12 with visible error and zero stored records.",
+    "Retry with two immediate clicks reaches success step 13 with exactly one 6.2 kg record.",
+    "Settings reset restarts step 0 retaining one baby 豆豆 and the saved record.",
+    "Close onboarding exits modal and returns one mascot to welcome.",
+    "Code/text review found no claim of real account authentication; settings explicitly says account service not connected."
+  ],
+  "limitations": [
+    "Merge-preservation and archived-target guards reviewed in latest source; not independently runtime exercised.",
+    "Mobile keyboard overlap and native permission screens still require physical-device verification."
+  ]
+}

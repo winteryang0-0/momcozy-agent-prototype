@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "empty has no selected state",
+      "filled changes visual state",
+      "filled state survives reload",
+      "whitespace returns to empty",
+      "empty styling matches option",
+      "selected styling matches option",
+      "baby selected styling matches caregiver",
+      "baby selected persists",
+      "icon and text stay in same row"
+    ]
+  },
+  "visuals": [
+    "empty.png",
+    "filled.png",
+    "dark-small.png"
+  ],
+  "review": "Independent source review passed: specificity, trimming, initial state, cleared and restored state.",
+  "sha256": {
+    "assets/conversation.js": "8434e7db1b55185e21e6b3e0b6b59878457be3093f308dc9f481ce0d7a05fe3e",
+    "assets/onboarding.css": "669def284fd6f0547786b951f1de239f6c9a732d051d319adcdd61ed6724471f",
+    "Momcozy-Soft-Companion.html": "cc80a2d6dd1b995a78001c215fac43cf9a9aaae51c3c60a40c2b5d0cbe60a83a"
+  }
+}

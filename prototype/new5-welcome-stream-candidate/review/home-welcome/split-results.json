@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "second page streams",
+    "name input with one matching icon",
+    "third page name persists and streams",
+    "options have distinct stream responses",
+    "new selection cancels old response",
+    "calendar shows selected month and day",
+    "calendar clears",
+    "deselection response",
+    "small feedback removed",
+    "concerns directly reaches review",
+    "save succeeds without first record",
+    "personalized welcome uses saved details",
+    "home welcome streams progressively",
+    "reduce motion completes home greeting",
+    "saved names and concerns with no fabricated records",
+    "home stays after reload",
+    "refresh keeps one complete welcome",
+    "reduce motion completes non-welcome text",
+    "no horizontal overflow",
+    "no runtime errors"
+  ],
+  "errors": []
+}

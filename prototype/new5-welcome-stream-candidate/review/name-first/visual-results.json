@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "long names do not cause horizontal overflow",
+    "legacy version-2 draft at old baby-name step retains both names on continue",
+    "both names remain optional and first profile step can be skipped",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "screenshots": [
+    "names-light-390.png",
+    "names-dark-390.png",
+    "names-light-1440.png",
+    "names-long-320.png"
+  ],
+  "scope": "Targeted name-order visual and legacy-draft checks; no device or full-product certification."
+}

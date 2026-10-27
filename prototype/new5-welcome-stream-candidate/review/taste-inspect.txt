@@ -1,0 +1,28 @@
+TASTESKILL · INSPECT   source/Momcozy-Soft-Companion/Momcozy-Soft-Companion.html
+
+MEASURED (first viewport listed)
+  hero headline   "今天，想从哪件小事说起？"  1 words · 1 line(s) · 25px (1.7vw) · Noto Sans SC 500 · tracking -0.02em · leading 1.55
+  @768px          1 line(s) · 21px
+  @390px          2 line(s) · 21px
+  typefaces       Noto Sans SC 97%, Georgia 3%
+  sizes in use    11 / 12 / 13 / 14 / 15 / 16 / 25 / 34 px
+  colour          page #ffffff · button #faf7f8
+  page            1 screens · 42 words · 0 images · hero media none
+  headings        1 · longest 2 line(s) · median - words
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [tiny-text] @1440px (+768, 390)  55% of the text is under 13px.
+      → Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  ../../../tmp/momcozy-inspect-final/desktop-fold.jpg
+                  ../../../tmp/momcozy-inspect-final/desktop-page-01.jpg
+  tablet 768px    ../../../tmp/momcozy-inspect-final/tablet-fold.jpg
+                  ../../../tmp/momcozy-inspect-final/tablet-page-01.jpg
+  mobile 390px    ../../../tmp/momcozy-inspect-final/mobile-fold.jpg
+                  ../../../tmp/momcozy-inspect-final/mobile-page-01.jpg
+
+report: ../../../tmp/momcozy-inspect-final/report.json
+RESULT: 0 FAIL, 2 WARN — measurements pass. Passing the meter is the floor, not the grade: score the screenshots with references/critique.md.

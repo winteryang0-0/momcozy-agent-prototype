@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "filled caregiver remains one row",
+      "stage before baby name",
+      "stage addresses user",
+      "two stages without descriptions",
+      "unborn blocked with feedback",
+      "baby name follows stage",
+      "filled baby name stays one row on small screen",
+      "gender asks actual baby name",
+      "gender has only two options",
+      "calendar is date entry",
+      "calendar click invokes native picker",
+      "calendar updates",
+      "gestation after birthday",
+      "gestation asks actual baby name",
+      "old review draft visits missing gestation",
+      "old unborn draft returns to blocked stage",
+      "week bounds",
+      "preterm days shown and prompt",
+      "37 hides and resets days",
+      "gestation persists",
+      "small viewport no overflow",
+      "concerns no small copy",
+      "review gestation",
+      "brief natural welcome",
+      "gestation saved",
+      "no runtime errors"
+    ],
+    "errors": []
+  },
+  "visuals": [
+    "caregiver-single.png",
+    "baby-name-single.png",
+    "gender-single.png"
+  ],
+  "review": "Independent source review: no blockers; escaping, fallback, current draft and flex rules checked.",
+  "sha256": {
+    "assets/conversation.js": "362b44183a884eae65adf390fcacb98a90c1d9ed6ed0de1b94b07b0259ae6fd0",
+    "assets/onboarding.css": "0db1301c80d5c12d9326511833d95dd7ba60cf8a2f1b48b623a6891ec85afed1",
+    "Momcozy-Soft-Companion.html": "78b18b796175b5d21351f9755800eb30a188da9ab09b8adff47b8369af082f4c"
+  }
+}

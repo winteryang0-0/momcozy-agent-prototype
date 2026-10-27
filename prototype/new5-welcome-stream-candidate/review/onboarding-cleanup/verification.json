@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-26",
+  "checks": {
+    "checks": [
+      "second page streams",
+      "name input with one matching icon",
+      "third page name persists and streams",
+      "options have distinct stream responses",
+      "new selection cancels old response",
+      "avatar matches male",
+      "avatar matches female",
+      "avatar matches unknown",
+      "birthday helper removed",
+      "calendar shows selected month and day",
+      "calendar clears",
+      "deselection response",
+      "small feedback removed",
+      "concerns directly reaches review",
+      "review only has accessible edit icon",
+      "save succeeds without first record",
+      "completion decorations removed",
+      "personalized welcome uses saved details",
+      "home welcome streams progressively",
+      "reduce motion completes home greeting",
+      "saved names and concerns with no fabricated records",
+      "home stays after reload",
+      "refresh keeps one complete welcome",
+      "reduce motion completes non-welcome text",
+      "no horizontal overflow",
+      "no runtime errors"
+    ],
+    "errors": []
+  },
+  "visuals": [
+    "gender-single.png",
+    "review-single.png",
+    "complete-single.png"
+  ],
+  "sha256": {
+    "assets/conversation.js": "c145d4bdde1188df950810e0f595374ccc965855e73c74d5fd7379b7ab0271e2",
+    "assets/onboarding.css": "3ed74b39de3945dc0e8cde9d73480ed954018fc6772cc2addf3e135feaa23a18",
+    "Momcozy-Soft-Companion.html": "e2680ed1a4ba74ebff75deadce39873858fdde416d6f178cae97595417f9a27e"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "structural_gate": "pass",
+  "errors": [],
+  "warnings": [
+    "assets/google-app.css: review fixed-fullscreen"
+  ],
+  "note": "Manifest/evidence structural check only; runtime results recorded separately."
+}

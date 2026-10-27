@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "month jumps directly",
+      "month change does not overwrite birthday",
+      "future month disabled",
+      "month focus restored",
+      "year changes immediately",
+      "browsing year does not alter birthday",
+      "focus returns to year",
+      "leap date selectable",
+      "saved year restores",
+      "non leap year has no Feb29",
+      "current year clamps future month",
+      "small no horizontal overflow",
+      "review omits caregiver card",
+      "personalized prompt retained"
+    ]
+  },
+  "visuals": [
+    "month.png",
+    "small.png",
+    "review.png"
+  ],
+  "sha256": {
+    "assets/conversation.js": "d170e20a823949979c037142a1009c958831ee6490fc9915a94cd56f3827e630",
+    "assets/onboarding.css": "9bd0cf0e6a50e1aa19a480bfba8841db52d724f4e15d329f0665f7b521e9dbd7",
+    "Momcozy-Soft-Companion.html": "137cf04779bcaeadd2151d794e38be301772b063c7bb77fd60c6b12e47872ced"
+  }
+}

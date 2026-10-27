@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "checks": [
+    "draft restored",
+    "two distinct saved records",
+    "sleep two-column layout",
+    "90 minute sleep persisted"
+  ]
+}

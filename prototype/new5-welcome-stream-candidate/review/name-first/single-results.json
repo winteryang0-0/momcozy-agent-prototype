@@ -1,0 +1,42 @@
+{
+  "passed": 32,
+  "results": [
+    "first visit full-screen greeting",
+    "no role selected keeps continue disabled",
+    "names precede relationship options",
+    "first-page names survive reload",
+    "selection has text and visual feedback",
+    "later gender step has no duplicate name field",
+    "back retains baby name and selection",
+    "back retains birth",
+    "interruption reload resumes exact step and choices",
+    "permission explanations do not block progress",
+    "first record four illustrated choices",
+    "unselected quantity not treated as default",
+    "review precedes real persistence",
+    "review displays both names",
+    "review edit returns to names",
+    "back from name edit returns to review with edits",
+    "single atomic profile and record save",
+    "home has saved record and real summary",
+    "returning visit stays on home",
+    "reset is settings bottom entry",
+    "reset cancel preserves profile and records",
+    "reset opens first screen without deleting data",
+    "reset replay interruption resumes",
+    "continue existing exits replay",
+    "failed save retains review and retry",
+    "retry succeeds without extra records",
+    "small screen large text no horizontal overflow",
+    "footer remains inside viewport",
+    "keyboard navigation remains inside dialog",
+    "keyboard-sized viewport scrolls content and retains CTA",
+    "reduced motion disables progress transition",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "limits": [
+    "Physical mobile keyboard not tested; viewport resized.",
+    "No authentication service; screenshots show onboarding, not account credentials."
+  ]
+}

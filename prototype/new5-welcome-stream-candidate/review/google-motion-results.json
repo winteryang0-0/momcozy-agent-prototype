@@ -1,0 +1,9 @@
+{
+  "passed": [
+    "sheet animation starts",
+    "sheet settles at correct position",
+    "interrupted close stays closed",
+    "reduced motion disables sheet"
+  ],
+  "note": "CSS motion adapter, no physical spring claim"
+}

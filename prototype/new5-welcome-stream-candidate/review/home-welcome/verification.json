@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-26",
+  "scope": "Personalized home greeting and leading name icons",
+  "results": [
+    {
+      "entry": "single",
+      "checks": [
+        "second page streams",
+        "name input with one matching icon",
+        "third page name persists and streams",
+        "options have distinct stream responses",
+        "new selection cancels old response",
+        "calendar shows selected month and day",
+        "calendar clears",
+        "deselection response",
+        "small feedback removed",
+        "concerns directly reaches review",
+        "save succeeds without first record",
+        "personalized welcome uses saved details",
+        "home welcome streams progressively",
+        "reduce motion completes home greeting",
+        "saved names and concerns with no fabricated records",
+        "home stays after reload",
+        "refresh keeps one complete welcome",
+        "reduce motion completes non-welcome text",
+        "no horizontal overflow",
+        "no runtime errors"
+      ],
+      "errors": []
+    },
+    {
+      "entry": "split",
+      "checks": [
+        "second page streams",
+        "name input with one matching icon",
+        "third page name persists and streams",
+        "options have distinct stream responses",
+        "new selection cancels old response",
+        "calendar shows selected month and day",
+        "calendar clears",
+        "deselection response",
+        "small feedback removed",
+        "concerns directly reaches review",
+        "save succeeds without first record",
+        "personalized welcome uses saved details",
+        "home welcome streams progressively",
+        "reduce motion completes home greeting",
+        "saved names and concerns with no fabricated records",
+        "home stays after reload",
+        "refresh keeps one complete welcome",
+        "reduce motion completes non-welcome text",
+        "no horizontal overflow",
+        "no runtime errors"
+      ],
+      "errors": []
+    }
+  ],
+  "screenshots_reviewed": [
+    "name-single.png",
+    "home-complete-single.png"
+  ],
+  "limits": [
+    "Local template, no live AI generation.",
+    "No real phone or screen reader test."
+  ],
+  "sha256": {
+    "assets/conversation.js": "ced222b39b31c0235e6cf5685361b00505ec6c73e309eebc1bcc65cdeb7fc21a",
+    "assets/onboarding.css": "ca79af71c7ca501958f3db962d5ea90805d892ce5d46f0393dd5259ab7682b7d",
+    "Momcozy-Soft-Companion.html": "37cb838b7319e977b0fc2b2a6d1628c207ac7dc5f25b1629eb6b1a88d75d8818"
+  },
+  "independent_review": {
+    "status": "no blockers",
+    "isolated_checks": 9,
+    "scope": "Persistence, rerender, visibility pause, early user reply/navigation, reduced motion, cleanup and duplicate prevention",
+    "limits": "No separate visual rerun, storage failure or multi-tab contention test"
+  }
+}

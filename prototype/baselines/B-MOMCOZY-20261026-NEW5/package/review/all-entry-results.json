@@ -1,0 +1,22 @@
+{
+  "passed": 16,
+  "results": [
+    "existing records and active baby preserved",
+    "chart drag does not navigate",
+    "saved 瓶喂母乳",
+    "saved 配方奶",
+    "saved 亲喂",
+    "saved 吸奶",
+    "saved 睡眠",
+    "saved 体重",
+    "saved 喝水",
+    "saved 辅食",
+    "saved 营养补剂",
+    "saved 其他",
+    "saved 听哭闹",
+    "diaper observations saved",
+    "personal fields saved",
+    "no JS errors"
+  ],
+  "errors": []
+}

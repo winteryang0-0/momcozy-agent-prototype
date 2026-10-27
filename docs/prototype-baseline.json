@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "baseline_id": "B-MOMCOZY-20261026-NEW5",
+  "status": "user-selected-prototype-baseline",
+  "source_directory": "C:/Users/user/Desktop/Root Work/Momcozy Agent/New5/Momcozy-Soft-Companion",
+  "snapshot_path": "prototype/baselines/B-MOMCOZY-20261026-NEW5/package",
+  "entrypoint": "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/Momcozy-Soft-Companion.html",
+  "source_entrypoint": "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/index.html",
+  "contract_files": [
+    "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/AGENTS.md",
+    "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/DESIGN.md",
+    "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/DELIVERY.md",
+    "prototype/baselines/B-MOMCOZY-20261026-NEW5/package/ONBOARDING-INTERACTION.md"
+  ],
+  "file_count": 112,
+  "artifacts": {
+    "manifest": {
+      "path": "prototype/baselines/B-MOMCOZY-20261026-NEW5/manifest.json",
+      "sha256": "8922095742986ff4fff6da61a7beb5e71d0d47748db910eb121a80fcb3176513"
+    },
+    "receipt": {
+      "path": "prototype/baselines/B-MOMCOZY-20261026-NEW5/receipt.json",
+      "sha256": "4467c5c257a56de23b433ed2a4af3a9eb8087be0d179367c15562df8b10ce356"
+    }
+  },
+  "historical_baseline": {
+    "id": "B-MOMCOZY-20261022-R27",
+    "path": "prototype/current",
+    "lock": "docs/baseline-lock.json"
+  }
+}

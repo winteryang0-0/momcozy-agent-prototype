@@ -1,0 +1,33 @@
+{
+  "passed": 26,
+  "out": [
+    "daily advice based on data",
+    "daily schedule replaced timeline",
+    "chronological order",
+    "date and advice update",
+    "schedule detail action",
+    "picker compact",
+    "type controls have icons",
+    "history compact overview",
+    "history detailed expanded",
+    "thumbnail replaces introduction",
+    "image constrained",
+    "send enters analysis not record form",
+    "cancel blocks stale result",
+    "simulated result labelled",
+    "analysis not an automatic care record",
+    "recording progress starts",
+    "over 10 seconds turns green",
+    "stop enables send",
+    "audio analysis yields no fabricated cause",
+    "remove entry bottom",
+    "remove cancel preserves baby",
+    "remove last baby preserves records",
+    "remove persists",
+    "restore baby retains records",
+    "small viewport no overflow",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "microphone": "mocked MediaRecorder, injected clock offset; not physical recording"
+}

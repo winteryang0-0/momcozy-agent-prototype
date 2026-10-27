@@ -1,0 +1,15 @@
+{
+  "passed": 9,
+  "results": [
+    "file opens offline",
+    "no baby has no feeding prompt",
+    "no baby cannot create baby record",
+    "late voice cannot replace new panel",
+    "new draft does not inherit old form",
+    "escape closes dialog",
+    "200 percent no document overflow",
+    "reduced motion CSS applies",
+    "edge flows no JS errors"
+  ],
+  "errors": []
+}

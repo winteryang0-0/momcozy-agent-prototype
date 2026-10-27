@@ -1,0 +1,58 @@
+{
+  "baseline_id": "B-MOMCOZY-20261026-NEW5",
+  "scope": "Move baby and caregiver name inputs to the first onboarding profile page; preserve CSS, tokens, steps and other behavior.",
+  "standalone_sha256": "9e4da4d14889954b51c158c905a9ad36200dd1b9911e262cdafa36928a41dbaa",
+  "source_sha256": "69708658b0fd03a619e8dc7d5ded9c57524eef30ee17c6aa181ff111eb549b95",
+  "changed_original_files": [
+    "assets/conversation.js",
+    "DESIGN.md",
+    "Momcozy-Soft-Companion.html",
+    "ONBOARDING-INTERACTION.md",
+    "tests/onboarding-flow.cjs"
+  ],
+  "css_unchanged": true,
+  "single_file_checks": 32,
+  "split_file_checks": 32,
+  "visual_recovery_checks": 4,
+  "screenshots": [
+    {
+      "path": "review/name-first/names-dark-390.png",
+      "sha256": "a08db2f8719df7b0c3d0176f250fa7a7eba0fb65a900ac96007e5da5c43951b6"
+    },
+    {
+      "path": "review/name-first/names-light-1440.png",
+      "sha256": "54c8b560615c20d3924cad810387a6df8c68ebcb8c1639c9a32ca2ab548f0966"
+    },
+    {
+      "path": "review/name-first/names-light-390.png",
+      "sha256": "b94f697f94e3dd11e34331e252427f16b82f6488d224b2150ea2681e69e1e351"
+    },
+    {
+      "path": "review/name-first/names-long-320.png",
+      "sha256": "f80ac5b36178815644c11ac9da93f151aca091effc0a1ceb2ba1cc449efbbb6a"
+    },
+    {
+      "path": "review/name-first/onboarding-needs.png",
+      "sha256": "dc03e076fc74dfb8bed505c57bc5f5b1ecf0e607db7464091e3a42e682e08b65"
+    },
+    {
+      "path": "review/name-first/onboarding-review.png",
+      "sha256": "188e113fb813b846e7202bf73cfe2cc3390ec7d4d006c7343eeca12f4f6be121"
+    },
+    {
+      "path": "review/name-first/onboarding-small-large.png",
+      "sha256": "0e61e7876fbd6a64984cf4776f21ae44f6926397f9915062401b070e6c5d7786"
+    }
+  ],
+  "independent_review": {
+    "reviewer": "/root/review_name_first",
+    "mode": "source-diff-and-isolated-function-checks",
+    "finding": "No name-loss or save-path defect found. Original flow test needed updated selectors.",
+    "resolution": "tests/onboarding-flow.cjs now delegates to the updated name-first-flow.cjs; split-file run passed."
+  },
+  "limits": [
+    "Real mobile keyboard/device not tested.",
+    "Historical review files are inherited; only review/name-first evidence was executed for this candidate.",
+    "No full-product or Material conformance certification."
+  ]
+}

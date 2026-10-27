@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "second page streams",
+    "one simple name input",
+    "third page name persists and streams",
+    "options have distinct stream responses",
+    "new selection cancels old response",
+    "calendar shows selected month and day",
+    "calendar clears",
+    "deselection response",
+    "small feedback removed",
+    "concerns directly reaches review",
+    "save succeeds without first record",
+    "saved names and concerns with no fabricated records",
+    "home stays after reload",
+    "reduce motion completes non-welcome text",
+    "no horizontal overflow",
+    "no runtime errors"
+  ],
+  "errors": []
+}

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "welcome text has no bubble",
+    "proactive removed",
+    "recording colour evolves",
+    "recording contour follows progress",
+    "ten second status",
+    "process motion active",
+    "reduced process motion",
+    "processing card appears",
+    "cancel prevents result",
+    "no message avatars",
+    "audio only waveform",
+    "real audio plays",
+    "audio pauses",
+    "photo extra observations removed",
+    "photo processing card",
+    "result retains mock label",
+    "today banner sticks",
+    "sticky summary expands",
+    "small no overflow",
+    "invalid image offers retry",
+    "expired audio honest",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "microphone": "Injected recorder and clock; audio playback tested with valid generated WAV. No physical microphone."
+}

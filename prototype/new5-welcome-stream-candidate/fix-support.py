@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('assets/conversation.js');s=p.read_text(encoding='utf-8');s=s.replace("${icon('heart')}</span><span>What we support", "${icon('message')}</span><span>What we support");p.write_text(s,encoding='utf-8')
+p=Path('assets/cozie-refinements.css');s=p.read_text();s+='\n@property --intent-a{syntax:"<color>";inherits:true;initial-value:#f4fafc}\n@property --intent-b{syntax:"<color>";inherits:true;initial-value:#f1faf6}\n#app{transition:--intent-a .7s ease,--intent-b .7s ease}\nbody.reduced-motion .cozie-voice-orbit::before,body.reduced-motion .cozie-voice-orbit::after,body.reduced-motion #app.is-voice-active::after{animation:none!important}\n';p.write_text(s)

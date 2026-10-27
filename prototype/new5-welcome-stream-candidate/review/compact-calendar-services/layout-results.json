@@ -1,0 +1,101 @@
+[
+  {
+    "width": 832,
+    "height": 879,
+    "birthday": {
+      "step": "5",
+      "h": 678,
+      "clientH": 678,
+      "w": 430,
+      "clientW": 430
+    },
+    "topics": {
+      "step": "6",
+      "h": 678,
+      "clientH": 678,
+      "w": 430,
+      "clientW": 430
+    },
+    "services": {
+      "step": "16",
+      "h": 678,
+      "clientH": 678,
+      "w": 430,
+      "clientW": 430
+    },
+    "labels": [
+      "Support settling to sleep",
+      "Understand my baby’s sleep",
+      "Build a daytime nap routine",
+      "Prepare to pump at work",
+      "Know when the next nap may be",
+      "Find support for fullness or blocked ducts"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "birthday": {
+      "step": "5",
+      "h": 683,
+      "clientH": 683,
+      "w": 390,
+      "clientW": 390
+    },
+    "topics": {
+      "step": "6",
+      "h": 683,
+      "clientH": 683,
+      "w": 390,
+      "clientW": 390
+    },
+    "services": {
+      "step": "16",
+      "h": 683,
+      "clientH": 683,
+      "w": 390,
+      "clientW": 390
+    },
+    "labels": [
+      "Know when a skin concern needs care",
+      "Support settling to sleep",
+      "Notice and talk about low moods",
+      "Prepare to pump at work",
+      "Find more time to rest",
+      "Navigate night waking"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 650,
+    "birthday": {
+      "step": "5",
+      "h": 513,
+      "clientH": 513,
+      "w": 320,
+      "clientW": 320
+    },
+    "topics": {
+      "step": "6",
+      "h": 513,
+      "clientH": 513,
+      "w": 320,
+      "clientW": 320
+    },
+    "services": {
+      "step": "16",
+      "h": 513,
+      "clientH": 513,
+      "w": 320,
+      "clientW": 320
+    },
+    "labels": [
+      "Follow my baby’s growth",
+      "Get started with breastfeeding",
+      "Prepare to pump at work",
+      "Know when a skin concern needs care",
+      "Build a daytime nap routine",
+      "Navigate night waking"
+    ]
+  }
+]

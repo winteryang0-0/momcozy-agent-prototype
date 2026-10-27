@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "status": "local candidate",
+  "checks": [
+    {
+      "file": "review/flow-polish/single-results.json",
+      "count": 16
+    },
+    {
+      "file": "review/flow-polish/split-results.json",
+      "count": 16
+    },
+    {
+      "file": "review/flow-polish/stream-single-results.json",
+      "count": 21
+    }
+  ],
+  "independent_review": "No new blockers; old record drafts excluded from save; stream cancellation, visibility and reduced motion verified in isolation.",
+  "screenshots_reviewed": [
+    "name-single.png",
+    "calendar-single.png",
+    "concerns-single.png",
+    "small-dark-single.png"
+  ],
+  "limits": [
+    "Preset local text, no model streaming API.",
+    "Real mobile keyboard and screen reader not verified."
+  ],
+  "sha256": {
+    "assets/conversation.js": "b80a5cb82172e9a4e4a5bf73aaa79ec7a133dd394f0c150ba0da1f4370e92de8",
+    "assets/onboarding.css": "dafe9c3d4af739c65bc91fa0ab750d2b24abe698b2e6d6cadc03c4f85ac2d194",
+    "Momcozy-Soft-Companion.html": "2a18adac6d35d0228bb05d2dc6415a6d5b0ec201fcfc3134266b82ec0481b6f5"
+  }
+}

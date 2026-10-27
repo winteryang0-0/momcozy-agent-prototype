@@ -1,0 +1,86 @@
+/* Reference sheets: scoped to the four requested home flows. */
+#panel[data-design="picker"],#panel[data-design="recording"],#panel[data-design="photo"],#panel[data-design="feeding"]{background:#f8fcff;color:#173858;max-height:94%;border-radius:30px 30px 0 0}
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) .panel-head{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center}
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) .panel-head h2{grid-column:2;font-weight:700;text-align:center;font-size:21px}
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) .panel-head>button:last-child{grid-column:3;grid-row:1}
+.sheet-intro{text-align:center;font-size:19px;margin:8px 0 22px}.sheet-art{width:100px;height:100px;flex-shrink:0}
+#panel[data-design="picker"][open]{height:min(680px,calc(var(--app-height) - 24px));max-height:94%}
+#panel[data-design="picker"] .record-launch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:14px}
+#panel[data-design="picker"] .record-launch>button{min-height:142px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;border-radius:30px;background:#e9f2ff;padding:10px;color:#193651}
+#panel[data-design="picker"] .record-launch>button[data-tone="diaper"]{background:#def7ef}
+#panel[data-design="picker"] .record-launch>button[data-tone="sleep"]{background:#eee8ff}
+#panel[data-design="picker"] .record-launch>button[data-tone="growth"]{background:#faf5d9}
+#panel[data-design="picker"] .record-launch small{display:none}.more-records{grid-column:1/-1;margin:12px 0 0;border-top:1px solid #e4ebf3;padding-top:18px}
+#panel[data-design="picker"] .record-launch>button:nth-child(n+6){min-height:68px;flex-direction:row;background:#eff4f9;border-radius:22px}
+#panel[data-design="picker"] .record-launch>button:nth-child(n+6) .sheet-art{width:50px;height:50px}
+#panel[data-design="recording"] #audio-capture{margin:8px 0 12px;padding:28px 12px 44px;min-height:340px;background:transparent;border:0}
+#panel[data-design="recording"] #audio-capture:before,#panel[data-design="recording"] #audio-capture:after{clip-path:var(--record-shape,polygon(50% 2%,70% 8%,90% 22%,98% 50%,90% 78%,70% 92%,50% 98%,20% 90%,2% 60%,8% 30%,25% 8%));border-radius:0;animation:none;transition:clip-path .25s linear,background .5s ease}
+#panel[data-design="recording"] #audio-capture:after{transform:scale(.79);opacity:.38}
+#panel[data-design="recording"] .recording-actions{display:flex;flex-wrap:wrap;gap:10px}
+#panel[data-design="recording"] .recording-actions button{flex:1;min-height:48px}
+#panel[data-design="recording"]:has(#audio-capture[data-state="recording"]) .recording-actions button:disabled,#panel[data-design="recording"]:has(#audio-capture[data-state="ready-length"]) .recording-actions button:disabled{display:none}
+#panel[data-design="recording"] .sheet-footnote{text-align:center;font-size:13px;color:#697b91}
+#panel[data-design="recording"]:has(#audio-capture[data-state="ready"]) .recording-actions [data-action="send-media"]:disabled{display:none}
+#panel[data-design="recording"] .recording-actions [data-action="stop-cry"]{flex-basis:100%;background:linear-gradient(110deg,#4b59eb,#4f46df);color:#fff;font-weight:650}
+.photo-heading{display:flex;align-items:center;gap:12px;margin:4px 0 18px}.photo-heading canvas{width:78px;height:74px}.photo-heading h3{margin:0;font-size:20px}.photo-heading p{margin:5px 0;color:#738299;font-size:14px}
+#panel[data-design="photo"] .media-thumbnail{position:relative;display:block;width:100%;padding:0;border:0;margin:0 0 14px;overflow:hidden;border-radius:22px;background:transparent}
+#panel[data-design="photo"] .media-thumbnail img{width:100%;height:200px;object-fit:cover;border-radius:22px}
+#panel[data-design="photo"] .media-thumbnail button{position:absolute;right:8px;top:8px;background:#ffffffdb;border-radius:50%}
+#panel[data-design="photo"] .media-thumbnail img{display:block}
+#panel[data-design="photo"] .media-thumbnail>span{display:contents}
+#panel[data-design="photo"] .media-thumbnail strong,#panel[data-design="photo"] .media-thumbnail small{display:none}
+#panel[data-design="photo"] .camera-choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#panel[data-design="photo"] .upload-choice{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:7px;border:0;border-radius:22px;background:#eaf0ff;min-height:46px;padding:10px;margin-bottom:0;font-size:14px;color:#3859ce}
+.photo-observations{margin:20px 0}.observation-chips{display:flex;gap:8px;flex-wrap:wrap}.observation-chips details{flex:1;background:#eff3fb;border-radius:18px;padding:10px}.observation-chips summary{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px}.observation-chips details[open]{flex-basis:100%}.observation-chips input,.observation-chips textarea{max-width:100%;box-sizing:border-box}
+#panel[data-design="feeding"] .panel-copy{display:none}
+#panel[data-design="feeding"] .type-chips{display:flex;flex-wrap:nowrap;gap:8px;margin:12px 0}
+#panel[data-design="feeding"] .type-chips button{display:none}
+#panel[data-design="feeding"] .type-chips button[data-type="瓶喂母乳"],#panel[data-design="feeding"] .type-chips button[data-type="配方奶"],#panel[data-design="feeding"] .type-chips button[data-type="亲喂"]{display:block;flex:1;border:0;background:#eef2fb;border-radius:22px;padding:10px 4px;font-size:14px;white-space:nowrap}
+#panel[data-design="feeding"] .type-chips button[data-type="亲喂"]{order:-1}
+#panel[data-design="feeding"] .type-chips button[aria-pressed="true"]{background:#6079ed;color:white}
+#panel[data-design="feeding"] .type-chips svg{display:none}
+#panel[data-design="feeding"] .ruler-control{background:transparent;border:0;padding:0;margin:8px 0}
+#panel[data-design="feeding"] .ruler-stepper{display:grid;grid-template-columns:36px 1fr 36px;align-items:end}
+#panel[data-design="feeding"] .ruler-stepper>button{width:36px;height:44px;min-width:36px;padding:0;background:#e3ecff;color:#4361dc}
+#panel[data-design="feeding"] .ruler-value{display:flex;align-items:center;justify-content:center;gap:8px;background:#ddf6ed;border-radius:46% 54% 42% 58%;padding:6px 0;min-height:108px;color:#12314b;font-size:40px;font-weight:700}
+#panel[data-design="feeding"] .ruler-value .sheet-art{width:80px;height:96px}#panel[data-design="feeding"] .ruler-value small{display:block;font-size:17px;font-weight:500}
+#panel[data-design="feeding"] .ruler-control input[type="range"]{height:40px;margin-top:4px}
+#panel[data-design="feeding"] .guided-form>.field{margin:8px 0 12px}
+#panel[data-design="feeding"] .guided-form>.field select{min-height:44px;padding:10px 12px;margin-top:6px}
+#panel[data-design="feeding"] .guided-form>details{margin-top:4px}
+#panel[data-design="feeding"] .feeding-time>summary{min-height:44px;padding:10px 0;cursor:pointer}
+#panel[data-design="feeding"] .guided-form>button.primary{margin-top:12px}
+#panel[data-design="feeding"] .control-hint{display:none}
+#panel[data-design="feeding"] .preset-values{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+#panel[data-design="feeding"] .preset-values button{flex:1;border:0;background:#edf1fa;border-radius:16px;min-height:44px;padding:9px 5px;white-space:nowrap;font-size:13px}
+#panel[data-design="feeding"] .preset-values button[aria-pressed="true"]{background:#657bef;color:white}
+#panel[data-design="feeding"] .primary,#panel[data-design="photo"] .primary,#panel[data-design="recording"] .primary{background:linear-gradient(110deg,#4b59eb,#4f46df);color:#fff;border:0;min-height:48px;font-weight:650}
+#app[data-route="home"] .composer{display:grid;grid-template-columns:36px minmax(0,1fr) 44px;align-items:center;gap:8px}
+#app[data-route="home"] #chat-form:not([hidden]){display:contents}
+#app[data-route="home"] #chat-form textarea{grid-column:2;grid-row:1;width:100%;box-sizing:border-box;padding-right:44px}
+#app[data-route="home"] #mode-button{grid-column:2;grid-row:1;justify-self:end;z-index:2;margin-right:4px;width:36px;min-width:36px;order:initial}
+#app[data-route="home"] #chat-form button{grid-column:3;grid-row:1}
+#app[data-route="home"] #voice-button{grid-column:2;grid-row:1;padding-right:40px}
+#app[data-route="home"] .composer:has(#chat-form[hidden]){grid-template-columns:36px minmax(0,1fr)}
+@media(prefers-reduced-motion:reduce){#audio-capture:before,#audio-capture:after{transition:none!important}}
+@media(max-width:360px){.sheet-art{width:80px;height:80px}#panel[data-design="feeding"] .ruler-value{font-size:30px}.observation-chips summary{font-size:12px}}
+/* These reference sheets retain their light pastel palette in either host theme. */
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) .panel-head{background:#eef3fa;color:#173858}
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) :is(.field,summary,.sheet-intro,.more-records){color:#173858}
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) :is(input:not([type="range"]),textarea,select){background:#fff;color:#173858;border-color:#bac8d8}
+#panel[data-design="feeding"] .exact-input summary{color:#3158cb}
+
+/* Home review refinements: retain back as the sheet exit. */
+#panel:is([data-design="picker"],[data-design="recording"],[data-design="photo"],[data-design="feeding"]) .panel-head>[data-action="close-panel"]{display:none}
+#panel[data-design="recording"] #audio-capture:before,#panel[data-design="recording"] #audio-capture:after{clip-path:none;border-radius:42% 58% 60% 40% / 46% 42% 58% 54%;animation:cozie-soft-wave 2.4s ease-in-out infinite alternate;transition:background .5s ease}
+#panel[data-design="recording"] #audio-capture:after{animation-duration:1.8s;animation-direction:alternate-reverse}
+@keyframes cozie-soft-wave{0%{border-radius:42% 58% 60% 40% / 46% 42% 58% 54%;transform:scale(.94) rotate(-5deg)}50%{border-radius:60% 40% 43% 57% / 38% 59% 41% 62%;transform:scale(1.02,.96) rotate(3deg)}100%{border-radius:46% 54% 38% 62% / 59% 40% 60% 41%;transform:scale(.96,1.03) rotate(6deg)}}
+#panel[data-design="recording"] #cry-preview{display:flex;justify-content:center;min-height:48px;margin:0 0 16px}
+#cry-preview .voice-pill{display:flex;align-items:center;gap:12px;padding:6px 16px;border-radius:28px;background:var(--blue)}
+#cry-preview .voice-play{border-radius:50%;min-width:48px;background:var(--blue)}
+#panel[data-design="recording"] .recording-actions button{border-radius:28px;font-weight:700;box-shadow:none}
+#panel[data-design="recording"] .recording-actions .secondary{background:var(--accent);color:white}
+@media(prefers-reduced-motion:reduce){#panel[data-design="recording"] #audio-capture:before,#panel[data-design="recording"] #audio-capture:after{animation:none!important}}
+body.reduced #panel[data-design="recording"] #audio-capture:before,body.reduced #panel[data-design="recording"] #audio-capture:after{animation:none!important}
+
+.baseline-icon{mix-blend-mode:multiply;stroke:none}.record-launch .baseline-icon.sheet-art{width:100px;height:100px}.floating-tools .baseline-icon{width:32px;height:32px}

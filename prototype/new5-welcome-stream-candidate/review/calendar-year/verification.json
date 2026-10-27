@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "year changes immediately",
+      "browsing year does not alter birthday",
+      "focus returns to year",
+      "leap date selectable",
+      "saved year restores",
+      "non leap year has no Feb29",
+      "current year clamps future month",
+      "small no horizontal overflow"
+    ]
+  },
+  "visuals": [
+    "year.png",
+    "small.png"
+  ],
+  "sha256": {
+    "assets/conversation.js": "ac865ba6b986e0e1262bf3405072774ff28cf6c7c55c8f96671c16dd073439b5",
+    "assets/onboarding.css": "ce3485619af8a5d3001830af9dd7eb4ef4ed8a8712780e3e95e333adb5b2651c",
+    "Momcozy-Soft-Companion.html": "b03022573bf3547e151bf707ebf1b3acdc1bb1f6fd8f67d240f3b2d270cbe080"
+  }
+}

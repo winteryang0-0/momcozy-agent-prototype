@@ -1,0 +1,54 @@
+{
+  "scope": "Current built HTML: media flow, removal boundary, persistence, schedule/chart interactions",
+  "mode": "review-only; no implementation edits",
+  "findings": [
+    {
+      "id": "P2-empty-baby-fallback",
+      "severity": "P2",
+      "evidence": "Remove sole baby A, add B. Stored profiles.babies contains baby-default/name 宝宝/kind none plus B; survives reload.",
+      "source": "assets/conversation.js add-baby submit fallback [baby()]",
+      "recommendation": "Represent empty profile list separately; do not persist UI fallback as a real baby.",
+      "status": "fixed; independently retested"
+    },
+    {
+      "id": "P2-stale-audio-selection",
+      "severity": "P2",
+      "evidence": "Select test.wav then bad.txt. Error replaces audio preview, but send remains enabled and submits prior test.wav.",
+      "source": "assets/conversation.js audio-file change validation",
+      "recommendation": "Clear selection and disable sending on rejected replacement, or retain clearly labelled old selection.",
+      "status": "fixed; independently retested"
+    },
+    {
+      "id": "P2-media-chat-attachment",
+      "severity": "P2",
+      "evidence": "Image panel shows thumbnail. Sending creates only text 请帮我看看这张照片。; #messages img/audio count is zero. Audio similarly creates text only.",
+      "source": "assets/conversation.js sendMedia/renderMessages",
+      "recommendation": "If media-to-conversation means attachment bubbles, render submitted media with explicit persistence lifetime.",
+      "status": "fixed; independently retested"
+    }
+  ],
+  "passed": [
+    "Audio simulation result explicitly tagged 模拟分析 · 信息不足; no targeted diagnosis or soothing advice generated.",
+    "Cancel analysis prevents delayed second assistant result and clears pending state.",
+    "Cancel baby removal preserves both babies.",
+    "Remove A then Undo restores A and B, clears archive, activates A.",
+    "Image selection replaces panel header with thumbnail.",
+    "Schedule seeded out of order renders 07:00 then 17:00; other baby record excluded; click opens correct A bottle record.",
+    "Pattern expands 360px to 720px; point opens record detail.",
+    "Weight SVG point keyboard Enter opens record detail."
+  ],
+  "limitations": [
+    "Real microphone timing and permission/camera behavior require device verification; not claimed tested in this review."
+  ],
+  "retest": {
+    "result": "All three P2 fixes pass; no new blocking regression within bounded scope.",
+    "evidence": [
+      "Remove only baby A, add B: persisted babies contains B only; unchanged after reload; A remains archived.",
+      "Valid audio then invalid text replacement: send button disabled. Selecting a new audio re-enables send and creates one audio attachment in chat.",
+      "Image selected and sent: one image attachment exists in #messages.",
+      "Cancelled second analysis creates no second assistant result; pending clears.",
+      "Cancel removal keeps two babies; Undo after removal restores both and clears archive."
+    ],
+    "attachmentLifetime": "Code review confirms session-only Blob URLs; reload shows named attachment with preview-ended message rather than a broken URL. Reload attachment UI not separately exercised."
+  }
+}

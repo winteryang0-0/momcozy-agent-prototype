@@ -1,0 +1,16 @@
+{
+  "checks": 10,
+  "passed": [
+    "side value restored",
+    "schema selected correctly",
+    "custom fields retained on close",
+    "rapid save is single write",
+    "left swipe opens records",
+    "right swipe opens drawer",
+    "photo preview loads",
+    "microphone denial visible",
+    "large text modal within viewport",
+    "no JS errors"
+  ],
+  "errors": []
+}

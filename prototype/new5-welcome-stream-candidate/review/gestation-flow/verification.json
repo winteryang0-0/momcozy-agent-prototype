@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-26",
+  "results": [
+    {
+      "entry": "single",
+      "checks": [
+        "stage before baby name",
+        "two stages without descriptions",
+        "unborn blocked with feedback",
+        "baby name follows stage",
+        "gender has only two options",
+        "calendar is date entry",
+        "calendar click invokes native picker",
+        "calendar updates",
+        "gestation after birthday",
+        "old review draft visits missing gestation",
+        "old unborn draft returns to blocked stage",
+        "week bounds",
+        "preterm days shown and prompt",
+        "37 hides and resets days",
+        "gestation persists",
+        "small viewport no overflow",
+        "concerns no small copy",
+        "review gestation",
+        "brief natural welcome",
+        "gestation saved",
+        "no runtime errors"
+      ],
+      "errors": []
+    },
+    {
+      "entry": "split",
+      "checks": [
+        "stage before baby name",
+        "two stages without descriptions",
+        "unborn blocked with feedback",
+        "baby name follows stage",
+        "gender has only two options",
+        "calendar is date entry",
+        "calendar click invokes native picker",
+        "calendar updates",
+        "gestation after birthday",
+        "old review draft visits missing gestation",
+        "old unborn draft returns to blocked stage",
+        "week bounds",
+        "preterm days shown and prompt",
+        "37 hides and resets days",
+        "gestation persists",
+        "small viewport no overflow",
+        "concerns no small copy",
+        "review gestation",
+        "brief natural welcome",
+        "gestation saved",
+        "no runtime errors"
+      ],
+      "errors": []
+    }
+  ],
+  "independent_review": {
+    "status": "no remaining blockers",
+    "migration_checks": 7,
+    "fix": "Legacy missing-gestation and unborn drafts now route to required steps"
+  },
+  "visuals": [
+    "birthday-single.png",
+    "preterm-single.png",
+    "small-single.png",
+    "home-single.png"
+  ],
+  "limits": [
+    "Date picker invoked in desktop Chrome; native phone picker and screen reader not tested.",
+    "Gestation captured for local prototype only; no medical inference."
+  ],
+  "sha256": {
+    "assets/conversation.js": "49826d6d09f94299dfa91ea7d67a8bbea537d39a01837f6b59e72ddd737d0432",
+    "assets/onboarding.css": "b6c1369fd09d89fd04ad813cb3c6b890057bc66bf7a22b7e0292a6f83f0ce7b0",
+    "Momcozy-Soft-Companion.html": "4bf722cc0cd4c657fa17bb0ec7b1d8bea61b2a28ec148aa7b3c777e0a566ba2b"
+  }
+}

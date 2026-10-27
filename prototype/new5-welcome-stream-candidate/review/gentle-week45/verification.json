@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "results": {
+    "checks": [
+      "stage before baby name",
+      "two stages without descriptions",
+      "unborn blocked with feedback",
+      "baby name follows stage",
+      "gender has only two options",
+      "calendar is date entry",
+      "calendar click invokes native picker",
+      "calendar updates",
+      "gestation after birthday",
+      "old review draft visits missing gestation",
+      "old unborn draft returns to blocked stage",
+      "week bounds",
+      "45 reachable and centered",
+      "45 retained on refresh",
+      "preterm days shown and prompt",
+      "37 hides and resets days",
+      "gestation persists",
+      "small viewport no overflow",
+      "concerns no small copy",
+      "confirmation typography",
+      "review gestation",
+      "brief natural welcome",
+      "gestation saved",
+      "no runtime errors"
+    ],
+    "errors": []
+  },
+  "visuals": [
+    "max45.png",
+    "preterm-single.png",
+    "confirmation.png"
+  ],
+  "sha256": {
+    "assets/conversation.js": "dd93ba36113481a88857d1b63e10dc62050945288c9d70265f06cf41283922f0",
+    "assets/onboarding.css": "ab38b66be5b5558e20cab3d151e7aff187ff2664a853f2e1d55ef230c8380f79",
+    "Momcozy-Soft-Companion.html": "ddb2d178f071f3504233a8316185e92046a7c894d1ab726560f924559e5d78f5"
+  }
+}

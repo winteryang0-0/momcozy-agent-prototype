@@ -1,0 +1,12 @@
+from pathlib import Path
+p=Path('assets/record-refinement.js')
+s=p.read_text(encoding='utf-8')
+s=s.replace('name="sleepStart"', 'data-ui="ready" name="sleepStart"').replace('name="sleepEnd"', 'data-ui="ready" name="sleepEnd"')
+p.write_text(s,encoding='utf-8')
+p=Path('assets/ui-controls.js');s=p.read_text(encoding='utf-8')
+s=s.replace("input.dataset.ui='ready';const wrap=document.createElement('div');wrap.className='preset-values';", "input.dataset.ui='ready';if(input.closest('.sleep-editor')||panel.closest('#panel').dataset.recordType==='睡眠')return;const wrap=document.createElement('div');wrap.className='preset-values';")
+p.write_text(s,encoding='utf-8')
+p=Path('assets/conversation.js');s=p.read_text(encoding='utf-8')
+s=s.replace('persist(next);draft=null;persistChat();renderDraft();', "persist(next);for(const [key,value] of Object.entries(chat.recordDrafts||{})){if(value.id===submitted.id)delete chat.recordDrafts[key]}draft=null;persistChat();renderDraft();",1)
+s=s.replace("if(draft){toast('请先完成对话中的未保存记录。');return}goHome();draft=", "if(draft){chat.recordDrafts={...(chat.recordDrafts||{}),[draft.type]:draft};draft=null;}goHome();draft=")
+p.write_text(s,encoding='utf-8')

@@ -1,0 +1,26 @@
+{
+  "passed": 20,
+  "out": [
+    "first visit opens grouped onboarding",
+    "back retains name",
+    "baby retained",
+    "refresh resumes step",
+    "complete enters home",
+    "real baby separate from sample",
+    "return visit bypasses onboarding",
+    "removed swipe instructions",
+    "camera and upload available",
+    "camera selection previews",
+    "daily schedule primary",
+    "day selection updates records",
+    "event detail opens",
+    "processing visible",
+    "cancel prevents stale result",
+    "response creates confirm card",
+    "save real before feedback",
+    "reduced motion active",
+    "home no overflow",
+    "no runtime errors"
+  ],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "stage before baby name",
+    "two stages without descriptions",
+    "unborn blocked with feedback",
+    "baby name follows stage",
+    "gender has only two options",
+    "calendar is date entry",
+    "calendar click invokes native picker",
+    "calendar updates",
+    "gestation after birthday",
+    "old review draft visits missing gestation",
+    "old unborn draft returns to blocked stage",
+    "week bounds",
+    "preterm days shown and prompt",
+    "37 hides and resets days",
+    "gestation persists",
+    "small viewport no overflow",
+    "concerns no small copy",
+    "review gestation",
+    "brief natural welcome",
+    "gestation saved",
+    "no runtime errors"
+  ],
+  "errors": []
+}

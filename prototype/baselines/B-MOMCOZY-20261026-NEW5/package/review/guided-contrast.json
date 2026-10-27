@@ -1,0 +1,13 @@
+{
+  "method": "WCAG relative luminance, token pairs only, not APCA or all composited surfaces",
+  "ratios": {
+    "body-light": 16.1,
+    "muted-light": 5.87,
+    "feed": 8.49,
+    "sleep": 8.34,
+    "diaper": 7.62,
+    "growth": 6.75,
+    "body-dark": 14.19,
+    "muted-dark": 6.78
+  }
+}
